@@ -153,6 +153,29 @@ const VAR_LABELS = {
   mean_elevation:"Mean elevation by state (T410)",
   border_miles:"US border length by state (T407)",
   coastline_miles:"Coastline miles by state (T408)",
+  river_length:"River length � major US rivers (T409)",
+  irrigation_water_use:"Irrigation water withdrawal per day (T415)",
+  // Construction
+  data_center_construction:"Data center construction spending (T1013)",
+  total_manufacturing_construction:"Manufacturing construction spending (T1013)",
+  healthcare_construction:"Healthcare facility construction (T1013)",
+  // Arts & Recreation
+  state_arts_appropriation:"State arts agency appropriations (T1261)",
+  gross_arts_output:"Arts and cultural production gross output (T1257)",
+  // Transport (gig)
+  gig_transport_establishments:"Gig/nonemployer transport establishments (T1103)",
+  gig_transport_receipts:"Gig/nonemployer transport receipts (T1103)",
+  // Income derived
+  state_gdp:"State GDP total (T715)",
+  manufacturing_gdp:"Manufacturing share of state GDP (T712)",
+  metro_per_capita_income:"Metro area per capita income (T726)",
+  // Social insurance derived
+  retirement_disability_benefits:"Retirement and disability benefits by state (T573)",
+  medical_payments_state:"Medical payments by state (T573)",
+  // Births
+  mean_age_first_birth:"Mean age at first birth by race (T80)",
+  // Banking derived
+  home_price_change_2019_2024:"Home price % change 2019-2024 by state (T771)",
 };
 
 // ── Build variable → ideas index ─────────────────────────────────────────────
