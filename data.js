@@ -1,4 +1,4 @@
-// data.js — Mapzimus master idea database v2
+﻿// data.js — Mapzimus master idea database v2
 // Source: ProQuest Statistical Abstract of the United States 2026 (all 36 PDFs)
 // ext: [] = external data sources used as joins � idea still anchored in ProQuest variable
 
@@ -189,7 +189,6 @@ const D = [
 ,{id:"xref_rd_income_state",title:"Business R&D intensity vs. median income by state",sub:"Washington ($77 R&D per $1K GDP) has $91K median income. Mississippi ($3/1K) has $54K. Research pays.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T844 · T727",section:"Science · Income",vars:["rd_pct_gdp","median_household_income"],join:["pct_bachelors","state_gdp_per_capita"],sc:{emotional:7,relatability:6,surprise:7,tension:5,visual:7,data_ready:10,originality:7},vs:72,tags:"R&D research income state wealth innovation economy Washington Massachusetts productivity knowledge workers"}
 ,{id:"xref_rd_vote",title:"State R&D spending intensity vs. Republican vote share",sub:"High-R&D states vote Democratic. Low-R&D states vote Republican. The knowledge economy politics map.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T844 · T454",section:"Science · Elections",vars:["rd_pct_gdp","rep_pct"],join:["pct_bachelors","median_household_income"],sc:{emotional:7,relatability:6,surprise:7,tension:7,visual:7,data_ready:10,originality:7},vs:74,tags:"R&D research Republican vote knowledge economy innovation state technology workers education politics"}
 
-]; // end D
 
 // ── FROM FEDERAL GOVT FINANCES PDF ───────────────────────────────────────────
 ,{id:"federal_debt_pct_gdp",title:"Federal debt as % of GDP 1960–2024",sub:"1960: 54% of GDP. 2024: 122% of GDP. The most important fiscal chart in America, with 60 years of history.",type:"CHART",geo:"us_national",fmt:"Area chart — gross federal debt as % of GDP over time",tbl:"T509",section:"Federal Government Finances",vars:["federal_debt_pct_gdp"],join:["federal_outlays_by_function","federal_tax_revenue_type"],sc:{emotional:8,relatability:7,surprise:7,tension:9,visual:8,data_ready:10,originality:5},vs:78,tags:"federal debt GDP deficit national debt 1960 2024 history fiscal crisis Republicans Democrats spending Congress"}
@@ -327,4 +326,4 @@ const D = [
 ,{id:"xref_internet_access_income",title:"Broadband internet access rate vs. median income by county",sub:"The digital divide is an income divide. Counties below $40K median income average 68% broadband adoption vs. 91% above $80K.",type:"XREF",geo:"us_county",fmt:"Scatter plot + county choropleth",tbl:"T727",section:"Income",ext:["FCC Form 477 broadband availability data (publicly available via fcc.gov)"],vars:["median_household_income"],join:["pct_bachelors","state_unemployment_rate","rep_pct"],sc:{emotional:8,relatability:8,surprise:6,tension:6,visual:8,data_ready:8,originality:5},vs:74,tags:"broadband internet access income digital divide county FCC rural urban low income high income economy education"}
 
 ,{id:"xref_broadband_income_vote",title:"Broadband access rate vs. Republican vote share by county",sub:"Low-broadband counties vote Republican by 30+ points. The digital divide is also a political divide.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T454 · T727",section:"Elections · Income",ext:["FCC Form 477 broadband availability data (publicly available via fcc.gov)"],vars:["rep_pct","median_household_income"],join:["pct_bachelors","rural_population_pct"],sc:{emotional:8,relatability:7,surprise:7,tension:7,visual:7,data_ready:8,originality:7},vs:77,tags:"broadband internet Republican vote county digital divide political rural urban FCC low income conservative"}
-
+]; // end D
