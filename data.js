@@ -1,6 +1,6 @@
 // data.js — Mapzimus master idea database v2
 // Source: ProQuest Statistical Abstract of the United States 2026 (all 36 PDFs)
-// ext: [] = external data sources used as joins � idea still anchored in ProQuest variable
+// ext: [] = external data sources used as joins � idea still anchored in ProQuest variable
 
 const D = [
 // ── TIER 1 (90+) ─────────────────────────────────────────────────────────────
