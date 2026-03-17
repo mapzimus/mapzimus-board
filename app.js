@@ -204,6 +204,29 @@ const VAR_LABELS = {
   ecommerce_sales:"E-commerce sales by category (T1093)",
   wholesale_employees_state:"Wholesale and retail employees by state (T1084)",
   wholesale_sales_total:"Merchant wholesaler sales total (T1083)",
+  // External joins (new � idea anchored in ProQuest, enriched with public external data)
+  holc_grade:"HOLC redlining grade by neighborhood (Mapping Inequality � ext.)",
+  abortion_provider_distance:"Drive time to nearest abortion provider (Guttmacher � ext.)",
+  trauma_center_distance:"Drive time to nearest trauma center (HRSA � ext.)",
+  nicu_distance:"Drive time to nearest NICU (CMS � ext.)",
+  grocery_distance:"Drive time to nearest full grocery store (USDA FARA � ext.)",
+  gofundme_medical_per_capita:"GoFundMe medical campaigns per capita (GoFundMe � ext.)",
+  irs_net_migration_households:"IRS net migration households by state (IRS SOI � ext.)",
+  dollar_general_density:"Dollar General stores per 10K residents (OSM � ext.)",
+  church_count:"Churches per 10K residents (IRS 501c3 � ext.)",
+  brewery_count:"Breweries per 10K residents (USDA/OSM � ext.)",
+  lightning_strikes_per_sqmi:"Lightning strikes per sq mile (VAISALA � ext.)",
+  airbnb_listings_per_sqmi:"Airbnb listings density (Inside Airbnb � ext.)",
+  county_vote_swing_2016_2024:"County vote swing 2016-2024 (MIT Election Lab � ext.)",
+  foreign_born_physician_pct:"Foreign-born physicians % by state (ACS � ext.)",
+  sex_ratio_county:"Sex ratio (men per 100 women) by county (ACS � ext.)",
+  avg_commute_time:"Average commute time in minutes by county (ACS � ext.)",
+  broadband_access_pct:"Broadband access rate by county (FCC � ext.)",
+  language_diversity_index:"Language diversity index by county (ACS � ext.)",
+  rural_population_pct:"Rural population % by county (ACS � ext.)",
+  superfund_sites_per_sqmi:"Superfund sites per sq mile by county (EPA � ext.)",
+  flood_zone_uninsured_pct:"FEMA flood zone properties uninsured % (FEMA NFIP � ext.)",
+  mental_health_providers_per_100k:"Mental health providers per 100K (SAMHSA/HRSA � ext.)",
 };
 
 // ── Build variable → ideas index ─────────────────────────────────────────────
@@ -273,7 +296,7 @@ function cardHTML(d, highlight = false) {
         <span class="pl fmt">${fmtShort}</span>
       </div>
       <div class="src">${d.tbl} · ${d.section}</div>
-      ${proxyWarn}
+      ${extBadge}
     </div>
     <div class="right">
       <div><div class="vs" style="color:${scColor(d.vs)}">${d.vs}</div><div class="vl">V-Score</div></div>
