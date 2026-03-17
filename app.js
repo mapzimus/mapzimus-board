@@ -176,6 +176,34 @@ const VAR_LABELS = {
   mean_age_first_birth:"Mean age at first birth by race (T80)",
   // Banking derived
   home_price_change_2019_2024:"Home price % change 2019-2024 by state (T771)",
+  // Federal Government Finances (NEW)
+  federal_debt_pct_gdp:"Federal debt as % of GDP 1960-2024 (T509)",
+  federal_outlays_by_function:"Federal budget outlays by function (T512)",
+  federal_tax_revenue_type:"Federal budget receipts by source (T514)",
+  federal_civilian_employment_state:"Federal civilian employees by state (T537)",
+  federal_agi_by_state:"Avg adjusted gross income per return by state (T532)",
+  federal_tax_refunds_state:"Federal tax refunds by state 2024 (T533)",
+  unclaimed_refunds_state:"Individuals due unclaimed refunds by state (T534)",
+  // State and Local Government Finances (NEW)
+  lottery_revenue_per_capita:"State lottery revenue per capita (T493)",
+  sports_betting_revenue:"Sports betting tax revenue by state (T493)",
+  state_local_revenue_per_capita:"State and local govt revenue per capita (T488)",
+  state_local_expenditure_per_capita:"State and local govt expenditures per capita (T488)",
+  state_local_debt_per_capita:"State and local govt debt per capita (T486)",
+  state_local_avg_earnings:"State/local govt avg monthly earnings by state (T505)",
+  state_general_fund_balance:"State general fund surplus/deficit (T495)",
+  state_income_tax_revenue:"State individual income tax revenue (T497)",
+  // Manufactures (NEW)
+  manufacturing_employment_trend:"Manufacturing employment 2000-2024 (T1064)",
+  manufacturing_hourly_wages_state:"Manufacturing hourly wages by state (T1067)",
+  manufacturing_value_added_state:"Manufacturing value added by state (T1062)",
+  manufacturing_payroll_state:"Manufacturing payroll by state (T1062)",
+  manufacturing_shipments_state:"Manufacturing shipments by state (T1063)",
+  // Wholesale and Retail Trade (NEW)
+  retail_sales_per_capita:"Per capita retail sales (T1090)",
+  ecommerce_sales:"E-commerce sales by category (T1093)",
+  wholesale_employees_state:"Wholesale and retail employees by state (T1084)",
+  wholesale_sales_total:"Merchant wholesaler sales total (T1083)",
 };
 
 // ── Build variable → ideas index ─────────────────────────────────────────────
