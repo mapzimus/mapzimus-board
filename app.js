@@ -1,4 +1,4 @@
-// app.js — Mapzimus board logic v2
+﻿// app.js — Mapzimus board logic v2
 
 const VAR_LABELS = {
   // Elections
@@ -284,8 +284,8 @@ function cardHTML(d, highlight = false) {
     `<div class="br"><span class="bl">${l}</span><div class="bt"><div class="bf" style="width:${(d.sc[k]||0)*10}%;background:${FC[k]}"></div></div></div>`
   ).join('');
   const fmtShort = d.fmt.split('—')[0].split('(')[0].trim();
-  const proxyWarn = d.proxy
-    ? `<div class="proxy-warn">⚠ Proxy: ${d.proxyNote || 'indirect data source'}</div>` : '';
+  const extBadge = (d.ext && d.ext.length)
+    ? `<div class="ext-badge">+ ext: ${d.ext.join(' · ')}</div>` : '';
   return `<div class="card${highlight ? ' hi' : ''}">
     <div>
       <div class="ct">${d.title}</div>
