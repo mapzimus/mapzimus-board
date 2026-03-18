@@ -6,7 +6,23 @@
 
 
 
+
+
+
+
+
+
+
+
 const D = [
+
+
+
+
+
+
+
+
 
 
 
@@ -22,7 +38,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"abortion_state_map",title:"States with abortion provider access vs. 2024 vote margin",sub:"14 states have zero providers. The access desert and the vote geography are the same map.",type:"XREF",geo:"us_state",fmt:"State choropleth",tbl:"T454",section:"Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["rep_pct","dem_pct","margin"],join:["birth_rate_state","teen_birth_rate","median_household_income","pct_births_unmarried"],sc:{emotional:10,relatability:9,surprise:7,tension:10,visual:9,data_ready:9,originality:7},vs:93,tags:"abortion Dobbs Roe reproductive rights women access SCOTUS Trump red states pro-choice pro-life vote geography"},
+
+
+
+
+
+
+
+
 
 
 
@@ -38,7 +70,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"crime_poverty",title:"Violent crime rate vs. median household income by state",sub:"The correlation is nearly perfect â€” less money, more violence, state by state.",type:"XREF",geo:"us_state",fmt:"Bivariate choropleth",tbl:"T340 Â· T727",section:"Law Enforcement Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)"],vars:["violent_crime_rate","median_household_income"],join:["pct_bachelors","state_unemployment_rate","pct_on_snap","rep_pct","murder_rate","total_transfers_per_capita"],sc:{emotional:9,relatability:9,surprise:6,tension:9,visual:9,data_ready:10,originality:6},vs:90,tags:"crime poverty income inequality violence murder policing race urban policy gun safety Trump law enforcement"},
+
+
+
+
+
+
+
+
 
 
 
@@ -54,7 +102,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"trade_deficit_country",title:"US trade deficit by country 2024",sub:"China -$298B. Mexico -$181B. Germany -$112B. Vietnam -$90B. The tariff target map.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"T1310",section:"Foreign Commerce & Aid",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["trade_balance_goods","trade_balance_services","current_account_balance"],join:["rd_pct_gdp","us_troops_overseas","population_per_sq_km"],sc:{emotional:8,relatability:7,surprise:7,tension:10,visual:9,data_ready:10,originality:7},vs:88,tags:"trade deficit China Mexico Germany Vietnam Japan tariffs Trump trade war imports exports economy manufacturing jobs MAGA"},
+
+
+
+
+
+
+
+
 
 
 
@@ -70,7 +134,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"teen_birth_education",title:"Teen birth rate vs. educational attainment by state",sub:"One of the tightest correlations in American social data.",type:"XREF",geo:"us_state",fmt:"Bivariate choropleth",tbl:"T86 Â· T254",section:"Births Deaths Â· Education",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["teen_birth_rate","pct_bachelors"],join:["median_household_income","rep_pct","pct_births_unmarried","pct_on_snap"],sc:{emotional:8,relatability:7,surprise:6,tension:8,visual:8,data_ready:10,originality:7},vs:87,tags:"teen pregnancy education poverty rural South race inequality sex education policy abortion healthcare demographics"},
+
+
+
+
+
+
+
+
 
 
 
@@ -86,7 +166,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"car_insurance_cpi",title:"Motor vehicle insurance CPI 2000â€“2024 â€” the silent squeeze",sub:"Tripled in 24 years â€” index 257 to 843. The cost-of-living story nobody charts.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["motor_vehicle_insurance_cpi","all_items_cpi"],join:["gasoline_cpi","housing_cpi","food_at_home_cpi"],sc:{emotional:8,relatability:9,surprise:9,tension:5,visual:8,data_ready:10,originality:9},vs:86,tags:"car insurance inflation CPI transportation cost of living budget household prices squeeze economy auto"},
+
+
+
+
+
+
+
+
 
 
 
@@ -102,7 +198,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"snap_enrollment",title:"SNAP food stamp enrollment rate by state 2023",sub:"11.7% of all Americans live in a SNAP household. The geography of hunger.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T576",section:"Social Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["pct_on_snap","pct_on_medicaid","snap_households"],join:["rep_pct","total_transfers_per_capita","median_household_income","violent_crime_rate","pct_births_unmarried"],sc:{emotional:8,relatability:7,surprise:6,tension:9,visual:8,data_ready:10,originality:5},vs:85,tags:"SNAP food stamps poverty welfare hunger race politics Trump cuts benefits government Mississippi inequality rural Black"},
+
+
+
+
+
+
+
+
 
 
 
@@ -118,7 +230,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"irs_audit_collapse",title:"IRS corporate audit rate collapse 2015â€“2022",sub:"Audit rate: 1.0% â†’ 0.2%. Recommended taxes dropped from $17.6B to $48M.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T794",section:"Business Enterprise",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["corp_audit_rate","recommended_additional_tax"],join:["corporate_profits","income_tax_after_credits"],sc:{emotional:8,relatability:7,surprise:9,tension:8,visual:8,data_ready:10,originality:9},vs:85,tags:"IRS audit tax corporations enforcement inequality rich wealth loopholes Trump Biden Congress cuts defunding enforcement"},
+
+
+
+
+
+
+
+
 
 
 
@@ -134,7 +262,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"voter_income",title:"Voter turnout vs. median household income by state 2024",sub:"The richer the state, the more people vote. Minnesota always breaks the rule.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T449 Â· T727",section:"Elections Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["pct_voted_state","pct_registered_state","median_household_income"],join:["pct_bachelors","rep_pct","state_unemployment_rate","total_transfers_per_capita"],sc:{emotional:7,relatability:8,surprise:6,tension:8,visual:8,data_ready:10,originality:6},vs:85,tags:"voting turnout income democracy inequality suppression elections Trump politics Minnesota Wisconsin Mississippi Texas"},
+
+
+
+
+
+
+
+
 
 
 
@@ -150,7 +294,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"home_price_index",title:"Single-family home price index by state 2005â€“2024",sub:"Montana +737. Colorado +697. Illinois +310. The housing divergence of the decade.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T771",section:"Prices",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["home_price_index_2024","home_price_pct_change_2005_2024"],join:["housing_permits_total","median_household_income","mortgage_delinquency_rate"],sc:{emotional:8,relatability:9,surprise:8,tension:7,visual:9,data_ready:10,originality:5},vs:84,tags:"housing home prices real estate affordability Montana Colorado Florida Idaho Tennessee mortgage cost of living inflation"},
+
+
+
+
+
+
+
+
 
 
 
@@ -166,7 +326,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"airports_ontime",title:"Best and worst major US airports for on-time performance 2024",sub:"SFO worst. Salt Lake City best. Every frequent flyer has a hot take.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T1110",section:"Transportation",ext:[],vars:["pct_ontime_arrivals","pct_ontime_departures"],join:["passengers_enplaned"],sc:{emotional:6,relatability:10,surprise:7,tension:3,visual:10,data_ready:10,originality:6},vs:84,tags:"airports travel flying airlines delays on-time SFO LAX Atlanta Chicago Dallas consumer transportation"},
+
+
+
+
+
+
+
+
 
 
 
@@ -182,7 +358,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"hospital_vs_insurance_cpi",title:"Hospital services CPI vs. health insurance CPI 2000â€“2024",sub:"Hospital CPI hit 414. Insurance CPI: 143. The gap between cost and coverage, charted.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["hospital_services_cpi","health_insurance_cpi","physicians_services_cpi","prescription_drugs_cpi"],join:["per_capita_health_spending","total_medicare","nursing_homes_cpi"],sc:{emotional:8,relatability:8,surprise:8,tension:7,visual:8,data_ready:10,originality:8},vs:83,tags:"healthcare hospital insurance CPI inflation cost medical bills poverty access crisis ACA Obamacare Biden Trump premium"},
+
+
+
+
+
+
+
+
 
 
 
@@ -198,7 +390,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"ports_tonnage",title:"Top 30 US ports by cargo tonnage 2023",sub:"Houston: 309M tons. South Louisiana: 218M. The Gulf Coast dominance surprises everyone.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T1122",section:"Transportation",ext:[],vars:["port_total_tons","port_domestic_tons","port_foreign_tons"],join:["port_total_teus"],sc:{emotional:5,relatability:6,surprise:9,tension:2,visual:10,data_ready:10,originality:8},vs:83,tags:"ports shipping cargo Houston supply chain trade Gulf Coast oil Louisiana infrastructure economy imports exports"},
+
+
+
+
+
+
+
+
 
 
 
@@ -214,7 +422,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"solar_noon",title:"Where solar noon actually matches clock noon across the US",sub:"Chicago: sun peaks at 12:53pm. Western Indiana: 1:27pm. Time zones are a geographic fiction.",type:"MAP",geo:"us_state",fmt:"Special map",proxy:true,proxyNote:"Derived from longitude and timezone boundaries â€” not a direct ProQuest variable",tbl:"Geography & Environment PDF",section:"Geography & Environment",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["mean_elevation","border_miles"],join:[],sc:{emotional:5,relatability:8,surprise:10,tension:2,visual:10,data_ready:7,originality:10},vs:83,tags:"time zones sun solar geography weird surprising science nature astronomy maps daylight strange curiosity"},
+
+
+
+
+
+
+
+
 
 
 
@@ -230,7 +454,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"student_loan_growth",title:"Federal student loan debt outstanding 2000â€“2024",sub:"$1.78 trillion. From near-zero to a national crisis in 24 years.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T1222",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["student_loans_outstanding","total_consumer_credit"],join:["college_tuition_cpi","daycare_preschool_cpi","credit_card_rate_all_accounts"],sc:{emotional:9,relatability:9,surprise:5,tension:8,visual:8,data_ready:10,originality:4},vs:81,tags:"student loans debt college education Biden forgiveness crisis millennials Gen Z economy inequality federal government"},
+
+
+
+
+
+
+
+
 
 
 
@@ -246,7 +486,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"energy_per_capita",title:"Energy consumption per capita by state 2023",sub:"Louisiana: 908 MMBtu. Rhode Island: 166. A 5.5x gap within one country.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T975",section:"Energy & Utilities",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","EIA State Energy Data System: production + consumption by state (eia.gov â€” free API)"],vars:["energy_consumption_per_capita"],join:["renewable_energy_share","coal_production_index","state_gdp_per_capita","rep_pct"],sc:{emotional:6,relatability:7,surprise:8,tension:7,visual:9,data_ready:10,originality:6},vs:82,tags:"energy climate carbon fossil fuels Louisiana Texas Wyoming electricity consumption emissions environment oil gas industrial"},
+
+
+
+
+
+
+
+
 
 
 
@@ -262,7 +518,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"troops_overseas",title:"US military personnel stationed overseas by country 2024",sub:"Japan 51K. Germany 35K. South Korea 23K. America's permanent military geography.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"T549",section:"National Security & Veterans",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["us_troops_overseas"],join:["defense_budget_total","total_deaths","wounded_in_action","trade_balance_goods"],sc:{emotional:7,relatability:6,surprise:7,tension:8,visual:9,data_ready:10,originality:7},vs:82,tags:"military troops overseas Japan Germany South Korea NATO war defense imperialism foreign policy budget veterans Iraq Afghanistan"},
+
+
+
+
+
+
+
+
 
 
 
@@ -278,7 +550,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"cpi_housing_city",title:"Housing cost CPI by major US city 2024",sub:"San Diego index 455. Chicago 311. Miami 394. The cost-of-living divide, city by city.",type:"MAP",geo:"us_city",fmt:"Dot map",tbl:"T769",section:"Prices",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)"],vars:["housing_cpi_city","rent_primary_residence_cpi"],join:["home_price_index_2024","median_household_income"],sc:{emotional:7,relatability:9,surprise:7,tension:5,visual:9,data_ready:10,originality:6},vs:80,tags:"housing cost of living CPI inflation city urban rent prices San Diego San Francisco Miami New York Chicago crisis economy"},
+
+
+
+
+
+
+
+
 
 
 
@@ -294,7 +582,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"worldwide_pop_growth",title:"World population growth rate by country 2020â€“2025",sub:"Niger +20%. South Sudan +26%. Ukraine -16%. The demographic divergence is civilizational.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"International Statistics",section:"International Statistics",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["population_pct_change_2020_2025"],join:["net_migration_rate","birth_rate","population_per_sq_km"],sc:{emotional:7,relatability:6,surprise:7,tension:5,visual:9,data_ready:10,originality:5},vs:79,tags:"population growth demographics Africa Europe Ukraine Russia war fertility decline aging immigration climate future global Niger"},
+
+
+
+
+
+
+
+
 
 
 
@@ -310,7 +614,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"credit_card_rates",title:"Credit card interest rates 2000â€“2024",sub:"Average rate: 14.9% in 2000, 22.9% in 2024. The slow debt trap tightening.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1223",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["credit_card_rate_all_accounts","credit_card_rate_assessed"],join:["total_consumer_credit","student_loans_outstanding","auto_loan_rate"],sc:{emotional:8,relatability:9,surprise:6,tension:7,visual:8,data_ready:10,originality:5},vs:79,tags:"credit cards debt interest rates Federal Reserve inflation poverty banks consumer finance household debt economy trap"},
+
+
+
+
+
+
+
+
 
 
 
@@ -326,7 +646,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"us_trade_deficit",title:"US current account deficit 2000â€“2024",sub:"$1.185 trillion deficit in 2024 â€” the largest in US history.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T1306",section:"Foreign Commerce & Aid",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["balance_on_goods","balance_on_services","current_account_balance"],join:["trade_balance_goods"],sc:{emotional:7,relatability:6,surprise:7,tension:9,visual:8,data_ready:10,originality:6},vs:79,tags:"trade deficit current account imports exports China tariffs Trump Biden economy manufacturing jobs globalization history"},
+
+
+
+
+
+
+
+
 
 
 
@@ -342,7 +678,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"war_casualties",title:"US military casualties by post-9/11 conflict",sub:"Iraq: 4,419 deaths, 31,993 wounded. Afghanistan: 2,350 deaths, 20,149 wounded.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T548",section:"National Security & Veterans",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["total_deaths","hostile_deaths","wounded_in_action"],join:["defense_budget_total","us_troops_overseas"],sc:{emotional:9,relatability:7,surprise:5,tension:8,visual:8,data_ready:10,originality:5},vs:79,tags:"war military casualties Iraq Afghanistan ISIS 9/11 terrorism veterans soldiers killed wounded Trump Biden Bush Obama cost"},
+
+
+
+
+
+
+
+
 
 
 
@@ -358,7 +710,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"corporate_profits_tax",title:"US corporate profits and effective tax rate 2000â€“2024",sub:"$2.85T in profits in 2024. Effective rate fell from ~36% to ~19% after 2017.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T793",section:"Business Enterprise",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["corporate_profits","income_tax_after_credits"],join:["corp_audit_rate","pct_families_own_stocks"],sc:{emotional:8,relatability:6,surprise:7,tension:8,visual:7,data_ready:10,originality:6},vs:78,tags:"corporate profits taxes inequality economy wealth CEO stock buybacks workers wages Trump tax cut corporations business IRS"},
+
+
+
+
+
+
+
+
 
 
 
@@ -374,7 +742,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"ports_containers",title:"Top 30 US container ports by TEU volume 2023",sub:"Savannah is now #4. The East Coast port shift is the freight story of the decade.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T1123",section:"Transportation",ext:[],vars:["port_total_teus","port_inbound_teus"],join:["port_total_tons"],sc:{emotional:4,relatability:5,surprise:8,tension:2,visual:10,data_ready:10,originality:7},vs:77,tags:"ports shipping containers supply chain Savannah Los Angeles New York Long Beach trade imports exports Amazon logistics"},
+
+
+
+
+
+
+
+
 
 
 
@@ -390,7 +774,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"waterway_freight",title:"Freight tonnage on major US waterways 2023",sub:"The Mississippi system: 567M tons. America's invisible inland interstate.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T1120",section:"Transportation",ext:[],vars:["waterway_freight_tons"],join:["port_total_tons"],sc:{emotional:5,relatability:5,surprise:8,tension:2,visual:9,data_ready:10,originality:8},vs:77,tags:"rivers waterways freight Mississippi Ohio shipping infrastructure grain coal oil agriculture trade barge supply chain"},
+
+
+
+
+
+
+
+
 
 
 
@@ -406,7 +806,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"xref_medicare_income",title:"Medicare enrollment rate vs. per capita income by state",sub:"Poorer, older states carry far higher Medicare loads per working-age taxpayer.",type:"XREF",geo:"us_state",fmt:"Bivariate choropleth",tbl:"T150 Â· T723",section:"Health Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)"],vars:["total_medicare","real_per_capita_income"],join:["total_transfers_per_capita","pct_on_medicaid"],sc:{emotional:7,relatability:7,surprise:6,tension:7,visual:8,data_ready:10,originality:7},vs:79,tags:"Medicare healthcare aging income elderly poverty state funding federal spending insurance hospital"},
+
+
+
+
+
+
+
+
 
 
 
@@ -422,7 +838,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"disability_employment",title:"Employment rate with vs. without a disability by state",sub:"24.5% labor force participation with a disability vs. 68.1% without.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T626",section:"Labor Force",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["disability_lfp_rate","disability_unemployment"],join:["state_unemployment_rate","pct_on_snap","median_household_income"],sc:{emotional:7,relatability:7,surprise:5,tension:5,visual:8,data_ready:10,originality:7},vs:76,tags:"disability employment accessibility ADA inequality healthcare policy workers inclusion unemployment Social Security SSI poverty"},
+
+
+
+
+
+
+
+
 
 
 
@@ -438,7 +870,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"retired_military_state",title:"Retired military pension payments by state 2022",sub:"Florida: $557M/month. Virginia: $499M. The military retirement economy is concentrated.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T547",section:"National Security & Veterans",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["military_pension_monthly","retired_military_count"],join:["total_transfers_per_capita","rep_pct","veterans_benefits"],sc:{emotional:5,relatability:6,surprise:7,tension:5,visual:9,data_ready:10,originality:7},vs:74,tags:"veterans military retirement pension Florida Texas Virginia North Carolina benefits federal spending base geography"},
+
+
+
+
+
+
+
+
 
 
 
@@ -454,7 +902,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"coal_decline",title:"US coal production index 1990â€“2024",sub:"Index fell from 145 to 67 in 35 years. The energy transition in one chart.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T950",section:"Forestry Fishing & Mining",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["coal_production_index","oil_gas_extraction_index"],join:["renewable_energy_share","energy_consumption_per_capita","rep_pct"],sc:{emotional:7,relatability:6,surprise:6,tension:7,visual:8,data_ready:10,originality:6},vs:73,tags:"coal energy climate transition Appalachia West Virginia Wyoming jobs rural decline fossil fuels renewable policy Trump Biden"},
+
+
+
+
+
+
+
+
 
 
 
@@ -470,7 +934,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"mortgage_delinquency",title:"Mortgage delinquency and foreclosure rates 2000â€“2024",sub:"2010: 9.3% delinquency. 2024: 4.0%. The scar of 2008 is still readable.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1225",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["mortgage_delinquency_rate","foreclosure_rate_total"],join:["home_price_index_2024","home_equity_loans"],sc:{emotional:7,relatability:8,surprise:5,tension:6,visual:8,data_ready:10,originality:5},vs:72,tags:"mortgage delinquency foreclosure 2008 crisis housing debt banks subprime recovery economy homeowners financial"},
+
+
+
+
+
+
+
+
 
 
 
@@ -486,7 +966,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"active_duty_gender",title:"US active duty military by branch and gender 1960â€“2024",sub:"Women are now 17.9% of the force â€” from near-zero to 230,000 in 60 years.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T545",section:"National Security & Veterans",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["active_duty_total","active_duty_female_pct"],join:["defense_budget_total","total_deaths"],sc:{emotional:6,relatability:7,surprise:6,tension:5,visual:8,data_ready:10,originality:5},vs:71,tags:"military women gender Army Navy Air Force Marines diversity history service defense equality armed forces demographics"},
+
+
+
+
+
+
+
+
 
 
 
@@ -502,7 +998,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"xref_farm_value_income",title:"Agricultural land value vs. median household income by state",sub:"Iowa farmland is worth $277B but median household income is $70K. Wealth doesn't reach farmers.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T869 Â· T727",section:"Agriculture Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov â€” free)"],vars:["farm_value_land","median_household_income"],join:["farms_count_2022","pct_cropland","land_in_farms_2022"],sc:{emotional:7,relatability:6,surprise:7,tension:5,visual:7,data_ready:10,originality:8},vs:75,tags:"agriculture farmland value income inequality Iowa California Texas wealth farmers rural economy land ownership"},
+
+
+
+
+
+
+
+
 
 
 
@@ -518,7 +1030,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"home_equity_atm",title:"Home equity loan balances 2000â€“2024",sub:"Americans extracted $561B in home equity in 2024 â€” nearly back to pre-crisis levels.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T1224",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["home_equity_loans","total_mortgage_debt"],join:["home_price_index_2024","mortgage_delinquency_rate"],sc:{emotional:7,relatability:7,surprise:7,tension:5,visual:7,data_ready:10,originality:7},vs:73,tags:"home equity mortgage debt housing wealth borrowing 2008 crisis financial risk inflation real estate"},
+
+
+
+
+
+
+
+
 
 
 
@@ -534,7 +1062,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"rd_pct_gdp_world",title:"R&D spending as % of GDP by country 2023",sub:"South Korea: 4.96%. US: 3.45%. China: 2.49%. Who is actually investing in the future?",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"T842",section:"Science & Technology",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["rd_pct_gdp"],join:["us_troops_overseas","trade_balance_goods","population_pct_change_2020_2025"],sc:{emotional:6,relatability:5,surprise:7,tension:7,visual:9,data_ready:10,originality:6},vs:76,tags:"R&D research innovation technology South Korea China Germany Japan US GDP competitiveness economy future science tech war"},
+
+
+
+
+
+
+
+
 
 
 
@@ -550,7 +1094,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 {id:"worldwide_pop_density",title:"World population density by country 2025",sub:"Monaco: 16,024/kmÂ². Singapore: 8,576. Mongolia: 2. The extremes of human geography.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"International Statistics",section:"International Statistics",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["population_per_sq_km"],join:["population_pct_change_2020_2025","net_migration_rate"],sc:{emotional:5,relatability:6,surprise:8,tension:3,visual:9,data_ready:10,originality:4},vs:74,tags:"population density cities Bangladesh Monaco Singapore Mongolia geography land urban rural overcrowding resources global"},
+
+
+
+
+
+
+
+
 
 
 
@@ -566,7 +1126,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"rent_vs_housing_cpi",title:"Rent CPI vs. owners' equivalent rent 2000â€“2024",sub:"Rent of primary residence CPI: 420. Owners' equivalent: 412. The shelter inflation nobody charts.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["rent_primary_residence_cpi","housing_cpi"],join:["home_price_index_2024","mortgage_delinquency_rate"],sc:{emotional:8,relatability:9,surprise:7,tension:6,visual:8,data_ready:10,originality:7},vs:79,tags:"rent housing inflation CPI shelter cost of living housing crisis affordability landlords tenants ownership homeowners"}
+
+
+
+
+
+
+
+
 
 
 
@@ -582,7 +1158,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"prescription_drug_cpi",title:"Prescription drugs vs. hospital services CPI 2000â€“2024",sub:"Prescription drug CPI: 557. Hospital services: 414. Two very different healthcare inflation stories.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["prescription_drugs_cpi","hospital_services_cpi","health_insurance_cpi"],join:["per_capita_health_spending","total_medicare"],sc:{emotional:8,relatability:8,surprise:7,tension:7,visual:8,data_ready:10,originality:7},vs:78,tags:"prescription drugs hospital healthcare CPI inflation cost insulin Medicare pharma Big Pharma prices policy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -598,7 +1190,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"wireless_vs_landline_cpi",title:"Wireless telephone vs. landline CPI 2000â€“2024",sub:"Wireless CPI: 47. Landline CPI: 157. The only consumer category that actually got cheaper.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["all_items_cpi"],join:[],sc:{emotional:6,relatability:8,surprise:9,tension:2,visual:8,data_ready:10,originality:8},vs:72,tags:"wireless phones cell phone CPI deflation cheaper telecom technology inflation comparison cost of living"}
+
+
+
+
+
+
+
+
 
 
 
@@ -614,7 +1222,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"consumer_credit_breakdown",title:"Student loans vs. auto loans vs. credit cards 2000â€“2024",sub:"$1.78T student loans. $1.57T auto. $1.32T credit cards. The three pillars of American consumer debt.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T1222",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["student_loans_outstanding","total_consumer_credit","credit_card_rate_all_accounts"],join:["median_household_income","pct_families_own_any_asset"],sc:{emotional:8,relatability:9,surprise:6,tension:7,visual:9,data_ready:10,originality:6},vs:79,tags:"debt consumer credit student loans auto loans credit cards household balance sheet poverty wealth inequality economy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -630,7 +1254,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"delinquency_credit_cards_rising",title:"Credit card delinquency rates 2021â€“2024 â€” the new debt crisis",sub:"Credit card delinquency: 1.65% in 2021 â†’ 3.17% in 2024. Back to 2008 levels and rising.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1226",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["credit_card_rate_all_accounts","total_consumer_credit"],join:["median_household_income","pct_families_own_any_asset"],sc:{emotional:8,relatability:8,surprise:7,tension:7,visual:8,data_ready:10,originality:7},vs:78,tags:"credit card delinquency debt default 2008 comparison household stress economy inflation wages poverty bank risk"}
+
+
+
+
+
+
+
+
 
 
 
@@ -646,7 +1286,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_home_price_vs_income",title:"Home price index vs. median income by state â€” the affordability destruction",sub:"Idaho: home prices up 649% since 2005, income up ~40%. Montana: +737%, income +~45%.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T771 Â· T727",section:"Prices Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["home_price_index_2024","median_household_income"],join:["housing_permits_total","mortgage_delinquency_rate"],sc:{emotional:9,relatability:9,surprise:8,tension:7,visual:9,data_ready:10,originality:7},vs:86,tags:"housing affordability home prices income Idaho Montana Florida pandemic housing crisis real estate wealth inequality"}
+
+
+
+
+
+
+
+
 
 
 
@@ -662,7 +1318,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"medicaid_vs_rep_vote",title:"Medicaid enrollment rate vs. Republican vote share by state",sub:"Red states rely on Medicaid more â€” and keep voting to cut it. The coverage paradox.",type:"XREF",geo:"us_state",fmt:"Bivariate choropleth",tbl:"T576 Â· T454",section:"Social Insurance Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["pct_on_medicaid","rep_pct"],join:["median_household_income","total_transfers_per_capita","pct_on_snap"],sc:{emotional:9,relatability:8,surprise:8,tension:10,visual:9,data_ready:10,originality:8},vs:89,tags:"Medicaid healthcare red states Republican vote paradox poverty coverage insurance ACA Obamacare expansion rural South"}
+
+
+
+
+
+
+
+
 
 
 
@@ -678,7 +1350,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"snap_vs_poverty_gap",title:"SNAP enrollment rate vs. poverty rate by state â€” the coverage gap",sub:"Some of the poorest states have lower SNAP enrollment. The access and stigma gap is geographic.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T576 Â· T727",section:"Social Insurance Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["pct_on_snap","median_household_income"],join:["pct_on_medicaid","total_transfers_per_capita","rep_pct"],sc:{emotional:8,relatability:7,surprise:8,tension:7,visual:8,data_ready:10,originality:8},vs:81,tags:"SNAP food stamps poverty enrollment gap stigma red states access welfare rural Mississippi Alabama policy food security"}
+
+
+
+
+
+
+
+
 
 
 
@@ -694,7 +1382,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"income_by_source_race_gap",title:"Median income by source and race 2023 â€” the wealth gap in detail",sub:"Federal retirement median: White $27K, Black $19K, Hispanic $24K. The racial wealth gap isn't just wages.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T575",section:"Social Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["total_transfers_per_capita","pct_on_snap"],join:["median_household_income","pct_on_medicaid"],sc:{emotional:9,relatability:7,surprise:8,tension:8,visual:8,data_ready:10,originality:8},vs:83,tags:"income race inequality wealth gap Social Security retirement Black White Hispanic Asian poverty wealth divide systemic federal"}
+
+
+
+
+
+
+
+
 
 
 
@@ -710,7 +1414,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"female_lfp_rate_by_state",title:"Female labor force participation rate by state 2024",sub:"Minnesota 70%. West Virginia 52%. The 18-point gap in women's workforce participation.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T629",section:"Labor Force",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["female_lfp_rate","state_unemployment_rate"],join:["pct_bachelors","median_household_income","daycare_preschool_cpi"],sc:{emotional:7,relatability:8,surprise:7,tension:6,visual:9,data_ready:10,originality:7},vs:78,tags:"women workforce labor participation state Minnesota West Virginia childcare economy equality wages gender inequality jobs"}
+
+
+
+
+
+
+
+
 
 
 
@@ -726,7 +1446,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_unemployment_crime",title:"State unemployment rate vs. violent crime rate",sub:"One of the oldest correlations in criminology â€” but the geographic pattern surprises.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T629 Â· T340",section:"Labor Force Â· Law Enforcement",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)"],vars:["state_unemployment_rate","violent_crime_rate"],join:["median_household_income","rep_pct","pct_on_snap"],sc:{emotional:8,relatability:8,surprise:6,tension:8,visual:8,data_ready:10,originality:6},vs:79,tags:"unemployment crime violence labor market poverty policing race policy economy law enforcement sociology"}
+
+
+
+
+
+
+
+
 
 
 
@@ -742,7 +1478,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"federal_pct_school_revenue",title:"Share of school funding from federal vs. local taxes by state",sub:"Mississippi: 20% federal, 30% local. Connecticut: 6% federal, 58% local. Two Americas, one system.",type:"MAP",geo:"us_state",fmt:"Bivariate choropleth",tbl:"T258",section:"Education",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["revenue_federal_pct","revenue_local_pct","expenditure_per_pupil"],join:["pct_bachelors","median_household_income","rep_pct"],sc:{emotional:7,relatability:7,surprise:8,tension:7,visual:9,data_ready:10,originality:8},vs:79,tags:"school funding federal local property tax inequality Mississippi Connecticut revenue sources education equity race class"}
+
+
+
+
+
+
+
+
 
 
 
@@ -758,7 +1510,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_vote_margin_transfers",title:"Vote margin vs. federal transfers per capita â€” the subsidy-resentment axis",sub:"The more federal money a state receives, the more it voted Republican in 2024. The 20-year trend intensifies.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T454 Â· T573",section:"Elections Â· Social Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["rep_pct","total_transfers_per_capita"],join:["median_household_income","pct_on_snap","violent_crime_rate"],sc:{emotional:10,relatability:8,surprise:8,tension:10,visual:9,data_ready:10,originality:8},vs:92,tags:"vote Republican federal transfers per capita subsidy resentment red states fiscal paradox MAGA Southern states poverty"}
+
+
+
+
+
+
+
+
 
 
 
@@ -774,7 +1542,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_vote_crime",title:"Republican vote share vs. violent crime rate by state",sub:"The party of law and order comes from the states with the most violence. The crime-politics paradox.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T454 Â· T340",section:"Elections Â· Crime",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["rep_pct","violent_crime_rate"],join:["median_household_income","pct_bachelors","state_unemployment_rate"],sc:{emotional:9,relatability:8,surprise:8,tension:10,visual:8,data_ready:10,originality:7},vs:87,tags:"Republican crime law order violent paradox South states policing safety politics culture war Trump voter"}
+
+
+
+
+
+
+
+
 
 
 
@@ -790,7 +1574,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_vote_teen_births",title:"Republican vote share vs. teen birth rate by state",sub:"The most Republican states have the highest teen birth rates â€” and the least comprehensive sex education.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T454 Â· T86",section:"Elections Â· Births",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["rep_pct","teen_birth_rate"],join:["pct_bachelors","median_household_income"],sc:{emotional:8,relatability:7,surprise:7,tension:9,visual:8,data_ready:10,originality:6},vs:80,tags:"Republican teen birth rate sex education abstinence religion conservative South Mississippi political culture"}
+
+
+
+
+
+
+
+
 
 
 
@@ -806,7 +1606,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_vote_teacher_salary",title:"Republican vote share vs. average teacher salary by state",sub:"The most Republican states pay teachers the least â€” and have the worst educational outcomes.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T454 Â· T268",section:"Elections Â· Education",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["rep_pct","avg_teacher_salary"],join:["pct_bachelors","expenditure_per_pupil"],sc:{emotional:8,relatability:8,surprise:6,tension:8,visual:8,data_ready:10,originality:6},vs:79,tags:"Republican teacher salary education schools funding union Mississippi California South red blue state policy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -822,7 +1638,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_tariffs_2025",title:"US trade deficit by country vs. 2025 tariff rate imposed",sub:"China: -$298B deficit, 145% tariff. Vietnam: -$90B, 46%. The Trump tariff targeting map.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"T1310",section:"Trade",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["trade_balance_goods","current_account_balance"],join:["us_troops_overseas","rd_pct_gdp"],sc:{emotional:9,relatability:8,surprise:7,tension:9,visual:9,data_ready:10,originality:9},vs:87,tags:"tariffs China Vietnam trade deficit Trump 2025 trade war import tax policy economic nationalism MAGA"}
+
+
+
+
+
+
+
+
 
 
 
@@ -838,7 +1670,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_renewable_vs_income",title:"Renewable energy share vs. median income by state",sub:"Rich states aren't necessarily greener. Wyoming is wealthy and 97% fossil. Massachusetts is rich and 25% renewable.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T976 Â· T727",section:"Energy Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","EIA State Energy Data System: production + consumption by state (eia.gov â€” free API)"],vars:["renewable_energy_share","median_household_income"],join:["energy_consumption_per_capita","rep_pct"],sc:{emotional:6,relatability:6,surprise:8,tension:6,visual:8,data_ready:10,originality:7},vs:73,tags:"renewable energy income wealth state green clean energy climate policy Wyoming Massachusetts California Texas hydro wind solar"}
+
+
+
+
+
+
+
+
 
 
 
@@ -854,7 +1702,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"coal_production_by_region",title:"Coal production collapse by region 1990â€“2024",sub:"Appalachian coal: down 74%. Western coal held steady until 2019. Two very different coal stories.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T950",section:"Energy",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)","EIA State Energy Data System: production + consumption by state (eia.gov â€” free API)"],vars:["coal_production_index"],join:["renewable_energy_share","energy_consumption_per_capita"],sc:{emotional:7,relatability:6,surprise:7,tension:7,visual:8,data_ready:10,originality:7},vs:72,tags:"coal decline Appalachia West Virginia Kentucky region energy transition jobs rural economy fossil fuels renewable power"}
+
+
+
+
+
+
+
+
 
 
 
@@ -870,7 +1734,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_cropland_snap",title:"Cropland percentage vs. SNAP enrollment rate by state",sub:"States with the most farmland have the highest food stamp rates. The farmer poverty paradox.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T413 Â· T576",section:"Agriculture Â· Social Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov â€” free)"],vars:["pct_cropland","pct_on_snap"],join:["farms_count_2022","median_household_income"],sc:{emotional:8,relatability:7,surprise:9,tension:7,visual:8,data_ready:10,originality:9},vs:79,tags:"cropland SNAP food stamps farmers poverty agriculture Iowa Mississippi Kansas paradox rural food insecurity"}
+
+
+
+
+
+
+
+
 
 
 
@@ -886,7 +1766,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"farmer_count_decline",title:"Number of US farms 1935â€“2024: the 88-year collapse",sub:"7 million farms in 1935. 2 million today. The disappearance of American farm culture in one chart.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T869",section:"Agriculture",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov â€” free)"],vars:["farms_count_2022","land_in_farms_2022"],join:["farmer_avg_age","farm_value_land"],sc:{emotional:8,relatability:7,surprise:8,tension:6,visual:8,data_ready:10,originality:7},vs:77,tags:"farms decline history 1935 1950 2024 rural America agricultural collapse consolidation corporate agribusiness family farm"}
+
+
+
+
+
+
+
+
 
 
 
@@ -902,7 +1798,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_casualties_transfers",title:"Post-9/11 military deaths by state of origin vs. federal transfers per capita",sub:"States sending the most soldiers to war also receive the most federal money. Service and dependency.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T548 Â· T573",section:"Military Â· Social Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["total_deaths","total_transfers_per_capita"],join:["rep_pct","veterans_benefits"],sc:{emotional:9,relatability:7,surprise:8,tension:8,visual:7,data_ready:9,originality:9},vs:78,tags:"military deaths war federal transfers veterans benefits state red blue sacrifice poverty dependency service community"}
+
+
+
+
+
+
+
+
 
 
 
@@ -918,7 +1830,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"worldwide_shrinking_aging",title:"Countries with both population decline and aging workforces 2025",sub:"Japan, Germany, South Korea, Italy: shrinking AND aging. The double demographic squeeze.",type:"RANK",geo:"worldwide",fmt:"Quadrant chart",tbl:"International Statistics",section:"International Statistics",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["population_pct_change_2020_2025","net_migration_rate"],join:["birth_rate","rd_pct_gdp"],sc:{emotional:7,relatability:6,surprise:8,tension:6,visual:9,data_ready:10,originality:8},vs:74,tags:"aging population decline Japan Germany South Korea Italy workforce labor shortage pension crisis immigration demographic"}
+
+
+
+
+
+
+
+
 
 
 
@@ -934,7 +1862,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"services_surplus_vs_goods_deficit",title:"US goods deficit vs. services surplus â€” we sell software, we buy stuff",sub:"America runs a $311B services surplus â€” but a $1.2T goods deficit. The structural shift since 2000.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T1306",section:"Foreign Commerce",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["balance_on_goods","balance_on_services","current_account_balance"],join:["rd_pct_gdp","foreign_affiliate_employment"],sc:{emotional:7,relatability:6,surprise:8,tension:7,visual:8,data_ready:10,originality:8},vs:77,tags:"services exports goods imports trade structural shift US economy software finance intellectual property manufacturing"}
+
+
+
+
+
+
+
+
 
 
 
@@ -950,7 +1894,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"snap_enrollment_over_time",title:"SNAP enrollment 2000â€“2024: recessions, COVID, and the politics of food",sub:"From 17M to 42M enrollees since 2000. The safety net expands in crises and barely contracts after.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T577",section:"Social Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["snap_households","pct_on_snap"],join:["state_unemployment_rate","median_household_income"],sc:{emotional:8,relatability:7,surprise:6,tension:7,visual:8,data_ready:10,originality:6},vs:74,tags:"SNAP enrollment history 2008 COVID pandemic recession safety net food stamps trend politics"}
+
+
+
+
+
+
+
+
 
 
 
@@ -966,7 +1926,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"corporate_profit_vs_wages",title:"Corporate profit growth vs. wage growth 2000â€“2024",sub:"Corporate profits: +323%. Median wages: +94%. The 3.4x divergence in who gets the economy's gains.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T793 Â· T727",section:"Business Â· Income",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["corporate_profits","median_household_income"],join:["income_tax_after_credits","pct_families_own_stocks"],sc:{emotional:9,relatability:8,surprise:7,tension:9,visual:8,data_ready:10,originality:6},vs:82,tags:"corporate profits wages divergence inequality class workers shareholders 2000 2024 economy gains distribution"}
+
+
+
+
+
+
+
+
 
 
 
@@ -982,7 +1958,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"newspaper_employment_collapse",title:"Newspaper newsroom employment 2004â€“2024: -60%",sub:"157,000 newsroom jobs in 2004. 64,000 in 2024. The news desert was a workforce collapse first.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T1174",section:"Information",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["newspaper_print_revenue","newspaper_digital_revenue"],join:[],sc:{emotional:8,relatability:7,surprise:7,tension:7,visual:8,data_ready:10,originality:6},vs:75,tags:"newspaper journalism jobs decline newsrooms employment collapse local news democracy information crisis 2004 2024"}
+
+
+
+
+
+
+
+
 
 
 
@@ -998,7 +1990,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"irs_audit_vs_snap",title:"IRS corporate audit rate collapse vs. SNAP enrollment growth",sub:"As IRS stopped auditing corporations, SNAP enrollment grew. Audit less, spend more on the poor.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T794 Â· T577",section:"Business Â· Social Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["corp_audit_rate","pct_on_snap"],join:["corporate_profits","recommended_additional_tax"],sc:{emotional:9,relatability:7,surprise:9,tension:9,visual:8,data_ready:10,originality:10},vs:86,tags:"IRS audit corporate tax SNAP food stamps enrollment trade-off fiscal inequality poverty enforcement rich poor"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1014,7 +2022,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_home_prices_births",title:"Home price index vs. birth rate by state",sub:"Housing is the most reliable birth control. The most expensive states have the fewest babies.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T771 Â· T81",section:"Housing Â· Births",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","HUD Fair Market Rents + housing data by state/county (huduser.gov â€” free)"],vars:["home_price_index_2024","birth_rate_state"],join:["median_household_income","pct_bachelors"],sc:{emotional:8,relatability:8,surprise:8,tension:6,visual:8,data_ready:10,originality:8},vs:79,tags:"housing prices birth rate fertility California Idaho Colorado Montana fertility decline expensive real estate family formation"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1030,7 +2054,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_home_prices_childcare",title:"Home price appreciation vs. childcare CPI by state",sub:"The two fastest-growing costs for families: housing and childcare. They're rising in the same places.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T771 Â· T770",section:"Prices",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["home_price_index_2024","daycare_preschool_cpi"],join:["female_lfp_rate","median_household_income"],sc:{emotional:9,relatability:9,surprise:8,tension:7,visual:8,data_ready:9,originality:8},vs:82,tags:"home prices childcare cost of living family squeeze young families housing daycare inflation parallel"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1046,7 +2086,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"county_snap_rate",title:"SNAP enrollment rate by US county â€” the hunger geography",sub:"Some counties have 40%+ SNAP enrollment. Others under 3%. The hunger geography within states.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T576",section:"Social Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by county (bls.gov â€” free)"],vars:["pct_on_snap"],join:["median_household_income","violent_crime_rate","rep_pct"],sc:{emotional:8,relatability:7,surprise:7,tension:8,visual:10,data_ready:8,originality:5},vs:78,tags:"SNAP food stamps county hunger poverty rural urban concentration geographic within-state variation food insecurity"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1062,7 +2118,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"county_median_income",title:"Median household income by US county 2023",sub:"Falls Church VA: $152K. Clay County KY: $22K. The within-state income geography state maps hide.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T727",section:"Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by county (bls.gov â€” free)"],vars:["median_household_income"],join:["violent_crime_rate","pct_on_snap","pct_bachelors"],sc:{emotional:8,relatability:9,surprise:6,tension:6,visual:10,data_ready:8,originality:3},vs:74,tags:"median income county within-state Virginia Kentucky suburban rural urban inequality wealth concentration geography"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1078,7 +2150,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"three_maps_one_story",title:"Education Â· income Â· crime: three maps that trace the same outline",sub:"The education map, the income map, and the crime map of America all have the same shape.",type:"MAP",geo:"us_state",fmt:"Special map",tbl:"T254 Â· T727 Â· T340",section:"Education Â· Income Â· Crime",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)"],vars:["pct_bachelors","median_household_income","violent_crime_rate"],join:["rep_pct","pct_on_snap","teen_birth_rate"],sc:{emotional:9,relatability:8,surprise:6,tension:9,visual:10,data_ready:10,originality:8},vs:85,tags:"education income crime triptych three maps same story South inequality race poverty policy visual"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1094,7 +2182,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"state_misery_index",title:"Comprehensive state misery index â€” all negatives combined",sub:"Rank all 50 states by a composite of poverty + crime + low education + food stamps + poor health.",type:"RANK",geo:"us_state",fmt:"Ranked list",tbl:"Multiple",section:"Multiple",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["pct_on_snap","violent_crime_rate","pct_bachelors","median_household_income"],join:["teen_birth_rate","state_unemployment_rate","rep_pct"],sc:{emotional:9,relatability:8,surprise:6,tension:9,visual:9,data_ready:10,originality:7},vs:82,tags:"state ranking misery index composite poverty crime education income health Mississippi Louisiana Alabama West Virginia"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1110,7 +2214,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"coastline_per_capita",title:"Coastal access inequality â€” shoreline miles per 1,000 residents by state",sub:"Alaska: 1,800 miles of shore per 1,000 people. New Jersey: 0.3 miles. Who has access to the coast?",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T408",section:"Geography & Environment",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["coastline_miles"],join:["median_household_income","real_per_capita_income"],sc:{emotional:5,relatability:7,surprise:9,tension:3,visual:9,data_ready:10,originality:9},vs:74,tags:"coastline shoreline access inequality Alaska New Jersey geography ocean beach tourism recreation equity"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1126,7 +2246,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"water_withdrawal_per_capita",title:"Water withdrawal per day by state â€” where freshwater stress lives",sub:"California withdraws 26B gallons/day. Nevada: 6.5B from 3M people. The water scarcity geography.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T415",section:"Geography & Environment",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["mean_elevation"],join:["pct_cropland","energy_consumption_per_capita"],sc:{emotional:7,relatability:7,surprise:8,tension:7,visual:9,data_ready:10,originality:8},vs:76,tags:"water withdrawal freshwater stress California Nevada agriculture irrigation drought climate West East divide geography"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1142,7 +2278,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_student_debt_fertility",title:"Student loan debt per capita vs. fertility rate by state",sub:"Higher-debt states have lower fertility. The student debt-birth rate connection is quantifiable.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T1222 Â· T81",section:"Banking Â· Births",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["student_loans_outstanding","birth_rate_state"],join:["median_household_income","pct_bachelors"],sc:{emotional:8,relatability:8,surprise:8,tension:6,visual:7,data_ready:10,originality:9},vs:77,tags:"student debt fertility birth rate connection young adults childlessness financial burden education loans demographics"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1158,7 +2310,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_farm_concentration_hunger",title:"Farm sales concentration vs. SNAP enrollment rate by state",sub:"States where 5% of farms produce 80% of food have the highest food stamp rates.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T871 Â· T576",section:"Agriculture Â· Social Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov â€” free)"],vars:["farm_sales_by_size","pct_on_snap"],join:["median_household_income","farms_count_2022"],sc:{emotional:9,relatability:7,surprise:9,tension:8,visual:7,data_ready:10,originality:10},vs:82,tags:"farm concentration food stamps hunger inequality mega-farms agribusiness corporate food insecurity paradox"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1174,7 +2342,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_defense_education",title:"Defense spending per capita vs. K-12 per-pupil spending by state",sub:"Virginia spends $14K per pupil on education and $4,500 per capita on defense. Mississippi: $11K education, $700 defense.",type:"XREF",geo:"us_state",fmt:"Quadrant chart",tbl:"T543 Â· T258",section:"Military Â· Education",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["defense_budget_total","expenditure_per_pupil"],join:["avg_teacher_salary","rep_pct"],sc:{emotional:8,relatability:7,surprise:8,tension:7,visual:8,data_ready:9,originality:8},vs:76,tags:"defense education spending tradeoff state military schools budget priorities Virginia Mississippi guns butter"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1190,7 +2374,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"murder_rate_by_state",title:"Murder rate by state 2023 â€” the violence geography nobody sees",sub:"Louisiana murder rate: 19/100K. New Hampshire: 1.1/100K. The 17x gap within the same country.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T340",section:"Crime",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)"],vars:["murder_rate","violent_crime_rate"],join:["median_household_income","rep_pct","pct_bachelors","state_unemployment_rate"],sc:{emotional:9,relatability:8,surprise:7,tension:8,visual:9,data_ready:10,originality:5},vs:82,tags:"murder homicide rate state Louisiana New Hampshire inequality poverty race geography crime South violence policy policing guns"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1206,7 +2406,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"map_disposable_income",title:"Disposable personal income per capita by state vs. US average",sub:"Connecticut: 136% of US average. Mississippi: 73%. The disposable income divide, normalized.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T725",section:"Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["disposable_income_per_capita"],join:["median_household_income","pct_on_snap","rep_pct"],sc:{emotional:7,relatability:8,surprise:6,tension:5,visual:9,data_ready:10,originality:5},vs:72,tags:"disposable income state Connecticut Mississippi index per capita wealth inequality spending power"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1222,7 +2438,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"high_school_sports_vs_mlb",title:"High school sports attendance vs. major professional leagues 2025",sub:"38M fans attended high school events. MLB drew 71M. Your local varsity game is America's #2 sport.",type:"RANK",geo:"us_national",fmt:"Ranked list",tbl:"T1273",section:"Arts Recreation",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["sports_attendance_12mo"],join:[],sc:{emotional:6,relatability:9,surprise:9,tension:2,visual:9,data_ready:10,originality:8},vs:79,tags:"high school sports attendance MLB NBA NFL college professional leagues comparison America local community fans surprising"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1238,7 +2470,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_rd_vote",title:"State R&D spending intensity vs. Republican vote share",sub:"High-R&D states vote Democratic. Low-R&D states vote Republican. The knowledge economy politics map.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T844 Â· T454",section:"Science Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["rd_pct_gdp","rep_pct"],join:["pct_bachelors","median_household_income"],sc:{emotional:7,relatability:6,surprise:7,tension:7,visual:7,data_ready:10,originality:7},vs:74,tags:"R&D research Republican vote knowledge economy innovation state technology workers education politics"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1254,7 +2502,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"federal_interest_vs_education",title:"Federal interest payments vs. education spending 2000â€“2024",sub:"Net interest on the debt: $879.9B in 2024. Federal education spending: $306B. We now pay 3x more in interest than we spend on education.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T510 Â· T512",section:"Federal Government Finances",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["federal_outlays_by_function"],join:["college_tuition_cpi","student_loans_outstanding"],sc:{emotional:9,relatability:8,surprise:9,tension:9,visual:8,data_ready:10,originality:8},vs:85,tags:"federal interest debt education spending comparison 2024 $879B fiscal crisis Congress priorities students"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1270,7 +2534,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"federal_civilian_employment_state",title:"Federal civilian employees by state 2024",sub:"DC: 162K. Maryland: 144K. Virginia: probably #3. The federal workforce geography.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T537",section:"Federal Government Finances",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["federal_civilian_employment_state"],join:["total_transfers_per_capita","rep_pct","median_household_income"],sc:{emotional:6,relatability:6,surprise:7,tension:5,visual:9,data_ready:10,originality:7},vs:71,tags:"federal employees government workers state DC Maryland Virginia geography workers jobs economy federal workforce"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1286,7 +2566,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"federal_payments_for_individuals",title:"Federal payments for individuals by program 2000â€“2024",sub:"Social Security: $1.46T. Medicare: ~$1.03T. Interest on debt: $880B. The federal government is primarily a benefits + debt machine.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T513",section:"Federal Government Finances",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["federal_outlays_by_function","total_transfers_per_capita"],join:["total_medicare","pct_on_snap","pct_on_medicaid"],sc:{emotional:8,relatability:7,surprise:7,tension:8,visual:8,data_ready:10,originality:5},vs:75,tags:"federal payments Social Security Medicare Medicaid individuals programs 2024 spending history growth aging"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1302,7 +2598,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"tax_refunds_by_state",title:"Federal tax refunds issued by state 2024",sub:"US total: $552.6B in refunds. California: $47.4B. Florida: $33.1B. The tax refund geography.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T533",section:"Federal Government Finances",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["federal_agi_by_state"],join:["median_household_income","rep_pct"],sc:{emotional:6,relatability:8,surprise:6,tension:3,visual:9,data_ready:10,originality:6},vs:68,tags:"tax refunds state IRS 2024 California Florida New York income geography per capita returns"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1318,7 +2630,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"lottery_revenue_per_capita",title:"State lottery revenue per capita 2023",sub:"Florida lottery: $9.43B. California: $9.26B. The regressive tax that funds education â€” and who pays it.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T493",section:"State & Local Govt",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["lottery_revenue_per_capita"],join:["pct_on_snap","median_household_income","rep_pct"],sc:{emotional:8,relatability:8,surprise:7,tension:7,visual:9,data_ready:10,originality:7},vs:79,tags:"lottery revenue state per capita regressive tax poor gambling Florida California New York education funding"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1334,7 +2662,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_lottery_poverty",title:"Lottery revenue per capita vs. poverty rate by state",sub:"The states with the most poverty spend the most on lottery tickets per person. The regressive tax, mapped.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T493 Â· T727",section:"State Govt Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["lottery_revenue_per_capita","median_household_income"],join:["pct_on_snap","rep_pct"],sc:{emotional:9,relatability:8,surprise:7,tension:8,visual:8,data_ready:10,originality:8},vs:81,tags:"lottery poverty regressive tax poor gambling spending income inequality state hope ticket desperation"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1350,7 +2694,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"state_general_fund_balance",title:"State general fund surplus or deficit by state 2023â€“2024",sub:"California surplus: $47B in 2023 â†’ $13B in 2024. Alaska running a deficit. The fiscal health map.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T495",section:"State & Local Govt",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["state_local_revenue_per_capita"],join:["state_local_debt_per_capita","rep_pct"],sc:{emotional:7,relatability:7,surprise:7,tension:6,visual:9,data_ready:10,originality:7},vs:73,tags:"state budget surplus deficit fiscal health California Alaska 2024 general fund balance spending tax revenue"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1366,7 +2726,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"state_local_debt_per_capita",title:"State and local government debt per capita 2022",sub:"Connecticut: $20K+ per person in state/local debt. Wyoming: under $5K. The public debt geography.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T486",section:"State & Local Govt",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["state_local_debt_per_capita"],join:["state_local_revenue_per_capita","median_household_income","rep_pct"],sc:{emotional:7,relatability:7,surprise:7,tension:6,visual:9,data_ready:10,originality:6},vs:72,tags:"state local debt per capita Connecticut Wyoming fiscal liability public bonds infrastructure pension obligations"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1382,7 +2758,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_state_taxes_vote",title:"State and local tax burden vs. Republican vote share by state",sub:"High-tax states vote Democratic. Low-tax states vote Republican. But low-tax states get more federal aid.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T491 Â· T454",section:"State Govt Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["state_local_revenue_per_capita","rep_pct"],join:["total_transfers_per_capita","median_household_income"],sc:{emotional:8,relatability:7,surprise:6,tension:8,visual:7,data_ready:10,originality:6},vs:75,tags:"state tax burden Republican vote blue red state high low tax Connecticut Mississippi political economy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1398,7 +2790,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"manufacturing_wages_by_state",title:"Average manufacturing hourly wages by state 2024",sub:"Colorado: $32.52/hr. Connecticut: $31.38. Arkansas: $22.44. The factory pay gap within America.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T1067",section:"Manufactures",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["manufacturing_hourly_wages_state"],join:["median_household_income","state_unemployment_rate","rep_pct"],sc:{emotional:7,relatability:8,surprise:7,tension:5,visual:9,data_ready:10,originality:6},vs:74,tags:"manufacturing wages hourly pay state Colorado Connecticut Arkansas factory workers industrial pay equity inequality"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1414,7 +2822,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"manufacturing_value_added_state",title:"Manufacturing value added by state 2021",sub:"Texas: $330B value added. Indiana: $130B. 28% of Indiana's entire GDP comes from manufacturing.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T1062",section:"Manufactures",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["manufacturing_value_added_state"],join:["state_gdp_per_capita","foreign_affiliate_employment"],sc:{emotional:6,relatability:6,surprise:7,tension:4,visual:9,data_ready:10,originality:6},vs:68,tags:"manufacturing value added state Texas Indiana GDP industrial economy production reshoring factories workers"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1430,7 +2854,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_manufacturing_wages_vote",title:"Manufacturing hourly wages vs. Republican vote share by state",sub:"Lower manufacturing wages â†’ more Republican. The forgotten worker political economy, state by state.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T1067 Â· T454",section:"Manufactures Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["manufacturing_hourly_wages_state","rep_pct"],join:["median_household_income","state_unemployment_rate"],sc:{emotional:8,relatability:7,surprise:7,tension:8,visual:7,data_ready:10,originality:7},vs:76,tags:"manufacturing wages Republican vote state workers factory pay political economy resentment low wage Trump"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1446,7 +2886,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"retail_sales_per_capita_growth",title:"Per capita retail sales 2000â€“2022: the $10K to $20K doubling",sub:"Americans spent $10,331 per person on retail in 2000. $20,752 in 2022. But real wages barely grew.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1090",section:"Wholesale & Retail Trade",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["retail_sales_per_capita"],join:["median_household_income","all_items_cpi"],sc:{emotional:7,relatability:8,surprise:6,tension:6,visual:7,data_ready:10,originality:5},vs:68,tags:"retail sales per capita growth 2000 2022 consumer spending wages inflation e-commerce economy household"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1462,7 +2918,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"wholesale_sales_trillion",title:"US merchant wholesale trade 2022: the $8T invisible economy",sub:"$8.06T in wholesale trade. More than half of all US GDP flows through wholesalers nobody sees.",type:"CHART",geo:"us_national",fmt:"Treemap",tbl:"T1083",section:"Wholesale & Retail Trade",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["wholesale_employees_state"],join:["port_total_tons","foreign_affiliate_employment"],sc:{emotional:5,relatability:5,surprise:8,tension:2,visual:8,data_ready:10,originality:8},vs:65,tags:"wholesale trade $8T trillion economy invisible supply chain food drugs industrial machinery sectors"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1478,7 +2950,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_medicare_vote",title:"Medicare enrollment rate vs. Republican vote share by state",sub:"The states most reliant on Medicare vote most reliably Republican â€” and to cut it.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T150 Â· T454",section:"Health Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["total_medicare","rep_pct"],join:["pct_on_medicaid","total_transfers_per_capita"],sc:{emotional:9,relatability:7,surprise:7,tension:10,visual:8,data_ready:10,originality:7},vs:84,tags:"Medicare Republican vote paradox healthcare elderly Southern states red states ACA cut funding aging"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1494,7 +2982,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_medicaid_unmarried_births",title:"Medicaid enrollment rate vs. births to unmarried mothers by state",sub:"Both highest in same states. Medical and family poverty overlap completely.",type:"XREF",geo:"us_state",fmt:"Bivariate choropleth",tbl:"T576 Â· T87",section:"Health Â· Births",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)"],vars:["pct_on_medicaid","pct_births_unmarried"],join:["median_household_income","teen_birth_rate","rep_pct"],sc:{emotional:8,relatability:7,surprise:6,tension:8,visual:9,data_ready:10,originality:7},vs:78,tags:"Medicaid births unmarried mothers poverty healthcare South Mississippi West Virginia overlap geography state"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1510,7 +3014,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_fertility_vote",title:"Total fertility rate vs. Republican vote share by state",sub:"Red states are having more babies than blue states. The electoral math of demographic divergence.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T85 Â· T454",section:"Births Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["total_fertility_rate_by_race","rep_pct"],join:["birth_rate_state","median_household_income"],sc:{emotional:7,relatability:7,surprise:7,tension:6,visual:7,data_ready:9,originality:6},vs:72,tags:"fertility Republican vote demographics electoral geography population growth red blue state political future"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1526,7 +3046,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_housing_permits_unemployment",title:"New housing permits vs. unemployment rate by state",sub:"States building more housing have lower unemployment. The housing-jobs connection.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T1011 Â· T629",section:"Housing Â· Labor",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","HUD Fair Market Rents + housing data by state/county (huduser.gov â€” free)"],vars:["housing_permits_total","state_unemployment_rate"],join:["median_household_income","population_pct_change"],sc:{emotional:6,relatability:7,surprise:6,tension:4,visual:7,data_ready:10,originality:6},vs:67,tags:"housing permits unemployment jobs construction labor market state supply economic activity growth"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1542,7 +3078,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_unemployment_insurance_vote",title:"Unemployment insurance benefits per capita vs. Republican vote share",sub:"Unemployment benefits flow to red states. The safety net paradox continues.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T573 Â· T454",section:"Social Insurance Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["total_transfers_per_capita","rep_pct"],join:["state_unemployment_rate","median_household_income"],sc:{emotional:8,relatability:7,surprise:7,tension:9,visual:7,data_ready:10,originality:7},vs:76,tags:"unemployment insurance benefits Republican vote paradox safety net red states fiscal dependency"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1558,7 +3110,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_teacher_salary_unemployment",title:"Teacher salary vs. state unemployment rate",sub:"States that pay teachers well tend to have lower unemployment. The education-economy link.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T268 Â· T629",section:"Education Â· Labor",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["avg_teacher_salary","state_unemployment_rate"],join:["expenditure_per_pupil","median_household_income"],sc:{emotional:6,relatability:7,surprise:6,tension:4,visual:7,data_ready:10,originality:6},vs:66,tags:"teacher salary unemployment state economic activity labor market education spending human capital schools"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1574,7 +3142,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_coastline_income",title:"Coastal access per capita vs. median income by state",sub:"Coastal states are mostly wealthy â€” but Alaska has the most coast and is middle-income. The outlier map.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T408 Â· T727",section:"Geography Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["coastline_miles","median_household_income"],join:["real_per_capita_income"],sc:{emotional:5,relatability:6,surprise:7,tension:3,visual:7,data_ready:10,originality:8},vs:65,tags:"coastline income state Alaska coastal wealth geography access ocean outlier middle income correlation"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1590,7 +3174,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"map_state_gdp_per_capita_2023",title:"State GDP per capita 2023 â€” the economic geography of America",sub:"New York: $107K per person. Mississippi: $45K. A 2.4x gap in economic output within one country.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T715",section:"Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["state_gdp_per_capita"],join:["median_household_income","pct_bachelors","rep_pct"],sc:{emotional:7,relatability:8,surprise:5,tension:5,visual:9,data_ready:10,originality:3},vs:69,tags:"GDP per capita state economic output productivity wealth New York Mississippi California Texas income"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1606,7 +3206,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"mean_age_first_birth_trend",title:"Mean age at first birth by race 2000â€“2023",sub:"White women: average first birth at 30. Black women: 26. The age-at-first-birth gap drives economic divergence.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T80",section:"Births Deaths",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["birth_rate_state","total_fertility_rate_by_race"],join:["pct_births_unmarried","median_household_income"],sc:{emotional:7,relatability:7,surprise:6,tension:6,visual:7,data_ready:10,originality:7},vs:72,tags:"age first birth race women maternal fertility wealth inequality Black White Hispanic demographic social mobility career"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1622,7 +3238,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"abortion_drive_time",title:"Drive time to nearest abortion provider post-Dobbs by county",sub:"14 states have zero providers. Millions of women are 4+ hours from care. The access geography, county by county.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T454 Â· T87",section:"Elections Â· Births",ext:["Guttmacher Institute abortion provider locations (publicly available)"],vars:["rep_pct","pct_births_unmarried"],join:["birth_rate_state","teen_birth_rate","median_household_income"],sc:{emotional:10,relatability:9,surprise:8,tension:10,visual:9,data_ready:8,originality:9},vs:96,tags:"abortion Dobbs Roe reproductive rights women access SCOTUS Trump red states pro-choice pro-life drive time county pgRouting distance"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1638,7 +3270,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"nicu_drive_time",title:"Drive time to nearest NICU by county",sub:"How far is the nearest neonatal intensive care unit? For millions of rural families, it's too far.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T150 Â· T87",section:"Health Â· Births",ext:["CMS NICU facility data (publicly available via CMS.gov)"],vars:["total_medicare","pct_births_unmarried"],join:["birth_rate_state","teen_birth_rate","pct_on_medicaid"],sc:{emotional:10,relatability:8,surprise:8,tension:6,visual:9,data_ready:7,originality:8},vs:93,tags:"NICU neonatal intensive care drive time rural healthcare maternal infant mortality pregnancy county pgRouting access"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1654,7 +3302,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"redlining_home_values",title:"1930s HOLC redlining grades vs. current home price appreciation by neighborhood",sub:"Neighborhoods graded 'D' (hazardous) in the 1930s have appreciated 3x less than 'A' (best) neighborhoods since 1980.",type:"XREF",geo:"us_city",fmt:"City map",tbl:"T771",section:"Prices",ext:["Mapping Inequality HOLC shapefiles (mappinginequality.org â€” publicly available)"],vars:["home_price_index_2024","home_price_pct_change_2005_2024"],join:["median_household_income","pct_on_snap"],sc:{emotional:9,relatability:8,surprise:7,tension:9,visual:10,data_ready:8,originality:8},vs:89,tags:"redlining HOLC home values appreciation neighborhood race inequality housing discrimination 1930s history wealth gap Black"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1670,7 +3334,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"superfund_demographics",title:"Superfund toxic waste sites and nearby demographic composition",sub:"Who lives within 1 mile of a Superfund site â€” and why is it always the same demographic profile?",type:"XREF",geo:"us_county",fmt:"County choropleth",tbl:"T573 Â· T340",section:"Social Insurance Â· Law Enforcement",ext:["EPA Superfund National Priorities List (publicly available via epa.gov)"],vars:["total_transfers_per_capita","violent_crime_rate"],join:["median_household_income","pct_on_snap","rep_pct"],sc:{emotional:9,relatability:7,surprise:7,tension:9,visual:8,data_ready:7,originality:8},vs:85,tags:"Superfund toxic waste pollution race environmental justice EPA county demographics Black Hispanic poor health cancer"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1686,7 +3366,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"mental_health_provider_desert",title:"Mental health provider deserts by county",sub:"Millions of Americans live in counties with zero mental health providers. The crisis is geographic.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T576 Â· T150",section:"Social Insurance Â· Health",ext:["SAMHSA/HRSA provider locator data (publicly available via findtreatment.gov)"],vars:["pct_on_medicaid","total_medicare"],join:["state_unemployment_rate","pct_on_snap","median_household_income"],sc:{emotional:9,relatability:9,surprise:7,tension:7,visual:9,data_ready:7,originality:7},vs:87,tags:"mental health provider desert county rural access therapy counseling suicide depression opioids Medicaid shortage workforce"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1702,7 +3398,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"irs_migration_post_covid",title:"IRS county-to-county migration flows post-COVID 2020â€“2023",sub:"Florida +380K net households. California -300K. New York -180K. The great reshuffling, told through tax returns.",type:"MAP",geo:"us_state",fmt:"Dot map",tbl:"T727 Â· T629",section:"Income Â· Labor",ext:["IRS Statistics of Income county-to-county migration data (publicly available via irs.gov)"],vars:["median_household_income","state_unemployment_rate"],join:["home_price_index_2024","housing_permits_total"],sc:{emotional:8,relatability:9,surprise:8,tension:6,visual:9,data_ready:8,originality:9},vs:87,tags:"IRS migration flows COVID pandemic work from home Florida California New York Texas Tennessee moving population shift"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1718,7 +3430,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"dollar_general_vs_retail_sales",title:"Dollar General density vs. per capita retail sales by county",sub:"Counties with the highest Dollar General density have the lowest overall retail sales. Dollar General is the symptom of retail collapse.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T1090 Â· T576",section:"Retail Trade Â· Social Insurance",ext:["Dollar General store locations (publicly available via corporate disclosures and OpenStreetMap)"],vars:["retail_sales_per_capita","pct_on_snap"],join:["median_household_income","rep_pct"],sc:{emotional:8,relatability:9,surprise:8,tension:7,visual:9,data_ready:7,originality:9},vs:84,tags:"Dollar General retail desert food desert county SNAP poverty rural low income store closure Walmart Amazon economic collapse"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1734,7 +3462,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"brewery_church_ratio",title:"Brewery-to-church ratio by US county",sub:"Boulder CO: 18 breweries per church. Wayne County MS: 0.04. The cultural geography of America, one pint at a time.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T493 Â· T576",section:"State Govt Â· Social Insurance",ext:["IRS 501c3 nonprofit data for churches (publicly available via IRS EO BMF file)", "USDA brewery data / OpenStreetMap"],vars:["lottery_revenue_per_capita","pct_on_snap"],join:["rep_pct","median_household_income"],sc:{emotional:6,relatability:9,surprise:8,tension:5,visual:9,data_ready:7,originality:9},vs:81,tags:"brewery church ratio county culture Bible Belt South rural urban religion craft beer Colorado Mississippi funny lifestyle map"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1750,7 +3494,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"h3_airbnb_density_income",title:"Airbnb listing density vs. median income â€” who profits from the sharing economy?",sub:"Manhattan: 47K listings. Rural counties: near zero. The sharing economy concentrates wealth where wealth already is.",type:"XREF",geo:"us_county",fmt:"H3 hexbin map",tbl:"T727 Â· T726",section:"Income",ext:["Inside Airbnb public dataset (publicly available via insideairbnb.com)"],vars:["median_household_income","metro_per_capita_income"],join:["home_price_index_2024","housing_permits_total"],sc:{emotional:7,relatability:8,surprise:7,tension:6,visual:9,data_ready:7,originality:8},vs:77,tags:"Airbnb sharing economy density income inequality housing rental short-term gentrification H3 hexbin county wealth"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1766,7 +3526,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_income_change_vote_swing",title:"Income change 2016â€“2024 vs. vote swing by county",sub:"Counties where incomes grew fastest swung most toward Democrats. Counties where incomes stagnated swung toward Trump.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T727 Â· T454",section:"Income Â· Elections",ext:["MIT Election Lab county-level election results (publicly available via electionlab.mit.edu)"],vars:["median_household_income","rep_pct"],join:["state_unemployment_rate","pct_bachelors"],sc:{emotional:9,relatability:8,surprise:8,tension:9,visual:8,data_ready:8,originality:9},vs:87,tags:"income change vote swing county 2016 2024 Trump Democrat economic anxiety prosperity resentment political economy geography"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1782,7 +3558,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"missing_men_map",title:"The missing men map â€” skewed sex ratios by county",sub:"Some rural counties: 140 men per 100 women (prisons, military, mining). Some urban counties: 85 men per 100 women. The gender geography of America.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T629 Â· T340",section:"Labor Â· Crime",ext:["ACS sex ratio by county (publicly available via Census Bureau)"],vars:["state_unemployment_rate","violent_crime_rate"],join:["median_household_income","pct_on_snap"],sc:{emotional:7,relatability:7,surprise:9,tension:5,visual:9,data_ready:8,originality:9},vs:79,tags:"sex ratio men women county missing men prison military mining rural urban gender geography surprising America ACS Census"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1798,7 +3590,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_commute_time_home_prices",title:"Average commute time vs. home price index by county",sub:"The longer the commute, the cheaper the house. Americans are trading hours for square footage.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T771 Â· T727",section:"Housing Â· Labor",ext:["ACS commute time data (publicly available via Census Bureau)"],vars:["home_price_index_2024","median_household_income"],join:["housing_permits_total","state_unemployment_rate"],sc:{emotional:7,relatability:9,surprise:7,tension:5,visual:8,data_ready:8,originality:7},vs:75,tags:"commute time home prices county tradeoff suburb exurb housing affordability drive hours sacrifice square footage"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1814,7 +3622,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_internet_access_income",title:"Broadband internet access rate vs. median income by county",sub:"The digital divide is an income divide. Counties below $40K median income average 68% broadband adoption vs. 91% above $80K.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T727",section:"Income",ext:["FCC Form 477 broadband availability data (publicly available via fcc.gov)"],vars:["median_household_income"],join:["pct_bachelors","state_unemployment_rate","rep_pct"],sc:{emotional:8,relatability:8,surprise:6,tension:6,visual:8,data_ready:8,originality:5},vs:74,tags:"broadband internet access income digital divide county FCC rural urban low income high income economy education"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1830,7 +3654,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_crime_energy_boom",title:"Oil boom counties vs. violent crime rate â€” the resource curse",sub:"North Dakota Bakken counties saw violent crime triple during the 2010s oil boom. Prosperity and violence arrive together.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T340 Â· T975",section:"Crime Â· Energy",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by county (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)","EIA State Energy Data System: production + consumption by state (eia.gov â€” free API)"],vars:["violent_crime_rate","energy_consumption_per_capita"],join:["state_unemployment_rate","median_household_income"],sc:{emotional:8,relatability:6,surprise:9,tension:7,visual:8,data_ready:9,originality:9},vs:78,tags:"oil boom crime violence North Dakota Bakken fracking resource curse county energy workers transient population"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1846,7 +3686,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_murder_manufacturing_loss",title:"Manufacturing job loss 2000â€“2020 vs. murder rate increase by county",sub:"Counties that lost the most factory jobs had the sharpest increases in murder rates. The deindustrialization-violence pipeline.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T340 Â· T1064",section:"Crime Â· Manufactures",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by county (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)"],vars:["murder_rate","manufacturing_employment_trend"],join:["state_unemployment_rate","median_household_income"],sc:{emotional:9,relatability:7,surprise:8,tension:9,visual:8,data_ready:8,originality:9},vs:83,tags:"manufacturing job loss murder crime violence deindustrialization Rust Belt county despair poverty Ohio Michigan"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1862,7 +3718,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_education_trade_deficit",title:"State education spending vs. share of jobs lost to trade by state",sub:"States that invested least in education lost the most jobs to trade. The education-trade vulnerability connection.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T254 Â· T1310",section:"Education Â· Trade",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["pct_bachelors","trade_balance_goods"],join:["manufacturing_employment_trend","state_unemployment_rate"],sc:{emotional:8,relatability:7,surprise:7,tension:8,visual:7,data_ready:9,originality:8},vs:75,tags:"education trade deficit jobs lost globalization manufacturing low degree states Rust Belt vulnerability workers"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1878,7 +3750,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_teacher_salary_energy_state",title:"Teacher salary vs. energy sector GDP share by state",sub:"Oil-rich Wyoming pays teachers $67K. Oil-poor Massachusetts pays $95K. Energy wealth doesn't become school wealth.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T268 Â· T975",section:"Education Â· Energy",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","EIA State Energy Data System: production + consumption by state (eia.gov â€” free API)"],vars:["avg_teacher_salary","energy_consumption_per_capita"],join:["state_gdp_per_capita","rep_pct"],sc:{emotional:7,relatability:6,surprise:8,tension:6,visual:7,data_ready:10,originality:8},vs:70,tags:"teacher salary energy wealth state Wyoming oil gas school funding Massachusetts paradox resource wealth education"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1894,7 +3782,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_life_expectancy_income_state",title:"Life expectancy vs. median income by state â€” the 8-year gap",sub:"Colorado: life expectancy 80.8. Mississippi: 74.4. A 6-year gap that maps almost perfectly onto income.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T141 Â· T727",section:"Health Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)"],vars:["per_capita_health_spending","median_household_income"],join:["pct_on_medicaid","rep_pct","violent_crime_rate"],sc:{emotional:9,relatability:8,surprise:6,tension:8,visual:8,data_ready:9,originality:5},vs:79,tags:"life expectancy income state inequality Mississippi Colorado gap wealth health outcomes poverty race mortality"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1910,7 +3814,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_prescription_drug_trade",title:"US pharmaceutical trade balance vs. domestic prescription drug CPI",sub:"The US imports $140B in pharmaceuticals while domestic drug prices triple. The trade-price paradox in medicine.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770 Â· T1310",section:"Health Â· Trade",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)"],vars:["prescription_drugs_cpi","trade_balance_goods"],join:["per_capita_health_spending","health_insurance_cpi"],sc:{emotional:8,relatability:7,surprise:8,tension:7,visual:7,data_ready:9,originality:9},vs:74,tags:"pharmaceutical trade balance drug prices CPI import export prescription insulin price gouging trade policy health"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1926,7 +3846,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_port_tonnage_trade_deficit",title:"US port tonnage by direction â€” inbound vs. outbound and the trade gap",sub:"US ports handle 3x more inbound tonnage than outbound. The physical manifestation of the $1.2T trade deficit.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T1122 Â· T1306",section:"Transportation Â· Trade",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["port_total_tons","current_account_balance"],join:["balance_on_goods","trade_balance_goods"],sc:{emotional:7,relatability:6,surprise:8,tension:7,visual:8,data_ready:10,originality:9},vs:73,tags:"port tonnage trade deficit inbound outbound import export physical goods supply chain visualization"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1942,7 +3878,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_airport_traffic_income",title:"Air travel frequency vs. median income by metro",sub:"High-income metros have 4x more flight departures per capita. Flying is a class marker.",type:"XREF",geo:"us_metro",fmt:"Scatter plot",tbl:"T1112 Â· T726",section:"Transportation Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by metro (apps.bea.gov â€” free)","BLS LAUS: unemployment + labor force by metro (bls.gov â€” free)"],vars:["passengers_enplaned","metro_per_capita_income"],join:["median_household_income","pct_bachelors"],sc:{emotional:7,relatability:8,surprise:6,tension:5,visual:8,data_ready:10,originality:6},vs:71,tags:"air travel income class flying metro wealth inequality passengers airports frequency business travel leisure"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1958,7 +3910,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_transfers_elevation",title:"Federal transfers per capita vs. mean elevation by state",sub:"The highest states get the most federal money. Geography and dependency overlap in the mountain West.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T573 Â· T410",section:"Social Insurance Â· Geography",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["total_transfers_per_capita","mean_elevation"],join:["rep_pct","median_household_income"],sc:{emotional:5,relatability:4,surprise:8,tension:4,visual:7,data_ready:10,originality:9},vs:64,tags:"federal transfers elevation geography mountain West Wyoming Alaska Colorado government spending dependency altitude"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1974,7 +3942,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_rd_manufacturing_wages",title:"Business R&D spending vs. manufacturing hourly wages by state",sub:"High-R&D states pay factory workers more. Innovation raises the floor for blue-collar wages.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T844 Â· T1067",section:"Science Â· Manufactures",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["rd_pct_gdp","manufacturing_hourly_wages_state"],join:["median_household_income","pct_bachelors"],sc:{emotional:7,relatability:6,surprise:7,tension:5,visual:7,data_ready:10,originality:8},vs:70,tags:"R&D research manufacturing wages blue collar innovation states Washington Massachusetts factory workers pay floor"}
+
+
+
+
+
+
+
+
 
 
 
@@ -1990,7 +3974,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"university_rd_by_state",title:"University R&D spending by state 2023",sub:"California: $11.5B in university R&D. Wyoming: $200M. The knowledge economy is geographically concentrated.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T846",section:"Science",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["rd_pct_gdp"],join:["pct_bachelors","state_gdp_per_capita","median_household_income"],sc:{emotional:6,relatability:6,surprise:7,tension:4,visual:9,data_ready:10,originality:6},vs:68,tags:"university R&D research spending state California Wyoming knowledge economy geography concentration STEM innovation"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2006,7 +4006,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"fishing_employment_decline",title:"Commercial fishing employment 1990â€“2024: the long collapse",sub:"From 280K jobs to under 90K. Automation, regulation, and climate change hollowed out the fishing industry.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T942",section:"Fishing",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["port_catch_lbs","species_landed_value"],join:["port_catch_value"],sc:{emotional:7,relatability:5,surprise:7,tension:6,visual:7,data_ready:9,originality:7},vs:67,tags:"commercial fishing employment decline 1990 2024 jobs workers industry collapse automation climate change regulations"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2022,7 +4038,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"cpi_shelter_vs_food",title:"Shelter CPI vs. food at home CPI 2000â€“2024 â€” the two-headed squeeze",sub:"Shelter up 234%. Food at home up 307%. The two biggest household costs both tripled. The American budget in crisis.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["housing_cpi","food_at_home_cpi","all_items_cpi"],join:["eggs_cpi","daycare_preschool_cpi"],sc:{emotional:9,relatability:10,surprise:7,tension:8,visual:8,data_ready:10,originality:7},vs:84,tags:"shelter food inflation CPI household squeeze budget crisis housing grocery 2000 2024 rent homeowner grocery"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2038,7 +4070,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"cpi_education_vs_recreation",title:"Education CPI vs. recreation CPI 2000â€“2024 â€” what got cheaper and what didn't",sub:"College tuition CPI: 937. Recreation/entertainment: 141. One thing Americans prioritize priced them out.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["college_tuition_cpi","all_items_cpi"],join:["daycare_preschool_cpi","student_loans_outstanding"],sc:{emotional:7,relatability:8,surprise:8,tension:5,visual:8,data_ready:10,originality:7},vs:74,tags:"education recreation CPI comparison tuition entertainment inflation cost culture leisure cheaper expensive tradeoff budget"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2054,7 +4102,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"cpi_winners_losers",title:"The 10 most and least inflated consumer categories 2000â€“2024",sub:"Hospital services: +414%. Wireless phones: -53%. The full spectrum of American price changes in one chart.",type:"RANK",geo:"us_national",fmt:"Bar chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["hospital_services_cpi","college_tuition_cpi","tobacco_cpi","motor_vehicle_insurance_cpi","all_items_cpi","daycare_preschool_cpi"],join:[],sc:{emotional:8,relatability:10,surprise:9,tension:5,visual:10,data_ready:10,originality:8},vs:85,tags:"CPI inflation winners losers categories hospitals phones wireless college tobacco cars food 2000 2024 full spectrum"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2070,7 +4134,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"map_where_people_work_born_same_county",title:"Counties where people still live and work where they were born",sub:"Some Appalachian counties: 70%+ born and still living locally. Some DC suburbs: under 5%. The mobility divide.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T629",section:"Labor",ext:["ACS place of birth vs. residence data (publicly available via Census Bureau)"],vars:["state_unemployment_rate","median_household_income"],join:["population_pct_change","pct_bachelors"],sc:{emotional:7,relatability:8,surprise:8,tension:4,visual:9,data_ready:7,originality:9},vs:76,tags:"born same county live work mobility immobility Appalachia DC suburb geographic roots community rootedness stayers movers"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2086,7 +4166,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"counties_where_women_outlive_men_most",title:"The counties where women outlive men the most â€” and the least",sub:"Some rural Southern counties: women live 9+ years longer than men. Manhattan: gap is under 4 years. The mortality divide.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T629 Â· T340",section:"Labor Â· Crime",ext:["CDC life expectancy by county and sex (publicly available via CDC Wonder)"],vars:["state_unemployment_rate","violent_crime_rate"],join:["median_household_income","pct_on_snap"],sc:{emotional:8,relatability:7,surprise:8,tension:6,visual:9,data_ready:7,originality:8},vs:77,tags:"life expectancy gender gap women men county South rural mortality divide CDC age death health inequality"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2102,7 +4198,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"breweries_per_capita_ranked",title:"Breweries per capita by state â€” the craft beer geography",sub:"Vermont: 12 breweries per 100K people. Mississippi: 0.8. The beer map is also the education map.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T493",section:"State Govt",ext:["USDA brewery data / TTB permit registry (publicly available)"],vars:["lottery_revenue_per_capita"],join:["pct_bachelors","median_household_income","rep_pct"],sc:{emotional:5,relatability:8,surprise:7,tension:2,visual:9,data_ready:8,originality:7},vs:70,tags:"breweries per capita craft beer state Vermont Mississippi education income blue red state geography beer culture"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2118,7 +4230,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_income_change_vs_birth_rate",title:"Income change 2010â€“2023 vs. birth rate change by state",sub:"States where incomes rose fastest had the sharpest birth rate declines. Prosperity is the best contraceptive.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T727 Â· T81",section:"Income Â· Births",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["median_household_income","birth_rate_state"],join:["total_fertility_rate_by_race","pct_bachelors"],sc:{emotional:8,relatability:8,surprise:8,tension:5,visual:7,data_ready:10,originality:8},vs:77,tags:"income birth rate fertility prosperity demographic transition wealthy states fewer children low income more children"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2134,7 +4262,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"world_military_spending_gdp",title:"Military spending as % of GDP by country 2024",sub:"Ukraine: 37% of GDP on defense. US: 3.4%. Russia: 7.1%. Israel: 8.2%. The war economy map.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"T543",section:"National Security",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["defense_budget_total","us_troops_overseas"],join:["rd_pct_gdp","trade_balance_goods"],sc:{emotional:8,relatability:6,surprise:7,tension:9,visual:9,data_ready:9,originality:6},vs:76,tags:"military spending GDP country Ukraine US Russia Israel war defense 2024 global security NATO arms burden"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2150,7 +4294,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"us_vs_peer_nations_inequality",title:"Income inequality (Gini) â€” US vs. peer nations",sub:"US Gini: 0.41. Canada: 0.31. Germany: 0.29. Denmark: 0.28. America is the most unequal wealthy democracy.",type:"RANK",geo:"worldwide",fmt:"Ranked list",tbl:"T727",section:"Income",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["median_household_income","pct_over_200k"],join:["pct_families_own_stocks","corporate_profits"],sc:{emotional:8,relatability:7,surprise:7,tension:8,visual:8,data_ready:9,originality:5},vs:75,tags:"income inequality Gini US Canada Germany Denmark international comparison wealthy democracy most unequal peer nations"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2166,7 +4326,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_cycling_infrastructure_income",title:"Bike commuting rate vs. median income by city",sub:"Portland OR: 7% bike commute. Davis CA: 20%. Car-free transportation is a wealth signal, not a poverty one.",type:"XREF",geo:"us_city",fmt:"Scatter plot",tbl:"T727 Â· T629",section:"Income Â· Transportation",ext:["ACS commuting mode share by city (publicly available via Census Bureau)"],vars:["metro_per_capita_income","state_unemployment_rate"],join:["housing_cpi_city","pct_bachelors"],sc:{emotional:6,relatability:7,surprise:7,tension:4,visual:7,data_ready:7,originality:7},vs:67,tags:"cycling bike commute income city Portland Davis wealth infrastructure green transportation mode share Census ACS"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2182,7 +4358,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"road_trip_america_county_choropleth",title:"Counties Americans drive through vs. counties Americans live in",sub:"The Great Plains: vast, road-tripped, sparsely lived. The coasts: dense, flown over, rarely driven. The two Americas.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T1126",section:"Transportation",ext:["FHWA annual highway traffic volume by county (publicly available via fhwa.dot.gov)"],vars:["pct_bridges_poor"],join:["waterway_freight_tons","population_pct_change"],sc:{emotional:6,relatability:8,surprise:8,tension:2,visual:10,data_ready:7,originality:9},vs:72,tags:"road trip drive through county highway traffic Great Plains coast density live vs drive America geography curious visual"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2198,7 +4390,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_mining_fatalities_income",title:"Mining fatality rate vs. median income by state",sub:"The states where mining is most dangerous are also the poorest. Risk and poverty are the same map.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T949 Â· T727",section:"Mining Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["coal_production_index","median_household_income"],join:["state_unemployment_rate","rep_pct"],sc:{emotional:8,relatability:5,surprise:7,tension:7,visual:7,data_ready:9,originality:7},vs:70,tags:"mining fatalities income poverty dangerous states Appalachia Wyoming coal metal risk MSHA workers safety"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2214,7 +4422,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_construction_spending_income",title:"Construction spending growth vs. median income by state",sub:"States building the most are getting richer. The construction-prosperity feedback loop.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T1013 Â· T727",section:"Construction Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["housing_permits_total","median_household_income"],join:["population_pct_change","home_price_index_2024"],sc:{emotional:6,relatability:7,surprise:6,tension:4,visual:7,data_ready:9,originality:6},vs:66,tags:"construction spending income state prosperity feedback loop building housing permits Florida Texas economy growth"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2230,7 +4454,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"data_center_construction_boom",title:"Data center construction spending 2015â€“2024 â€” the AI infrastructure gold rush",sub:"Data center construction went from $15B to $49B in 10 years. The physical infrastructure of the AI economy.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T1013",section:"Construction",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["data_center_construction"],join:["rd_pct_gdp","state_gdp_per_capita"],sc:{emotional:7,relatability:7,surprise:8,tension:5,visual:8,data_ready:10,originality:9},vs:74,tags:"data center construction AI infrastructure boom 2024 investment spending physical cloud computing hyperscaler Microsoft Amazon"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2246,7 +4486,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_foreign_born_pct_income",title:"Foreign-born population % vs. median income by state",sub:"High-immigrant states are mostly high-income states. The economic contribution of immigration, state by state.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T727 Â· Population PDF",section:"Income Â· Population",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["median_household_income","population_pct_change"],join:["pct_bachelors","rep_pct","state_unemployment_rate"],sc:{emotional:8,relatability:7,surprise:7,tension:7,visual:7,data_ready:8,originality:6},vs:74,tags:"immigrants foreign born income state economic contribution California New York Texas wealth prosperity vote immigration policy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2262,7 +4518,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_immigration_snap_paradox",title:"Immigration rate vs. SNAP enrollment by state â€” immigrants don't take benefits",sub:"High-immigrant states have LOWER SNAP enrollment. Immigrants use fewer benefits per capita than native-born residents.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T576 Â· Population PDF",section:"Social Insurance Â· Population",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["pct_on_snap","population_pct_change"],join:["median_household_income","rep_pct","pct_bachelors"],sc:{emotional:9,relatability:8,surprise:9,tension:9,visual:8,data_ready:8,originality:9},vs:87,tags:"immigration SNAP food stamps paradox immigrants benefits usage native born myth welfare state California Texas data truth"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2278,7 +4550,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"federal_interest_vs_everything",title:"Federal interest payments vs. education, defense, and NASA 2024",sub:"$880B in debt interest. $873B in defense. $306B in education. $25B in NASA. Interest now exceeds defense.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T512",section:"Federal Government Finances",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["federal_outlays_by_function","federal_debt_pct_gdp"],join:["defense_budget_total","college_tuition_cpi"],sc:{emotional:9,relatability:8,surprise:9,tension:9,visual:9,data_ready:10,originality:8},vs:86,tags:"federal interest debt defense education NASA 2024 exceeds comparison spending priorities fiscal crisis $880B Congress"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2294,7 +4582,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"federal_debt_by_president",title:"Federal debt added by each US president 1981â€“2024",sub:"Reagan +189%. Obama +88%. Trump +39% in 4 years. Biden +32%. The fiscal record vs. the fiscal rhetoric.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T509",section:"Federal Government Finances",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["federal_debt_pct_gdp","federal_outlays_by_function"],join:["defense_budget_total"],sc:{emotional:9,relatability:8,surprise:8,tension:9,visual:9,data_ready:10,originality:7},vs:84,tags:"federal debt president Reagan Bush Obama Trump Biden fiscal record spending deficit added history comparison rhetoric reality"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2310,7 +4614,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_lottery_education_spending",title:"Lottery revenue per capita vs. per-pupil education spending by state",sub:"States with the most lottery revenue don't spend more on schools. The lottery earmark is largely a shell game.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T493 Â· T258",section:"State Govt Â· Education",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["lottery_revenue_per_capita","expenditure_per_pupil"],join:["pct_on_snap","median_household_income"],sc:{emotional:8,relatability:7,surprise:8,tension:7,visual:7,data_ready:10,originality:8},vs:75,tags:"lottery education spending shell game earmark schools promise myth revenue displacement fungibility state Georgia Florida"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2326,7 +4646,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_sports_betting_lottery_income",title:"Sports betting + lottery revenue vs. median income by state",sub:"Lower-income states spend more per capita on gambling. The regressive tax is growing with sports betting.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T493 Â· T727",section:"State Govt Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["lottery_revenue_per_capita","median_household_income"],join:["sports_betting_revenue","pct_on_snap","rep_pct"],sc:{emotional:8,relatability:8,surprise:7,tension:7,visual:8,data_ready:10,originality:7},vs:77,tags:"gambling lottery sports betting income regressive tax poor spending state desperation hope poverty New Jersey Illinois revenue"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2342,7 +4678,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"manufacturing_wages_by_industry_2024",title:"Average manufacturing wages by industry 2024 â€” the pay hierarchy",sub:"Petroleum/coal products workers: $48/hr. Apparel workers: $17/hr. The same 'factory job' has a 3x pay gap.",type:"RANK",geo:"us_national",fmt:"Ranked list",tbl:"T1067",section:"Manufactures",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["manufacturing_hourly_wages_state"],join:["manufacturing_employment_trend"],sc:{emotional:7,relatability:7,surprise:8,tension:4,visual:9,data_ready:10,originality:7},vs:73,tags:"manufacturing wages industry hierarchy petroleum apparel pay gap factory job not equal 2024 sector worker wages"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2358,7 +4710,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_retail_sales_snap",title:"Per capita retail sales vs. SNAP enrollment by state â€” the retail desert",sub:"The lowest retail-sales states have the highest SNAP rates. Where there's no commerce, there's hunger.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T1090 Â· T576",section:"Retail Â· Social Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["retail_sales_per_capita","pct_on_snap"],join:["median_household_income","rep_pct"],sc:{emotional:7,relatability:7,surprise:7,tension:6,visual:7,data_ready:10,originality:7},vs:70,tags:"retail sales SNAP food stamps state desert low commerce hunger food insecurity Mississippi Arkansas poor economy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2374,7 +4742,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"ecommerce_displacement_employment",title:"E-commerce growth vs. retail employment 2000â€“2024 â€” the jobs that disappeared",sub:"E-commerce went from 1% to 22% of retail. 700,000 retail jobs were displaced. The Amazon effect in two lines.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1093 Â· T629",section:"Retail Â· Labor",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["ecommerce_sales","state_unemployment_rate"],join:["retail_sales_per_capita"],sc:{emotional:8,relatability:8,surprise:7,tension:7,visual:8,data_ready:9,originality:7},vs:76,tags:"e-commerce retail employment displacement Amazon 2000 2024 jobs displaced workers stores closures automation internet shopping"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2390,7 +4774,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_corporate_profit_vs_homelessness",title:"Corporate profit growth vs. homelessness rate by state",sub:"Corporate profits tripled since 2000. Homelessness in California, Washington, and Oregon also tripled. The divergence is geographic.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T793 Â· T727",section:"Business Â· Income",ext:["HUD Annual Homeless Assessment Report by state (publicly available via hud.gov)"],vars:["corporate_profits","median_household_income"],join:["home_price_index_2024","housing_permits_total"],sc:{emotional:9,relatability:8,surprise:8,tension:9,visual:8,data_ready:8,originality:8},vs:84,tags:"corporate profits homelessness state California Washington Oregon inequality housing affordability tent cities wealth divergence"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2406,7 +4806,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"map_gun_deaths_by_state",title:"Gun death rate by state 2023 â€” the full picture including suicide",sub:"Mississippi: 33 gun deaths per 100K. Hawaii: 3.4. The 10x gap the debate always misses.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T340",section:"Law Enforcement",ext:["CDC gun death data by state (publicly available via CDC WONDER)"],vars:["violent_crime_rate","murder_rate"],join:["rep_pct","median_household_income","pct_bachelors"],sc:{emotional:9,relatability:8,surprise:8,tension:9,visual:9,data_ready:8,originality:6},vs:84,tags:"gun deaths state 2023 suicide total Mississippi Hawaii rate inequality CDC policy debate full picture Republican vote"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2422,7 +4838,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_social_mobility_parents_income",title:"Economic mobility â€” what your parents earned predicts what you'll earn",sub:"Kids born in the bottom quintile in Mississippi have a 4.5% chance of reaching the top quintile. In Utah: 11.5%.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T727",section:"Income",ext:["Raj Chetty Opportunity Atlas mobility data (publicly available via opportunityinsights.org)"],vars:["median_household_income","pct_under_25k"],join:["pct_bachelors","rep_pct","violent_crime_rate"],sc:{emotional:10,relatability:9,surprise:8,tension:9,visual:9,data_ready:8,originality:7},vs:90,tags:"social mobility income parents children quintile Mississippi Utah opportunity geography class race American dream myth data"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2438,7 +4870,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"us_incarceration_vs_world",title:"US incarceration rate vs. peer nations â€” we are the outlier",sub:"US: 531 per 100K incarcerated. Canada: 104. Germany: 69. UK: 126. The American exception in criminal justice.",type:"RANK",geo:"worldwide",fmt:"Ranked list",tbl:"T340",section:"Law Enforcement",ext:["World Prison Brief incarceration data (publicly available via prisonstudies.org)"],vars:["violent_crime_rate","murder_rate"],join:["rep_pct","median_household_income"],sc:{emotional:9,relatability:8,surprise:8,tension:8,visual:9,data_ready:8,originality:6},vs:82,tags:"incarceration prison rate US world comparison Canada Germany UK outlier criminal justice mass incarceration policy race"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2454,7 +4902,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"us_vacation_days_vs_world",title:"Mandated paid vacation days by country â€” the US has zero",sub:"France: 30 mandated days. Germany: 24. Japan: 10. United States: 0. The only wealthy country with no minimum.",type:"RANK",geo:"worldwide",fmt:"Ranked list",tbl:"T629",section:"Labor",ext:["OECD employment conditions data (publicly available via oecd.org)"],vars:["state_unemployment_rate","female_lfp_rate"],join:["median_household_income","rd_pct_gdp"],sc:{emotional:8,relatability:9,surprise:8,tension:6,visual:9,data_ready:8,originality:5},vs:79,tags:"vacation days mandated paid leave US zero France Germany Japan international comparison labor rights work life balance"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2470,7 +4934,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"soccer_participation_vs_income",title:"Youth soccer participation rate vs. median income by county",sub:"Youth soccer is a wealthy-suburb sport. Participation collapses in low-income areas â€” the pay-to-play barrier.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T727 Â· T1273",section:"Income Â· Recreation",ext:["US Youth Soccer participation data / ACS income by county (publicly available)"],vars:["median_household_income","sports_attendance_12mo"],join:["pct_bachelors","rep_pct"],sc:{emotional:6,relatability:7,surprise:7,tension:5,visual:8,data_ready:7,originality:8},vs:69,tags:"soccer youth participation income county pay to play wealthy suburb barrier sport access inequality race class travel team"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2486,7 +4966,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"bike_commute_mode_share_trend",title:"Bike commuting mode share 2005â€“2024 â€” the boom that wasn't",sub:"Bike commuting peaked at 0.6% in 2014 and fell back to 0.4% in 2024. Despite billions in infrastructure.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T629",section:"Labor",ext:["ACS commuting mode share by year (publicly available via Census Bureau)"],vars:["state_unemployment_rate"],join:["housing_cpi_city","metro_per_capita_income"],sc:{emotional:6,relatability:7,surprise:7,tension:4,visual:7,data_ready:8,originality:7},vs:66,tags:"bike commute mode share trend 2005 2024 failed peak cycling infrastructure spending decline car dependence urban planning"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2502,7 +4998,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"life_expectancy_by_state",title:"Life expectancy at birth by state 2021 â€” the 8-year gap",sub:"Hawaii: 79.9 years. Mississippi: 71.9. West Virginia: 72.8. The geography of how long Americans live.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T105",section:"Births Deaths",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)"],vars:["birth_rate_state","total_fertility_rate_by_race"],join:["median_household_income","pct_on_snap","rep_pct"],sc:{emotional:9,relatability:9,surprise:7,tension:8,visual:9,data_ready:10,originality:5},vs:83,tags:"life expectancy state 2021 Hawaii Mississippi West Virginia gap income poverty health racial inequality geography mortality"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2518,7 +5030,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"death_rate_cause_over_time",title:"Death rates by major cause 1960â€“2023 â€” what's killing Americans now vs. then",sub:"Heart disease down 65%. Alzheimer's up 700%. Cancer largely flat. The cause-of-death revolution.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T117",section:"Births Deaths",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["birth_rate_state","total_fertility_rate_by_race"],join:["per_capita_health_spending","pct_on_medicaid"],sc:{emotional:8,relatability:8,surprise:8,tension:6,visual:9,data_ready:10,originality:6},vs:78,tags:"death cause heart disease Alzheimer cancer 1960 2023 trend decline rise history mortality shift healthcare medicine"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2534,7 +5062,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"maternal_mortality_by_race",title:"Maternal mortality rate by race 2018â€“2023",sub:"Black maternal mortality: 37.1 per 100K live births. White: 14.5. Hispanic: 11.3. The 2.5x racial gap.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T116",section:"Births Deaths",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["birth_rate_state","pct_births_unmarried"],join:["pct_on_medicaid","per_capita_health_spending","teen_birth_rate"],sc:{emotional:10,relatability:8,surprise:7,tension:9,visual:8,data_ready:10,originality:6},vs:85,tags:"maternal mortality race Black White Hispanic 2023 gap childbirth death obstetric healthcare inequality racial systematic bias"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2550,7 +5094,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"hate_crimes_trend",title:"Hate crimes 2010â€“2023 â€” the surge that nobody calls a trend",sub:"Hate crime incidents: 6,628 in 2010. 11,862 in 2023. An 79% increase. Anti-Black hate crimes still #1.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T348",section:"Law Enforcement",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["violent_crime_rate","murder_rate"],join:["rep_pct","median_household_income"],sc:{emotional:9,relatability:7,surprise:8,tension:9,visual:8,data_ready:10,originality:7},vs:82,tags:"hate crimes trend 2010 2023 surge 79% increase anti-Black anti-Asian anti-LGBTQ racial religion bias incidents FBI UCR"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2566,7 +5126,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"bankruptcy_filings_by_state",title:"Personal bankruptcy filings by state 2024 â€” the financial distress map",sub:"Tennessee: 420 filings per 100K residents. North Dakota: 47. The 9x bankruptcy rate gap across America.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T816",section:"Business Enterprise",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["mortgage_delinquency_rate","credit_card_rate_all_accounts"],join:["median_household_income","state_unemployment_rate","rep_pct"],sc:{emotional:8,relatability:8,surprise:8,tension:7,visual:9,data_ready:10,originality:7},vs:78,tags:"bankruptcy filings state 2024 Tennessee North Dakota financial distress debt households personal chapter 7 13 rate per capita"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2582,7 +5158,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_incarceration_race",title:"Incarceration rate by race and state â€” the racial disparity map",sub:"Black incarceration rate: 4.8x white rate nationally. But in some states the gap is 10x or more.",type:"MAP",geo:"us_state",fmt:"Bivariate choropleth",tbl:"T389 Â· T388",section:"Law Enforcement",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)"],vars:["violent_crime_rate","murder_rate"],join:["median_household_income","rep_pct","pct_on_snap"],sc:{emotional:10,relatability:7,surprise:7,tension:9,visual:9,data_ready:9,originality:7},vs:85,tags:"incarceration race Black White disparity 4.8x state gap racial inequality criminal justice systemic bias mass incarceration"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2598,7 +5190,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"minority_owned_firms_by_type",title:"Minority-owned employer firms: share of all businesses by state",sub:"1.33M minority-owned firms. $2.1T in revenue. 10.8M employees. The minority business economy mapped.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T810",section:"Business Enterprise",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["corporate_profits","state_gdp_per_capita"],join:["median_household_income","pct_bachelors","rep_pct"],sc:{emotional:7,relatability:7,surprise:7,tension:5,visual:9,data_ready:10,originality:7},vs:72,tags:"minority owned firms businesses state employer revenue employees Black Hispanic Asian diversity business economy share geography"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2614,7 +5222,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"patents_issued_by_state",title:"Patents issued per capita by state 2023",sub:"Massachusetts: 4.2 patents per 1,000 residents. Mississippi: 0.3. The innovation geography of America.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T818",section:"Science & Technology",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["rd_pct_gdp"],join:["pct_bachelors","median_household_income","state_gdp_per_capita"],sc:{emotional:6,relatability:6,surprise:7,tension:5,visual:9,data_ready:10,originality:7},vs:69,tags:"patents per capita state innovation Massachusetts Mississippi geography knowledge economy tech California New York Texas USPTO"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2630,7 +5254,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_patents_income_state",title:"Patents per capita vs. median income by state",sub:"States that innovate more earn more. The patent-prosperity correlation is 0.78.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T818 Â· T727",section:"Science Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["rd_pct_gdp","median_household_income"],join:["pct_bachelors","state_gdp_per_capita","rep_pct"],sc:{emotional:7,relatability:6,surprise:7,tension:5,visual:7,data_ready:10,originality:7},vs:69,tags:"patents income state prosperity correlation 0.78 innovation wealth Massachusetts California New York Mississippi knowledge economy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2646,7 +5286,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"outdoor_recreation_by_state",title:"Outdoor recreation sector gross output by state 2023",sub:"Colorado: $32B outdoor recreation economy. California: $86B. Montana: $10B on just 1M people.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T1264",section:"Arts Recreation",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["annual_attendance","sports_attendance_12mo"],join:["national_forest_acres","median_household_income","coastline_miles"],sc:{emotional:6,relatability:8,surprise:8,tension:3,visual:9,data_ready:10,originality:8},vs:73,tags:"outdoor recreation economy state Colorado California Montana GDP per capita hiking skiing fishing biking nature tourism industry"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2662,7 +5318,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"wildlife_recreation_spending",title:"Wildlife-related recreation spending 2022 â€” hunting, fishing, wildlife watching",sub:"Americans spent $182B on wildlife recreation in 2022. Wildlife watching alone: $55B. More than the NFL.",type:"CHART",geo:"us_national",fmt:"Treemap",tbl:"T1281",section:"Arts Recreation",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["sports_attendance_12mo","annual_attendance"],join:["national_forest_acres","coastline_miles"],sc:{emotional:5,relatability:7,surprise:8,tension:2,visual:9,data_ready:10,originality:8},vs:68,tags:"wildlife recreation spending 2022 hunting fishing wildlife watching $182B birding nature outdoor economy NFL comparison surprising"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2678,7 +5350,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"arts_attendance_by_type_income",title:"Arts event attendance by income level â€” who goes to the symphony",sub:"Symphony and opera attendance: 40% from households over $100K. Sports events: much more democratic.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T1262",section:"Arts Recreation",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["annual_attendance","sports_attendance_12mo","state_arts_appropriation"],join:["median_household_income","pct_bachelors"],sc:{emotional:7,relatability:8,surprise:7,tension:5,visual:8,data_ready:10,originality:8},vs:74,tags:"arts attendance income symphony opera jazz museum sports concert event class wealthy poor who goes culture access"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2694,7 +5382,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"digital_economy_gdp_share",title:"Digital economy share of US GDP 2017â€“2023",sub:"The digital economy grew from 9.4% to 10.3% of GDP. $2.6T in value added â€” but only 7M workers.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T1169",section:"Information",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["newspaper_print_revenue","newspaper_digital_revenue"],join:["rd_pct_gdp","state_gdp_per_capita","median_household_income"],sc:{emotional:7,relatability:7,surprise:7,tension:6,visual:8,data_ready:10,originality:7},vs:72,tags:"digital economy GDP share 2017 2023 10.3% value added 7M workers productivity automation technology sector growth"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2710,7 +5414,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"broadband_adoption_by_income",title:"Home broadband access by income 2024 â€” the digital divide is an income divide",sub:"Households over $100K: 97% have home broadband. Under $25K: 57%. The digital divide in hard numbers.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T1187",section:"Information",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["newspaper_print_revenue"],join:["median_household_income","pct_on_snap"],sc:{emotional:8,relatability:8,surprise:6,tension:6,visual:8,data_ready:10,originality:6},vs:74,tags:"broadband internet home access income 2024 97% 57% digital divide inequality low income connectivity work school access"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2726,7 +5446,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"wireless_vs_landline_subscribers",title:"Wireless vs. landline telephone subscribers 2000â€“2024",sub:"Landlines: 190M in 2000. Under 30M today. Wireless: 350M. The most complete technology replacement ever.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1184",section:"Information",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["all_items_cpi"],join:[],sc:{emotional:5,relatability:8,surprise:6,tension:2,visual:8,data_ready:10,originality:5},vs:62,tags:"wireless landline telephone subscribers 2000 2024 replacement technology mobile cell phone 190M 30M history fastest replacement"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2742,7 +5478,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"metro_income_inequality_ranked",title:"Income inequality (Gini) by metro area â€” the most and least equal cities",sub:"New York: Gini 0.50. Salt Lake City: 0.42. The cities where inequality is built into the geography.",type:"RANK",geo:"us_metro",fmt:"Ranked list",tbl:"T726",section:"Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by metro (apps.bea.gov â€” free)","BLS LAUS: unemployment + labor force by metro (bls.gov â€” free)"],vars:["metro_per_capita_income"],join:["median_household_income","pct_bachelors"],sc:{emotional:8,relatability:8,surprise:7,tension:7,visual:9,data_ready:9,originality:6},vs:76,tags:"metro income inequality Gini New York Salt Lake City city geography urban economics wealth gap most least equal ranked"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2758,7 +5510,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"metro_population_growth_ranked",title:"Fastest and slowest growing metros 2015â€“2024",sub:"Austin +34%. Phoenix +28%. San Francisco -4%. The metro population boom-bust in one ranking.",type:"RANK",geo:"us_metro",fmt:"Ranked list",tbl:"Metropolitan PDF",section:"Population",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by metro (apps.bea.gov â€” free)","BLS LAUS: unemployment + labor force by metro (bls.gov â€” free)"],vars:["population_pct_change","metro_per_capita_income"],join:["housing_permits_total","home_price_index_2024"],sc:{emotional:7,relatability:8,surprise:7,tension:5,visual:9,data_ready:9,originality:5},vs:72,tags:"metro population growth 2015 2024 Austin Phoenix San Francisco boom bust ranked fastest slowest migration suburban urban shift"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2774,7 +5542,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"metro_job_concentration_single_employer",title:"Metros most dependent on a single employer or industry",sub:"Detroit and autos. Houston and oil. San Jose and tech. The economic monoculture risk map.",type:"RANK",geo:"us_metro",fmt:"Ranked list",tbl:"T630 Â· T726",section:"Labor Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by metro (apps.bea.gov â€” free)","BLS LAUS: unemployment + labor force by metro (bls.gov â€” free)"],vars:["metro_unemployment_rate","metro_per_capita_income"],join:["median_household_income","state_unemployment_rate"],sc:{emotional:7,relatability:7,surprise:8,tension:6,visual:8,data_ready:8,originality:8},vs:72,tags:"metro single employer industry concentration monoculture Detroit autos Houston oil San Jose tech risk vulnerability economic"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2790,7 +5574,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_restaurant_density_obesity",title:"Restaurant density vs. obesity rate by county â€” the food environment link",sub:"Counties with the most fast food per capita have obesity rates 8 points higher than counties with the least.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T1303 Â· T576",section:"Health Â· Accommodation",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by county (bls.gov â€” free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov â€” free)"],vars:["per_capita_health_spending","pct_on_medicaid"],join:["median_household_income","pct_on_snap"],sc:{emotional:8,relatability:8,surprise:7,tension:7,visual:8,data_ready:8,originality:7},vs:76,tags:"restaurant density obesity county food environment fast food link health outcomes poor income nutrition access disease"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2806,7 +5606,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_hate_crimes_vote_swing",title:"Hate crime rate vs. vote swing toward Republicans 2016â€“2024",sub:"Counties with the highest hate crime rates had the largest Republican swings. The resentment-violence geography.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T348 Â· T454",section:"Law Enforcement Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["violent_crime_rate","rep_pct"],join:["median_household_income","pct_bachelors"],sc:{emotional:9,relatability:7,surprise:8,tension:9,visual:7,data_ready:8,originality:9},vs:81,tags:"hate crimes vote swing Republican 2016 2024 resentment violence geography correlation political radicalization anger bias"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2822,7 +5638,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_infant_mortality_vote",title:"Infant mortality rate vs. Republican vote share by state",sub:"The states with the highest infant death rates vote most reliably Republican. And most reliably against Medicaid.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T115 Â· T454",section:"Health Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["birth_rate_state","rep_pct"],join:["pct_on_medicaid","teen_birth_rate","median_household_income"],sc:{emotional:10,relatability:8,surprise:8,tension:10,visual:8,data_ready:10,originality:8},vs:89,tags:"infant mortality Republican vote state paradox babies dying Medicaid cut Mississippi Alabama Arkansas healthcare politics"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2838,7 +5670,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"poverty_rate_by_state_2023",title:"Poverty rate by state 2023 â€” the geography of 40 million Americans",sub:"Mississippi: 19.5% in poverty. New Hampshire: 7.2%. 40.8M total Americans below the poverty line.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T751",section:"Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["median_household_income","pct_under_25k"],join:["pct_on_snap","violent_crime_rate","rep_pct"],sc:{emotional:9,relatability:8,surprise:5,tension:8,visual:9,data_ready:10,originality:3},vs:78,tags:"poverty rate state 2023 Mississippi New Hampshire 40 million geography income inequality poor gap"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2854,7 +5702,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"income_by_race_national",title:"Median household income by race and Hispanic origin 2023",sub:"Asian: $108K. White non-Hispanic: $81K. Hispanic: $62K. Black: $52K. The racial income hierarchy in one chart.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T736",section:"Income",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["median_household_income","pct_under_25k","pct_over_200k"],join:["pct_on_snap","pct_on_medicaid","violent_crime_rate"],sc:{emotional:9,relatability:8,surprise:5,tension:8,visual:9,data_ready:10,originality:3},vs:79,tags:"median income race Asian White Hispanic Black $108K $81K $62K $52K hierarchy inequality 2023 gap systematic"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2870,7 +5734,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"working_poor_by_state",title:"Working poor â€” people employed full time but still below poverty",sub:"3.5M full-time workers live below the poverty line. Single mothers: 13.6% work full-time and remain poor.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T756",section:"Income",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["pct_under_25k","median_household_income"],join:["pct_on_snap","state_unemployment_rate","female_lfp_rate"],sc:{emotional:9,relatability:8,surprise:8,tension:9,visual:8,data_ready:10,originality:7},vs:83,tags:"working poor full time below poverty 3.5M single mothers 13.6% employment poverty wages minimum wage gap"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2886,7 +5766,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"medical_debt_by_race",title:"Medical debt: who carries it and how much â€” 2023",sub:"Black households: 24.3% have medical debt. White: 15.6%. Asian: 8%. The medical debt divide is a racial divide.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T191",section:"Health",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["per_capita_health_spending","health_insurance_cpi"],join:["pct_on_medicaid","median_household_income","pct_on_snap"],sc:{emotional:9,relatability:9,surprise:7,tension:8,visual:8,data_ready:10,originality:8},vs:84,tags:"medical debt race Black White Asian 24.3% 15.6% 8% racial divide healthcare financial burden hospital bills"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2902,7 +5798,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_uninsured_vote",title:"Uninsured rate vs. Republican vote share by state",sub:"States that voted most against the ACA have the highest uninsured rates. 10 of the 11 highest-uninsured states voted Republican.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T161 Â· T454",section:"Health Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov â€” free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu â€” free)"],vars:["per_capita_health_spending","rep_pct"],join:["pct_on_medicaid","median_household_income"],sc:{emotional:10,relatability:8,surprise:7,tension:10,visual:8,data_ready:10,originality:7},vs:88,tags:"uninsured Republican vote ACA Obamacare healthcare state paradox 10 of 11 Texas Mississippi coverage gap politics"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2918,7 +5830,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"co2_emissions_per_capita_state",title:"Energy-related CO2 emissions per capita by state 2022",sub:"Alaska: 56 metric tons per person. DC: 3.9. Wyoming: 88. The carbon inequality within America.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T977",section:"Geography & Environment",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","EIA State Energy Data System: production + consumption by state (eia.gov â€” free API)"],vars:["energy_consumption_per_capita","coal_production_index"],join:["renewable_energy_share","rep_pct","median_household_income"],sc:{emotional:8,relatability:7,surprise:8,tension:8,visual:9,data_ready:10,originality:7},vs:79,tags:"CO2 emissions per capita state 2022 Alaska Wyoming DC carbon inequality climate geography fossil fuels energy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2934,7 +5862,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"wildfire_acres_burned_trend",title:"Wildfire acres burned 1970â€“2024 â€” the catastrophic acceleration",sub:"2015, 2017, 2020: each over 10 million acres. 2024: 8.9M acres. The new normal is not normal.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T440",section:"Geography & Environment",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["mean_elevation","national_forest_acres"],join:["energy_consumption_per_capita","housing_permits_total"],sc:{emotional:8,relatability:8,surprise:7,tension:8,visual:9,data_ready:10,originality:5},vs:77,tags:"wildfire acres 1970 2024 acceleration climate catastrophic new normal 10 million Western states Oregon Texas California"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2950,7 +5894,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"air_quality_unhealthy_days_metro",title:"Unhealthy air quality days by metro 2023",sub:"Bakersfield CA: 70 unhealthy days. San Francisco: 25. Detroit: 7. Salt Lake City: 33. The air you breathe by city.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T422",section:"Geography & Environment",ext:[],vars:["mean_elevation"],join:["energy_consumption_per_capita","median_household_income"],sc:{emotional:7,relatability:8,surprise:7,tension:6,visual:9,data_ready:10,originality:7},vs:73,tags:"air quality unhealthy days metro AQI 2023 Bakersfield San Francisco Detroit Salt Lake City breathing pollution"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2966,7 +5926,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"homeownership_rate_by_race",title:"Homeownership rate by race 2000â€“2024 â€” the wealth gap you can measure",sub:"White homeownership: 74.3%. Black: 45.7%. A 28.6 point gap that has barely changed in 60 years.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1039",section:"Housing",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["home_price_index_2024","housing_permits_total"],join:["median_household_income","pct_on_snap","mortgage_delinquency_rate"],sc:{emotional:9,relatability:8,surprise:7,tension:9,visual:8,data_ready:10,originality:5},vs:81,tags:"homeownership race Black White 74.3% 45.7% 28.6 gap 60 years wealth building inequality housing discrimination"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2982,7 +5958,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"median_home_value_by_state",title:"Median owner-occupied home value by state 2023",sub:"Hawaii: $846K median value. West Virginia: $138K. The 6x home value gap â€” and monthly costs follow.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T1044",section:"Housing",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","HUD Fair Market Rents + housing data by state/county (huduser.gov â€” free)"],vars:["home_price_index_2024"],join:["median_household_income","housing_permits_total","mortgage_delinquency_rate"],sc:{emotional:7,relatability:8,surprise:6,tension:5,visual:9,data_ready:10,originality:3},vs:70,tags:"median home value state 2023 Hawaii $846K West Virginia $138K 6x gap housing wealth inequality geography"}
+
+
+
+
+
+
+
+
 
 
 
@@ -2998,7 +5990,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_homeownership_wealth",title:"Homeownership rate vs. median net worth by demographic group",sub:"Homeowner net worth: $396K median. Renter net worth: $10K. The 40x wealth gap that homeownership creates.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T1039 Â· T1207",section:"Housing Â· Banking",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["home_price_index_2024","pct_families_own_any_asset"],join:["median_household_income","pct_on_snap","mortgage_delinquency_rate"],sc:{emotional:9,relatability:9,surprise:8,tension:8,visual:8,data_ready:9,originality:7},vs:84,tags:"homeownership wealth $396K $10K 40x net worth renter owner wealth building inequality race income housing equity"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3014,7 +6022,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"renewable_capacity_projections_2050",title:"Renewable energy capacity projections 2024â€“2050 â€” the coming transformation",sub:"Solar capacity to grow 7.6x by 2050. Offshore wind: from 0.2 GW to 46 GW. The energy transition is now inevitable.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T990",section:"Energy",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","EIA State Energy Data System: production + consumption by state (eia.gov â€” free API)"],vars:["renewable_energy_share","coal_production_index"],join:["energy_consumption_per_capita","rd_pct_gdp"],sc:{emotional:7,relatability:7,surprise:8,tension:5,visual:9,data_ready:10,originality:7},vs:74,tags:"renewable energy capacity projections 2024 2050 solar 7.6x offshore wind EIA transformation inevitability future"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3030,7 +6054,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"electricity_price_by_state",title:"Average residential electricity price by state 2023",sub:"Hawaii: 37 cents/kWh. Louisiana: 10 cents. The 3.7x electricity price gap within one grid.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T999",section:"Energy",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)","EIA State Energy Data System: production + consumption by state (eia.gov â€” free API)"],vars:["energy_consumption_per_capita","renewable_energy_share"],join:["median_household_income","coal_production_index","rep_pct"],sc:{emotional:7,relatability:8,surprise:7,tension:5,visual:9,data_ready:10,originality:5},vs:72,tags:"electricity price residential state 2023 Hawaii 37 cents Louisiana 10 cents 3.7x gap grid cost energy utility"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3046,7 +6086,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"fastest_growing_occupations_2033",title:"Fastest growing jobs 2023â€“2033 â€” the BLS projection",sub:"Wind turbine technician: +60%. Solar installer: +48%. Nurse practitioner: +46%. The economy being built.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T655",section:"Labor Force",ext:[],vars:["state_unemployment_rate","female_lfp_rate"],join:["rd_pct_gdp","pct_bachelors"],sc:{emotional:7,relatability:8,surprise:8,tension:4,visual:9,data_ready:10,originality:6},vs:74,tags:"fastest growing jobs 2023 2033 BLS wind turbine solar nurse practitioner data scientist future economy occupation"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3062,7 +6118,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"self_employed_by_industry",title:"Self-employed workers by industry 2000â€“2024",sub:"9.9M self-employed Americans. Construction: 1.6M. Agriculture: 661K. Gig transport doubled since 2015. The new workforce.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T642",section:"Labor Force",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["state_unemployment_rate","female_lfp_rate"],join:["ecommerce_sales","retail_sales_per_capita"],sc:{emotional:6,relatability:8,surprise:6,tension:3,visual:7,data_ready:10,originality:5},vs:65,tags:"self employed workers industry 2000 2024 construction agriculture gig transport 9.9M workforce independent contractor"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3078,7 +6150,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"unemployment_by_education_race",title:"Unemployment rate by education and race 2024 â€” the degree still doesn't close the gap",sub:"Black workers with bachelor's degrees: 3.5% unemployment. White workers with bachelor's: 2.1%. The degree doesn't erase race.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T664",section:"Labor Force",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["state_unemployment_rate","female_lfp_rate"],join:["pct_bachelors","median_household_income"],sc:{emotional:9,relatability:8,surprise:8,tension:9,visual:8,data_ready:10,originality:7},vs:83,tags:"unemployment rate education race Black White college degree 3.5% 2.1% racial gap not closed degree labor market"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3094,7 +6182,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"homeless_population_trend",title:"Homeless population 2010â€“2024 â€” the crisis that grew despite the economy",sub:"Homeless Americans: 647K in 2010. 771K in 2024. Up 19% in 14 years despite economic growth. The housing failure.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T613",section:"Social Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["total_transfers_per_capita","pct_on_snap"],join:["home_price_index_2024","housing_permits_total","median_household_income"],sc:{emotional:9,relatability:8,surprise:8,tension:8,visual:8,data_ready:10,originality:6},vs:82,tags:"homeless population 2010 2024 647K 771K 19% increase economic growth housing failure point in time count HUD"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3110,7 +6214,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"pension_coverage_by_worker_type",title:"Pension and retirement plan access by worker characteristics",sub:"Private sector workers with pension access: 53%. Part-time workers: 26%. Low-wage workers: 23%. The coverage gap.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T582",section:"Social Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["pct_families_own_retirement","total_transfers_per_capita"],join:["median_household_income","state_unemployment_rate"],sc:{emotional:8,relatability:8,surprise:6,tension:7,visual:7,data_ready:10,originality:6},vs:74,tags:"pension retirement plan access worker 53% part time 26% low wage 23% coverage gap private sector benefits inequality"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3126,7 +6246,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"naep_scores_by_race_state",title:"8th grade reading proficiency by state and race â€” the education gap inside states",sub:"Massachusetts white 8th graders: 46% proficient. Mississippi Black 8th graders: 11%. The gap is 4x within one country.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T282",section:"Education",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API â€” free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov â€” free)","Census Population Estimates: annual population by state/county (census.gov â€” free)","BLS LAUS: unemployment + labor force by state (bls.gov â€” free)"],vars:["pct_bachelors","expenditure_per_pupil"],join:["median_household_income","rep_pct","avg_teacher_salary"],sc:{emotional:9,relatability:8,surprise:7,tension:9,visual:9,data_ready:10,originality:6},vs:83,tags:"NAEP 8th grade reading proficiency state race Massachusetts 46% Mississippi 11% 4x gap education achievement racial"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3142,7 +6278,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"high_school_dropout_rate_by_race",title:"High school dropout rate by race 2000â€“2022 â€” the persistence of the gap",sub:"Hispanic dropout rate: 16.9% in 2000. 7.1% in 2022. Progress â€” but still 3x the white rate.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T287",section:"Education",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["pct_bachelors","pct_hs_grad"],join:["teen_birth_rate","state_unemployment_rate","median_household_income"],sc:{emotional:8,relatability:7,surprise:6,tension:7,visual:7,data_ready:10,originality:5},vs:73,tags:"high school dropout rate race Hispanic 16.9% 7.1% 2000 2022 progress 3x white rate gap education completion"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3158,7 +6310,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"foreign_students_stem_visas",title:"Foreign temporary visa holders awarded STEM doctorates 2023",sub:"64% of US computer science PhD graduates are foreign-born. 57% of engineering PhDs. America trains the world's scientists â€” and most go home.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T848",section:"Science",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["rd_pct_gdp"],join:["pct_bachelors","state_gdp_per_capita"],sc:{emotional:8,relatability:6,surprise:9,tension:7,visual:7,data_ready:10,originality:8},vs:77,tags:"foreign students STEM doctorates visa 64% computer science 57% engineering PhD immigration brain drain America trains"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3174,7 +6342,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"cpi_food_breakdown_2024",title:"Food CPI breakdown by subcategory 2000-2024 â€” every grocery aisle inflated differently",sub:"Fats and oils: up 380%. Cereals: up 215%. Eggs: up 270%. Fresh fruits: up 140%. The grocery inflation mosaic.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["food_at_home_cpi","eggs_cpi","beef_and_veal_cpi","dairy_cpi","cereals_bakery_cpi"],join:["all_items_cpi","pct_on_snap"],sc:{emotional:8,relatability:10,surprise:8,tension:5,visual:9,data_ready:10,originality:7},vs:80,tags:"food CPI subcategory 2000 2024 fats oils eggs cereals fruits grocery aisle inflation mosaic breakdown shopping"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3190,7 +6374,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"medical_care_cpi_components",title:"Medical care CPI: what's driving healthcare inflation 2000-2024",sub:"Nursing home care: up 210%. Hospital services: up 190%. Physician services: up 110%. The cost driver breakdown.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["hospital_services_cpi","physicians_services_cpi","nursing_homes_cpi","prescription_drugs_cpi","health_insurance_cpi"],join:["per_capita_health_spending","total_medicare"],sc:{emotional:8,relatability:8,surprise:7,tension:7,visual:8,data_ready:10,originality:7},vs:77,tags:"medical care CPI nursing home hospital physician prescription drug health insurance driver inflation 2000 2024"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3206,7 +6406,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"household_production_value",title:"The unpaid economy: household production value 1965-2020",sub:"Unpaid household work â€” cooking, childcare, home repair â€” is worth $3.8T annually. It never shows up in GDP.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T717",section:"Income",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["median_household_income","disposable_income_per_capita"],join:["female_lfp_rate","daycare_preschool_cpi"],sc:{emotional:8,relatability:8,surprise:9,tension:4,visual:7,data_ready:10,originality:9},vs:76,tags:"unpaid household production value $3.8T cooking childcare home repair GDP invisible economy women labor 1965 2020"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3222,7 +6438,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"income_source_by_age",title:"Income by source and age group â€” how Americans earn money at each life stage",sub:"Under 35: 85% from wages. Over 65: 40% Social Security, 25% pension/retirement. The income lifecycle.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T574",section:"Income",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["median_household_income","total_transfers_per_capita"],join:["pct_families_own_retirement","total_medicare"],sc:{emotional:7,relatability:8,surprise:7,tension:4,visual:8,data_ready:10,originality:7},vs:72,tags:"income source age group wages salary Social Security pension retirement lifecycle 35 65 how Americans earn money"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3238,7 +6470,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"us_foreign_aid_by_country",title:"US foreign aid by recipient country 2024",sub:"Ukraine: $61B. Israel: $3.8B. Egypt: $1.5B. Jordan: $1.7B. The geography of American largesse.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"Foreign Commerce PDF",section:"Foreign Commerce",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org â€” free API)"],vars:["current_account_balance","trade_balance_goods"],join:["us_troops_overseas","rd_pct_gdp"],sc:{emotional:8,relatability:7,surprise:8,tension:8,visual:9,data_ready:9,originality:7},vs:79,tags:"US foreign aid country 2024 Ukraine $61B Israel $3.8B Egypt Jordan American money largesse geography policy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3254,7 +6502,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"us_services_exports_breakdown",title:"US services exports by category 2023 â€” what America actually sells the world",sub:"Travel: $250B. Financial services: $175B. IP royalties: $150B. Education exports: $48B. The invisible export economy.",type:"CHART",geo:"us_national",fmt:"Treemap",tbl:"T1309",section:"Foreign Commerce",ext:["FRED: any national economic time series (fred.stlouisfed.org â€” free API)","BLS national data: employment, wages, CPI (bls.gov â€” free API)"],vars:["balance_on_services","current_account_balance"],join:["rd_pct_gdp","trade_balance_goods"],sc:{emotional:7,relatability:6,surprise:8,tension:5,visual:8,data_ready:10,originality:7},vs:72,tags:"US services exports 2023 travel financial IP royalties education invisible economy what America sells world $250B"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3270,7 +6534,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"us_population_by_state_growth",title:"Fastest and slowest growing states by population 2020-2024",sub:"Florida +8.3%. Montana +6.9%. California -1.8%. New York -1.6%. The great domestic migration, state by state.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"Population PDF",section:"Population",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["population_pct_change"],join:["median_household_income","housing_permits_total","rep_pct"],sc:{emotional:7,relatability:8,surprise:6,tension:5,visual:9,data_ready:10,originality:4},vs:70,tags:"population growth state 2020 2024 Florida Montana California New York domestic migration fastest slowest"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3286,7 +6566,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"immigration_by_origin_country",title:"US immigrant population by country of origin 2023",sub:"Mexico: 10.8M. India: 2.9M. China: 2.7M. Philippines: 2.1M. The immigration geography of the United States.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"Population PDF",section:"Population",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org - free API)"],vars:["net_migration_rate","population_pct_change_2020_2025"],join:["trade_balance_goods","us_troops_overseas"],sc:{emotional:7,relatability:7,surprise:6,tension:7,visual:9,data_ready:9,originality:5},vs:71,tags:"immigrants US 2023 Mexico 10.8M India China Philippines origin country foreign born population geography map"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3302,7 +6598,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_immigration_gdp_growth",title:"Immigration rate vs. GDP growth by state",sub:"High-immigration states grow faster economically. Florida, Texas, New York: the immigration-growth correlation.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"Population PDF Â· T715",section:"Population Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["population_pct_change","state_gdp_per_capita"],join:["housing_permits_total","median_household_income","rep_pct"],sc:{emotional:8,relatability:7,surprise:7,tension:7,visual:7,data_ready:8,originality:7},vs:74,tags:"immigration GDP growth state correlation Florida Texas New York economic contribution policy debate evidence"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3318,7 +6630,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"wealth_by_generation",title:"Median net worth by generation 2024 - the great wealth transfer that hasn't happened",sub:"Boomers: median $409K net worth. Gen X: $243K. Millennials: $127K. Gen Z: $48K. The generational wealth cliff.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T1207",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["pct_families_own_retirement","pct_families_own_stocks","median_stock_value"],join:["college_tuition_cpi","home_price_index_2024","student_loans_outstanding"],sc:{emotional:9,relatability:10,surprise:7,tension:9,visual:8,data_ready:8,originality:6},vs:85,tags:"net worth generation Boomers Gen X Millennials Gen Z $409K $243K $127K $48K wealth cliff generational gap"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3334,7 +6662,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"nurse_to_patient_ratio_by_state",title:"Registered nurses per 1,000 residents by state",sub:"Massachusetts: 12.7 nurses per 1,000. Nevada: 5.4. The 2.4x nurse shortage geography.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T174",section:"Health",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)"],vars:["per_capita_health_spending","total_medicare"],join:["pct_on_medicaid","median_household_income","rep_pct"],sc:{emotional:8,relatability:7,surprise:7,tension:7,visual:9,data_ready:10,originality:6},vs:74,tags:"nurses per capita state Massachusetts 12.7 Nevada 5.4 shortage workforce healthcare access staffing map"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3350,7 +6694,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"er_wait_time_by_region",title:"Emergency room wait times by region and hospital type 2023",sub:"Average ER wait: 2hrs 12min. Rural hospitals: 1hr 45min. Urban teaching hospitals: 3hr 20min. The wait time geography.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T183",section:"Health",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["per_capita_health_spending","hospital_services_cpi"],join:["pct_on_medicaid","total_medicare"],sc:{emotional:7,relatability:9,surprise:6,tension:5,visual:7,data_ready:10,originality:6},vs:71,tags:"ER emergency room wait time 2023 2hr 12min rural urban teaching hospital region geography access healthcare"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3366,7 +6726,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"mental_health_facilities_by_state",title:"Mental health treatment facilities per 100K residents by state",sub:"Vermont: 34 facilities per 100K. Nevada: 6. The mental health infrastructure desert.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T179",section:"Health",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)"],vars:["per_capita_health_spending","pct_on_medicaid"],join:["state_unemployment_rate","median_household_income","rep_pct"],sc:{emotional:9,relatability:8,surprise:7,tension:7,visual:9,data_ready:9,originality:6},vs:78,tags:"mental health facilities state Vermont 34 Nevada 6 infrastructure desert access treatment per 100K map"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3382,7 +6758,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"police_spending_vs_social_services",title:"Police spending vs. social service spending per capita by city",sub:"Some cities spend 5x more on police than social services. Others are at parity. The defund debate in hard numbers.",type:"XREF",geo:"us_city",fmt:"Scatter plot",tbl:"T362 Â· T491",section:"Law Enforcement",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)"],vars:["violent_crime_rate"],join:["median_household_income","state_unemployment_rate","pct_on_snap"],sc:{emotional:8,relatability:7,surprise:7,tension:8,visual:7,data_ready:7,originality:8},vs:74,tags:"police spending social services city 5x parity defund debate budget priorities crime prevention poverty"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3398,7 +6790,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"active_shooter_incidents_trend",title:"Active shooter incidents 2000-2024 - the acceleration",sub:"2000: 3 incidents. 2020: 40. 2024: 79. The 26x increase in 24 years that no policy has stopped.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T358",section:"Law Enforcement",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["violent_crime_rate","murder_rate"],join:["rep_pct","median_household_income"],sc:{emotional:10,relatability:9,surprise:8,tension:10,visual:8,data_ready:10,originality:5},vs:87,tags:"active shooter incidents 2000 2024 3 to 79 26x increase acceleration mass shooting policy gun violence schools"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3414,7 +6822,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"wage_growth_by_industry_decade",title:"Wage growth by industry 2014-2024 - who won the decade",sub:"Tech workers: +62% real wages. Retail workers: +28%. Nurses: +41%. The decade of divergence by industry.",type:"CHART",geo:"us_national",fmt:"Ranked list",tbl:"T653",section:"Labor Force",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["state_unemployment_rate","manufacturing_hourly_wages_state"],join:["median_household_income","college_tuition_cpi"],sc:{emotional:8,relatability:9,surprise:7,tension:7,visual:8,data_ready:10,originality:6},vs:76,tags:"wage growth industry decade 2014 2024 tech retail nurses divergence winner loser salary pay real wages"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3430,7 +6854,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"labor_force_participation_men_declining",title:"Male labor force participation 1948-2024 - the long withdrawal",sub:"Prime-age male LFP: 98% in 1954. 89% today. 11 million men who would have worked in 1954 are not working now.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T621",section:"Labor Force",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["female_lfp_rate","state_unemployment_rate"],join:["median_household_income","pct_on_snap","opioid_deaths_per_capita"],sc:{emotional:9,relatability:8,surprise:8,tension:8,visual:8,data_ready:10,originality:7},vs:82,tags:"male labor force participation 1948 2024 98% 89% withdrawal 11 million men working opioids disability despair"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3446,7 +6886,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"part_time_involuntary_rate",title:"Involuntary part-time workers by industry 2024",sub:"15% of retail workers want full-time but can only get part-time. Food service: 12%. The underemployment nobody measures.",type:"CHART",geo:"us_national",fmt:"Ranked list",tbl:"T647",section:"Labor Force",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["state_unemployment_rate","female_lfp_rate"],join:["median_household_income","pct_on_snap"],sc:{emotional:8,relatability:8,surprise:7,tension:6,visual:7,data_ready:10,originality:7},vs:73,tags:"involuntary part time workers retail 15% food service underemployment industry 2024 full time hours poverty wages"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3462,7 +6918,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"food_desert_county_map",title:"Food deserts by county - where grocery stores don't exist",sub:"19 million Americans live in food deserts. Rural counties in the South and Great Plains are most affected.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T576",section:"Agriculture",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov - free)"],vars:["pct_on_snap","farms_count_2022"],join:["median_household_income","pct_cropland","rural_population_pct"],sc:{emotional:8,relatability:7,surprise:7,tension:7,visual:9,data_ready:8,originality:6},vs:75,tags:"food desert county 19 million rural South Great Plains grocery store access low income USDA ERS map"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3478,7 +6950,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_farm_income_food_stamps",title:"Farm income per county vs. SNAP enrollment - the agricultural poverty paradox",sub:"The counties that grow America's food have the highest food stamp enrollment. The farm-hunger paradox.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T869 Â· T576",section:"Agriculture Â· Social Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov - free)"],vars:["pct_on_snap","farms_count_2022"],join:["pct_cropland","median_household_income","rural_population_pct"],sc:{emotional:9,relatability:7,surprise:9,tension:8,visual:7,data_ready:8,originality:9},vs:82,tags:"farm income SNAP food stamps county paradox grow food hunger agricultural poverty workers low wage rural"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3494,7 +6982,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"commute_time_by_metro",title:"Average commute time by metro area - who spends life in traffic",sub:"New York: 37 min average commute. Atlanta: 32 min. Buffalo: 20 min. Time is the hidden cost of where you live.",type:"RANK",geo:"us_metro",fmt:"Ranked list",tbl:"T1126",section:"Transportation",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by metro (apps.bea.gov - free)","BLS LAUS: unemployment + labor force by metro (bls.gov - free)"],vars:["metro_per_capita_income"],join:["median_household_income","housing_permits_total"],sc:{emotional:7,relatability:9,surprise:6,tension:4,visual:8,data_ready:9,originality:5},vs:70,tags:"commute time metro average New York 37 Atlanta 32 Buffalo 20 traffic hidden cost life hours lost geography"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3510,7 +7014,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"public_transit_ridership_decline",title:"Public transit ridership 2019-2024 - the COVID collapse that never recovered",sub:"National transit ridership: down 27% from 2019 even in 2024. NYC at 80%. Bus systems across the South: 60% of pre-COVID.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1126",section:"Transportation",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["passengers_enplaned","pct_bridges_poor"],join:["metro_per_capita_income","housing_permits_total"],sc:{emotional:7,relatability:8,surprise:7,tension:6,visual:7,data_ready:8,originality:6},vs:70,tags:"public transit ridership 2019 2024 COVID collapse recovery 27% NYC 80% bus South 60% urban transportation"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3526,7 +7046,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"student_loan_debt_by_state",title:"Student loan debt per borrower by state 2024",sub:"Georgia: $42,000 average per borrower. Utah: $18,000. The student debt geography and why Georgia is such an outlier.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T1207",section:"Banking Finance Insurance",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["student_loans_outstanding","college_tuition_cpi"],join:["pct_bachelors","median_household_income","state_unemployment_rate"],sc:{emotional:8,relatability:9,surprise:7,tension:7,visual:8,data_ready:8,originality:6},vs:77,tags:"student loan debt per borrower state 2024 Georgia $42000 Utah $18000 HBCU for-profit college education debt"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3542,7 +7078,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"household_debt_to_income_trend",title:"Household debt-to-income ratio 1980-2024 - the leverage buildup",sub:"1980: households owed 0.6x income in debt. Peak 2008: 1.3x. Today: 0.97x. Still near historic highs.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T1207",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["mortgage_delinquency_rate","credit_card_rate_all_accounts"],join:["home_price_index_2024","student_loans_outstanding","federal_debt_pct_gdp"],sc:{emotional:7,relatability:7,surprise:7,tension:7,visual:7,data_ready:9,originality:5},vs:70,tags:"household debt income ratio 1980 2024 0.6x 1.3x 0.97x leverage buildup historic highs mortgage financial crisis"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3558,7 +7110,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_income_voter_turnout",title:"Median income vs. voter turnout by county",sub:"High-income counties vote at 72% rates. Low-income counties: 49%. The turnout gap is a class gap.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T454 Â· T727",section:"Elections Â· Income",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu - free)"],vars:["rep_pct","median_household_income"],join:["pct_bachelors","pct_on_snap","violent_crime_rate"],sc:{emotional:9,relatability:8,surprise:7,tension:9,visual:7,data_ready:9,originality:7},vs:82,tags:"income voter turnout county class gap 72% 49% wealth voting participation democracy representation power"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3574,7 +7142,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"third_party_vote_by_state_history",title:"Third-party vote share by state 1992-2024 - where protest votes concentrate",sub:"Maine: 21% third-party in 1992. Utah: 21% in 2016. The geography of political dissatisfaction.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T454",section:"Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu - free)"],vars:["rep_pct"],join:["median_household_income","pct_bachelors","state_unemployment_rate"],sc:{emotional:6,relatability:6,surprise:7,tension:5,visual:8,data_ready:9,originality:7},vs:66,tags:"third party vote state 1992 2024 Maine 21% Utah Ross Perot Gary Johnson protest vote dissatisfaction geography"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3590,7 +7174,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_sex_ed_teen_pregnancy",title:"Abstinence-only sex ed states vs. teen birth rates",sub:"States with abstinence-only sex education have teen birth rates 2x higher. The policy produces the opposite of its intent.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T86 Â· T454",section:"Births Deaths Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu - free)"],vars:["teen_birth_rate","pct_births_unmarried"],join:["rep_pct","birth_rate_state","median_household_income"],sc:{emotional:9,relatability:8,surprise:9,tension:9,visual:7,data_ready:7,originality:8},vs:86,tags:"abstinence sex ed teen birth rate states 2x opposite policy intent paradox counterintuitive pregnancy Republican"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3606,7 +7206,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_gun_control_laws_gun_deaths",title:"Strength of gun laws vs. gun death rate by state",sub:"California gun law score: A. Gun death rate: 8.5 per 100K. Mississippi: F. Gun death rate: 33. The correlation is 0.85.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T340 Â· T454",section:"Law Enforcement Â· Elections",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)","MIT Election Lab: presidential/congressional results (electionlab.mit.edu - free)"],vars:["violent_crime_rate","murder_rate"],join:["rep_pct","median_household_income"],sc:{emotional:9,relatability:8,surprise:7,tension:9,visual:7,data_ready:8,originality:6},vs:82,tags:"gun laws gun death rate state California A Mississippi F 0.85 correlation evidence policy Giffords law center"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3622,7 +7238,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"world_gdp_per_capita_vs_happiness",title:"GDP per capita vs. life satisfaction by country",sub:"Luxembourg: highest GDP, 7.2/10 happiness. Finland: $55K GDP, 7.8/10. Costa Rica: $22K, 7.0. Money matters less above $75K.",type:"XREF",geo:"worldwide",fmt:"Scatter plot",tbl:"International Statistics",section:"International Statistics",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org - free API)"],vars:["trade_balance_goods","rd_pct_gdp"],join:["population_pct_change_2020_2025","net_migration_rate"],sc:{emotional:7,relatability:8,surprise:7,tension:4,visual:8,data_ready:8,originality:5},vs:70,tags:"GDP happiness life satisfaction country Luxembourg Finland Costa Rica money threshold World Happiness Report"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3638,7 +7270,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"countries_losing_population_fastest",title:"Countries losing population fastest 2020-2030",sub:"Bulgaria: -6.5% by 2030. Lithuania: -5.8%. Latvia: -5.1%. The Eastern European demographic collapse.",type:"RANK",geo:"worldwide",fmt:"Ranked list",tbl:"International Statistics",section:"International Statistics",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org - free API)"],vars:["population_pct_change_2020_2025","net_migration_rate"],join:["birth_rate","rd_pct_gdp"],sc:{emotional:7,relatability:6,surprise:8,tension:7,visual:8,data_ready:9,originality:6},vs:73,tags:"population loss fastest country 2020 2030 Bulgaria Lithuania Latvia Eastern Europe demographic collapse emigration"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3654,7 +7302,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"veterans_by_state_per_capita",title:"Veterans as % of adult population by state 2024",sub:"Alaska: 12% veterans. Virginia: 11%. California: 6%. The military geography of America.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T543",section:"National Security",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["defense_budget_total","active_duty_total"],join:["median_household_income","rep_pct","state_unemployment_rate"],sc:{emotional:6,relatability:6,surprise:7,tension:3,visual:8,data_ready:9,originality:5},vs:63,tags:"veterans per capita state 2024 Alaska 12% Virginia California military geography adult population service"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3670,7 +7334,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"us_troops_overseas_by_country",title:"US military personnel stationed overseas by country 2024",sub:"Japan: 54,000 troops. Germany: 35,000. South Korea: 28,000. The American empire in headcount.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"T543",section:"National Security",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org - free API)"],vars:["us_troops_overseas","defense_budget_total"],join:["trade_balance_goods","rd_pct_gdp"],sc:{emotional:7,relatability:6,surprise:7,tension:7,visual:9,data_ready:9,originality:5},vs:71,tags:"US troops overseas country 2024 Japan 54000 Germany 35000 South Korea 28000 military empire headcount bases"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3686,7 +7366,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"puerto_rico_income_vs_states",title:"Puerto Rico median income vs. all 50 states - the 51st comparison",sub:"Puerto Rico median income: $23,000. The poorest state (Mississippi): $49,000. Puerto Rico would be the poorest by far.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"Puerto Rico PDF",section:"Population",ext:[],vars:["median_household_income"],join:["pct_on_snap","total_transfers_per_capita","pct_on_medicaid"],sc:{emotional:9,relatability:7,surprise:8,tension:8,visual:9,data_ready:9,originality:8},vs:82,tags:"Puerto Rico income vs states $23000 Mississippi $49000 poorest 51st comparison territory inequality federal policy"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3702,7 +7398,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"opioid_deaths_vs_manufacturing_loss_county",title:"Opioid death rate vs. manufacturing job loss by county",sub:"Counties that lost 30%+ of manufacturing jobs have 4x the opioid death rates of counties that didn't. The despair pipeline.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T340 Â· T1064",section:"Health Â· Manufactures",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)"],vars:["violent_crime_rate","manufacturing_employment_trend"],join:["pct_on_snap","median_household_income","state_unemployment_rate"],sc:{emotional:10,relatability:8,surprise:7,tension:9,visual:7,data_ready:8,originality:8},vs:87,tags:"opioid death manufacturing job loss county 4x despair pipeline correlation deindustrialization fentanyl Appalachia Rust Belt"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3718,7 +7430,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"remote_work_county_migration",title:"Counties gaining population from remote work migration 2020-2024",sub:"Rural mountain counties gained 15-25% population. Ski towns, lake districts, and small cities in the Rockies boomed.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"Population PDF",section:"Population",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)"],vars:["population_pct_change"],join:["home_price_index_2024","housing_permits_total","median_household_income"],sc:{emotional:7,relatability:9,surprise:7,tension:5,visual:9,data_ready:8,originality:7},vs:76,tags:"remote work county migration 2020 2024 rural mountain 15-25% ski towns lake Rockies boom population shift COVID"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3734,7 +7462,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"rent_burden_by_city",title:"Share of renters paying 30%+ of income on rent by city",sub:"Miami: 63% of renters are cost-burdened. Los Angeles: 58%. Pittsburgh: 38%. The rent burden geography.",type:"RANK",geo:"us_city",fmt:"Ranked list",tbl:"T771",section:"Housing",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)"],vars:["rent_primary_residence_cpi","home_price_index_2024"],join:["median_household_income","housing_permits_total","pct_on_snap"],sc:{emotional:9,relatability:9,surprise:6,tension:8,visual:8,data_ready:9,originality:5},vs:81,tags:"rent burden 30% income city Miami 63% Los Angeles 58% Pittsburgh 38% cost burdened renters housing crisis"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3750,7 +7494,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"insurance_cost_vs_wages",title:"Auto and home insurance CPI vs. wage growth 2015-2024",sub:"Auto insurance: up 76% since 2015. Home insurance: up 52%. Wages: up 34%. The protection-affordability crisis.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T770",section:"Prices",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["motor_vehicle_insurance_cpi","all_items_cpi"],join:["median_household_income","home_price_index_2024"],sc:{emotional:8,relatability:8,surprise:8,tension:7,visual:7,data_ready:10,originality:7},vs:78,tags:"auto home insurance CPI wages 2015 2024 76% 52% 34% protection affordability crisis climate rate increases"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3766,7 +7526,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"reading_habits_by_income",title:"Reading rate by income level - who still reads books",sub:"Households over $75K: 61% read a book in the past year. Under $30K: 28%. The reading class divide.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T1263",section:"Arts Recreation",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["annual_attendance"],join:["median_household_income","pct_bachelors"],sc:{emotional:6,relatability:8,surprise:6,tension:4,visual:7,data_ready:10,originality:7},vs:66,tags:"reading books income level $75K 61% $30K 28% class divide literacy cultural habit who reads households"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3782,7 +7558,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"social_isolation_by_state",title:"People who report having no close friends - the loneliness map",sub:"23% of Americans report having no close friends. Some states hit 30%. The loneliness epidemic in geographic form.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T1272",section:"Arts Recreation",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["annual_attendance","sports_attendance_12mo"],join:["median_household_income","rep_pct","state_unemployment_rate"],sc:{emotional:9,relatability:9,surprise:7,tension:7,visual:8,data_ready:7,originality:8},vs:82,tags:"social isolation loneliness no close friends 23% 30% epidemic geographic map mental health modern crisis America"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3798,7 +7590,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"us_trade_deficit_by_country",title:"US goods trade balance by country 2024 - where the deficit lives",sub:"China: -$279B deficit. Mexico: -$152B. Vietnam: -$104B. Ireland: -$87B. The geography of what we owe.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"T1306",section:"Foreign Commerce",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org - free API)"],vars:["trade_balance_goods","current_account_balance"],join:["balance_on_goods","foreign_affiliate_employment"],sc:{emotional:8,relatability:7,surprise:8,tension:8,visual:9,data_ready:10,originality:6},vs:78,tags:"US trade deficit country 2024 China -$279B Mexico -$152B Vietnam Ireland what we owe goods balance geography"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3814,7 +7622,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"remittances_sent_from_us_by_country",title:"Remittances sent from the US by destination country 2024",sub:"Mexico receives $63B from US-based Mexicans annually. India: $32B. Guatemala: $20B. The money America sends home.",type:"MAP",geo:"worldwide",fmt:"World choropleth",tbl:"T1310",section:"Foreign Commerce",ext:["World Bank Open Data: GDP, population, income by country (data.worldbank.org - free API)"],vars:["current_account_balance","balance_on_services"],join:["net_migration_rate","trade_balance_goods"],sc:{emotional:7,relatability:6,surprise:8,tension:5,visual:9,data_ready:8,originality:8},vs:73,tags:"remittances sent US country 2024 Mexico $63B India $32B Guatemala money home immigrants World Bank"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3830,7 +7654,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_inequality_health_outcomes",title:"Income inequality (Gini) vs. multiple health outcomes by state",sub:"The most unequal states have the worst health outcomes on nearly every measure - not just the poorest states.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T727 Â· T141",section:"Income Â· Health",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)"],vars:["median_household_income","per_capita_health_spending"],join:["pct_over_200k","violent_crime_rate","pct_on_snap"],sc:{emotional:9,relatability:7,surprise:8,tension:8,visual:7,data_ready:8,originality:8},vs:81,tags:"income inequality Gini health outcomes state worst not just poorest status anxiety Spirit Level Wilkinson Pickett"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3846,7 +7686,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_nature_access_mental_health",title:"Proximity to parks and green space vs. mental health outcomes by county",sub:"Counties with more parkland per capita have measurably lower rates of depression and anxiety. Nature is medicine.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T1278 Â· T178",section:"Arts Recreation Â· Health",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov - free)"],vars:["national_forest_acres","per_capita_health_spending"],join:["median_household_income","state_unemployment_rate"],sc:{emotional:7,relatability:7,surprise:7,tension:4,visual:7,data_ready:7,originality:8},vs:68,tags:"nature access parks green space mental health county depression anxiety parkland medicine wellbeing outdoor"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3862,7 +7718,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"superfund_sites_vs_race",title:"Superfund toxic waste sites proximity to minority communities",sub:"Communities within 1 mile of a Superfund site are 52% more likely to be majority-minority. Toxic waste as a race issue.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T428",section:"Geography & Environment",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)"],vars:["mean_elevation","national_forest_acres"],join:["median_household_income","pct_on_snap","violent_crime_rate"],sc:{emotional:9,relatability:6,surprise:8,tension:8,visual:9,data_ready:7,originality:7},vs:79,tags:"Superfund toxic waste minority communities 52% environmental racism proximity race income justice EPA cleanup"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3878,7 +7750,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"air_quality_vs_asthma_race",title:"Air quality index vs. childhood asthma rate by race and neighborhood",sub:"Black children in high-pollution zip codes have asthma rates 3x higher than white children in clean-air suburbs.",type:"XREF",geo:"us_county",fmt:"Scatter plot",tbl:"T422 Â· T141",section:"Geography & Environment Â· Health",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)"],vars:["mean_elevation","per_capita_health_spending"],join:["median_household_income","pct_on_snap","pct_on_medicaid"],sc:{emotional:9,relatability:7,surprise:7,tension:8,visual:7,data_ready:7,originality:7},vs:78,tags:"air quality asthma race childhood Black 3x white suburb clean pollution zip neighborhood environmental justice"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3894,7 +7782,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"rent_vs_buy_breakeven_by_city",title:"Rent vs. buy breakeven point by city 2024",sub:"San Francisco: need to stay 11 years to break even buying vs. renting. Detroit: 2 years. The math of homeownership.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T1025 Â· T771",section:"Housing",ext:[],vars:["home_price_index_2024","rent_primary_residence_cpi"],join:["median_household_income","housing_permits_total","mortgage_delinquency_rate"],sc:{emotional:8,relatability:9,surprise:7,tension:6,visual:8,data_ready:8,originality:7},vs:76,tags:"rent buy breakeven city 2024 San Francisco 11 years Detroit 2 years homeownership math affordability decision"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3910,7 +7814,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"aging_in_place_housing_gap",title:"Aging-ready housing units vs. 65+ population by region",sub:"Only 4% of US housing units are accessible for older adults. But 19% of Americans are over 65. The aging-in-place gap.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T1028",section:"Housing",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["home_price_index_2024"],join:["total_medicare","pct_on_medicaid","median_household_income"],sc:{emotional:8,relatability:7,surprise:8,tension:7,visual:7,data_ready:10,originality:8},vs:75,tags:"aging in place housing 4% accessible 65+ 19% gap older adults mobility wheelchair ramp bathroom grab bar"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3926,7 +7846,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"manufactured_homes_by_state",title:"Manufactured (mobile) home share of housing stock by state",sub:"South Carolina: 19% of homes are manufactured. New Hampshire: 5%. The affordable housing geography nobody talks about.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T1023",section:"Housing",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)","HUD Fair Market Rents + housing data by state/county (huduser.gov - free)"],vars:["home_price_index_2024","housing_permits_total"],join:["median_household_income","pct_on_snap","rep_pct"],sc:{emotional:6,relatability:6,surprise:7,tension:4,visual:8,data_ready:9,originality:7},vs:65,tags:"manufactured mobile homes state South Carolina 19% New Hampshire 5% affordable housing geography rural poverty"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3942,7 +7878,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"federal_rd_by_agency",title:"Federal R&D budget by agency 2024 - where science money goes",sub:"NIH: $47B. DOD: $130B. NASA: $9B. DOE: $22B. NSF: $9.5B. The federal science priorities in dollars.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T841",section:"Science",ext:[],vars:["rd_pct_gdp"],join:["defense_budget_total","state_gdp_per_capita"],sc:{emotional:6,relatability:6,surprise:7,tension:5,visual:8,data_ready:10,originality:5},vs:64,tags:"federal R&D budget agency 2024 NIH $47B DOD $130B NASA DOE NSF science priorities money spending research"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3958,7 +7910,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"stem_degree_vs_stem_jobs_mismatch",title:"STEM degrees awarded vs. STEM jobs by field - the supply-demand mismatch",sub:"Computer science graduates: 90K/year. Computing job openings: 400K/year. Biology degrees: 120K. Bio jobs: 40K. The STEM mismatch.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T849 Â· T855",section:"Science",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["rd_pct_gdp"],join:["pct_bachelors","state_unemployment_rate"],sc:{emotional:7,relatability:8,surprise:8,tension:5,visual:7,data_ready:9,originality:8},vs:72,tags:"STEM degrees jobs mismatch computer science 90K 400K biology 120K 40K supply demand field higher education career"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3974,7 +7942,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"single_parent_households_by_race",title:"Single-parent household rate by race - the family structure divide",sub:"Black children: 65% live with a single parent. White: 24%. Hispanic: 42%. The family structure map of America.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T93",section:"Births Deaths",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["pct_births_unmarried","birth_rate_state"],join:["pct_on_snap","median_household_income","teen_birth_rate"],sc:{emotional:8,relatability:7,surprise:6,tension:7,visual:7,data_ready:10,originality:4},vs:73,tags:"single parent household race Black 65% White 24% Hispanic 42% family structure divide America children poverty"}
+
+
+
+
+
+
+
+
 
 
 
@@ -3990,7 +7974,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"ivf_usage_by_income",title:"Assisted reproductive technology usage by income level",sub:"ART usage: 5x higher in households above $100K vs. below $50K. Fertility treatment is a luxury good.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T98",section:"Births Deaths",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["birth_rate_state","total_fertility_rate_by_race"],join:["median_household_income","pct_over_200k","health_insurance_cpi"],sc:{emotional:7,relatability:6,surprise:8,tension:5,visual:6,data_ready:9,originality:8},vs:68,tags:"IVF ART assisted reproductive technology income 5x luxury good fertility treatment $100K $50K class disparity"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4006,7 +8006,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"dollar_general_vs_grocery_routing",title:"Dollar General locations vs. nearest full grocery by county",sub:"In 1,200 US counties, Dollar General is closer than any full grocery store. The Dollar General as America's food system.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T576",section:"Agriculture",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","USDA ERS: food environment, rural classification, farm income (ers.usda.gov - free)"],vars:["pct_on_snap","retail_sales_per_capita"],join:["median_household_income","rural_population_pct","rep_pct"],sc:{emotional:9,relatability:9,surprise:9,tension:8,visual:9,data_ready:7,originality:9},vs:88,tags:"Dollar General vs grocery county 1200 counties closer full store food system rural poverty pgRouting routing"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4022,7 +8038,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"trauma_center_drive_time_county",title:"Drive time to nearest Level 1 trauma center by county",sub:"In rural America, 44 million people live more than 60 minutes from a Level 1 trauma center. The golden hour geography.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T185",section:"Health",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)"],vars:["per_capita_health_spending","hospital_services_cpi"],join:["pct_on_medicaid","median_household_income","rural_population_pct"],sc:{emotional:9,relatability:7,surprise:7,tension:8,visual:9,data_ready:6,originality:7},vs:79,tags:"trauma center drive time county Level 1 44 million 60 minutes golden hour rural emergency care pgRouting"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4038,7 +8070,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"irs_migration_flows_covid",title:"IRS tax return migration flows 2019-2022 - the great COVID reshuffling",sub:"2 million tax filers moved from NY, CA, IL. Florida, Texas, Arizona gained. The largest domestic migration since WWII.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T629",section:"Population",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["population_pct_change"],join:["median_household_income","home_price_index_2024","rep_pct"],sc:{emotional:8,relatability:8,surprise:7,tension:6,visual:9,data_ready:8,originality:7},vs:76,tags:"IRS migration flows 2019 2022 COVID reshuffling NY CA IL Florida Texas Arizona WWII domestic migration IRS SOI"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4054,7 +8102,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"college_enrollment_origin_state",title:"Where college students come from vs. where they go to school",sub:"Massachusetts exports 40% of its students. North Dakota imports 20% from other states. The education migration map.",type:"MAP",geo:"us_state",fmt:"State choropleth",tbl:"T295",section:"Education",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["pct_bachelors","expenditure_per_pupil"],join:["median_household_income","population_pct_change","state_gdp_per_capita"],sc:{emotional:6,relatability:7,surprise:7,tension:4,visual:8,data_ready:7,originality:8},vs:67,tags:"college enrollment origin state Massachusetts 40% North Dakota 20% import export education migration students flow"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4070,7 +8134,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"social_security_trust_fund_depletion",title:"Social Security trust fund trajectory 2024-2035",sub:"At current trajectory, Social Security trust fund depleted by 2035. Benefits cut 17% automatically. The countdown clock.",type:"CHART",geo:"us_national",fmt:"Area chart",tbl:"T581",section:"Social Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["total_transfers_per_capita","pct_on_medicaid"],join:["federal_debt_pct_gdp","total_medicare"],sc:{emotional:9,relatability:9,surprise:7,tension:9,visual:8,data_ready:10,originality:5},vs:84,tags:"Social Security trust fund 2035 depletion 17% cut benefits countdown automatic crisis retirement seniors OASDI"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4086,7 +8166,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_stock_ownership_wealth",title:"Stock ownership rate vs. median wealth by income quintile",sub:"Bottom 50%: 12% own stocks. Top 10%: 87%. The stock market is a wealth machine for those already wealthy.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T1207",section:"Banking Finance Insurance",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["pct_families_own_stocks","pct_families_own_retirement"],join:["median_household_income","pct_over_200k","corporate_profits"],sc:{emotional:8,relatability:7,surprise:7,tension:8,visual:7,data_ready:9,originality:5},vs:74,tags:"stock ownership wealth income quintile bottom 50% 12% top 10% 87% market machine wealthy already rich"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4102,7 +8198,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"female_ceo_rate_by_industry",title:"Female CEO rate by industry sector 2024",sub:"Consumer staples: 24% female CEOs. Tech: 8%. Finance: 12%. Energy: 4%. The glass ceiling is industry-specific.",type:"RANK",geo:"top_n_list",fmt:"Ranked list",tbl:"T808",section:"Business Enterprise",ext:[],vars:["corporate_profits","state_gdp_per_capita"],join:["median_household_income","female_lfp_rate"],sc:{emotional:7,relatability:7,surprise:7,tension:6,visual:7,data_ready:8,originality:6},vs:68,tags:"female CEO rate industry 2024 consumer staples 24% tech 8% finance energy glass ceiling Fortune 500 sector"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4118,7 +8230,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_womens_education_fertility",title:"Women's educational attainment vs. fertility rate by state",sub:"States with more college-educated women have dramatically lower fertility rates. The education-family tradeoff.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"T254 Â· T85",section:"Education Â· Births Deaths",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["total_fertility_rate_by_race","pct_bachelors"],join:["median_household_income","birth_rate_state","female_lfp_rate"],sc:{emotional:7,relatability:7,surprise:7,tension:5,visual:7,data_ready:10,originality:6},vs:70,tags:"womens education fertility rate state college educated dramatically lower demographic transition tradeoff choice"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4134,7 +8262,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"county_without_doctor",title:"Counties without a single practicing physician",sub:"More than 80 US counties have zero practicing physicians. An additional 450 have fewer than 5. The doctor desert.",type:"MAP",geo:"us_county",fmt:"County choropleth",tbl:"T173",section:"Health",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by county (bls.gov - free)","CDC WONDER: mortality + disease rates by county/state (wonder.cdc.gov - free)"],vars:["per_capita_health_spending"],join:["median_household_income","rural_population_pct","pct_on_medicaid"],sc:{emotional:9,relatability:7,surprise:9,tension:8,visual:9,data_ready:7,originality:7},vs:82,tags:"county no doctor zero physician 80 counties 450 fewer than 5 rural desert access healthcare crisis America"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4150,7 +8294,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_rural_urban_life_expectancy_gap",title:"Rural vs. urban life expectancy gap 1980-2024 - the divergence",sub:"Rural-urban life expectancy gap: 1 year in 1980. 4.5 years in 2024. The gap that keeps growing despite parity myths.",type:"CHART",geo:"us_national",fmt:"Line chart",tbl:"T112",section:"Health",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["birth_rate_state"],join:["per_capita_health_spending","pct_on_medicaid","pct_on_snap"],sc:{emotional:8,relatability:7,surprise:7,tension:7,visual:7,data_ready:9,originality:7},vs:74,tags:"rural urban life expectancy gap 1980 2024 1 year 4.5 years divergence growing parity myth mortality healthcare"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4166,7 +8326,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"state_tax_burden_regressivity",title:"State and local tax burden as % of income - most regressive to most progressive",sub:"Washington state takes 17.8% from the poorest 20% in taxes. Only 3.5% from the top 1%. The regressivity champion.",type:"RANK",geo:"us_state",fmt:"Ranked list",tbl:"T488",section:"State Govt",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)"],vars:["state_local_revenue_per_capita","lottery_revenue_per_capita"],join:["median_household_income","pct_under_25k","rep_pct"],sc:{emotional:8,relatability:8,surprise:8,tension:8,visual:8,data_ready:8,originality:7},vs:79,tags:"state local tax burden regressivity Washington 17.8% poorest 3.5% top 1% ITEP regressive progressive sales income"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4182,7 +8358,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"irs_audit_rate_by_income",title:"IRS audit rate by income level - who gets audited",sub:"Millionaires audit rate: 2.4%. Earned Income Tax Credit filers (working poor): 1.3%. The IRS goes where it is cheapest.",type:"CHART",geo:"us_national",fmt:"Bar chart",tbl:"T794",section:"Business Enterprise",ext:["FRED: any national economic time series (fred.stlouisfed.org - free API)","BLS national data: employment, wages, CPI (bls.gov - free API)"],vars:["income_tax_after_credits","corporate_profits"],join:["median_household_income","pct_under_25k","pct_over_200k"],sc:{emotional:9,relatability:8,surprise:9,tension:9,visual:7,data_ready:10,originality:7},vs:84,tags:"IRS audit rate income millionaires 2.4% EITC 1.3% working poor cheapest enforcement disparity regressive scrutiny"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4198,7 +8390,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ,{id:"xref_immigration_crime_rate",title:"Immigration rate vs. crime rate by state - the myth quantified",sub:"The 10 highest-immigration states have crime rates 18% BELOW the national average. The data kills the narrative.",type:"XREF",geo:"us_state",fmt:"Scatter plot",tbl:"Population PDF Â· T340",section:"Population Â· Law Enforcement",ext:["ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)","BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)","Census Population Estimates: annual population by state/county (census.gov - free)","BLS LAUS: unemployment + labor force by state (bls.gov - free)","FBI Crime Data Explorer: UCR/NIBRS by state/agency (cde.ucr.cjis.gov - free)"],vars:["violent_crime_rate","net_migration_rate"],join:["rep_pct","median_household_income","pct_bachelors"],sc:{emotional:10,relatability:8,surprise:9,tension:10,visual:7,data_ready:8,originality:8},vs:91,tags:"immigration crime rate state myth 10 highest 18% below national average data kills narrative evidence policy debate"}
+
+
+
+
+
+
+
+
 
 
 
@@ -4214,7 +8422,23 @@ const D = [
 
 
 
+
+
+
+
+
+
+
+
 ]; // end D
+
+
+
+
+
+
+
+
 
 
 
