@@ -3,7 +3,7 @@ maintain.py - Mapzimus board maintenance
 Run after adding any new ideas: python maintain.py
 
 Does three things in order:
-  1. fix_encoding  - strips BOM, fixes double-encoded chars, ensures closing bracket
+  1. fix_encoding  - strips BOM, fixes double-encoded chars, merges duplicate end markers
   2. add_ext       - patches ext[] sources onto ideas missing them (geo + section rules)
   3. normalize_fmt - collapses fmt variants to 15 canonical categories
   4. validate      - counts ideas, checks for holes/dupes, reports fmt distribution
@@ -23,16 +23,32 @@ def fix_encoding():
     text = text.replace('\u00e2\u0080\u0094', '\u2014')
     text = text.replace('\u00e2\u0080\u0093', '\u2013')
     text = text.replace('â€"', '\u2014')
-    text = text.replace('â€™', "'")
+    text = text.replace("â€™", "'")
+
     # Fix sparse array holes: ,<whitespace>, -> single comma
     before = len(re.findall(r',\s*,', text))
     if before:
         text = re.sub(r',(\s*),', r',\1', text)
         print(f'  [fix_encoding] Fixed {before} double-comma(s)')
-    # Ensure closing bracket
-    if not text.rstrip().endswith(']; // end D'):
+
+    # Merge duplicate ]; // end D markers
+    ends = [m.start() for m in re.finditer(r'\];\s*//\s*end D', text)]
+    if len(ends) >= 2:
+        print(f'  [fix_encoding] Found {len(ends)} end markers — merging')
+        first_end = ends[0]
+        last_end = ends[-1]
+        # Everything before first end marker
+        part1 = text[:first_end]
+        # Everything between first and last end markers (stranded ideas)
+        stranded = text[first_end + 20:last_end].strip()
+        if stranded:
+            text = part1 + '\n' + stranded + '\n]; // end D\n'
+        else:
+            text = part1 + '\n]; // end D\n'
+    elif len(ends) == 0:
         text = text.rstrip() + '\n]; // end D\n'
-        print('  [fix_encoding] Added closing bracket')
+        print('  [fix_encoding] Added missing closing bracket')
+
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(text)
 
@@ -100,8 +116,10 @@ def add_ext():
             skipped += 1
             out.append(line)
             continue
-        geo     = (re.search(r'geo:"([^"]*)"', line) or ['',''])[1] if re.search(r'geo:"([^"]*)"', line) else ''
-        section = (re.search(r'section:"([^"]*)"', line) or ['',''])[1] if re.search(r'section:"([^"]*)"', line) else ''
+        geo_m     = re.search(r'geo:"([^"]*)"', line)
+        section_m = re.search(r'section:"([^"]*)"', line)
+        geo     = geo_m.group(1) if geo_m else ''
+        section = section_m.group(1) if section_m else ''
         sources = build_ext(geo, section)
         ext_str = ext_js(sources)
         if 'vars:[' in line:
@@ -176,22 +194,20 @@ def get_canonical(fmt_str):
 def normalize_fmt():
     with open('data.js', 'r', encoding='utf-8') as f:
         content = f.read()
-    changes = 0
+    changes = [0]
     def replace(m):
-        global changes
         orig = m.group(1)
         canon = get_canonical(orig)
         if canon != orig:
-            changes += 1  # noqa
+            changes[0] += 1
             return f'fmt:"{canon}"'
         return m.group(0)
     result = re.sub(r'fmt:"([^"]+)"', replace, content)
-    # Also strip City map suffixes
     result = re.sub(r'fmt:"City map[^"]+"', 'fmt:"City map"', result)
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(result)
     fmts = Counter(re.findall(r'fmt:"([^"]+)"', result))
-    print(f'  [normalize_fmt] Changed: {changes} | Unique categories: {len(fmts)}')
+    print(f'  [normalize_fmt] Changed: {changes[0]} | Unique categories: {len(fmts)}')
     for k, n in sorted(fmts.items(), key=lambda x: -x[1]):
         print(f'    {n:4d}  {k}')
 
@@ -200,16 +216,13 @@ def normalize_fmt():
 def validate():
     with open('data.js', 'r', encoding='utf-8') as f:
         content = f.read()
-    # Count {id: patterns
     ids = re.findall(r'\{id:"([^"]+)"', content)
     dupes = [k for k, n in Counter(ids).items() if n > 1]
     double_commas = len(re.findall(r',\s*,', content))
-    print(f'  [validate] Ideas: {len(ids)} | Dupes: {dupes or "none"} | Double commas: {double_commas}')
-    # Check valid types/geos
+    end_count = len(re.findall(r'\];\s*//\s*end D', content))
+    print(f'  [validate] Ideas: {len(ids)} | Dupes: {dupes or "none"} | Double commas: {double_commas} | End markers: {end_count}')
     valid_types = {'MAP','RANK','XREF','CHART'}
-    valid_geos  = {'us_state','us_county','us_metro','us_city','us_national','worldwide','top_n_list'}
-    bad_types = re.findall(r'type:"([^"]+)"', content)
-    bad = [t for t in bad_types if t not in valid_types]
+    bad = [t for t in re.findall(r'type:"([^"]+)"', content) if t not in valid_types]
     if bad:
         print(f'  [validate] BAD TYPES: {Counter(bad)}')
 
