@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -26,10 +26,23 @@
   .mode-btn.on { background: var(--text); color: var(--bg); border-color: var(--text); }
   .pane { display: none; } .pane.on { display: block; }
   /* controls */
-  .bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
   .bar input { height: 34px; flex: 1; min-width: 180px; padding: 0 12px; border-radius: var(--radius-sm); border: 1px solid var(--border2); background: var(--surface2); color: var(--text); font-size: 13px; outline: none; }
   .bar input:focus { border-color: var(--blue); }
   .bar select { height: 34px; padding: 0 10px; border-radius: var(--radius-sm); border: 1px solid var(--border2); background: var(--surface2); color: var(--text); font-size: 13px; cursor: pointer; }
+  /* filter pill rows */
+  .filter-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; align-items: center; }
+  .filter-row > span { font-size: 11px; color: var(--text3); margin-right: 2px; }
+  .fp { height: 24px; padding: 0 9px; font-size: 11px; border-radius: 20px; border: 1px solid var(--border2); background: var(--surface); color: var(--text2); cursor: pointer; white-space: nowrap; transition: all .1s; }
+  .fp:hover { border-color: var(--border2); color: var(--text); }
+  .fp.on { font-weight: 600; }
+  .fp.tp-MAP.on   { background: var(--green-bg); color: var(--green-text); border-color: var(--green); }
+  .fp.tp-XREF.on  { background: var(--blue-bg);  color: var(--blue-text);  border-color: var(--blue); }
+  .fp.tp-CHART.on { background: var(--purple-bg); color: var(--purple-text); border-color: var(--purple); }
+  .fp.tp-RANK.on  { background: var(--amber-bg);  color: var(--amber-text);  border-color: var(--amber); }
+  .fp.geo.on { background: var(--surface2); color: var(--text); border-color: var(--text3); }
+  .fp.fmt.on { background: var(--surface2); color: var(--text); border-color: var(--text3); }
+  /* sort row */
   .sort-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; align-items: center; }
   .sort-row > span { font-size: 11px; color: var(--text3); }
   .sb { height: 26px; padding: 0 10px; font-size: 11px; border-radius: 20px; border: 1px solid var(--border2); background: var(--surface); color: var(--text2); cursor: pointer; white-space: nowrap; }
@@ -60,6 +73,7 @@
   .geo  { background: var(--surface2); color: var(--text3); border: 1px solid var(--border); }
   .fmt  { background: var(--surface2); color: var(--text3); border: 1px solid var(--border); }
   .src  { font-size: 10px; color: var(--text3); margin-top: 3px; }
+  .ext-badge { font-size: 10px; color: var(--text3); margin-top: 4px; line-height: 1.5; }
   .right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; min-width: 88px; }
   .vs   { font-size: 22px; font-weight: 700; line-height: 1; }
   .vl   { font-size: 9px; color: var(--text3); }
@@ -70,8 +84,6 @@
   .bf   { height: 100%; border-radius: 2px; }
   .empty { padding: 3rem; text-align: center; color: var(--text3); font-size: 13px; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text3); }
-
-  /* Mobile: stack card vertically, hide score bars */
   @media (max-width: 540px) {
     .card { grid-template-columns: 1fr; }
     .right { flex-direction: row; align-items: center; min-width: 0; width: 100%; justify-content: flex-start; gap: 10px; }
@@ -99,36 +111,58 @@
 <!-- BROWSE -->
 <div class="pane on" id="pane-browse">
   <div class="bar">
-    <input id="q" placeholder="Search ideas: housing, opioids, coal, redline, debt, immigration…" oninput="renderBrowse()">
-    <select id="tf" onchange="renderBrowse()">
-      <option value="">All types</option>
-      <option value="XREF">XREF — cross-reference</option>
-      <option value="MAP">MAP — standalone</option>
-      <option value="RANK">RANK — top-N list</option>
-      <option value="CHART">CHART — trend / bar</option>
-    </select>
-    <select id="gf" onchange="renderBrowse()">
-      <option value="">All geographies</option>
-      <option value="us_county">US county</option>
-      <option value="us_state">US state</option>
-      <option value="top_n_list">Top-N list</option>
-      <option value="worldwide">Worldwide</option>
-      <option value="us_metro">US metro</option>
-      <option value="us_city">US city</option>
-      <option value="us_national">US national</option>
-    </select>
+    <input id="q" placeholder="Search: housing, opioids, coal, redline, debt, immigration…" oninput="renderBrowse()">
   </div>
+
+  <!-- Type pills -->
+  <div class="filter-row">
+    <span>Type:</span>
+    <button class="fp tp-MAP"   data-f="type" data-v="MAP"   onclick="togglePill(this)">MAP</button>
+    <button class="fp tp-XREF"  data-f="type" data-v="XREF"  onclick="togglePill(this)">XREF</button>
+    <button class="fp tp-CHART" data-f="type" data-v="CHART" onclick="togglePill(this)">CHART</button>
+    <button class="fp tp-RANK"  data-f="type" data-v="RANK"  onclick="togglePill(this)">RANK</button>
+  </div>
+
+  <!-- Geography pills -->
+  <div class="filter-row">
+    <span>Geo:</span>
+    <button class="fp geo" data-f="geo" data-v="us_state"   onclick="togglePill(this)">US state</button>
+    <button class="fp geo" data-f="geo" data-v="us_county"  onclick="togglePill(this)">US county</button>
+    <button class="fp geo" data-f="geo" data-v="us_national" onclick="togglePill(this)">US national</button>
+    <button class="fp geo" data-f="geo" data-v="us_metro"   onclick="togglePill(this)">US metro</button>
+    <button class="fp geo" data-f="geo" data-v="us_city"    onclick="togglePill(this)">US city</button>
+    <button class="fp geo" data-f="geo" data-v="worldwide"  onclick="togglePill(this)">Worldwide</button>
+    <button class="fp geo" data-f="geo" data-v="top_n_list" onclick="togglePill(this)">Top-N list</button>
+  </div>
+
+  <!-- Format pills -->
+  <div class="filter-row">
+    <span>Format:</span>
+    <button class="fp fmt" data-f="fmt" data-v="Scatter plot"        onclick="togglePill(this)">Scatter</button>
+    <button class="fp fmt" data-f="fmt" data-v="State choropleth"    onclick="togglePill(this)">State map</button>
+    <button class="fp fmt" data-f="fmt" data-v="County choropleth"   onclick="togglePill(this)">County map</button>
+    <button class="fp fmt" data-f="fmt" data-v="World choropleth"    onclick="togglePill(this)">World map</button>
+    <button class="fp fmt" data-f="fmt" data-v="Bivariate choropleth" onclick="togglePill(this)">Bivariate</button>
+    <button class="fp fmt" data-f="fmt" data-v="Line chart"          onclick="togglePill(this)">Line</button>
+    <button class="fp fmt" data-f="fmt" data-v="Bar chart"           onclick="togglePill(this)">Bar</button>
+    <button class="fp fmt" data-f="fmt" data-v="Area chart"          onclick="togglePill(this)">Area</button>
+    <button class="fp fmt" data-f="fmt" data-v="Ranked list"         onclick="togglePill(this)">Ranked list</button>
+    <button class="fp fmt" data-f="fmt" data-v="Treemap"             onclick="togglePill(this)">Treemap</button>
+  </div>
+
+  <!-- Sort row -->
   <div class="sort-row">
     <span>Sort:</span>
-    <button class="sb on" data-k="vscore" onclick="setSort(this)">V-Score</button>
-    <button class="sb" data-k="emotional" onclick="setSort(this)">Emotional</button>
-    <button class="sb" data-k="relatability" onclick="setSort(this)">Relatability</button>
-    <button class="sb" data-k="surprise" onclick="setSort(this)">Surprise</button>
-    <button class="sb" data-k="tension" onclick="setSort(this)">Tension</button>
-    <button class="sb" data-k="visual" onclick="setSort(this)">Visual</button>
-    <button class="sb" data-k="data_ready" onclick="setSort(this)">Data ready</button>
-    <button class="sb" data-k="originality" onclick="setSort(this)">Originality</button>
+    <button class="sb on" data-k="vscore"       onclick="setSort(this)">V-Score</button>
+    <button class="sb"    data-k="emotional"    onclick="setSort(this)">Emotional</button>
+    <button class="sb"    data-k="relatability" onclick="setSort(this)">Relatability</button>
+    <button class="sb"    data-k="surprise"     onclick="setSort(this)">Surprise</button>
+    <button class="sb"    data-k="tension"      onclick="setSort(this)">Tension</button>
+    <button class="sb"    data-k="visual"       onclick="setSort(this)">Visual</button>
+    <button class="sb"    data-k="data_ready"   onclick="setSort(this)">Data ready</button>
+    <button class="sb"    data-k="originality"  onclick="setSort(this)">Originality</button>
   </div>
+
   <div class="cnt" id="bcnt"></div>
   <div class="grid" id="bgrid"></div>
 </div>
@@ -153,7 +187,7 @@
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=4"></script>
-<script src="app.js?v=4"></script>
+<script src="data.js?v=5"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>
