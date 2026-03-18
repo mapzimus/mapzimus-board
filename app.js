@@ -394,6 +394,6 @@ function toggleFmt(k, btn) {
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────
-document.getElementById('subl').textContent =
-  `${D.length} ideas · ProQuest Statistical Abstract of the U.S. 2026 · all 36 PDFs · @mapzimus`;
+
 renderBrowse();
+
