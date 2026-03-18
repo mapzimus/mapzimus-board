@@ -49,6 +49,8 @@ def fix_encoding():
         text = text.rstrip() + '\n]; // end D\n'
         print('  [fix_encoding] Added missing closing bracket')
 
+    # Fix leading comma before first element (causes sparse array hole)
+    text = re.sub(r'(const D\s*=\s*\[[\s\n]*),(\{id:)', r'\1\2', text, count=1)
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(text)
 
