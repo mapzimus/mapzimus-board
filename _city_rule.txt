@@ -1,0 +1,1 @@
+    (r'^City map',             'City map'),
