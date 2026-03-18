@@ -269,7 +269,7 @@ function cardHTML(d, highlight = false) {
     `<div class="br"><span class="bl">${l}</span><div class="bt"><div class="bf" style="width:${(d.sc[k]||0)*10}%;background:${FC[k]}"></div></div></div>`
   ).join('');
   const extBadge = (d.ext && d.ext.length)
-    ? `<div class="ext-badge">+ ext: ${d.ext.join(' · ')}</div>` : '';
+    ? `<div class="ext-badge">+ ext: ${d.ext.join('  |  ')}</div>` : '';
   return `<div class="card${highlight ? ' hi' : ''}">
     <div>
       <div class="ct">${d.title}</div>
@@ -279,7 +279,7 @@ function cardHTML(d, highlight = false) {
         <span class="pl geo">${d.geo.replace(/_/g,' ')}</span>
         <span class="pl fmt">${d.fmt}</span>
       </div>
-      <div class="src">${d.tbl} · ${d.section}</div>
+      <div class="src">${d.tbl}  |  ${d.section}</div>
       ${extBadge}
     </div>
     <div class="right">
@@ -301,11 +301,17 @@ function renderBrowse() {
       if (!h.includes(q)) return false;
     }
     return true;
-  }).sort((a, b) => {
-    const av = sortK === 'vscore' ? a.vs : (a.sc[sortK] || 0);
-    const bv = sortK === 'vscore' ? b.vs : (b.sc[sortK] || 0);
-    return bv - av;
   });
+  // Sort
+  if (sortK === 'newest') {
+    r.sort((a, b) => D.indexOf(b) - D.indexOf(a));
+  } else {
+    r.sort((a, b) => {
+      const av = sortK === 'vscore' ? a.vs : (a.sc[sortK] || 0);
+      const bv = sortK === 'vscore' ? b.vs : (b.sc[sortK] || 0);
+      return bv - av;
+    });
+  }
   document.getElementById('bcnt').textContent = `Showing ${r.length} of ${D.length} ideas`;
   document.getElementById('bgrid').innerHTML = r.length
     ? r.map(d => cardHTML(d)).join('')

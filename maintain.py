@@ -52,6 +52,27 @@ def fix_encoding():
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(text)
 
+# ── FIX ENCODING ARTIFACTS ───────────────────────────────────────────────────
+
+def fix_chars():
+    """Replace middot and other non-ASCII chars that cause browser rendering issues."""
+    changes = 0
+    for filename in ['data.js', 'app.js']:
+        with open(filename, 'r', encoding='utf-8') as f:
+            content = f.read()
+        before = len(content)
+        content = content.replace('\u00b7', ' - ')   # middot -> plain dash
+        content = content.replace('\u00b2', '2')      # superscript 2 -> plain 2
+        content = content.replace('\u2014', '-')      # em dash -> hyphen
+        content = content.replace('\u2013', '-')      # en dash -> hyphen
+        if len(content) != before:
+            with open(filename, 'w', encoding='utf-8') as f:
+                f.write(content)
+            changes += 1
+    if changes:
+        print(f'  [fix_chars] Fixed encoding artifacts in {changes} file(s)')
+
+
 # ── 2. ADD EXT ────────────────────────────────────────────────────────────────
 
 ACS        = 'ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)'
@@ -231,6 +252,7 @@ def validate():
 if __name__ == '__main__':
     print('Running maintain.py...')
     fix_encoding()
+    fix_chars()
     add_ext()
     normalize_fmt()
     validate()
