@@ -195,7 +195,7 @@ const VAR_LABELS = {
   mental_health_providers_per_100k:"Mental health providers per 100K (SAMHSA/HRSA - ext.)",
 };
 
-// ── Build variable index ──────────────────────────────────────────────────────
+//  Build variable index 
 const VAR_INDEX = {};
 D.forEach(d => {
   const all = [...(d.vars || []), ...(d.join || [])];
@@ -206,17 +206,17 @@ D.forEach(d => {
   });
 });
 
-// ── Format index ──────────────────────────────────────────────────────────────
+//  Format index 
 const FMT_MAP = {};
 D.forEach(d => {
   if (!FMT_MAP[d.fmt]) FMT_MAP[d.fmt] = [];
   FMT_MAP[d.fmt].push(d);
 });
 
-// ── Active filters state ──────────────────────────────────────────────────────
+//  Active filters state 
 const activeFilters = { type: null, geo: null, fmt: null };
 
-// ── Color helpers ─────────────────────────────────────────────────────────────
+//  Color helpers 
 const FC = {
   emotional:'#ef4444', relatability:'#3b82f6', surprise:'#f59e0b',
   tension:'#dc2626', visual:'#22c55e', data_ready:'#a855f7', originality:'#14b8a6'
@@ -229,7 +229,7 @@ const scColor = s => s >= 93 ? '#ef4444' : s >= 87 ? '#f59e0b' : s >= 80 ? '#22c
 
 let sortK = 'vscore', selFmt = null;
 
-// ── Mode switching ────────────────────────────────────────────────────────────
+//  Mode switching 
 function setMode(m, btn) {
   document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('on'));
   btn.classList.add('on');
@@ -246,7 +246,7 @@ function setSort(btn) {
   renderBrowse();
 }
 
-// ── Pill toggle ───────────────────────────────────────────────────────────────
+//  Pill toggle 
 function togglePill(btn) {
   const field = btn.dataset.f;
   const val   = btn.dataset.v;
@@ -263,7 +263,7 @@ function togglePill(btn) {
   renderBrowse();
 }
 
-// ── Card HTML ─────────────────────────────────────────────────────────────────
+//  Card HTML 
 function cardHTML(d, highlight = false) {
   const bars = Object.entries(FL).map(([k, l]) =>
     `<div class="br"><span class="bl">${l}</span><div class="bt"><div class="bf" style="width:${(d.sc[k]||0)*10}%;background:${FC[k]}"></div></div></div>`
@@ -289,7 +289,7 @@ function cardHTML(d, highlight = false) {
   </div>`;
 }
 
-// ── Browse ────────────────────────────────────────────────────────────────────
+//  Browse 
 function renderBrowse() {
   const q = (document.getElementById('q').value || '').toLowerCase();
   const r = D.filter(d => {
@@ -305,6 +305,8 @@ function renderBrowse() {
   // Sort
   if (sortK === 'newest') {
     r.sort((a, b) => D.indexOf(b) - D.indexOf(a));
+  } else if (sortK === 'oldest') {
+    r.sort((a, b) => D.indexOf(a) - D.indexOf(b));
   } else {
     r.sort((a, b) => {
       const av = sortK === 'vscore' ? a.vs : (a.sc[sortK] || 0);
@@ -318,7 +320,7 @@ function renderBrowse() {
     : '<div class="empty">No match - try a different keyword or clear a filter.</div>';
 }
 
-// ── Correlate ─────────────────────────────────────────────────────────────────
+//  Correlate 
 function buildVarSelect() {
   const sel = document.getElementById('varsel');
   if (sel.options.length > 1) return;
@@ -353,7 +355,7 @@ function renderCorr() {
     : '<div class="empty">No ideas indexed for this variable yet.</div>';
 }
 
-// ── Format ────────────────────────────────────────────────────────────────────
+//  Format 
 function buildFormatGrid() {
   const fg = document.getElementById('fgrid');
   if (fg.children.length) return;
@@ -382,5 +384,5 @@ function toggleFmt(k, btn) {
   }
 }
 
-// ── Init ──────────────────────────────────────────────────────────────────────
+//  Init 
 renderBrowse();
