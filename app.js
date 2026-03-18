@@ -1,4 +1,4 @@
-// app.js — Mapzimus board logic v3
+// app.js - Mapzimus board logic v3
 
 const VAR_LABELS = {
   rep_pct:"Republican vote % by state (T454)", dem_pct:"Democratic vote % by state (T454)",

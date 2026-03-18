@@ -2,81 +2,57 @@
 maintain.py - Mapzimus board maintenance
 Run after adding any new ideas: python maintain.py
 
-Does three things in order:
-  1. fix_encoding  - strips BOM, fixes double-encoded chars, merges duplicate end markers
-  2. add_ext       - patches ext[] sources onto ideas missing them (geo + section rules)
-  3. normalize_fmt - collapses fmt variants to 15 canonical categories
-  4. validate      - counts ideas, checks for holes/dupes, reports fmt distribution
+Steps (in order):
+  1. compact      - rebuild data.js from scratch, deduplicate, strip all blank lines
+  2. fix_chars    - replace non-ASCII chars that cause browser rendering issues
+  3. add_ext      - patch ext[] sources onto ideas missing them
+  4. normalize_fmt- collapse fmt variants to 15 canonical categories
+  5. validate     - count ideas, check holes/dupes, report fmt distribution
 """
 import re, sys
-from collections import Counter
+from collections import Counter, OrderedDict
 
-# ── 1. FIX ENCODING ──────────────────────────────────────────────────────────
+# ── 1. COMPACT ────────────────────────────────────────────────────────────────
+def compact():
+    """Rebuild data.js: deduplicate, strip blank lines, fix leading comma."""
+    with open('data.js', 'r', encoding='utf-8') as f:
+        content = f.read()
+    if content.startswith('\ufeff'):
+        content = content[1:]
 
-def fix_encoding():
-    with open('data.js', 'rb') as f:
-        raw = f.read()
-    if raw[:3] == b'\xef\xbb\xbf':
-        raw = raw[3:]
-        print('  [fix_encoding] Stripped BOM')
-    text = raw.decode('utf-8')
-    text = text.replace('\u00e2\u0080\u0094', '\u2014')
-    text = text.replace('\u00e2\u0080\u0093', '\u2013')
-    text = text.replace('â€"', '\u2014')
-    text = text.replace("â€™", "'")
+    # Extract all unique ideas in order
+    ideas = OrderedDict()
+    for m in re.finditer(r',?\{id:"([^"]+)",[^\n]+\}', content):
+        id_val = m.group(1)
+        if id_val not in ideas:
+            ideas[id_val] = m.group(0).lstrip(',')
 
-    # Fix sparse array holes: ,<whitespace>, -> single comma
-    before = len(re.findall(r',\s*,', text))
-    if before:
-        text = re.sub(r',(\s*),', r',\1', text)
-        print(f'  [fix_encoding] Fixed {before} double-comma(s)')
+    # Rebuild cleanly
+    vals = list(ideas.values())
+    body = '\n'.join([vals[0]] + [',' + v for v in vals[1:]])
+    clean = '// data.js - Mapzimus master idea database\nconst D =[\n' + body + '\n]; // end D\n'
 
-    # Merge duplicate ]; // end D markers
-    ends = [m.start() for m in re.finditer(r'\];\s*//\s*end D', text)]
-    if len(ends) >= 2:
-        print(f'  [fix_encoding] Found {len(ends)} end markers — merging')
-        first_end = ends[0]
-        last_end = ends[-1]
-        # Everything before first end marker
-        part1 = text[:first_end]
-        # Everything between first and last end markers (stranded ideas)
-        stranded = text[first_end + 20:last_end].strip()
-        if stranded:
-            text = part1 + '\n' + stranded + '\n]; // end D\n'
-        else:
-            text = part1 + '\n]; // end D\n'
-    elif len(ends) == 0:
-        text = text.rstrip() + '\n]; // end D\n'
-        print('  [fix_encoding] Added missing closing bracket')
-
-    # Fix leading comma before first element (causes sparse array hole)
-    text = re.sub(r'(const D\s*=\s*\[[\s\n]*),(\{id:)', r'\1\2', text, count=1)
     with open('data.js', 'w', encoding='utf-8') as f:
-        f.write(text)
+        f.write(clean)
+    print(f'  [compact] {len(ideas)} ideas | {round(len(clean)/1024,1)} KB')
 
-# ── FIX ENCODING ARTIFACTS ───────────────────────────────────────────────────
-
+# ── 2. FIX CHARS ─────────────────────────────────────────────────────────────
 def fix_chars():
-    """Replace middot and other non-ASCII chars that cause browser rendering issues."""
-    changes = 0
+    """Replace non-ASCII chars that cause browser rendering issues."""
+    changed = 0
     for filename in ['data.js', 'app.js']:
         with open(filename, 'r', encoding='utf-8') as f:
             content = f.read()
-        before = len(content)
-        content = content.replace('\u00b7', ' - ')   # middot -> plain dash
-        content = content.replace('\u00b2', '2')      # superscript 2 -> plain 2
-        content = content.replace('\u2014', '-')      # em dash -> hyphen
-        content = content.replace('\u2013', '-')      # en dash -> hyphen
-        if len(content) != before:
+        new = content.replace('\u00b7', ' - ').replace('\u00b2', '2')
+        new = new.replace('\u2014', '-').replace('\u2013', '-')
+        if new != content:
             with open(filename, 'w', encoding='utf-8') as f:
-                f.write(content)
-            changes += 1
-    if changes:
-        print(f'  [fix_chars] Fixed encoding artifacts in {changes} file(s)')
+                f.write(new)
+            changed += 1
+    if changed:
+        print(f'  [fix_chars] Fixed in {changed} file(s)')
 
-
-# ── 2. ADD EXT ────────────────────────────────────────────────────────────────
-
+# ── 3. ADD EXT ────────────────────────────────────────────────────────────────
 ACS        = 'ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)'
 BEA_STATE  = 'BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)'
 BEA_METRO  = 'BEA Regional: GDP + personal income per capita by metro (apps.bea.gov - free)'
@@ -103,7 +79,6 @@ GEO_RULES = {
     'worldwide':   [WORLD_BANK],
     'top_n_list':  [],
 }
-
 SECTION_BONUS = [
     (['Health', 'health'],               CDC_WONDER),
     (['Crime', 'Law Enforcement'],        FBI_UCR),
@@ -121,30 +96,21 @@ def build_ext(geo, section):
                 sources.append(source)
     return sources
 
-def ext_js(sources):
-    if not sources:
-        return 'ext:[]'
-    parts = ','.join(f'"{s}"' for s in sources)
-    return f'ext:[{parts}]'
-
 def add_ext():
     with open('data.js', 'r', encoding='utf-8') as f:
         lines = f.readlines()
     out, modified, skipped = [], 0, 0
     for line in lines:
         if not re.search(r',?\{id:"', line):
-            out.append(line)
-            continue
+            out.append(line); continue
         if 'ext:[' in line:
-            skipped += 1
-            out.append(line)
-            continue
+            skipped += 1; out.append(line); continue
         geo_m     = re.search(r'geo:"([^"]*)"', line)
         section_m = re.search(r'section:"([^"]*)"', line)
         geo     = geo_m.group(1) if geo_m else ''
         section = section_m.group(1) if section_m else ''
         sources = build_ext(geo, section)
-        ext_str = ext_js(sources)
+        ext_str = 'ext:[' + ','.join(f'"{s}"' for s in sources) + ']' if sources else 'ext:[]'
         if 'vars:[' in line:
             out.append(line.replace('vars:[', ext_str + ',vars:[', 1))
             modified += 1
@@ -152,63 +118,34 @@ def add_ext():
             out.append(line)
     with open('data.js', 'w', encoding='utf-8') as f:
         f.writelines(out)
-    print(f'  [add_ext] Modified: {modified} | Skipped (had ext): {skipped}')
+    print(f'  [add_ext] Modified: {modified} | Skipped: {skipped}')
 
-# ── 3. NORMALIZE FMT ─────────────────────────────────────────────────────────
-
+# ── 4. NORMALIZE FMT ─────────────────────────────────────────────────────────
 FMT_RULES = [
     (r'^Scatter',              'Scatter plot'),
     (r'^State choropleth',     'State choropleth'),
     (r'^Side.by.side state',   'State choropleth'),
     (r'^City map',             'City map'),
-    (r'^Side.by.side city',    'City map'),
     (r'^County choropleth',    'County choropleth'),
-    (r'^Trivariate county',    'County choropleth'),
     (r'^H3 hexbin',            'H3 hexbin map'),
     (r'^Bivariate choropleth', 'Bivariate choropleth'),
     (r'^Bivariate$',           'Bivariate choropleth'),
     (r'^World choropleth',     'World choropleth'),
     (r'^World bubble',         'World choropleth'),
     (r'^Dot map',              'Dot map'),
-    (r'^US dot map',           'Dot map'),
     (r'^Flow map',             'Dot map'),
     (r'^Continuous raster',    'Special map'),
-    (r'^Three.panel',          'Special map'),
     (r'^Special map',          'Special map'),
     (r'^Quadrant',             'Quadrant chart'),
-    (r'^Ranked scatter',       'Quadrant chart'),
-    (r'^Dual.line',            'Line chart'),
-    (r'^Multi.line',           'Line chart'),
-    (r'^Line chart',           'Line chart'),
-    (r'^Dual.axis',            'Line chart'),
-    (r'^Dual area',            'Area chart'),
-    (r'^Area chart',           'Area chart'),
-    (r'^Stacked area',         'Area chart'),
-    (r'^Grouped bar',          'Bar chart'),
-    (r'^Grouped ranked bar',   'Bar chart'),
-    (r'^Stacked bar',          'Bar chart'),
-    (r'^Horizontal bar',       'Bar chart'),
-    (r'^Diverging horizontal', 'Bar chart'),
-    (r'^Side.by.side bar',     'Bar chart'),
-    (r'^Demographic',          'Bar chart'),
-    (r'^Pie chart',            'Bar chart'),
-    (r'^Bar chart',            'Bar chart'),
-    (r'^Pareto',               'Bar chart'),
-    (r'^Treemap or stacked',   'Treemap'),
+    (r'^Dual.line|^Multi.line|^Line chart|^Dual.axis', 'Line chart'),
+    (r'^Dual area|^Area chart|^Stacked area', 'Area chart'),
+    (r'^Grouped|^Stacked bar|^Horizontal bar|^Diverging|^Side.by.side bar|^Bar chart|^Pareto|^Pie chart|^Demographic', 'Bar chart'),
     (r'^Treemap',              'Treemap'),
-    (r'^Horizontal ranked',    'Ranked list'),
-    (r'^Ranked horizontal',    'Ranked list'),
-    (r'^Ranked bar',           'Ranked list'),
-    (r'^Ranked list',          'Ranked list'),
-    (r'^Top/bottom',           'Ranked list'),
-    (r'^River flow',           'Ranked list'),
-    (r'^RANKED',               'Ranked list'),
+    (r'^Horizontal ranked|^Ranked|^Top/bottom|^River flow|^RANKED', 'Ranked list'),
 ]
 
 def get_canonical(fmt_str):
-    prefix = re.split(r'\s*[—–]\s*', fmt_str)[0].strip()
-    if prefix == fmt_str.strip():
-        prefix = re.split(r'\s+-\s+', fmt_str)[0].strip()
+    prefix = re.split(r'\s*[-—–]\s*', fmt_str)[0].strip()
     for pattern, canonical in FMT_RULES:
         if re.match(pattern, prefix, re.IGNORECASE):
             return canonical
@@ -226,36 +163,33 @@ def normalize_fmt():
             return f'fmt:"{canon}"'
         return m.group(0)
     result = re.sub(r'fmt:"([^"]+)"', replace, content)
-    result = re.sub(r'fmt:"City map[^"]+"', 'fmt:"City map"', result)
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(result)
     fmts = Counter(re.findall(r'fmt:"([^"]+)"', result))
-    print(f'  [normalize_fmt] Changed: {changes[0]} | Unique categories: {len(fmts)}')
+    print(f'  [normalize_fmt] Changed: {changes[0]} | Categories: {len(fmts)}')
     for k, n in sorted(fmts.items(), key=lambda x: -x[1]):
         print(f'    {n:4d}  {k}')
 
-# ── 4. VALIDATE ───────────────────────────────────────────────────────────────
-
+# ── 5. VALIDATE ───────────────────────────────────────────────────────────────
 def validate():
     with open('data.js', 'r', encoding='utf-8') as f:
         content = f.read()
     ids = re.findall(r'\{id:"([^"]+)"', content)
     dupes = [k for k, n in Counter(ids).items() if n > 1]
-    double_commas = len(re.findall(r',\s*,', content))
-    end_count = len(re.findall(r'\];\s*//\s*end D', content))
-    print(f'  [validate] Ideas: {len(ids)} | Dupes: {dupes or "none"} | Double commas: {double_commas} | End markers: {end_count}')
-    valid_types = {'MAP','RANK','XREF','CHART'}
-    bad = [t for t in re.findall(r'type:"([^"]+)"', content) if t not in valid_types]
+    doubles = len(re.findall(r',\s*,', content))
+    ends = len(re.findall(r'\];\s*//\s*end D', content))
+    size_kb = round(len(content)/1024, 1)
+    print(f'  [validate] Ideas: {len(ids)} | Dupes: {dupes or "none"} | Double commas: {doubles} | End markers: {ends} | Size: {size_kb} KB')
+    bad = [t for t in re.findall(r'type:"([^"]+)"', content) if t not in {'MAP','RANK','XREF','CHART'}]
     if bad:
         print(f'  [validate] BAD TYPES: {Counter(bad)}')
 
 # ── MAIN ──────────────────────────────────────────────────────────────────────
-
 if __name__ == '__main__':
     print('Running maintain.py...')
-    fix_encoding()
+    compact()
     fix_chars()
     add_ext()
     normalize_fmt()
     validate()
-    print('Done. Commit with: git add . && git commit -m "..." && git push')
+    print('Done. Run: git add . && git commit -m "..." && git push')
