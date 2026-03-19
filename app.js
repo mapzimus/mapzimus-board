@@ -1,4 +1,4 @@
-// app.js - Mapzimus board logic v5 - inline editing + localStorage overrides
+// app.js - Mapzimus board logic v6 - inline editing + localStorage overrides
 
 const VAR_LABELS = {
   rep_pct:"Republican vote % by state", median_household_income:"Median household income by state",
@@ -96,6 +96,7 @@ D.forEach(d => {
 
 //  STATE 
 const activeFilters = { type: null, geo: null, fmt: null, status: null, notes: null };
+let activeTopics = new Set(); // multi-select, OR logic
 let sortK = 'vscore', selFmt = null;
 const PAGE = 100;
 let filteredIdeas = [], renderedCount = 0;
@@ -341,6 +342,10 @@ function buildFiltered() {
     if (activeFilters.status && d.status !== activeFilters.status)  return false;
     if (activeFilters.notes === 'has'  && !d.notes) return false;
     if (activeFilters.notes === 'none' && d.notes)  return false;
+    if (activeTopics.size > 0) {
+      const dTopics = d.topics || [];
+      if (!dTopics.some(t => activeTopics.has(t))) return false;
+    }
     if (q) {
       const h = (d.title+' '+d.sub+' '+d.tags+' '+d.section).toLowerCase();
       if (!h.includes(q)) return false;
@@ -404,6 +409,18 @@ function togglePill(btn) {
   const field = btn.dataset.f, val = btn.dataset.v;
   if (activeFilters[field] === val) { activeFilters[field] = null; btn.classList.remove('on'); }
   else { document.querySelectorAll(`.fp[data-f="${field}"]`).forEach(b=>b.classList.remove('on')); activeFilters[field]=val; btn.classList.add('on'); }
+  renderBrowse();
+}
+
+function toggleTopic(btn) {
+  const val = btn.dataset.v;
+  if (activeTopics.has(val)) {
+    activeTopics.delete(val);
+    btn.classList.remove('on');
+  } else {
+    activeTopics.add(val);
+    btn.classList.add('on');
+  }
   renderBrowse();
 }
 function setSort(btn) {
