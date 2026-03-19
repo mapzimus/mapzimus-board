@@ -7,34 +7,36 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --bg: #0f0f0f; --surface: #1a1a1a; --surface2: #222;
-    --border: #2a2a2a; --border2: #333;
+    --bg: #0f0f0f; --surface: #1a1a1a; --surface2: #222; --surface3: #2a2a2a;
+    --border: #2a2a2a; --border2: #333; --border3: #404040;
     --text: #f0f0f0; --text2: #aaa; --text3: #666;
     --blue: #3b82f6; --blue-bg: #1e3a5f; --blue-text: #93c5fd;
     --green: #22c55e; --green-bg: #14532d; --green-text: #86efac;
     --amber: #f59e0b; --amber-bg: #451a03; --amber-text: #fcd34d;
     --red: #ef4444; --red-bg: #450a0a; --red-text: #fca5a5;
     --purple: #a855f7; --purple-bg: #3b0764; --purple-text: #d8b4fe;
-    --orange: #f97316;
     --radius: 10px; --radius-sm: 6px;
   }
   body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; min-height: 100vh; }
-  .container { max-width: 940px; margin: 0 auto; padding: 24px 16px; }
-  header { margin-bottom: 20px; }
+  .container { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+  header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; flex-wrap: wrap; gap: 8px; }
   header h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.3px; }
+  .header-right { display: flex; align-items: center; gap: 10px; }
+  .override-count { font-size: 11px; color: var(--amber-text); background: var(--amber-bg); border: 1px solid #78350f; border-radius: 20px; padding: 2px 10px; }
+  .export-btn { height: 28px; padding: 0 12px; font-size: 11px; font-weight: 500; border-radius: 20px; border: 1px solid var(--border2); background: var(--surface); color: var(--text2); cursor: pointer; white-space: nowrap; }
+  .export-btn:hover { color: var(--text); border-color: var(--amber); }
+
   .modes { display: flex; gap: 6px; margin-bottom: 16px; }
   .mode-btn { height: 30px; padding: 0 14px; font-size: 12px; font-weight: 500; border-radius: 20px; border: 1px solid var(--border2); background: var(--surface); color: var(--text2); cursor: pointer; transition: all .12s; }
   .mode-btn.on { background: var(--text); color: var(--bg); border-color: var(--text); }
   .pane { display: none; } .pane.on { display: block; }
 
-  /* Search bar */
   .bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
   .bar input { height: 34px; flex: 1; min-width: 180px; padding: 0 12px; border-radius: var(--radius-sm); border: 1px solid var(--border2); background: var(--surface2); color: var(--text); font-size: 13px; outline: none; }
   .bar input:focus { border-color: var(--blue); }
 
-  /* Filter pill rows */
   .filter-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; align-items: center; }
-  .filter-row > span { font-size: 11px; color: var(--text3); min-width: 48px; flex-shrink: 0; }
+  .filter-row > span { font-size: 11px; color: var(--text3); min-width: 50px; flex-shrink: 0; }
   .fp { height: 24px; padding: 0 9px; font-size: 11px; border-radius: 20px; border: 1px solid var(--border2); background: var(--surface); color: var(--text2); cursor: pointer; white-space: nowrap; transition: all .1s; }
   .fp:hover { color: var(--text); }
   .fp.on { font-weight: 600; }
@@ -49,7 +51,6 @@
   .fp.st-published.on   { background: var(--blue-bg);   color: var(--blue-text);   border-color: var(--blue); }
   .fp.nt.on             { background: var(--surface2); color: var(--text); border-color: var(--text3); }
 
-  /* Sort row */
   .sort-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; align-items: center; }
   .sort-row > span { font-size: 11px; color: var(--text3); min-width: 34px; }
   .sb { height: 26px; padding: 0 10px; font-size: 11px; border-radius: 20px; border: 1px solid var(--border2); background: var(--surface); color: var(--text2); cursor: pointer; white-space: nowrap; }
@@ -61,30 +62,37 @@
   .cv-hint { font-size: 12px; color: var(--text3); margin-bottom: 12px; }
 
   /* Format grid */
-  .fgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin-bottom: 14px; }
+  .fgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 8px; margin-bottom: 14px; }
   .fb { padding: 10px 12px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text2); cursor: pointer; text-align: left; font-size: 13px; font-weight: 500; }
   .fb .fct { font-size: 11px; color: var(--text3); margin-top: 3px; font-weight: 400; }
   .fb.on { border-color: var(--blue); color: var(--blue-text); background: var(--blue-bg); }
 
-  /* Count + grid */
   .cnt { font-size: 11px; color: var(--text3); margin-bottom: 8px; }
   .grid { display: flex; flex-direction: column; gap: 8px; }
 
-  /* CARDS */
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: start; transition: border-color .12s; }
+  /* ── CARDS ─────────────────────────────────────────────────────────────── */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: start; }
   .card:hover { border-color: var(--border2); }
   .card.hi { border-color: var(--blue); }
-
   .card-main { min-width: 0; }
 
-  /* Card header row: status dot + section badge */
+  /* Card header */
   .card-header { display: flex; align-items: center; gap: 7px; margin-bottom: 6px; }
-  .status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .sect-badge { font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 500; }
 
+  /* Status system */
+  .status-wrap { position: relative; flex-shrink: 0; }
+  .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; cursor: pointer; flex-shrink: 0; transition: transform .12s; border: 1px solid rgba(255,255,255,0.2); }
+  .status-dot:hover { transform: scale(1.4); }
+  .status-menu { position: absolute; top: 18px; left: 0; background: var(--surface3); border: 1px solid var(--border3); border-radius: var(--radius-sm); padding: 4px; z-index: 100; min-width: 130px; display: none; box-shadow: 0 8px 24px rgba(0,0,0,0.6); }
+  .status-menu.open { display: block; }
+  .st-opt { display: flex; align-items: center; gap: 6px; padding: 5px 8px; border-radius: 4px; font-size: 12px; cursor: pointer; color: var(--text2); user-select: none; }
+  .st-opt:hover { background: var(--surface2); color: var(--text); }
+  .st-opt.active { color: var(--text); background: var(--surface2); font-weight: 600; }
+
+  /* Card text */
   .ct { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.35; margin-bottom: 5px; }
   .cs { font-size: 12px; color: var(--text2); line-height: 1.5; margin-bottom: 8px; }
-
   .pills { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
   .pl { font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 500; white-space: nowrap; }
   .XREF  { background: var(--blue-bg);   color: var(--blue-text); }
@@ -94,17 +102,26 @@
   .geo   { background: var(--surface2); color: var(--text3); border: 1px solid var(--border); }
   .fmt   { background: var(--surface2); color: var(--text3); border: 1px solid var(--border); }
 
-  /* Data needed block */
-  .data-block { background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 10px; margin-top: 4px; }
+  /* Data block */
+  .data-block { background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 10px; margin-bottom: 6px; }
   .data-label { font-size: 10px; font-weight: 600; color: var(--text3); letter-spacing: 0.4px; margin-bottom: 4px; }
-  .data-primary { font-size: 11px; color: var(--text); font-weight: 600; margin-bottom: 4px; }
-  .data-ext { list-style: none; padding: 0; border-top: 1px solid var(--border); padding-top: 5px; margin-top: 2px; display: flex; flex-direction: column; gap: 2px; }
-  .data-ext li { font-size: 10px; color: var(--text3); padding-left: 8px; position: relative; }
+  .data-primary { font-size: 11px; color: var(--text); font-weight: 600; margin-bottom: 3px; }
+  .data-ext { list-style: none; padding: 0; border-top: 1px solid var(--border); padding-top: 5px; margin-top: 3px; display: flex; flex-direction: column; gap: 2px; }
+  .data-ext li { font-size: 10px; color: var(--text3); padding-left: 10px; position: relative; }
   .data-ext li::before { content: '—'; position: absolute; left: 0; color: var(--border2); }
 
-  /* Notes block */
-  .notes-block { margin-top: 6px; font-size: 11px; color: var(--amber-text); background: var(--amber-bg); border: 1px solid #78350f; border-radius: var(--radius-sm); padding: 5px 8px; }
-  .notes-icon { margin-right: 3px; }
+  /* Notes */
+  .notes-area { margin-top: 4px; }
+  .notes-edit { font-size: 11px; color: var(--amber-text); background: var(--amber-bg); border: 1px solid #78350f; border-radius: var(--radius-sm); padding: 5px 9px; cursor: pointer; }
+  .notes-edit:hover { border-color: var(--amber); }
+  .add-note-btn { background: none; border: 1px dashed var(--border3); color: var(--text3); font-size: 11px; padding: 3px 9px; border-radius: var(--radius-sm); cursor: pointer; }
+  .add-note-btn:hover { border-color: var(--amber); color: var(--amber-text); }
+  .notes-editor { display: flex; flex-direction: column; gap: 5px; }
+  .notes-ta { width: 100%; min-height: 56px; padding: 6px 9px; background: var(--surface3); border: 1px solid var(--amber); border-radius: var(--radius-sm); color: var(--text); font-size: 12px; font-family: inherit; resize: vertical; outline: none; }
+  .notes-btns { display: flex; gap: 5px; }
+  .nb-save   { height: 24px; padding: 0 10px; font-size: 11px; border-radius: var(--radius-sm); border: 1px solid var(--green); background: var(--green-bg); color: var(--green-text); cursor: pointer; }
+  .nb-cancel { height: 24px; padding: 0 10px; font-size: 11px; border-radius: var(--radius-sm); border: 1px solid var(--border2); background: var(--surface); color: var(--text2); cursor: pointer; }
+  .nb-clear  { height: 24px; padding: 0 10px; font-size: 11px; border-radius: var(--radius-sm); border: 1px solid var(--red-bg); background: none; color: #f87171; cursor: pointer; }
 
   /* Right column */
   .right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; min-width: 88px; }
@@ -116,25 +133,27 @@
   .bt { flex: 1; height: 3px; background: var(--border2); border-radius: 2px; overflow: hidden; }
   .bf { height: 100%; border-radius: 2px; }
 
-  /* Sentinel for infinite scroll */
   #sentinel { height: 1px; }
-
   .empty { padding: 3rem; text-align: center; color: var(--text3); font-size: 13px; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text3); }
 
-  @media (max-width: 560px) {
+  @media (max-width: 580px) {
     .card { grid-template-columns: 1fr; }
-    .right { flex-direction: row; align-items: center; min-width: 0; width: 100%; justify-content: flex-start; gap: 10px; }
-    .brs { display: none; }
-    .vs { font-size: 18px; } .vl { display: none; }
-    .sort-row { gap: 4px; }
-    .sb { font-size: 10px; padding: 0 8px; }
+    .right { flex-direction: row; align-items: center; min-width: 0; width: 100%; gap: 10px; }
+    .brs { display: none; } .vs { font-size: 18px; } .vl { display: none; }
+    .sort-row { gap: 4px; } .sb { font-size: 10px; padding: 0 8px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
-<header><h1>Viral Infographic Ideas</h1></header>
+<header>
+  <h1>Viral Infographic Ideas</h1>
+  <div class="header-right">
+    <span class="override-count" id="override-count"></span>
+    <button class="export-btn" onclick="exportOverrides()">⬇ Export edits</button>
+  </div>
+</header>
 
 <div class="modes">
   <button class="mode-btn on" onclick="setMode('browse',this)">Browse</button>
@@ -142,12 +161,10 @@
   <button class="mode-btn"    onclick="setMode('format',this)">By format</button>
 </div>
 
-<!-- BROWSE -->
 <div class="pane on" id="pane-browse">
   <div class="bar">
     <input id="q" placeholder="Search: housing, opioids, coal, redline, debt, immigration…" oninput="renderBrowse()">
   </div>
-
   <div class="filter-row">
     <span>Type:</span>
     <button class="fp tp-MAP"   data-f="type" data-v="MAP"   onclick="togglePill(this)">MAP</button>
@@ -155,7 +172,6 @@
     <button class="fp tp-CHART" data-f="type" data-v="CHART" onclick="togglePill(this)">CHART</button>
     <button class="fp tp-RANK"  data-f="type" data-v="RANK"  onclick="togglePill(this)">RANK</button>
   </div>
-
   <div class="filter-row">
     <span>Geo:</span>
     <button class="fp geo" data-f="geo" data-v="us_state"    onclick="togglePill(this)">US state</button>
@@ -166,7 +182,6 @@
     <button class="fp geo" data-f="geo" data-v="worldwide"   onclick="togglePill(this)">Worldwide</button>
     <button class="fp geo" data-f="geo" data-v="top_n_list"  onclick="togglePill(this)">Top-N list</button>
   </div>
-
   <div class="filter-row">
     <span>Format:</span>
     <button class="fp fmt" data-f="fmt" data-v="Scatter plot"         onclick="togglePill(this)">Scatter</button>
@@ -180,7 +195,6 @@
     <button class="fp fmt" data-f="fmt" data-v="Ranked list"          onclick="togglePill(this)">Ranked list</button>
     <button class="fp fmt" data-f="fmt" data-v="Treemap"              onclick="togglePill(this)">Treemap</button>
   </div>
-
   <div class="filter-row">
     <span>Status:</span>
     <button class="fp st-idea"        data-f="status" data-v="idea"        onclick="togglePill(this)">⚪ Ideas</button>
@@ -188,33 +202,29 @@
     <button class="fp st-built"       data-f="status" data-v="built"       onclick="togglePill(this)">🟢 Built</button>
     <button class="fp st-published"   data-f="status" data-v="published"   onclick="togglePill(this)">🔵 Published</button>
   </div>
-
   <div class="filter-row">
     <span>Notes:</span>
     <button class="fp nt" data-f="notes" data-v="has"  onclick="togglePill(this)">Has notes</button>
     <button class="fp nt" data-f="notes" data-v="none" onclick="togglePill(this)">No notes</button>
   </div>
-
   <div class="sort-row">
     <span>Sort:</span>
-    <button class="sb on" data-k="vscore"       onclick="setSort(this)">V-Score</button>
-    <button class="sb"    data-k="newest"        onclick="setSort(this)">Newest</button>
-    <button class="sb"    data-k="oldest"        onclick="setSort(this)">Oldest</button>
-    <button class="sb"    data-k="emotional"     onclick="setSort(this)">Emotional</button>
-    <button class="sb"    data-k="relatability"  onclick="setSort(this)">Relatability</button>
-    <button class="sb"    data-k="clarity"       onclick="setSort(this)">Clarity</button>
-    <button class="sb"    data-k="surprise"      onclick="setSort(this)">Surprise</button>
-    <button class="sb"    data-k="tension"       onclick="setSort(this)">Tension</button>
-    <button class="sb"    data-k="visual"        onclick="setSort(this)">Visual</button>
-    <button class="sb"    data-k="data_ready"    onclick="setSort(this)">Data ready</button>
-    <button class="sb"    data-k="originality"   onclick="setSort(this)">Originality</button>
+    <button class="sb on" data-k="vscore"      onclick="setSort(this)">V-Score</button>
+    <button class="sb"    data-k="newest"      onclick="setSort(this)">Newest</button>
+    <button class="sb"    data-k="oldest"      onclick="setSort(this)">Oldest</button>
+    <button class="sb"    data-k="emotional"   onclick="setSort(this)">Emotional</button>
+    <button class="sb"    data-k="relatability" onclick="setSort(this)">Relatability</button>
+    <button class="sb"    data-k="clarity"     onclick="setSort(this)">Clarity</button>
+    <button class="sb"    data-k="surprise"    onclick="setSort(this)">Surprise</button>
+    <button class="sb"    data-k="tension"     onclick="setSort(this)">Tension</button>
+    <button class="sb"    data-k="visual"      onclick="setSort(this)">Visual</button>
+    <button class="sb"    data-k="data_ready"  onclick="setSort(this)">Data ready</button>
+    <button class="sb"    data-k="originality" onclick="setSort(this)">Originality</button>
   </div>
-
   <div class="cnt" id="bcnt"></div>
   <div class="grid" id="bgrid"></div>
 </div>
 
-<!-- CORRELATE -->
 <div class="pane" id="pane-correlate">
   <div class="cv">
     <label>Pick a variable — find every idea it connects to</label>
@@ -225,7 +235,6 @@
   <div class="grid" id="cgrid"></div>
 </div>
 
-<!-- FORMAT -->
 <div class="pane" id="pane-format">
   <div class="fgrid" id="fgrid"></div>
   <div class="cnt" id="fcnt"></div>
@@ -234,7 +243,7 @@
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=10"></script>
-<script src="app.js?v=10"></script>
+<script src="data.js?v=11"></script>
+<script src="app.js?v=11"></script>
 </body>
 </html>
