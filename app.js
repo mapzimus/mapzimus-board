@@ -313,13 +313,21 @@ function exportOverrides() {
   script += 'with open("data.js","w",encoding="utf-8") as f: f.write("\\n".join(new_lines))\n';
   script += 'print("Patched",changed,"ideas")\n';
 
-  // Copy to clipboard
-  navigator.clipboard.writeText(script).then(() => {
-    alert(` ${n} overrides copied as Python patch script.\n\nPaste into D:\\projects\\mapzimus-board\\patch_overrides.py and run:\n  python patch_overrides.py\n  python maintain.py\n  git add . && git commit -m "Apply browser edits" && git push`);
+  // Download as file directly - no clipboard needed
+  const blob = new Blob([script], {type:'text/plain'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'patch_overrides.py';
+  a.click();
+  setTimeout(() => {
+    alert(` patch_overrides.py downloaded!\n\nIn PowerShell:\n\n  cd D:\\projects\\mapzimus-board\n  Move-Item $env:USERPROFILE\\Downloads\\patch_overrides.py .\n  python patch_overrides.py\n  python maintain.py\n  git add .\n  git commit -m "Apply status updates"\n  git push`);
+  }, 500);
+  // unused then block below for compat
+  Promise.resolve().then(() => {
+    alert(` ${n} overrides copied!\n\nIn PowerShell:\n\n  cd D:\\projects\\mapzimus-board\n  # paste into patch_overrides.py, then:\n  python patch_overrides.py\n  python maintain.py\n  git add .\n  git commit -m "Apply status updates"\n  git push\n\n(PowerShell uses separate lines, not &&)`);
   }).catch(() => {
-    // Fallback: show in textarea
-    const win = window.open('', '_blank', 'width=700,height=500');
-    win.document.write('<textarea style="width:100%;height:100%;font-family:monospace;font-size:12px">' + script.replace(/</g,'&lt;') + '</textarea>');
+    const win = window.open('', '_blank', 'width=700,height=560');
+    win.document.write('<pre style="background:#111;color:#eee;padding:16px;font-size:12px;white-space:pre-wrap">SAVE AS: D:\\projects\\mapzimus-board\\patch_overrides.py\n\nTHEN RUN IN POWERSHELL:\n  cd D:\\projects\\mapzimus-board\n  python patch_overrides.py\n  python maintain.py\n  git add .\n  git commit -m \"Apply status updates\"\n  git push\n\n---\n\n' + script.replace(/</g,'&lt;') + '</pre>');
   });
 }
 
