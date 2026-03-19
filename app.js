@@ -459,8 +459,6 @@ function toggleTopic(btn) {
   }
   renderBrowse();
 }
-  renderBrowse();
-}
 function setSort(btn) {
   sortK = btn.dataset.k;
   document.querySelectorAll('.sb').forEach(b=>b.classList.remove('on'));
