@@ -110,7 +110,6 @@ D.forEach(d => {
 //  STATE 
 const activeFilters = { type: null, geo: null, fmt: null, status: null, notes: null };
 let activeTopics = new Set(); // multi-select, OR logic
-let activeSections = new Set(); // multi-select section filter
 let sortK = 'vscore', selFmt = null;
 const PAGE = 100;
 let filteredIdeas = [], renderedCount = 0;
@@ -383,10 +382,6 @@ function buildFiltered() {
       const dTopics = d.topics || [];
       if (!dTopics.some(t => activeTopics.has(t))) return false;
     }
-    if (activeSections.size > 0) {
-      const sec = d.section || '';
-      if (![...activeSections].some(s => sec.includes(s))) return false;
-    }
     if (q) {
       const h = (d.title+' '+d.sub+' '+d.tags+' '+d.section).toLowerCase();
       if (!h.includes(q)) return false;
@@ -443,7 +438,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('bgrid').after(sentinel);
   new IntersectionObserver(entries => { if (entries[0].isIntersecting) renderMore(); }, { rootMargin: '200px' }).observe(sentinel);
   updateOverrideCount();
-  buildSectionRow();
 });
 
 //  PILL + SORT 
@@ -465,22 +459,6 @@ function toggleTopic(btn) {
   }
   renderBrowse();
 }
-function toggleSection(btn) {
-  const val = btn.dataset.v;
-  const c = SECTION_COLORS[val] || '#6b7280';
-  if (activeSections.has(val)) {
-    activeSections.delete(val);
-    btn.classList.remove('on');
-    btn.style.background = '';
-    btn.style.color = '';
-    btn.style.borderColor = '';
-  } else {
-    activeSections.add(val);
-    btn.classList.add('on');
-    btn.style.background = c + '22';
-    btn.style.color = c;
-    btn.style.borderColor = c + '88';
-  }
   renderBrowse();
 }
 function setSort(btn) {
@@ -532,20 +510,6 @@ function toggleFmt(k,btn) {
   else{selFmt=k;document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');const items=(FMT_MAP[k]||[]).sort((a,b)=>b.vs-a.vs);document.getElementById('fcnt').textContent=`${items.length} idea${items.length!==1?'s':''} in this format`;document.getElementById('fgridout').innerHTML=items.map(d=>cardHTML(d)).join('');}
 }
 
-//  SECTION ROW BUILD
-function buildSectionRow() {
-  const row = document.getElementById('section-row');
-  if (!row || row.dataset.built) return;
-  row.dataset.built = '1';
-  Object.entries(SECTION_COLORS).forEach(([s, c]) => {
-    const btn = document.createElement('button');
-    btn.className = 'fp sec';
-    btn.dataset.v = s;
-    btn.textContent = s;
-    btn.onclick = () => toggleSection(btn);
-    row.appendChild(btn);
-  });
-}
 
 //  INIT
 renderBrowse();
