@@ -71,7 +71,7 @@
   .cnt { font-size: 11px; color: var(--text3); margin-bottom: 8px; }
   .grid { display: flex; flex-direction: column; gap: 8px; }
 
-  /* ── CARDS ─────────────────────────────────────────────────────────────── */
+  /* â”€â”€ CARDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: start; }
   .card:hover { border-color: var(--border2); }
   .card.hi { border-color: var(--blue); }
@@ -109,7 +109,7 @@
   .data-primary { font-size: 11px; color: var(--text); font-weight: 600; margin-bottom: 3px; }
   .data-ext { list-style: none; padding: 0; border-top: 1px solid var(--border); padding-top: 5px; margin-top: 3px; display: flex; flex-direction: column; gap: 2px; }
   .data-ext li { font-size: 10px; color: var(--text3); padding-left: 10px; position: relative; }
-  .data-ext li::before { content: '—'; position: absolute; left: 0; color: var(--border2); }
+  .data-ext li::before { content: 'â€”'; position: absolute; left: 0; color: var(--border2); }
 
   /* Notes */
   .notes-area { margin-top: 4px; }
@@ -152,7 +152,7 @@
   <h1>Viral Infographic Ideas</h1>
   <div class="header-right">
     <span class="override-count" id="override-count"></span>
-    <button class="export-btn" onclick="exportOverrides()">⬇ Export edits</button>
+    <button class="export-btn" onclick="exportOverrides()">â¬‡ Export edits</button>
   </div>
 </header>
 
@@ -164,7 +164,7 @@
 
 <div class="pane on" id="pane-browse">
   <div class="bar">
-    <input id="q" placeholder="Search: housing, opioids, coal, redline, debt, immigration…" oninput="renderBrowse()">
+    <input id="q" placeholder="Search: housing, opioids, coal, redline, debt, immigrationâ€¦" oninput="renderBrowse()">
   </div>
   <div class="filter-row">
     <span>Type:</span>
@@ -198,10 +198,10 @@
   </div>
   <div class="filter-row">
     <span>Status:</span>
-    <button class="fp st-idea"        data-f="status" data-v="idea"        onclick="togglePill(this)">⚪ Ideas</button>
-    <button class="fp st-in-progress" data-f="status" data-v="in-progress" onclick="togglePill(this)">🟡 In progress</button>
-    <button class="fp st-built"       data-f="status" data-v="built"       onclick="togglePill(this)">🟢 Built</button>
-    <button class="fp st-published"   data-f="status" data-v="published"   onclick="togglePill(this)">🔵 Published</button>
+    <button class="fp st-idea"        data-f="status" data-v="idea"        onclick="togglePill(this)">âšª Ideas</button>
+    <button class="fp st-in-progress" data-f="status" data-v="in-progress" onclick="togglePill(this)">ðŸŸ¡ In progress</button>
+    <button class="fp st-built"       data-f="status" data-v="built"       onclick="togglePill(this)">ðŸŸ¢ Built</button>
+    <button class="fp st-published"   data-f="status" data-v="published"   onclick="togglePill(this)">ðŸ”µ Published</button>
   </div>
   <div class="filter-row">
     <span>Notes:</span>
@@ -210,40 +210,40 @@
   </div>
   <div class="filter-row" id="topic-row">
     <span>Topic:</span>
-    <button class="fp topic" data-f="topics" data-v="health"         onclick="toggleTopic(this)">🏥 Health</button>
-    <button class="fp topic" data-f="topics" data-v="economy"        onclick="toggleTopic(this)">💰 Economy</button>
-    <button class="fp topic" data-f="topics" data-v="politics"       onclick="toggleTopic(this)">🗳️ Politics</button>
-    <button class="fp topic" data-f="topics" data-v="crime"          onclick="toggleTopic(this)">🔒 Crime</button>
-    <button class="fp topic" data-f="topics" data-v="poverty"        onclick="toggleTopic(this)">📉 Poverty</button>
-    <button class="fp topic" data-f="topics" data-v="housing"        onclick="toggleTopic(this)">🏠 Housing</button>
-    <button class="fp topic" data-f="topics" data-v="education"      onclick="toggleTopic(this)">📚 Education</button>
-    <button class="fp topic" data-f="topics" data-v="labor"          onclick="toggleTopic(this)">👷 Labor</button>
-    <button class="fp topic" data-f="topics" data-v="race"           onclick="toggleTopic(this)">✊ Race</button>
-    <button class="fp topic" data-f="topics" data-v="gender"         onclick="toggleTopic(this)">⚧️ Gender</button>
-    <button class="fp topic" data-f="topics" data-v="immigration"    onclick="toggleTopic(this)">🌐 Immigration</button>
-    <button class="fp topic" data-f="topics" data-v="war"            onclick="toggleTopic(this)">⚔️ War</button>
-    <button class="fp topic" data-f="topics" data-v="military"       onclick="toggleTopic(this)">🎖️ Military</button>
-    <button class="fp topic" data-f="topics" data-v="energy"         onclick="toggleTopic(this)">⚡ Energy</button>
-    <button class="fp topic" data-f="topics" data-v="climate"        onclick="toggleTopic(this)">🌡️ Climate</button>
-    <button class="fp topic" data-f="topics" data-v="environment"    onclick="toggleTopic(this)">🌿 Environment</button>
-    <button class="fp topic" data-f="topics" data-v="food"           onclick="toggleTopic(this)">🌽 Food</button>
-    <button class="fp topic" data-f="topics" data-v="agriculture"    onclick="toggleTopic(this)">🚜 Agriculture</button>
-    <button class="fp topic" data-f="topics" data-v="drugs"          onclick="toggleTopic(this)">💊 Drugs</button>
-    <button class="fp topic" data-f="topics" data-v="guns"           onclick="toggleTopic(this)">🔫 Guns</button>
-    <button class="fp topic" data-f="topics" data-v="finance"        onclick="toggleTopic(this)">🏦 Finance</button>
-    <button class="fp topic" data-f="topics" data-v="trade"          onclick="toggleTopic(this)">📦 Trade</button>
-    <button class="fp topic" data-f="topics" data-v="inequality"     onclick="toggleTopic(this)">⚖️ Inequality</button>
-    <button class="fp topic" data-f="topics" data-v="transportation" onclick="toggleTopic(this)">🚗 Transportation</button>
-    <button class="fp topic" data-f="topics" data-v="infrastructure" onclick="toggleTopic(this)">🌉 Infrastructure</button>
-    <button class="fp topic" data-f="topics" data-v="technology"     onclick="toggleTopic(this)">💻 Technology</button>
-    <button class="fp topic" data-f="topics" data-v="media"          onclick="toggleTopic(this)">📺 Media</button>
-    <button class="fp topic" data-f="topics" data-v="population"     onclick="toggleTopic(this)">👥 Population</button>
-    <button class="fp topic" data-f="topics" data-v="international"  onclick="toggleTopic(this)">🌍 International</button>
-    <button class="fp topic" data-f="topics" data-v="democracy"      onclick="toggleTopic(this)">🗽 Democracy</button>
-    <button class="fp topic" data-f="topics" data-v="religion"       onclick="toggleTopic(this)">⛪ Religion</button>
-    <button class="fp topic" data-f="topics" data-v="history"        onclick="toggleTopic(this)">📜 History</button>
-    <button class="fp topic" data-f="topics" data-v="space"          onclick="toggleTopic(this)">🚀 Space</button>
-    <button class="fp topic" data-f="topics" data-v="data"           onclick="toggleTopic(this)">📊 Data</button>
+    <button class="fp topic" data-f="topics" data-v="health"         onclick="toggleTopic(this)">ðŸ¥ Health</button>
+    <button class="fp topic" data-f="topics" data-v="economy"        onclick="toggleTopic(this)">ðŸ’° Economy</button>
+    <button class="fp topic" data-f="topics" data-v="politics"       onclick="toggleTopic(this)">ðŸ—³ï¸ Politics</button>
+    <button class="fp topic" data-f="topics" data-v="crime"          onclick="toggleTopic(this)">ðŸ”’ Crime</button>
+    <button class="fp topic" data-f="topics" data-v="poverty"        onclick="toggleTopic(this)">ðŸ“‰ Poverty</button>
+    <button class="fp topic" data-f="topics" data-v="housing"        onclick="toggleTopic(this)">ðŸ  Housing</button>
+    <button class="fp topic" data-f="topics" data-v="education"      onclick="toggleTopic(this)">ðŸ“š Education</button>
+    <button class="fp topic" data-f="topics" data-v="labor"          onclick="toggleTopic(this)">ðŸ‘· Labor</button>
+    <button class="fp topic" data-f="topics" data-v="race"           onclick="toggleTopic(this)">âœŠ Race</button>
+    <button class="fp topic" data-f="topics" data-v="gender"         onclick="toggleTopic(this)">âš§ï¸ Gender</button>
+    <button class="fp topic" data-f="topics" data-v="immigration"    onclick="toggleTopic(this)">ðŸŒ Immigration</button>
+    <button class="fp topic" data-f="topics" data-v="war"            onclick="toggleTopic(this)">âš”ï¸ War</button>
+    <button class="fp topic" data-f="topics" data-v="military"       onclick="toggleTopic(this)">ðŸŽ–ï¸ Military</button>
+    <button class="fp topic" data-f="topics" data-v="energy"         onclick="toggleTopic(this)">âš¡ Energy</button>
+    <button class="fp topic" data-f="topics" data-v="climate"        onclick="toggleTopic(this)">ðŸŒ¡ï¸ Climate</button>
+    <button class="fp topic" data-f="topics" data-v="environment"    onclick="toggleTopic(this)">ðŸŒ¿ Environment</button>
+    <button class="fp topic" data-f="topics" data-v="food"           onclick="toggleTopic(this)">ðŸŒ½ Food</button>
+    <button class="fp topic" data-f="topics" data-v="agriculture"    onclick="toggleTopic(this)">ðŸšœ Agriculture</button>
+    <button class="fp topic" data-f="topics" data-v="drugs"          onclick="toggleTopic(this)">ðŸ’Š Drugs</button>
+    <button class="fp topic" data-f="topics" data-v="guns"           onclick="toggleTopic(this)">ðŸ”« Guns</button>
+    <button class="fp topic" data-f="topics" data-v="finance"        onclick="toggleTopic(this)">ðŸ¦ Finance</button>
+    <button class="fp topic" data-f="topics" data-v="trade"          onclick="toggleTopic(this)">ðŸ“¦ Trade</button>
+    <button class="fp topic" data-f="topics" data-v="inequality"     onclick="toggleTopic(this)">âš–ï¸ Inequality</button>
+    <button class="fp topic" data-f="topics" data-v="transportation" onclick="toggleTopic(this)">ðŸš— Transportation</button>
+    <button class="fp topic" data-f="topics" data-v="infrastructure" onclick="toggleTopic(this)">ðŸŒ‰ Infrastructure</button>
+    <button class="fp topic" data-f="topics" data-v="technology"     onclick="toggleTopic(this)">ðŸ’» Technology</button>
+    <button class="fp topic" data-f="topics" data-v="media"          onclick="toggleTopic(this)">ðŸ“º Media</button>
+    <button class="fp topic" data-f="topics" data-v="population"     onclick="toggleTopic(this)">ðŸ‘¥ Population</button>
+    <button class="fp topic" data-f="topics" data-v="international"  onclick="toggleTopic(this)">ðŸŒ International</button>
+    <button class="fp topic" data-f="topics" data-v="democracy"      onclick="toggleTopic(this)">ðŸ—½ Democracy</button>
+    <button class="fp topic" data-f="topics" data-v="religion"       onclick="toggleTopic(this)">â›ª Religion</button>
+    <button class="fp topic" data-f="topics" data-v="history"        onclick="toggleTopic(this)">ðŸ“œ History</button>
+    <button class="fp topic" data-f="topics" data-v="space"          onclick="toggleTopic(this)">ðŸš€ Space</button>
+    <button class="fp topic" data-f="topics" data-v="data"           onclick="toggleTopic(this)">ðŸ“Š Data</button>
   </div>
   <div class="sort-row">
     <span>Sort:</span>
@@ -265,8 +265,8 @@
 
 <div class="pane" id="pane-correlate">
   <div class="cv">
-    <label>Pick a variable — find every idea it connects to</label>
-    <select id="varsel" onchange="renderCorr()"><option value="">— select a variable —</option></select>
+    <label>Pick a variable â€” find every idea it connects to</label>
+    <select id="varsel" onchange="renderCorr()"><option value="">â€” select a variable â€”</option></select>
     <div class="cv-hint" id="corr-hint">Blue border = variable used directly. No border = joinable.</div>
   </div>
   <div class="cnt" id="ccnt"></div>
@@ -281,7 +281,6 @@
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=12"></script>
-<script src="app.js?v=12"></script>
+<script src="data.js?v=13"></script><script src="app.js?v=13"></script>
 </body>
 </html>
