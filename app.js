@@ -51,6 +51,19 @@ const VAR_LABELS = {
 //  OVERRIDES: localStorage persistence 
 // Structure: { [ideaId]: { status: '...', notes: '...' } }
 const LS_KEY = 'mapzimus_overrides';
+const TOPIC_COLORS = {
+  health:'#ef4444', economy:'#22c55e', politics:'#3b82f6',
+  crime:'#dc2626', poverty:'#f59e0b', housing:'#f97316',
+  education:'#14b8a6', labor:'#a855f7', race:'#ec4899',
+  gender:'#e879f9', immigration:'#0ea5e9', war:'#b91c1c',
+  military:'#6366f1', energy:'#eab308', climate:'#10b981',
+  environment:'#16a34a', food:'#84cc16', agriculture:'#65a30d',
+  drugs:'#9333ea', guns:'#991b1b', finance:'#d97706',
+  trade:'#0891b2', inequality:'#e11d48', transportation:'#06b6d4',
+  infrastructure:'#64748b', technology:'#8b5cf6', media:'#0ea5e9',
+  population:'#ec4899', international:'#8b5cf6', democracy:'#3b82f6',
+  religion:'#b45309', history:'#78716c', space:'#1d4ed8', data:'#475569',
+};
 
 function loadOverrides() {
   try { return JSON.parse(localStorage.getItem(LS_KEY) || '{}'); } catch { return {}; }
@@ -97,6 +110,7 @@ D.forEach(d => {
 //  STATE 
 const activeFilters = { type: null, geo: null, fmt: null, status: null, notes: null };
 let activeTopics = new Set(); // multi-select, OR logic
+let activeSections = new Set(); // multi-select section filter
 let sortK = 'vscore', selFmt = null;
 const PAGE = 100;
 let filteredIdeas = [], renderedCount = 0;
@@ -111,10 +125,10 @@ const FL = { emotional:'Emo', relatability:'Rel', clarity:'Cla', surprise:'Sur',
 const scColor = s => s >= 90 ? '#ef4444' : s >= 83 ? '#f59e0b' : s >= 76 ? '#22c55e' : '#6b7280';
 
 const STATUSES = [
-  { val: 'idea',        color: '#6b7280', emoji: '', label: 'Idea' },
-  { val: 'in-progress', color: '#f59e0b', emoji: '', label: 'In Progress' },
-  { val: 'built',       color: '#22c55e', emoji: '', label: 'Built' },
-  { val: 'published',   color: '#3b82f6', emoji: '', label: 'Published' },
+  { val: 'idea',        color: '#6b7280', label: 'Idea' },
+  { val: 'in-progress', color: '#f59e0b', label: 'In Progress' },
+  { val: 'built',       color: '#22c55e', label: 'Built' },
+  { val: 'published',   color: '#3b82f6', label: 'Published' },
 ];
 
 const SECTION_COLORS = {
@@ -124,21 +138,41 @@ const SECTION_COLORS = {
   'Population':'#ec4899','National Security':'#6366f1','International Statistics':'#8b5cf6',
   'Geography':'#10b981','Banking':'#f59e0b','Information':'#0ea5e9',
   'State Government':'#64748b','Federal Government':'#475569',
+  'Prices':'#d97706','Births Deaths':'#ec4899','Arts Recreation':'#14b8a6',
+  'Business Enterprise':'#6366f1','Foreign Commerce':'#0891b2','Social Insurance':'#84cc16',
+  'Wholesale and Retail Trade':'#f97316','Accommodation Food Services':'#8b5cf6',
+  'Forestry Fishing':'#16a34a','Income Expenditures':'#22c55e',
 };
 
-//  CARD HTML 
+//  SECTION COLOR HELPER
+function getSectionColor(section) {
+  if (!section) return '#6b7280';
+  const entries = Object.entries(SECTION_COLORS).sort((a,b) => b[0].length - a[0].length);
+  for (const [key, color] of entries) {
+    if (section.includes(key)) return color;
+  }
+  return '#6b7280';
+}
+
+//  CARD HTML
 function cardHTML(d, highlight = false) {
   const bars = Object.entries(FL).map(([k, l]) =>
     `<div class="br"><span class="bl">${l}</span><div class="bt"><div class="bf" style="width:${(d.sc[k]||0)*10}%;background:${FC[k]}"></div></div></div>`
   ).join('');
 
   const st = STATUSES.find(s => s.val === (d.status || 'idea')) || STATUSES[0];
-  const secColor = SECTION_COLORS[d.section] || '#6b7280';
+  const secColor = getSectionColor(d.section);
+
+  // Topic badges from d.topics[]
+  const topicBadges = (d.topics || []).map(t => {
+    const c = TOPIC_COLORS[t] || '#6b7280';
+    return `<span class="topic-badge" style="background:${c}22;color:${c};border:1px solid ${c}44">${t}</span>`;
+  }).join('');
 
   // Status dropdown options
   const statusOptions = STATUSES.map(s =>
     `<div class="st-opt${s.val === d.status ? ' active' : ''}" data-id="${d.id}" data-val="${s.val}">
-      <span style="color:${s.color}">${s.emoji}</span> ${s.label}
+      <span class="sdot" style="background:${s.color}"></span>${s.label}
     </div>`
   ).join('');
 
@@ -159,7 +193,10 @@ function cardHTML(d, highlight = false) {
             ${statusOptions}
           </div>
         </div>
-        <span class="sect-badge" style="background:${secColor}22;color:${secColor};border:1px solid ${secColor}44">${d.section}</span>
+        <div class="badge-row">
+          <span class="sect-badge" style="background:${secColor}22;color:${secColor};border:1px solid ${secColor}44">${d.section}</span>
+          ${topicBadges}
+        </div>
       </div>
       <div class="ct">${d.title}</div>
       <div class="cs">${d.sub}</div>
@@ -346,6 +383,10 @@ function buildFiltered() {
       const dTopics = d.topics || [];
       if (!dTopics.some(t => activeTopics.has(t))) return false;
     }
+    if (activeSections.size > 0) {
+      const sec = d.section || '';
+      if (![...activeSections].some(s => sec.includes(s))) return false;
+    }
     if (q) {
       const h = (d.title+' '+d.sub+' '+d.tags+' '+d.section).toLowerCase();
       if (!h.includes(q)) return false;
@@ -402,6 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('bgrid').after(sentinel);
   new IntersectionObserver(entries => { if (entries[0].isIntersecting) renderMore(); }, { rootMargin: '200px' }).observe(sentinel);
   updateOverrideCount();
+  buildSectionRow();
 });
 
 //  PILL + SORT 
@@ -420,6 +462,24 @@ function toggleTopic(btn) {
   } else {
     activeTopics.add(val);
     btn.classList.add('on');
+  }
+  renderBrowse();
+}
+function toggleSection(btn) {
+  const val = btn.dataset.v;
+  const c = SECTION_COLORS[val] || '#6b7280';
+  if (activeSections.has(val)) {
+    activeSections.delete(val);
+    btn.classList.remove('on');
+    btn.style.background = '';
+    btn.style.color = '';
+    btn.style.borderColor = '';
+  } else {
+    activeSections.add(val);
+    btn.classList.add('on');
+    btn.style.background = c + '22';
+    btn.style.color = c;
+    btn.style.borderColor = c + '88';
   }
   renderBrowse();
 }
@@ -472,5 +532,20 @@ function toggleFmt(k,btn) {
   else{selFmt=k;document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');const items=(FMT_MAP[k]||[]).sort((a,b)=>b.vs-a.vs);document.getElementById('fcnt').textContent=`${items.length} idea${items.length!==1?'s':''} in this format`;document.getElementById('fgridout').innerHTML=items.map(d=>cardHTML(d)).join('');}
 }
 
-//  INIT 
+//  SECTION ROW BUILD
+function buildSectionRow() {
+  const row = document.getElementById('section-row');
+  if (!row || row.dataset.built) return;
+  row.dataset.built = '1';
+  Object.entries(SECTION_COLORS).forEach(([s, c]) => {
+    const btn = document.createElement('button');
+    btn.className = 'fp sec';
+    btn.dataset.v = s;
+    btn.textContent = s;
+    btn.onclick = () => toggleSection(btn);
+    row.appendChild(btn);
+  });
+}
+
+//  INIT
 renderBrowse();

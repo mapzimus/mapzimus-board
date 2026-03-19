@@ -109,7 +109,7 @@
   .data-primary { font-size: 11px; color: var(--text); font-weight: 600; margin-bottom: 3px; }
   .data-ext { list-style: none; padding: 0; border-top: 1px solid var(--border); padding-top: 5px; margin-top: 3px; display: flex; flex-direction: column; gap: 2px; }
   .data-ext li { font-size: 10px; color: var(--text3); padding-left: 10px; position: relative; }
-  .data-ext li::before { content: 'â€”'; position: absolute; left: 0; color: var(--border2); }
+  .data-ext li::before { content: '-'; position: absolute; left: 0; color: var(--border2); }
 
   /* Notes */
   .notes-area { margin-top: 4px; }
@@ -144,6 +144,17 @@
     .brs { display: none; } .vs { font-size: 18px; } .vl { display: none; }
     .sort-row { gap: 4px; } .sb { font-size: 10px; padding: 0 8px; }
   }
+
+  /* Status dot (menu + filter bar) */
+  .sdot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px; vertical-align:middle; flex-shrink:0; }
+
+  /* Badge row on cards - section + topic tags */
+  .badge-row { display:flex; flex-wrap:wrap; gap:4px; align-items:center; flex:1; min-width:0; }
+  .topic-badge { font-size:9px; padding:1px 6px; border-radius:20px; font-weight:500; white-space:nowrap; }
+
+  /* Section filter buttons */
+  .fp.sec { font-size:10px; }
+
 </style>
 </head>
 <body>
@@ -164,7 +175,7 @@
 
 <div class="pane on" id="pane-browse">
   <div class="bar">
-    <input id="q" placeholder="Search: housing, opioids, coal, redline, debt, immigrationâ€¦" oninput="renderBrowse()">
+    <input id="q" placeholder="Search: housing, opioids, coal, redline, debt, immigration..." oninput="renderBrowse()">
   </div>
   <div class="filter-row">
     <span>Type:</span>
@@ -198,16 +209,19 @@
   </div>
   <div class="filter-row">
     <span>Status:</span>
-    <button class="fp st-idea"        data-f="status" data-v="idea"        onclick="togglePill(this)">âšª Ideas</button>
-    <button class="fp st-in-progress" data-f="status" data-v="in-progress" onclick="togglePill(this)">ðŸŸ¡ In progress</button>
-    <button class="fp st-built"       data-f="status" data-v="built"       onclick="togglePill(this)">ðŸŸ¢ Built</button>
-    <button class="fp st-published"   data-f="status" data-v="published"   onclick="togglePill(this)">ðŸ”µ Published</button>
+    <button class="fp st-idea"        data-f="status" data-v="idea"        onclick="togglePill(this)"><span class="sdot" style="background:#6b7280"></span>Ideas</button>
+    <button class="fp st-in-progress" data-f="status" data-v="in-progress" onclick="togglePill(this)"><span class="sdot" style="background:#f59e0b"></span>In Progress</button>
+    <button class="fp st-built"       data-f="status" data-v="built"       onclick="togglePill(this)"><span class="sdot" style="background:#22c55e"></span>Built</button>
+    <button class="fp st-published"   data-f="status" data-v="published"   onclick="togglePill(this)"><span class="sdot" style="background:#3b82f6"></span>Published</button>
   </div>
   <div class="filter-row">
     <span>Notes:</span>
     <button class="fp nt" data-f="notes" data-v="has"  onclick="togglePill(this)">Has notes</button>
     <button class="fp nt" data-f="notes" data-v="none" onclick="togglePill(this)">No notes</button>
   </div>
+    <div class="filter-row" id="section-row">
+      <span>Section:</span>
+    </div>
     <div class="filter-row" id="topic-row">
     <span>Topic:</span>
     <button class="fp topic" data-f="topics" data-v="health" onclick="toggleTopic(this)">Health</button>
@@ -266,7 +280,7 @@
 <div class="pane" id="pane-correlate">
   <div class="cv">
     <label>Pick a variable â€” find every idea it connects to</label>
-    <select id="varsel" onchange="renderCorr()"><option value="">â€” select a variable â€”</option></select>
+    <select id="varsel" onchange="renderCorr()"><option value="">- select a variable -</option></select>
     <div class="cv-hint" id="corr-hint">Blue border = variable used directly. No border = joinable.</div>
   </div>
   <div class="cnt" id="ccnt"></div>
@@ -281,6 +295,6 @@
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=13"></script><script src="app.js?v=13"></script>
+<script src="data.js?v=14"></script><script src="app.js?v=14"></script>
 </body>
 </html>
