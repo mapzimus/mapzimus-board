@@ -78,6 +78,29 @@ header h1{font-size:20px;font-weight:700;letter-spacing:-0.5px;}
 .fp.nt      {color:#6ee7b7;border-color:#6ee7b755;background:#6ee7b712;}
 .fp.nt.on   {background:#0a1a10;color:var(--mint);border-color:var(--mint);}
 .fp.topic.on{font-weight:700;}
+/* ── GEO ACCORDION ────────────────────────────────────────────────────── */
+.geo-accordion{align-items:flex-start!important;}
+.geo-row{display:flex;flex-wrap:wrap;gap:5px;align-items:center;}
+.geo-sub{margin-left:62px;margin-bottom:4px;padding:5px 8px;background:var(--surface2);border-radius:var(--radius-sm);border:1px solid var(--border);}
+.geo-row3{margin-top:-2px;}
+.geo-top{height:26px;padding:0 12px;font-size:11px;font-weight:600;border-radius:20px;border:1px solid var(--teal);background:var(--surface);color:var(--teal);cursor:pointer;transition:all .1s;}
+.geo-top.on{background:#0a2020;border-color:var(--teal);color:var(--teal);}
+.geo-pill{height:24px;padding:0 9px;font-size:11px;border-radius:20px;border:1px solid var(--border2);background:var(--surface);color:var(--text2);cursor:pointer;white-space:nowrap;transition:all .1s;}
+.geo-pill:hover{color:var(--text);border-color:var(--border3);}
+.geo-pill.on{background:#0a2020;color:var(--teal);border-color:var(--teal);font-weight:600;}
+.geo-has-children{}
+.geo-state-grid{display:flex!important;flex-wrap:wrap;gap:4px;}
+.geo-state-grid .geo-pill{padding:0 6px;font-size:10px;font-weight:600;}
+.geo-bc{display:flex;align-items:center;gap:6px;margin-left:62px;margin-bottom:6px;}
+.geo-bc-label{font-size:11px;color:var(--teal);background:#0a2020;border:1px solid var(--teal);border-radius:20px;padding:2px 10px;}
+.geo-bc-x{font-size:13px;color:var(--text3);cursor:pointer;line-height:1;padding:0 4px;}
+.geo-bc-x:hover{color:var(--rose);}
+/* ── SAVED FILTERS ────────────────────────────────────────────────────── */
+.sf-bookmark{display:inline-flex;align-items:center;gap:4px;background:var(--surface2);border:1px solid var(--green);border-radius:20px;padding:2px 10px;font-size:11px;color:var(--green);cursor:default;}
+.sf-bookmark>span:first-child{cursor:pointer;}
+.sf-bookmark>span:first-child:hover{text-decoration:underline;}
+.sf-x{color:var(--text3);cursor:pointer;font-size:13px;line-height:1;}
+.sf-x:hover{color:var(--rose);}
 .reset-btn{height:34px;padding:0 16px;font-size:11px;font-weight:600;border-radius:var(--radius-sm);border:1px solid var(--rose);background:transparent;color:var(--rose);cursor:pointer;white-space:nowrap;transition:all .1s;}
 .reset-btn:hover{background:#2a0808;}
 
@@ -229,9 +252,15 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 <!-- BROWSE PANE -->
 <div class="pane on" id="pane-browse">
   <div class="bar">
-    <input id="q" placeholder="Search: housing, opioids, redline, water, democracy..." oninput="renderBrowse()">
+    <input id="q" placeholder="Search: housing, opioids, redline, water, democracy..." oninput="renderBrowse();updateResetBtn()">
     <button class="reset-btn" onclick="resetAllFilters()" id="reset-btn" style="display:none">Reset filters</button>
+    <button class="reset-btn" style="border-color:var(--green);color:var(--green)" onclick="toggleSaveArea()">Save filter</button>
   </div>
+  <div id="sf-save-area" style="display:none;align-items:center;gap:6px;margin-bottom:8px;">
+    <input id="sf-name-input" placeholder="Name this filter..." style="height:30px;padding:0 10px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius-sm);color:var(--text);font-size:12px;outline:none;width:200px;">
+    <button class="reset-btn" style="border-color:var(--green);color:var(--green);height:30px" onclick="saveCurrentFilter()">Save</button>
+  </div>
+  <div id="saved-filters-strip" style="display:none;flex-wrap:wrap;gap:5px;margin-bottom:8px;"></div>
   <div class="filter-row">
     <span>Type:</span>
     <button class="fp tp-MAP"   data-f="type" data-v="MAP"   onclick="togglePill(this)">MAP</button>
@@ -239,16 +268,14 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
     <button class="fp tp-CHART" data-f="type" data-v="CHART" onclick="togglePill(this)">CHART</button>
     <button class="fp tp-RANK"  data-f="type" data-v="RANK"  onclick="togglePill(this)">RANK</button>
   </div>
-  <div class="filter-row">
+  <!-- GEO ACCORDION -->
+  <div class="filter-row geo-accordion">
     <span>Geo:</span>
-    <button class="fp geo" data-f="geo" data-v="us_state"    onclick="togglePill(this)">US state</button>
-    <button class="fp geo" data-f="geo" data-v="us_county"   onclick="togglePill(this)">US county</button>
-    <button class="fp geo" data-f="geo" data-v="us_national" onclick="togglePill(this)">US national</button>
-    <button class="fp geo" data-f="geo" data-v="us_metro"    onclick="togglePill(this)">US metro</button>
-    <button class="fp geo" data-f="geo" data-v="us_city"     onclick="togglePill(this)">US city</button>
-    <button class="fp geo" data-f="geo" data-v="worldwide"   onclick="togglePill(this)">Worldwide</button>
-    <button class="fp geo" data-f="geo" data-v="top_n_list"  onclick="togglePill(this)">Top-N list</button>
+    <div id="geo-row1" class="geo-row"></div>
   </div>
+  <div id="geo-row2" class="geo-row geo-sub" style="display:none"></div>
+  <div id="geo-row3" class="geo-row geo-sub geo-row3" style="display:none"></div>
+  <div id="geo-breadcrumb" class="geo-bc" style="display:none"></div>
   <div class="filter-row">
     <span>Format:</span>
     <button class="fp fmt" data-f="fmt" data-v="Scatter plot"         onclick="togglePill(this)">Scatter</button>

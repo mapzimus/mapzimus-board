@@ -153,6 +153,132 @@ const STATUSES = [
   { val:'published',   color:P.blue,   label:'Published'   },
 ];
 
+//  GEO TREE 
+const GEO_TREE = {
+  USA: {
+    label:'USA', children:['USA_ALL','USA_RES','USA_REG','USA_TZ','USA_ST'],
+  },
+  USA_ALL:  { label:'ALL USA', geos: null, matchAll:'us' },
+  USA_RES:  { label:'Resolution', children:['us_national','us_state','us_county','us_metro','us_cities','us_city','us_tz','us_tract','us_zip'] },
+  USA_REG:  { label:'Region', children:['us_northeast','us_new_england','us_mid_atlantic','us_south','us_southeast','us_midwest','us_great_plains','us_west','us_southwest','us_pacific_nw'] },
+  USA_TZ:   { label:'Timezone', children:['us_tz_eastern','us_tz_central','us_tz_mountain','us_tz_pacific','us_tz_alaska','us_tz_hawaii'] },
+  USA_ST:   { label:'State / Territory', children:[
+    'us_al','us_ak','us_az','us_ar','us_ca','us_co','us_ct','us_de','us_fl','us_ga',
+    'us_hi','us_id','us_il','us_in','us_ia','us_ks','us_ky','us_la','us_me','us_md',
+    'us_ma','us_mi','us_mn','us_ms','us_mo','us_mt','us_ne','us_nv','us_nh','us_nj',
+    'us_nm','us_ny','us_nc','us_nd','us_oh','us_ok','us_or','us_pa','us_ri','us_sc',
+    'us_sd','us_tn','us_tx','us_ut','us_vt','us_va','us_wa','us_wv','us_wi','us_wy',
+    'us_dc','us_pr','us_vi','us_gu','us_as','us_mp'
+  ]},
+  // US leaf nodes
+  us_national:    { label:'National' },
+  us_state:       { label:'All States' },
+  us_county:      { label:'Countywide' },
+  us_metro:       { label:'Metro Areas' },
+  us_cities:      { label:'US Cities' },
+  us_city:        { label:'City / Place' },
+  us_tz:          { label:'US Timezones' },
+  us_tract:       { label:'Census Tract' },
+  us_zip:         { label:'Zip Code' },
+  us_northeast:   { label:'Northeast' },
+  us_new_england: { label:'New England' },
+  us_mid_atlantic:{ label:'Mid-Atlantic' },
+  us_south:       { label:'South' },
+  us_southeast:   { label:'Southeast' },
+  us_midwest:     { label:'Midwest' },
+  us_great_plains:{ label:'Great Plains' },
+  us_west:        { label:'West' },
+  us_southwest:   { label:'Southwest' },
+  us_pacific_nw:  { label:'Pacific NW' },
+  us_tz_eastern:  { label:'Eastern' },
+  us_tz_central:  { label:'Central' },
+  us_tz_mountain: { label:'Mountain' },
+  us_tz_pacific:  { label:'Pacific' },
+  us_tz_alaska:   { label:'Alaska' },
+  us_tz_hawaii:   { label:'Hawaii' },
+  // states
+  us_al:{label:'AL',full:'Alabama'},    us_ak:{label:'AK',full:'Alaska'},
+  us_az:{label:'AZ',full:'Arizona'},    us_ar:{label:'AR',full:'Arkansas'},
+  us_ca:{label:'CA',full:'California'}, us_co:{label:'CO',full:'Colorado'},
+  us_ct:{label:'CT',full:'Connecticut'},us_de:{label:'DE',full:'Delaware'},
+  us_fl:{label:'FL',full:'Florida'},    us_ga:{label:'GA',full:'Georgia'},
+  us_hi:{label:'HI',full:'Hawaii'},     us_id:{label:'ID',full:'Idaho'},
+  us_il:{label:'IL',full:'Illinois'},   us_in:{label:'IN',full:'Indiana'},
+  us_ia:{label:'IA',full:'Iowa'},       us_ks:{label:'KS',full:'Kansas'},
+  us_ky:{label:'KY',full:'Kentucky'},   us_la:{label:'LA',full:'Louisiana'},
+  us_me:{label:'ME',full:'Maine'},      us_md:{label:'MD',full:'Maryland'},
+  us_ma:{label:'MA',full:'Massachusetts'},us_mi:{label:'MI',full:'Michigan'},
+  us_mn:{label:'MN',full:'Minnesota'},  us_ms:{label:'MS',full:'Mississippi'},
+  us_mo:{label:'MO',full:'Missouri'},   us_mt:{label:'MT',full:'Montana'},
+  us_ne:{label:'NE',full:'Nebraska'},   us_nv:{label:'NV',full:'Nevada'},
+  us_nh:{label:'NH',full:'New Hampshire'},us_nj:{label:'NJ',full:'New Jersey'},
+  us_nm:{label:'NM',full:'New Mexico'}, us_ny:{label:'NY',full:'New York'},
+  us_nc:{label:'NC',full:'North Carolina'},us_nd:{label:'ND',full:'North Dakota'},
+  us_oh:{label:'OH',full:'Ohio'},       us_ok:{label:'OK',full:'Oklahoma'},
+  us_or:{label:'OR',full:'Oregon'},     us_pa:{label:'PA',full:'Pennsylvania'},
+  us_ri:{label:'RI',full:'Rhode Island'},us_sc:{label:'SC',full:'South Carolina'},
+  us_sd:{label:'SD',full:'South Dakota'},us_tn:{label:'TN',full:'Tennessee'},
+  us_tx:{label:'TX',full:'Texas'},      us_ut:{label:'UT',full:'Utah'},
+  us_vt:{label:'VT',full:'Vermont'},    us_va:{label:'VA',full:'Virginia'},
+  us_wa:{label:'WA',full:'Washington'}, us_wv:{label:'WV',full:'West Virginia'},
+  us_wi:{label:'WI',full:'Wisconsin'},  us_wy:{label:'WY',full:'Wyoming'},
+  us_dc:{label:'DC',full:'Washington DC'},
+  us_pr:{label:'PR',full:'Puerto Rico'},us_vi:{label:'VI',full:'US Virgin Islands'},
+  us_gu:{label:'GU',full:'Guam'},       us_as:{label:'AS',full:'American Samoa'},
+  us_mp:{label:'MP',full:'N. Mariana Islands'},
+  // WORLD
+  WORLD:      { label:'WORLD', children:['WORLD_ALL','worldwide','global_city','north_america','EUROPE','ASIA','AFRICA','middle_east','LATAM','oceania'] },
+  WORLD_ALL:  { label:'ALL WORLD', matchAll:'world' },
+  worldwide:      { label:'Global' },
+  global_city:    { label:'Global Cities' },
+  north_america:  { label:'North America' },
+  EUROPE: { label:'Europe', children:['europe','europe_west','europe_east','europe_nordic','europe_south'] },
+  europe:       { label:'All Europe' },
+  europe_west:  { label:'W. Europe' },
+  europe_east:  { label:'E. Europe' },
+  europe_nordic:{ label:'Nordic' },
+  europe_south: { label:'S. Europe' },
+  ASIA: { label:'Asia', children:['asia','asia_east','asia_south','asia_southeast','asia_central'] },
+  asia:         { label:'All Asia' },
+  asia_east:    { label:'East Asia' },
+  asia_south:   { label:'South Asia' },
+  asia_southeast:{ label:'SE Asia' },
+  asia_central: { label:'Central Asia' },
+  AFRICA: { label:'Africa', children:['africa','africa_sub','africa_west','africa_east','africa_north'] },
+  africa:       { label:'All Africa' },
+  africa_sub:   { label:'Sub-Saharan' },
+  africa_west:  { label:'W. Africa' },
+  africa_east:  { label:'E. Africa' },
+  africa_north: { label:'N. Africa' },
+  middle_east:  { label:'Middle East' },
+  LATAM: { label:'Latin America', children:['latin_america','latin_south','latin_central','caribbean'] },
+  latin_america: { label:'All Latin Am.' },
+  latin_south:   { label:'South America' },
+  latin_central: { label:'Central America' },
+  caribbean:     { label:'Caribbean' },
+  oceania:       { label:'Oceania' },
+};
+
+// Collect all geo leaf values under a node (for filtering)
+function geoLeaves(nodeKey) {
+  const node = GEO_TREE[nodeKey];
+  if (!node) return new Set([nodeKey]);
+  if (node.matchAll) return null; // null = match by prefix
+  if (!node.children) return new Set([nodeKey]);
+  const s = new Set();
+  for (const c of node.children) {
+    const sub = geoLeaves(c);
+    if (sub === null) return null;
+    sub.forEach(v => s.add(v));
+  }
+  return s;
+}
+
+// Accordion state
+let geoFilter = null; // { key, leaves: Set|null, prefix: string|null, label }
+let geoRow2 = null;   // which top-level is expanded (USA or WORLD)
+let geoRow3 = null;   // which category is expanded
+
 //  STATE 
 const activeFilters = { type:null, geo:null, fmt:null, status:null, notes:null, section:null };
 let activeTopics = new Set();
@@ -191,7 +317,7 @@ function cardHTML(d, highlight=false) {
     ? `<div class="notes-edit" data-id="${d.id}" title="Click to edit"> ${d.notes}</div>`
     : `<button class="add-note-btn" data-id="${d.id}">+ Add note</button>`;
 
-  return `<div class="card${highlight?' hi':''}" data-id="${d.id}" style="border-left-color:${showSecBadge ? secColor : 'var(--border)'};">
+  return `<div class="card${highlight?' hi':''}" data-id="${d.id}" style="border-left-color:${TYPE_BORDER[d.type]||'var(--border)'};">
     <div class="card-main">
       <div class="card-header">
         <div class="status-wrap">
@@ -327,7 +453,13 @@ function buildFiltered() {
   const q = (document.getElementById('q').value || '').toLowerCase();
   filteredIdeas = D.filter(d => {
     if (activeFilters.type   && d.type   !== activeFilters.type)   return false;
-    if (activeFilters.geo    && d.geo    !== activeFilters.geo)     return false;
+    if (geoFilter) {
+      if (geoFilter.prefix) {
+        if (!d.geo.startsWith(geoFilter.prefix)) return false;
+      } else if (geoFilter.leaves) {
+        if (!geoFilter.leaves.has(d.geo)) return false;
+      }
+    }
     if (activeFilters.fmt    && d.fmt    !== activeFilters.fmt)     return false;
     if (activeFilters.status && d.status !== activeFilters.status)  return false;
     if (activeFilters.section && !d.section?.includes(activeFilters.section)) return false;
@@ -396,6 +528,8 @@ document.addEventListener('DOMContentLoaded', () => {
   new IntersectionObserver(entries => { if (entries[0].isIntersecting) renderMore(); }, { rootMargin:'200px' }).observe(sentinel);
   updateOverrideCount();
   buildScFilters();
+  buildGeoAccordion();
+  renderSavedFilters();
 });
 
 //  PILLS / SORT / TOPIC 
@@ -411,13 +545,16 @@ function togglePill(btn) {
 }
 function updateResetBtn() {
   const hasFilter = Object.values(activeFilters).some(v => v) ||
-    activeTopics.size > 0 || (document.getElementById('q')?.value||'').trim();
+    activeTopics.size > 0 || geoFilter !== null ||
+    (document.getElementById('q')?.value||'').trim();
   const btn = document.getElementById('reset-btn');
   if (btn) btn.style.display = hasFilter ? 'inline-flex' : 'none';
 }
 function resetAllFilters() {
   Object.keys(activeFilters).forEach(k => activeFilters[k] = null);
   activeTopics.clear();
+  geoFilter = null;
+  geoRow2 = null; geoRow3 = null;
   document.querySelectorAll('.fp.on').forEach(b => b.classList.remove('on'));
   document.querySelectorAll('.sect-badge.sect-active').forEach(b => b.classList.remove('sect-active'));
   document.querySelectorAll('.fp.topic').forEach(btn => {
@@ -425,6 +562,7 @@ function resetAllFilters() {
     if (c) { btn.style.color=c; btn.style.borderColor=c+'55'; btn.style.background=c+'12'; }
   });
   document.getElementById('q').value = '';
+  buildGeoAccordion();
   updateResetBtn(); renderBrowse();
 }
 function toggleTopic(btn) {
@@ -578,6 +716,229 @@ function toggleFmt(k, btn) {
     document.getElementById('fgridout').innerHTML = items.map(d => cardHTML(d)).join('');
   }
 }
+
+//  GEO ACCORDION 
+function buildGeoAccordion() {
+  const r1 = document.getElementById('geo-row1');
+  const r2 = document.getElementById('geo-row2');
+  const r3 = document.getElementById('geo-row3');
+  const bc = document.getElementById('geo-breadcrumb');
+  if (!r1) return;
+
+  // Row 1: USA / WORLD
+  r1.innerHTML = '';
+  ['USA','WORLD'].forEach(key => {
+    const btn = document.createElement('button');
+    btn.className = 'fp geo-top' + (geoRow2 === key ? ' on' : '');
+    btn.textContent = GEO_TREE[key].label;
+    btn.onclick = () => {
+      if (geoRow2 === key) { geoRow2 = null; geoRow3 = null; }
+      else { geoRow2 = key; geoRow3 = null; }
+      // Clicking top level = ALL of that branch
+      if (geoRow2) {
+        const node = GEO_TREE[key];
+        // Don't auto-filter just by expanding - wait for child selection
+      }
+      buildGeoAccordion();
+    };
+    r1.appendChild(btn);
+  });
+
+  // Row 2
+  r2.innerHTML = '';
+  r2.style.display = geoRow2 ? 'flex' : 'none';
+  if (geoRow2) {
+    const parent = GEO_TREE[geoRow2];
+    // ALL button first
+    const allBtn = document.createElement('button');
+    const isAllActive = geoFilter?.key === geoRow2 + '_ALL_BTN';
+    allBtn.className = 'fp geo-pill' + (isAllActive ? ' on' : '');
+    allBtn.textContent = geoRow2 === 'USA' ? 'ALL USA' : 'ALL WORLD';
+    allBtn.onclick = () => {
+      if (isAllActive) { geoFilter = null; }
+      else {
+        geoFilter = {
+          key: geoRow2 + '_ALL_BTN',
+          prefix: geoRow2 === 'USA' ? 'us_' : null,
+          leaves: geoRow2 === 'WORLD' ? buildWorldLeaves() : null,
+          label: geoRow2 === 'USA' ? 'ALL USA' : 'ALL WORLD'
+        };
+      }
+      updateResetBtn(); buildGeoAccordion(); renderBrowse();
+    };
+    r2.appendChild(allBtn);
+
+    parent.children.forEach(key => {
+      if (key === 'USA_ALL' || key === 'WORLD_ALL') return; // handled above
+      const node = GEO_TREE[key];
+      const hasChildren = !!(node.children);
+      const isActive = geoRow3 === key || geoFilter?.key === key;
+      const btn = document.createElement('button');
+      btn.className = 'fp geo-pill' + (isActive ? ' on' : '') + (hasChildren ? ' geo-has-children' : '');
+      btn.textContent = node.label + (hasChildren ? ' ' : '');
+      btn.onclick = () => {
+        if (hasChildren) {
+          geoRow3 = (geoRow3 === key) ? null : key;
+          buildGeoAccordion();
+        } else {
+          // Leaf - filter directly
+          if (geoFilter?.key === key) { geoFilter = null; }
+          else { geoFilter = { key, leaves: new Set([key]), label: node.label }; }
+          updateResetBtn(); buildGeoAccordion(); renderBrowse();
+        }
+      };
+      r2.appendChild(btn);
+    });
+  }
+
+  // Row 3
+  r3.innerHTML = '';
+  r3.style.display = geoRow3 ? 'flex' : 'none';
+  if (geoRow3) {
+    const parent = GEO_TREE[geoRow3];
+    if (parent && parent.children) {
+      // For STATE panel - compact grid with abbrevs
+      const isStatePanel = geoRow3 === 'USA_ST';
+      if (isStatePanel) r3.classList.add('geo-state-grid');
+      else r3.classList.remove('geo-state-grid');
+
+      parent.children.forEach(key => {
+        const node = GEO_TREE[key];
+        if (!node) return;
+        const hasChildren = !!(node.children);
+        const isActive = geoFilter?.key === key;
+        const btn = document.createElement('button');
+        btn.className = 'fp geo-pill' + (isActive ? ' on' : '') + (hasChildren ? ' geo-has-children' : '');
+        btn.textContent = node.label + (hasChildren ? ' ' : '');
+        if (node.full) btn.title = node.full;
+        btn.onclick = () => {
+          if (hasChildren) {
+            // sub-expand: for now open inline (Europe sub-regions etc.)
+            if (geoFilter?.key === key + '_ALL') { geoFilter = null; }
+            else {
+              const leaves = geoLeaves(key);
+              geoFilter = { key: key + '_ALL', leaves, label: node.label };
+            }
+            updateResetBtn(); buildGeoAccordion(); renderBrowse();
+          } else {
+            if (geoFilter?.key === key) { geoFilter = null; }
+            else { geoFilter = { key, leaves: new Set([key]), label: node.label }; }
+            updateResetBtn(); buildGeoAccordion(); renderBrowse();
+          }
+        };
+        r3.appendChild(btn);
+      });
+    }
+  }
+
+  // Breadcrumb
+  if (bc) {
+    if (geoFilter) {
+      bc.style.display = 'flex';
+      bc.innerHTML = `<span class="geo-bc-label">${geoFilter.label}</span><span class="geo-bc-x" onclick="geoFilter=null;updateResetBtn();buildGeoAccordion();renderBrowse()">x</span>`;
+    } else {
+      bc.style.display = 'none';
+    }
+  }
+}
+
+function buildWorldLeaves() {
+  const s = new Set(['worldwide','global_city','north_america','middle_east','oceania',
+    'europe','europe_west','europe_east','europe_nordic','europe_south',
+    'asia','asia_east','asia_south','asia_southeast','asia_central',
+    'africa','africa_sub','africa_west','africa_east','africa_north',
+    'latin_america','latin_south','latin_central','caribbean']);
+  return s;
+}
+
+//  SAVED FILTERS 
+const SF_KEY = 'mz_saved_filters';
+function loadSavedFilters() { try { return JSON.parse(localStorage.getItem(SF_KEY)||'[]'); } catch { return []; } }
+function saveSavedFilters(arr) { localStorage.setItem(SF_KEY, JSON.stringify(arr)); }
+
+function saveCurrentFilter() {
+  const name = document.getElementById('sf-name-input')?.value?.trim();
+  if (!name) return;
+  const filters = loadSavedFilters();
+  filters.push({
+    name,
+    activeFilters: {...activeFilters},
+    activeTopics: [...activeTopics],
+    geoFilter: geoFilter ? {...geoFilter, leaves: geoFilter.leaves ? [...geoFilter.leaves] : null} : null,
+    geoRow2, geoRow3,
+    sortK, sortDir,
+    q: document.getElementById('q')?.value || '',
+    scFilters: {...scFilters},
+  });
+  saveSavedFilters(filters);
+  document.getElementById('sf-name-input').value = '';
+  document.getElementById('sf-save-area').style.display = 'none';
+  renderSavedFilters();
+}
+
+function applyFilter(f) {
+  Object.assign(activeFilters, f.activeFilters);
+  activeTopics = new Set(f.activeTopics);
+  geoFilter = f.geoFilter ? {...f.geoFilter, leaves: f.geoFilter.leaves ? new Set(f.geoFilter.leaves) : null} : null;
+  geoRow2 = f.geoRow2; geoRow3 = f.geoRow3;
+  sortK = f.sortK; sortDir = f.sortDir;
+  scFilters = {...(f.scFilters||{})};
+  if (document.getElementById('q')) document.getElementById('q').value = f.q || '';
+  // Restore pill UI
+  document.querySelectorAll('.fp.on').forEach(b => b.classList.remove('on'));
+  ['type','fmt','status','notes'].forEach(field => {
+    if (activeFilters[field]) {
+      const b = document.querySelector(`.fp[data-f="${field}"][data-v="${activeFilters[field]}"]`);
+      if (b) b.classList.add('on');
+    }
+  });
+  document.querySelectorAll('.fp.topic').forEach(btn => {
+    const val = btn.dataset.v, c = TOPIC_COLORS[val];
+    if (activeTopics.has(val)) {
+      btn.classList.add('on');
+      btn.style.background=c+'33'; btn.style.color=c; btn.style.borderColor=c;
+    } else if (c) {
+      btn.classList.remove('on');
+      btn.style.color=c; btn.style.borderColor=c+'55'; btn.style.background=c+'12';
+    }
+  });
+  document.querySelectorAll('.sb').forEach(b => b.classList.remove('on','asc','desc'));
+  const sb = document.querySelector(`.sb[data-k="${sortK}"]`);
+  if (sb) { sb.classList.add('on'); sb.classList.add(sortDir); }
+  buildGeoAccordion();
+  updateResetBtn(); renderBrowse();
+}
+
+function renderSavedFilters() {
+  const container = document.getElementById('saved-filters-strip');
+  if (!container) return;
+  const filters = loadSavedFilters();
+  container.style.display = filters.length ? 'flex' : 'none';
+  container.innerHTML = filters.map((f,i) =>
+    `<span class="sf-bookmark">
+      <span onclick="applyFilter(${JSON.stringify(f).replace(/"/g,'&quot;')})">${f.name}</span>
+      <span class="sf-x" onclick="deleteSavedFilter(${i})">x</span>
+    </span>`
+  ).join('');
+}
+
+function deleteSavedFilter(i) {
+  const filters = loadSavedFilters();
+  filters.splice(i,1);
+  saveSavedFilters(filters);
+  renderSavedFilters();
+}
+
+function toggleSaveArea() {
+  const area = document.getElementById('sf-save-area');
+  if (!area) return;
+  const showing = area.style.display !== 'none';
+  area.style.display = showing ? 'none' : 'flex';
+  if (!showing) document.getElementById('sf-name-input')?.focus();
+}
+
+// Card type colors for left border
+const TYPE_BORDER = { MAP:'#8eedc7', XREF:'#87c3ff', CHART:'#c4a3ff', RANK:'#fcd34d' };
 
 //  INIT 
 (function initTopicPills() {
