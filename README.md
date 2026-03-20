@@ -1,31 +1,65 @@
-# Mapzimus Idea Board
+# mapzimus-board
 
-Interactive idea database for the [@mapzimus](https://instagram.com/mapzimus) viral map project.
+A personal research tool for organizing and scoring data visualization concepts by their correlative potential with real public datasets.
 
-## What is this?
+## What it does
 
-A searchable, filterable board of ~75 map/chart/infographic ideas, all sourced exclusively from the **ProQuest Statistical Abstract of the United States 2026** (all 36 PDFs scanned).
+Each entry in the board represents a potential data visualization — a pairing of a question with the public datasets needed to answer it. The board helps surface which ideas are most actionable based on:
 
-Each idea has:
-- A **V-Score** (0–100) computed from 7 weighted factors: emotional charge, relatability, surprise, tension, visual clarity, data readiness, originality
-- A **format recommendation** (bivariate choropleth, ranked bar, dual-line chart, etc.)
-- The **exact ProQuest table** it comes from
-- **Joinable variables** — other datasets it can be cross-referenced with
+- **Data readiness** — are the required datasets publicly available and joinable?
+- **Variable correlation** — which ideas share underlying variables, enabling cross-referencing?
+- **Format distribution** — how ideas break down by map type, chart format, and geographic scope
 
-## Three modes
+## Scoring
 
-**Browse** — search by keyword, filter by type (XREF / MAP / RANK / CHART) and geography, sort by any of the 7 V-Score factors
+Each entry is scored across 8 dimensions (0–100 scale):
 
-**Correlate** — pick any variable from the ProQuest table index and instantly see every idea that uses it or can be joined with it — the cross-PDF correlation discovery engine
+| Field | What it measures |
+|---|---|
+| `emotional` | Does the data hit on something people care about personally? |
+| `relatability` | Will most people have direct experience with this topic? |
+| `clarity` | Can the core finding be communicated in one visual? |
+| `surprise` | Does the data contradict conventional wisdom? |
+| `tension` | Is there conflict or inequality embedded in the numbers? |
+| `visual` | Does the data have strong spatial or temporal structure? |
+| `data_ready` | Are the required datasets publicly accessible? |
+| `originality` | Has this specific angle been done before? |
 
-**By format** — click a format type to see all ideas that share that visual presentation, for content calendar planning
+These are weighted into a single **V-Score** using: `(emotional×2 + relatability×2 + clarity×2 + surprise×1.5 + tension×1 + visual×1 + data_ready×0.5 + originality×0.5) / 10.5`
 
-## Data source
+## Data sources referenced
 
-ProQuest Statistical Abstract of the United States: 2026 Online Edition  
-All spatial analysis: R (sf, ggplot2, tigris, tidycensus) · QGIS · PostgreSQL/PostGIS  
-No external data sources used.
+All datasets referenced in entries are free and publicly accessible:
 
-## Tech
+- US Census Bureau / ACS (via `tidycensus`)
+- BLS, BEA, FRED (economic time series)
+- CDC WONDER (health outcomes)
+- FBI Crime Data Explorer
+- EIA (energy)
+- MIT Election Lab
+- World Bank Open Data
+- UN / WHO / FAO (international)
 
-Pure HTML/CSS/JS. No frameworks, no build step, no API calls. Deploys to GitHub Pages as a single static site.
+## Tech stack
+
+- Vanilla JS frontend — no framework, no build step
+- `data.js` — flat array of all entries, loaded at runtime
+- `app.js` — filtering, sorting, virtual scroll, status tracking
+- `maintain.py` — data pipeline: deduplication, normalization, JS validation
+- PostgreSQL + PostGIS on the backend for spatial joins and routing analysis
+
+## Modes
+
+**Browse** — filter by type (MAP / XREF / CHART), geography, format, status, and topic. Sort by any score dimension. Virtual scroll handles the full dataset.
+
+**Correlate** — pick any variable and see every entry that references it, either as a primary variable or a join key. Useful for identifying which datasets unlock the most ideas at once.
+
+**By format** — browse entries grouped by visualization format to plan production batches.
+
+## Status tracking
+
+Each entry moves through: `idea → in-progress → built → published`. Status edits are stored in `localStorage` and exportable as a Python patch script to persist changes back to `data.js`.
+
+---
+
+Built for [@mapzimus](https://instagram.com/mapzimus)

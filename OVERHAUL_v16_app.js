@@ -35,7 +35,7 @@ const VAR_LABELS = {
   population_pct_change_2023_2100:"Population % change 2023-2100",
 };
 
-//  OVERRIDES 
+// ── OVERRIDES ────────────────────────────────────────────────────────────────
 const LS_KEY = 'mapzimus_overrides_v2';
 function loadOverrides() { try { return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); } catch { return {}; } }
 function saveOverride(id, field, value) {
@@ -56,7 +56,7 @@ function saveOverride(id, field, value) {
   });
 })();
 
-//  INDEXES 
+// ── INDEXES ──────────────────────────────────────────────────────────────────
 const VAR_INDEX = {};
 D.forEach(d => {
   [...(d.vars || []), ...(d.join || [])].forEach(v => {
@@ -68,7 +68,7 @@ D.forEach(d => {
 const FMT_MAP = {};
 D.forEach(d => { if (!FMT_MAP[d.fmt]) FMT_MAP[d.fmt] = []; FMT_MAP[d.fmt].push(d); });
 
-//  PASTEL COLOR PALETTE 
+// ── PASTEL COLOR PALETTE ──────────────────────────────────────────────────────
 const P = {
   red:'#ff9eae', orange:'#ffb87a', yellow:'#ffe083', green:'#8eedc7',
   teal:'#7de8e8', blue:'#87c3ff', purple:'#c4a3ff', pink:'#f9a8d4',
@@ -76,7 +76,7 @@ const P = {
   indigo:'#a5b4fc', mint:'#6ee7b7', peach:'#fdba74', violet:'#e879f9',
 };
 
-//  TOPIC COLORS 
+// ── TOPIC COLORS ──────────────────────────────────────────────────────────────
 const TOPIC_COLORS = {
   health:P.red, economy:P.green, politics:P.blue, crime:P.rose,
   poverty:P.amber, housing:P.orange, education:P.teal, labor:P.purple,
@@ -89,7 +89,7 @@ const TOPIC_COLORS = {
   history:P.peach, space:P.indigo, data:P.mint,
 };
 
-//  SECTION COLORS 
+// ── SECTION COLORS ────────────────────────────────────────────────────────────
 const SECTION_COLORS = {
   'Health':P.red, 'Elections':P.blue, 'Income':P.green, 'Housing':P.orange,
   'Labor Force':P.purple, 'Law Enforcement':P.rose, 'Education':P.teal,
@@ -113,7 +113,7 @@ function getSectionColor(section) {
   return '#888';
 }
 
-//  SCORE FIELDS 
+// ── SCORE FIELDS ──────────────────────────────────────────────────────────────
 const SC_FIELDS = [
   { key:'emotional',    label:'Emotional',    short:'Emo', color:P.red,    weight:2   },
   { key:'relatability', label:'Relatability', short:'Rel', color:P.blue,   weight:2   },
@@ -127,7 +127,7 @@ const SC_FIELDS = [
 
 const scColor = s => s >= 88 ? P.red : s >= 78 ? P.amber : s >= 66 ? P.green : '#555';
 
-//  STATUSES 
+// ── STATUSES ──────────────────────────────────────────────────────────────────
 const STATUSES = [
   { val:'idea',        color:P.indigo, label:'Idea'        },
   { val:'in-progress', color:P.amber,  label:'In Progress' },
@@ -135,7 +135,7 @@ const STATUSES = [
   { val:'published',   color:P.blue,   label:'Published'   },
 ];
 
-//  STATE 
+// ── STATE ─────────────────────────────────────────────────────────────────────
 const activeFilters = { type:null, geo:null, fmt:null, status:null, notes:null };
 let activeTopics = new Set();
 let sortK = 'vscore', sortDir = 'desc';
@@ -143,7 +143,7 @@ let scFilters = {};
 const PAGE = 100;
 let filteredIdeas = [], renderedCount = 0;
 
-//  CARD HTML 
+// ── CARD HTML ──────────────────────────────────────────────────────────────────
 function cardHTML(d, highlight=false) {
   const bars = SC_FIELDS.map(f => {
     const v = d.sc[f.key] || 0;
@@ -202,7 +202,7 @@ function cardHTML(d, highlight=false) {
   </div>`;
 }
 
-//  EVENT DELEGATION 
+// ── EVENT DELEGATION ──────────────────────────────────────────────────────────
 document.addEventListener('click', function(e) {
   if (!e.target.closest('.status-wrap'))
     document.querySelectorAll('.status-menu.open').forEach(m => m.classList.remove('open'));
@@ -270,7 +270,7 @@ function openNotesEditor(id, container, current) {
   };
 }
 
-//  EXPORT 
+// ── EXPORT ────────────────────────────────────────────────────────────────────
 function updateOverrideCount() {
   const n = Object.keys(loadOverrides()).length;
   const el = document.getElementById('override-count');
@@ -300,7 +300,7 @@ function exportOverrides() {
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'patch_overrides.py'; a.click();
 }
 
-//  FILTER + SORT 
+// ── FILTER + SORT ─────────────────────────────────────────────────────────────
 function buildFiltered() {
   const q = (document.getElementById('q').value || '').toLowerCase();
   filteredIdeas = D.filter(d => {
@@ -337,7 +337,7 @@ function buildFiltered() {
   });
 }
 
-//  VIRTUAL SCROLL 
+// ── VIRTUAL SCROLL ────────────────────────────────────────────────────────────
 function renderBrowse() {
   buildFiltered(); renderedCount = 0;
   document.getElementById('bgrid').innerHTML = '';
@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
   buildScFilters();
 });
 
-//  PILLS / SORT / TOPIC 
+// ── PILLS / SORT / TOPIC ──────────────────────────────────────────────────────
 function togglePill(btn) {
   const field = btn.dataset.f, val = btn.dataset.v;
   if (activeFilters[field] === val) {
@@ -413,7 +413,7 @@ function setMode(m, btn) {
   if (m === 'score-filters') buildScFilters();
 }
 
-//  SUB-SCORE RANGE FILTERS 
+// ── SUB-SCORE RANGE FILTERS ───────────────────────────────────────────────────
 function buildScFilters() {
   const container = document.getElementById('sc-filter-grid');
   if (!container || container.dataset.built) return;
@@ -459,7 +459,7 @@ function clearScFilters() {
   renderBrowse();
 }
 
-//  CORRELATE 
+// ── CORRELATE ─────────────────────────────────────────────────────────────────
 function buildVarSelect() {
   const sel = document.getElementById('varsel');
   if (sel.options.length > 1) return;
@@ -484,7 +484,7 @@ function renderCorr() {
     : '<div class="empty">No ideas indexed for this variable.</div>';
 }
 
-//  FORMAT 
+// ── FORMAT ────────────────────────────────────────────────────────────────────
 let selFmt = null;
 function buildFormatGrid() {
   const fg = document.getElementById('fgrid');
@@ -511,5 +511,5 @@ function toggleFmt(k, btn) {
   }
 }
 
-//  INIT 
+// ── INIT ──────────────────────────────────────────────────────────────────────
 renderBrowse();
