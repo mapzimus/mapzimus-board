@@ -150,12 +150,13 @@ def add_ext():
 
 # ── 4. NORMALIZE FMT ─────────────────────────────────────────────────────────
 FMT_RULES = [
-    (r'^Scatter',              'Scatter plot'),
+    (r'^Scatter|^Quadrant',    'Scatter plot'),
     (r'^State choropleth',     'State choropleth'),
+    (r'^Regional choropleth',  'State choropleth'),
     (r'^Side.by.side state',   'State choropleth'),
     (r'^City map',             'City map'),
     (r'^County choropleth',    'County choropleth'),
-    (r'^H3 hexbin',            'H3 hexbin map'),
+    (r'^H3 hexbin',            'Special map'),
     (r'^Bivariate choropleth', 'Bivariate choropleth'),
     (r'^Bivariate$',           'Bivariate choropleth'),
     (r'^World choropleth',     'World choropleth'),
@@ -164,10 +165,10 @@ FMT_RULES = [
     (r'^Flow map',             'Dot map'),
     (r'^Continuous raster',    'Special map'),
     (r'^Special map',          'Special map'),
-    (r'^Quadrant',             'Quadrant chart'),
+    (r'^Ranked',               'Ranked list'),
     (r'^Dual.line|^Multi.line|^Line chart|^Dual.axis', 'Line chart'),
     (r'^Dual area|^Area chart|^Stacked area', 'Area chart'),
-    (r'^Grouped|^Stacked bar|^Horizontal bar|^Diverging|^Side.by.side bar|^Bar chart|^Pareto|^Pie chart|^Demographic', 'Bar chart'),
+    (r'^Grouped|^Stacked bar|^Horizontal bar|^Diverging|^Side.by.side bar|^Bar chart|^Pareto|^Pie chart|^Demographic|^Multi$|^Bar or line', 'Bar chart'),
     (r'^Treemap',              'Treemap'),
     (r'^Horizontal ranked|^Ranked|^Top/bottom|^River flow|^RANKED', 'Ranked list'),
 ]
@@ -197,6 +198,43 @@ def normalize_fmt():
     print(f'  [normalize_fmt] Changed: {changes[0]} | Categories: {len(fmts)}')
     for k, n in sorted(fmts.items(), key=lambda x: -x[1]):
         print(f'    {n:4d}  {k}')
+
+# ── 4b. RECALC VS SCORES ──────────────────────────────────────────────────────
+def recalc_vs():
+    """Recalculate vs scores using current virality formula v2."""
+    with open('data.js', 'r', encoding='utf-8') as f:
+        content = f.read()
+    def parse_sc(sc_str):
+        vals = {}
+        for m in re.finditer(r'(\w+):(\d+)', sc_str):
+            vals[m.group(1)] = int(m.group(2))
+        return vals
+    def calc_vs(vals):
+        raw = (vals.get('emotional',0)*2 + vals.get('relatability',0)*2 +
+               vals.get('clarity',0)*2 + vals.get('surprise',0)*1.5 +
+               vals.get('tension',0)*1.5 + vals.get('visual',0)*1 +
+               vals.get('data_ready',0)*0.5 + vals.get('originality',0)*1.0 +
+               vals.get('identity_signal',0)*1.5)
+        return int(raw / 13.0)
+    def replace_vs(line):
+        sc_m = re.search(r'sc:\{([^}]+)\}', line)
+        if not sc_m: return line
+        new_vs = calc_vs(parse_sc(sc_m.group(0)))
+        return re.sub(r',vs:\d+', f',vs:{new_vs}', line)
+    new_lines = []
+    changed = 0
+    for line in content.split('\n'):
+        if line.startswith('{id:') or line.startswith(',{id:'):
+            new_line = replace_vs(line)
+            if new_line != line: changed += 1
+            new_lines.append(new_line)
+        else:
+            new_lines.append(line)
+    result = '\n'.join(new_lines)
+    with open('data.js', 'w', encoding='utf-8') as f:
+        f.write(result)
+    samples = re.findall(r',vs:(\d+)', result)[:5]
+    print(f'  [recalc_vs] Recalculated {changed} scores | samples: {samples}')
 
 # ── 5. VALIDATE ───────────────────────────────────────────────────────────────
 def validate():
@@ -244,6 +282,7 @@ if __name__ == '__main__':
     fix_chars()
     add_ext()
     normalize_fmt()
+    recalc_vs()
     validate()
     validate_js()
     print('Done. Run: git add . && git commit -m "..." && git push')

@@ -125,7 +125,7 @@ const BADGE_SECTIONS = new Set([
 ]);
 
 //  SCORE FIELDS 
-// Virality algorithm v2: tension 1→1.5, originality 0.5→1.0, identity_signal added 1.5
+// Virality algorithm v2: tension 1->1.5, originality 0.5->1.0, identity_signal added 1.5
 // Based on: tension drives shares, originality = novelty entropy, identity_signal = "who you are" performance
 const SC_FIELDS = [
   { key:'emotional',       label:'Emotional',       short:'Emo', color:'#ff6b8a', weight:2   },
@@ -154,8 +154,8 @@ const activeFilters = { type:null, geo:null, fmt:null, status:null, notes:null, 
 let activeTopics = new Set();
 let sortK = 'vscore', sortDir = 'desc';
 let scFilters = {};
-const PAGE = 100;
-let filteredIdeas = [], renderedCount = 0;
+const PAGE = 60;
+let filteredIdeas = [], renderedCount = 0, _renderPending = false;
 
 //  CARD HTML 
 function cardHTML(d, highlight=false) {
@@ -165,10 +165,10 @@ function cardHTML(d, highlight=false) {
   }).join('');
 
   const st = STATUSES.find(s => s.val === (d.status||'idea')) || STATUSES[0];
-  // Use first segment of compound sections (e.g. "Health - Foreign Commerce" → "Health")
-  const secDisplay = d.section ? d.section.split(/\s*[-–]\s*/)[0].trim() : '';
+  // Use first segment of compound sections (e.g. "Health - Foreign Commerce" -> "Health")
+  const secDisplay = d.section ? d.section.split(/\s*[--]\s*/)[0].trim() : '';
   const secColor = getSectionColor(secDisplay);
-  // Only show badge for canonical sections — hides catch-alls like "International Statistics"
+  // Only show badge for canonical sections - hides catch-alls like "International Statistics"
   const showSecBadge = secDisplay && BADGE_SECTIONS.has(secDisplay);
 
   const statusOptions = STATUSES.map(s =>
@@ -358,21 +358,26 @@ function buildFiltered() {
 
 //  VIRTUAL SCROLL 
 function renderBrowse() {
-  buildFiltered(); renderedCount = 0;
+  buildFiltered(); renderedCount = 0; _renderPending = false;
   document.getElementById('bgrid').innerHTML = '';
   renderMore(); updateCount();
 }
 function renderMore() {
-  if (renderedCount >= filteredIdeas.length) return;
-  const batch = filteredIdeas.slice(renderedCount, renderedCount + PAGE);
-  const frag = document.createDocumentFragment();
-  batch.forEach(d => {
-    const div = document.createElement('div');
-    div.innerHTML = cardHTML(d);
-    frag.appendChild(div.firstChild);
+  if (_renderPending || renderedCount >= filteredIdeas.length) return;
+  _renderPending = true;
+  requestAnimationFrame(() => {
+    const batch = filteredIdeas.slice(renderedCount, renderedCount + PAGE);
+    const frag = document.createDocumentFragment();
+    batch.forEach(d => {
+      const div = document.createElement('div');
+      div.innerHTML = cardHTML(d);
+      frag.appendChild(div.firstChild);
+    });
+    document.getElementById('bgrid').appendChild(frag);
+    renderedCount += batch.length;
+    _renderPending = false;
+    updateCount();
   });
-  document.getElementById('bgrid').appendChild(frag);
-  renderedCount += batch.length; updateCount();
 }
 function updateCount() {
   const total = filteredIdeas.length, shown = Math.min(renderedCount, total);
@@ -547,4 +552,16 @@ function toggleFmt(k, btn) {
 }
 
 //  INIT 
+(function initTopicPills() {
+  document.querySelectorAll('.fp.topic').forEach(btn => {
+    const val = btn.dataset.v;
+    const c = TOPIC_COLORS[val];
+    if (c) {
+      btn.style.color = c;
+      btn.style.borderColor = c + '55';
+      btn.style.background = c + '12';
+    }
+  });
+})();
+
 renderBrowse();
