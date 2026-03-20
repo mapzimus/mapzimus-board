@@ -87,6 +87,8 @@ const TOPIC_COLORS = {
   infrastructure:P.indigo, technology:P.blue, media:P.sky, population:P.violet,
   international:P.purple, democracy:P.blue, religion:P.amber,
   history:P.peach, space:P.indigo, data:P.mint,
+  humor:'#f9a8d4', science:'#7dd3fc', geography:'#86efac', demographics:'#fde68a',
+  children:P.pink, rural:P.lime, manufacturing:P.teal, law:P.rose,
 };
 
 //  SECTION COLORS 
@@ -113,19 +115,31 @@ function getSectionColor(section) {
   return '#888';
 }
 
+// Sections that show as clickable badges on cards (excludes catch-all sections)
+const BADGE_SECTIONS = new Set([
+  'Health','Elections','Income','Housing','Labor Force','Law Enforcement',
+  'Education','Energy','Agriculture','Transportation','Population',
+  'National Security','Banking','Finance','Prices','Births Deaths',
+  'Business Enterprise','Foreign Commerce','Social Insurance',
+  'Geography','Arts Recreation','Information',
+]);
+
 //  SCORE FIELDS 
+// Virality algorithm v2: tension 1→1.5, originality 0.5→1.0, identity_signal added 1.5
+// Based on: tension drives shares, originality = novelty entropy, identity_signal = "who you are" performance
 const SC_FIELDS = [
-  { key:'emotional',    label:'Emotional',    short:'Emo', color:P.red,    weight:2   },
-  { key:'relatability', label:'Relatability', short:'Rel', color:P.blue,   weight:2   },
-  { key:'clarity',      label:'Clarity',      short:'Cla', color:P.orange, weight:2   },
-  { key:'surprise',     label:'Surprise',     short:'Sur', color:P.yellow, weight:1.5 },
-  { key:'tension',      label:'Tension',      short:'Ten', color:P.rose,   weight:1   },
-  { key:'visual',       label:'Visual',       short:'Vis', color:P.green,  weight:1   },
-  { key:'data_ready',   label:'Data Ready',   short:'Dat', color:P.purple, weight:0.5 },
-  { key:'originality',  label:'Originality',  short:'Ori', color:P.mint,   weight:0.5 },
+  { key:'emotional',       label:'Emotional',       short:'Emo', color:'#ff6b8a', weight:2   },
+  { key:'relatability',    label:'Relatability',    short:'Rel', color:'#38bdf8', weight:2   },
+  { key:'clarity',         label:'Clarity',         short:'Cla', color:'#fb923c', weight:2   },
+  { key:'surprise',        label:'Surprise',        short:'Sur', color:'#facc15', weight:1.5 },
+  { key:'tension',         label:'Tension',         short:'Ten', color:'#c084fc', weight:1.5 },
+  { key:'visual',          label:'Visual',          short:'Vis', color:'#34d399', weight:1   },
+  { key:'data_ready',      label:'Data Ready',      short:'Dat', color:'#818cf8', weight:0.5 },
+  { key:'originality',     label:'Originality',     short:'Ori', color:'#f472b6', weight:1.0 },
+  { key:'identity_signal', label:'Identity Signal', short:'Id',  color:'#fb7185', weight:1.5 },
 ];
 
-const scColor = s => s >= 88 ? P.red : s >= 78 ? P.amber : s >= 66 ? P.green : '#555';
+const scColor = s => s >= 85 ? '#ff6b8a' : s >= 72 ? '#facc15' : s >= 58 ? '#34d399' : '#444';
 
 //  STATUSES 
 const STATUSES = [
@@ -136,7 +150,7 @@ const STATUSES = [
 ];
 
 //  STATE 
-const activeFilters = { type:null, geo:null, fmt:null, status:null, notes:null };
+const activeFilters = { type:null, geo:null, fmt:null, status:null, notes:null, section:null };
 let activeTopics = new Set();
 let sortK = 'vscore', sortDir = 'desc';
 let scFilters = {};
@@ -151,7 +165,11 @@ function cardHTML(d, highlight=false) {
   }).join('');
 
   const st = STATUSES.find(s => s.val === (d.status||'idea')) || STATUSES[0];
-  const secColor = getSectionColor(d.section);
+  // Use first segment of compound sections (e.g. "Health - Foreign Commerce" → "Health")
+  const secDisplay = d.section ? d.section.split(/\s*[-–]\s*/)[0].trim() : '';
+  const secColor = getSectionColor(secDisplay);
+  // Only show badge for canonical sections — hides catch-alls like "International Statistics"
+  const showSecBadge = secDisplay && BADGE_SECTIONS.has(secDisplay);
 
   const statusOptions = STATUSES.map(s =>
     `<div class="st-opt${s.val===d.status?' active':''}" data-id="${d.id}" data-val="${s.val}">
@@ -169,7 +187,7 @@ function cardHTML(d, highlight=false) {
     ? `<div class="notes-edit" data-id="${d.id}" title="Click to edit"> ${d.notes}</div>`
     : `<button class="add-note-btn" data-id="${d.id}">+ Add note</button>`;
 
-  return `<div class="card${highlight?' hi':''}" data-id="${d.id}">
+  return `<div class="card${highlight?' hi':''}" data-id="${d.id}" style="border-left-color:${showSecBadge ? secColor : 'var(--border)'};">
     <div class="card-main">
       <div class="card-header">
         <div class="status-wrap">
@@ -177,7 +195,7 @@ function cardHTML(d, highlight=false) {
           <div class="status-menu" id="sm-${d.id}">${statusOptions}</div>
         </div>
         <div class="badge-row">
-          <span class="sect-badge" style="background:${secColor}1a;color:${secColor};border:1px solid ${secColor}55">${d.section}</span>
+          ${showSecBadge ? `<span class="sect-badge" style="background:${secColor}1a;color:${secColor};border:1px solid ${secColor}55;cursor:pointer" onclick="filterBySection('${secDisplay.replace(/'/g,"\\'")}',this)">${secDisplay}</span>` : ''}
           ${topicBadges}
         </div>
       </div>
@@ -308,6 +326,7 @@ function buildFiltered() {
     if (activeFilters.geo    && d.geo    !== activeFilters.geo)     return false;
     if (activeFilters.fmt    && d.fmt    !== activeFilters.fmt)     return false;
     if (activeFilters.status && d.status !== activeFilters.status)  return false;
+    if (activeFilters.section && !d.section?.includes(activeFilters.section)) return false;
     if (activeFilters.notes === 'has'  && !d.notes)  return false;
     if (activeFilters.notes === 'none' && d.notes)   return false;
     if (activeTopics.size > 0) {
@@ -393,15 +412,31 @@ function toggleTopic(btn) {
   }
   renderBrowse();
 }
-function setSort(key) {
+function filterBySection(sec, el) {
+  // Toggle: if already filtering by this section, clear it
+  if (activeFilters.section === sec) {
+    activeFilters.section = null;
+    document.querySelectorAll('.sect-badge.sect-active').forEach(b => b.classList.remove('sect-active'));
+  } else {
+    activeFilters.section = sec;
+    document.querySelectorAll('.sect-badge.sect-active').forEach(b => b.classList.remove('sect-active'));
+    if (el) el.classList.add('sect-active');
+  }
+  renderBrowse();
+}
+function setSort(btnOrKey) {
+  const key = (typeof btnOrKey === 'string') ? btnOrKey : btnOrKey.dataset.k;
   if (sortK === key) {
     sortDir = sortDir === 'desc' ? 'asc' : 'desc';
   } else {
     sortK = key; sortDir = 'desc';
   }
-  document.querySelectorAll('.sb').forEach(b => { b.classList.remove('on','asc','desc'); });
+  document.querySelectorAll('.sb').forEach(b => b.classList.remove('on','asc','desc'));
   const active = document.querySelector(`.sb[data-k="${key}"]`);
-  if (active) { active.classList.add('on', sortDir); }
+  if (active) {
+    active.classList.add('on');
+    active.classList.add(sortDir); // explicit separate add so both land
+  }
   renderBrowse();
 }
 function setMode(m, btn) {
