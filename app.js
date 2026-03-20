@@ -125,18 +125,22 @@ const BADGE_SECTIONS = new Set([
 ]);
 
 //  SCORE FIELDS 
-// Virality algorithm v2: tension 1->1.5, originality 0.5->1.0, identity_signal added 1.5
-// Based on: tension drives shares, originality = novelty entropy, identity_signal = "who you are" performance
+// Virality algorithm v3:
+// - identity_signal removed (curatorial identity lives in selection, not scoring)
+// - tension back to 1.0 (no longer carrying identity's weight)
+// - visual bumped to 1.25 (Instagram-specific)
+// - originality kept at 1.0 (genuinely distinct from surprise)
+// - data_ready is soft penalty: vs *= (1 - 0.3*(1 - data_ready/100))
+// - denominator 10.75
 const SC_FIELDS = [
-  { key:'emotional',       label:'Emotional',       short:'Emo', color:'#ff6b8a', weight:2   },
-  { key:'relatability',    label:'Relatability',    short:'Rel', color:'#38bdf8', weight:2   },
-  { key:'clarity',         label:'Clarity',         short:'Cla', color:'#fb923c', weight:2   },
-  { key:'surprise',        label:'Surprise',        short:'Sur', color:'#facc15', weight:1.5 },
-  { key:'tension',         label:'Tension',         short:'Ten', color:'#c084fc', weight:1.5 },
-  { key:'visual',          label:'Visual',          short:'Vis', color:'#34d399', weight:1   },
-  { key:'data_ready',      label:'Data Ready',      short:'Dat', color:'#818cf8', weight:0.5 },
-  { key:'originality',     label:'Originality',     short:'Ori', color:'#f472b6', weight:1.0 },
-  { key:'identity_signal', label:'Identity Signal', short:'Id',  color:'#fb7185', weight:1.5 },
+  { key:'emotional',    label:'Emotional',    short:'Emo', color:'#ff6b8a', weight:2    },
+  { key:'relatability', label:'Relatability', short:'Rel', color:'#38bdf8', weight:2    },
+  { key:'clarity',      label:'Clarity',      short:'Cla', color:'#fb923c', weight:2    },
+  { key:'surprise',     label:'Surprise',     short:'Sur', color:'#facc15', weight:1.5  },
+  { key:'tension',      label:'Tension',      short:'Ten', color:'#c084fc', weight:1.0  },
+  { key:'visual',       label:'Visual',       short:'Vis', color:'#34d399', weight:1.25 },
+  { key:'originality',  label:'Originality',  short:'Ori', color:'#f472b6', weight:1.0  },
+  { key:'data_ready',   label:'Data Ready',   short:'Dat', color:'#818cf8', weight:0    },
 ];
 
 const scColor = s => s >= 85 ? '#ff6b8a' : s >= 72 ? '#facc15' : s >= 58 ? '#34d399' : '#444';

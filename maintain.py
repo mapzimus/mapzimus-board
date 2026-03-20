@@ -201,7 +201,13 @@ def normalize_fmt():
 
 # ── 4b. RECALC VS SCORES ──────────────────────────────────────────────────────
 def recalc_vs():
-    """Recalculate vs scores using current virality formula v2."""
+    """Recalculate vs scores using virality formula v3.
+    Formula: raw = emotional*2 + relatability*2 + clarity*2 + surprise*1.5
+                   + tension*1 + visual*1.25 + originality*1
+             base_vs = int(raw / 10.75)
+             penalty  = 1 - 0.3*(1 - data_ready/100)
+             vs       = int(base_vs * penalty)
+    """
     with open('data.js', 'r', encoding='utf-8') as f:
         content = f.read()
     def parse_sc(sc_str):
@@ -210,12 +216,13 @@ def recalc_vs():
             vals[m.group(1)] = int(m.group(2))
         return vals
     def calc_vs(vals):
-        raw = (vals.get('emotional',0)*2 + vals.get('relatability',0)*2 +
-               vals.get('clarity',0)*2 + vals.get('surprise',0)*1.5 +
-               vals.get('tension',0)*1.5 + vals.get('visual',0)*1 +
-               vals.get('data_ready',0)*0.5 + vals.get('originality',0)*1.0 +
-               vals.get('identity_signal',0)*1.5)
-        return int(raw / 13.0)
+        raw = (vals.get('emotional',0)*2.0 + vals.get('relatability',0)*2.0 +
+               vals.get('clarity',0)*2.0 + vals.get('surprise',0)*1.5 +
+               vals.get('tension',0)*1.0 + vals.get('visual',0)*1.25 +
+               vals.get('originality',0)*1.0)
+        base_vs = raw / 10.75
+        penalty = 1.0 - 0.3 * (1.0 - vals.get('data_ready',0) / 100.0)
+        return int(base_vs * penalty)
     def replace_vs(line):
         sc_m = re.search(r'sc:\{([^}]+)\}', line)
         if not sc_m: return line
