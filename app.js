@@ -403,22 +403,39 @@ function togglePill(btn) {
     document.querySelectorAll(`.fp[data-f="${field}"]`).forEach(b => b.classList.remove('on'));
     activeFilters[field] = val; btn.classList.add('on');
   }
-  renderBrowse();
+  updateResetBtn(); renderBrowse();
+}
+function updateResetBtn() {
+  const hasFilter = Object.values(activeFilters).some(v => v) ||
+    activeTopics.size > 0 || (document.getElementById('q')?.value||'').trim();
+  const btn = document.getElementById('reset-btn');
+  if (btn) btn.style.display = hasFilter ? 'inline-flex' : 'none';
+}
+function resetAllFilters() {
+  Object.keys(activeFilters).forEach(k => activeFilters[k] = null);
+  activeTopics.clear();
+  document.querySelectorAll('.fp.on').forEach(b => b.classList.remove('on'));
+  document.querySelectorAll('.sect-badge.sect-active').forEach(b => b.classList.remove('sect-active'));
+  document.querySelectorAll('.fp.topic').forEach(btn => {
+    const val = btn.dataset.v, c = TOPIC_COLORS[val];
+    if (c) { btn.style.color=c; btn.style.borderColor=c+'55'; btn.style.background=c+'12'; }
+  });
+  document.getElementById('q').value = '';
+  updateResetBtn(); renderBrowse();
 }
 function toggleTopic(btn) {
   const val = btn.dataset.v;
   const c = TOPIC_COLORS[val] || '#888';
   if (activeTopics.has(val)) {
     activeTopics.delete(val); btn.classList.remove('on');
-    btn.style.background = ''; btn.style.color = ''; btn.style.borderColor = '';
+    btn.style.color = c; btn.style.borderColor = c+'55'; btn.style.background = c+'12';
   } else {
     activeTopics.add(val); btn.classList.add('on');
-    btn.style.background = c + '22'; btn.style.color = c; btn.style.borderColor = c + '88';
+    btn.style.background = c+'33'; btn.style.color = c; btn.style.borderColor = c;
   }
-  renderBrowse();
+  updateResetBtn(); renderBrowse();
 }
 function filterBySection(sec, el) {
-  // Toggle: if already filtering by this section, clear it
   if (activeFilters.section === sec) {
     activeFilters.section = null;
     document.querySelectorAll('.sect-badge.sect-active').forEach(b => b.classList.remove('sect-active'));
@@ -427,7 +444,7 @@ function filterBySection(sec, el) {
     document.querySelectorAll('.sect-badge.sect-active').forEach(b => b.classList.remove('sect-active'));
     if (el) el.classList.add('sect-active');
   }
-  renderBrowse();
+  updateResetBtn(); renderBrowse();
 }
 function setSort(btnOrKey) {
   const key = (typeof btnOrKey === 'string') ? btnOrKey : btnOrKey.dataset.k;
@@ -484,7 +501,14 @@ function updateScFilter(key) {
   else scFilters[key] = { min, max };
   const cnt = D.filter(d => (d.sc[key]||0) >= min && (d.sc[key]||0) <= max).length;
   document.getElementById(`scf-cnt-${key}`).textContent = `${cnt.toLocaleString()} ideas match`;
-  renderBrowse();
+  buildFiltered();
+  // Render into score-filter pane's own grid
+  const sfGrid = document.getElementById('sf-grid');
+  const sfCnt  = document.getElementById('sf-cnt');
+  if (sfGrid) {
+    sfGrid.innerHTML = filteredIdeas.map(d => cardHTML(d)).join('');
+    if (sfCnt) sfCnt.textContent = `${filteredIdeas.length} of ${D.length} ideas`;
+  }
 }
 function clearScFilters() {
   scFilters = {};

@@ -5,7 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mapzimus Idea Board</title>
 <style>
-/* ── RESET + ROOT ─────────────────────────────────────────────────────── */
+/* ── PASSWORD GATE ────────────────────────────────────────────────────── */
+#gate{position:fixed;inset:0;background:#0a0a0a;z-index:9999;display:flex;align-items:center;justify-content:center;}
+.gate-box{background:#141414;border:1px solid #2e2e2e;border-radius:12px;padding:40px 48px;display:flex;flex-direction:column;align-items:center;gap:16px;min-width:320px;}
+.gate-box h2{font-size:20px;font-weight:700;color:#f0f0f0;letter-spacing:-0.5px;}
+.gate-box p{font-size:12px;color:#555;text-align:center;}
+.gate-input{width:100%;height:40px;padding:0 14px;background:#1c1c1c;border:1px solid #2e2e2e;border-radius:8px;color:#f0f0f0;font-size:14px;outline:none;text-align:center;letter-spacing:2px;}
+.gate-input:focus{border-color:#87c3ff;}
+.gate-btn{width:100%;height:38px;background:#87c3ff;color:#0a0a0a;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;}
+.gate-btn:hover{background:#a5d4ff;}
+.gate-err{font-size:11px;color:#ff9eae;min-height:16px;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root {
   --bg:#0a0a0a; --surface:#141414; --surface2:#1c1c1c; --surface3:#222;
@@ -47,13 +56,31 @@ header h1{font-size:20px;font-weight:700;letter-spacing:-0.5px;}
 .fp.tp-XREF.on {background:#0e1e33;color:var(--blue);  border-color:var(--blue);}
 .fp.tp-CHART.on{background:#1e0e33;color:var(--purple);border-color:var(--purple);}
 .fp.tp-RANK.on {background:#2e1e00;color:var(--amber); border-color:var(--amber);}
-.fp.geo.on,.fp.fmt.on{background:var(--surface2);color:var(--text);border-color:var(--border3);}
+.fp.tp-MAP  {color:#8eedc7;border-color:#8eedc755;background:#8eedc712;}
+.fp.tp-XREF {color:#87c3ff;border-color:#87c3ff55;background:#87c3ff12;}
+.fp.tp-CHART{color:#c4a3ff;border-color:#c4a3ff55;background:#c4a3ff12;}
+.fp.tp-RANK {color:#fcd34d;border-color:#fcd34d55;background:#fcd34d12;}
+.fp.tp-MAP.on  {background:#0e2e1a;color:var(--green); border-color:var(--green);}
+.fp.tp-XREF.on {background:#0e1e33;color:var(--blue);  border-color:var(--blue);}
+.fp.tp-CHART.on{background:#1e0e33;color:var(--purple);border-color:var(--purple);}
+.fp.tp-RANK.on {background:#2e1e00;color:var(--amber); border-color:var(--amber);}
+.fp.geo     {color:#7de8e8;border-color:#7de8e855;background:#7de8e812;}
+.fp.geo.on  {background:#0a2020;color:var(--teal);border-color:var(--teal);}
+.fp.fmt     {color:#fdba74;border-color:#fdba7455;background:#fdba7412;}
+.fp.fmt.on  {background:#2a1200;color:var(--peach);border-color:var(--peach);}
+.fp.st-idea        {color:#a5b4fc;border-color:#a5b4fc55;background:#a5b4fc12;}
+.fp.st-in-progress {color:#fcd34d;border-color:#fcd34d55;background:#fcd34d12;}
+.fp.st-built       {color:#8eedc7;border-color:#8eedc755;background:#8eedc712;}
+.fp.st-published   {color:#87c3ff;border-color:#87c3ff55;background:#87c3ff12;}
 .fp.st-idea.on        {background:#111;    color:var(--indigo);border-color:var(--indigo);}
 .fp.st-in-progress.on {background:#1a1200;color:var(--amber); border-color:var(--amber);}
 .fp.st-built.on       {background:#0a1f14;color:var(--green); border-color:var(--green);}
 .fp.st-published.on   {background:#0d1b2e;color:var(--blue);  border-color:var(--blue);}
-.fp.nt.on{background:var(--surface2);color:var(--text);border-color:var(--border3);}
-.fp.topic.on{font-weight:600;}
+.fp.nt      {color:#6ee7b7;border-color:#6ee7b755;background:#6ee7b712;}
+.fp.nt.on   {background:#0a1a10;color:var(--mint);border-color:var(--mint);}
+.fp.topic.on{font-weight:700;}
+.reset-btn{height:34px;padding:0 16px;font-size:11px;font-weight:600;border-radius:var(--radius-sm);border:1px solid var(--rose);background:transparent;color:var(--rose);cursor:pointer;white-space:nowrap;transition:all .1s;}
+.reset-btn:hover{background:#2a0808;}
 
 /* ── SORT ─────────────────────────────────────────────────────────────── */
 .sort-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;align-items:center;}
@@ -158,6 +185,33 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-
 </style>
 </head>
 <body>
+<div id="gate">
+  <div class="gate-box">
+    <h2>@mapzimus</h2>
+    <p>Research board — enter password to continue</p>
+    <input class="gate-input" id="gate-pw" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')checkGate()">
+    <button class="gate-btn" onclick="checkGate()">Enter</button>
+    <span class="gate-err" id="gate-err"></span>
+  </div>
+</div>
+<script>
+// SHA-256 of "mapzimus2025" — change password by updating this hash
+const PW_HASH = '9c0c650dee2d8493dcd2f0672c63a3386a4f794e48ed43dd576955315bc4163b';
+async function checkGate() {
+  const val = document.getElementById('gate-pw').value;
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(val));
+  const hash = Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  if (hash === PW_HASH) {
+    document.getElementById('gate').style.display = 'none';
+    sessionStorage.setItem('mz_auth','1');
+  } else {
+    document.getElementById('gate-err').textContent = 'Incorrect password';
+    document.getElementById('gate-pw').value = '';
+    document.getElementById('gate-pw').focus();
+  }
+}
+if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').style.display = 'none';
+</script>
 <div class="container">
 <header>
   <h1>Viral Infographic Ideas</h1>
@@ -178,6 +232,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-
 <div class="pane on" id="pane-browse">
   <div class="bar">
     <input id="q" placeholder="Search: housing, opioids, redline, water, democracy..." oninput="renderBrowse()">
+    <button class="reset-btn" onclick="resetAllFilters()" id="reset-btn" style="display:none">Reset filters</button>
   </div>
   <div class="filter-row">
     <span>Type:</span>
@@ -286,14 +341,14 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-
   <div class="scf-header">
     <div>
       <h3>Filter by Sub-Score Range</h3>
-      <p>Drag sliders to set min/max for any score dimension. All filters stack. Results update live.<br>
-      Example: Clarity 70-100 + Tension 40-60 = maps that are easy to read but not politically charged.</p>
+      <p>Drag sliders to set min/max for any score dimension. All filters stack.<br>
+      Example: Clarity 70-100 + Tension 40-60 = easy to read but not politically charged.</p>
     </div>
     <button class="clear-sc-btn" onclick="clearScFilters()">Clear all</button>
   </div>
   <div id="sc-filter-grid"></div>
-  <div class="cnt" id="bcnt"></div>
-  <div class="grid" id="bgrid"></div>
+  <div class="cnt" id="sf-cnt"></div>
+  <div class="grid" id="sf-grid"></div>
 </div>
 
 <!-- CORRELATE PANE -->
