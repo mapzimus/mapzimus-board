@@ -115,23 +115,6 @@ function getSectionColor(section) {
   return '#888';
 }
 
-// Precomputed section color lookup - built once, O(1) per card render
-const SECTION_COLOR_MAP = (() => {
-  const map = {};
-  const entries = Object.entries(SECTION_COLORS).sort((a,b) => b[0].length - a[0].length);
-  // Pre-resolve every known section value in data
-  const allSections = new Set(D.map(d => d.section ? d.section.split(/\s*[--]\s*/)[0].trim() : ''));
-  allSections.forEach(sec => {
-    if (!sec) { map[sec] = '#888'; return; }
-    map[sec] = '#888';
-    for (const [key, color] of entries) {
-      if (sec.includes(key)) { map[sec] = color; break; }
-    }
-  });
-  return map;
-})();
-function getSectionColorFast(sec) { return SECTION_COLOR_MAP[sec] || '#888'; }
-
 // Sections that show as clickable badges on cards (excludes catch-all sections)
 const BADGE_SECTIONS = new Set([
   'Health','Elections','Income','Housing','Labor Force','Law Enforcement',
@@ -157,7 +140,7 @@ const SC_FIELDS = [
   { key:'tension',      label:'Tension',      short:'Ten', color:'#c084fc', weight:1.0  },
   { key:'visual',       label:'Visual',       short:'Vis', color:'#34d399', weight:1.25 },
   { key:'originality',  label:'Originality',  short:'Ori', color:'#f472b6', weight:1.0  },
-  { key:'data_ready',   label:'Data Ready',   short:'Dat', color:'#818cf8', weight:'penalty' },
+  { key:'data_ready',   label:'Data Ready',   short:'Dat', color:'#818cf8', weight:0    },
 ];
 
 const scColor = s => s >= 85 ? '#ff6b8a' : s >= 72 ? '#facc15' : s >= 58 ? '#34d399' : '#444';
@@ -291,16 +274,13 @@ function geoLeaves(nodeKey) {
   return s;
 }
 
-// Precomputed insertion-order index for O(1) newest/oldest sort
-const D_INDEX = new Map(D.map((d,i) => [d.id, i]));
-
 // Accordion state
 let geoFilter = null; // { key, leaves: Set|null, prefix: string|null, label }
 let geoRow2 = null;   // which top-level is expanded (USA or WORLD)
 let geoRow3 = null;   // which category is expanded
 
 //  STATE 
-const activeFilters = { type:null, fmt:null, status:null, notes:null, section:null };
+const activeFilters = { type:null, geo:null, fmt:null, status:null, notes:null, section:null };
 let activeTopics = new Set();
 let sortK = 'vscore', sortDir = 'desc';
 let scFilters = {};
@@ -317,7 +297,7 @@ function cardHTML(d, highlight=false) {
   const st = STATUSES.find(s => s.val === (d.status||'idea')) || STATUSES[0];
   // Use first segment of compound sections (e.g. "Health - Foreign Commerce" -> "Health")
   const secDisplay = d.section ? d.section.split(/\s*[--]\s*/)[0].trim() : '';
-  const secColor = getSectionColorFast(secDisplay);
+  const secColor = getSectionColor(secDisplay);
   // Only show badge for canonical sections - hides catch-alls like "International Statistics"
   const showSecBadge = secDisplay && BADGE_SECTIONS.has(secDisplay);
 
@@ -501,9 +481,9 @@ function buildFiltered() {
 
   filteredIdeas.sort((a, b) => {
     let av, bv;
-    if (sortK === 'vscore')      { av = a.vs;              bv = b.vs; }
-    else if (sortK === 'newest') { av = D_INDEX.get(a.id); bv = D_INDEX.get(b.id); }
-    else if (sortK === 'oldest') { av = D_INDEX.get(a.id); bv = D_INDEX.get(b.id); }
+    if (sortK === 'vscore')  { av = a.vs;           bv = b.vs; }
+    else if (sortK === 'newest') { av = D.indexOf(a); bv = D.indexOf(b); }
+    else if (sortK === 'oldest') { av = D.indexOf(a); bv = D.indexOf(b); }
     else { av = a.sc[sortK]||0; bv = b.sc[sortK]||0; }
     // newest = desc by index = larger index first
     if (sortK === 'newest') return bv - av;
@@ -754,6 +734,11 @@ function buildGeoAccordion() {
     btn.onclick = () => {
       if (geoRow2 === key) { geoRow2 = null; geoRow3 = null; }
       else { geoRow2 = key; geoRow3 = null; }
+      // Clicking top level = ALL of that branch
+      if (geoRow2) {
+        const node = GEO_TREE[key];
+        // Don't auto-filter just by expanding - wait for child selection
+      }
       buildGeoAccordion();
     };
     r1.appendChild(btn);

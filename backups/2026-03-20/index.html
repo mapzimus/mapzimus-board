@@ -51,6 +51,10 @@ header h1{font-size:20px;font-weight:700;letter-spacing:-0.5px;}
 .fp{height:24px;padding:0 10px;font-size:11px;border-radius:20px;border:1px solid var(--border2);background:var(--surface);color:var(--text2);cursor:pointer;white-space:nowrap;transition:all .1s;display:inline-flex;align-items:center;gap:5px;}
 .fp:hover{color:var(--text);border-color:var(--border3);}
 .fp.on{font-weight:600;}
+.fp.tp-MAP.on  {background:#0e2e1a;color:var(--green); border-color:var(--green);}
+.fp.tp-XREF.on {background:#0e1e33;color:var(--blue);  border-color:var(--blue);}
+.fp.tp-CHART.on{background:#1e0e33;color:var(--purple);border-color:var(--purple);}
+.fp.tp-RANK.on {background:#2e1e00;color:var(--amber); border-color:var(--amber);}
 .fp.tp-MAP  {color:#8eedc7;border-color:#8eedc755;background:#8eedc712;}
 .fp.tp-XREF {color:#87c3ff;border-color:#87c3ff55;background:#87c3ff12;}
 .fp.tp-CHART{color:#c4a3ff;border-color:#c4a3ff55;background:#c4a3ff12;}
@@ -212,7 +216,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-
   </div>
 </div>
 <script>
-// SHA-256 hash — change password by updating this hash
+// SHA-256 of "mapzimus2025" — change password by updating this hash
 const PW_HASH = 'c54d030bae694e054820cb1d57ecf59fc7fcc3c10d7af19e138b566e3708e5c4';
 async function checkGate() {
   const val = document.getElementById('gate-pw').value;
