@@ -6,15 +6,14 @@
 <title>Mapzimus Idea Board</title>
 <style>
 /* ── PASSWORD GATE ────────────────────────────────────────────────────── */
-#gate{position:fixed;inset:0;background:#0a0a0a;z-index:9999;display:flex;align-items:center;justify-content:center;}
-.gate-box{background:#141414;border:1px solid #2e2e2e;border-radius:12px;padding:40px 48px;display:flex;flex-direction:column;align-items:center;gap:16px;min-width:320px;}
-.gate-box h2{font-size:20px;font-weight:700;color:#f0f0f0;letter-spacing:-0.5px;}
-.gate-box p{font-size:12px;color:#555;text-align:center;}
-.gate-input{width:100%;height:40px;padding:0 14px;background:#1c1c1c;border:1px solid #2e2e2e;border-radius:8px;color:#f0f0f0;font-size:14px;outline:none;text-align:center;letter-spacing:2px;}
-.gate-input:focus{border-color:#87c3ff;}
-.gate-btn{width:100%;height:38px;background:#87c3ff;color:#0a0a0a;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;}
-.gate-btn:hover{background:#a5d4ff;}
-.gate-err{font-size:11px;color:#ff9eae;min-height:16px;}
+#gate{position:fixed;inset:0;background:#f5f5f5;z-index:9999;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;}
+.gate-box{background:#fff;border:1px solid #ccc;border-radius:4px;padding:32px 40px;display:flex;flex-direction:column;gap:12px;min-width:280px;max-width:320px;}
+.gate-box h2{font-size:15px;font-weight:normal;color:#333;margin:0;}
+.gate-input{width:100%;height:34px;padding:0 10px;background:#fff;border:1px solid #bbb;border-radius:3px;color:#333;font-size:13px;outline:none;box-sizing:border-box;}
+.gate-input:focus{border-color:#888;}
+.gate-btn{width:100%;height:34px;background:#555;color:#fff;border:none;border-radius:3px;font-size:13px;cursor:pointer;}
+.gate-btn:hover{background:#444;}
+.gate-err{font-size:11px;color:#c00;min-height:14px;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root {
   --bg:#0a0a0a; --surface:#141414; --surface2:#1c1c1c; --surface3:#222;
@@ -187,16 +186,15 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-
 <body>
 <div id="gate">
   <div class="gate-box">
-    <h2>@mapzimus</h2>
-    <p>Research board — enter password to continue</p>
+    <h2>Sign in</h2>
     <input class="gate-input" id="gate-pw" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')checkGate()">
-    <button class="gate-btn" onclick="checkGate()">Enter</button>
+    <button class="gate-btn" onclick="checkGate()">Continue</button>
     <span class="gate-err" id="gate-err"></span>
   </div>
 </div>
 <script>
 // SHA-256 of "mapzimus2025" — change password by updating this hash
-const PW_HASH = '9c0c650dee2d8493dcd2f0672c63a3386a4f794e48ed43dd576955315bc4163b';
+const PW_HASH = 'c54d030bae694e054820cb1d57ecf59fc7fcc3c10d7af19e138b566e3708e5c4';
 async function checkGate() {
   const val = document.getElementById('gate-pw').value;
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(val));
