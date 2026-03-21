@@ -93,6 +93,7 @@ const TOPIC_COLORS = {
 
 //  SECTION COLORS 
 const SECTION_COLORS = {
+  // Legacy ProQuest/HSUS sections
   'Health':P.red, 'Elections':P.blue, 'Income':P.green, 'Housing':P.orange,
   'Labor Force':P.purple, 'Law Enforcement':P.rose, 'Education':P.teal,
   'Energy':P.yellow, 'Agriculture':P.lime, 'Transportation':P.teal,
@@ -104,6 +105,12 @@ const SECTION_COLORS = {
   'Social Insurance':P.green, 'Wholesale':P.orange, 'Retail Trade':P.orange,
   'Accommodation':P.peach, 'Food Services':P.peach,
   'Forestry':P.lime, 'Fishing':P.sky, 'Mining':P.amber,
+  // Canonical hand-crafted sections (EM-FZ batches)
+  'Crime and Law Enforcement':P.rose, 'Demographics':P.violet,
+  'Economy':P.green, 'Environment':P.lime, 'Entertainment':P.sky,
+  'Food & Nutrition':P.peach, 'History':P.indigo, 'Labor':P.purple,
+  'Science & Technology':P.teal, 'Sports & Recreation':P.sky,
+  'Science Technology':P.teal, 'Climate':P.mint,
 };
 
 function getSectionColor(section) {
@@ -134,11 +141,16 @@ function getSectionColorFast(sec) { return SECTION_COLOR_MAP[sec] || '#888'; }
 
 // Sections that show as clickable badges on cards (excludes catch-all sections)
 const BADGE_SECTIONS = new Set([
+  // Legacy ProQuest/HSUS
   'Health','Elections','Income','Housing','Labor Force','Law Enforcement',
   'Education','Energy','Agriculture','Transportation','Population',
   'National Security','Banking','Finance','Prices','Births Deaths',
   'Business Enterprise','Foreign Commerce','Social Insurance',
   'Geography','Arts Recreation','Information',
+  // Canonical hand-crafted (EM-FZ batches)
+  'Crime and Law Enforcement','Demographics','Economy','Environment',
+  'Entertainment','Food & Nutrition','History','Labor',
+  'Science & Technology','Sports & Recreation','Climate',
 ]);
 
 //  SCORE FIELDS 
