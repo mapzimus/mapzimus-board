@@ -154,25 +154,28 @@ const BADGE_SECTIONS = new Set([
 ]);
 
 //  SCORE FIELDS 
-// Virality algorithm v3:
-// - identity_signal removed (curatorial identity lives in selection, not scoring)
-// - tension back to 1.0 (no longer carrying identity's weight)
-// - visual bumped to 1.25 (Instagram-specific)
-// - originality kept at 1.0 (genuinely distinct from surprise)
-// - data_ready is soft penalty: vs *= (1 - 0.3*(1 - data_ready/100))
-// - denominator 10.75
+// Virality algorithm v4:
+// - visual bumped to 2.0 (highest correlation with engagement, #1 scroll-stopper)
+// - tension bumped to 1.5 (controversy drives shares/comments)
+// - originality bumped to 1.5 (uniqueness prevents scroll-past)
+// - clarity reduced to 1.25 (low variance, barely differentiates ideas)
+// - data_ready penalty steeper: vs *= (1 - 0.5*(1 - data_ready/100))
+// - format bonus: choropleths +3, bivariate/dot maps +2
+// - denominator 11.75
+// Formula: raw = e*2 + r*2 + c*1.25 + s*1.5 + t*1.5 + v*2.0 + o*1.5
+//          vs = int(raw/11.75 * penalty) + format_bonus
 const SC_FIELDS = [
   { key:'emotional',    label:'Emotional',    short:'Emo', color:'#ff6b8a', weight:2    },
   { key:'relatability', label:'Relatability', short:'Rel', color:'#38bdf8', weight:2    },
-  { key:'clarity',      label:'Clarity',      short:'Cla', color:'#fb923c', weight:2    },
+  { key:'clarity',      label:'Clarity',      short:'Cla', color:'#fb923c', weight:1.25 },
   { key:'surprise',     label:'Surprise',     short:'Sur', color:'#facc15', weight:1.5  },
-  { key:'tension',      label:'Tension',      short:'Ten', color:'#c084fc', weight:1.0  },
-  { key:'visual',       label:'Visual',       short:'Vis', color:'#34d399', weight:1.25 },
-  { key:'originality',  label:'Originality',  short:'Ori', color:'#f472b6', weight:1.0  },
+  { key:'tension',      label:'Tension',      short:'Ten', color:'#c084fc', weight:1.5  },
+  { key:'visual',       label:'Visual',       short:'Vis', color:'#34d399', weight:2.0  },
+  { key:'originality',  label:'Originality',  short:'Ori', color:'#f472b6', weight:1.5  },
   { key:'data_ready',   label:'Data Ready',   short:'Dat', color:'#818cf8', weight:'penalty' },
 ];
 
-const scColor = s => s >= 85 ? '#ff6b8a' : s >= 72 ? '#facc15' : s >= 58 ? '#34d399' : '#444';
+const scColor = s => s >= 82 ? '#ff6b8a' : s >= 70 ? '#facc15' : s >= 55 ? '#34d399' : '#444';
 
 //  STATUSES 
 const STATUSES = [
@@ -376,7 +379,7 @@ function cardHTML(d, highlight=false) {
       <div class="notes-area">${notesHtml}</div>
     </div>
     <div class="right">
-      <div><div class="vs" style="color:${scColor(d.vs)}">${d.vs}</div><div class="vl">V-Score</div></div>
+      <div><div class="vs" style="color:${scColor(d.vs)}">${d.vs}${FMT_BONUS[d.fmt]?'<span class="fmt-bonus">+'+FMT_BONUS[d.fmt]+'</span>':''}</div><div class="vl">V-Score v4</div></div>
       <div class="brs">${bars}</div>
     </div>
   </div>`;
@@ -966,6 +969,12 @@ function toggleSaveArea() {
 
 // Card type colors for left border
 const TYPE_BORDER = { MAP:'#8eedc7', XREF:'#87c3ff', CHART:'#c4a3ff', RANK:'#fcd34d' };
+
+// Format bonus for v4 virality algorithm (choropleths are proven viral formats)
+const FMT_BONUS = {
+  'State choropleth':3, 'County choropleth':3, 'World choropleth':3,
+  'Bivariate choropleth':2, 'Dot map':2
+};
 
 //  INIT 
 (function initTopicPills() {

@@ -7,12 +7,14 @@ Steps (in order):
   2. fix_chars    - replace non-ASCII chars that cause browser rendering issues
   3. add_ext      - patch ext[] sources onto ideas missing them
   4. normalize_fmt- collapse fmt variants to 15 canonical categories
-  5. validate     - count ideas, check holes/dupes, report fmt distribution
+  5. recalc_vs    - recalculate all virality scores (v4 algorithm)
+  6. validate     - count ideas, check holes/dupes, report fmt distribution
+  7. js_check     - run Node.js to confirm valid browser JS
 """
 import re, sys
 from collections import Counter, OrderedDict
 
-# ── 1. COMPACT ────────────────────────────────────────────────────────────────
+# -- 1. COMPACT ----------------------------------------------------------------
 def compact():
     """Rebuild data.js: deduplicate, strip blank lines, fix leading comma."""
     with open('data.js', 'r', encoding='utf-8') as f:
@@ -36,7 +38,7 @@ def compact():
         f.write(clean)
     print(f'  [compact] {len(ideas)} ideas | {round(len(clean)/1024,1)} KB')
 
-# ── 2. FIX CHARS ─────────────────────────────────────────────────────────────
+# -- 2. FIX CHARS --------------------------------------------------------------
 def fix_chars():
     """Strip all non-ASCII and fix JS syntax issues that break the browser."""
     import re as _re
@@ -80,7 +82,7 @@ def fix_chars():
     else:
         print(f'  [fix_chars] Clean (0 non-ASCII chars)')
 
-# ── 3. ADD EXT ────────────────────────────────────────────────────────────────
+# -- 3. ADD EXT ----------------------------------------------------------------
 ACS        = 'ACS 5-year estimates: MHI, poverty rate, population by geography (Census API - free, tidycensus)'
 BEA_STATE  = 'BEA Regional: GDP + personal income per capita by state (apps.bea.gov - free)'
 BEA_METRO  = 'BEA Regional: GDP + personal income per capita by metro (apps.bea.gov - free)'
@@ -148,7 +150,7 @@ def add_ext():
         f.writelines(out)
     print(f'  [add_ext] Modified: {modified} | Skipped: {skipped}')
 
-# ── 4. NORMALIZE FMT ─────────────────────────────────────────────────────────
+# -- 4. NORMALIZE FMT ----------------------------------------------------------
 FMT_RULES = [
     (r'^Scatter|^Quadrant',    'Scatter plot'),
     (r'^State choropleth',     'State choropleth'),
@@ -174,7 +176,7 @@ FMT_RULES = [
 ]
 
 def get_canonical(fmt_str):
-    prefix = re.split(r'\s*[-—–]\s*', fmt_str)[0].strip()
+    prefix = re.split(r'\s*[-\u2014\u2013]\s*', fmt_str)[0].strip()
     for pattern, canonical in FMT_RULES:
         if re.match(pattern, prefix, re.IGNORECASE):
             return canonical
@@ -199,51 +201,96 @@ def normalize_fmt():
     for k, n in sorted(fmts.items(), key=lambda x: -x[1]):
         print(f'    {n:4d}  {k}')
 
-# ── 4b. RECALC VS SCORES ──────────────────────────────────────────────────────
+# -- 4b. RECALC VS SCORES (v4 algorithm) --------------------------------------
+# Format bonus lookup: choropleths get +3, bivariate/dot maps get +2
+FMT_BONUS = {
+    'State choropleth': 3,
+    'County choropleth': 3,
+    'World choropleth': 3,
+    'Bivariate choropleth': 2,
+    'Dot map': 2,
+}
+
 def recalc_vs():
-    """Recalculate vs scores using virality formula v3.
-    Formula: raw = emotional*2 + relatability*2 + clarity*2 + surprise*1.5
-                   + tension*1 + visual*1.25 + originality*1
-             base_vs = int(raw / 10.75)
-             penalty  = 1 - 0.3*(1 - data_ready/100)
-             vs       = int(base_vs * penalty)
+    """Recalculate vs scores using virality formula v4.
+
+    Changes from v3:
+      - visual weight:       1.25 -> 2.0  (Instagram scroll-stopper)
+      - tension weight:      1.0  -> 1.5  (controversy drives shares)
+      - originality weight:  1.0  -> 1.5  (uniqueness prevents scroll-past)
+      - clarity weight:      2.0  -> 1.25 (low variance, barely differentiates)
+      - penalty coefficient: 0.3  -> 0.5  (unready data penalized harder)
+      - format bonus:        NEW  (choropleths +3, bivariate/dot +2)
+
+    Formula:
+      raw     = e*2 + r*2 + c*1.25 + s*1.5 + t*1.5 + v*2.0 + o*1.5
+      base_vs = raw / 11.75
+      penalty = 1 - 0.5 * (1 - data_ready/100)
+      bonus   = FMT_BONUS.get(fmt, 0)
+      vs      = int(base_vs * penalty) + bonus
     """
     with open('data.js', 'r', encoding='utf-8') as f:
         content = f.read()
+
     def parse_sc(sc_str):
         vals = {}
         for m in re.finditer(r'(\w+):(\d+)', sc_str):
             vals[m.group(1)] = int(m.group(2))
         return vals
-    def calc_vs(vals):
-        raw = (vals.get('emotional',0)*2.0 + vals.get('relatability',0)*2.0 +
-               vals.get('clarity',0)*2.0 + vals.get('surprise',0)*1.5 +
-               vals.get('tension',0)*1.0 + vals.get('visual',0)*1.25 +
-               vals.get('originality',0)*1.0)
-        base_vs = raw / 10.75
-        penalty = 1.0 - 0.3 * (1.0 - vals.get('data_ready',0) / 100.0)
-        return int(base_vs * penalty)
+
+    def calc_vs(vals, fmt):
+        raw = (vals.get('emotional', 0) * 2.0 +
+               vals.get('relatability', 0) * 2.0 +
+               vals.get('clarity', 0) * 1.25 +
+               vals.get('surprise', 0) * 1.5 +
+               vals.get('tension', 0) * 1.5 +
+               vals.get('visual', 0) * 2.0 +
+               vals.get('originality', 0) * 1.5)
+        base_vs = raw / 11.75
+        penalty = 1.0 - 0.5 * (1.0 - vals.get('data_ready', 0) / 100.0)
+        bonus = FMT_BONUS.get(fmt, 0)
+        return int(base_vs * penalty) + bonus
+
     def replace_vs(line):
         sc_m = re.search(r'sc:\{([^}]+)\}', line)
-        if not sc_m: return line
-        new_vs = calc_vs(parse_sc(sc_m.group(0)))
+        fmt_m = re.search(r'fmt:"([^"]*)"', line)
+        if not sc_m:
+            return line
+        fmt = fmt_m.group(1) if fmt_m else ''
+        new_vs = calc_vs(parse_sc(sc_m.group(0)), fmt)
         return re.sub(r',vs:\d+', f',vs:{new_vs}', line)
+
     new_lines = []
     changed = 0
     for line in content.split('\n'):
         if line.startswith('{id:') or line.startswith(',{id:'):
             new_line = replace_vs(line)
-            if new_line != line: changed += 1
+            if new_line != line:
+                changed += 1
             new_lines.append(new_line)
         else:
             new_lines.append(line)
+
     result = '\n'.join(new_lines)
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(result)
-    samples = re.findall(r',vs:(\d+)', result)[:5]
-    print(f'  [recalc_vs] Recalculated {changed} scores | samples: {samples}')
 
-# ── 5. VALIDATE ───────────────────────────────────────────────────────────────
+    # Report stats
+    all_vs = [int(x) for x in re.findall(r',vs:(\d+)', result)]
+    samples = all_vs[:5]
+    if all_vs:
+        import statistics
+        print(f'  [recalc_vs] v4 algorithm | Recalculated {changed} scores')
+        print(f'    Range: {min(all_vs)}-{max(all_vs)} | Mean: {statistics.mean(all_vs):.1f} | Median: {statistics.median(all_vs):.0f}')
+        print(f'    Samples: {samples}')
+        # Format bonus distribution
+        bonus_count = sum(1 for line in result.split('\n')
+                         if re.search(r'fmt:"(State choropleth|County choropleth|World choropleth|Bivariate choropleth|Dot map)"', line))
+        print(f'    Format bonus applied to: {bonus_count} ideas (choropleths +3, bivariate/dot +2)')
+    else:
+        print(f'  [recalc_vs] Recalculated {changed} scores | samples: {samples}')
+
+# -- 5. VALIDATE ---------------------------------------------------------------
 def validate():
     with open('data.js', 'r', encoding='utf-8') as f:
         content = f.read()
@@ -282,7 +329,7 @@ def validate_js():
     except subprocess.TimeoutExpired:
         print('  [js_check] Node.js timed out - skipping')
 
-# ── MAIN ──────────────────────────────────────────────────────────────────────
+# -- MAIN ----------------------------------------------------------------------
 if __name__ == '__main__':
     print('Running maintain.py...')
     compact()
