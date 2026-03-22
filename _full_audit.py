@@ -12,10 +12,7 @@ from collections import Counter, defaultdict
 DATA = os.path.join(os.path.dirname(__file__), 'data.js')
 
 # ── canonical v4 formula (must match maintain.py) ──
-FMT_BONUS = {
-    'State choropleth': 3, 'County choropleth': 3, 'World choropleth': 3,
-    'Bivariate choropleth': 2, 'Dot map': 2,
-}
+FMT_BONUS = {}  # no format bonus
 SC_FIELDS = ['emotional','relatability','clarity','surprise','tension','visual','originality','data_ready']
 WEIGHTS = {'emotional':2.0,'relatability':2.0,'clarity':1.25,'surprise':1.5,'tension':1.5,'visual':2.0,'originality':1.5}
 

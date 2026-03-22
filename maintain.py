@@ -202,14 +202,8 @@ def normalize_fmt():
         print(f'    {n:4d}  {k}')
 
 # -- 4b. RECALC VS SCORES (v4 algorithm) --------------------------------------
-# Format bonus lookup: choropleths get +3, bivariate/dot maps get +2
-FMT_BONUS = {
-    'State choropleth': 3,
-    'County choropleth': 3,
-    'World choropleth': 3,
-    'Bivariate choropleth': 2,
-    'Dot map': 2,
-}
+# FMT_BONUS removed: all formats scored equally on idea quality alone
+FMT_BONUS = {}  # no format bonus
 
 def recalc_vs():
     """Recalculate vs scores using virality formula v4.
@@ -220,14 +214,13 @@ def recalc_vs():
       - originality weight:  1.0  -> 1.5  (uniqueness prevents scroll-past)
       - clarity weight:      2.0  -> 1.25 (low variance, barely differentiates)
       - penalty coefficient: 0.3  -> 0.5  (unready data penalized harder)
-      - format bonus:        NEW  (choropleths +3, bivariate/dot +2)
+      - format bonus:        REMOVED (all formats equal)
 
     Formula:
       raw     = e*2 + r*2 + c*1.25 + s*1.5 + t*1.5 + v*2.0 + o*1.5
       base_vs = raw / 11.75
       penalty = 1 - 0.5 * (1 - data_ready/100)
-      bonus   = FMT_BONUS.get(fmt, 0)
-      vs      = int(base_vs * penalty) + bonus
+      vs      = int(base_vs * penalty)
     """
     with open('data.js', 'r', encoding='utf-8') as f:
         content = f.read()
@@ -248,8 +241,7 @@ def recalc_vs():
                vals.get('originality', 0) * 1.5)
         base_vs = raw / 11.75
         penalty = 1.0 - 0.5 * (1.0 - vals.get('data_ready', 0) / 100.0)
-        bonus = FMT_BONUS.get(fmt, 0)
-        return int(base_vs * penalty) + bonus
+        return int(base_vs * penalty)
 
     def replace_vs(line):
         sc_m = re.search(r'sc:\{([^}]+)\}', line)
@@ -283,10 +275,7 @@ def recalc_vs():
         print(f'  [recalc_vs] v4 algorithm | Recalculated {changed} scores')
         print(f'    Range: {min(all_vs)}-{max(all_vs)} | Mean: {statistics.mean(all_vs):.1f} | Median: {statistics.median(all_vs):.0f}')
         print(f'    Samples: {samples}')
-        # Format bonus distribution
-        bonus_count = sum(1 for line in result.split('\n')
-                         if re.search(r'fmt:"(State choropleth|County choropleth|World choropleth|Bivariate choropleth|Dot map)"', line))
-        print(f'    Format bonus applied to: {bonus_count} ideas (choropleths +3, bivariate/dot +2)')
+        print(f'    No format bonus (all formats scored equally)')
     else:
         print(f'  [recalc_vs] Recalculated {changed} scores | samples: {samples}')
 
