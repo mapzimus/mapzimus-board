@@ -1,0 +1,63 @@
+import re, os
+DATA = os.path.join(os.path.dirname(__file__), 'data.js')
+
+def mk(id,title,sub,typ,geo,fmt,sect,tbl,e,r,c,s,t,v,o,dr):
+    raw=e*2+r*2+c*1.25+s*1.5+t*1.5+v*2.0+o*1.5
+    vs=int((raw/11.75)*(1-0.5*(1-dr/100)))
+    return ('{id:"'+id+'",title:"'+title+'",sub:"'+sub+'",type:"'+typ+'",'
+            'geo:"'+geo+'",fmt:"'+fmt+'",section:"'+sect+'",tbl:"'+tbl+'",'
+            'sc:{emotional:'+str(e)+',relatability:'+str(r)+',clarity:'+str(c)
+            +',surprise:'+str(s)+',tension:'+str(t)+',visual:'+str(v)
+            +',originality:'+str(o)+',data_ready:'+str(dr)+'}'
+            ',vs:'+str(vs)+',topics:[],ext:[],status:"idea",notes:""}')
+
+IDEAS = [
+mk("HDB01","Every Border Wall on Earth: The Global Fortification Map","Every physical border wall and fence in the world, mapped with construction date and length","MAP","World","Special map","immigration","USA Today: Border Walls Database (usatoday.com/border-wall)",72,62,78,78,78,88,72,78),
+mk("HDB02","The Crossing Deaths Map: Where Migrants Die at the US-Mexico Border","Locations of recovered remains along the US-Mexico border, showing how enforcement funnels crossing into deadly terrain","MAP","US","Dot map","immigration","IOM: Missing Migrants Project (missingmigrants.iom.int)",88,68,72,72,90,85,70,78),
+mk("HDB03","The Visa Lottery: Your Odds of Getting a Green Card by Country of Origin","Probability of receiving a diversity visa by country, showing the wildly different odds","MAP","World","World choropleth","immigration","State Dept: Diversity Visa Statistics (travel.state.gov/content/travel/en/us-visas/immigrate/diversity-visa-program.html)",68,65,78,78,68,80,72,82),
+mk("HDB04","Undocumented Population Estimate by State: Who Is Actually Here","Best estimates of undocumented immigrant population by state, showing concentration beyond border states","MAP","US","State choropleth","immigration","Pew: Unauthorized Immigrant Population (pewresearch.org/hispanic/unauthorized-immigrant-population)",72,68,78,72,72,78,65,78),
+mk("HDB05","The H-1B Map: Where Skilled Immigrant Workers End Up","H-1B visa approvals by metro area and employer, showing the tech industry geography of immigration","MAP","US","Dot map","immigration","USCIS: H-1B Employer Data Hub (uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub)",65,62,78,72,62,82,65,85),
+mk("HDB06","Refugee Resettlement Roulette: Where Americas Refugees Are Placed","Refugee resettlement locations by city and country of origin — where the State Department sends people","MAP","US","Dot map","immigration","State Dept: Refugee Processing Center (wrapsnet.org)",78,68,75,72,72,82,68,82),
+mk("HDB07","The Mediterranean Graveyard: Migrant Deaths Crossing to Europe","Every recorded migrant death in the Mediterranean Sea, mapped by route and year — thousands per year","MAP","World","Dot map","immigration","IOM: Missing Migrants Mediterranean (missingmigrants.iom.int)",90,62,72,68,92,85,68,78),
+mk("HDB08","The Deportation Pipeline: ICE Removals by Country of Origin Over Time","Deportation numbers by destination country and year, showing how enforcement patterns shift with administration","CHART","US","Area chart","immigration","ICE: Enforcement and Removal Operations (ice.gov/remove/statistics)",72,62,78,72,78,70,68,82),
+mk("HDB09","Asylum Approval Lottery: Grant Rates by Immigration Judge","Asylum approval rates vary from 5% to 90% depending on which judge you draw — same cases, wildly different outcomes","CHART","US","Bar chart","immigration","TRAC: Asylum Decisions (trac.syr.edu/immigration/reports)",82,68,75,85,82,68,78,78),
+mk("HDB10","The Remittance River: Money Sent Home by Immigrants by Country","Billions in remittances flowing from the US to other countries annually — the invisible foreign aid","MAP","World","World choropleth","immigration","World Bank: Remittance Flows (remittanceprices.worldbank.org)",72,68,78,78,68,82,72,82),
+mk("HDB11","Americas Immigration Court Has a 3-Million-Case Backlog","Immigration court case backlog over time, showing exponential growth from 200K to 3M+ pending cases","CHART","US","Line chart","immigration","TRAC: Immigration Court Backlog (trac.syr.edu/phptools/immigration/court_backlog)",78,65,78,78,80,68,68,85),
+mk("HDB12","DACA by the Numbers: Where the Dreamers Live and Work","DACA recipient geographic distribution, employment sectors, education levels, and tax contributions","MAP","US","Dot map","immigration","USCIS: DACA Population Data (uscis.gov/tools/reports-and-studies/daca-population-data)",75,72,78,72,72,82,68,82),
+mk("HDB13","The Language of Immigration: What New Americans Speak by State","Most common language of new immigrants by state — Spanish dominates but Mandarin, Arabic, Tagalog, Hindi growing fast","MAP","US","State choropleth","immigration","Census: ACS Language Spoken at Home (data.census.gov)",62,68,75,72,58,82,68,82),
+mk("HDB14","Sanctuary vs. Anti-Sanctuary: The Immigration Enforcement Patchwork","Cities and counties with sanctuary policies vs. those with 287(g) agreements cooperating with ICE","MAP","US","County choropleth","immigration","ICE: 287(g) Program (ice.gov/identify-and-arrest/287g)",72,68,78,72,75,82,68,78),
+mk("HDB15","The Fence vs. the Visa: How Most Undocumented Immigrants Actually Arrive","Visa overstays vs. border crossings as source of undocumented population — overstays have exceeded crossings since 2007","CHART","US","Area chart","immigration","CMS: Visa Overstay Estimates (cmsny.org)",72,68,80,82,72,68,78,78),
+mk("HDB16","Immigrant Entrepreneurs: Percentage of Startups Founded by Immigrants by Sector","Percentage of venture-backed startups with at least one immigrant founder, by industry","CHART","US","Bar chart","immigration","NFAP: Immigrant Entrepreneurs (nfap.com)",65,68,78,80,62,68,72,78),
+mk("HDB17","The Detention Archipelago: Every Immigration Detention Facility in America","Map of every ICE detention facility — federal, private, county jail contracts — with capacity and average length of stay","MAP","US","Dot map","immigration","Freedom for Immigrants: Detention Facility Locator (freedomforimmigrants.org)",78,62,72,72,82,82,68,78),
+mk("HDB18","Climate Refugees Are Already Here: Internal Displacement by Disaster in the US","Americans displaced by hurricanes, floods, fires, and drought who never returned home, by county","MAP","US","County choropleth","immigration","IDMC: Internal Displacement Monitoring Centre (internal-displacement.org)",82,72,72,78,82,82,72,72),
+mk("HDB19","The Global Passport Power Index: Where Your Citizenship Lets You Travel","Number of countries accessible visa-free by passport nationality — massive inequality in freedom of movement","MAP","World","World choropleth","immigration","Henley Passport Index (henleypassportindex.com)",68,72,80,75,65,82,68,88),
+mk("HDB20","Americas Immigrant Share by County: The Real Geography of Immigration","Percentage of county population that is foreign-born, showing immigration extends far beyond border states","MAP","US","County choropleth","immigration","Census: ACS Foreign-Born Population (data.census.gov)",65,68,78,72,62,82,65,88),
+mk("HDB21","The Family Separation Count: Children Separated from Parents at the Border","Number of children separated from parents at the US-Mexico border by month and administration","CHART","US","Line chart","immigration","ACLU: Family Separation Data (aclu.org/issues/immigrants-rights/immigrants-rights-and-detention/family-separation)",90,72,78,72,92,68,68,72),
+mk("HDB22","The Green Card Wait: How Long Each Country Waits for Permanent Residency","Green card processing backlog by country of chargeability — India and China face decades-long waits","RANK","World","Bar chart","immigration","USCIS: Visa Bulletin (travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html)",72,68,78,82,72,68,72,82),
+mk("HDB23","Immigrant vs. Native Crime Rates: The Data Nobody Wants to Hear","Incarceration rates and crime rates for immigrants vs. native-born Americans — immigrants commit crime at lower rates","CHART","US","Bar chart","immigration","CATO: Immigration and Crime (cato.org/immigration-research-policy-brief)",72,72,80,82,72,68,72,78),
+mk("HDB24","The Agricultural Workforce Is Almost Entirely Immigrant: Farm Labor by Visa Status","Percentage of US agricultural labor force that is foreign-born and undocumented, by crop and state","MAP","US","State choropleth","immigration","USDA: Farm Labor Survey (nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Farm_Labor)",72,68,78,78,72,78,68,78),
+mk("HDB25","Ellis Island to Eagle Pass: Americas Immigration Gateway Shift Over a Century","Where immigrants entered the US in 1920 vs. 1970 vs. 2024 — the geographic rotation of arrival points","MAP","US","Dot map","immigration","DHS: Yearbook of Immigration Statistics (dhs.gov/immigration-statistics/yearbook)",68,65,78,78,68,82,72,78),
+mk("HDB26","The Brain Gain: Countries That Benefit Most from US Immigration Policy","Which countries lose the most educated workers to the US, and which gain from return migration","MAP","World","World choropleth","immigration","OECD: International Migration Outlook (oecd.org/migration/international-migration-outlook)",68,60,72,78,68,80,72,72),
+mk("HDB27","Immigration Enforcement Spending vs. Undocumented Population Size Over Time","CBP and ICE budgets plotted against estimated undocumented population — more spending hasnt reduced the number","XREF","US","Scatter plot","immigration","MPI: Immigration Enforcement Spending (migrationpolicy.org)",72,65,78,80,72,68,78,78),
+mk("HDB28","The Naturalization Map: Where New Citizens Take the Oath","Top naturalization ceremony locations and number of new citizens sworn in per year by city","MAP","US","Dot map","immigration","USCIS: Naturalization Statistics (uscis.gov/citizenship-resource-center/naturalization-statistics)",65,68,75,68,60,82,68,82),
+mk("HDB29","Stateless People: Millions With No Country at All","Populations denied citizenship by any nation — Rohingya, Bidoon, many Roma — mapped by estimated size","MAP","World","World choropleth","immigration","UNHCR: Stateless People (unhcr.org/what-we-do/protect-human-rights/ending-statelessness)",82,58,72,82,82,78,78,72),
+mk("HDB30","The Visa Denial Map: US Tourist Visa Rejection Rates by Country","Percentage of B-1/B-2 visa applications denied by country — some nations face 80%+ rejection","MAP","World","World choropleth","immigration","State Dept: Visa Statistics (travel.state.gov/content/travel/en/legal/visa-law0/visa-statistics.html)",68,62,78,78,72,80,68,85),
+mk("HDB31","The Immigrant Tax Contribution: Undocumented Immigrants Pay Billions in Taxes","Total federal, state, and local taxes paid by undocumented immigrants by state — including Social Security they can never claim","MAP","US","State choropleth","immigration","ITEP: Undocumented Immigrants State and Local Tax Contributions (itep.org)",72,68,78,82,72,78,72,78),
+mk("HDB32","The Citizenship Test: How Many Americans Would Pass It","Percentage of native-born Americans who can pass the US citizenship test vs. the pass rate for immigrants","CHART","US","Bar chart","immigration","Woodrow Wilson Foundation: Citizenship Test Study (woodrow.org)",68,78,72,82,65,68,78,72),
+mk("HDB33","The TPS Patchwork: Who Gets Temporary Protected Status and For How Long","Countries with active Temporary Protected Status designations, duration, and number of beneficiaries","MAP","World","World choropleth","immigration","USCIS: TPS Designated Countries (uscis.gov/humanitarian/temporary-protected-status)",65,58,75,72,68,78,68,82),
+mk("HDB34","Where Refugees Become Entrepreneurs: Refugee-Owned Business Rates by City","Cities with the highest rates of refugee entrepreneurship, showing economic contribution of resettlement","MAP","US","Dot map","immigration","New American Economy: Refugee Entrepreneurs (newamericaneconomy.org)",68,68,72,78,62,78,72,68),
+mk("HDB35","The Border Patrol Budget: From $300 Million to $20 Billion in 30 Years","CBP budget growth over time plotted against apprehension numbers — the most expensive enforcement in US history","CHART","US","Line chart","immigration","CBP: Budget and Staffing Statistics (cbp.gov/newsroom/stats/cbp-enforcement-statistics)",72,62,78,78,75,68,72,82),
+]
+
+# --- inject ---
+with open(DATA, 'r', encoding='utf-8') as f:
+    txt = f.read()
+ids = set(re.findall(r'id:"([^"]+)"', txt))
+new = [i for i in IDEAS if re.search(r'id:"([^"]+)"', i).group(1) not in ids]
+if not new:
+    print("All 35 ideas already present"); exit()
+tail = "]; // end D"
+txt = txt.replace(tail, ",\n".join(new) + ",\n" + tail)
+with open(DATA, 'w', encoding='utf-8') as f:
+    f.write(txt)
+print(f"Injected {len(new)} new ideas (HDB batch)")
