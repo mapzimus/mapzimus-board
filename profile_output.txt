@@ -1,0 +1,730 @@
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+D:\projects\mapzimus-board\profile_all_data.py:29: Pandas4Warning: For backward compatibility, 'str' dtypes are included by select_dtypes when 'object' dtype is specified. This behavior is deprecated and will be removed in a future version. Explicitly pass 'str' to `include` to select them, or to `exclude` to remove them and silence this warning.
+See https://pandas.pydata.org/docs/user_guide/migration-3-strings.html#string-migration-select-dtypes for details on how to write code that works with pandas 2 and 3.
+  cats = df.select_dtypes(include=["object"])
+=== EXISTING IDEAS: 2790 ===
+
+============================================================
+1. FIVETHIRTYEIGHT DATASETS
+============================================================
+
+--- US_births_1994-2003_CDC_NCHS.csv ---
+  Rows: 3652 | Cols: 5
+  Columns: ['year', 'month', 'date_of_month', 'day_of_week', 'births']
+    year: min=1994.00 max=2003.00 mean=1998.50
+    month: min=1.00 max=12.00 mean=6.52
+    date_of_month: min=1.00 max=31.00 mean=15.73
+    day_of_week: min=1.00 max=7.00 mean=4.00
+    births: min=6443.00 max=14540.00 mean=10876.82
+
+--- US_births_2000-2014_SSA.csv ---
+  Rows: 5479 | Cols: 5
+  Columns: ['year', 'month', 'date_of_month', 'day_of_week', 'births']
+    year: min=2000.00 max=2014.00 mean=2007.00
+    month: min=1.00 max=12.00 mean=6.52
+    date_of_month: min=1.00 max=31.00 mean=15.73
+    day_of_week: min=1.00 max=7.00 mean=4.00
+    births: min=5728.00 max=16081.00 mean=11350.07
+
+--- actions_under_antiquities_act.csv ---
+  Rows: 344 | Cols: 9
+  Columns: ['current_name', 'states', 'original_name', 'current_agency', 'action', 'date', 'year', 'pres_or_congress', 'acres_affected']
+    year: min=1906.00 max=2017.00 mean=1957.84
+    states (38 unique): ['Wyoming', 'New Mexico', 'Arizona', 'California', 'South Dakota', 'Utah', 'Montana', 'Colorado']
+
+--- ahca_polls.csv ---
+  Rows: 15 | Cols: 7
+  Columns: ['Start', 'End', 'Pollster', 'Favor', 'Oppose', 'Url', 'Text']
+    Favor: min=17.00 max=38.00 mean=28.33
+    Oppose: min=44.00 max=62.00 mean=50.67
+    Start (12 unique): ['6/9/17', '6/4/17', '5/31/17', '5/26/17', '5/25/17', '5/17/17', '5/16/17', '5/13/17']
+    End (12 unique): ['6/11/17', '6/6/17', '5/30/17', '5/23/17', '5/22/17', '5/20/17', '5/16/17', '5/15/17']
+    Pollster (9 unique): ['Public Policy Polling', 'YouGov', 'Qunnipiac', 'IPSOS ', 'Morning Consult', 'Quinnipiac', 'Kaiser Family Foundation', 'Monmouth']
+
+--- airline-safety.csv ---
+  Rows: 56 | Cols: 8
+  Columns: ['airline', 'avail_seat_km_per_week', 'incidents_85_99', 'fatal_accidents_85_99', 'fatalities_85_99', 'incidents_00_14', 'fatal_accidents_00_14', 'fatalities_00_14']
+    avail_seat_km_per_week: min=259373346.00 max=7139291291.00 mean=1384621304.73
+    incidents_85_99: min=0.00 max=76.00 mean=7.18
+    fatal_accidents_85_99: min=0.00 max=14.00 mean=2.18
+    fatalities_85_99: min=0.00 max=535.00 mean=112.41
+    incidents_00_14: min=0.00 max=24.00 mean=4.12
+    fatal_accidents_00_14: min=0.00 max=3.00 mean=0.66
+    airline (56 unique): ['Aer Lingus', 'Aeroflot*', 'Aerolineas Argentinas', 'Aeromexico*', 'Air Canada', 'Air France', 'Air India*', 'Air New Zealand*']
+
+--- all-ages.csv ---
+  Rows: 173 | Cols: 11
+  Columns: ['Major_code', 'Major', 'Major_category', 'Total', 'Employed', 'Employed_full_time_year_round', 'Unemployed', 'Unemployment_rate', 'Median', 'P25th', 'P75th']
+    Major_code: min=1100.00 max=6403.00 mean=3879.82
+    Total: min=2396.00 max=3123510.00 mean=230256.64
+    Employed: min=1492.00 max=2354398.00 mean=166161.98
+    Employed_full_time_year_round: min=1093.00 max=1939384.00 mean=126307.77
+    Unemployed: min=0.00 max=147261.00 mean=9725.03
+    Unemployment_rate: min=0.00 max=0.16 mean=0.06
+    Major_category (16 unique): ['Agriculture & Natural Resources', 'Biology & Life Science', 'Engineering', 'Humanities & Liberal Arts', 'Communications & Journalism', 'Computers & Mathematics', 'Industrial Arts & Consumer Services', 'Education']
+
+--- august_senate_polls.csv ---
+  Rows: 594 | Cols: 11
+  Columns: ['cycle', 'state', 'senate_class', 'start_date', 'end_date', 'DEM_poll', 'REP_poll', 'DEM_result', 'REP_result', 'error', 'absolute_error']
+    cycle: min=1990.00 max=2016.00 mean=2006.87
+    senate_class: min=1.00 max=3.00 mean=2.14
+    DEM_poll: min=12.00 max=76.00 mean=43.33
+    REP_poll: min=11.00 max=69.00 mean=42.57
+    DEM_result: min=11.62 max=83.18 mean=48.15
+    REP_result: min=12.86 max=76.08 mean=47.76
+    state (49 unique): ['IA', 'PA', 'NH', 'CO', 'NY', 'NC', 'AK', 'WI']
+
+--- bad-drivers.csv ---
+  Rows: 51 | Cols: 8
+  Columns: ['State', 'Number of drivers involved in fatal collisions per billion miles', 'Percentage Of Drivers Involved In Fatal Collisions Who Were Speeding', 'Percentage Of Drivers Involved In Fatal Collisions Who Were Alcohol-Impaired', 'Percentage Of Drivers Involved In Fatal Collisions Who Were Not Distracted', 'Percentage Of Drivers Involved In Fatal Collisions Who Had Not Been Involved In Any Previous Accidents', 'Car Insurance Premiums ($)', 'Losses incurred by insurance companies for collisions per insured driver ($)']
+    Number of drivers involved in fatal collisions per billion miles: min=5.90 max=23.90 mean=15.79
+    Percentage Of Drivers Involved In Fatal Collisions Who Were Speeding: min=13.00 max=54.00 mean=31.73
+    Percentage Of Drivers Involved In Fatal Collisions Who Were Alcohol-Impaired: min=16.00 max=44.00 mean=30.69
+    Percentage Of Drivers Involved In Fatal Collisions Who Were Not Distracted: min=10.00 max=100.00 mean=85.92
+    Percentage Of Drivers Involved In Fatal Collisions Who Had Not Been Involved In Any Previous Accidents: min=76.00 max=100.00 mean=88.73
+    Car Insurance Premiums ($): min=641.96 max=1301.52 mean=886.96
+    State (51 unique): ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware']
+
+--- biopics.csv ---
+  Rows: 761 | Cols: 14
+  Columns: ['title', 'site', 'country', 'year_release', 'box_office', 'director', 'number_of_subjects', 'subject', 'type_of_subject', 'race_known', 'subject_race', 'person_of_color']
+    year_release: min=1915.00 max=2014.00 mean=1986.94
+    number_of_subjects: min=1.00 max=4.00 mean=1.27
+    person_of_color: min=0.00 max=1.00 mean=0.13
+    country (7 unique): ['UK', 'US/UK', 'Canada', 'US', 'Canada/UK', 'US/Canada', 'US/UK/Canada']
+
+--- both_sexes.csv ---
+  Rows: 17 | Cols: 75
+  Columns: ['Unnamed: 0', 'year', 'date', 'all_2534', 'HS_2534', 'SC_2534', 'BAp_2534', 'BAo_2534', 'GD_2534', 'White_2534', 'Black_2534', 'Hisp_2534']
+    Unnamed: 0: min=1.00 max=17.00 mean=9.00
+    year: min=1960.00 max=2012.00 mean=1998.71
+    all_2534: min=0.12 max=0.49 mean=0.36
+    HS_2534: min=0.11 max=0.52 mean=0.36
+    SC_2534: min=0.15 max=0.48 mean=0.35
+    BAp_2534: min=0.22 max=0.48 mean=0.38
+    date (17 unique): ['1960-01-01', '1970-01-01', '1980-01-01', '1990-01-01', '2000-01-01', '2001-01-01', '2002-01-01', '2003-01-01']
+
+--- cabinet-turnover.csv ---
+  Rows: 379 | Cols: 10
+  Columns: ['president', 'position', 'appointee', 'start_date', 'end_date', 'length', 'departure_day', 'gender', 'Unnamed: 8', 'Unnamed: 9']
+    departure_day: min=137.00 max=3013.00 mean=1799.31
+    Unnamed: 8: min=nan max=nan mean=nan
+    Unnamed: 9: min=nan max=nan mean=nan
+    president (8 unique): ['Carter', 'Reagan', 'Bush 41', 'Clinton', 'Bush 43', 'Obama', 'Trump', 'Biden']
+    position (30 unique): ['OMB Director', 'Secretary of Transportation', 'Secretary of Health, Education & Welfare', 'Secretary of Housing & Urban Development', 'Secretary of the Treasury', 'Attorney General', 'U.S. Trade Representative', 'Secretary of Energy']
+
+--- candidate_visits_2024-01-11.csv ---
+  Rows: 1649 | Cols: 7
+  Columns: ['Candidate name', 'Date', 'City', 'State', 'Primary purpose', 'Host organization', 'Notes']
+    Candidate name (12 unique): ['Donald Trump', 'Nikki Haley', 'Vivek Ramaswamy', 'Perry Johnson', 'Asa Hutchinson', 'Tim Scott', 'Ron DeSantis', 'Chris Christie']
+
+--- candy-data.csv ---
+  Rows: 85 | Cols: 13
+  Columns: ['competitorname', 'chocolate', 'fruity', 'caramel', 'peanutyalmondy', 'nougat', 'crispedricewafer', 'hard', 'bar', 'pluribus', 'sugarpercent', 'pricepercent']
+    chocolate: min=0.00 max=1.00 mean=0.44
+    fruity: min=0.00 max=1.00 mean=0.45
+    caramel: min=0.00 max=1.00 mean=0.16
+    peanutyalmondy: min=0.00 max=1.00 mean=0.16
+    nougat: min=0.00 max=1.00 mean=0.08
+    crispedricewafer: min=0.00 max=1.00 mean=0.08
+
+--- classic-rock-song-list.csv ---
+  Rows: 2229 | Cols: 8
+  Columns: ['Song Clean', 'ARTIST CLEAN', 'Release Year', 'COMBINED', 'First?', 'Year?', 'PlayCount', 'F*G']
+    First?: min=1.00 max=1.00 mean=1.00
+    Year?: min=0.00 max=1.00 mean=0.74
+    PlayCount: min=0.00 max=142.00 mean=16.88
+    F*G: min=0.00 max=142.00 mean=15.05
+    Release Year (56 unique): ['1982', nan, '1981', '1980', '1975', '2000', '2002', '1992']
+
+--- cousin-marriage-data.csv ---
+  Rows: 70 | Cols: 2
+  Columns: ['Country', 'Percent']
+    Percent: min=0.10 max=65.80 mean=16.30
+
+--- divorce.csv ---
+  Rows: 17 | Cols: 21
+  Columns: ['Unnamed: 0', 'year', 'date', 'all_3544', 'HS_3544', 'SC_3544', 'BAp_3544', 'BAo_3544', 'GD_3544', 'poor_3544', 'mid_3544', 'rich_3544']
+    Unnamed: 0: min=1.00 max=17.00 mean=9.00
+    year: min=1960.00 max=2012.00 mean=1998.71
+    all_3544: min=0.03 max=0.17 mean=0.14
+    HS_3544: min=0.03 max=0.19 mean=0.16
+    SC_3544: min=0.03 max=0.20 mean=0.16
+    BAp_3544: min=0.03 max=0.11 mean=0.10
+    date (17 unique): ['1960-01-01', '1970-01-01', '1980-01-01', '1990-01-01', '2000-01-01', '2001-01-01', '2002-01-01', '2003-01-01']
+
+--- drinks.csv ---
+  Rows: 193 | Cols: 5
+  Columns: ['country', 'beer_servings', 'spirit_servings', 'wine_servings', 'total_litres_of_pure_alcohol']
+    beer_servings: min=0.00 max=376.00 mean=106.16
+    spirit_servings: min=0.00 max=438.00 mean=80.99
+    wine_servings: min=0.00 max=370.00 mean=49.45
+    total_litres_of_pure_alcohol: min=0.00 max=14.40 mean=4.72
+
+--- drug-use-by-age.csv ---
+  Rows: 17 | Cols: 28
+  Columns: ['age', 'n', 'alcohol_use', 'alcohol_frequency', 'marijuana_use', 'marijuana_frequency', 'cocaine_use', 'cocaine_frequency', 'crack_use', 'crack_frequency', 'heroin_use', 'heroin_frequency']
+    n: min=2223.00 max=7391.00 mean=3251.06
+    alcohol_use: min=3.90 max=84.20 mean=55.43
+    alcohol_frequency: min=3.00 max=52.00 mean=33.35
+    marijuana_use: min=1.10 max=34.00 mean=18.92
+    marijuana_frequency: min=4.00 max=72.00 mean=42.94
+    cocaine_use: min=0.00 max=4.90 mean=2.18
+    age (17 unique): ['12', '13', '14', '15', '16', '17', '18', '19']
+    cocaine_frequency (10 unique): ['5.0', '1.0', '5.5', '4.0', '7.0', '8.0', '6.0', '15.0']
+    crack_frequency (13 unique): ['-', '3.0', '9.5', '1.0', '21.0', '10.0', '2.0', '5.0']
+
+--- fifa_countries_audience.csv ---
+  Rows: 191 | Cols: 5
+  Columns: ['country', 'confederation', 'population_share', 'tv_audience_share', 'gdp_weighted_share']
+    population_share: min=0.00 max=19.50 mean=0.52
+    tv_audience_share: min=0.00 max=14.80 mean=0.52
+    gdp_weighted_share: min=0.00 max=11.30 mean=0.52
+    confederation (6 unique): ['CONCACAF', 'AFC', 'UEFA', 'CONMEBOL', 'CAF', 'OFC']
+
+--- fivethirtyeight_election_deniers.csv ---
+  Rows: 552 | Cols: 9
+  Columns: ['Candidate', 'Incumbent', 'State', 'Office', 'District', 'Stance', 'Source', 'URL', 'Note']
+    Incumbent (2 unique): ['No', 'Yes']
+    State (50 unique): ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware']
+
+--- foul-balls.csv ---
+  Rows: 906 | Cols: 7
+  Columns: ['matchup', 'game_date', 'type_of_hit', 'exit_velocity', 'predicted_zone', 'camera_zone', 'used_zone']
+    exit_velocity: min=25.40 max=110.60 mean=76.40
+    predicted_zone: min=1.00 max=7.00 mean=3.04
+    camera_zone: min=1.00 max=7.00 mean=2.37
+    used_zone: min=1.00 max=7.00 mean=3.06
+    matchup (10 unique): ['Seattle Mariners VS Minnesota Twins', 'Baltimore Orioles VS Minnesota Twins', 'Pittsburgh Pirates VS Milwaukee Brewers', 'Milwaukee Brewers vs New York Mets', 'Texas Rangers vs Toronto Blue Jays', 'Philadelphia Phillies vs Miami Marlins', "Oakland A's vs Houston Astros", 'Atlanta Braves vs New York Mets']
+    game_date (10 unique): ['2019-05-18', '2019-04-20', '2019-06-01', '2019-05-04', '2019-05-03', '2019-04-27', '2019-06-02', '2019-04-14']
+    type_of_hit (5 unique): ['Ground', 'Fly', 'Line', 'Batter hits self', 'Pop Up']
+
+--- grad-students.csv ---
+  Rows: 173 | Cols: 22
+  Columns: ['Major_code', 'Major', 'Major_category', 'Grad_total', 'Grad_sample_size', 'Grad_employed', 'Grad_full_time_year_round', 'Grad_unemployed', 'Grad_unemployment_rate', 'Grad_median', 'Grad_P25', 'Grad_P75']
+    Major_code: min=1100.00 max=6403.00 mean=3879.82
+    Grad_total: min=1542.00 max=1184158.00 mean=127672.02
+    Grad_sample_size: min=22.00 max=21994.00 mean=2250.87
+    Grad_employed: min=1008.00 max=915341.00 mean=94037.03
+    Grad_full_time_year_round: min=770.00 max=703347.00 mean=72861.18
+    Grad_unemployed: min=0.00 max=35718.00 mean=3506.43
+    Major_category (16 unique): ['Industrial Arts & Consumer Services', 'Arts', 'Business', 'Computers & Mathematics', 'Law & Public Policy', 'Agriculture & Natural Resources', 'Communications & Journalism', 'Engineering']
+
+--- hate_crimes.csv ---
+  Rows: 51 | Cols: 12
+  Columns: ['state', 'median_household_income', 'share_unemployed_seasonal', 'share_population_in_metro_areas', 'share_population_with_high_school_degree', 'share_non_citizen', 'share_white_poverty', 'gini_index', 'share_non_white', 'share_voters_voted_trump', 'hate_crimes_per_100k_splc', 'avg_hatecrimes_per_100k_fbi']
+    median_household_income: min=35521.00 max=76165.00 mean=55223.61
+    share_unemployed_seasonal: min=0.03 max=0.07 mean=0.05
+    share_population_in_metro_areas: min=0.31 max=1.00 mean=0.75
+    share_population_with_high_school_degree: min=0.80 max=0.92 mean=0.87
+    share_non_citizen: min=0.01 max=0.13 mean=0.05
+    share_white_poverty: min=0.04 max=0.17 mean=0.09
+    state (51 unique): ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware']
+
+--- majors-list.csv ---
+  Rows: 174 | Cols: 3
+  Columns: ['FOD1P', 'Major', 'Major_Category']
+    Major_Category (16 unique): ['Agriculture & Natural Resources', 'Arts', 'Biology & Life Science', 'Business', 'Communications & Journalism', 'Computers & Mathematics', 'Education', 'Engineering']
+
+--- mmsa-icu-beds.csv ---
+  Rows: 136 | Cols: 7
+  Columns: ['MMSA', 'total_percent_at_risk', 'high_risk_per_ICU_bed', 'high_risk_per_hospital', 'icu_beds', 'hospitals', 'total_at_risk']
+    high_risk_per_ICU_bed: min=413.67 max=4489.85 mean=1947.36
+    high_risk_per_hospital: min=6770.19 max=91771.35 mean=43787.07
+    icu_beds: min=8.00 max=2777.00 mean=360.19
+    hospitals: min=1.00 max=100.00 mean=13.76
+    total_at_risk: min=17941.53 max=6165101.69 mean=667188.73
+
+--- movies.csv ---
+  Rows: 1794 | Cols: 15
+  Columns: ['year', 'imdb', 'title', 'test', 'clean_test', 'binary', 'budget', 'domgross', 'intgross', 'code', 'budget_2013$', 'domgross_2013$']
+    year: min=1970.00 max=2013.00 mean=2002.55
+    budget: min=7000.00 max=425000000.00 mean=44826462.61
+    domgross: min=0.00 max=760507625.00 mean=69132048.28
+    intgross: min=828.00 max=2783918982.00 mean=150385700.05
+    budget_2013$: min=8632.00 max=461435929.00 mean=55464608.45
+    domgross_2013$: min=899.00 max=1771682790.00 mean=95174783.58
+    test (10 unique): ['notalk', 'ok-disagree', 'notalk-disagree', 'men', 'ok', 'nowomen-disagree', 'dubious-disagree', 'men-disagree']
+
+--- obama_commutations.csv ---
+  Rows: 7077 | Cols: 2
+  Columns: ['key', 'info']
+    key (27 unique): [nan, 'Offense:', 'District/Date:', 'Sentence:', 'Terms of grant:', '42696', '42678', '42670']
+
+--- recent-grads.csv ---
+  Rows: 173 | Cols: 21
+  Columns: ['Rank', 'Major_code', 'Major', 'Total', 'Men', 'Women', 'Major_category', 'ShareWomen', 'Sample_size', 'Employed', 'Full_time', 'Part_time']
+    Rank: min=1.00 max=173.00 mean=87.00
+    Major_code: min=1100.00 max=6403.00 mean=3879.82
+    Total: min=124.00 max=393735.00 mean=39370.08
+    Men: min=119.00 max=173809.00 mean=16723.41
+    Women: min=0.00 max=307087.00 mean=22646.67
+    ShareWomen: min=0.00 max=0.97 mean=0.52
+    Major_category (16 unique): ['Engineering', 'Business', 'Physical Sciences', 'Law & Public Policy', 'Computers & Mathematics', 'Agriculture & Natural Resources', 'Industrial Arts & Consumer Services', 'Arts']
+
+--- women-stem.csv ---
+  Rows: 76 | Cols: 9
+  Columns: ['Rank', 'Major_code', 'Major', 'Major_category', 'Total', 'Men', 'Women', 'ShareWomen', 'Median']
+    Rank: min=1.00 max=76.00 mean=38.50
+    Major_code: min=1301.00 max=6199.00 mean=3580.03
+    Total: min=609.00 max=280709.00 mean=25515.29
+    Men: min=488.00 max=111762.00 mean=12800.76
+    Women: min=77.00 max=187621.00 mean=12714.53
+    ShareWomen: min=0.08 max=0.97 mean=0.44
+    Major_category (5 unique): ['Engineering', 'Physical Sciences', 'Computers & Mathematics', 'Health', 'Biology & Life Science']
+
+============================================================
+2. FBI DATASETS
+============================================================
+
+--- estimated_crimes_1979_2024.csv ---
+  Rows: 2388 | Cols: 15
+  Columns: ['year', 'state_abbr', 'state_name', 'population', 'violent_crime', 'homicide', 'rape_legacy', 'rape_revised', 'robbery', 'aggravated_assault', 'property_crime', 'burglary']
+    year: min=1979.00 max=2024.00 mean=2001.47
+    rape_legacy: min=50.00 max=109062.00 mean=3518.84
+    state_abbr (51 unique): [nan, 'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT']
+
+--- lee_1960_2024.csv ---
+  Rows: 768891 | Cols: 21
+  Columns: ['data_year', 'ori', 'pub_agency_name', 'pub_agency_unit', 'state_abbr', 'division_name', 'region_name', 'county_name', 'agency_type_name', 'population_group_desc', 'population', 'male_officer_ct']
+    data_year: min=1960.00 max=2024.00 mean=1996.64
+    population: min=0.00 max=8616333.00 mean=19916.47
+    male_officer_ct: min=0.00 max=33536.00 mean=39.76
+    male_cilvilian_ct: min=0.00 max=10045.00 mean=6.45
+    male_total_ct: min=0.00 max=38498.00 mean=46.21
+    female_officer_ct: min=0.00 max=9000.00 mean=4.11
+
+--- territories_1995_2024.csv ---
+  Rows: 162 | Cols: 17
+  Columns: ['year', 'state_name', 'state_abbr', 'locality', 'population', 'violent_crime', 'homicide', 'rape_legacy', 'rape_revised', 'robbery', 'aggravated_assault', 'property_crime']
+    year: min=1995.00 max=2024.00 mean=2008.22
+    population: min=153836.00 max=3967288.00 mean=3353245.11
+    violent_crime: min=105.00 max=22450.00 mean=4969.38
+    homicide: min=1.00 max=1136.00 mean=334.75
+    rape_legacy: min=4.00 max=324.00 mean=95.44
+    rape_revised: min=1.00 max=478.00 mean=118.44
+    state_name (4 unique): ['American Samoa', 'Guam', 'Puerto Rico', 'U.S. Virgin Islands']
+    state_abbr (4 unique): ['AS', 'GU', 'PR', 'VI']
+    locality (2 unique): [nan, 'St. Croix', 'St. Thomas']
+
+--- ucr_participation_1960_2024.csv ---
+  Rows: 3601 | Cols: 11
+  Columns: ['data_year', 'state_name', 'total_agencies', 'participation_agencies', 'participating_agencies_pct', 'nibrs_participating_agencies', 'nibrs_participating_agencies.1', 'covered_agencies', 'covered_pct', 'total_population', 'nibrs_population']
+    data_year: min=1960.00 max=2024.00 mean=1992.37
+    total_agencies: min=0.00 max=1856.00 mean=302.48
+    participation_agencies: min=0.00 max=1531.00 mean=233.81
+    participating_agencies_pct: min=0.00 max=1.00 mean=0.72
+    nibrs_participating_agencies: min=0.00 max=1531.00 mean=53.64
+    nibrs_participating_agencies.1: min=0.00 max=1.02 mean=0.20
+    state_name (58 unique): ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Canal Zone', 'Colorado', 'Connecticut']
+
+============================================================
+3. CPI / PPI DATASETS
+============================================================
+
+--- historical-cpi-u-202602.xlsx ---
+  Sheets: ['Index Levels', 'Index Averages']
+  First sheet cols: ['Unnamed: 0', 'Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, by month', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7']
+
+--- ppi-comrlp.xlsx ---
+  Sheets: ['comrlp26']
+  First sheet cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+
+--- ppi-fdallrel.xlsx ---
+  Sheets: ['fdallrel26']
+  First sheet cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+
+--- ppi-fdgrouprel.xlsx ---
+  Sheets: ['fdgrouprel26']
+  First sheet cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+
+--- ppi-idcallrel.xlsx ---
+  Sheets: ['idcallrel26']
+  First sheet cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+
+--- ppi-idcgrouprel.xlsx ---
+  Sheets: ['idcgrouprel26']
+  First sheet cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+
+--- ppi-idpallrel.xlsx ---
+  Sheets: ['ipdallrel26']
+  First sheet cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+
+--- ppi-idpgrouprel.xlsx ---
+  Sheets: ['idpgrouprel26']
+  First sheet cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+
+--- ppi-weprel.xlsx ---
+  Sheets: ['weprel26']
+  First sheet cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+
+--- ppitable09.pdf ---
+
+--- ppitable11.pdf ---
+
+============================================================
+4. SAGE DATA DATASETS
+============================================================
+
+--- Adherent Rate from the U.S. Religion Census Database.xlsx ---
+  Rows(sample): 50 | Cols: 3
+  Columns: ['Title:', 'Adherent Rate from the U.S. Religion Census Database', 'Unnamed: 2']
+
+--- Adherent Rate from the U.S. Religion Census Database2020.xlsx ---
+  Rows(sample): 50 | Cols: 9
+  Columns: ['Title:', 'Adherent Rate from the U.S. Religion Census Database', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8']
+
+--- Arrests by Race from the Arrests Database.csv ---
+  Rows: 7 | Cols: 2
+  Columns: ['Title:', 'Arrests by Race from the Arrests Database']
+    Title: (7 unique): ['SubTitle:', 'Time:', 'Citation:', 'ColumnCount:', 'RowCount:', 'Publisher:', 'Copyright:']
+    Arrests by Race from the Arrests Database (7 unique): ['State - Indicator: Arrests - Offense*: All Offenses - Race: All Races - Adult Juvenile: Adult and Juvenile', '1985 - 2023', 'Criminal Justice Information Services Division, Federal Bureau of Investigation, Federal Bureau of Investigation (2025-01-24). Arrests: Arrests by Race | Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington DC, West Virginia, Wisconsin, Wyoming | Arrests | All Offenses | All Races | Adult and Juvenile, 1985 - 2023. Sage Data. Sage Publishing Ltd. (Dataset). Dataset-ID:  010-002-005 doi:https://doi.org/10.6068/DP19CEF7C4B5C18', '52', '39', ' "Federal Bureau of Investigation"', ' "The data contained in Sage Data is made available via license agreement with subscribing organizations. Your organization\'s license may vary from this version."']
+
+--- Assessment by All Students from the National Assessment of Educational Progress (NAEP) Database.csv ---
+  Rows: 7 | Cols: 2
+  Columns: ['Title:', 'Assessment by All Students from the National Assessment of Educational Progress (NAEP) Database']
+    Title: (7 unique): ['SubTitle:', 'Time:', 'Citation:', 'ColumnCount:', 'RowCount:', 'Publisher:', 'Copyright:']
+    Assessment by All Students from the National Assessment of Educational Progress (NAEP) Database (7 unique): ['State - Indicator: All students - Measure: Cumulative achievement level ? At or above Basic - ObsFlag: All students', '1998 - 2024', 'National Center for Education Statistics (2025-04-01). National Assessment of Educational Progress (NAEP): Assessment by All Students | Alabama, Alaska, American Samoa, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Guam, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Puerto Rico, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virgin Islands, Virginia, Washington, Washington DC, West Virginia, Wisconsin, Wyoming | 4th Grade | 8th Grade | 12th Grade | Mathematics | Reading | Science | Writing | All students | Cumulative achievement level ? At or above Basic | All students, 1998 - 2024. Sage Data. Sage Publishing Ltd. (Dataset). Dataset-ID:  017-024-001 doi:https://doi.org/10.6068/DP19CEF7F5BA021', '428', '14', ' "National Center for Education Statistics"', ' "The data contained in Sage Data is made available via license agreement with subscribing organizations. Your organization\'s license may vary from this version."']
+
+--- Inmates by Race from the Annual Survey of Jails (United States) Database.csv ---
+  Rows: 7 | Cols: 2
+  Columns: ['Title:', 'Inmates by Race from the Annual Survey of Jails (United States) Database']
+    Title: (7 unique): ['SubTitle:', 'Time:', 'Citation:', 'ColumnCount:', 'RowCount:', 'Publisher:', 'Copyright:']
+    Inmates by Race from the Annual Survey of Jails (United States) Database (7 unique): ['USA', '2013 - 2022', 'Bureau of Justice Statistics (2024-01-24). Annual Survey of Jails (United States): Inmates by Race | Total | White | Black | Hispanic | American Indian/Alaska Native Inmates | Asian | Native Hawaiian/Other Pacific Islander | Two or More Races | Other Races | Unknown Race, 2013 - 2022. Sage Data. Sage Publishing Ltd. (Dataset). Dataset-ID:  034-011-007 doi:https://doi.org/10.6068/DP19CEF7537F514', '11', '9', ' "Bureau of Justice Statistics"', ' "The data contained in Sage Data is made available via license agreement with subscribing organizations. Your organization\'s license may vary from this version."']
+
+--- Inmates by Race from the Annual Survey of Jails (United States) Database.xlsx ---
+  Rows(sample): 22 | Cols: 11
+  Columns: ['Title:', 'Inmates by Race from the Annual Survey of Jails (United States) Database', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+
+--- Marijuana Use in the Past Month from the National Survey on Drug Use and Health (NSDUH), 2015-2019 [Archive] Database.csv ---
+  Rows: 7 | Cols: 2
+  Columns: ['Title:', 'Marijuana Use in the Past Month from the National Survey on Drug Use and Health (NSDUH), 2015-2019 [Archive] Database']
+    Title: (7 unique): ['SubTitle:', 'Time:', 'Citation:', 'ColumnCount:', 'RowCount:', 'Publisher:', 'Copyright:']
+    Marijuana Use in the Past Month from the National Survey on Drug Use and Health (NSDUH), 2015-2019 [Archive] Database (7 unique): ['State', '2015 - 2019', 'Substance Abuse and Mental Health Services Administration (U.S. Department of Health and Human Services) (2023-06-29). National Survey on Drug Use and Health (NSDUH), 2015-2019 [Archive]: Marijuana Use in the Past Month | Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington DC, West Virginia, Wisconsin, Wyoming | 12-17 Years Old | 18-25 Years Old | 18 Years and Older | 26 Years and Older, 2015 - 2019. Sage Data. Sage Publishing Ltd. (Dataset). Dataset-ID:  102-002-003 doi:https://doi.org/10.6068/DP19CEF8231C823', '205', '3', ' "Substance Abuse and Mental Health Services Administration (U.S. Department of Health and Human Services)"', ' "The data contained in Sage Data is made available via license agreement with subscribing organizations. Your organization\'s license may vary from this version."']
+
+--- Number of Adherents from the U.S. Religion Census Database.xlsx ---
+  Rows(sample): 50 | Cols: 3
+  Columns: ['Title:', 'Number of Adherents from the U.S. Religion Census Database', 'Unnamed: 2']
+
+--- Number of Congregations from the U.S. Religion Census Database.xlsx ---
+  Rows(sample): 50 | Cols: 3
+  Columns: ['Title:', 'Number of Congregations from the U.S. Religion Census Database', 'Unnamed: 2']
+
+--- Number of Congregations from the U.S. Religion Census Database2020.xlsx ---
+  Rows(sample): 50 | Cols: 45
+  Columns: ['Title:', 'Number of Congregations from the U.S. Religion Census Database', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+
+--- Population Base from the U.S. Religion Census Database.xlsx ---
+  Rows(sample): 18 | Cols: 52
+  Columns: ['Title:', 'Population Base from the U.S. Religion Census Database', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+
+--- Real Personal Income and Regional Price Parities from the Regional Personal Income and Employment Database.csv ---
+  Rows: 7 | Cols: 2
+  Columns: ['Title:', 'Real Personal Income and Regional Price Parities from the Regional Personal Income and Employment Database']
+    Title: (7 unique): ['SubTitle:', 'Time:', 'Citation:', 'ColumnCount:', 'RowCount:', 'Publisher:', 'Copyright:']
+    Real Personal Income and Regional Price Parities from the Regional Personal Income and Employment Database (7 unique): ['State - Indicator: Real Personal Income by state (Non-Industry) - Finance Line Item: Real personal income', '2014 - 2022', 'Bureau of Economic Analysis (2025-03-27). Regional Personal Income and Employment: Real Personal Income and Regional Price Parities | Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington DC, West Virginia, Wisconsin, Wyoming | Real Personal Income by state (Non-Industry) | Real personal income, 2014 - 2022. Sage Data. Sage Publishing Ltd. (Dataset). Dataset-ID:  003-026-004 doi:https://doi.org/10.6068/DP19CEF71E87512', '52', '9', ' "Bureau of Economic Analysis"', ' "The data contained in Sage Data is made available via license agreement with subscribing organizations. Your organization\'s license may vary from this version."']
+
+--- State and Local  Personal Income and Employment by NAICS Industry (1998 - Current) from the Regional Personal Income and Employment Database.csv ---
+  Rows: 7 | Cols: 2
+  Columns: ['Title:', 'State and Local  Personal Income and Employment by NAICS Industry (1998 - Current) from the Regional Personal Income and Employment Database']
+    Title: (7 unique): ['SubTitle:', 'Time:', 'Citation:', 'ColumnCount:', 'RowCount:', 'Publisher:', 'Copyright:']
+    State and Local  Personal Income and Employment by NAICS Industry (1998 - Current) from the Regional Personal Income and Employment Database (7 unique): ['State - Indicator: Personal Income by Major Component and Earnings by NAICS Industry (NAICS) - Finance Line Item: Personal income', '1998/1 - 2024/2', 'Bureau of Economic Analysis (2025-03-27). Regional Personal Income and Employment: State and Local  Personal Income and Employment by NAICS Industry (1998 - Current) | Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington DC, West Virginia, Wisconsin, Wyoming | Personal Income by Major Component and Earnings by NAICS Industry (NAICS) | Personal income, 1998/1 - 2024/2. Sage Data. Sage Publishing Ltd. (Dataset). Dataset-ID:  003-026-005 doi:https://doi.org/10.6068/DP19CEF70FB3311', '52', '82', ' "Bureau of Economic Analysis"', ' "The data contained in Sage Data is made available via license agreement with subscribing organizations. Your organization\'s license may vary from this version."']
+
+--- Total Private and Commercial Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database.csv ---
+  Rows: 7 | Cols: 2
+  Columns: ['Title:', 'Total Private and Commercial Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database']
+    Title: (7 unique): ['SubTitle:', 'Time:', 'Citation:', 'ColumnCount:', 'RowCount:', 'Publisher:', 'Copyright:']
+    Total Private and Commercial Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database (7 unique): ['State', '1995 - 2024', 'Office of Highway Policy Information, Federal Highway Administration (2026-03-02). All Motor Vehicles  (Private + Public; Registered Vehicles): Total Private and Commercial Vehicles Registered | Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Puerto Rico, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington DC, West Virginia, Wisconsin, Wyoming, 1995 - 2024. Sage Data. Sage Publishing Ltd. (Dataset). Dataset-ID:  013-007-001 doi:https://doi.org/10.6068/DP19CEF7D8C9D19', '53', '30', ' "Federal Highway Administration"', ' "The data contained in Sage Data is made available via license agreement with subscribing organizations. Your organization\'s license may vary from this version."']
+
+--- Total Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database (1).csv ---
+  Rows: 7 | Cols: 2
+  Columns: ['Title:', 'Total Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database']
+    Title: (7 unique): ['SubTitle:', 'Time:', 'Citation:', 'ColumnCount:', 'RowCount:', 'Publisher:', 'Copyright:']
+    Total Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database (7 unique): ['State', '1995 - 2024', 'Office of Highway Policy Information, Federal Highway Administration (2026-03-02). All Motor Vehicles  (Private + Public; Registered Vehicles): Total Vehicles Registered | Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Puerto Rico, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington DC, West Virginia, Wisconsin, Wyoming, 1995 - 2024. Sage Data. Sage Publishing Ltd. (Dataset). Dataset-ID:  013-007-003 doi:https://doi.org/10.6068/DP19CEF7E04C820', '53', '30', ' "Federal Highway Administration"', ' "The data contained in Sage Data is made available via license agreement with subscribing organizations. Your organization\'s license may vary from this version."']
+
+--- peek.py ---
+
+============================================================
+5. OUR WORLD IN DATA (first 40 files)
+============================================================
+Total OWID CSVs: 0
+
+============================================================
+6. WORLDCUP DATA
+============================================================
+
+--- fifa_ranking_2022-10-06.csv ---
+  Rows: 211 | Cols: 7
+  Columns: ['team', 'team_code', 'association', 'rank', 'previous_rank', 'points', 'previous_points']
+    rank: min=1.00 max=211.00 mean=106.00
+    previous_rank: min=1.00 max=211.00 mean=106.00
+    points: min=762.22 max=1841.30 mean=1220.69
+    previous_points: min=763.82 max=1837.56 mean=1220.65
+    association (6 unique): ['CONMEBOL', 'UEFA', 'CONCACAF', 'CAF', 'AFC', 'OFC']
+
+--- matches_1930_2022.csv ---
+  Rows: 964 | Cols: 44
+  Columns: ['home_team', 'away_team', 'home_score', 'home_xg', 'home_penalty', 'away_score', 'away_xg', 'away_penalty', 'home_manager', 'home_captain', 'away_manager', 'away_captain']
+    home_score: min=0.00 max=10.00 mean=1.78
+    home_xg: min=0.10 max=5.20 mean=1.44
+    home_penalty: min=0.00 max=5.00 mean=3.29
+    away_score: min=0.00 max=7.00 mean=1.04
+    away_xg: min=0.00 max=5.70 mean=1.19
+    away_penalty: min=0.00 max=5.00 mean=3.06
+
+--- world_cup.csv ---
+  Rows: 22 | Cols: 9
+  Columns: ['Year', 'Host', 'Teams', 'Champion', 'Runner-Up', 'TopScorrer', 'Attendance', 'AttendanceAvg', 'Matches']
+    Year: min=1930.00 max=2022.00 mean=1978.91
+    Teams: min=13.00 max=32.00 mean=22.36
+    Attendance: min=363000.00 max=3587538.00 mean=2002200.59
+    AttendanceAvg: min=20872.00 max=68991.00 mean=42728.55
+    Matches: min=17.00 max=64.00 mean=43.82
+    Host (17 unique): ['Qatar', 'Russia', 'Brazil', 'South Africa', 'Germany', 'Korea Republic, Japan', 'France', 'United States']
+    Champion (9 unique): ['Argentina', 'France', 'Germany', 'Spain', 'Italy', 'Brazil', 'West Germany', 'England']
+    Runner-Up (11 unique): ['France', 'Croatia', 'Argentina', 'Netherlands', 'Germany', 'Brazil', 'Italy', 'West Germany']
+
+============================================================
+7. ECONDATA
+============================================================
+
+--- USCompanies.csv ---
+  Rows: 1 | Cols: 1
+  Columns: ['Search Criteria']
+    Search Criteria (1 unique): ['United States']
+
+============================================================
+8. PUBLIC SCHOOL CHARACTERISTICS
+============================================================
+  Rows: 101390 | Cols: 77
+  Columns: ['X', 'Y', 'OBJECTID', 'NCESSCH', 'SURVYEAR', 'STABR', 'LEAID', 'ST_LEAID', 'LEA_NAME', 'SCH_NAME', 'LSTREET1', 'LSTREET2']
+    X: min=-176.64 max=145.78 mean=-93.02
+    Y: min=-14.35 max=71.30 mean=37.83
+    OBJECTID: min=1.00 max=101390.00 mean=50695.50
+    NCESSCH: min=10000500870.00 max=780003000034.00 mean=289610461161.48
+    LEAID: min=100005.00 max=7800030.00 mean=2896104.58
+    LZIP: min=601.00 max=99950.00 mean=54142.14
+    SURVYEAR (1 unique): ['2022-2023']
+    STABR (56 unique): ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE']
+
+============================================================
+9. WALKABILITY INDEX
+============================================================
+  National Walkability Index_Methodology and User Guide_June2021.pdf
+  Natl_WI.gdb
+
+============================================================
+10. AIRBNB BOSTON
+============================================================
+
+--- part-00385-88821d72-4721-46b8-b7e6-f25dd1c1dd91.c000.csv ---
+  Rows: 1741 | Cols: 4
+  Columns: ['listing_id', 'date', 'num_reviews', 'reviewers']
+    listing_id: min=5506.00 max=17559756.00 mean=8305917.62
+    num_reviews: min=1.00 max=13.00 mean=2.82
+    date (12 unique): ['2025-11-01', '2025-05-01', '2025-03-01', '2025-07-01', '2025-10-01', '2025-06-01', '2025-02-01', '2025-09-01']
+
+--- part-00385-9bb15732-bc6a-4419-886d-7f1198853395.c000.csv ---
+  Rows: 3456 | Cols: 14
+  Columns: ['listing_id', 'date', 'vacant_days', 'reserved_days', 'occupancy', 'revenue', 'rate_avg', 'booked_rate_avg', 'booking_lead_time_avg', 'length_of_stay_avg', 'min_nights_avg', 'native_booked_rate_avg']
+    listing_id: min=5506.00 max=17559756.00 mean=8195858.50
+    vacant_days: min=0.00 max=31.00 mean=24.50
+    reserved_days: min=0.00 max=31.00 mean=5.92
+    occupancy: min=0.00 max=1.00 mean=0.20
+    revenue: min=0.00 max=47585.00 mean=1383.65
+    rate_avg: min=33.80 max=2216.50 mean=250.16
+    date (12 unique): ['2026-02-01', '2026-03-01', '2026-04-01', '2026-05-01', '2026-06-01', '2026-07-01', '2026-08-01', '2026-09-01']
+
+--- part-00385-a0e792d1-4b3b-49be-9dd5-dd239b716946.c000.csv ---
+  Rows: 300 | Cols: 62
+  Columns: ['listing_id', 'listing_name', 'listing_type', 'room_type', 'cover_photo_url', 'photos_count', 'host_id', 'host_name', 'cohost_ids', 'cohost_names', 'superhost', 'latitude']
+    listing_id: min=5506.00 max=17559756.00 mean=8272601.86
+    photos_count: min=4.00 max=107.00 mean=25.35
+    host_id: min=8229.00 max=446136994.00 mean=27262809.25
+    latitude: min=42.24 max=42.39 mean=42.33
+    longitude: min=-71.17 max=-71.01 mean=-71.09
+    guests: min=1.00 max=12.00 mean=3.68
+    listing_type (15 unique): ['Entire guest suite', 'Entire condo', 'Entire rental unit', 'Private room in home', 'Private room in condo', 'Entire home', 'Private room in townhouse', 'Entire townhouse']
+    room_type (2 unique): ['entire_home', 'private_room']
+
+============================================================
+11. MBTA DATA 2025
+============================================================
+  Bus_Routes (DIR)
+  Bus_Routes.zip (904KB)
+  Bus_Stops (DIR)
+  Bus_Stops.zip (492KB)
+  Commuter_Rail_Routes (DIR)
+  Commuter_Rail_Routes.zip (1367KB)
+  Commuter_Rail_Stations (DIR)
+  Commuter_Rail_Stations.zip (17KB)
+  Ferry_Routes (DIR)
+  Ferry_Routes.zip (5KB)
+  MBTA_Extended_Service_Area (DIR)
+  MBTA_Extended_Service_Area.zip (3232KB)
+  MBTA_Systemwide_GTFS_Map (DIR)
+  MBTA_Systemwide_GTFS_Map.zip (4KB)
+  Rapid_Transit_Routes (DIR)
+  Rapid_Transit_Routes.zip (99KB)
+  Rapid_Transit_Stops (DIR)
+  Rapid_Transit_Stops.zip (11KB)
+  mbta-commuter-rail-station.png (0KB)
+  mbta-subway-station.png (0KB)
+
+============================================================
+12. OUR WORLD IN DATA (files 41-end)
+============================================================
+
+============================================================
+13. MAPZIMUS OLD BATCHES
+============================================================
+  ideas_batch2.js (12KB)
+  ideas_batch3.js (8KB)
+  ideas_full.js (26KB)
+  ideas_master_v2.js (50KB)
+  table_index.json (11KB)
+  table_index_session3.json (5KB)
+  table_index_v2.json (16KB)
+  transport_arts_additions.json (4KB)
+  vscore_algorithm.js (2KB)
+  vscore_ideas.json (14KB)
+
+
+=== PROFILE COMPLETE ===

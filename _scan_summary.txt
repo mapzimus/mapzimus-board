@@ -1,0 +1,3951 @@
+DATA FILE SCAN - 2026-03-21 21:12
+================================================================================
+Total: 3493 files across 686 directories
+
+
+[392 files] C:\Drivers\Audio\Source\4ForteMedia\Lenovo
+      0.01 MB  SAMSfpa_17AA380114F11F87.dat
+      0.01 MB  SAMSfpa_17AA3802.dat
+      0.01 MB  SAMSfpa_17AA380214F11F87.dat
+      0.01 MB  SAMSfpa_17AA380310EC0285.dat
+      0.01 MB  SAMSfpa_17AA380314F11F87.dat
+      0.01 MB  SAMSfpa_17AA380414F11F87.dat
+      0.01 MB  SAMSfpa_17AA380510EC0257.dat
+      0.01 MB  SAMSfpa_17AA380610EC0257.dat
+      0.01 MB  SAMSfPa_17AA380610EC0298.dat
+      0.01 MB  SAMSfPa_17AA380A10EC0257.dat
+      0.01 MB  SAMSfpa_17AA380A10EC0287.dat
+      0.01 MB  SAMSfpa_17AA380B10EC0257.dat
+      0.01 MB  SAMSfpa_17AA380B10EC0287.dat
+      0.01 MB  SAMSfpa_17AA380B10EC0303.dat
+      0.01 MB  SAMSfpa_17AA380C10EC0285.dat
+      0.01 MB  SAMSfPa_17AA380D10EC0257.dat
+      0.01 MB  SAMSfpa_17AA380D10EC0287.dat
+      0.01 MB  SAMSfpa_17AA380E10EC0285.dat
+      0.01 MB  SAMSfpa_17AA380F10EC0257.dat
+      0.01 MB  SAMSfpa_17AA381010EC0257.dat
+  ... and 372 more
+
+[199 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads
+    999.04 MB  23_0945Hi-RGBI (2026_03_20 00_33_33 UTC).tif
+    325.79 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B8 (2024_08_14 20_19_59 UTC).TIF
+    325.79 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B8 (2024_08_14 22_12_35 UTC).TIF
+    325.79 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B8 (2024_10_05 17_47_16 UTC).TIF
+    325.79 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B8 (2024_10_17 22_15_25 UTC).TIF
+    301.87 MB  NH_Parcel_Mosaic_-_Parcel_Points (2026_03_20 00_33_33 UTC).geojson
+    105.40 MB  NH_Parcel_Mosaic_-_Parcel_Points (2026_03_20 00_33_33 UTC).csv
+    101.44 MB  NH_Parcel_Mosaic_-_Polygons (2026_03_20 00_33_33 UTC).csv
+     98.76 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B5 (2024_08_14 20_19_59 UTC).TIF
+     98.76 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B5 (2024_08_14 22_12_35 UTC).TIF
+     98.76 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B5 (2024_10_05 17_47_16 UTC).TIF
+     98.76 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B5 (2024_10_17 22_15_25 UTC).TIF
+     93.25 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B6 (2024_08_14 20_19_59 UTC).TIF
+     93.25 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B6 (2024_08_14 22_12_35 UTC).TIF
+     93.25 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B6 (2024_10_05 17_47_16 UTC).TIF
+     93.25 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B6 (2024_10_17 22_15_25 UTC).TIF
+     88.15 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B7 (2024_08_14 20_19_59 UTC).TIF
+     88.15 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B7 (2024_08_14 22_12_35 UTC).TIF
+     88.15 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B7 (2024_10_05 17_47_16 UTC).TIF
+     88.15 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B7 (2024_10_17 22_15_25 UTC).TIF
+  ... and 179 more
+
+[72 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\congo-democratic-republic-latest-free.shp
+   1070.62 MB  gis_osm_buildings_a_free_1 (2024_08_14 20_19_59 UTC).shp
+   1070.62 MB  gis_osm_buildings_a_free_1 (2024_08_14 22_12_35 UTC).shp
+   1070.62 MB  gis_osm_buildings_a_free_1 (2024_10_05 17_47_16 UTC).shp
+   1070.62 MB  gis_osm_buildings_a_free_1 (2024_10_17 22_15_25 UTC).shp
+    395.93 MB  gis_osm_landuse_a_free_1 (2024_08_14 20_19_59 UTC).shp
+    395.93 MB  gis_osm_landuse_a_free_1 (2024_08_14 22_12_35 UTC).shp
+    395.93 MB  gis_osm_landuse_a_free_1 (2024_10_05 17_47_16 UTC).shp
+    395.93 MB  gis_osm_landuse_a_free_1 (2024_10_17 22_15_25 UTC).shp
+    222.01 MB  gis_osm_roads_free_1 (2024_08_14 20_19_59 UTC).shp
+    222.01 MB  gis_osm_roads_free_1 (2024_08_14 22_12_35 UTC).shp
+    222.01 MB  gis_osm_roads_free_1 (2024_10_05 17_47_16 UTC).shp
+    222.01 MB  gis_osm_roads_free_1 (2024_10_17 22_15_25 UTC).shp
+     79.40 MB  gis_osm_waterways_free_1 (2024_08_14 20_19_59 UTC).shp
+     79.40 MB  gis_osm_waterways_free_1 (2024_08_14 22_12_35 UTC).shp
+     79.40 MB  gis_osm_waterways_free_1 (2024_10_05 17_47_16 UTC).shp
+     79.40 MB  gis_osm_waterways_free_1 (2024_10_17 22_15_25 UTC).shp
+     60.40 MB  gis_osm_water_a_free_1 (2024_08_14 20_19_59 UTC).shp
+     60.40 MB  gis_osm_water_a_free_1 (2024_08_14 22_12_35 UTC).shp
+     60.40 MB  gis_osm_water_a_free_1 (2024_10_05 17_47_16 UTC).shp
+     60.40 MB  gis_osm_water_a_free_1 (2024_10_17 22_15_25 UTC).shp
+  ... and 52 more
+
+[66 files] C:\rtools45\usr\lib\mxe\usr\x86_64-w64-mingw32.static.posix\share\gdal
+      0.05 MB  s57objectclasses.csv
+      0.04 MB  plscenesconf.json
+      0.03 MB  grib2_table_4_2_local_NCEP.csv
+      0.03 MB  MM_m_idofic.csv
+      0.02 MB  grib2_table_4_2_0_1.csv
+      0.02 MB  gt_datum.csv
+      0.02 MB  s57attributes.csv
+      0.02 MB  s57expectedinput.csv
+      0.01 MB  gdalinfo_output.schema.json
+      0.01 MB  gdalmdiminfo_output.schema.json
+      0.01 MB  grib2_table_4_2_0_0.csv
+      0.01 MB  grib2_table_4_2_0_13.csv
+      0.01 MB  grib2_table_4_2_0_14.csv
+      0.01 MB  grib2_table_4_2_0_15.csv
+      0.01 MB  grib2_table_4_2_0_16.csv
+      0.01 MB  grib2_table_4_2_0_18.csv
+      0.01 MB  grib2_table_4_2_0_19.csv
+      0.01 MB  grib2_table_4_2_0_190.csv
+      0.01 MB  grib2_table_4_2_0_191.csv
+      0.01 MB  grib2_table_4_2_0_2.csv
+  ... and 46 more
+
+[66 files] C:\rtools45\x86_64-w64-mingw32.static.posix\share\gdal
+      0.05 MB  s57objectclasses.csv
+      0.04 MB  plscenesconf.json
+      0.03 MB  grib2_table_4_2_local_NCEP.csv
+      0.03 MB  MM_m_idofic.csv
+      0.02 MB  grib2_table_4_2_0_1.csv
+      0.02 MB  gt_datum.csv
+      0.02 MB  s57attributes.csv
+      0.02 MB  s57expectedinput.csv
+      0.01 MB  gdalinfo_output.schema.json
+      0.01 MB  gdalmdiminfo_output.schema.json
+      0.01 MB  grib2_table_4_2_0_0.csv
+      0.01 MB  grib2_table_4_2_0_13.csv
+      0.01 MB  grib2_table_4_2_0_14.csv
+      0.01 MB  grib2_table_4_2_0_15.csv
+      0.01 MB  grib2_table_4_2_0_16.csv
+      0.01 MB  grib2_table_4_2_0_18.csv
+      0.01 MB  grib2_table_4_2_0_19.csv
+      0.01 MB  grib2_table_4_2_0_190.csv
+      0.01 MB  grib2_table_4_2_0_191.csv
+      0.01 MB  grib2_table_4_2_0_2.csv
+  ... and 46 more
+
+[53 files] C:\Users\mhowe\raw_data\HSUS\A-Population\aaPopulation-Characteristics\State Populations
+      0.05 MB  Aa2244-2340.xls
+      0.05 MB  Aa2443-2539.xls
+      0.05 MB  Aa2666-2766.xls
+      0.05 MB  Aa2767-2867.xls
+      0.05 MB  Aa2868-2964.xls
+      0.05 MB  Aa3097-3197.xls
+      0.05 MB  Aa3300-3396.xls
+      0.05 MB  Aa3397-3493.xls
+      0.05 MB  Aa3644-3744.xls
+      0.05 MB  Aa3745-3841.xls
+      0.05 MB  Aa3842-3942.xls
+      0.05 MB  Aa3943-4043.xls
+      0.05 MB  Aa4044-4144.xls
+      0.05 MB  Aa4145-4241.xls
+      0.05 MB  Aa4305-4401.xls
+      0.05 MB  Aa4402-4498.xls
+      0.05 MB  Aa4676-4776.xls
+      0.05 MB  Aa4777-4877.xls
+      0.05 MB  Aa4941-5041.xls
+      0.05 MB  Aa5042-5142.xls
+  ... and 33 more
+
+[53 files] D:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$R8STXDC\TableGroupAa2244-6550
+      0.05 MB  Aa2244-2340.xls
+      0.05 MB  Aa2443-2539.xls
+      0.05 MB  Aa2666-2766.xls
+      0.05 MB  Aa2767-2867.xls
+      0.05 MB  Aa2868-2964.xls
+      0.05 MB  Aa3097-3197.xls
+      0.05 MB  Aa3300-3396.xls
+      0.05 MB  Aa3397-3493.xls
+      0.05 MB  Aa3644-3744.xls
+      0.05 MB  Aa3745-3841.xls
+      0.05 MB  Aa3842-3942.xls
+      0.05 MB  Aa3943-4043.xls
+      0.05 MB  Aa4044-4144.xls
+      0.05 MB  Aa4145-4241.xls
+      0.05 MB  Aa4305-4401.xls
+      0.05 MB  Aa4402-4498.xls
+      0.05 MB  Aa4676-4776.xls
+      0.05 MB  Aa4777-4877.xls
+      0.05 MB  Aa4941-5041.xls
+      0.05 MB  Aa5042-5142.xls
+  ... and 33 more
+
+[53 files] D:\raw_data\HSUS\A-Population\aaPopulation-Characteristics\State Populations
+      0.05 MB  Aa2244-2340.xls
+      0.05 MB  Aa2443-2539.xls
+      0.05 MB  Aa2666-2766.xls
+      0.05 MB  Aa2767-2867.xls
+      0.05 MB  Aa2868-2964.xls
+      0.05 MB  Aa3097-3197.xls
+      0.05 MB  Aa3300-3396.xls
+      0.05 MB  Aa3397-3493.xls
+      0.05 MB  Aa3644-3744.xls
+      0.05 MB  Aa3745-3841.xls
+      0.05 MB  Aa3842-3942.xls
+      0.05 MB  Aa3943-4043.xls
+      0.05 MB  Aa4044-4144.xls
+      0.05 MB  Aa4145-4241.xls
+      0.05 MB  Aa4305-4401.xls
+      0.05 MB  Aa4402-4498.xls
+      0.05 MB  Aa4676-4776.xls
+      0.05 MB  Aa4777-4877.xls
+      0.05 MB  Aa4941-5041.xls
+      0.05 MB  Aa5042-5142.xls
+  ... and 33 more
+
+[53 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\TableGroupAa2244-6550
+      0.05 MB  Aa2244-2340 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa2443-2539 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa2666-2766 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa2767-2867 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa2868-2964 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa3097-3197 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa3300-3396 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa3397-3493 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa3644-3744 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa3745-3841 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa3842-3942 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa3943-4043 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa4044-4144 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa4145-4241 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa4305-4401 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa4402-4498 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa4676-4776 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa4777-4877 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa4941-5041 (2026_03_18 06_03_51 UTC).xls
+      0.05 MB  Aa5042-5142 (2026_03_18 06_03_51 UTC).xls
+  ... and 33 more
+
+[33 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Exam 1\Exam Imagery
+    318.44 MB  img3_b8.TIF
+    277.15 MB  img2_b8.TIF
+    275.84 MB  img1_b8.TIF
+     91.52 MB  img3_b6.TIF
+     91.37 MB  img3_b5.TIF
+     88.06 MB  img3_b7.TIF
+     82.19 MB  img3_b4.TIF
+     78.60 MB  img3_b3.TIF
+     77.97 MB  img3_b10.TIF
+     76.64 MB  img3_b11.TIF
+     75.32 MB  img3_b2.TIF
+     75.06 MB  img1_b5.TIF
+     73.49 MB  img2_b5.TIF
+     73.10 MB  img3_b1.TIF
+     72.52 MB  img1_b6.TIF
+     70.57 MB  img2_b6.TIF
+     69.61 MB  img1_b4.TIF
+     69.52 MB  img2_b4.TIF
+     69.42 MB  img1_b7.TIF
+     69.35 MB  img2_b10.TIF
+  ... and 13 more
+
+[32 files] C:\AMD\AMD_Software_Installer_25.3.1\Packages\Drivers\Display\WT6A_INF\B413137
+      1.55 MB  amdicdxx.dat
+      0.70 MB  atiicdxx.dat
+      0.56 MB  ativvaxy_vcn3.dat
+      0.55 MB  ativvaxy_vcn3_1.dat
+      0.49 MB  amdefctb.dat
+      0.42 MB  ativvaxy_vcn5.dat
+      0.38 MB  ativvaxy_nv.dat
+      0.38 MB  ativvaxy_vcn4.dat
+      0.37 MB  ativvaxy_vcn4_0_a.dat
+      0.37 MB  ativvaxy_vcn4_0_a_1.dat
+      0.37 MB  ativvaxy_vg20_nd.dat
+      0.36 MB  ativvaxy_el_nd.dat
+      0.36 MB  ativvaxy_gl_nd.dat
+      0.36 MB  ativvaxy_vg20.dat
+      0.35 MB  ativvaxy_rv.dat
+      0.31 MB  ativvaxy_vi.dat
+      0.31 MB  ativvaxy_vi_nd.dat
+      0.27 MB  ativvaxy_stn_nd.dat
+      0.26 MB  ativvaxy_cz_nd.dat
+      0.26 MB  ativvaxy_fj.dat
+  ... and 12 more
+
+[29 files] C:\rtools45\usr\lib\mxe\usr\x86_64-w64-mingw32.static.posix\share\cmake-3.30.4\Templates\MSBuild\FlagTables
+      0.03 MB  v140_Link.json
+      0.03 MB  v141_CL.json
+      0.03 MB  v141_Link.json
+      0.03 MB  v142_CL.json
+      0.03 MB  v142_Link.json
+      0.03 MB  v143_CL.json
+      0.03 MB  v143_Link.json
+      0.02 MB  v10_CL.json
+      0.02 MB  v10_Link.json
+      0.02 MB  v11_CL.json
+      0.02 MB  v11_Link.json
+      0.02 MB  v12_CL.json
+      0.02 MB  v12_Link.json
+      0.02 MB  v140_CL.json
+      0.01 MB  v10_CSharp.json
+      0.01 MB  v10_LIB.json
+      0.01 MB  v10_MASM.json
+      0.01 MB  v11_CSharp.json
+      0.01 MB  v11_LIB.json
+      0.01 MB  v11_MASM.json
+  ... and 9 more
+
+[29 files] C:\rtools45\x86_64-w64-mingw32.static.posix\share\cmake-3.30.4\Templates\MSBuild\FlagTables
+      0.03 MB  v140_Link.json
+      0.03 MB  v141_CL.json
+      0.03 MB  v141_Link.json
+      0.03 MB  v142_CL.json
+      0.03 MB  v142_Link.json
+      0.03 MB  v143_CL.json
+      0.03 MB  v143_Link.json
+      0.02 MB  v10_CL.json
+      0.02 MB  v10_Link.json
+      0.02 MB  v11_CL.json
+      0.02 MB  v11_Link.json
+      0.02 MB  v12_CL.json
+      0.02 MB  v12_Link.json
+      0.02 MB  v140_CL.json
+      0.01 MB  v10_CSharp.json
+      0.01 MB  v10_LIB.json
+      0.01 MB  v10_MASM.json
+      0.01 MB  v11_CSharp.json
+      0.01 MB  v11_LIB.json
+      0.01 MB  v11_MASM.json
+  ... and 9 more
+
+[28 files] C:\Drivers\AMDVGA\Source\Packages\Drivers\Display\WT6A_INF\B388744
+      1.37 MB  amdicdxx.dat
+      0.70 MB  atiicdxx.dat
+      0.55 MB  ativvaxy_vcn3.dat
+      0.55 MB  ativvaxy_vcn3_1.dat
+      0.49 MB  amdefctb.dat
+      0.38 MB  ativvaxy_nv.dat
+      0.37 MB  ativvaxy_vg20_nd.dat
+      0.36 MB  ativvaxy_el_nd.dat
+      0.36 MB  ativvaxy_gl_nd.dat
+      0.36 MB  ativvaxy_vg20.dat
+      0.35 MB  ativvaxy_rv.dat
+      0.35 MB  ativvaxy_vcn4.dat
+      0.31 MB  ativvaxy_vi.dat
+      0.31 MB  ativvaxy_vi_nd.dat
+      0.27 MB  ativvaxy_stn_nd.dat
+      0.26 MB  ativvaxy_cz_nd.dat
+      0.26 MB  ativvaxy_fj.dat
+      0.26 MB  ativvaxy_fj_nd.dat
+      0.22 MB  ativvaxy_cik.dat
+      0.22 MB  ativvaxy_cik_nd.dat
+  ... and 8 more
+
+[27 files] C:\Drivers\NVGFE\GFExperience\osc\l10n
+      0.08 MB  th-TH.json
+      0.07 MB  el-GR.json
+      0.06 MB  ja-JP.json
+      0.06 MB  ru-RU.json
+      0.05 MB  cs-CZ.json
+      0.05 MB  da-DK.json
+      0.05 MB  de-DE.json
+      0.05 MB  es-ES.json
+      0.05 MB  es-MX.json
+      0.05 MB  fi-FI.json
+      0.05 MB  fr-FR.json
+      0.05 MB  hu-HU.json
+      0.05 MB  it-IT.json
+      0.05 MB  ko-KR.json
+      0.05 MB  nl-NL.json
+      0.05 MB  pl-PL.json
+      0.05 MB  pt-BR.json
+      0.05 MB  pt-PT.json
+      0.05 MB  sk-SK.json
+      0.05 MB  sl-SI.json
+  ... and 7 more
+
+[27 files] C:\Drivers\NVGFE\GFExperience\www\l10n\games
+      0.02 MB  th-TH.json
+      0.01 MB  cs-CZ.json
+      0.01 MB  da-DK.json
+      0.01 MB  de-DE.json
+      0.01 MB  el-GR.json
+      0.01 MB  en-GB.json
+      0.01 MB  en-US.json
+      0.01 MB  es-ES.json
+      0.01 MB  es-MX.json
+      0.01 MB  fi-FI.json
+      0.01 MB  fr-FR.json
+      0.01 MB  hu-HU.json
+      0.01 MB  it-IT.json
+      0.01 MB  ja-JP.json
+      0.01 MB  ko-KR.json
+      0.01 MB  nb-NO.json
+      0.01 MB  nl-NL.json
+      0.01 MB  pl-PL.json
+      0.01 MB  pt-BR.json
+      0.01 MB  pt-PT.json
+  ... and 7 more
+
+[27 files] C:\Drivers\NVGFE\GFExperience\www\l10n\main
+      0.02 MB  el-GR.json
+      0.02 MB  ja-JP.json
+      0.02 MB  ru-RU.json
+      0.02 MB  th-TH.json
+      0.01 MB  cs-CZ.json
+      0.01 MB  da-DK.json
+      0.01 MB  de-DE.json
+      0.01 MB  en-GB.json
+      0.01 MB  en-US.json
+      0.01 MB  es-ES.json
+      0.01 MB  es-MX.json
+      0.01 MB  fi-FI.json
+      0.01 MB  fr-FR.json
+      0.01 MB  hu-HU.json
+      0.01 MB  it-IT.json
+      0.01 MB  ko-KR.json
+      0.01 MB  nb-NO.json
+      0.01 MB  nl-NL.json
+      0.01 MB  pl-PL.json
+      0.01 MB  pt-BR.json
+  ... and 7 more
+
+[27 files] C:\Drivers\NVGFE\GFExperience\www\l10n\oobe
+      0.01 MB  cs-CZ.json
+      0.01 MB  da-DK.json
+      0.01 MB  de-DE.json
+      0.01 MB  el-GR.json
+      0.01 MB  en-GB.json
+      0.01 MB  en-US.json
+      0.01 MB  es-ES.json
+      0.01 MB  es-MX.json
+      0.01 MB  fi-FI.json
+      0.01 MB  fr-FR.json
+      0.01 MB  hu-HU.json
+      0.01 MB  it-IT.json
+      0.01 MB  ja-JP.json
+      0.01 MB  ko-KR.json
+      0.01 MB  nb-NO.json
+      0.01 MB  nl-NL.json
+      0.01 MB  pl-PL.json
+      0.01 MB  pt-BR.json
+      0.01 MB  pt-PT.json
+      0.01 MB  ru-RU.json
+  ... and 7 more
+
+[27 files] C:\Drivers\NVGFE\GFExperience\www\l10n\preferences
+      0.02 MB  el-GR.json
+      0.02 MB  ru-RU.json
+      0.02 MB  th-TH.json
+      0.01 MB  cs-CZ.json
+      0.01 MB  da-DK.json
+      0.01 MB  de-DE.json
+      0.01 MB  en-GB.json
+      0.01 MB  en-US.json
+      0.01 MB  es-ES.json
+      0.01 MB  es-MX.json
+      0.01 MB  fi-FI.json
+      0.01 MB  fr-FR.json
+      0.01 MB  hu-HU.json
+      0.01 MB  it-IT.json
+      0.01 MB  ja-JP.json
+      0.01 MB  ko-KR.json
+      0.01 MB  nb-NO.json
+      0.01 MB  nl-NL.json
+      0.01 MB  pl-PL.json
+      0.01 MB  pt-BR.json
+  ... and 7 more
+
+[27 files] C:\Drivers\NVGFE\GFExperience\www\l10n\rewards
+      0.01 MB  cs-CZ.json
+      0.01 MB  da-DK.json
+      0.01 MB  de-DE.json
+      0.01 MB  el-GR.json
+      0.01 MB  en-GB.json
+      0.01 MB  en-US.json
+      0.01 MB  es-ES.json
+      0.01 MB  es-MX.json
+      0.01 MB  fi-FI.json
+      0.01 MB  fr-FR.json
+      0.01 MB  hu-HU.json
+      0.01 MB  it-IT.json
+      0.01 MB  ja-JP.json
+      0.01 MB  ko-KR.json
+      0.01 MB  nb-NO.json
+      0.01 MB  nl-NL.json
+      0.01 MB  pl-PL.json
+      0.01 MB  pt-BR.json
+      0.01 MB  pt-PT.json
+      0.01 MB  ru-RU.json
+  ... and 7 more
+
+[27 files] C:\Drivers\NVGFE\GFExperience\www\l10n\updates
+      0.01 MB  cs-CZ.json
+      0.01 MB  da-DK.json
+      0.01 MB  de-DE.json
+      0.01 MB  el-GR.json
+      0.01 MB  en-GB.json
+      0.01 MB  en-US.json
+      0.01 MB  es-ES.json
+      0.01 MB  es-MX.json
+      0.01 MB  fi-FI.json
+      0.01 MB  fr-FR.json
+      0.01 MB  hu-HU.json
+      0.01 MB  it-IT.json
+      0.01 MB  ja-JP.json
+      0.01 MB  ko-KR.json
+      0.01 MB  nb-NO.json
+      0.01 MB  nl-NL.json
+      0.01 MB  pl-PL.json
+      0.01 MB  pt-BR.json
+      0.01 MB  pt-PT.json
+      0.01 MB  ru-RU.json
+  ... and 7 more
+
+[27 files] C:\Drivers\NVGFE\GFExperience\www\l10n\user-profile
+      0.02 MB  th-TH.json
+      0.01 MB  cs-CZ.json
+      0.01 MB  da-DK.json
+      0.01 MB  de-DE.json
+      0.01 MB  el-GR.json
+      0.01 MB  en-GB.json
+      0.01 MB  en-US.json
+      0.01 MB  es-ES.json
+      0.01 MB  es-MX.json
+      0.01 MB  fi-FI.json
+      0.01 MB  fr-FR.json
+      0.01 MB  hu-HU.json
+      0.01 MB  it-IT.json
+      0.01 MB  ja-JP.json
+      0.01 MB  ko-KR.json
+      0.01 MB  nb-NO.json
+      0.01 MB  nl-NL.json
+      0.01 MB  pl-PL.json
+      0.01 MB  pt-BR.json
+      0.01 MB  pt-PT.json
+  ... and 7 more
+
+[22 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\RS Project\Imagery\PR_10.3.17\LC08_L2SP_005047_20171003_20200903_02_T1
+     77.38 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_B5.TIF
+     77.21 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_B4.TIF
+     77.20 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_B3.TIF
+     77.09 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_B2.TIF
+     77.08 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_B1.TIF
+     74.14 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_B6.TIF
+     72.06 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_B7.TIF
+     62.86 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_B10.TIF
+     48.41 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_TRAD.TIF
+     21.77 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_QA.TIF
+     19.96 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_CDIST.TIF
+     10.37 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_EMIS.TIF
+      9.43 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_ATRAN.TIF
+      9.10 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_URAD.TIF
+      7.32 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_DRAD.TIF
+      3.78 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_QA_AEROSOL.TIF
+      3.12 MB  LC08_L2SP_005047_20171003_20200903_02_T1_ST_EMSD.TIF
+      2.50 MB  LC08_L2SP_005047_20171003_20200903_02_T1_QA_PIXEL.TIF
+      0.21 MB  LC08_L2SP_005047_20171003_20200903_02_T1_QA_RADSAT.TIF
+      0.04 MB  LC08_L2SP_005047_20171003_20200903_02_T1_SR_stac.json
+  ... and 2 more
+
+[22 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\RS Project\Imagery\PR_9.17.17\LC08_L2SP_005047_20170917_20200903_02_T1
+     79.39 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_B1.TIF
+     78.96 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_B2.TIF
+     78.35 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_B5.TIF
+     78.04 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_B3.TIF
+     77.87 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_B4.TIF
+     75.99 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_B6.TIF
+     73.88 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_B7.TIF
+     63.44 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_B10.TIF
+     47.61 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_TRAD.TIF
+     23.61 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_QA.TIF
+     18.91 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_CDIST.TIF
+     10.20 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_EMIS.TIF
+      9.20 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_ATRAN.TIF
+      9.00 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_URAD.TIF
+      7.03 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_DRAD.TIF
+      4.12 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_QA_AEROSOL.TIF
+      3.20 MB  LC08_L2SP_005047_20170917_20200903_02_T1_ST_EMSD.TIF
+      3.07 MB  LC08_L2SP_005047_20170917_20200903_02_T1_QA_PIXEL.TIF
+      0.21 MB  LC08_L2SP_005047_20170917_20200903_02_T1_QA_RADSAT.TIF
+      0.04 MB  LC08_L2SP_005047_20170917_20200903_02_T1_SR_stac.json
+  ... and 2 more
+
+[22 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\USGS Data\10.17\LT05_L2SP_012030_20030827_20200904_02_T1
+     60.52 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_B4.TIF
+     57.54 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_B5.TIF
+     55.37 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_B1.TIF
+     49.17 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_B6.TIF
+     47.79 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_B3.TIF
+     45.84 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_B2.TIF
+     44.60 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_B7.TIF
+     28.05 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_EMIS.TIF
+     27.00 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_QA.TIF
+     21.98 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_ATRAN.TIF
+     21.29 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_URAD.TIF
+     19.15 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_CDIST.TIF
+     18.99 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_TRAD.TIF
+     15.32 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_DRAD.TIF
+     11.33 MB  LT05_L2SP_012030_20030827_20200904_02_T1_ST_EMSD.TIF
+      6.41 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_ATMOS_OPACITY.TIF
+      3.99 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_CLOUD_QA.TIF
+      1.64 MB  LT05_L2SP_012030_20030827_20200904_02_T1_QA_PIXEL.TIF
+      0.35 MB  LT05_L2SP_012030_20030827_20200904_02_T1_QA_RADSAT.TIF
+      0.04 MB  LT05_L2SP_012030_20030827_20200904_02_T1_SR_stac.json
+  ... and 2 more
+
+[22 files] F:\03 - GIS Data\Landsat\Landsat8_LC08_April2020\LC08_L2SP_134052_20200410_20200822_02_T1
+     74.02 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B1.TIF
+     73.95 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B5.TIF
+     73.43 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B2.TIF
+     73.09 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B4.TIF
+     72.33 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B3.TIF
+     71.92 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B6.TIF
+     69.96 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B7.TIF
+     59.96 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_B10.TIF
+     41.79 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_TRAD.TIF
+     19.57 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_CDIST.TIF
+     16.11 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_QA.TIF
+      4.08 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_EMIS.TIF
+      2.96 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_ATRAN.TIF
+      2.82 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_URAD.TIF
+      2.41 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_QA_AEROSOL.TIF
+      1.98 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_DRAD.TIF
+      1.76 MB  LC08_L2SP_134052_20200410_20200822_02_T1_QA_PIXEL.TIF
+      1.74 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_EMSD.TIF
+      0.21 MB  LC08_L2SP_134052_20200410_20200822_02_T1_QA_RADSAT.TIF
+      0.04 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_stac.json
+  ... and 2 more
+
+[22 files] F:\05 - Teaching\Prob&Stats PBL Project\24-25 All Projects Data + Surveys\Data
+      0.04 MB  Statistics_Class_Survey (1).xlsx
+      0.04 MB  Statistics_Class_Survey.xlsx
+      0.02 MB  Book1.xlsx
+      0.02 MB  Book_2.xlsx
+      0.02 MB  KhiannaDataFixed.xlsx
+      0.02 MB  MATH_PROJECT.xlsx
+      0.01 MB  AnayahG.xlsx
+      0.01 MB  Book (1).xlsx
+      0.01 MB  Book.xlsx
+      0.01 MB  Book2AutoRecovered.xlsx
+      0.01 MB  Cblock project (1).xlsx
+      0.01 MB  Cblock_project.xlsx
+      0.01 MB  cht.xlsx
+      0.01 MB  Cleaned_Project_Survey.csv
+      0.01 MB  Cleaned_Shopping_App_and_Playlist_Data.xlsx
+      0.01 MB  English_statistics.xlsx
+      0.01 MB  Jaleidy.xlsx
+      0.01 MB  Project_survey.csv
+      0.01 MB  Survey.xlsx
+      0.01 MB  Survey_for_statistics_Responses_-_Form_Responses_1.csv
+  ... and 2 more
+
+[22 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\LC08_L2SP_134052_20200410_20200822_02_T1
+     74.02 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B1 (2025_07_21 07_53_25 UTC).TIF
+     73.95 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B5 (2025_07_21 07_53_25 UTC).TIF
+     73.43 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B2 (2025_07_21 07_53_25 UTC).TIF
+     73.09 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B4 (2025_07_21 07_53_25 UTC).TIF
+     72.33 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B3 (2025_07_21 07_53_25 UTC).TIF
+     71.92 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B6 (2025_07_21 07_53_25 UTC).TIF
+     69.96 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_B7 (2025_07_21 07_53_25 UTC).TIF
+     59.96 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_B10 (2025_07_21 07_53_25 UTC).TIF
+     41.79 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_TRAD (2025_07_21 07_53_25 UTC).TIF
+     19.57 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_CDIST (2025_07_21 07_53_25 UTC).TIF
+     16.11 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_QA (2025_07_21 07_53_25 UTC).TIF
+      4.08 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_EMIS (2025_07_21 07_53_25 UTC).TIF
+      2.96 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_ATRAN (2025_07_21 07_53_25 UTC).TIF
+      2.82 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_URAD (2025_07_21 07_53_25 UTC).TIF
+      2.41 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_QA_AEROSOL (2025_07_21 07_53_25 UTC).TIF
+      1.98 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_DRAD (2025_07_21 07_53_25 UTC).TIF
+      1.76 MB  LC08_L2SP_134052_20200410_20200822_02_T1_QA_PIXEL (2025_07_21 07_53_25 UTC).TIF
+      1.74 MB  LC08_L2SP_134052_20200410_20200822_02_T1_ST_EMSD (2025_07_21 07_53_25 UTC).TIF
+      0.21 MB  LC08_L2SP_134052_20200410_20200822_02_T1_QA_RADSAT (2025_07_21 07_53_25 UTC).TIF
+      0.04 MB  LC08_L2SP_134052_20200410_20200822_02_T1_SR_stac (2025_07_21 07_53_25 UTC).json
+  ... and 2 more
+
+[21 files] C:\Users\mhowe\raw_data\HSUS\A-Population\adInternational-Migration\Foreign-Born Population and Its Characteristics
+      0.05 MB  Ad938-949.xls
+      0.04 MB  Ad354-443.xls
+      0.04 MB  Ad515-695.xls
+      0.03 MB  Ad802-849.xls
+      0.03 MB  Ad874-937.xls
+      0.02 MB  Ad256-279.xls
+      0.02 MB  Ad280-318.xls
+      0.02 MB  Ad319-353.xls
+      0.02 MB  Ad444-514.xls
+      0.02 MB  Ad696-706.xls
+      0.02 MB  Ad722-739.xls
+      0.02 MB  Ad760-771.xls
+      0.02 MB  Ad850-873.xls
+      0.01 MB  Ad707-710.xls
+      0.01 MB  Ad711-721.xls
+      0.01 MB  Ad740-743.xls
+      0.01 MB  Ad744-751.xls
+      0.01 MB  Ad752-759.xls
+      0.01 MB  Ad772-781.xls
+      0.01 MB  Ad782-791.xls
+  ... and 1 more
+
+[21 files] D:\raw_data\HSUS\A-Population\adInternational-Migration\Foreign-Born Population and Its Characteristics
+      0.05 MB  Ad938-949.xls
+      0.04 MB  Ad354-443.xls
+      0.04 MB  Ad515-695.xls
+      0.03 MB  Ad802-849.xls
+      0.03 MB  Ad874-937.xls
+      0.02 MB  Ad256-279.xls
+      0.02 MB  Ad280-318.xls
+      0.02 MB  Ad319-353.xls
+      0.02 MB  Ad444-514.xls
+      0.02 MB  Ad696-706.xls
+      0.02 MB  Ad722-739.xls
+      0.02 MB  Ad760-771.xls
+      0.02 MB  Ad850-873.xls
+      0.01 MB  Ad707-710.xls
+      0.01 MB  Ad711-721.xls
+      0.01 MB  Ad740-743.xls
+      0.01 MB  Ad744-751.xls
+      0.01 MB  Ad752-759.xls
+      0.01 MB  Ad772-781.xls
+      0.01 MB  Ad782-791.xls
+  ... and 1 more
+
+[20 files] C:\Users\mhowe\raw_data\fivethirtyeight
+      0.69 MB  obama_commutations.csv
+      0.20 MB  movies.csv
+      0.16 MB  classic-rock-song-list.csv
+      0.11 MB  candidate_visits_2024-01-11.csv
+      0.10 MB  biopics.csv
+      0.09 MB  US_births_2000-2014_SSA.csv
+      0.07 MB  fivethirtyeight_election_deniers.csv
+      0.06 MB  US_births_1994-2003_CDC_NCHS.csv
+      0.05 MB  august_senate_polls.csv
+      0.05 MB  foul-balls.csv
+      0.04 MB  actions_under_antiquities_act.csv
+      0.03 MB  cabinet-turnover.csv
+      0.03 MB  grad-students.csv
+      0.03 MB  recent-grads.csv
+      0.02 MB  all-ages.csv
+      0.02 MB  both_sexes.csv
+      0.01 MB  divorce.csv
+      0.01 MB  majors-list.csv
+      0.01 MB  mmsa-icu-beds.csv
+      0.01 MB  women-stem.csv
+
+[20 files] D:\raw_data\fivethirtyeight
+      0.69 MB  obama_commutations.csv
+      0.20 MB  movies.csv
+      0.16 MB  classic-rock-song-list.csv
+      0.11 MB  candidate_visits_2024-01-11.csv
+      0.10 MB  biopics.csv
+      0.09 MB  US_births_2000-2014_SSA.csv
+      0.07 MB  fivethirtyeight_election_deniers.csv
+      0.06 MB  US_births_1994-2003_CDC_NCHS.csv
+      0.05 MB  august_senate_polls.csv
+      0.05 MB  foul-balls.csv
+      0.04 MB  actions_under_antiquities_act.csv
+      0.03 MB  cabinet-turnover.csv
+      0.03 MB  grad-students.csv
+      0.03 MB  recent-grads.csv
+      0.02 MB  all-ages.csv
+      0.02 MB  both_sexes.csv
+      0.01 MB  divorce.csv
+      0.01 MB  majors-list.csv
+      0.01 MB  mmsa-icu-beds.csv
+      0.01 MB  women-stem.csv
+
+[20 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Final Project\L8 2014
+    292.55 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B8.TIF
+     83.32 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B5.TIF
+     79.34 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B6.TIF
+     75.35 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B7.TIF
+     72.79 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B3.TIF
+     72.50 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B4.TIF
+     71.91 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B10.TIF
+     68.81 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B11.TIF
+     68.41 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B2.TIF
+     67.79 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B1.TIF
+     45.55 MB  LC08_L1TP_012030_20140825_20200911_02_T1_B9.TIF
+      8.37 MB  LC08_L1TP_012030_20140825_20200911_02_T1_VAA.TIF
+      5.47 MB  LC08_L1TP_012030_20140825_20200911_02_T1_refl.tif
+      3.06 MB  LC08_L1TP_012030_20140825_20200911_02_T1_VZA.TIF
+      2.27 MB  LC08_L1TP_012030_20140825_20200911_02_T1_SAA.TIF
+      2.01 MB  LC08_L1TP_012030_20140825_20200911_02_T1_SZA.TIF
+      1.08 MB  LC08_L1TP_012030_20140825_20200911_02_T1_tir.tif
+      0.84 MB  LC08_L1TP_012030_20140825_20200911_02_T1_QA_PIXEL.TIF
+      0.41 MB  LC08_L1TP_012030_20140825_20200911_02_T1_qb.tif
+      0.23 MB  LC08_L1TP_012030_20140825_20200911_02_T1_QA_RADSAT.TIF
+
+[20 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Final Project\L9 2024
+    328.59 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B8.TIF
+     87.45 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B6.TIF
+     85.94 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B5.TIF
+     85.39 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B7.TIF
+     83.07 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B4.TIF
+     80.11 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B3.TIF
+     78.45 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B2.TIF
+     76.77 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B1.TIF
+     73.20 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B11.TIF
+     72.77 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B10.TIF
+     54.61 MB  LC09_L1TP_012030_20240422_20240422_02_T1_B9.TIF
+      7.93 MB  LC09_L1TP_012030_20240422_20240422_02_T1_VAA.TIF
+      4.44 MB  LC09_L1TP_012030_20240422_20240422_02_T1_refl.tif
+      2.99 MB  LC09_L1TP_012030_20240422_20240422_02_T1_VZA.TIF
+      2.47 MB  LC09_L1TP_012030_20240422_20240422_02_T1_SAA.TIF
+      2.01 MB  LC09_L1TP_012030_20240422_20240422_02_T1_SZA.TIF
+      1.51 MB  LC09_L1TP_012030_20240422_20240422_02_T1_tir.tif
+      1.06 MB  LC09_L1TP_012030_20240422_20240422_02_T1_QA_PIXEL.TIF
+      0.44 MB  LC09_L1TP_012030_20240422_20240422_02_T1_qb.tif
+      0.23 MB  LC09_L1TP_012030_20240422_20240422_02_T1_QA_RADSAT.TIF
+
+[19 files] F:\02 - GIS Projects\Concord\Satellite Imagery\12.29.23\landsat8-12.08.23\LC08_L2SP_012030_20231208_20231214_02_T1
+     83.87 MB  LC08_L2SP_012030_20231208_20231214_02_T1_SR_B5.TIF
+     82.36 MB  LC08_L2SP_012030_20231208_20231214_02_T1_SR_B4.TIF
+     81.94 MB  LC08_L2SP_012030_20231208_20231214_02_T1_SR_B1.TIF
+     81.44 MB  LC08_L2SP_012030_20231208_20231214_02_T1_SR_B3.TIF
+     81.23 MB  LC08_L2SP_012030_20231208_20231214_02_T1_SR_B2.TIF
+     76.87 MB  LC08_L2SP_012030_20231208_20231214_02_T1_SR_B6.TIF
+     73.89 MB  LC08_L2SP_012030_20231208_20231214_02_T1_SR_B7.TIF
+     69.79 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_B10.TIF
+     55.96 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_TRAD.TIF
+     32.23 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_QA.TIF
+     25.39 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_EMIS.TIF
+     19.49 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_CDIST.TIF
+     12.05 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_EMSD.TIF
+      7.80 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_ATRAN.TIF
+      5.95 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_URAD.TIF
+      4.41 MB  LC08_L2SP_012030_20231208_20231214_02_T1_QA_PIXEL.TIF
+      4.12 MB  LC08_L2SP_012030_20231208_20231214_02_T1_ST_DRAD.TIF
+      4.05 MB  LC08_L2SP_012030_20231208_20231214_02_T1_SR_QA_AEROSOL.TIF
+      0.23 MB  LC08_L2SP_012030_20231208_20231214_02_T1_QA_RADSAT.TIF
+
+[18 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Kinshasa\Data\congo-democratic-republic-latest-free.shp (1)
+   1071.48 MB  gis_osm_buildings_a_free_1.shp
+    397.39 MB  gis_osm_landuse_a_free_1.shp
+    222.67 MB  gis_osm_roads_free_1.shp
+     80.00 MB  gis_osm_waterways_free_1.shp
+     60.53 MB  gis_osm_water_a_free_1.shp
+      4.02 MB  gis_osm_places_a_free_1.shp
+      1.54 MB  gis_osm_places_free_1.shp
+      1.11 MB  gis_osm_pois_a_free_1.shp
+      0.72 MB  gis_osm_railways_free_1.shp
+      0.42 MB  gis_osm_pois_free_1.shp
+      0.31 MB  gis_osm_pofw_a_free_1.shp
+      0.15 MB  gis_osm_natural_free_1.shp
+      0.12 MB  gis_osm_natural_a_free_1.shp
+      0.08 MB  gis_osm_traffic_a_free_1.shp
+      0.07 MB  gis_osm_traffic_free_1.shp
+      0.07 MB  gis_osm_transport_a_free_1.shp
+      0.05 MB  gis_osm_pofw_free_1.shp
+      0.03 MB  gis_osm_transport_free_1.shp
+
+[18 files] F:\03 - GIS Data\_Downloaded Spatial Data\congo-democratic-republic-latest-free.shp
+   1070.62 MB  gis_osm_buildings_a_free_1.shp
+    395.93 MB  gis_osm_landuse_a_free_1.shp
+    222.01 MB  gis_osm_roads_free_1.shp
+     79.40 MB  gis_osm_waterways_free_1.shp
+     60.40 MB  gis_osm_water_a_free_1.shp
+      4.01 MB  gis_osm_places_a_free_1.shp
+      1.53 MB  gis_osm_places_free_1.shp
+      1.11 MB  gis_osm_pois_a_free_1.shp
+      0.72 MB  gis_osm_railways_free_1.shp
+      0.42 MB  gis_osm_pois_free_1.shp
+      0.31 MB  gis_osm_pofw_a_free_1.shp
+      0.15 MB  gis_osm_natural_free_1.shp
+      0.12 MB  gis_osm_natural_a_free_1.shp
+      0.08 MB  gis_osm_traffic_a_free_1.shp
+      0.07 MB  gis_osm_traffic_free_1.shp
+      0.07 MB  gis_osm_transport_a_free_1.shp
+      0.05 MB  gis_osm_pofw_free_1.shp
+      0.03 MB  gis_osm_transport_free_1.shp
+
+[18 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\townssurvey_shp
+     10.02 MB  TOWNSSURVEY_POLY (2024_09_06 01_31_30 UTC).shp
+     10.02 MB  TOWNSSURVEY_POLY (2024_10_05 17_47_16 UTC).shp
+     10.02 MB  TOWNSSURVEY_POLY (2024_10_17 22_15_25 UTC).shp
+      8.75 MB  TOWNSSURVEY_ARC (2024_09_06 01_31_30 UTC).shp
+      8.75 MB  TOWNSSURVEY_ARC (2024_10_05 17_47_16 UTC).shp
+      8.75 MB  TOWNSSURVEY_ARC (2024_10_17 22_15_25 UTC).shp
+      8.74 MB  TOWNSSURVEY_POLYM (2024_09_06 01_31_30 UTC).shp
+      8.74 MB  TOWNSSURVEY_POLYM (2024_10_05 17_47_16 UTC).shp
+      8.74 MB  TOWNSSURVEY_POLYM (2024_10_17 22_15_25 UTC).shp
+      6.17 MB  TOWNSSURVEY_POLYM_GENCOAST (2024_09_06 01_31_30 UTC).shp
+      6.17 MB  TOWNSSURVEY_POLYM_GENCOAST (2024_10_05 17_47_16 UTC).shp
+      6.17 MB  TOWNSSURVEY_POLYM_GENCOAST (2024_10_17 22_15_25 UTC).shp
+      5.46 MB  TOWNSSURVEY_ARC_GENCOAST (2024_09_06 01_31_30 UTC).shp
+      5.46 MB  TOWNSSURVEY_ARC_GENCOAST (2024_10_05 17_47_16 UTC).shp
+      5.46 MB  TOWNSSURVEY_ARC_GENCOAST (2024_10_17 22_15_25 UTC).shp
+      0.09 MB  TOWNSSURVEY_PT (2024_09_06 01_31_30 UTC).shp
+      0.09 MB  TOWNSSURVEY_PT (2024_10_05 17_47_16 UTC).shp
+      0.09 MB  TOWNSSURVEY_PT (2024_10_17 22_15_25 UTC).shp
+
+[17 files] C:\Users\mhowe\Downloads\eBay_NSN
+      0.68 MB  Transaction-Mar-15-2026-10_59_04-0700-12305435037.csv
+      0.63 MB  NSN_MASTER_FILE_FINAL_V4 (1).xlsx
+      0.63 MB  NSN_MASTER_FILE_FINAL_V4.xlsx
+      0.60 MB  ebay-all-orders-report-2024-03-16-2026-03-15-12305434035.csv
+      0.32 MB  ebay_transactions.xlsx
+      0.32 MB  ebay_transactions_1.xlsx
+      0.26 MB  part-00385-a0e792d1-4b3b-49be-9dd5-dd239b716946.c000.csv
+      0.24 MB  NSN_Pricing_Strategy.xlsx
+      0.20 MB  part-00385-9bb15732-bc6a-4419-886d-7f1198853395.c000.csv
+      0.18 MB  Order_earnings_20250101_20260315.csv
+      0.16 MB  sales_cost_estimates.csv
+      0.13 MB  Transaction-Mar-15-2026-10_58_46-0700-11293542205.csv
+      0.12 MB  Transaction-Mar-15-2026-10_59_15-0700-12305435045.csv
+      0.08 MB  part-00385-88821d72-4721-46b8-b7e6-f25dd1c1dd91.c000.csv
+      0.03 MB  action_items.csv
+      0.03 MB  Order_earnings_20240101_20241231.csv
+      0.02 MB  Transaction-Mar-15-2026-10_58_19-0700-11293542171.csv
+
+[17 files] F:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$RP5NBE4\nick folder
+    325.79 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B8.TIF
+     98.76 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B5.TIF
+     93.25 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B6.TIF
+     88.15 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B7.TIF
+     83.22 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B3.TIF
+     81.32 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B4.TIF
+     80.46 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B10.TIF
+     79.23 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B11.TIF
+     77.29 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B2.TIF
+     76.31 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B1.TIF
+     52.99 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B9.TIF
+      9.00 MB  LC09_L1TP_013029_20240702_20240702_02_T1_VAA.TIF
+      3.19 MB  LC09_L1TP_013029_20240702_20240702_02_T1_VZA.TIF
+      2.57 MB  LC09_L1TP_013029_20240702_20240702_02_T1_SAA.TIF
+      1.93 MB  LC09_L1TP_013029_20240702_20240702_02_T1_QA_PIXEL.TIF
+      1.87 MB  LC09_L1TP_013029_20240702_20240702_02_T1_SZA.TIF
+      0.23 MB  LC09_L1TP_013029_20240702_20240702_02_T1_QA_RADSAT.TIF
+
+[17 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 3\Lab03_data
+     17.85 MB  26-jan-2014-msi.img
+     16.74 MB  3-aug-2013-msi.img
+     16.58 MB  31-may-2013-msi.img
+      8.68 MB  26-jan-2014-pan.img
+      8.60 MB  3-aug-2013-pan.img
+      8.40 MB  31-may-2013-pan.img
+      7.83 MB  Sorrento_ortho_7.tif
+      7.70 MB  Sorrento_ortho_9.tif
+      7.55 MB  Sorrento_ortho_4.tif
+      7.35 MB  Sorrento_ortho_1.tif
+      7.31 MB  Sorrento_ortho_11.tif
+      7.14 MB  Sorrento_ortho_2.tif
+      7.07 MB  Sorrento_ortho_10.tif
+      6.93 MB  Sorrento_ortho_3.tif
+      6.56 MB  Sorrento_ortho_5.tif
+      5.21 MB  Sorrento_ortho_6.tif
+      4.31 MB  Sorrento_ortho_8.tif
+
+[17 files] F:\02 - GIS Projects\Concord\Satellite Imagery\2.06.24\LC09_L1TP_012030_20231216_20231216_02_T1
+    273.70 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B8.TIF
+     75.42 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B5.TIF
+     73.84 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B6.TIF
+     70.76 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B7.TIF
+     69.41 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B4.TIF
+     68.18 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B11.TIF
+     67.50 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B10.TIF
+     67.20 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B3.TIF
+     65.33 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B2.TIF
+     64.73 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B1.TIF
+     44.00 MB  LC09_L1TP_012030_20231216_20231216_02_T1_B9.TIF
+      8.31 MB  LC09_L1TP_012030_20231216_20231216_02_T1_VAA.TIF
+      3.41 MB  LC09_L1TP_012030_20231216_20231216_02_T1_QA_PIXEL.TIF
+      3.06 MB  LC09_L1TP_012030_20231216_20231216_02_T1_VZA.TIF
+      1.81 MB  LC09_L1TP_012030_20231216_20231216_02_T1_SZA.TIF
+      1.06 MB  LC09_L1TP_012030_20231216_20231216_02_T1_SAA.TIF
+      0.23 MB  LC09_L1TP_012030_20231216_20231216_02_T1_QA_RADSAT.TIF
+
+[17 files] F:\03 - GIS Data\Landsat\Landsat9_LC09_July2024
+    325.79 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B8.TIF
+     98.76 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B5.TIF
+     93.25 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B6.TIF
+     88.15 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B7.TIF
+     83.22 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B3.TIF
+     81.32 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B4.TIF
+     80.46 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B10.TIF
+     79.23 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B11.TIF
+     77.29 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B2.TIF
+     76.31 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B1.TIF
+     52.99 MB  LC09_L1TP_013029_20240702_20240702_02_T1_B9.TIF
+      9.00 MB  LC09_L1TP_013029_20240702_20240702_02_T1_VAA.TIF
+      3.19 MB  LC09_L1TP_013029_20240702_20240702_02_T1_VZA.TIF
+      2.57 MB  LC09_L1TP_013029_20240702_20240702_02_T1_SAA.TIF
+      1.93 MB  LC09_L1TP_013029_20240702_20240702_02_T1_QA_PIXEL.TIF
+      1.87 MB  LC09_L1TP_013029_20240702_20240702_02_T1_SZA.TIF
+      0.23 MB  LC09_L1TP_013029_20240702_20240702_02_T1_QA_RADSAT.TIF
+
+[16 files] F:\02 - GIS Projects\SalemFoodPantry\RMD\data
+     43.59 MB  Final_Salem_Pantry_Dataset.csv
+     43.59 MB  Salem_Pantry_Updated_with_Distances.csv
+     43.59 MB  updated_data_with_distances.csv
+     42.69 MB  SalemPantryData3d.csv
+     28.45 MB  cleaned_data.csv
+     28.45 MB  cleaned_town_data.csv
+     28.45 MB  SalemPantryDataCleaned.csv
+     28.45 MB  Salem_Pantry_Data_Cleaned.csv
+     28.45 MB  UniqueTownswithVisitors.csv
+     10.02 MB  TOWNSSURVEY_POLY.shp
+      8.75 MB  ESSEX_ACS_blockgrp_geo.rds
+      2.23 MB  summary_data.csv
+      1.28 MB  Cleaned_Salem_Pantry_Data.csv
+      0.77 MB  aggregated_household_data.csv
+      0.77 MB  SalemPantryAggregatedHouseholdData.csv
+      0.77 MB  Salem_Pantry_Aggregated_Household_Data.csv
+
+[16 files] F:\02 - GIS Projects\SalemFoodPantry\SalemPantryProject\data
+     43.59 MB  Final_Salem_Pantry_Dataset.csv
+     43.59 MB  Salem_Pantry_Updated_with_Distances.csv
+     43.59 MB  updated_data_with_distances.csv
+     42.69 MB  SalemPantryData3d.csv
+     28.45 MB  cleaned_data.csv
+     28.45 MB  cleaned_town_data.csv
+     28.45 MB  SalemPantryDataCleaned.csv
+     28.45 MB  Salem_Pantry_Data_Cleaned.csv
+     28.45 MB  UniqueTownswithVisitors.csv
+     10.02 MB  TOWNSSURVEY_POLY.shp
+      8.75 MB  ESSEX_ACS_blockgrp_geo.rds
+      2.23 MB  summary_data.csv
+      1.28 MB  Cleaned_Salem_Pantry_Data.csv
+      0.77 MB  aggregated_household_data.csv
+      0.77 MB  SalemPantryAggregatedHouseholdData.csv
+      0.77 MB  Salem_Pantry_Aggregated_Household_Data.csv
+
+[16 files] F:\02 - GIS Projects\SalemFoodPantry\Salem_Pantry_FInal\data
+     43.59 MB  Final_Salem_Pantry_Dataset.csv
+     43.59 MB  Salem_Pantry_Updated_with_Distances.csv
+     43.59 MB  updated_data_with_distances.csv
+     42.69 MB  SalemPantryData3d.csv
+     28.45 MB  cleaned_data.csv
+     28.45 MB  cleaned_town_data.csv
+     28.45 MB  SalemPantryDataCleaned.csv
+     28.45 MB  Salem_Pantry_Data_Cleaned.csv
+     28.45 MB  UniqueTownswithVisitors.csv
+     10.02 MB  TOWNSSURVEY_POLY.shp
+      8.75 MB  ESSEX_ACS_blockgrp_geo.rds
+      2.23 MB  summary_data.csv
+      1.28 MB  Cleaned_Salem_Pantry_Data.csv
+      0.77 MB  aggregated_household_data.csv
+      0.77 MB  SalemPantryAggregatedHouseholdData.csv
+      0.77 MB  Salem_Pantry_Aggregated_Household_Data.csv
+
+[15 files] C:\Users\mhowe\raw_data\HSUS\A-Population\abVital-Statistics\Births and Fertility
+      0.11 MB  Ab52-117.xls
+      0.08 MB  Ab150-215.xls
+      0.06 MB  Ab264-305.xls
+      0.05 MB  Ab118-149.xls
+      0.05 MB  Ab390-497.xls
+      0.04 MB  Ab40-51.xls
+      0.03 MB  Ab216-263.xls
+      0.03 MB  Ab498-535.xls
+      0.03 MB  Ab536-625.xls
+      0.02 MB  Ab306-314.xls
+      0.02 MB  Ab315-346.xls
+      0.02 MB  Ab347-361.xls
+      0.02 MB  Ab362-389.xls
+      0.01 MB  Ab626-636.xls
+      0.01 MB  Ab637-643.xls
+
+[15 files] C:\Users\mhowe\raw_data\HSUS\A-Population\aeFamily and Household Composition\Family and Household Composition
+      0.04 MB  Ae320-480.xls
+      0.03 MB  Ae128-190.xls
+      0.03 MB  Ae245-319.xls
+      0.02 MB  Ae1-28.xls
+      0.02 MB  Ae191-220.xls
+      0.02 MB  Ae221-244.xls
+      0.02 MB  Ae29-37.xls
+      0.02 MB  Ae38-78.xls
+      0.02 MB  Ae481-488.xls
+      0.02 MB  Ae489-506.xls
+      0.02 MB  Ae507-513.xls
+      0.02 MB  Ae82-84.xls
+      0.02 MB  Ae97-127.xls
+      0.01 MB  Ae79-81.xls
+      0.01 MB  Ae85-96.xls
+
+[15 files] D:\raw_data\HSUS\A-Population\abVital-Statistics\Births and Fertility
+      0.11 MB  Ab52-117.xls
+      0.08 MB  Ab150-215.xls
+      0.06 MB  Ab264-305.xls
+      0.05 MB  Ab118-149.xls
+      0.05 MB  Ab390-497.xls
+      0.04 MB  Ab40-51.xls
+      0.03 MB  Ab216-263.xls
+      0.03 MB  Ab498-535.xls
+      0.03 MB  Ab536-625.xls
+      0.02 MB  Ab306-314.xls
+      0.02 MB  Ab315-346.xls
+      0.02 MB  Ab347-361.xls
+      0.02 MB  Ab362-389.xls
+      0.01 MB  Ab626-636.xls
+      0.01 MB  Ab637-643.xls
+
+[15 files] D:\raw_data\HSUS\A-Population\aeFamily and Household Composition\Family and Household Composition
+      0.04 MB  Ae320-480.xls
+      0.03 MB  Ae128-190.xls
+      0.03 MB  Ae245-319.xls
+      0.02 MB  Ae1-28.xls
+      0.02 MB  Ae191-220.xls
+      0.02 MB  Ae221-244.xls
+      0.02 MB  Ae29-37.xls
+      0.02 MB  Ae38-78.xls
+      0.02 MB  Ae481-488.xls
+      0.02 MB  Ae489-506.xls
+      0.02 MB  Ae507-513.xls
+      0.02 MB  Ae82-84.xls
+      0.02 MB  Ae97-127.xls
+      0.01 MB  Ae79-81.xls
+      0.01 MB  Ae85-96.xls
+
+[14 files] F:\06 - Personal\Ebay
+      5.48 MB  price-guide (1).csv
+      5.40 MB  price-guide.csv
+      3.83 MB  price-guide (2).csv
+      0.72 MB  Transaction_report_20240101_20260227.csv
+      0.45 MB  eBay-OrdersReport-Feb-07-2026-20_15_29-0700-13281081604.csv
+      0.24 MB  eBay-OrdersReport-Jul-06-2025-00_13_29-0700-11238404527.csv
+      0.18 MB  Order_earnings_20250101_20260227.csv
+      0.16 MB  eBay-OrdersReport-Jul-06-2025-00_11_50-0700-11238404389.csv
+      0.13 MB  Book1fixedebay.xlsx
+      0.06 MB  eBay-OrdersReport-Feb-07-2026-20_21_47-0700-12297705739.csv
+      0.05 MB  North_Shore_Nostalgia_Excel_OS_Template.xlsx
+      0.04 MB  NSN_Master_Sales_2026.xlsx
+      0.03 MB  Order_earnings_20240101_20241231.csv
+      0.01 MB  eBay_Sales_Tracker.xlsx
+
+[13 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 4\Lab04_data
+    139.51 MB  dem_99.img
+     10.50 MB  darwin_subset.tif
+      7.83 MB  Sorrento_ortho_7.tif
+      7.70 MB  Sorrento_ortho_9.tif
+      7.55 MB  Sorrento_ortho_4.tif
+      7.35 MB  Sorrento_ortho_1.tif
+      7.31 MB  Sorrento_ortho_11.tif
+      7.14 MB  Sorrento_ortho_2.tif
+      7.07 MB  Sorrento_ortho_10.tif
+      6.93 MB  Sorrento_ortho_3.tif
+      6.56 MB  Sorrento_ortho_5.tif
+      5.21 MB  Sorrento_ortho_6.tif
+      4.31 MB  Sorrento_ortho_8.tif
+
+[13 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Games\Age of Empires 2 DE\metadata
+      0.19 MB  ItemCategoryCache-age2-aoe (2024_08_14 20_19_59 UTC).dat
+      0.19 MB  ItemCategoryCache-age2-aoe (2024_08_14 22_12_35 UTC).dat
+      0.16 MB  ChallengeGetChallengesCache-age2-aoe (2024_08_14 20_19_59 UTC).dat
+      0.16 MB  ChallengeGetChallengesCache-age2-aoe (2024_08_14 22_12_35 UTC).dat
+      0.10 MB  ItemBundlesCache-age2-aoe (2024_08_14 20_19_59 UTC).dat
+      0.10 MB  ItemBundlesCache-age2-aoe (2024_08_14 22_12_35 UTC).dat
+      0.03 MB  GetAvailableAchievementsCache-age2-aoe (2024_08_14 20_19_59 UTC).dat
+      0.03 MB  GetAvailableAchievementsCache-age2-aoe (2024_08_14 22_12_35 UTC).dat
+      0.03 MB  GetAvailableAchievementsCache-age2-aoe (2024_08_21 05_53_23 UTC).dat
+      0.01 MB  CloudFileMetadataCache-age2-aoe (2024_08_14 20_19_59 UTC).dat
+      0.01 MB  CloudFileMetadataCache-age2-aoe (2024_08_14 22_12_35 UTC).dat
+      0.01 MB  CloudFileMetadataCache-age2-aoe (2024_08_21 05_53_23 UTC).dat
+      0.01 MB  CloudFileMetadataCache-age2-aoe (2024_09_05 01_27_37 UTC).dat
+
+[12 files] C:\Users\mhowe\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Rural and Urban Places
+      0.08 MB  Aa1471-1663.xls
+      0.07 MB  Aa1034-1178.xls
+      0.07 MB  Aa1884-1895.xls
+      0.07 MB  Aa832-1033.xls
+      0.06 MB  Aa1664-1883.xls
+      0.05 MB  Aa1179-1322.xls
+      0.04 MB  Aa1323-1470.xls
+      0.02 MB  Aa684-698.xls
+      0.02 MB  Aa699-715.xls
+      0.02 MB  Aa716-775.xls
+      0.02 MB  Aa776-823.xls
+      0.01 MB  Aa824-831.xls
+
+[12 files] C:\Users\mhowe\raw_data\HSUS\A-Population\adInternational-Migration\Immigrants, by Country
+      0.05 MB  Ad136-148.xls
+      0.04 MB  Ad106-120.xls
+      0.04 MB  Ad162-172.xls
+      0.04 MB  Ad206-213.xls
+      0.03 MB  Ad191-195.xls
+      0.03 MB  Ad90-97.xls
+      0.02 MB  Ad121-135.xls
+      0.02 MB  Ad149-161.xls
+      0.02 MB  Ad173-190.xls
+      0.02 MB  Ad196-205.xls
+      0.02 MB  Ad214-221.xls
+      0.02 MB  Ad98-105.xls
+
+[12 files] C:\Users\mhowe\raw_data\Sage_Data
+      0.12 MB  Number of Congregations from the U.S. Religion Census Database2020.xlsx
+      0.07 MB  Assessment by All Students from the National Assessment of Educational Progress (NAEP) Database.csv
+      0.06 MB  Adherent Rate from the U.S. Religion Census Database2020.xlsx
+      0.06 MB  State and Local  Personal Income and Employment by NAICS Industry (1998 - Current) from the Regional Personal Income and Employment Database.csv
+      0.04 MB  Number of Adherents from the U.S. Religion Census Database.xlsx
+      0.03 MB  Adherent Rate from the U.S. Religion Census Database.xlsx
+      0.03 MB  Number of Congregations from the U.S. Religion Census Database.xlsx
+      0.02 MB  Arrests by Race from the Arrests Database.csv
+      0.01 MB  Marijuana Use in the Past Month from the National Survey on Drug Use and Health (NSDUH), 2015-2019 [Archive] Database.csv
+      0.01 MB  Real Personal Income and Regional Price Parities from the Regional Personal Income and Employment Database.csv
+      0.01 MB  Total Private and Commercial Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database.csv
+      0.01 MB  Total Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database (1).csv
+
+[12 files] D:\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Rural and Urban Places
+      0.08 MB  Aa1471-1663.xls
+      0.07 MB  Aa1034-1178.xls
+      0.07 MB  Aa1884-1895.xls
+      0.07 MB  Aa832-1033.xls
+      0.06 MB  Aa1664-1883.xls
+      0.05 MB  Aa1179-1322.xls
+      0.04 MB  Aa1323-1470.xls
+      0.02 MB  Aa684-698.xls
+      0.02 MB  Aa699-715.xls
+      0.02 MB  Aa716-775.xls
+      0.02 MB  Aa776-823.xls
+      0.01 MB  Aa824-831.xls
+
+[12 files] D:\raw_data\HSUS\A-Population\adInternational-Migration\Immigrants, by Country
+      0.05 MB  Ad136-148.xls
+      0.04 MB  Ad106-120.xls
+      0.04 MB  Ad162-172.xls
+      0.04 MB  Ad206-213.xls
+      0.03 MB  Ad191-195.xls
+      0.03 MB  Ad90-97.xls
+      0.02 MB  Ad121-135.xls
+      0.02 MB  Ad149-161.xls
+      0.02 MB  Ad173-190.xls
+      0.02 MB  Ad196-205.xls
+      0.02 MB  Ad214-221.xls
+      0.02 MB  Ad98-105.xls
+
+[12 files] D:\raw_data\Sage_Data
+      0.12 MB  Number of Congregations from the U.S. Religion Census Database2020.xlsx
+      0.07 MB  Assessment by All Students from the National Assessment of Educational Progress (NAEP) Database.csv
+      0.06 MB  Adherent Rate from the U.S. Religion Census Database2020.xlsx
+      0.06 MB  State and Local  Personal Income and Employment by NAICS Industry (1998 - Current) from the Regional Personal Income and Employment Database.csv
+      0.04 MB  Number of Adherents from the U.S. Religion Census Database.xlsx
+      0.03 MB  Adherent Rate from the U.S. Religion Census Database.xlsx
+      0.03 MB  Number of Congregations from the U.S. Religion Census Database.xlsx
+      0.02 MB  Arrests by Race from the Arrests Database.csv
+      0.01 MB  Marijuana Use in the Past Month from the National Survey on Drug Use and Health (NSDUH), 2015-2019 [Archive] Database.csv
+      0.01 MB  Real Personal Income and Regional Price Parities from the Regional Personal Income and Employment Database.csv
+      0.01 MB  Total Private and Commercial Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database.csv
+      0.01 MB  Total Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database (1).csv
+
+[12 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\My Games\Oblivion Remastered\Saved\SaveGames
+      0.24 MB  autosave 2 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F) (2025_06_02 01_31_58 UTC).sav
+      0.22 MB  autosave 1 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F) (2025_06_02 01_31_58 UTC).sav
+      0.20 MB  autosave 4 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F) (2025_06_02 01_31_58 UTC).sav
+      0.20 MB  autosave 5 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F) (2025_06_02 01_31_58 UTC).sav
+      0.18 MB  autosave 3 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F) (2025_06_01 01_28_05 UTC).sav
+      0.17 MB  autosave 2 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F) (2025_06_01 01_28_05 UTC).sav
+      0.16 MB  autosave 1 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F) (2025_06_01 01_28_05 UTC).sav
+      0.16 MB  saves_meta (2025_06_02 01_31_58 UTC).sav
+      0.09 MB  saves_meta (2025_06_01 01_28_05 UTC).sav
+      0.02 MB  Save_Settings (2025_06_01 01_28_05 UTC).sav
+      0.02 MB  Save_Settings (2025_06_02 01_31_58 UTC).sav
+      0.02 MB  Save_Settings (2025_08_09 01_44_13 UTC).sav
+
+[11 files] C:\Users\mhowe\Downloads\GIS_Data
+    999.04 MB  23_0945Hi-RGBI.tif
+    301.87 MB  NH_Parcel_Mosaic_-_Parcel_Points.geojson
+    105.40 MB  NH_Parcel_Mosaic_-_Parcel_Points.csv
+    101.44 MB  NH_Parcel_Mosaic_-_Polygons.csv
+     48.04 MB  NH_DOT_Roads.csv
+     41.68 MB  Public_School_Characteristics_2022-23.csv
+      7.34 MB  Vulnerable_areas_(%3C10_ft_GWD)_with_1_foot_of_SLR.csv
+      1.77 MB  NH_Parcel_Mosaic_-_Additional_Lines.csv
+      0.75 MB  NH GRANIT.csv
+      0.32 MB  Groundwater_Rise_Modeled_Areas.geojson
+      0.26 MB  Groundwater_Rise_Modeled_Areas.kml
+
+[11 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 9\Lab09_data
+      7.83 MB  Sorrento_ortho_7.tif
+      7.70 MB  Sorrento_ortho_9.tif
+      7.55 MB  Sorrento_ortho_4.tif
+      7.35 MB  Sorrento_ortho_1.tif
+      7.31 MB  Sorrento_ortho_11.tif
+      7.14 MB  Sorrento_ortho_2.tif
+      7.07 MB  Sorrento_ortho_10.tif
+      6.93 MB  Sorrento_ortho_3.tif
+      6.56 MB  Sorrento_ortho_5.tif
+      5.21 MB  Sorrento_ortho_6.tif
+      4.31 MB  Sorrento_ortho_8.tif
+
+[11 files] F:\02 - GIS Projects\_Lynnfield Project Downloads
+      0.21 MB  Cemetery Deeds - Partially Redacted (1).xls
+      0.21 MB  Cemetery Deeds - Partially Redacted.xls
+      0.10 MB  LynnData1_FinalCleaned.xlsx
+      0.10 MB  LynnData1_FinalEthnicitiesNamed.xlsx
+      0.10 MB  LynnData1_FullyCleaned.xlsx
+      0.10 MB  LynnData1_SimplifiedCleaned.xlsx
+      0.10 MB  LynnData1_Standardized.xlsx
+      0.10 MB  LynnData_FinalShortEthnicities.xlsx
+      0.05 MB  Forest Hill Cemetery Lot600 To - Partially Redacted (1).xlsx
+      0.05 MB  Forest Hill Cemetery Lot600 To - Partially Redacted.xlsx
+      0.01 MB  Allenhurst Drain Inverts.xlsx
+
+[11 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents
+      0.39 MB  Project_Cakewalk (2026_03_01 02_08_22 UTC).xlsx
+      0.19 MB  FLIP (2024_08_14 22_12_35 UTC).xlsx
+      0.19 MB  FLIP (2024_10_05 17_47_16 UTC).xlsx
+      0.19 MB  FLIP (2024_10_17 22_15_25 UTC).xlsx
+      0.18 MB  flip2 (2024_08_14 22_12_35 UTC).xlsx
+      0.18 MB  flip2 (2024_10_05 17_47_16 UTC).xlsx
+      0.18 MB  flip2 (2024_10_17 22_15_25 UTC).xlsx
+      0.18 MB  flip2 (2026_03_13 01_36_00 UTC).xlsx
+      0.06 MB  flip2.xlsb (2024_08_14 22_12_35 UTC).xlsx
+      0.06 MB  flip2.xlsb (2024_10_05 17_47_16 UTC).xlsx
+      0.06 MB  flip2.xlsb (2024_10_17 22_15_25 UTC).xlsx
+
+[10 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\SystemCompatibilityReport
+      0.03 MB  blocklist.ru_RU.json
+      0.02 MB  blocklist.de_DE.json
+      0.02 MB  blocklist.en_US.json
+      0.02 MB  blocklist.es_ES.json
+      0.02 MB  blocklist.fr_FR.json
+      0.02 MB  blocklist.it_IT.json
+      0.02 MB  blocklist.ja_JP.json
+      0.02 MB  blocklist.ko_KR.json
+      0.02 MB  blocklist.pt_BR.json
+      0.02 MB  blocklist.zh_CN.json
+
+[10 files] C:\Users\mhowe\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Sex, Age, Race, and Marital Status
+      0.17 MB  Aa614-683.xls
+      0.04 MB  Aa185-286.xls
+      0.04 MB  Aa287-364.xls
+      0.04 MB  Aa365-456.xls
+      0.03 MB  Aa110-124.xls
+      0.03 MB  Aa125-144.xls
+      0.03 MB  Aa145-184.xls
+      0.03 MB  Aa457-524.xls
+      0.03 MB  Aa525-598.xls
+      0.02 MB  Aa599-613.xls
+
+[10 files] C:\Users\mhowe\raw_data\Kaggle\archive (25)
+      0.15 MB  Asylum Source Publication Data.xlsx
+      0.12 MB  FY Comparison.xlsx
+      0.09 MB  Calendar Monthly Open Data.xlsx
+      0.09 MB  FY Monthly Asylum Open Data.xlsx
+      0.07 MB  Calendar Quarterly Open Data.xlsx
+      0.05 MB  Calendar Comparison.xlsx
+      0.05 MB  USCIS and EOIR Open Refugee Data.xlsx
+      0.04 MB  FY Quarterly Asylum Open Data.xlsx
+      0.03 MB  Workload Book Comparison.xlsx
+      0.02 MB  Annual Asylum Open Data.xlsx
+
+[10 files] C:\Users\mhowe\raw_data\Kaggle\archive (34)
+      3.92 MB  tsm_kaggle_full_dataset.csv
+      2.49 MB  tsm_technical_indicators.csv
+      2.46 MB  tsm_master_dataset.csv
+      2.39 MB  tsm_stock_prices.csv
+      0.70 MB  tsm_historical_data.csv
+      0.10 MB  tsm_quarterly_financials.csv
+      0.02 MB  tsm_earnings_and_analyst_data.csv
+      0.01 MB  tsm_balance_sheet.csv
+      0.01 MB  tsm_cash_flow.csv
+      0.01 MB  tsm_company_info.csv
+
+[10 files] D:\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Sex, Age, Race, and Marital Status
+      0.17 MB  Aa614-683.xls
+      0.04 MB  Aa185-286.xls
+      0.04 MB  Aa287-364.xls
+      0.04 MB  Aa365-456.xls
+      0.03 MB  Aa110-124.xls
+      0.03 MB  Aa125-144.xls
+      0.03 MB  Aa145-184.xls
+      0.03 MB  Aa457-524.xls
+      0.03 MB  Aa525-598.xls
+      0.02 MB  Aa599-613.xls
+
+[10 files] D:\raw_data\Kaggle\archive (25)
+      0.15 MB  Asylum Source Publication Data.xlsx
+      0.12 MB  FY Comparison.xlsx
+      0.09 MB  Calendar Monthly Open Data.xlsx
+      0.09 MB  FY Monthly Asylum Open Data.xlsx
+      0.07 MB  Calendar Quarterly Open Data.xlsx
+      0.05 MB  Calendar Comparison.xlsx
+      0.05 MB  USCIS and EOIR Open Refugee Data.xlsx
+      0.04 MB  FY Quarterly Asylum Open Data.xlsx
+      0.03 MB  Workload Book Comparison.xlsx
+      0.02 MB  Annual Asylum Open Data.xlsx
+
+[10 files] D:\raw_data\Kaggle\archive (34)
+      3.92 MB  tsm_kaggle_full_dataset.csv
+      2.49 MB  tsm_technical_indicators.csv
+      2.46 MB  tsm_master_dataset.csv
+      2.39 MB  tsm_stock_prices.csv
+      0.70 MB  tsm_historical_data.csv
+      0.10 MB  tsm_quarterly_financials.csv
+      0.02 MB  tsm_earnings_and_analyst_data.csv
+      0.01 MB  tsm_balance_sheet.csv
+      0.01 MB  tsm_cash_flow.csv
+      0.01 MB  tsm_company_info.csv
+
+[10 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Final Project\L5 1984
+     62.40 MB  LT05_L2SP_012030_19840907_20200918_02_T2_SR_B4.TIF
+     57.43 MB  LT05_L2SP_012030_19840907_20200918_02_T2_SR_B5.TIF
+     52.85 MB  LT05_L2SP_012030_19840907_20200918_02_T2_SR_B1.TIF
+     45.45 MB  LT05_L2SP_012030_19840907_20200918_02_T2_SR_B2.TIF
+     44.81 MB  LT05_L2SP_012030_19840907_20200918_02_T2_SR_B3.TIF
+     44.31 MB  LT05_L2SP_012030_19840907_20200918_02_T2_SR_B7.TIF
+      6.26 MB  LT05_L2SP_012030_19840907_20200918_02_T2_SR_ATMOS_OPACITY.TIF
+      3.88 MB  LT05_L2SP_012030_19840907_20200918_02_T2_SR_CLOUD_QA.TIF
+      1.36 MB  LT05_L2SP_012030_19840907_20200918_02_T2_QA_PIXEL.TIF
+      0.46 MB  LT05_L2SP_012030_19840907_20200918_02_T2_QA_RADSAT.TIF
+
+[10 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\GPH444-910-20240124T005209Z-001\GPH444-910\Chapter01-04\Chap1-4\Raw images\HK122045
+    206.73 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B8.TIF
+    103.38 MB  LE07_L1TP_122045_20011120_20170202_01_T1_BQA.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B1.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B2.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B3.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B4.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B5.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B6_VCID_1.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B6_VCID_2.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B7.TIF
+
+[10 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Labs\Lab Data Chapter01-04\Chap1-4\Raw images\HK122045
+    206.73 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B8.TIF
+    103.38 MB  LE07_L1TP_122045_20011120_20170202_01_T1_BQA.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B1.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B2.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B3.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B4.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B5.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B6_VCID_1.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B6_VCID_2.TIF
+     51.72 MB  LE07_L1TP_122045_20011120_20170202_01_T1_B7.TIF
+
+[10 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\OneDrive\Documents
+      0.69 MB  NSN_MASTER_FILE_FINAL_V3 (2026_03_18 06_03_51 UTC).xlsx
+      0.69 MB  NSN_MASTER_FILE_FINAL_V3 (2026_03_18 10_57_13 UTC).xlsx
+      0.69 MB  NSN_MASTER_FILE_FINAL_V3 (2026_03_19 01_19_23 UTC).xlsx
+      0.69 MB  NSN_MASTER_FILE_FINAL_V3 (2026_03_21 14_57_47 UTC).xlsx
+      0.64 MB  NSN_MASTER_FILE_FINAL_V4 (2026_03_21 17_43_07 UTC).xlsx
+      0.63 MB  NSN_MASTER_FILE_FINAL_V4 (2026_03_21 15_57_51 UTC).xlsx
+      0.63 MB  NSN_MASTER_FILE_FINAL_V4 (2026_03_21 21_16_39 UTC).xlsx
+      0.42 MB  NSN_MASTER_FILE_FINAL_V3 (2026_03_18 00_06_38 UTC).xlsx
+      0.39 MB  5A713000 (2026_03_13 02_49_30 UTC).xlsx
+      0.24 MB  NSN_MASTER_FILE_FINAL_V3 (2026_03_15 23_21_43 UTC).xlsx
+
+[10 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Saved Games\kingdomcome2\shaders\cache\d3d12
+     37.06 MB  pipelinecache (2025_05_31 22_26_57 UTC).dat
+     35.09 MB  pipelinecache (2025_02_16 08_06_22 UTC).dat
+     35.04 MB  pipelinecache (2025_02_15 03_14_38 UTC).dat
+     34.90 MB  pipelinecache (2025_02_15 02_14_35 UTC).dat
+     34.86 MB  pipelinecache (2025_02_12 00_03_04 UTC).dat
+     34.83 MB  pipelinecache (2025_02_09 21_42_53 UTC).dat
+     34.81 MB  pipelinecache (2025_02_09 11_33_13 UTC).dat
+     34.81 MB  pipelinecache (2025_02_09 20_42_35 UTC).dat
+     34.51 MB  pipelinecache (2025_03_17 02_07_41 UTC).dat
+     34.51 MB  pipelinecache (2025_03_17 11_21_03 UTC).dat
+
+[9 files] C:\Users\mhowe\raw_data\cpi
+      0.21 MB  ppi-idpgrouprel.xlsx
+      0.17 MB  ppi-idpallrel.xlsx
+      0.16 MB  ppi-comrlp.xlsx
+      0.10 MB  ppi-fdgrouprel.xlsx
+      0.10 MB  ppi-idcgrouprel.xlsx
+      0.08 MB  ppi-fdallrel.xlsx
+      0.07 MB  ppi-idcallrel.xlsx
+      0.04 MB  ppi-weprel.xlsx
+      0.02 MB  historical-cpi-u-202602.xlsx
+
+[9 files] D:\raw_data\cpi
+      0.21 MB  ppi-idpgrouprel.xlsx
+      0.17 MB  ppi-idpallrel.xlsx
+      0.16 MB  ppi-comrlp.xlsx
+      0.10 MB  ppi-fdgrouprel.xlsx
+      0.10 MB  ppi-idcgrouprel.xlsx
+      0.08 MB  ppi-fdallrel.xlsx
+      0.07 MB  ppi-idcallrel.xlsx
+      0.04 MB  ppi-weprel.xlsx
+      0.02 MB  historical-cpi-u-202602.xlsx
+
+[9 files] F:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001
+     43.59 MB  $RNYRZ5Q.csv
+     34.94 MB  $RERSP66.csv
+     10.02 MB  $R7SO8NI.shp
+     10.02 MB  $RLW9ARN.shp
+     10.02 MB  $RZMM4II.shp
+      6.91 MB  $RJG4YPL.shp
+      6.91 MB  $RTGKHYS.shp
+      0.10 MB  $R7AGN8E.xlsx
+      0.01 MB  $RW9SXVR.csv
+
+[9 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 4\ELP012R030_7T20000927
+    274.59 MB  p012r030_7p20000927_z19_nn80.tif
+     68.68 MB  p012r030_7t20000927_z19_nn10.tif
+     68.68 MB  p012r030_7t20000927_z19_nn20.tif
+     68.68 MB  p012r030_7t20000927_z19_nn30.tif
+     68.68 MB  p012r030_7t20000927_z19_nn40.tif
+     68.68 MB  p012r030_7t20000927_z19_nn50.tif
+     68.68 MB  p012r030_7t20000927_z19_nn70.tif
+     17.19 MB  p012r030_7k20000927_z19_nn61.tif
+     17.19 MB  p012r030_7k20000927_z19_nn62.tif
+
+[9 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 5 Data\Solution
+      5.36 MB  RoadInventory.shp
+      0.76 MB  jurisdiction.shp
+      0.57 MB  Major_Roads.shp
+      0.38 MB  tl_2010_35001_tract10.shp
+      0.38 MB  tl_2010_35001_tract10_spcs.shp
+      0.03 MB  Bernalillo_county.shp
+      0.02 MB  Albuquerque_Buffer.shp
+      0.01 MB  Bern.shp
+      0.01 MB  Bern_spcs.shp
+
+[9 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Games\Age of Empires 2 DE\76561199522174241\mods\subscribed\19968_Eternal Civilization\resources\_common\dat
+      6.81 MB  empires2_x2_p1 (2024_08_14 20_19_59 UTC).dat
+      6.81 MB  empires2_x2_p1 (2024_08_14 22_12_35 UTC).dat
+      6.74 MB  empires2_x2_p1 (2024_08_21 13_51_33 UTC).dat
+      0.03 MB  unitcategories (2024_08_14 20_19_59 UTC).json
+      0.03 MB  unitcategories (2024_08_14 22_12_35 UTC).json
+      0.03 MB  unitcategories (2024_08_21 13_51_33 UTC).json
+      0.01 MB  unitlines (2024_08_14 20_19_59 UTC).json
+      0.01 MB  unitlines (2024_08_14 22_12_35 UTC).json
+      0.01 MB  unitlines (2024_08_21 13_51_33 UTC).json
+
+[8 files] C:\Users\mhowe\Documents\My Games\Oblivion Remastered\Saved\SaveGames
+      0.24 MB  autosave 2 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F).sav
+      0.24 MB  Save 1, Playing Time 01.21.26 - Kal - LOC_FN_ImperialDungeon02, Level 1.sav
+      0.22 MB  autosave 1 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F).sav
+      0.20 MB  autosave 4 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F).sav
+      0.20 MB  autosave 5 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F).sav
+      0.18 MB  autosave 3 - Kal (E35ADFDE-4CFD-BA01-8C10-A79F5273981F).sav
+      0.16 MB  saves_meta.sav
+      0.02 MB  Save_Settings.sav
+
+[8 files] C:\Users\mhowe\raw_data\HSUS\A-Population\adInternational-Migration\Alien Admissions, by Program
+      0.03 MB  Ad989-1004.xls
+      0.02 MB  Ad1005-1013.xls
+      0.02 MB  Ad1014-1022.xls
+      0.02 MB  Ad1023-1029.xls
+      0.02 MB  Ad950-954.xls
+      0.02 MB  Ad955-965.xls
+      0.02 MB  Ad976-988.xls
+      0.01 MB  Ad966-975.xls
+
+[8 files] C:\Users\mhowe\raw_data\HSUS\A-Population\adInternational-Migration\Immigrants, Emigrants, and Net Migration
+      0.03 MB  Ad1-2.xls
+      0.02 MB  Ad16-20.xls
+      0.02 MB  Ad21-24.xls
+      0.02 MB  Ad25-50.xls
+      0.02 MB  Ad3-15.xls
+      0.02 MB  Ad51-79.xls
+      0.02 MB  Ad80-81.xls
+      0.02 MB  Ad82-89.xls
+
+[8 files] C:\Users\mhowe\raw_data\Kaggle\archive (35)\historysaid-global-economic-dataset\data\core
+     82.77 MB  world_bank.csv
+      4.44 MB  world_bank.parquet
+      3.69 MB  world_bank_wgi.csv
+      2.19 MB  imf_weo.csv
+      0.63 MB  bis.csv
+      0.26 MB  world_bank_wgi.parquet
+      0.12 MB  imf_weo.parquet
+      0.05 MB  bis.parquet
+
+[8 files] D:\raw_data\HSUS\A-Population\adInternational-Migration\Alien Admissions, by Program
+      0.03 MB  Ad989-1004.xls
+      0.02 MB  Ad1005-1013.xls
+      0.02 MB  Ad1014-1022.xls
+      0.02 MB  Ad1023-1029.xls
+      0.02 MB  Ad950-954.xls
+      0.02 MB  Ad955-965.xls
+      0.02 MB  Ad976-988.xls
+      0.01 MB  Ad966-975.xls
+
+[8 files] D:\raw_data\HSUS\A-Population\adInternational-Migration\Immigrants, Emigrants, and Net Migration
+      0.03 MB  Ad1-2.xls
+      0.02 MB  Ad16-20.xls
+      0.02 MB  Ad21-24.xls
+      0.02 MB  Ad25-50.xls
+      0.02 MB  Ad3-15.xls
+      0.02 MB  Ad51-79.xls
+      0.02 MB  Ad80-81.xls
+      0.02 MB  Ad82-89.xls
+
+[8 files] D:\raw_data\Kaggle\archive (35)\historysaid-global-economic-dataset\data\core
+     82.77 MB  world_bank.csv
+      4.44 MB  world_bank.parquet
+      3.69 MB  world_bank_wgi.csv
+      2.19 MB  imf_weo.csv
+      0.63 MB  bis.csv
+      0.26 MB  world_bank_wgi.parquet
+      0.12 MB  imf_weo.parquet
+      0.05 MB  bis.parquet
+
+[8 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Final Project\LM02_L1TP_013030_19781022_20200906_02_T2
+      6.85 MB  LM02_L1TP_013030_19781022_20200906_02_T2_B7.TIF
+      6.63 MB  LM02_L1TP_013030_19781022_20200906_02_T2_B6.TIF
+      5.75 MB  LM02_L1TP_013030_19781022_20200906_02_T2_B5.TIF
+      4.89 MB  LM02_L1TP_013030_19781022_20200906_02_T2_B4.TIF
+      0.36 MB  LM02_L1TP_013030_19781022_20200906_02_T2_QA_RADSAT.TIF
+      0.12 MB  LM02_L1TP_013030_19781022_20200906_02_T2_QA_PIXEL.TIF
+      0.01 MB  LM02_L1TP_013030_19781022_20200906_02_T2_MTL.json
+      0.01 MB  LM02_L1TP_013030_19781022_20200906_02_T2_stac.json
+
+[8 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Labs\Lab 8\Chap11
+      4.28 MB  LE07_L1TP_039035_20030528_20160928_01_T1_B2.TIF
+      4.28 MB  LE07_L1TP_039035_20030528_20160928_01_T1_B3.TIF
+      4.28 MB  LE07_L1TP_039035_20030528_20160928_01_T1_B4.TIF
+      4.28 MB  LE07_L1TP_039035_20030528_20160928_01_T1_B5.TIF
+      4.28 MB  LT05_L1TP_039035_19840515_20161004_01_T1_B2.tif
+      4.28 MB  LT05_L1TP_039035_19840515_20161004_01_T1_B3.tif
+      4.28 MB  LT05_L1TP_039035_19840515_20161004_01_T1_B4.tif
+      4.28 MB  LT05_L1TP_039035_19840515_20161004_01_T1_B5.tif
+
+[8 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\Out of the Park Developments\OOTP Baseball 26\saved_games\7ea000000000000000001530.pt
+      3.78 MB  players (2025_08_07 17_53_08 UTC).dat
+      0.52 MB  parks (2025_08_07 17_53_08 UTC).dat
+      0.24 MB  teams (2025_08_07 17_53_08 UTC).dat
+      0.17 MB  world (2025_08_07 17_53_08 UTC).dat
+      0.12 MB  human_managers (2025_08_07 17_53_08 UTC).dat
+      0.06 MB  names (2025_08_07 17_53_08 UTC).dat
+      0.06 MB  text_data (2025_08_07 17_53_08 UTC).dat
+      0.04 MB  weather (2025_08_07 17_53_08 UTC).dat
+
+[8 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\Out of the Park Developments\OOTP Baseball 26\saved_games\7ea000000000000000001530.pt\auto-save
+      3.78 MB  players (2025_08_07 17_53_08 UTC).dat
+      0.52 MB  parks (2025_08_07 17_53_08 UTC).dat
+      0.24 MB  teams (2025_08_07 17_53_08 UTC).dat
+      0.17 MB  world (2025_08_07 17_53_08 UTC).dat
+      0.12 MB  human_managers (2025_08_07 17_53_08 UTC).dat
+      0.06 MB  names (2025_08_07 17_53_08 UTC).dat
+      0.06 MB  text_data (2025_08_07 17_53_08 UTC).dat
+      0.04 MB  weather (2025_08_07 17_53_08 UTC).dat
+
+[7 files] C:\AMD\AMD_Software_Installer_25.3.1\Packages\Drivers\Audio\ACPBus\WT64A
+      7.63 MB  acpimg0004.dat
+      4.55 MB  acpimg0001.dat
+      4.14 MB  acpimg0002.dat
+      2.73 MB  acpimg0003.dat
+      0.12 MB  acpcfg0001.dat
+      0.03 MB  acpcfg0002.dat
+      0.02 MB  acpcfg0003.dat
+
+[7 files] C:\Drivers\AMDVGA\Source\Packages\Drivers\Audio\ACPBus\WT64A
+      4.70 MB  acpimg0004.dat
+      3.88 MB  acpimg0001.dat
+      3.58 MB  acpimg0002.dat
+      2.32 MB  acpimg0003.dat
+      0.08 MB  acpcfg0001.dat
+      0.01 MB  acpcfg0002.dat
+      0.01 MB  acpcfg0003.dat
+
+[7 files] C:\Users\mhowe\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Area and Population
+      0.03 MB  Aa6-8.xls
+      0.03 MB  Aa9-14.xls
+      0.02 MB  Aa15-21.xls
+      0.02 MB  Aa22-35.xls
+      0.02 MB  Aa36-92.xls
+      0.02 MB  Aa93-109.xls
+      0.01 MB  Aa1-5.xls
+
+[7 files] C:\Users\mhowe\raw_data\HSUS\A-Population\abVital-Statistics\Mortality
+      0.12 MB  Ab988-1047.xls
+      0.08 MB  Ab952-987.xls
+      0.06 MB  Ab929-951.xls
+      0.04 MB  Ab1048-1058.xls
+      0.04 MB  Ab912-927.xls
+      0.03 MB  Ab1059-1137.xls
+      0.02 MB  Ab928.xls
+
+[7 files] C:\Users\mhowe\raw_data\HSUS\A-Population\acInternal-Migration\Internal Migration
+      0.09 MB  Ac206-413.xls
+      0.05 MB  Ac43-52.xls
+      0.04 MB  Ac53-205.xls
+      0.03 MB  Ac1-42.xls
+      0.02 MB  Ac414-418.xls
+      0.02 MB  Ac419-427.xls
+      0.01 MB  Ac428-436.xls
+
+[7 files] C:\Users\mhowe\raw_data\Kaggle\iranwar
+      0.13 MB  incidents.csv
+      0.12 MB  incidents.parquet
+      0.11 MB  waves.parquet
+      0.10 MB  waves.csv
+      0.06 MB  international_reactions.csv
+      0.05 MB  international_reactions.parquet
+      0.01 MB  data_dictionary.csv
+
+[7 files] D:\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Area and Population
+      0.03 MB  Aa6-8.xls
+      0.03 MB  Aa9-14.xls
+      0.02 MB  Aa15-21.xls
+      0.02 MB  Aa22-35.xls
+      0.02 MB  Aa36-92.xls
+      0.02 MB  Aa93-109.xls
+      0.01 MB  Aa1-5.xls
+
+[7 files] D:\raw_data\HSUS\A-Population\abVital-Statistics\Mortality
+      0.12 MB  Ab988-1047.xls
+      0.08 MB  Ab952-987.xls
+      0.06 MB  Ab929-951.xls
+      0.04 MB  Ab1048-1058.xls
+      0.04 MB  Ab912-927.xls
+      0.03 MB  Ab1059-1137.xls
+      0.02 MB  Ab928.xls
+
+[7 files] D:\raw_data\HSUS\A-Population\acInternal-Migration\Internal Migration
+      0.09 MB  Ac206-413.xls
+      0.05 MB  Ac43-52.xls
+      0.04 MB  Ac53-205.xls
+      0.03 MB  Ac1-42.xls
+      0.02 MB  Ac414-418.xls
+      0.02 MB  Ac419-427.xls
+      0.01 MB  Ac428-436.xls
+
+[7 files] D:\raw_data\Kaggle\iranwar
+      0.13 MB  incidents.csv
+      0.12 MB  incidents.parquet
+      0.11 MB  waves.parquet
+      0.10 MB  waves.csv
+      0.06 MB  international_reactions.csv
+      0.05 MB  international_reactions.parquet
+      0.01 MB  data_dictionary.csv
+
+[7 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Exam 2\USGS Imagery
+     85.03 MB  LC08_L2SP_012030_20200419_20200822_02_T1_SR_B6.TIF
+     83.76 MB  LC08_L2SP_012030_20200419_20200822_02_T1_SR_B5.TIF
+     82.98 MB  LC08_L2SP_012030_20200419_20200822_02_T1_SR_B7.TIF
+     81.97 MB  LC08_L2SP_012030_20200419_20200822_02_T1_SR_B4.TIF
+     79.67 MB  LC08_L2SP_012030_20200419_20200822_02_T1_SR_B3.TIF
+     78.35 MB  LC08_L2SP_012030_20200419_20200822_02_T1_SR_B2.TIF
+     77.50 MB  LC08_L2SP_012030_20200419_20200822_02_T1_SR_B1.TIF
+
+[7 files] F:\01 - GIS Coursework\GPH945 - GIS Project Implementation\Lynn Project\Data
+      0.14 MB  LynnData5.xlsx
+      0.13 MB  MH_RandomDataSet.xlsx
+      0.12 MB  LynnData4.xlsx
+      0.10 MB  LynnData1.xlsx
+      0.10 MB  LynnData2.xlsx
+      0.10 MB  LynnData3.xlsx
+      0.06 MB  GISDATA_TOWNSSURVEY_POLYMPolygon.shp
+
+[7 files] F:\02 - GIS Projects\PythonProject\Data\FRD_25009C_shapefiles_20140702\FRD_25009C_shapefiles_20140702
+      9.46 MB  S_Carto_Ar.shp
+      9.34 MB  S_CSLF_Ar.shp
+      1.41 MB  S_CenBlk_Ar.shp
+      0.31 MB  S_FRD_Pol_Ar.shp
+      0.25 MB  S_FRD_Proj_Ar.shp
+      0.11 MB  S_Carto_Ln.shp
+      0.03 MB  S_HUC_Ar.shp
+
+[7 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 4 Data
+      2.86 MB  ag020522_DPAC.img
+      1.10 MB  LC81910312014163LGN00_B2.tif
+      1.10 MB  LC81910312014163LGN00_B3.tif
+      1.10 MB  LC81910312014163LGN00_B4.tif
+      1.10 MB  LC81910312014163LGN00_B5.tif
+      1.10 MB  LC81910312014163LGN00_B6.tif
+      1.10 MB  LC81910312014163LGN00_B7.tif
+
+[7 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 4 Data\Solution
+      1.91 MB  RT_LC81910312014163LGN00_B4.tif
+      1.91 MB  RT_LC81910312014163LGN00_B7.tif
+      1.90 MB  RT_LC81910312014163LGN00_B5.tif
+      1.90 MB  RT_LC81910312014163LGN00_B6.tif
+      1.87 MB  RT_LC81910312014163LGN00_B3.tif
+      1.85 MB  RT_LC81910312014163LGN00_B2.tif
+      0.32 MB  Classification.tif
+
+[7 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Desktop\NSN
+      0.60 MB  eBay-OrdersReport-Mar-15-2026-09_39_15-0700-12305424282 (2026_03_15 16_46_56 UTC).csv
+      0.39 MB  NSN_Master (2026_03_15 16_46_56 UTC).xlsx
+      0.36 MB  ebay_transactions_1 (2026_03_17 00_08_43 UTC).xlsx
+      0.24 MB  NSN_Pricing_Strategy (2026_03_16 23_08_26 UTC).xlsx
+      0.22 MB  NSN_Pricing_Strategy (2026_03_16 00_21_46 UTC).xlsx
+      0.19 MB  Historical (2026_03_15 16_46_56 UTC).xlsx
+      0.14 MB  2603_PC_CSV (2026_03_15 16_46_56 UTC).csv
+
+[7 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\Out of the Park Developments\OOTP Baseball 26\saved_games\Start_mapzimus.pt
+      1.04 MB  world (2025_07_21 07_53_25 UTC).dat
+      0.46 MB  parks (2025_07_21 07_53_25 UTC).dat
+      0.08 MB  faces (2025_07_21 07_53_25 UTC).dat
+      0.05 MB  players (2025_07_21 07_53_25 UTC).dat
+      0.04 MB  weather (2025_07_21 07_53_25 UTC).dat
+      0.01 MB  names (2025_07_21 07_53_25 UTC).dat
+      0.01 MB  text_data (2025_07_21 07_53_25 UTC).dat
+
+[6 files] C:\AMD\AMD_Software_Installer_25.3.1\Packages\Drivers\AMDNPUMCDM\WT64A
+      0.04 MB  aie2p_gemm_vm_strix_4x4.json
+      0.04 MB  aieml_gemm_vm_phx_4x4.json
+      0.04 MB  aieml_gemm_vm_phx_4x4_bf16.json
+      0.02 MB  aie2p_gemm_strix_4x2_bf16.json
+      0.02 MB  aieml_gemm_asr.json
+      0.02 MB  aieml_gemm_asr_qdq.json
+
+[6 files] C:\rtools45\var\lib\pacman\sync
+      0.48 MB  ucrt64.db
+      0.47 MB  clang64.db
+      0.45 MB  mingw64.db
+      0.43 MB  clangarm64.db
+      0.35 MB  msys.db
+      0.16 MB  mingw32.db
+
+[6 files] C:\Users\mhowe\Desktop\NSN
+      0.60 MB  eBay-OrdersReport-Mar-15-2026-09_39_15-0700-12305424282.csv
+      0.39 MB  NSN_Master_OLDv1.xlsx
+      0.36 MB  ebay_transactions_1.xlsx
+      0.24 MB  NSN_Pricing_Strategy.xlsx
+      0.19 MB  Historical.xlsx
+      0.14 MB  2603_PC_CSV.csv
+
+[6 files] F:\01 - GIS Coursework\GPH903 - Intro\gisclass\mgisdata\BlackHills\Downloads
+      1.38 MB  MtRushmoreGeology.shp
+      0.99 MB  HillCityGeology.shp
+      0.13 MB  Faults.shp
+      0.12 MB  MtRushmoreStructure.shp
+      0.08 MB  HillCityStructure.shp
+      0.02 MB  MineralDistricts.shp
+
+[6 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Final Project
+      1.34 MB  tabular.b08134_means_by_traveltime_to_work_acs_m_2018-22.csv
+      0.27 MB  tabular.b08301_means_transportation_to_work_by_residence_acs_m_2017-21.csv
+      0.20 MB  tabular.b08303_traveltime_to_work_by_residence_acs_m_2018-22.csv
+      0.03 MB  avgtravel.xlsx
+      0.02 MB  Means of Transportation by Travel Time to Work (Municipal)-metadata.csv
+      0.01 MB  Massachusetts Vehicle Municipal Summary Statistics (Municipal)-metadata.csv
+
+[6 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Centralville DPW_2020\Class_Exercise
+      4.97 MB  parcels.shp
+      3.11 MB  buildings.shp
+      0.68 MB  address.shp
+      0.32 MB  roads.shp
+      0.18 MB  dpw_workorders.csv
+      0.01 MB  districts.shp
+
+[6 files] F:\02 - GIS Projects\LEAP\townssurvey_shp (2)
+     10.02 MB  TOWNSSURVEY_POLY.shp
+      8.75 MB  TOWNSSURVEY_ARC.shp
+      8.74 MB  TOWNSSURVEY_POLYM.shp
+      6.17 MB  TOWNSSURVEY_POLYM_GENCOAST.shp
+      5.46 MB  TOWNSSURVEY_ARC_GENCOAST.shp
+      0.09 MB  TOWNSSURVEY_PT.shp
+
+[6 files] F:\02 - GIS Projects\PythonProject\Data\townssurvey_shp (1)
+     10.02 MB  TOWNSSURVEY_POLY.shp
+      8.75 MB  TOWNSSURVEY_ARC.shp
+      8.74 MB  TOWNSSURVEY_POLYM.shp
+      6.17 MB  TOWNSSURVEY_POLYM_GENCOAST.shp
+      5.46 MB  TOWNSSURVEY_ARC_GENCOAST.shp
+      0.09 MB  TOWNSSURVEY_PT.shp
+
+[6 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\mgisdata\BlackHills\Downloads
+      1.38 MB  MtRushmoreGeology.shp
+      0.99 MB  HillCityGeology.shp
+      0.13 MB  Faults.shp
+      0.12 MB  MtRushmoreStructure.shp
+      0.08 MB  HillCityStructure.shp
+      0.02 MB  MineralDistricts.shp
+
+[6 files] F:\03 - GIS Data\DGL\Vermont_GIS_data
+      2.47 MB  Highways.shp
+      2.20 MB  Blockgroups.shp
+      1.06 MB  Lakes.shp
+      0.14 MB  State_borders.shp
+      0.09 MB  Urban_areas.shp
+      0.01 MB  Cities.shp
+
+[6 files] F:\03 - GIS Data\_Downloaded Spatial Data\townssurvey_shp
+     10.02 MB  TOWNSSURVEY_POLY.shp
+      8.75 MB  TOWNSSURVEY_ARC.shp
+      8.74 MB  TOWNSSURVEY_POLYM.shp
+      6.17 MB  TOWNSSURVEY_POLYM_GENCOAST.shp
+      5.46 MB  TOWNSSURVEY_ARC_GENCOAST.shp
+      0.09 MB  TOWNSSURVEY_PT.shp
+
+[6 files] F:\03 - GIS Data\_Downloaded Spatial Data\townssurvey_shp (1)
+     10.02 MB  TOWNSSURVEY_POLY.shp
+      8.75 MB  TOWNSSURVEY_ARC.shp
+      8.74 MB  TOWNSSURVEY_POLYM.shp
+      6.17 MB  TOWNSSURVEY_POLYM_GENCOAST.shp
+      5.46 MB  TOWNSSURVEY_ARC_GENCOAST.shp
+      0.09 MB  TOWNSSURVEY_PT.shp
+
+[6 files] F:\05 - Teaching\SWP 2023 All Files\Student Timesheets\Cohort 7 - Aniluz & Fatoumata
+      0.14 MB  Carl Louissaint - 2023 SWP Student Timesheet.xlsx
+      0.14 MB  Cristian Chavez Lopez - 2023 SWP Student Timesheet.xlsx
+      0.14 MB  Midasendjie Jeune - 2023 SWP Student Timesheet.xlsx
+      0.14 MB  Samuel Sanchez Caro - 2023 SWP Student Timesheet.xlsx
+      0.14 MB  Sandjouna Jeune - 2023 SWP Student Timesheet.xlsx
+      0.14 MB  Woudson Pierre - 2023 SWP Student Timesheet.xlsx
+
+[6 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Desktop
+      0.39 MB  Project_Cakewalk (2026_02_28 22_01_52 UTC).xlsx
+      0.12 MB  Project_Cakewalk (2026_02_28 08_05_51 UTC).xlsx
+      0.07 MB  Lottery_Mega_Millions_Winning_Numbers__Beginning_2002_20241028 (2024_10_29 00_56_25 UTC).csv
+      0.01 MB  cblock (2024_12_16 15_52_55 UTC).xlsx
+      0.01 MB  lehs data (2024_12_16 13_52_40 UTC).xlsx
+      0.01 MB  Project_Cakewalk (2026_02_28 07_05_46 UTC).xlsx
+
+[6 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\Chrome extensions\Unconfirmed 878803
+      0.02 MB  manifest (2024_08_14 22_12_35 UTC).json
+      0.02 MB  manifest (2024_10_05 17_47_16 UTC).json
+      0.02 MB  manifest (2024_10_17 22_15_25 UTC).json
+      0.01 MB  sites_updated (2024_08_14 22_12_35 UTC).json
+      0.01 MB  sites_updated (2024_10_05 17_47_16 UTC).json
+      0.01 MB  sites_updated (2024_10_17 22_15_25 UTC).json
+
+[6 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\CENSUS2020TOWNS_SHP
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_09_06 01_31_30 UTC).shp
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_10_05 17_47_16 UTC).shp
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_10_17 22_15_25 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_09_06 01_31_30 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_10_05 17_47_16 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_10_17 22_15_25 UTC).shp
+
+[6 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\CENSUS2020TOWNS_SHP (1)
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_09_10 22_41_28 UTC).shp
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_10_05 17_47_16 UTC).shp
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_10_17 22_15_25 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_09_10 22_41_28 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_10_05 17_47_16 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_10_17 22_15_25 UTC).shp
+
+[6 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\GPH942_advquant_1_95_IntrotoR\GPH942_advquant_1_95_IntrotoR\gis
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_09_06 00_30_51 UTC).shp
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_10_05 17_47_16 UTC).shp
+      4.48 MB  CENSUS2020TOWNS_POLY (2024_10_17 22_15_25 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_09_06 00_30_51 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_10_05 17_47_16 UTC).shp
+      3.32 MB  CENSUS2020TOWNS_ARC (2024_10_17 22_15_25 UTC).shp
+
+[6 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\townssurvey_shp (1)
+     10.02 MB  TOWNSSURVEY_POLY (2024_12_11 23_27_55 UTC).shp
+      8.75 MB  TOWNSSURVEY_ARC (2024_12_11 23_27_55 UTC).shp
+      8.74 MB  TOWNSSURVEY_POLYM (2024_12_11 23_27_55 UTC).shp
+      6.17 MB  TOWNSSURVEY_POLYM_GENCOAST (2024_12_11 23_27_55 UTC).shp
+      5.46 MB  TOWNSSURVEY_ARC_GENCOAST (2024_12_11 23_27_55 UTC).shp
+      0.09 MB  TOWNSSURVEY_PT (2024_12_11 23_27_55 UTC).shp
+
+[5 files] C:\AMD\AMD-Software-Installer\AMD-Software-Adrenalin-Edition-24.12.1-MinimalSetup-241204_web\Config
+      0.62 MB  InstallManifest.json
+      0.62 MB  InstallManifestold.json
+      0.20 MB  cccmanifest_64.json
+      0.20 MB  InstallLegacy.json
+      0.01 MB  CIMTracker.JSON
+
+[5 files] C:\Users\mhowe\OneDrive\Documents
+      0.69 MB  NSN_MASTER_FILE_FINAL_V3.xlsx
+      0.63 MB  NSN_MASTER_FILE_FINAL_V4.xlsx
+      0.49 MB  Master_NSN_Workbook.xlsx
+      0.48 MB  NSN_MASTER_FILE_FINAL_V3 (1).xlsx
+      0.39 MB  5A713000.xlsx
+
+[5 files] C:\Users\mhowe\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Nativity
+      0.02 MB  Aa1896-1921.xls
+      0.02 MB  Aa1922-1973.xls
+      0.02 MB  Aa1974-2025.xls
+      0.02 MB  Aa2026-2077.xls
+      0.02 MB  Aa2078-2092.xls
+
+[5 files] C:\Users\mhowe\raw_data\Kaggle\archive (45)
+      1.67 MB  nvda_stock_data_master.csv
+      0.85 MB  nvda_stock_data_daily_yahoo.csv
+      0.36 MB  nvda_stock_data_raw_github.csv
+      0.16 MB  nvda_stock_data_raw_nasdaq.csv
+      0.15 MB  nvda_stock_data_clean_nasdaq.csv
+
+[5 files] C:\Users\mhowe\raw_data\Kaggle\archive (5)
+      7.35 MB  loan_portfolio.csv
+      0.61 MB  credit_ratings.csv
+      0.11 MB  vintage_analysis.csv
+      0.02 MB  portfolio_metrics.csv
+      0.01 MB  macro_stress_scenarios.csv
+
+[5 files] D:\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Nativity
+      0.02 MB  Aa1896-1921.xls
+      0.02 MB  Aa1922-1973.xls
+      0.02 MB  Aa1974-2025.xls
+      0.02 MB  Aa2026-2077.xls
+      0.02 MB  Aa2078-2092.xls
+
+[5 files] D:\raw_data\Kaggle\archive (45)
+      1.67 MB  nvda_stock_data_master.csv
+      0.85 MB  nvda_stock_data_daily_yahoo.csv
+      0.36 MB  nvda_stock_data_raw_github.csv
+      0.16 MB  nvda_stock_data_raw_nasdaq.csv
+      0.15 MB  nvda_stock_data_clean_nasdaq.csv
+
+[5 files] D:\raw_data\Kaggle\archive (5)
+      7.35 MB  loan_portfolio.csv
+      0.61 MB  credit_ratings.csv
+      0.11 MB  vintage_analysis.csv
+      0.02 MB  portfolio_metrics.csv
+      0.01 MB  macro_stress_scenarios.csv
+
+[5 files] F:\01 - GIS Coursework\GPH903 - Intro\gisclass\mgisdata\World
+      3.64 MB  country.shp
+      1.01 MB  utmzone.shp
+      0.86 MB  circles.shp
+      0.53 MB  latlong.shp
+      0.02 MB  utmzone35.shp
+
+[5 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 2
+    221.83 MB  pleiades_melbourne_waterindex.img
+    221.83 MB  Pleidas_melbourne_ndvi.img
+      6.01 MB  Darwin_NDVI.img
+      6.01 MB  darwin_NDWI.img
+      0.59 MB  pleiades_melbourne_water.img
+
+[5 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 4\Lab4_output
+    935.55 MB  landsat7-path12row31.img
+    553.15 MB  Landsat8-perth-31-May-2013-msi.img
+    306.88 MB  Landsat8-perth-31-May-2013-pan.img
+    153.45 MB  Landsat8-perth-31-May-2013-tir.img
+     58.19 MB  dem_99_reproject.img
+
+[5 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 5\Lab05_output
+     61.01 MB  hsc-26-jan-2014-msi.img
+     60.85 MB  resample-60m-hcs-15m.img
+     60.82 MB  hsc-31-may-2013-msi.img
+     60.76 MB  convolution-edge-enhancement-5x5.img
+      5.18 MB  resample-60m.img
+
+[5 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Kinshasa\Data\cod_admbnda_rgc_itos_20190911_shp
+      2.25 MB  cod_admbnda_adm2_rgc_20190911.shp
+      1.26 MB  cod_admbndl_admALL_rgc_itos_20190911.shp
+      1.09 MB  cod_admbnda_adm1_rgc_itos_20190911.shp
+      0.21 MB  cod_admbnda_adm0_rgc_itos_20190911.shp
+      0.01 MB  cod_admbndp_admALL_rgc_itos_20190911.shp
+
+[5 files] F:\01 - GIS Coursework\GPH953 - Seminar in GIS Application I\Lessons\Lesson 5 - Final Site Plan\Central_Campus_Howe
+     78.73 MB  SSU_1.tif
+     78.66 MB  Central Campus Rapid_1.tif
+     78.66 MB  Central Campus Rapid_2.tif
+     74.30 MB  Central Campus Rapid.tif
+     74.28 MB  SSU.tif
+
+[5 files] F:\02 - GIS Projects\LEAP
+      0.29 MB  Pizza_Data.csv
+      0.13 MB  a.csv
+      0.13 MB  b.csv
+      0.10 MB  c.csv
+      0.01 MB  ma_pizza_shop_counts_final.csv
+
+[5 files] F:\02 - GIS Projects\LEAP\_Downloads
+      0.31 MB  combined_abc.csv
+      0.12 MB  drinkingPlaces.csv
+      0.03 MB  City_and_Town_Clerks.csv
+      0.01 MB  brewpubBreweries.csv
+      0.01 MB  Sources_Relevant_to_Section_3_5.csv
+
+[5 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 2 Data
+     13.61 MB  Land_ownership.shp
+      0.84 MB  Canada.shp
+      0.82 MB  Western_states.shp
+      0.30 MB  Sage_grouse_current_distribution.shp
+      0.12 MB  Mexico.shp
+
+[5 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 2 Data\ChallengeData
+      2.30 MB  Eastern_states.shp
+      2.02 MB  Eastern_states_land_ownership.shp
+      0.84 MB  Canada.shp
+      0.20 MB  American_black_bear_east_coast.shp
+      0.12 MB  Mexico.shp
+
+[5 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\mgisdata\World
+      3.64 MB  country.shp
+      1.01 MB  utmzone.shp
+      0.86 MB  circles.shp
+      0.53 MB  latlong.shp
+      0.02 MB  utmzone35.shp
+
+[5 files] F:\DGL_FILES_31426\Dave_Elec\tables
+      0.19 MB  Existing_Jobs.csv
+      0.06 MB  customers.csv
+      0.03 MB  emp_assign.csv
+      0.03 MB  jobs.csv
+      0.02 MB  customer_invoice.csv
+
+[5 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\ne_10m_admin_1_states_provinces
+     20.03 MB  ne_10m_admin_1_states_provinces (2024_08_14 20_19_59 UTC).shp
+     20.03 MB  ne_10m_admin_1_states_provinces (2024_08_14 22_12_35 UTC).shp
+     20.03 MB  ne_10m_admin_1_states_provinces (2024_10_05 17_47_16 UTC).shp
+     20.03 MB  ne_10m_admin_1_states_provinces (2024_10_17 22_15_25 UTC).shp
+     20.03 MB  ne_10m_admin_1_states_provinces (2024_12_22 03_57_53 UTC).shp
+
+[4 files] C:\AMD\AMD_Software_Installer_25.3.1\Config
+      0.61 MB  InstallManifest.json
+      0.20 MB  cccmanifest_64.json
+      0.20 MB  InstallLegacy.json
+      0.01 MB  CIMTracker.JSON
+
+[4 files] C:\AMD\AMD_Software_Installer_25.3.1\Packages\Drivers\AMDNPUWDF\WT64A
+      0.04 MB  aieml_gemm_vm_phx_4x4.json
+      0.04 MB  aieml_gemm_vm_phx_4x4_bf16.json
+      0.02 MB  aieml_gemm_asr.json
+      0.02 MB  aieml_gemm_asr_qdq.json
+
+[4 files] C:\Drivers\AMDVGA\Source\Config
+      0.22 MB  cccmanifest_64.json
+      0.20 MB  InstallLegacy.json
+      0.02 MB  InstallManifest.json
+      0.01 MB  CIMTracker.JSON
+
+[4 files] C:\rtools45\usr\lib\mxe\usr\x86_64-w64-mingw32.static.posix\share\proj
+      8.83 MB  proj.db
+      0.04 MB  projjson.schema.json
+      0.02 MB  deformation_model.schema.json
+      0.01 MB  triangulation.schema.json
+
+[4 files] C:\rtools45\x86_64-w64-mingw32.static.posix\share\proj
+      8.83 MB  proj.db
+      0.04 MB  projjson.schema.json
+      0.02 MB  deformation_model.schema.json
+      0.01 MB  triangulation.schema.json
+
+[4 files] C:\Users\mhowe\raw_data\fbi
+     99.66 MB  lee_1960_2024.csv
+      0.20 MB  estimated_crimes_1979_2024.csv
+      0.17 MB  ucr_participation_1960_2024.csv
+      0.01 MB  territories_1995_2024.csv
+
+[4 files] C:\Users\mhowe\raw_data\HSUS\A-Population\abVital-Statistics\General
+      0.04 MB  Ab11-30.xls
+      0.02 MB  Ab1-10.xls
+      0.02 MB  Ab31-37.xls
+      0.02 MB  Ab38-39.xls
+
+[4 files] C:\Users\mhowe\raw_data\HSUS\A-Population\adInternational-Migration\Immigrants, by Characteristic
+      0.04 MB  Ad231-245.xls
+      0.03 MB  Ad222-225.xls
+      0.03 MB  Ad226-230.xls
+      0.01 MB  Ad246-255.xls
+
+[4 files] C:\Users\mhowe\raw_data\Kaggle\archive (11)
+      1.14 MB  aapl_master_dataset.csv
+      1.04 MB  aapl_stock_prices.csv
+      0.13 MB  aapl_historical_data.csv
+      0.01 MB  aapl_balance_sheet.csv
+
+[4 files] D:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001
+    390.77 MB  $RD7HJDT.parquet
+    371.58 MB  $R0KRZT0.parquet
+    296.14 MB  $RSQQF8A.parquet
+     63.72 MB  $ROC6Y3D.parquet
+
+[4 files] D:\raw_data\fbi
+     99.66 MB  lee_1960_2024.csv
+      0.20 MB  estimated_crimes_1979_2024.csv
+      0.17 MB  ucr_participation_1960_2024.csv
+      0.01 MB  territories_1995_2024.csv
+
+[4 files] D:\raw_data\HSUS\A-Population\abVital-Statistics\General
+      0.04 MB  Ab11-30.xls
+      0.02 MB  Ab1-10.xls
+      0.02 MB  Ab31-37.xls
+      0.02 MB  Ab38-39.xls
+
+[4 files] D:\raw_data\HSUS\A-Population\adInternational-Migration\Immigrants, by Characteristic
+      0.04 MB  Ad231-245.xls
+      0.03 MB  Ad222-225.xls
+      0.03 MB  Ad226-230.xls
+      0.01 MB  Ad246-255.xls
+
+[4 files] D:\raw_data\Kaggle\archive (11)
+      1.14 MB  aapl_master_dataset.csv
+      1.04 MB  aapl_stock_prices.csv
+      0.13 MB  aapl_historical_data.csv
+      0.01 MB  aapl_balance_sheet.csv
+
+[4 files] F:\01 - GIS Coursework\GPH903 - Intro\MAIN PROJECT\Data
+      1.00 MB  tabular.b15002_educational_attainment_acs_m_2017-21.csv
+      0.03 MB  tabular.b25119_mhi_tenure_acs_m_2017-21.csv
+      0.02 MB  Educational Attainment (Municipal)-metadata.csv
+      0.02 MB  gradrates.xlsx
+
+[4 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 5\Lab05_data
+     17.85 MB  26-jan-2014-msi.img
+     16.58 MB  31-may-2013-msi.img
+      8.68 MB  26-jan-2014-pan.img
+      8.40 MB  31-may-2013-pan.img
+
+[4 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 8\Lab08_data
+      8.28 MB  landsat8_b5.tif
+      8.26 MB  landsat8_b4.tif
+      8.25 MB  landsat8_b3.tif
+      8.20 MB  landsat8_b2.tif
+
+[4 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\GPH444-910-20240124T005209Z-001\GPH444-910\Chapter01-04\Chap1-4\Raw images
+      4.58 MB  etm_p121r44_b3.tif
+      4.58 MB  etm_p121r45_b3.tif
+      4.19 MB  etm_p122r44_b3.tif
+      4.19 MB  etm_p122r45_b3.tif
+
+[4 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Labs\Lab Data Chapter01-04\Chap1-4\Raw images
+      4.58 MB  etm_p121r44_b3.tif
+      4.58 MB  etm_p121r45_b3.tif
+      4.19 MB  etm_p122r44_b3.tif
+      4.19 MB  etm_p122r45_b3.tif
+
+[4 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 5 Data\RawData
+      5.36 MB  RoadInventory.shp
+      0.76 MB  jurisdiction.shp
+      0.38 MB  tl_2010_35001_tract10.shp
+      0.01 MB  Bern.shp
+
+[4 files] F:\03 - GIS Data\_Downloaded Spatial Data
+     10.02 MB  TOWNSSURVEY_POLY.shp
+      8.73 MB  export-gisdata.mapc.ma_municipalities.shp
+      0.11 MB  Population_1930_to_2023.xlsx
+      0.05 MB  UMDI_V2024_Long-Term_Population_Projections_MCD,_County,_RPA_Totals_2010-2050_a.xlsx
+
+[4 files] F:\06 - Personal\Personal Docs
+      0.39 MB  Project_Cakewalk.xlsx
+      0.19 MB  FLIP.xlsx
+      0.18 MB  flip2.xlsx
+      0.06 MB  flip2.xlsb.xlsx
+
+[4 files] F:\DGL_FILES_31426\Route 24\Spatial_Files_2249
+      8.73 MB  towns.shp
+      5.75 MB  maj_road.shp
+      0.58 MB  regions.shp
+      0.05 MB  accounts.shp
+
+[4 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\Download
+      0.13 MB  594_12_30_1960 (2024_08_14 20_19_59 UTC).tif
+      0.13 MB  594_12_30_1960 (2024_08_14 22_12_35 UTC).tif
+      0.13 MB  594_12_30_1960 (2024_10_05 17_47_16 UTC).tif
+      0.13 MB  594_12_30_1960 (2024_10_17 22_15_25 UTC).tif
+
+[4 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\gnis_2008
+      0.33 MB  GNIS_2008 (2024_08_14 20_19_59 UTC).shp
+      0.33 MB  GNIS_2008 (2024_08_14 22_12_35 UTC).shp
+      0.33 MB  GNIS_2008 (2024_10_05 17_47_16 UTC).shp
+      0.33 MB  GNIS_2008 (2024_10_17 22_15_25 UTC).shp
+
+[4 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\Massachusetts_Towns_with_Generalized_Coast_(Hosted_Feature_Layer)
+      6.91 MB  TOWNSSURVEY_POLYM_GENCOAST (2024_08_14 20_19_59 UTC).shp
+      6.91 MB  TOWNSSURVEY_POLYM_GENCOAST (2024_08_14 22_12_35 UTC).shp
+      6.91 MB  TOWNSSURVEY_POLYM_GENCOAST (2024_10_05 17_47_16 UTC).shp
+      6.91 MB  TOWNSSURVEY_POLYM_GENCOAST (2024_10_17 22_15_25 UTC).shp
+
+[4 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\ne_10m_admin_2_counties
+      2.43 MB  ne_10m_admin_2_counties (2024_08_14 20_19_59 UTC).shp
+      2.43 MB  ne_10m_admin_2_counties (2024_08_14 22_12_35 UTC).shp
+      2.43 MB  ne_10m_admin_2_counties (2024_10_05 17_47_16 UTC).shp
+      2.43 MB  ne_10m_admin_2_counties (2024_10_17 22_15_25 UTC).shp
+
+[4 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\tl_2023_us_primaryroads
+     55.50 MB  tl_2023_us_primaryroads (2024_08_14 20_19_59 UTC).shp
+     55.50 MB  tl_2023_us_primaryroads (2024_08_14 22_12_35 UTC).shp
+     55.50 MB  tl_2023_us_primaryroads (2024_10_05 17_47_16 UTC).shp
+     55.50 MB  tl_2023_us_primaryroads (2024_10_17 22_15_25 UTC).shp
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\de_DE
+      2.17 MB  after_effects_de_DE.dat
+      0.82 MB  ame.app.de_DE.dat
+      0.24 MB  ame.libraries.de_DE.dat
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\es_ES
+      2.20 MB  after_effects_es_ES.dat
+      0.83 MB  ame.app.es_ES.dat
+      0.24 MB  ame.libraries.es_ES.dat
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\fr_FR
+      2.23 MB  after_effects_fr_FR.dat
+      0.85 MB  ame.app.fr_FR.dat
+      0.25 MB  ame.libraries.fr_FR.dat
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\it_IT
+      2.17 MB  after_effects_it_IT.dat
+      0.82 MB  ame.app.it_IT.dat
+      0.24 MB  ame.libraries.it_IT.dat
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\ja_JP
+      2.38 MB  after_effects_ja_JP.dat
+      0.90 MB  ame.app.ja_JP.dat
+      0.26 MB  ame.libraries.ja_JP.dat
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\ko_KR
+      2.19 MB  after_effects_ko_KR.dat
+      0.83 MB  ame.app.ko_KR.dat
+      0.24 MB  ame.libraries.ko_KR.dat
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\pt_BR
+      2.18 MB  after_effects_pt_BR.dat
+      0.82 MB  ame.app.pt_BR.dat
+      0.24 MB  ame.libraries.pt_BR.dat
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\ru_RU
+      2.86 MB  after_effects_ru_RU.dat
+      1.04 MB  ame.app.ru_RU.dat
+      0.30 MB  ame.libraries.ru_RU.dat
+
+[3 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\zh_CN
+      1.96 MB  after_effects_zh_CN.dat
+      0.75 MB  ame.app.zh_CN.dat
+      0.22 MB  ame.libraries.zh_CN.dat
+
+[3 files] C:\AMD\AMD_Software_Installer_25.3.1\Packages\Drivers\Audio\ACPBus\WT64A\amdacpbusext
+      0.12 MB  acpcfg0001.dat
+      0.03 MB  acpcfg0002.dat
+      0.02 MB  acpcfg0003.dat
+
+[3 files] C:\AMD\AMD_Software_Installer_25.3.1\Packages\Drivers\Audio\ACPBus2\WT64A\amdacpbusext
+      0.12 MB  acpcfg0001.dat
+      0.03 MB  acpcfg0002.dat
+      0.02 MB  acpcfg0003.dat
+
+[3 files] C:\Drivers\BlueTooth\Source
+      0.11 MB  rtl8852c_mp_chip_bt40_fw_asic_rom_patch_new.dat
+      0.09 MB  rtl8852b_mp_chip_bt40_fw_asic_rom_patch_new.dat
+      0.08 MB  rtl8852a_mp_chip_bt40_fw_asic_rom_patch_new.dat
+
+[3 files] C:\Users\mhowe\Downloads
+      0.43 MB  USCompanies.csv
+      0.07 MB  thrift.xls
+      0.02 MB  B85301D226DE80ABB86E0E51D5B3F676_1774058816855.csv
+
+[3 files] C:\Users\mhowe\Downloads\Documents
+      0.12 MB  Number of Congregations from the U.S. Religion Census Database2020.xlsx
+      0.06 MB  Adherent Rate from the U.S. Religion Census Database2020.xlsx
+      0.04 MB  table1.xls
+
+[3 files] C:\Users\mhowe\iCloudDrive\Downloads
+      0.02 MB  Robinhood Markets Consolidated Transactions.csv
+      0.01 MB  Auctions in Progress-Shopgoodwill.com.csv
+      0.01 MB  Updated_Stock_Allocation.csv
+
+[3 files] C:\Users\mhowe\raw_data\airbnb\bosotn
+      0.26 MB  part-00385-a0e792d1-4b3b-49be-9dd5-dd239b716946.c000.csv
+      0.20 MB  part-00385-9bb15732-bc6a-4419-886d-7f1198853395.c000.csv
+      0.08 MB  part-00385-88821d72-4721-46b8-b7e6-f25dd1c1dd91.c000.csv
+
+[3 files] C:\Users\mhowe\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Hispanic Population
+      0.02 MB  Aa2189-2215.xls
+      0.01 MB  Aa2216-2229.xls
+      0.01 MB  Aa2230-2243.xls
+
+[3 files] C:\Users\mhowe\raw_data\HSUS\A-Population\abVital-Statistics\Life Expectancy
+      0.08 MB  Ab704-911.xls
+      0.07 MB  Ab656-703.xls
+      0.04 MB  Ab644-655.xls
+
+[3 files] C:\Users\mhowe\raw_data\HSUS\A-Population\adInternational-Migration\Border Control
+      0.02 MB  Ad1072-1075.xls
+      0.02 MB  Ad1076-1084.xls
+      0.01 MB  Ad1085-1088.xls
+
+[3 files] C:\Users\mhowe\raw_data\HSUS\A-Population\adInternational-Migration\Naturalization
+      0.03 MB  Ad1030-1037.xls
+      0.02 MB  Ad1038-1050.xls
+      0.02 MB  Ad1051-1071.xls
+
+[3 files] C:\Users\mhowe\raw_data\Kaggle\archive (30)
+      0.67 MB  draw.json
+      0.45 MB  dolphin_t2_final.json
+      0.40 MB  kushman.json
+
+[3 files] C:\Users\mhowe\raw_data\Kaggle\archive (35)\historysaid-global-economic-dataset\_mappings
+      0.07 MB  country_codes.json
+      0.04 MB  indicators.json
+      0.02 MB  coverage_matrix.json
+
+[3 files] C:\Users\mhowe\raw_data\Kaggle\FBRESULTS26
+      3.53 MB  results.csv
+      3.10 MB  goalscorers.csv
+      0.03 MB  shootouts.csv
+
+[3 files] C:\Users\mhowe\raw_data\mapzimus
+      0.02 MB  table_index_v2.json
+      0.01 MB  table_index.json
+      0.01 MB  vscore_ideas.json
+
+[3 files] C:\Users\Public\Documents\AdobeGCData
+      0.02 MB  AdobeNGLAppIDMap.db
+      0.01 MB  AdobeAGMData.db
+      0.01 MB  AdobeGCLaunchEvent.db
+
+[3 files] D:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$RN9HYGY
+      0.67 MB  draw.json
+      0.45 MB  dolphin_t2_final.json
+      0.40 MB  kushman.json
+
+[3 files] D:\raw_data\airbnb\bosotn
+      0.26 MB  part-00385-a0e792d1-4b3b-49be-9dd5-dd239b716946.c000.csv
+      0.20 MB  part-00385-9bb15732-bc6a-4419-886d-7f1198853395.c000.csv
+      0.08 MB  part-00385-88821d72-4721-46b8-b7e6-f25dd1c1dd91.c000.csv
+
+[3 files] D:\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Hispanic Population
+      0.02 MB  Aa2189-2215.xls
+      0.01 MB  Aa2216-2229.xls
+      0.01 MB  Aa2230-2243.xls
+
+[3 files] D:\raw_data\HSUS\A-Population\abVital-Statistics\Life Expectancy
+      0.08 MB  Ab704-911.xls
+      0.07 MB  Ab656-703.xls
+      0.04 MB  Ab644-655.xls
+
+[3 files] D:\raw_data\HSUS\A-Population\adInternational-Migration\Border Control
+      0.02 MB  Ad1072-1075.xls
+      0.02 MB  Ad1076-1084.xls
+      0.01 MB  Ad1085-1088.xls
+
+[3 files] D:\raw_data\HSUS\A-Population\adInternational-Migration\Naturalization
+      0.03 MB  Ad1030-1037.xls
+      0.02 MB  Ad1038-1050.xls
+      0.02 MB  Ad1051-1071.xls
+
+[3 files] D:\raw_data\Kaggle\archive (30)
+      0.67 MB  draw.json
+      0.45 MB  dolphin_t2_final.json
+      0.40 MB  kushman.json
+
+[3 files] D:\raw_data\Kaggle\archive (35)\historysaid-global-economic-dataset\_mappings
+      0.07 MB  country_codes.json
+      0.04 MB  indicators.json
+      0.02 MB  coverage_matrix.json
+
+[3 files] D:\raw_data\Kaggle\FBRESULTS26
+      3.53 MB  results.csv
+      3.10 MB  goalscorers.csv
+      0.03 MB  shootouts.csv
+
+[3 files] D:\raw_data\mapzimus
+      0.02 MB  table_index_v2.json
+      0.01 MB  table_index.json
+      0.01 MB  vscore_ideas.json
+
+[3 files] F:\01 - GIS Coursework\GPH904 - GIS Research\Final\Research_Proposal
+      0.04 MB  Articles_Used.csv
+      0.03 MB  SourceTracker.xlsx
+      0.02 MB  Articles_Used.xlsx
+
+[3 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 1\Lab01_data
+      0.21 MB  TR_ROAD.shp
+      0.02 MB  EXTRACT_POLYGON.shp
+      0.02 MB  TR_RAIL.shp
+
+[3 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 7\Lab07_output
+     60.96 MB  landsat8.img
+      1.84 MB  unsup.img
+      0.87 MB  unsup_recode.img
+
+[3 files] F:\01 - GIS Coursework\GPH945 - GIS Project Implementation\Lynn Project\RMD\Data
+      0.16 MB  Geocoded_LynnData.xlsx
+      0.10 MB  LynnData5.xlsx
+      0.06 MB  GISDATA_TOWNSSURVEY_POLYMPolygon.shp
+
+[3 files] F:\02 - GIS Projects\Concord\Satellite Imagery\12.29.23\1
+     19.17 MB  FSCA_CU_030005_01_1986_2022_20230519_02_VIEWABLE_SNOW_MFRACTIONS.TIF
+     13.10 MB  FSCA_CU_030005_01_1986_2022_20230519_02_VIEWABLE_SNOW_MCLDFREE.TIF
+     11.71 MB  FSCA_CU_030005_1986_1990_20230519_02_VIEWABLE_SNOW_ACLDFREE.TIF
+
+[3 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 1 Data
+      1.42 MB  Hawaii_Counties.shp
+      0.46 MB  SDOT_StateRoutes.shp
+      0.01 MB  PubSchools.shp
+
+[3 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 3 Data\Solution
+      5.38 MB  netcurr.shp
+      3.79 MB  zone_map_modified_spcs.tif
+      0.80 MB  parks.shp
+
+[3 files] F:\03 - GIS Data\DGL\MA towns
+      1.50 MB  TOWNS_POLY.shp
+      1.47 MB  TOWNS_POLYM.shp
+      1.09 MB  TOWNS_ARC.shp
+
+[3 files] F:\05 - Teaching\SWP 2023 All Files\Student Timesheets\Cohort 4 - Jaylen & Jeison
+      0.14 MB  Anyely Pojoy - 2023 SWP Student Timesheet.xlsx
+      0.14 MB  Frantz St Eloi - 2023 SWP Student Timesheet.xlsx
+      0.14 MB  Lavinia Rodrigues - 2023 SWP Student Timesheet.xlsx
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\$OF\559
+      0.17 MB  560 (2024_08_14 20_19_59 UTC).json
+      0.17 MB  560 (2024_08_14 22_12_35 UTC).json
+      0.17 MB  560 (2024_08_21 13_51_33 UTC).json
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\ArcGIS\Packages\13e9b3ccf4e64c4cb4122ca174526c4b_79c834\commondata\data0
+      2.65 MB  Territoire (2024_08_14 22_12_35 UTC).shp
+      2.65 MB  Territoire (2024_10_05 17_47_16 UTC).shp
+      2.65 MB  Territoire (2024_10_17 22_15_25 UTC).shp
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\ArcGIS\Packages\Visualize_temporal_data_d0c5bf\commondata\userdata
+      0.03 MB  ChineseVisitorsByTA (2024_08_14 22_12_35 UTC).xlsx
+      0.03 MB  ChineseVisitorsByTA (2024_10_05 17_47_16 UTC).xlsx
+      0.03 MB  ChineseVisitorsByTA (2024_10_17 22_15_25 UTC).xlsx
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\Chrome extensions\Unconfirmed 878803\custom
+      0.03 MB  sites_custom (2024_08_14 22_12_35 UTC).json
+      0.03 MB  sites_custom (2024_10_05 17_47_16 UTC).json
+      0.03 MB  sites_custom (2024_10_17 22_15_25 UTC).json
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\FC 24\filesystemcache\atlItemRarityJson
+      0.06 MB  futitemraritytunables (2024_08_14 22_12_35 UTC).json
+      0.06 MB  futitemraritytunables (2024_10_05 17_47_16 UTC).json
+      0.06 MB  futitemraritytunables (2024_10_17 22_15_25 UTC).json
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\Out of the Park Developments\OOTP Baseball 26\saved_games\Start_mapzimus.pt\auto-save
+      1.04 MB  world (2025_07_21 07_53_25 UTC).dat
+      0.46 MB  parks (2025_07_21 07_53_25 UTC).dat
+      0.04 MB  weather (2025_07_21 07_53_25 UTC).dat
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\Paradox Interactive\Crusader Kings III
+      0.09 MB  launcher-v2_openbeta (2025_05_15 14_51_34 UTC).sqlite
+      0.09 MB  launcher-v2_openbeta (2025_06_02 02_32_15 UTC).sqlite
+      0.09 MB  launcher-v2_openbeta-backup (2025_06_02 02_32_15 UTC).sqlite
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\Northeastern_States_Town_Boundary_Set_-4194519117598392238
+     27.69 MB  Northeast_Town_Polygon (2024_09_09 10_49_54 UTC).shp
+     27.69 MB  Northeast_Town_Polygon (2024_10_05 17_47_16 UTC).shp
+     27.69 MB  Northeast_Town_Polygon (2024_10_17 22_15_25 UTC).shp
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\test9.8.24\Colleges and Universities Buildings
+      0.01 MB  GISDATA_COLLEGES_PTPoint (2024_09_09 10_49_54 UTC).shp
+      0.01 MB  GISDATA_COLLEGES_PTPoint (2024_10_05 17_47_16 UTC).shp
+      0.01 MB  GISDATA_COLLEGES_PTPoint (2024_10_17 22_15_25 UTC).shp
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\test9.8.24\MA Towns Survey Boundaries
+      4.49 MB  GISDATA_TOWNSSURVEY_POLYMPolygon (2024_09_09 10_49_54 UTC).shp
+      4.49 MB  GISDATA_TOWNSSURVEY_POLYMPolygon (2024_10_05 17_47_16 UTC).shp
+      4.49 MB  GISDATA_TOWNSSURVEY_POLYMPolygon (2024_10_17 22_15_25 UTC).shp
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\test9.8.24\Pre-kindergarten to High School Buildings
+      0.06 MB  GISDATA_SCHOOLS_PTPoint (2024_09_09 10_49_54 UTC).shp
+      0.06 MB  GISDATA_SCHOOLS_PTPoint (2024_10_05 17_47_16 UTC).shp
+      0.06 MB  GISDATA_SCHOOLS_PTPoint (2024_10_17 22_15_25 UTC).shp
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\tl_2019_us_necta
+      1.57 MB  tl_2019_us_necta (2024_09_08 18_12_13 UTC).shp
+      1.57 MB  tl_2019_us_necta (2024_10_05 17_47_16 UTC).shp
+      1.57 MB  tl_2019_us_necta (2024_10_17 22_15_25 UTC).shp
+
+[3 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Games\Age of Empires 2 DE\76561199522174241\mods\subscribed\858_No Collision Trade\resources\_common\dat
+      5.65 MB  empires2_x2_p1 (2024_08_14 20_19_59 UTC).dat
+      5.65 MB  empires2_x2_p1 (2024_08_14 22_12_35 UTC).dat
+      5.57 MB  empires2_x2_p1 (2024_08_21 13_51_33 UTC).dat
+
+[2 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\cs_CZ
+      0.81 MB  ame.app.cs_CZ.dat
+      0.24 MB  ame.libraries.cs_CZ.dat
+
+[2 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\en_US
+      0.77 MB  ame.app.en_US.dat
+      0.22 MB  ame.libraries.en_US.dat
+
+[2 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\nl_NL
+      0.81 MB  ame.app.nl_NL.dat
+      0.23 MB  ame.libraries.nl_NL.dat
+
+[2 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\pl_PL
+      0.83 MB  ame.app.pl_PL.dat
+      0.25 MB  ame.libraries.pl_PL.dat
+
+[2 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\sv_SE
+      0.79 MB  ame.app.sv_SE.dat
+      0.23 MB  ame.libraries.sv_SE.dat
+
+[2 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\tr_TR
+      0.81 MB  ame.app.tr_TR.dat
+      0.23 MB  ame.libraries.tr_TR.dat
+
+[2 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\Dictionaries\zh_TW
+      0.76 MB  ame.app.zh_TW.dat
+      0.22 MB  ame.libraries.zh_TW.dat
+
+[2 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\RuntimeInstallers\4.0.1
+     11.10 MB  mc_enc_hevc.dat
+      9.78 MB  mc_dec_hevc.dat
+
+[2 files] C:\AMD\AMD-Software-Installer\AMD-Software-Adrenalin-Edition-24.12.1-MinimalSetup-241204_web\Bin64
+      1.53 MB  amdicdxx.dat
+      0.20 MB  cccmanifest_64.json
+
+[2 files] C:\AMD\AMD_Software_Installer_25.3.1\Bin64
+      1.55 MB  amdicdxx.dat
+      0.20 MB  cccmanifest_64.json
+
+[2 files] C:\AMD\AMD_Software_Installer_25.3.1\Packages\Drivers\Audio\ACPBus2\WT64A
+     18.25 MB  acpimg_7_0.dat
+      1.50 MB  aaf_graphs.dat
+
+[2 files] C:\Drivers\AMDVGA\Source\Bin64
+      1.37 MB  amdicdxx.dat
+      0.22 MB  cccmanifest_64.json
+
+[2 files] C:\Drivers\Camera\Source\SunplusIT
+      1.18 MB  fltf.dat
+      1.03 MB  fdfr.dat
+
+[2 files] C:\Users\mhowe\Desktop\2603_Collection
+      0.32 MB  ebay_transactions.xlsx
+      0.01 MB  purchase_history.csv
+
+[2 files] C:\Users\mhowe\Documents\Chrome extensions\Unconfirmed 878803
+      0.02 MB  manifest.json
+      0.01 MB  sites_updated.json
+
+[2 files] C:\Users\mhowe\Games\Age of Empires 2 DE\76561199522174241\mods\subscribed\19968_Eternal Civilization\resources\_common\dat
+      0.03 MB  unitcategories.json
+      0.01 MB  unitlines.json
+
+[2 files] C:\Users\mhowe\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Slave Population
+      0.02 MB  Aa2093-2140.xls
+      0.02 MB  Aa2141-2188.xls
+
+[2 files] C:\Users\mhowe\raw_data\Kaggle\archive (35)\historysaid-global-economic-dataset\data\aggregates
+      0.38 MB  regional_aggregates.csv
+      0.03 MB  regional_aggregates.parquet
+
+[2 files] C:\Users\mhowe\raw_data\Kaggle\archive (35)\historysaid-global-economic-dataset\data\unified
+     89.28 MB  all_indicators.csv
+      4.76 MB  all_indicators.parquet
+
+[2 files] C:\Users\mhowe\raw_data\Kaggle\archive (8)
+      0.27 MB  all_player_stats.csv
+      0.18 MB  all_player_profiles.csv
+
+[2 files] C:\Users\mhowe\raw_data\Kaggle\spotify
+      0.01 MB  spotify_alltime_top100_songs.csv
+      0.01 MB  spotify_wrapped_2025_top50_songs.csv
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\population-by-age-group
+      1.04 MB  population-by-age-group.csv
+      0.01 MB  population-by-age-group.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\population-by-age-group-with-projections
+      2.71 MB  population-by-age-group-with-projections.csv
+      0.01 MB  population-by-age-group-with-projections.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\population-by-five-year-age-group
+      2.76 MB  population-by-five-year-age-group.csv
+      0.02 MB  population-by-five-year-age-group.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\population-growth-rate-vs-median-age
+      0.84 MB  population-growth-rate-vs-median-age.csv
+      0.01 MB  population-growth-rate-vs-median-age.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\population-growth-rate-vs-median-age (1)
+      0.84 MB  population-growth-rate-vs-median-age.csv
+      0.01 MB  population-growth-rate-vs-median-age.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\population-long-run-with-projections
+      2.09 MB  population-long-run-with-projections.csv
+      0.01 MB  population-long-run-with-projections.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\population-long-run-with-projections (1)
+      2.09 MB  population-long-run-with-projections.csv
+      0.01 MB  population-long-run-with-projections.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\population-young-working-elderly-with-projections
+      1.74 MB  population-young-working-elderly-with-projections.csv
+      0.01 MB  population-young-working-elderly-with-projections.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\share-of-global-consumption-based-co-emissions-and-population
+      2.45 MB  share-of-global-consumption-based-co-emissions-and-population.csv
+      0.01 MB  share-of-global-consumption-based-co-emissions-and-population.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\share-of-population-in-extreme-poverty
+      2.04 MB  share-of-population-in-extreme-poverty.csv
+      0.01 MB  share-of-population-in-extreme-poverty.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\time-spent-with-relationships-by-age-us
+      0.02 MB  time-spent-with-relationships-by-age-us.metadata.json
+      0.01 MB  time-spent-with-relationships-by-age-us.csv
+
+[2 files] C:\Users\mhowe\raw_data\Our World In Data\women-who-have-next-birth-parity-progression-ratio
+      0.03 MB  women-who-have-next-birth-parity-progression-ratio.csv
+      0.01 MB  women-who-have-next-birth-parity-progression-ratio.metadata.json
+
+[2 files] C:\Users\mhowe\raw_data\worldcup
+      0.68 MB  matches_1930_2022.csv
+      0.01 MB  fifa_ranking_2022-10-06.csv
+
+[2 files] D:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$R62AEK4
+      1.36 MB  pokemonDB_dataset.json
+      0.37 MB  pokemonDB_dataset.csv
+
+[2 files] D:\raw_data\HSUS\A-Population\aaPopulation-Characteristics\Slave Population
+      0.02 MB  Aa2093-2140.xls
+      0.02 MB  Aa2141-2188.xls
+
+[2 files] D:\raw_data\Kaggle\archive (35)\historysaid-global-economic-dataset\data\aggregates
+      0.38 MB  regional_aggregates.csv
+      0.03 MB  regional_aggregates.parquet
+
+[2 files] D:\raw_data\Kaggle\archive (35)\historysaid-global-economic-dataset\data\unified
+     89.28 MB  all_indicators.csv
+      4.76 MB  all_indicators.parquet
+
+[2 files] D:\raw_data\Kaggle\archive (8)
+      0.27 MB  all_player_stats.csv
+      0.18 MB  all_player_profiles.csv
+
+[2 files] D:\raw_data\Kaggle\spotify
+      0.01 MB  spotify_alltime_top100_songs.csv
+      0.01 MB  spotify_wrapped_2025_top50_songs.csv
+
+[2 files] D:\raw_data\Our World In Data\population-by-age-group
+      1.04 MB  population-by-age-group.csv
+      0.01 MB  population-by-age-group.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\population-by-age-group-with-projections
+      2.71 MB  population-by-age-group-with-projections.csv
+      0.01 MB  population-by-age-group-with-projections.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\population-by-five-year-age-group
+      2.76 MB  population-by-five-year-age-group.csv
+      0.02 MB  population-by-five-year-age-group.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\population-growth-rate-vs-median-age
+      0.84 MB  population-growth-rate-vs-median-age.csv
+      0.01 MB  population-growth-rate-vs-median-age.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\population-growth-rate-vs-median-age (1)
+      0.84 MB  population-growth-rate-vs-median-age.csv
+      0.01 MB  population-growth-rate-vs-median-age.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\population-long-run-with-projections
+      2.09 MB  population-long-run-with-projections.csv
+      0.01 MB  population-long-run-with-projections.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\population-long-run-with-projections (1)
+      2.09 MB  population-long-run-with-projections.csv
+      0.01 MB  population-long-run-with-projections.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\population-young-working-elderly-with-projections
+      1.74 MB  population-young-working-elderly-with-projections.csv
+      0.01 MB  population-young-working-elderly-with-projections.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\share-of-global-consumption-based-co-emissions-and-population
+      2.45 MB  share-of-global-consumption-based-co-emissions-and-population.csv
+      0.01 MB  share-of-global-consumption-based-co-emissions-and-population.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\share-of-population-in-extreme-poverty
+      2.04 MB  share-of-population-in-extreme-poverty.csv
+      0.01 MB  share-of-population-in-extreme-poverty.metadata.json
+
+[2 files] D:\raw_data\Our World In Data\time-spent-with-relationships-by-age-us
+      0.02 MB  time-spent-with-relationships-by-age-us.metadata.json
+      0.01 MB  time-spent-with-relationships-by-age-us.csv
+
+[2 files] D:\raw_data\Our World In Data\women-who-have-next-birth-parity-progression-ratio
+      0.03 MB  women-who-have-next-birth-parity-progression-ratio.csv
+      0.01 MB  women-who-have-next-birth-parity-progression-ratio.metadata.json
+
+[2 files] D:\raw_data\worldcup
+      0.68 MB  matches_1930_2022.csv
+      0.01 MB  fifa_ranking_2022-10-06.csv
+
+[2 files] F:\01 - GIS Coursework\GPH903 - Intro\gisclass\mgisdata\Austin\Topology
+      0.05 MB  geologyt.shp
+      0.01 MB  faultst.shp
+
+[2 files] F:\01 - GIS Coursework\GPH903 - Intro\gisclass\mgisdata\BlackHills
+      1.68 MB  bh_wshds83.shp
+      0.03 MB  snail_elev83.shp
+
+[2 files] F:\01 - GIS Coursework\GPH903 - Intro\gisclass\mgisdata\Oregon
+      0.03 MB  precipnormals.xlsx
+      0.02 MB  ORstations.xlsx
+
+[2 files] F:\01 - GIS Coursework\GPH904 - GIS Research\Week 2\class_data
+      0.12 MB  drinkingPlaces.csv
+      0.01 MB  brewpubBreweries.csv
+
+[2 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Exam 2\Exam_output
+      6.01 MB  compare.img
+      6.01 MB  new.img
+
+[2 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Exam 2\Ugh
+      6.01 MB  ndvi.img
+      0.58 MB  slice1.img
+
+[2 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 2\Lab02_data
+    582.41 MB  l8carpentaria-msi.img
+     20.47 MB  darwin_subset.img
+
+[2 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 1\GPH942_advquant_1_95_IntrotoR\GPH942_advquant_1_95_IntrotoR\gis
+      4.48 MB  CENSUS2020TOWNS_POLY.shp
+      3.32 MB  CENSUS2020TOWNS_ARC.shp
+
+[2 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 1\Lab1\Lab1\data
+      4.48 MB  CENSUS2020TOWNS_POLY.shp
+      3.32 MB  CENSUS2020TOWNS_ARC.shp
+
+[2 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\_Lab Downloads\GPH942_advquant_1_95_IntrotoR\gis
+      4.48 MB  CENSUS2020TOWNS_POLY.shp
+      3.32 MB  CENSUS2020TOWNS_ARC.shp
+
+[2 files] F:\01 - GIS Coursework\GPH945 - GIS Project Implementation\Lynn Project\RMD\LynnSchools
+      0.43 MB  basemap_full.rds
+      0.25 MB  basemap_zoom.rds
+
+[2 files] F:\01 - GIS Coursework\GPH945 - GIS Project Implementation\Lynnfield\From_Lynnfield
+      0.21 MB  Cemetery Deeds - Partially Redacted (1).xls
+      0.05 MB  Forest Hill Cemetery Lot600 To - Partially Redacted (1).xlsx
+
+[2 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Final Project\CENSUS2020TOWNS_SHP
+      4.48 MB  CENSUS2020TOWNS_POLY.shp
+      3.32 MB  CENSUS2020TOWNS_ARC.shp
+
+[2 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Kinshasa
+      1.08 MB  cd.shp
+      0.08 MB  cg.shp
+
+[2 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Dave's Electric 2020\Shapefiles
+      0.07 MB  service_areas.shp
+      0.03 MB  job_sites_address_pt.shp
+
+[2 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Route 24 Brewing Co 2020
+      0.60 MB  retail_buffer_1500.shp
+      0.01 MB  Route_24_Brewery_2020_Assignment_Outline.xlsx
+
+[2 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\Final Project
+      0.68 MB  matches_1930_2022.csv
+      0.01 MB  fifa_ranking_2022-10-06.csv
+
+[2 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\Lesson 5 - Table Joins and Keys
+      0.01 MB  Left_Table_Example.xlsx
+      0.01 MB  Right_Table_Example.xlsx
+
+[2 files] F:\02 - GIS Projects\PythonProject\Output
+     53.13 MB  Projected_Roads.shp
+      9.34 MB  Projected_Hazards.shp
+
+[2 files] F:\02 - GIS Projects\QGIS\Part_1_Introduction_to_Geospatial_Technology\Part 1 - Introduction to Geospatial Technology\Exercise 3 Data
+      5.38 MB  netcurr.shp
+      0.80 MB  parks.shp
+
+[2 files] F:\03 - GIS Data
+     24.00 MB  Central Campus Rapid.tif
+      0.11 MB  Federal St County Layout.tif
+
+[2 files] F:\03 - GIS Data\Datasets\pokemon
+      1.36 MB  pokemonDB_dataset.json
+      0.37 MB  pokemonDB_dataset.csv
+
+[2 files] F:\03 - GIS Data\Datasets\worldcup
+      0.68 MB  matches_1930_2022.csv
+      0.01 MB  fifa_ranking_2022-10-06.csv
+
+[2 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\mgisdata\Austin\Topology
+      0.05 MB  geologyt.shp
+      0.01 MB  faultst.shp
+
+[2 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\mgisdata\BlackHills
+      1.68 MB  bh_wshds83.shp
+      0.03 MB  snail_elev83.shp
+
+[2 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\mgisdata\Oregon
+      0.03 MB  precipnormals.xlsx
+      0.02 MB  ORstations.xlsx
+
+[2 files] F:\03 - GIS Data\DGL\USCongress
+      0.73 MB  CONGRESS108_POLY.shp
+      0.66 MB  CONGRESS108_ARC.shp
+
+[2 files] F:\03 - GIS Data\_Downloaded Spatial Data\CENSUS2020TOWNS_SHP
+      4.48 MB  CENSUS2020TOWNS_POLY.shp
+      3.32 MB  CENSUS2020TOWNS_ARC.shp
+
+[2 files] F:\03 - GIS Data\_Downloaded Spatial Data\CENSUS2020TOWNS_SHP (1)
+      4.48 MB  CENSUS2020TOWNS_POLY.shp
+      3.32 MB  CENSUS2020TOWNS_ARC.shp
+
+[2 files] F:\05 - Teaching\LEHS\5.1.24_Backup
+      0.03 MB  GRADES 22-23.xlsx
+      0.01 MB  Copy of Fill-In Schedule.xlsx
+
+[2 files] F:\05 - Teaching\SWP 2023 All Files
+      0.15 MB  Attendance & Rosters - SWP 2023.xlsx
+      0.02 MB  SWP project check-ins.xlsx
+
+[2 files] F:\05 - Teaching\SWP 2023 All Files\9-10 Curriculum\9-10 Attendance and Data Trackers
+      0.02 MB  9_10 Daily Attendance + Timesheet Tracking.xlsx
+      0.01 MB  Admissions Speakers Sign Up Sheet.xlsx
+
+[2 files] F:\05 - Teaching\SWP 2023 All Files\Student Timesheets\Cohort 2 - Jazmine & Deury
+      0.14 MB  Justice Chavez Lopez - 2023 SWP Student Timesheet.xlsx
+      0.14 MB  Laisa Rodrigues - 2023 SWP Student Timesheet.xlsx
+
+[2 files] F:\06 - Personal\My Stuff
+      0.18 MB  FLIP.xlsx
+      0.08 MB  Flip2.xlsx
+
+[2 files] F:\DGL_FILES_31426\Dave_Elec\Shapefiles
+      0.07 MB  service_areas.shp
+      0.03 MB  job_sites_address_pt.shp
+
+[2 files] F:\DGL_FILES_31426\qgis\QGIS_exercise\QGIS_exercise
+      4.48 MB  massTowns.shp
+      0.01 MB  massCSOs.shp
+
+[2 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\$OF\336938
+      0.14 MB  336945 (2026_03_13 21_31_05 UTC).json
+      0.01 MB  336944 (2026_03_13 21_31_05 UTC).json
+
+[2 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Desktop\2603_Collection
+      0.32 MB  ebay_transactions (2026_03_15 18_47_12 UTC).xlsx
+      0.01 MB  purchase_history (2026_03_15 18_47_12 UTC).csv
+
+[2 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\collection
+      0.07 MB  collection (2026_03_15 01_27_40 UTC).csv
+      0.01 MB  collection (2025_03_09 04_02_01 UTC).csv
+
+[2 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\collection (2)
+      0.14 MB  collection (2026_03_17 23_06_31 UTC).csv
+      0.01 MB  collection (2025_05_07 23_29_39 UTC).csv
+
+[2 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Games\Age of Empires 2 DE\76561199522174241\mods\subscribed\2413_Graphics Enhance Mod\resources\_common\dat
+      3.23 MB  empires2_x2_p1 (2024_08_14 20_19_59 UTC).dat
+      3.23 MB  empires2_x2_p1 (2024_08_14 22_12_35 UTC).dat
+
+[2 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Games\Age of Empires 2 DE\76561199522174241\mods\subscribed\2812_Persistent Corpses\resources\_common\dat
+      4.75 MB  empires2_x2_p1 (2024_08_14 20_19_59 UTC).dat
+      4.75 MB  empires2_x2_p1 (2024_08_14 22_12_35 UTC).dat
+
+[2 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Games\Age of Empires 2 DE\76561199522174241\mods\subscribed\875_Enhanced Resources\resources\_common\dat
+      4.75 MB  empires2_x2_p1 (2024_08_14 20_19_59 UTC).dat
+      4.75 MB  empires2_x2_p1 (2024_08_14 22_12_35 UTC).dat
+
+[2 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Games\Age of Empires 2 DE\76561199522174241\mods\subscribed\890_KJ - 1000 population\resources\_common\dat
+      3.23 MB  empires2_x2_p1 (2024_08_14 20_19_59 UTC).dat
+      3.23 MB  empires2_x2_p1 (2024_08_14 22_12_35 UTC).dat
+
+[1 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App
+      9.74 MB  icudtl.dat
+
+[1 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\CEPHtmlEngine
+      9.93 MB  icudtl.dat
+
+[1 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\ngl\resources
+      0.01 MB  locale_strings.json
+
+[1 files] C:\adobeTemp\ETR3AAC.tmp\1\universal\App\typesupport
+      0.37 MB  FntNames.db
+
+[1 files] C:\Drivers\AMDVGA\Source\Packages\Drivers\Audio\ACPBus\WT64A\amdacpbusext
+      0.02 MB  acpcfg0001.dat
+
+[1 files] C:\Drivers\Audio\Source\2Realtek\Codec_9441.1
+     51.56 MB  RTAIODAT.DAT
+
+[1 files] C:\Drivers\DolbyVisionProvision
+      0.05 MB  unins000.dat
+
+[1 files] C:\Drivers\NVGFE\FrameViewSDK\bin
+      0.03 MB  mouseLut.json
+
+[1 files] C:\Drivers\NVGFE\GFExperience
+      9.85 MB  icudtl.dat
+
+[1 files] C:\Drivers\NVGFE\GFExperience\osc
+      0.01 MB  manifest.json
+
+[1 files] C:\Drivers\NVGFE\GFExperience\www
+      0.02 MB  manifest.json
+
+[1 files] C:\Drivers\NVGFE\NvBackend
+      0.02 MB  FeatureWhitelist.json
+
+[1 files] C:\Drivers\NVVGA\Display.Driver\Display.NvContainer
+      0.33 MB  dlsnetparams.csv
+
+[1 files] C:\rtools45
+      9.50 MB  unins000.dat
+
+[1 files] C:\rtools45\etc\pacman.d\gnupg
+      0.05 MB  tofu.db
+
+[1 files] C:\rtools45\usr\lib\mxe\usr\x86_64-w64-mingw32.static.posix\bin
+      0.02 MB  test-freexl.xls
+
+[1 files] C:\rtools45\usr\lib\mxe\usr\x86_64-w64-mingw32.static.posix\share\cmake-3.30.4\Help\manual\presets
+      0.08 MB  schema.json
+
+[1 files] C:\rtools45\x86_64-w64-mingw32.static.posix\bin
+      0.02 MB  test-freexl.xls
+
+[1 files] C:\rtools45\x86_64-w64-mingw32.static.posix\share\cmake-3.30.4\Help\manual\presets
+      0.08 MB  schema.json
+
+[1 files] C:\Users\Default
+      0.25 MB  NTUSER.DAT
+
+[1 files] C:\Users\mhowe
+     30.00 MB  NTUSER.DAT
+
+[1 files] C:\Users\mhowe\Documents\ArcGIS\Packages\13e9b3ccf4e64c4cb4122ca174526c4b_79c834\commondata\data0
+      2.65 MB  Territoire.shp
+
+[1 files] C:\Users\mhowe\Documents\ArcGIS\Packages\Central_Campus_Howe_ae9953\commondata\raster_data
+     78.73 MB  SSU_1.tif
+
+[1 files] C:\Users\mhowe\Documents\ArcGIS\Packages\Central_Campus_Howe_ae9953\commondata\raster_data1
+     24.01 MB  Central Campus Rapid.tif
+
+[1 files] C:\Users\mhowe\Documents\ArcGIS\Packages\Visualize_temporal_data_d0c5bf\commondata\userdata
+      0.03 MB  ChineseVisitorsByTA.xlsx
+
+[1 files] C:\Users\mhowe\Documents\Chrome extensions\Unconfirmed 878803\custom
+      0.03 MB  sites_custom.json
+
+[1 files] C:\Users\mhowe\Documents\KoeiTecmo\DYNASTY WARRIORS ORIGINS DEMO\Saved\SaveGames\1561908513
+      0.01 MB  DEMO.dat
+
+[1 files] C:\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Doc\images
+      0.01 MB  Thumbs.db
+
+[1 files] C:\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Doc\images\s
+      0.01 MB  Thumbs.db
+
+[1 files] C:\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Cursor
+      0.01 MB  Thumbs.db
+
+[1 files] C:\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Popup
+      0.01 MB  Thumbs.db
+
+[1 files] C:\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Table
+      0.01 MB  Thumbs.db
+
+[1 files] C:\Users\mhowe\Games\Age of Empires 2 DE\76561199522174241\mods\subscribed\19968_Eternal Civilization\resources\_common\particles\textures\atlases
+      0.17 MB  muzzle_swarm.json
+
+[1 files] C:\Users\mhowe\iCloudDrive\Desktop\SS
+      0.01 MB  Soccer Shots Weekly Timesheet_.xlsx
+
+[1 files] C:\Users\mhowe\iCloudDrive\Documents
+      0.65 MB  NSN_MASTER_FILE_FINAL_V4.xlsx
+
+[1 files] C:\Users\mhowe\OneDrive
+      0.39 MB  NSN_Master.xlsx
+
+[1 files] C:\Users\mhowe\raw_data
+     41.68 MB  Public_School_Characteristics_2022-23.csv
+
+[1 files] C:\Users\mhowe\raw_data\EconData
+      0.43 MB  USCompanies.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (10)
+      0.39 MB  popolazione-globale-per-paese-1950-2024.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (12)
+      0.86 MB  tassi-di-omicidi-globali-per-paese.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (13)
+      0.61 MB  asia_macro_economic_dataset.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (14)
+      0.59 MB  disuguaglianza-economica-globale-e-povert-1980-2024.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (15)
+      0.01 MB  elevator_traffic_dataset.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (16)
+    448.24 MB  detention-stays-latest.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (18)
+      0.04 MB  boston-housing-dataset.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (20)
+      6.58 MB  health.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (21)
+      0.02 MB  global_prosperity_regions_politics.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (23)
+      1.03 MB  land-animals-slaughtered-for-meat.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (24)\modern_slavery_final
+      0.01 MB  GIS_2018_report.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (27)
+      0.29 MB  Global_Population_Economic_Growth_2000_2025_BALANCED.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (28)
+      0.04 MB  Military_Operations_Strategic new.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (29)
+      0.07 MB  student_habits_performance.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (32)
+      0.06 MB  extra_abstract_algebra.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (36)
+      0.03 MB  monthly.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (37)
+      0.68 MB  enhanced_global_trends_dataset.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (38)
+      2.56 MB  breakfast basket.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (39)
+      0.01 MB  iran_war_oil_prices_daily_2026.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (40)
+      0.04 MB  ai_index_main.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (41)
+      0.01 MB  fuel_prices_2000_2026.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (42)
+      0.97 MB  AI_Job_Market_Trends_2026.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (43)
+      0.42 MB  MCD.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (44)
+      0.86 MB  richest_people_dataset.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (47)
+     15.87 MB  asteroid_dataset_20251019.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (48)
+      0.02 MB  fuel_prices_1970_2026.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (49)
+      0.04 MB  BTC_prices.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (50)
+     14.64 MB  uap_reports.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (6)
+      0.02 MB  fuel_prices_1970_2026.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (7)
+      2.00 MB  mental_health_risk_dataset (1).csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\archive (9)
+      0.37 MB  temperature-medie-annuali-1950-2024.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\irankeyevents
+      0.01 MB  iran_war_oil_prices_daily_2026.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\mentalburnout
+     11.96 MB  student_mental_health_burnout.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\pop
+      0.39 MB  popolazione-globale-per-paese-1950-2024.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\steam
+      0.17 MB  steam_games_2026.csv
+
+[1 files] C:\Users\mhowe\raw_data\Kaggle\worldmap
+      5.80 MB  World_Map.shp
+
+[1 files] C:\Users\mhowe\raw_data\MBTA Data 2025\Bus_Routes
+      2.84 MB  Bus_Routes.shp
+
+[1 files] C:\Users\mhowe\raw_data\MBTA Data 2025\Bus_Stops
+      0.18 MB  Bus_Stops.shp
+
+[1 files] C:\Users\mhowe\raw_data\MBTA Data 2025\Commuter_Rail_Routes
+      2.55 MB  Commuter_Rail_Routes.shp
+
+[1 files] C:\Users\mhowe\raw_data\MBTA Data 2025\Commuter_Rail_Stations
+      0.01 MB  Commuter_Rail_Stations.shp
+
+[1 files] C:\Users\mhowe\raw_data\MBTA Data 2025\Ferry_Routes
+      0.01 MB  Ferry_Routes.shp
+
+[1 files] C:\Users\mhowe\raw_data\MBTA Data 2025\MBTA_Extended_Service_Area
+      4.24 MB  MBTA_Extended_Service_Area.shp
+
+[1 files] C:\Users\mhowe\raw_data\MBTA Data 2025\Rapid_Transit_Routes
+      0.46 MB  Rapid_Transit_Routes.shp
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\political-regime
+      0.62 MB  political-regime.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population
+      1.50 MB  population.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population (1)
+      1.50 MB  population.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population (2)
+      0.53 MB  population.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-by-income-level
+      0.40 MB  population-by-income-level.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-growth-rate
+      1.06 MB  population-growth-rate.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-growth-rate-by-level-of-development
+      0.99 MB  population-growth-rate-by-level-of-development.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-growth-rate-with-and-without-migration
+      0.59 MB  population-growth-rate-with-and-without-migration.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-growth-rates
+      0.99 MB  population-growth-rates.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-growth-rates (1)
+      0.99 MB  population-growth-rates.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-marimekko
+      1.92 MB  population-marimekko.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-marimekko (1)
+      1.92 MB  population-marimekko.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-of-england-millennium
+      0.03 MB  population-of-england-millennium.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-regions-with-projections
+      2.05 MB  population-regions-with-projections.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-unwpp
+      0.53 MB  population-unwpp.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-using-at-least-basic-drinking-water
+      0.17 MB  population-using-at-least-basic-drinking-water.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-with-un-projections
+      1.12 MB  population-with-un-projections.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-with-un-projections (1)
+      1.12 MB  population-with-un-projections.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-young-working-elderly
+      0.78 MB  population-young-working-elderly.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\population-younger-than-15-with-projections
+      1.10 MB  population-younger-than-15-with-projections.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\prevalence-of-undernourishment
+      0.11 MB  prevalence-of-undernourishment.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\primary-enrollment-selected-countries
+      0.23 MB  primary-enrollment-selected-countries.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\prison-population-rate
+      0.05 MB  prison-population-rate.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\projected-population-under-age-5
+      0.53 MB  projected-population-under-age-5.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\research-spending-gdp
+      0.07 MB  research-spending-gdp.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\share-of-individuals-using-the-internet
+      0.15 MB  share-of-individuals-using-the-internet.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\share-of-population-with-improved-sanitation-faciltities
+      0.17 MB  share-of-population-with-improved-sanitation-faciltities.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\share-of-the-labor-force-employed-in-agriculture
+      0.18 MB  share-of-the-labor-force-employed-in-agriculture.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\share-of-the-population-with-access-to-electricity
+      0.17 MB  share-of-the-population-with-access-to-electricity.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\total-live-births-hfd
+      0.07 MB  total-live-births-hfd.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\un-population-2024-vs-2022
+      0.72 MB  un-population-2024-vs-2022.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\world-population-comparison-historical-sources
+      0.05 MB  world-population-comparison-historical-sources.csv
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\world-population-projections-by-un-prospects-revision
+      0.01 MB  world-population-projections-by-un-prospects-revision.metadata.json
+
+[1 files] C:\Users\mhowe\raw_data\Our World In Data\yearly-number-of-objects-launched-into-outer-space
+      0.02 MB  yearly-number-of-objects-launched-into-outer-space.csv
+
+[1 files] C:\Users\mhowe\Zotero
+      1.03 MB  zotero.sqlite
+
+[1 files] C:\Users\Public
+      0.01 MB  NTUSER.DAT
+
+[1 files] D:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$R8H2M5N
+      0.36 MB  valid_data.csv
+
+[1 files] D:\eBay
+      0.62 MB  NSN_MASTER_FILE_FINAL_V4.xlsx
+
+[1 files] D:\raw_data
+     41.68 MB  Public_School_Characteristics_2022-23.csv
+
+[1 files] D:\raw_data\EconData
+      0.43 MB  USCompanies.csv
+
+[1 files] D:\raw_data\Kaggle\archive (10)
+      0.39 MB  popolazione-globale-per-paese-1950-2024.csv
+
+[1 files] D:\raw_data\Kaggle\archive (12)
+      0.86 MB  tassi-di-omicidi-globali-per-paese.csv
+
+[1 files] D:\raw_data\Kaggle\archive (13)
+      0.61 MB  asia_macro_economic_dataset.csv
+
+[1 files] D:\raw_data\Kaggle\archive (14)
+      0.59 MB  disuguaglianza-economica-globale-e-povert-1980-2024.csv
+
+[1 files] D:\raw_data\Kaggle\archive (15)
+      0.01 MB  elevator_traffic_dataset.csv
+
+[1 files] D:\raw_data\Kaggle\archive (16)
+    448.24 MB  detention-stays-latest.csv
+
+[1 files] D:\raw_data\Kaggle\archive (18)
+      0.04 MB  boston-housing-dataset.csv
+
+[1 files] D:\raw_data\Kaggle\archive (20)
+      6.58 MB  health.csv
+
+[1 files] D:\raw_data\Kaggle\archive (21)
+      0.02 MB  global_prosperity_regions_politics.csv
+
+[1 files] D:\raw_data\Kaggle\archive (23)
+      1.03 MB  land-animals-slaughtered-for-meat.csv
+
+[1 files] D:\raw_data\Kaggle\archive (24)\modern_slavery_final
+      0.01 MB  GIS_2018_report.csv
+
+[1 files] D:\raw_data\Kaggle\archive (27)
+      0.29 MB  Global_Population_Economic_Growth_2000_2025_BALANCED.csv
+
+[1 files] D:\raw_data\Kaggle\archive (28)
+      0.04 MB  Military_Operations_Strategic new.csv
+
+[1 files] D:\raw_data\Kaggle\archive (29)
+      0.07 MB  student_habits_performance.csv
+
+[1 files] D:\raw_data\Kaggle\archive (32)
+      0.06 MB  extra_abstract_algebra.csv
+
+[1 files] D:\raw_data\Kaggle\archive (36)
+      0.03 MB  monthly.csv
+
+[1 files] D:\raw_data\Kaggle\archive (37)
+      0.68 MB  enhanced_global_trends_dataset.csv
+
+[1 files] D:\raw_data\Kaggle\archive (38)
+      2.56 MB  breakfast basket.csv
+
+[1 files] D:\raw_data\Kaggle\archive (39)
+      0.01 MB  iran_war_oil_prices_daily_2026.csv
+
+[1 files] D:\raw_data\Kaggle\archive (40)
+      0.04 MB  ai_index_main.csv
+
+[1 files] D:\raw_data\Kaggle\archive (41)
+      0.01 MB  fuel_prices_2000_2026.csv
+
+[1 files] D:\raw_data\Kaggle\archive (42)
+      0.97 MB  AI_Job_Market_Trends_2026.csv
+
+[1 files] D:\raw_data\Kaggle\archive (43)
+      0.42 MB  MCD.csv
+
+[1 files] D:\raw_data\Kaggle\archive (44)
+      0.86 MB  richest_people_dataset.csv
+
+[1 files] D:\raw_data\Kaggle\archive (47)
+     15.87 MB  asteroid_dataset_20251019.csv
+
+[1 files] D:\raw_data\Kaggle\archive (48)
+      0.02 MB  fuel_prices_1970_2026.csv
+
+[1 files] D:\raw_data\Kaggle\archive (49)
+      0.04 MB  BTC_prices.csv
+
+[1 files] D:\raw_data\Kaggle\archive (50)
+     14.64 MB  uap_reports.csv
+
+[1 files] D:\raw_data\Kaggle\archive (6)
+      0.02 MB  fuel_prices_1970_2026.csv
+
+[1 files] D:\raw_data\Kaggle\archive (7)
+      2.00 MB  mental_health_risk_dataset (1).csv
+
+[1 files] D:\raw_data\Kaggle\archive (9)
+      0.37 MB  temperature-medie-annuali-1950-2024.csv
+
+[1 files] D:\raw_data\Kaggle\irankeyevents
+      0.01 MB  iran_war_oil_prices_daily_2026.csv
+
+[1 files] D:\raw_data\Kaggle\mentalburnout
+     11.96 MB  student_mental_health_burnout.csv
+
+[1 files] D:\raw_data\Kaggle\pop
+      0.39 MB  popolazione-globale-per-paese-1950-2024.csv
+
+[1 files] D:\raw_data\Kaggle\steam
+      0.17 MB  steam_games_2026.csv
+
+[1 files] D:\raw_data\Kaggle\worldmap
+      5.80 MB  World_Map.shp
+
+[1 files] D:\raw_data\MBTA Data 2025\Bus_Routes
+      2.84 MB  Bus_Routes.shp
+
+[1 files] D:\raw_data\MBTA Data 2025\Bus_Stops
+      0.18 MB  Bus_Stops.shp
+
+[1 files] D:\raw_data\MBTA Data 2025\Commuter_Rail_Routes
+      2.55 MB  Commuter_Rail_Routes.shp
+
+[1 files] D:\raw_data\MBTA Data 2025\Commuter_Rail_Stations
+      0.01 MB  Commuter_Rail_Stations.shp
+
+[1 files] D:\raw_data\MBTA Data 2025\Ferry_Routes
+      0.01 MB  Ferry_Routes.shp
+
+[1 files] D:\raw_data\MBTA Data 2025\MBTA_Extended_Service_Area
+      4.24 MB  MBTA_Extended_Service_Area.shp
+
+[1 files] D:\raw_data\MBTA Data 2025\Rapid_Transit_Routes
+      0.46 MB  Rapid_Transit_Routes.shp
+
+[1 files] D:\raw_data\Our World In Data\political-regime
+      0.62 MB  political-regime.csv
+
+[1 files] D:\raw_data\Our World In Data\population
+      1.50 MB  population.csv
+
+[1 files] D:\raw_data\Our World In Data\population (1)
+      1.50 MB  population.csv
+
+[1 files] D:\raw_data\Our World In Data\population (2)
+      0.53 MB  population.csv
+
+[1 files] D:\raw_data\Our World In Data\population-by-income-level
+      0.40 MB  population-by-income-level.csv
+
+[1 files] D:\raw_data\Our World In Data\population-growth-rate
+      1.06 MB  population-growth-rate.csv
+
+[1 files] D:\raw_data\Our World In Data\population-growth-rate-by-level-of-development
+      0.99 MB  population-growth-rate-by-level-of-development.csv
+
+[1 files] D:\raw_data\Our World In Data\population-growth-rate-with-and-without-migration
+      0.59 MB  population-growth-rate-with-and-without-migration.csv
+
+[1 files] D:\raw_data\Our World In Data\population-growth-rates
+      0.99 MB  population-growth-rates.csv
+
+[1 files] D:\raw_data\Our World In Data\population-growth-rates (1)
+      0.99 MB  population-growth-rates.csv
+
+[1 files] D:\raw_data\Our World In Data\population-marimekko
+      1.92 MB  population-marimekko.csv
+
+[1 files] D:\raw_data\Our World In Data\population-marimekko (1)
+      1.92 MB  population-marimekko.csv
+
+[1 files] D:\raw_data\Our World In Data\population-of-england-millennium
+      0.03 MB  population-of-england-millennium.csv
+
+[1 files] D:\raw_data\Our World In Data\population-regions-with-projections
+      2.05 MB  population-regions-with-projections.csv
+
+[1 files] D:\raw_data\Our World In Data\population-unwpp
+      0.53 MB  population-unwpp.csv
+
+[1 files] D:\raw_data\Our World In Data\population-using-at-least-basic-drinking-water
+      0.17 MB  population-using-at-least-basic-drinking-water.csv
+
+[1 files] D:\raw_data\Our World In Data\population-with-un-projections
+      1.12 MB  population-with-un-projections.csv
+
+[1 files] D:\raw_data\Our World In Data\population-with-un-projections (1)
+      1.12 MB  population-with-un-projections.csv
+
+[1 files] D:\raw_data\Our World In Data\population-young-working-elderly
+      0.78 MB  population-young-working-elderly.csv
+
+[1 files] D:\raw_data\Our World In Data\population-younger-than-15-with-projections
+      1.10 MB  population-younger-than-15-with-projections.csv
+
+[1 files] D:\raw_data\Our World In Data\prevalence-of-undernourishment
+      0.11 MB  prevalence-of-undernourishment.csv
+
+[1 files] D:\raw_data\Our World In Data\primary-enrollment-selected-countries
+      0.23 MB  primary-enrollment-selected-countries.csv
+
+[1 files] D:\raw_data\Our World In Data\prison-population-rate
+      0.05 MB  prison-population-rate.csv
+
+[1 files] D:\raw_data\Our World In Data\projected-population-under-age-5
+      0.53 MB  projected-population-under-age-5.csv
+
+[1 files] D:\raw_data\Our World In Data\research-spending-gdp
+      0.07 MB  research-spending-gdp.csv
+
+[1 files] D:\raw_data\Our World In Data\share-of-individuals-using-the-internet
+      0.15 MB  share-of-individuals-using-the-internet.csv
+
+[1 files] D:\raw_data\Our World In Data\share-of-population-with-improved-sanitation-faciltities
+      0.17 MB  share-of-population-with-improved-sanitation-faciltities.csv
+
+[1 files] D:\raw_data\Our World In Data\share-of-the-labor-force-employed-in-agriculture
+      0.18 MB  share-of-the-labor-force-employed-in-agriculture.csv
+
+[1 files] D:\raw_data\Our World In Data\share-of-the-population-with-access-to-electricity
+      0.17 MB  share-of-the-population-with-access-to-electricity.csv
+
+[1 files] D:\raw_data\Our World In Data\total-live-births-hfd
+      0.07 MB  total-live-births-hfd.csv
+
+[1 files] D:\raw_data\Our World In Data\un-population-2024-vs-2022
+      0.72 MB  un-population-2024-vs-2022.csv
+
+[1 files] D:\raw_data\Our World In Data\world-population-comparison-historical-sources
+      0.05 MB  world-population-comparison-historical-sources.csv
+
+[1 files] D:\raw_data\Our World In Data\world-population-projections-by-un-prospects-revision
+      0.01 MB  world-population-projections-by-un-prospects-revision.metadata.json
+
+[1 files] D:\raw_data\Our World In Data\yearly-number-of-objects-launched-into-outer-space
+      0.02 MB  yearly-number-of-objects-launched-into-outer-space.csv
+
+[1 files] F:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$R4562ZK
+      0.05 MB  MBTA_Systemwide_GTFS_Map.shp
+
+[1 files] F:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$ROK8RH3.TOWNSSURVEY_POLYM
+      0.06 MB  GISDATA_TOWNSSURVEY_POLYMPolygon.shp
+
+[1 files] F:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$RQXXOGE
+      0.02 MB  MBTA_Systemwide_GTFS_Map.shp
+
+[1 files] F:\$RECYCLE.BIN\S-1-5-21-2804855171-1915791554-4094036335-1001\$RUQEGHD
+      0.02 MB  manifest.json
+
+[1 files] F:\01 - GIS Coursework\GPH903 - Intro\gisclass\ClassProjects\CraterLake
+     44.91 MB  LT05_Sep11_2011_P45R30clip.tif
+
+[1 files] F:\01 - GIS Coursework\GPH903 - Intro\gisclass\mgisdata\Austin
+      0.03 MB  dog_offleash_bnds.shp
+
+[1 files] F:\01 - GIS Coursework\GPH903 - Intro\gisclass\mgisdata\Usa
+      0.29 MB  store_openings.csv
+
+[1 files] F:\01 - GIS Coursework\GPH903 - Intro\MAIN PROJECT\Data\Massachusetts_Towns_with_Generalized_Coast_(Hosted_Feature_Layer)
+      6.91 MB  TOWNSSURVEY_POLYM_GENCOAST.shp
+
+[1 files] F:\01 - GIS Coursework\GPH903 - Intro\NPS_-_Land_Resources_Division_Boundary_and_Tract_Data_Service
+     39.78 MB  NPS_-_Land_Resources_Division_Boundary_and_Tract_Data_Service.shp
+
+[1 files] F:\01 - GIS Coursework\GPH904 - GIS Research\Week 2\class_data\Portland_City_Boundaries
+      1.95 MB  City_Boundaries.shp
+
+[1 files] F:\01 - GIS Coursework\GPH904 - GIS Research\Week 5
+      0.01 MB  NHBeer.csv
+
+[1 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Exam 2
+     17.85 MB  26-jan-2014-msi.img
+
+[1 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 4
+     16.68 MB  landsat8-perth-3-aug-2013-msi-subset.img
+
+[1 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 6\Lab06_data
+     17.85 MB  26-jan-2014-msi.img
+
+[1 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\Labs\Lab 7\Lab07_data
+     60.96 MB  landsat8.img
+
+[1 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\RS Project\Imagery\land_use_land_cover_NASS_CDL_ma_4123320_02\land_use_land_cover\nass_ma
+     15.70 MB  cdl_30m_r_ma_2022_utm19.tif
+
+[1 files] F:\01 - GIS Coursework\GPH909 - Remote Sensing\RS Project\Imagery\land_use_land_cover_NLCD_ma_4123320_01\land_use_land_cover
+      7.19 MB  nlcd_ma_utm19.tif
+
+[1 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\GPH444-910-20240124T005209Z-001\GPH444-910\Chapter01-04\Chap1-4
+      0.02 MB  flight_ex1.csv
+
+[1 files] F:\01 - GIS Coursework\GPH910 - Digital Image Processing\Labs\Lab Data Chapter01-04\Chap1-4
+      0.02 MB  flight_ex1.csv
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 3\GPH942_advquant_3_919_hypothesistesting_review\GPH942_advquant_3_919_hypothesistesting_review\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\CLass 4\GPH942_Advquant_4_linearmodeling_greendale\GPH942_Advquant_4_linearmodeling_greendale\data\multispectral_07222024
+   1021.44 MB  imagery.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\CLass 4\GPH942_Advquant_4_linearmodeling_greendale\GPH942_Advquant_4_linearmodeling_greendale\data\thermal_08012024
+    100.04 MB  lst.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\GPH942_Advquant_5_sampling_rs\GPH942_Advquant_5_sampling_rs\data\LCLU_R09C14
+    145.91 MB  LCLU_R09C14.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\GPH942_Advquant_5_sampling_rs\GPH942_Advquant_5_sampling_rs\data\multispectral_07222024
+   1021.44 MB  imagery.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\GPH942_Advquant_5_sampling_rs\GPH942_Advquant_5_sampling_rs\data\thermal_08012024
+    100.04 MB  lst.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\GPH942_Advquant_5_sampling_rs_2\GPH942_Advquant_5_sampling_rs\data\LCLU_R09C14
+    145.91 MB  LCLU_R09C14.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\GPH942_Advquant_5_sampling_rs_2\GPH942_Advquant_5_sampling_rs\data\multispectral_07222024
+   1021.44 MB  imagery.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\GPH942_Advquant_5_sampling_rs_2\GPH942_Advquant_5_sampling_rs\data\thermal_08012024
+    100.04 MB  lst.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\new\GPH942_Advquant_5_sampling_rs (1)\GPH942_Advquant_5_sampling_rs\data\LCLU_R09C14
+    145.91 MB  LCLU_R09C14.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\new\GPH942_Advquant_5_sampling_rs (1)\GPH942_Advquant_5_sampling_rs\data\multispectral_07222024
+   1021.44 MB  imagery.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 5\new\GPH942_Advquant_5_sampling_rs (1)\GPH942_Advquant_5_sampling_rs\data\thermal_08012024
+    100.04 MB  lst.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\CLass 6\GPH942_advquant_6_1010_multivariable\GPH942_advquant_6_1010_multivariable\data\Worcester_neighborhoods
+      0.05 MB  Neighborhood_change.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 7\GPH942_advquant_7_1017_Clusteranalysis\GPH942_advquant_7_1017_Clusteranalysis\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 7\GPH942_advquant_7_1017_Clusteranalysis\GPH942_advquant_7_1017_Clusteranalysis\data\Worcester_neighborhoods
+      0.05 MB  wneighborhood_clean1.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 8\GPH942_advquant_8_1024_Machinelearning\GPH942_advquant_8_1024_Machinelearning\data
+      2.30 MB  RIACS20_blkgrp2.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 8\GPH942_advquant_8_1024_Machinelearning\GPH942_advquant_8_1024_Machinelearning\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 8\GPH942_advquant_8_1024_Machinelearning\GPH942_advquant_8_1024_Machinelearning\data\SAVI_RI_summer2022_L9SR
+     24.76 MB  L9SR_summer2022_SAVI.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 8\GPH942_advquant_8_1024_Machinelearning\GPH942_advquant_8_1024_Machinelearning\data\Worcester_neighborhoods
+      0.05 MB  wneighborhood_clean1.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 9\GPH942_advquant_9_1107_Github\GPH942_advquant_9_1107_Github\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Class 9\GPH942_advquant_9_1107_Github\GPH942_advquant_9_1107_Github\data\Worcester_neighborhoods
+      0.05 MB  wneighborhood_clean1.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 3\Lab3\Lab3\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 4\GPH942_lab4\GPH942_lab4\data\multispectral_07222024
+   1021.44 MB  imagery.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 4\GPH942_lab4\GPH942_lab4\data\thermal_08012024
+    100.04 MB  lst.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 5\GPH942_Advqyant_lab5\GPH942_Advqyant_lab5\data\LCLU_R09C14
+    145.91 MB  LCLU_R09C14.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 5\GPH942_Advqyant_lab5\GPH942_Advqyant_lab5\data\multispectral_07222024
+   1021.44 MB  imagery.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 5\GPH942_Advqyant_lab5\GPH942_Advqyant_lab5\data\thermal_08012024
+    100.04 MB  lst.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 6\Lab6_multivariatelinearmodeling\Lab6_multivariatelinearmodeling\data\Worcester_neighborhoods
+      0.05 MB  Neighborhood_change.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 7\Lab7\Lab7\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 7\Lab7\Lab7_final\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 8\Lab8\Lab8\data
+      2.30 MB  RIACS20_blkgrp2.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 8\Lab8\Lab8\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 8\Lab8\Lab8\data\SAVI_RI_summer2022_L9SR
+     24.76 MB  L9SR_summer2022_SAVI.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 8\Lab8\Lab8\data\Worcester_neighborhoods
+      0.05 MB  wneighborhood_clean1.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 8\Lab8\Lab8_final\data
+      2.30 MB  RIACS20_blkgrp2.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 8\Lab8\Lab8_final\data\ej_heat
+     10.69 MB  Censusblckgrp_ej_heat_veg.shp
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 8\Lab8\Lab8_final\data\SAVI_RI_summer2022_L9SR
+     24.76 MB  L9SR_summer2022_SAVI.tif
+
+[1 files] F:\01 - GIS Coursework\GPH942 - Advanced Geographic Qualtitative Methods\Lab 8\Lab8\Lab8_final\data\Worcester_neighborhoods
+      0.05 MB  wneighborhood_clean1.shp
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Final Project\export-gisdata.mapc.ma_municipalities
+      8.73 MB  export-gisdata.mapc.ma_municipalities.shp
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Final Project\Functional_Classification
+    119.41 MB  Functional_Classification.shp
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Final Project\Road_Inventory_2020
+    155.15 MB  Road_Inventory_2020.shp
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Kinshasa\Data\cod_pd_2020_1km_ASCII_XYZ
+    153.73 MB  cod_pd_2020_1km_ASCII_XYZ.csv
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Lab 2\US_Counties
+      1.45 MB  US_Counties.shp
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Lab 2\US_States
+      0.21 MB  US_States.shp
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Lab 3
+      0.03 MB  Sustainable_Cities.xls
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Lab 3\US_Counties (1)
+      1.45 MB  US_Counties.shp
+
+[1 files] F:\01 - GIS Coursework\GPH946 - Computer Cartography\Lab 3\US_States (1)
+      0.21 MB  US_States.shp
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Dave's Electric 2020\tables
+      0.19 MB  Existing_Jobs.csv
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Route 24 Brewing Co 2020\Route_24_Brewery_Data_Files\upload
+      0.02 MB  orders.csv
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Route 24 Brewing Co 2020\Route_24_Brewery_Data_Files\upload\Spatial_Files_2249\accounts
+      0.05 MB  accounts.shp
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Route 24 Brewing Co 2020\Route_24_Brewery_Data_Files\upload\Spatial_Files_2249\maj_roads
+      5.75 MB  maj_road.shp
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Route 24 Brewing Co 2020\Route_24_Brewery_Data_Files\upload\Spatial_Files_2249\regions
+      0.58 MB  regions.shp
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DATABASES\Route 24 Brewing Co 2020\Route_24_Brewery_Data_Files\upload\Spatial_Files_2249\towns
+      8.73 MB  towns.shp
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Doc\images
+      0.01 MB  Thumbs.db
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Doc\images\s
+      0.01 MB  Thumbs.db
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Cursor
+      0.01 MB  Thumbs.db
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Popup
+      0.01 MB  Thumbs.db
+
+[1 files] F:\01 - GIS Coursework\GPH952 - Spatial Database Design and Analysis\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Table
+      0.01 MB  Thumbs.db
+
+[1 files] F:\01 - GIS Coursework\GPH953 - Seminar in GIS Application I\Assignments\Homework #3\HW3_Data\HW3_Data
+      0.57 MB  Drainage_Sketch.tif
+
+[1 files] F:\01 - GIS Coursework\GPH953 - Seminar in GIS Application I\Lessons\Lesson 2
+      0.01 MB  Allenhurst Drain Inverts.xlsx
+
+[1 files] F:\01 - GIS Coursework\GPH953 - Seminar in GIS Application I\Lessons\Lesson 3\files
+      0.13 MB  Federal St County Layout.tif
+
+[1 files] F:\01 - GIS Coursework\GPH953 - Seminar in GIS Application I\Lessons\Lesson 5 - Final Site Plan
+     24.01 MB  Central Campus Rapid.tif
+
+[1 files] F:\01 - GIS Coursework\GPH960 - Software Design & Programming in GIS\Lesson 9 - Field Calculator & Field Mapping
+      0.15 MB  Hardwick.csv
+
+[1 files] F:\01 - GIS Coursework\_Downloaded Course Materials\test9.8.24\Colleges and Universities Buildings
+      0.01 MB  GISDATA_COLLEGES_PTPoint.shp
+
+[1 files] F:\01 - GIS Coursework\_Downloaded Course Materials\test9.8.24\MA Towns Survey Boundaries
+      4.49 MB  GISDATA_TOWNSSURVEY_POLYMPolygon.shp
+
+[1 files] F:\01 - GIS Coursework\_Downloaded Course Materials\test9.8.24\Pre-kindergarten to High School Buildings
+      0.06 MB  GISDATA_SCHOOLS_PTPoint.shp
+
+[1 files] F:\02 - GIS Projects\Concord
+      1.41 MB  Base_Layers_for_New_Hampshire.shp
+
+[1 files] F:\02 - GIS Projects\Concord\Geographic_Names_Information_System_(Places_of_Interest)
+      0.33 MB  Geographic_Names_Information_System_(Places_of_Interest).shp
+
+[1 files] F:\02 - GIS Projects\Concord\Satellite Imagery\12.29.23
+     17.22 MB  FSCA_CU_030005_1986_1990_20230519_02_VIEWABLE_SNOW_AFRACTIONS.TIF
+
+[1 files] F:\02 - GIS Projects\Concord\Soil_Survey_Geographic_(SSURGO)_database_for_New_Hampshire
+    193.84 MB  Soil_Survey_Geographic_(SSURGO)_database_for_New_Hampshire.shp
+
+[1 files] F:\02 - GIS Projects\Concord\Transportation\New_Hampshire_Railroads
+      0.39 MB  New_Hampshire_Railroads.shp
+
+[1 files] F:\02 - GIS Projects\Concord\Transportation\NH_DOT_Roads
+     30.92 MB  NH_DOT_Roads.shp
+
+[1 files] F:\02 - GIS Projects\Concord\Water\New_Hampshire_Stream_Order_Dataset
+     65.61 MB  New_Hampshire_Stream_Order_Dataset.shp
+
+[1 files] F:\02 - GIS Projects\Concord\Water\NH_Dam_Inventory
+      0.14 MB  NH_Dam_Inventory.shp
+
+[1 files] F:\02 - GIS Projects\PythonProject\Data
+     53.13 MB  roads_projected.shp
+
+[1 files] F:\02 - GIS Projects\PythonProject\Data\MassDOTRoads_gdb_-6872600638062100732
+     90.88 MB  MassGIS-MassDOT_Roads.shp
+
+[1 files] F:\02 - GIS Projects\PythonProject\Data\Traffic_Inventory_2023
+     40.88 MB  Traffic_Inventory_2023.shp
+
+[1 files] F:\02 - GIS Projects\SalemFoodPantry\Salem Pantry Data 3d.csv
+     42.69 MB  Salem Pantry Data 3d.csv
+
+[1 files] F:\02 - GIS Projects\TSL\GIS\GIS_Data\ne_110m_admin_0_countries
+      0.17 MB  ne_110m_admin_0_countries.shp
+
+[1 files] F:\02 - GIS Projects\TSL\_Downloads
+      0.01 MB  shadow_lattice_full_lore.csv
+
+[1 files] F:\02 - GIS Projects\_Lynnfield Project Downloads\Veteran_Grave_Sites_in_Lynnfield
+      0.02 MB  survey.shp
+
+[1 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\ClassProjects\CraterLake
+     44.91 MB  LT05_Sep11_2011_P45R30clip.tif
+
+[1 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\mgisdata\Austin
+      0.03 MB  dog_offleash_bnds.shp
+
+[1 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\mgisdata\CraterLake
+     44.91 MB  LT05_Sep11_2011_P45R30clip.tif
+
+[1 files] F:\03 - GIS Data\DGL\ArcPRO data sets -Orginals to copy ONLY\mgisdata\Usa
+      0.29 MB  store_openings.csv
+
+[1 files] F:\03 - GIS Data\DGL\MA Elevation Data_2005\elevation_2005_INT
+      0.01 MB  img_elev2005_int.img
+
+[1 files] F:\03 - GIS Data\DGL\MA Elevation Data_2005\img_shadedrelief_2005
+      0.01 MB  img_shadedrelief_2005.img
+
+[1 files] F:\03 - GIS Data\DGL\NE Counties
+      5.98 MB  NewEngland_Counties.shp
+
+[1 files] F:\03 - GIS Data\MBTA Data 2025\Bus_Routes
+      2.84 MB  Bus_Routes.shp
+
+[1 files] F:\03 - GIS Data\MBTA Data 2025\Bus_Stops
+      0.18 MB  Bus_Stops.shp
+
+[1 files] F:\03 - GIS Data\MBTA Data 2025\Commuter_Rail_Routes
+      2.55 MB  Commuter_Rail_Routes.shp
+
+[1 files] F:\03 - GIS Data\MBTA Data 2025\Commuter_Rail_Stations
+      0.01 MB  Commuter_Rail_Stations.shp
+
+[1 files] F:\03 - GIS Data\MBTA Data 2025\Ferry_Routes
+      0.01 MB  Ferry_Routes.shp
+
+[1 files] F:\03 - GIS Data\MBTA Data 2025\MBTA_Extended_Service_Area
+      4.24 MB  MBTA_Extended_Service_Area.shp
+
+[1 files] F:\03 - GIS Data\MBTA Data 2025\Rapid_Transit_Routes
+      0.46 MB  Rapid_Transit_Routes.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\Electric_Vehicle_Charging_Stations
+      0.12 MB  Electric_Vehicle_Charging_Stations.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\gnis_2008
+      0.33 MB  GNIS_2008.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\Massachusetts_Towns_with_Generalized_Coast_(Hosted_Feature_Layer)
+      6.91 MB  TOWNSSURVEY_POLYM_GENCOAST.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\ne_10m_admin_1_states_provinces
+     20.03 MB  ne_10m_admin_1_states_provinces.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\ne_10m_admin_2_counties
+      2.43 MB  ne_10m_admin_2_counties.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\ne_110m_admin_0_countries
+      0.17 MB  ne_110m_admin_0_countries.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\Northeastern_States_Town_Boundary_Set_-4194519117598392238
+     27.69 MB  Northeast_Town_Polygon.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\tl_2019_us_necta
+      1.57 MB  tl_2019_us_necta.shp
+
+[1 files] F:\03 - GIS Data\_Downloaded Spatial Data\tl_2023_us_primaryroads
+     55.50 MB  tl_2023_us_primaryroads.shp
+
+[1 files] F:\05 - Teaching
+      0.10 MB  MH_Cleaned_AttendanceData.xlsx
+
+[1 files] F:\05 - Teaching\LEHS\Old Files
+      0.01 MB  Soccer Shots Weekly Timesheet .xlsx
+
+[1 files] F:\05 - Teaching\SWP 2023 All Files\9-10 Curriculum
+      0.01 MB  Meditation Station Sign Ups 9_10.xlsx
+
+[1 files] F:\05 - Teaching\SWP 2023 All Files\9-10 Curriculum\9-10 Project Materials and Information
+      0.11 MB  SWP Project Materials Request Sheet.xlsx
+
+[1 files] F:\05 - Teaching\SWP 2023 All Files\Student Timesheets
+      0.14 MB  TEMPLATE 2023 SWP Student Timesheet.xlsx
+
+[1 files] F:\05 - Teaching\SWP 2023 All Files\Student Timesheets\Cohort 1 - Jason & Chinello
+      0.14 MB  Elian Suarez - 2023 SWP Student Timesheet.xlsx
+
+[1 files] F:\06 - Personal\iCloud Docs\iCloudDrive\Desktop\SS
+      0.01 MB  Soccer Shots Weekly Timesheet_.xlsx
+
+[1 files] F:\09 - OneDrive Backup
+      0.39 MB  NSN_Master.xlsx
+
+[1 files] F:\09 - OneDrive Backup\Documents
+      0.39 MB  5A713000.xlsx
+
+[1 files] F:\DGL_FILES_31426\gee\Africa_Countries
+      0.35 MB  Africa_Countries.shp
+
+[1 files] F:\DGL_FILES_31426\gee\TectonicPlateBoundaries
+      0.07 MB  TectonicPlateBoundaries.shp
+
+[1 files] F:\DGL_FILES_31426\odieneedsamap
+      0.10 MB  New GeoPackage.gpkg
+
+[1 files] F:\DGL_FILES_31426\qgis
+      0.01 MB  springfield.shp
+
+[1 files] F:\DGL_FILES_31426\Route 24
+      0.02 MB  orders.csv
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\$OF\311091
+      0.24 MB  311132 (2025_06_02 01_31_58 UTC).sav
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\$OF\680
+      6.83 MB  301169 (2024_08_21 13_51_33 UTC).dat
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Desktop\Ascendria\Data
+      0.01 MB  Ascendria_Recurring_Elements_With_Creative_Names (2024_12_21 19_57_09 UTC).csv
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\ArcGIS\Packages\Central_Campus_Howe_ae9953\commondata\raster_data
+     78.73 MB  SSU_1 (2025_05_30 15_11_09 UTC).tif
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\ArcGIS\Packages\Central_Campus_Howe_ae9953\commondata\raster_data1
+     24.01 MB  Central Campus Rapid (2025_05_29 17_36_03 UTC).tif
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\Battlefield 6\settings\steam
+      0.09 MB  SP-Checkpoint (2026_01_05 13_36_28 UTC).sav
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\bypass-paywalls-chrome-clean-magnolia1234-master
+      0.02 MB  manifest (2025_07_21 07_53_25 UTC).json
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Documents\KoeiTecmo\DYNASTY WARRIORS ORIGINS DEMO\Saved\SaveGames\1561908513
+      0.01 MB  DEMO (2025_01_19 03_47_19 UTC).dat
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\collection (1)
+      0.01 MB  collection (2025_03_22 01_48_44 UTC).csv
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Doc\images
+      0.01 MB  Thumbs (2025_05_15 23_26_14 UTC).db
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Doc\images\s
+      0.01 MB  Thumbs (2025_05_15 23_26_14 UTC).db
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Cursor
+      0.01 MB  Thumbs (2025_05_15 23_26_14 UTC).db
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Popup
+      0.01 MB  Thumbs (2025_05_15 23_26_14 UTC).db
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\DBDesignerFork-1.5-bin-i386-win32-beta5\bin\Gfx\Table
+      0.01 MB  Thumbs (2025_05_15 23_26_14 UTC).db
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\Electric_Vehicle_Charging_Stations
+      0.12 MB  Electric_Vehicle_Charging_Stations (2025_05_05 16_44_53 UTC).shp
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\ne_110m_admin_0_countries
+      0.17 MB  ne_110m_admin_0_countries (2024_12_22 02_57_52 UTC).shp
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Downloads\Veteran_Grave_Sites_in_Lynnfield
+      0.02 MB  survey (2025_03_20 11_13_27 UTC).shp
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\OneDrive
+      0.39 MB  NSN_Master (2026_03_13 02_49_30 UTC).xlsx
+
+[1 files] F:\FileHistory\mhowe\BRONTOSAURUS\Data\C\Users\mhowe\Zotero
+      1.03 MB  zotero (2025_02_11 00_36_29 UTC).sqlite

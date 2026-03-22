@@ -1,0 +1,437 @@
+Found 24 targets to profile
+
+======================================================================
+  FBRESULTS26: D:\raw_data\kaggle\FBRESULTS26
+======================================================================
+  CSV: former_names.csv | 36 rows | 4 cols | 2 KB
+       Cols: current, former, start_date, end_date
+       Row:  ['Benin', 'Dahomey', '1959-11-08', '1975-11-30']
+       Row:  ['Burkina Faso', 'Upper Volta', '1960-04-14', '1984-08-04']
+  CSV: goalscorers.csv | 47555 rows | 8 cols | 3177 KB
+       Cols: date, home_team, away_team, team, scorer, minute, own_goal, penalty
+       Row:  ['1916-07-02', 'Chile', 'Uruguay', 'Uruguay', 'José Piendibene', '44', 'FALSE', 'FALSE']
+       Row:  ['1916-07-02', 'Chile', 'Uruguay', 'Uruguay', 'Isabelino Gradín', '55', 'FALSE', 'FALSE']
+  CSV: results.csv | 49071 rows | 9 cols | 3611 KB *** GEO: ['city', 'country']
+       Cols: date, home_team, away_team, home_score, away_score, tournament, city, country, neutral
+       Row:  ['1872-11-30', 'Scotland', 'England', '0', '0', 'Friendly', 'Glasgow', 'Scotland', 'FALSE']
+       Row:  ['1873-03-08', 'England', 'Scotland', '4', '2', 'Friendly', 'London', 'England', 'FALSE']
+  CSV: shootouts.csv | 665 rows | 5 cols | 28 KB
+       Cols: date, home_team, away_team, winner, first_shooter
+       Row:  ['1967-08-22', 'India', 'Taiwan', 'Taiwan', '']
+       Row:  ['1971-11-14', 'South Korea', 'Vietnam Republic', 'South Korea', '']
+
+======================================================================
+  archive_34: D:\raw_data\kaggle\archive (34)
+======================================================================
+  CSV: tsm_balance_sheet.csv | 92 rows | 6 cols | 7 KB
+       Cols: Unnamed: 0, 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31
+       Row:  ['Treasury Shares Number', '', '', '0.0', '', '']
+       Row:  ['Ordinary Shares Number', '25932524521.0', '25932733242.0', '25932070992.0', '25930380458.0', '']
+  CSV: tsm_cash_flow.csv | 69 rows | 6 cols | 6 KB
+       Cols: Unnamed: 0, 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31
+       Row:  ['Free Cash Flow', '992378314000.0', '861195445000.0', '286568900000.0', '520972800000.0', '']
+       Row:  ['Repurchase Of Capital Stock', '0.0', '-3089177000.0', '0.0', '-871600000.0', '']
+  CSV: tsm_company_info.csv | 1 rows | 178 cols | 7 KB *** GEO: ['address1', 'address2', 'city', 'zip', 'country', 'longBusinessSummary', 'region', 'esgPopulated', 'marketState', 'longName']
+       Cols: address1, address2, city, zip, country, phone, fax, website, industry, industryKey, industryDisp, sector, sectorKey, sectorDisp, longBusinessSummary, fullTimeEmployees, companyOfficers, compensationAsOfEpochDate, irWebsite, executiveTeam
+       Row:  ['Hsinchu Science Park', 'No. 8, Li-Hsin Road 6', 'Hsinchu City', '300096', 'Taiwan', '886 3 563 6688', '886 3 563 7000', 'https://www.tsmc.com', 'Semiconductors', 'semiconductors']
+  CSV: tsm_dividends.csv | 43 rows | 2 cols | 1 KB
+       Cols: Date, Dividends
+       Row:  ['2004-06-14 00:00:00-04:00', '0.082804']
+       Row:  ['2005-06-13 00:00:00-04:00', '0.308168']
+  CSV: tsm_earnings_and_analyst_data.csv | 217 rows | 12 cols | 20 KB
+       Cols: event_date, event_type, source, metric, period, value, strongBuy, buy, hold, sell, strongSell, notes
+       Row:  ['1970-01-01', 'analyst_recommendation', 'yfinance', 'recommendation_distribution', '0m', '', '6.0', '12.0', '1.0', '0.0']
+       Row:  ['1970-01-01', 'analyst_recommendation', 'yfinance', 'recommendation_distribution', '-1m', '', '6.0', '12.0', '1.0', '0.0']
+  CSV: tsm_financial_ratios.csv | 4 rows | 4 cols | 0 KB
+       Cols: Period, Profit Margin %, ROA %, ROE %
+       Row:  ['2025-12-31', '45.09997769336063', '21.654827382583104', '31.697614156144795']
+       Row:  ['2024-12-31', '40.537075702261056', '17.53255488918158', '27.358175262515545']
+  CSV: tsm_historical_data.csv | 7154 rows | 8 cols | 716 KB
+       Cols: Date, Open, High, Low, Close, Volume, Dividends, Stock Splits
+       Row:  ['1997-10-09', '2.79483677770226', '3.248586775884226', '2.79483677770226', '3.1302173137664795', '10201979.0', '0.0', '0.0']
+       Row:  ['1997-10-10', '3.472172404598349', '3.4853249304313643', '3.149944491144655', '3.2748899459838867', '10669148.0', '0.0', '0.0']
+  CSV: tsm_income_statement.csv | 52 rows | 6 cols | 4 KB
+       Cols: Unnamed: 0, 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31
+       Row:  ['Tax Effect Of Unusual Items', '862487251.221774', '183910697.874719', '442708766.369197', '457733710.337512', '']
+       Row:  ['Tax Rate For Calcs', '0.159804', '0.166027', '0.130998', '0.13179', '']
+  CSV: tsm_kaggle_full_dataset.csv | 8240 rows | 329 cols | 4017 KB *** GEO: ['address1', 'address2', 'city', 'country', 'esgPopulated', 'longBusinessSummary', 'longName', 'marketState', 'region', 'statement_type', 'Volatility', 'Volatility %', 'Volatility (Std Dev)', 'zip']
+       Cols: "source_scope", source_file, source_row_number, 2021-12-31, 2022-12-31, 2023-12-31, 2024-06-30, 2024-09-30, 2024-12-31, 2025-03-31, 2025-06-30, 2025-09-30, 2025-12-31, 52 Week High, 52 Week Low, 52WeekChange, address1, address2, allTimeHigh, allTimeLow
+       Row:  ['raw_source_archive', '1_historical_prices.csv', '1', '', '', '', '', '', '', '']
+       Row:  ['raw_source_archive', '1_historical_prices.csv', '2', '', '', '', '', '', '', '']
+  CSV: tsm_master_dataset.csv | 7154 rows | 27 cols | 2520 KB
+       Cols: Date, Open, High, Low, Close, Volume, Dividends, Stock Splits, source_count, Open_yf, High_yf, Low_yf, Close_yf, Volume_yf, Open_investing, High_investing, Low_investing, Close_investing, Volume_investing, Open_stockanalysis
+       Row:  ['1997-10-09', '2.79483677770226', '3.248586775884226', '2.79483677770226', '3.1302173137664795', '10201979.0', '0.0', '0.0', '3', '2.79483677770226']
+       Row:  ['1997-10-10', '3.472172404598349', '3.4853249304313643', '3.149944491144655', '3.2748899459838867', '10669148.0', '0.0', '0.0', '3', '3.472172404598349']
+  CSV: tsm_quarterly_financials.csv | 1440 rows | 4 cols | 98 KB *** GEO: ['statement_type']
+       Cols: statement_type, line_item, period, value
+       Row:  ['quarterly_income_statement', 'Tax Effect Of Unusual Items', '2025-12-31', '-127859028.833866']
+       Row:  ['quarterly_income_statement', 'Tax Rate For Calcs', '2025-12-31', '0.146781']
+  CSV: tsm_stock_prices.csv | 7154 rows | 24 cols | 2450 KB
+       Cols: Date, Open, High, Low, Close, Volume, Dividends, Stock Splits, source_count, Open_yf, High_yf, Low_yf, Close_yf, Volume_yf, Open_investing, High_investing, Low_investing, Close_investing, Volume_investing, Open_stockanalysis
+       Row:  ['1997-10-09', '2.79483677770226', '3.248586775884226', '2.79483677770226', '3.1302173137664795', '10201979.0', '0.0', '0.0', '3', '2.79483677770226']
+       Row:  ['1997-10-10', '3.472172404598349', '3.4853249304313643', '3.149944491144655', '3.2748899459838867', '10669148.0', '0.0', '0.0', '3', '3.472172404598349']
+  CSV: tsm_stock_splits.csv | 10 rows | 2 cols | 0 KB
+       Cols: Date, Stock Splits
+       Row:  ['1998-08-26 00:00:00-04:00', '1.45']
+       Row:  ['1999-08-16 00:00:00-04:00', '1.23']
+  CSV: tsm_technical_indicators.csv | 7154 rows | 20 cols | 2548 KB
+       Cols: Date, Open, High, Low, Close, Volume, SMA_10, SMA_20, SMA_50, SMA_100, SMA_200, EMA_12, EMA_26, MACD, Signal_Line, MACD_Histogram, RSI, BB_Middle, BB_Upper, BB_Lower
+       Row:  ['1997-10-09 00:00:00-04:00', '2.7948372034497058', '3.2485872707530263', '2.7948372034497058', '3.1302177906036377', '10201979', '', '', '', '']
+       Row:  ['1997-10-10 00:00:00-04:00', '3.4721736685040447', '3.4853261991247115', '3.149945637756147', '3.2748911380767822', '10669148', '', '', '', '']
+
+======================================================================
+  archive_35: D:\raw_data\kaggle\archive (35)
+======================================================================
+  JSON: .zenodo.json | dict | 1 KB
+       Keys: title, description, creators, upload_type, access_right, license, keywords, related_identifiers, version
+  CSV: regional_aggregates.csv | 2749 rows | 11 cols | 388 KB *** GEO: ['country_code', 'country_name']
+       Cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+       Row:  ['EUU', 'European Union', 'wb.NY.GDP.MKTP.CD', 'GDP (current US$)', 'world_bank', '1960', '285151593517.8653', 'USD', 'units', '2026-03-21']
+       Row:  ['EUU', 'European Union', 'wb.NY.GDP.MKTP.CD', 'GDP (current US$)', 'world_bank', '1961', '316957315284.2486', 'USD', 'units', '2026-03-21']
+  CSV: bis.csv | 4931 rows | 11 cols | 643 KB *** GEO: ['country_code', 'country_name']
+       Cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+       Row:  ['CAN', 'Canada', 'bis.PX.REX.REER', 'Real effective exchange rate index (2010', 'bis', '1964', '133.66166666666666', 'index', 'units', '2026-03-21']
+       Row:  ['CHE', 'Switzerland', 'bis.PX.REX.REER', 'Real effective exchange rate index (2010', 'bis', '1964', '62.68666666666667', 'index', 'units', '2026-03-21']
+  CSV: imf_weo.csv | 18218 rows | 11 cols | 2244 KB *** GEO: ['country_code', 'country_name']
+       Cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+       Row:  ['GBR', 'United Kingdom', 'imf.GGXWDG_NGDP', 'General government gross debt (% of GDP)', 'imf_weo', '1980', '42.517', '% of GDP', 'units', '2026-03-21']
+       Row:  ['BEL', 'Belgium', 'imf.GGXWDG_NGDP', 'General government gross debt (% of GDP)', 'imf_weo', '1980', '76.796', '% of GDP', 'units', '2026-03-21']
+  CSV: world_bank.csv | 100001 rows | 11 cols | 84755 KB *** GEO: ['country_code', 'country_name']
+       Cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+       Row:  ['DZA', 'Algeria', 'wb.NY.GDP.MKTP.CD', 'GDP (current US$)', 'world_bank', '1960', '2723615451.3009768', 'USD', 'units', '2026-03-21']
+       Row:  ['ARG', 'Argentina', 'wb.NY.GDP.MKTP.CD', 'GDP (current US$)', 'world_bank', '1960', '15865474315.405554', 'USD', 'units', '2026-03-21']
+  CSV: world_bank_wgi.csv | 29772 rows | 11 cols | 3783 KB *** GEO: ['country_code', 'country_name']
+       Cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+       Row:  ['AFG', 'Afghanistan', 'wgi.PV.EST', 'Political Stability and Absence of Viole', 'world_bank_wgi', '1996', '-2.41730952262878', 'index', 'units', '2026-03-21']
+       Row:  ['ALB', 'Albania', 'wgi.PV.EST', 'Political Stability and Absence of Viole', 'world_bank_wgi', '1996', '-0.336625128984451', 'index', 'units', '2026-03-21']
+  CSV: all_indicators.csv | 100001 rows | 11 cols | 91422 KB *** GEO: ['country_code', 'country_name']
+       Cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+       Row:  ['CAN', 'Canada', 'bis.PX.REX.REER', 'Real effective exchange rate index (2010', 'bis', '1964', '133.66166666666666', 'index', 'units', '2026-03-21']
+       Row:  ['CHE', 'Switzerland', 'bis.PX.REX.REER', 'Real effective exchange rate index (2010', 'bis', '1964', '62.68666666666667', 'index', 'units', '2026-03-21']
+  JSON: country_codes.json | dict | 69 KB
+       Keys: master_list, aggregates, unmapped
+  JSON: coverage_matrix.json | array | 24 KB
+       Keys: indicator_id, source, countries_with_data, year_min, year_max, total_cells, non_null_cells, fill_rate_pct
+  JSON: indicators.json | array | 41 KB
+       Keys: indicator_id, indicator_name, source, source_name, theme, unit, description, wb_code, source_url, db_id
+  JSON: source_metadata.json | dict | 1 KB
+       Keys: bis, imf_weo, world_bank, world_bank_wgi
+
+======================================================================
+  archive_36: D:\raw_data\kaggle\archive (36)
+======================================================================
+  CSV: monthly.csv | 2318 rows | 2 cols | 35 KB
+       Cols: Date, Price
+       Row:  ['1833-01', '18.930']
+       Row:  ['1833-02', '18.930']
+
+======================================================================
+  archive_37: D:\raw_data\kaggle\archive (37)
+======================================================================
+  CSV: enhanced_global_trends_dataset.csv | 2500 rows | 19 cols | 696 KB *** GEO: ['country', 'region']
+       Cols: id, date, source, language, country, topic_category, topic_subcategory, headline, short_text, sentiment, engagement_score, trend_score, viral_score, headline_length, short_text_length, sentiment_numeric, region, year, month
+       Row:  ['trend_00001', '2026-02-05', 'google_trends', 'hi', 'PK', 'global_events', 'climate', 'Global attention shifts towards climate ', 'Users from PK are actively discussing cl', 'negative']
+       Row:  ['trend_00002', '2026-02-16', 'social_media_stream', 'ur', 'PK', 'global_events', 'climate', 'Global attention shifts towards climate ', 'Users from PK are actively discussing cl', 'positive']
+
+======================================================================
+  archive_38: D:\raw_data\kaggle\archive (38)
+======================================================================
+  CSV: breakfast basket.csv | 10248 rows | 27 cols | 2625 KB *** GEO: ['City', 'Country', 'ISO_Country_Code', 'Region', 'Continent', 'YoY_Inflation_Estimate_Pct', 'Inflation_Source', 'Population_Estimate']
+       Cols: City, Country, ISO_Country_Code, Region, Continent, Month, Month_Name, Item, Item_Key, Item_Category, Quantity, Unit, Price_Local, Currency_Local, Price_USD, Exchange_Rate, YoY_Inflation_Estimate_Pct, Inflation_Source, FAO_Index_Value, FAO_Index_Date
+       Row:  ['New York', 'United States', 'USA', 'North America', 'North America', '2025-10', 'October 2025', 'Milk (1 Liter)', 'Milk_1L', 'Dairy']
+       Row:  ['New York', 'United States', 'USA', 'North America', 'North America', '2025-11', 'November 2025', 'Milk (1 Liter)', 'Milk_1L', 'Dairy']
+
+======================================================================
+  archive_39: D:\raw_data\kaggle\archive (39)
+======================================================================
+  CSV: iran_war_gas_prices_by_state.csv | 50 rows | 9 cols | 5 KB *** GEO: ['state', 'region', 'price_vs_national_avg']
+       Cols: state, region, gas_price_mar19_2026, gas_price_prewar_feb27, gas_price_jan08_2026, price_increase_since_war, pct_increase_since_war, price_vs_national_avg, source
+       Row:  ['California', 'West', '5.53', '4.52', '3.88', '1.01', '22.3', '1.65', 'AAA State Gas Price Averages — March 19,']
+       Row:  ['Washington', 'West', '5.15', '4.18', '3.42', '0.97', '23.2', '1.27', 'AAA State Gas Price Averages — March 19,']
+  CSV: iran_war_key_events_timeline.csv | 11 rows | 7 cols | 2 KB
+       Cols: date, event_title, description, war_day, category, brent_price_that_day, source
+       Row:  ['2026-02-28', 'War Begins', 'US-Israel launch joint airstrikes on Ira', '1', 'Conflict Start', '79.5', 'CNBC/Fortune/Reuters/Euronews/NPR/IEA ve']
+       Row:  ['2026-03-02', 'Qatar LNG Shutdown', 'Iran drone attacks on Ras Laffan force Q', '3', 'Energy Infrastructure', '87.6', 'CNBC/Fortune/Reuters/Euronews/NPR/IEA ve']
+  CSV: iran_war_oil_prices_daily_2026.csv | 24 rows | 16 cols | 7 KB *** GEO: ['us_gas_avg_gallon', 'us_diesel_avg_gallon']
+       Cols: date, brent_usd_barrel, wti_usd_barrel, dubai_usd_barrel, us_gas_avg_gallon, us_diesel_avg_gallon, strait_hormuz_daily_ships, iran_production_mbpd, key_event, war_day, brent_vs_prewar_pct, gas_vs_prewar_pct, gas_change_from_prewar_dollars, phase, source, data_as_of
+       Row:  ['2026-02-09', '67.4', '62.1', '66.8', '2.81', '3.68', '138', '3.3', 'Trump-Iran diplomatic talks described as', '-19']
+       Row:  ['2026-02-10', '69.3', '64.2', '68.4', '2.83', '3.7', '138', '3.3', 'US warns ships to avoid Iranian waters d', '-18']
+
+======================================================================
+  archive_40: D:\raw_data\kaggle\archive (40)
+======================================================================
+  CSV: ai_index_main.csv | 240 rows | 27 cols | 40 KB *** GEO: ['country', 'ai_regulation_score']
+       Cols: country, year, ai_adoption_consumer, ai_adoption_enterprise, internet_penetration, gdp_per_capita, education_index, tech_workforce_pct, cloud_infrastructure, data_availability, ai_policy_score, ai_startups_count, ai_investment_billion_usd, rd_spending_gdp_pct, ai_research_papers, stem_graduates_pct, ai_talent_rank, 5g_coverage_pct, data_center_count, gpu_availability_index
+       Row:  ['USA', '2015', '76.34', '84.36', '94.03', '75328.19', '0.95', '8.59', '86.1', '92.36']
+       Row:  ['USA', '2016', '82.53', '92.32', '88.87', '75183.82', '0.95', '18.37', '87.59', '85.02']
+
+======================================================================
+  archive_41: D:\raw_data\kaggle\archive (41)
+======================================================================
+  CSV: fuel_prices_2000_2026.csv | 315 rows | 2 cols | 8 KB
+       Cols: Date, Crude_Oil_Price
+       Row:  ['2000-01-01', '25.31']
+       Row:  ['2000-02-01', '27.22096666667']
+
+======================================================================
+  archive_42: D:\raw_data\kaggle\archive (42)
+======================================================================
+  CSV: AI_Job_Market_Trends_2026.csv | 10345 rows | 19 cols | 990 KB *** GEO: ['country']
+       Cols: job_id, job_title, company_size, company_industry, country, remote_type, experience_level, years_experience, education_level, skills_python, skills_sql, skills_ml, skills_deep_learning, skills_cloud, salary, job_posting_month, job_posting_year, hiring_urgency, job_openings
+       Row:  ['1', 'AI Engineer', 'Startup', 'Retail', 'Canada', 'Remote', 'Senior', '2', 'Master', '0']
+       Row:  ['2', 'Machine Learning Engineer', 'MNC', 'Technology', 'Australia', 'Hybrid', 'Mid', '0', 'Bachelor', '1']
+
+======================================================================
+  archive_43: D:\raw_data\kaggle\archive (43)
+======================================================================
+  CSV: MCD.csv | 6559 rows | 6 cols | 426 KB
+       Cols: Date, Close, High, Low, Open, Volume
+       Row:  ['1/3/2000', '21.04138374', '21.27370186', '20.67631242', '21.20732526', '4520600']
+       Row:  ['1/4/2000', '20.60992813', '21.00818761', '20.3776101', '20.87543445', '4216500']
+
+======================================================================
+  archive_44: D:\raw_data\kaggle\archive (44)
+======================================================================
+  CSV: richest_people_dataset.csv | 1000 rows | 29 cols | 883 KB *** GEO: ['Country', 'City', 'State', 'Country of Citizenship']
+       Cols: Rank, Name, Net Worth, Age, Country, Source, Industry, Gender, City, State, Country of Citizenship, Birth Date, Self Made, Status, Category, Other Compensation, Biography, About, Image URL, Philanthropy Score
+       Row:  ['46', 'Andrea Pignataro', '42.048102', '', '', 'Financial software', 'Finance & Investments', 'M', 'St. Moritz', '']
+       Row:  ['3367', 'Trae Stephens', '1.0', '', '', 'Defense technology', 'Technology', 'M', 'San Francisco', 'California']
+
+======================================================================
+  archive_45: D:\raw_data\kaggle\archive (45)
+======================================================================
+  CSV: nvda_earnings_history_alphaquery.csv | 45 rows | 4 cols | 2 KB
+       Cols: "AnnouncementDate", FiscalQuarterEnd, EstimatedEPS, ActualEPS
+       Row:  ['2026-02-25', '2026-01-31', '1.45', '1.57']
+       Row:  ['2025-11-19', '2025-10-31', '1.18', '1.24']
+  CSV: nvda_stock_data_clean_nasdaq.csv | 2514 rows | 6 cols | 151 KB
+       Cols: "Date", Open, High, Low, Close, Volume
+       Row:  ['03/17/2026', '185.06', '185.4', '181.6804', '181.93', '182497800']
+       Row:  ['03/16/2026', '182.97', '188.88', '181.41', '183.22', '217307400']
+  CSV: nvda_stock_data_daily_yahoo.csv | 6830 rows | 7 cols | 871 KB
+       Cols: "Date", Open, High, Low, Close, AdjClose, Volume
+       Row:  ['1999-01-22', '0.04374999925494194', '0.04882799834012985', '0.038802001625299454', '0.041016001254320145', '0.03760284557938576', '2714688000']
+       Row:  ['1999-01-25', '0.04427099972963333', '0.04583299905061722', '0.041016001254320145', '0.04531300067901611', '0.04154226928949356', '510480000']
+  CSV: nvda_stock_data_master.csv | 15485 rows | 8 cols | 1707 KB
+       Cols: "Source", Date, Open, High, Low, Close, AdjClose, Volume
+       Row:  ['YahooChartAPI', '1999-01-22', '0.04374999925494194', '0.04882799834012985', '0.038802001625299454', '0.041016001254320145', '0.03760283812880516', '2714688000']
+       Row:  ['YahooChartAPI', '1999-01-25', '0.04427099972963333', '0.04583299905061722', '0.041016001254320145', '0.04531300067901611', '0.04154227674007416', '510480000']
+  CSV: nvda_stock_data_raw_github.csv | 6141 rows | 7 cols | 373 KB
+       Cols: Date, Open, High, Low, Close, Adj Close, Volume
+       Row:  ['01/03/2000', '0.098438', '0.099219', '0.091927', '0.097526', '0.089453', '300912000']
+       Row:  ['01/04/2000', '0.095833', '0.096094', '0.090104', '0.094922', '0.087065', '300480000']
+  CSV: nvda_stock_data_raw_nasdaq.csv | 2514 rows | 6 cols | 166 KB
+       Cols: "date", close, volume, open, high, low
+       Row:  ['03/17/2026', '$181.93', '182,497,800', '$185.06', '$185.40', '$181.6804']
+       Row:  ['03/16/2026', '$183.22', '217,307,400', '$182.97', '$188.88', '$181.41']
+
+======================================================================
+  archive_47: D:\raw_data\kaggle\archive (47)
+======================================================================
+  CSV: asteroid_dataset_20251019.csv | 89227 rows | 20 cols | 16254 KB *** GEO: ['asteroid_designation', 'velocity_km_s']
+       Cols: asteroid_designation, asteroid_fullname, close_approach_date, year, month, distance_au, velocity_km_s, absolute_magnitude, days_until_approach, is_past_event, is_future_event, risk_score, panic_level, threat_category, panic_verdict, on_sentry_list, sentry_impact_prob, sentry_torino_scale, sentry_palermo_scale, sentry_diameter_km
+       Row:  ['2020 AY1', '       (2020 AY1)', '2020-01-01 00:54:00', '2020', '1', '0.0211637904862387', '5.62142224642355', '25.3', '-2119', 'True']
+       Row:  ['2019 YK', '       (2019 YK)', '2020-01-01 02:06:00', '2020', '1', '0.0361009647238789', '7.35926278450408', '24.1', '-2119', 'True']
+
+======================================================================
+  archive_48: D:\raw_data\kaggle\archive (48)
+======================================================================
+  CSV: fuel_prices_1970_2026.csv | 675 rows | 2 cols | 16 KB
+       Cols: Date, Crude_Oil_Price
+       Row:  ['1970-01-01', '1.21']
+       Row:  ['1970-02-01', '1.21']
+
+======================================================================
+  archive_49: D:\raw_data\kaggle\archive (49)
+======================================================================
+  CSV: BTC_prices.csv | 2010 rows | 1 cols | 43 KB
+       Cols: Date;Price
+       Row:  ['2020-12-08;$18337', '00']
+       Row:  ['2020-12-09;$18565', '00']
+
+======================================================================
+  archive_50: D:\raw_data\kaggle\archive (50)
+======================================================================
+  CSV: uap_reports.csv | 88875 rows | 11 cols | 14990 KB *** GEO: ['city', 'state', 'country', 'latitude', 'longitude']
+       Cols: datetime, city, state, country, shape, duration (seconds), duration (hours/min), comments, date posted, latitude, longitude
+       Row:  ['10/10/1949 20:30', 'san marcos', 'tx', 'us', 'cylinder', '2700', '45 minutes', 'This event took place in early fall arou', '4/27/2004', '29.8830556']
+       Row:  ['10/10/1949 21:00', 'lackland afb', 'tx', '', 'light', '7200', '1-2 hrs', '1949 Lackland AFB&#44 TX.  Lights racing', '12/16/2005', '29.38421']
+
+======================================================================
+  irankeyevents: D:\raw_data\kaggle\irankeyevents
+======================================================================
+  CSV: iran_war_gas_prices_by_state.csv | 50 rows | 9 cols | 5 KB *** GEO: ['state', 'region', 'price_vs_national_avg']
+       Cols: state, region, gas_price_mar19_2026, gas_price_prewar_feb27, gas_price_jan08_2026, price_increase_since_war, pct_increase_since_war, price_vs_national_avg, source
+       Row:  ['California', 'West', '5.53', '4.52', '3.88', '1.01', '22.3', '1.65', 'AAA State Gas Price Averages — March 19,']
+       Row:  ['Washington', 'West', '5.15', '4.18', '3.42', '0.97', '23.2', '1.27', 'AAA State Gas Price Averages — March 19,']
+  CSV: iran_war_key_events_timeline.csv | 11 rows | 7 cols | 2 KB
+       Cols: date, event_title, description, war_day, category, brent_price_that_day, source
+       Row:  ['2026-02-28', 'War Begins', 'US-Israel launch joint airstrikes on Ira', '1', 'Conflict Start', '79.5', 'CNBC/Fortune/Reuters/Euronews/NPR/IEA ve']
+       Row:  ['2026-03-02', 'Qatar LNG Shutdown', 'Iran drone attacks on Ras Laffan force Q', '3', 'Energy Infrastructure', '87.6', 'CNBC/Fortune/Reuters/Euronews/NPR/IEA ve']
+  CSV: iran_war_oil_prices_daily_2026.csv | 24 rows | 16 cols | 7 KB *** GEO: ['us_gas_avg_gallon', 'us_diesel_avg_gallon']
+       Cols: date, brent_usd_barrel, wti_usd_barrel, dubai_usd_barrel, us_gas_avg_gallon, us_diesel_avg_gallon, strait_hormuz_daily_ships, iran_production_mbpd, key_event, war_day, brent_vs_prewar_pct, gas_vs_prewar_pct, gas_change_from_prewar_dollars, phase, source, data_as_of
+       Row:  ['2026-02-09', '67.4', '62.1', '66.8', '2.81', '3.68', '138', '3.3', 'Trump-Iran diplomatic talks described as', '-19']
+       Row:  ['2026-02-10', '69.3', '64.2', '68.4', '2.83', '3.7', '138', '3.3', 'US warns ships to avoid Iranian waters d', '-18']
+
+======================================================================
+  iranwar: D:\raw_data\kaggle\iranwar
+======================================================================
+  CSV: data_dictionary.csv | 138 rows | 4 cols | 13 KB
+       Cols: column_name, data_type, nullable, description
+       Row:  ['wave_uid', 'string', 'no', 'Unique wave identifier for cross-layer j']
+       Row:  ['operation', 'string', 'no', 'Operation identifier: tp1 (Apr 2024), tp']
+  CSV: incidents.csv | 79 rows | 103 cols | 138 KB *** GEO: ['landings_countries_iso', 'targeted_eilat', 'target_lat', 'target_lon', 'target_generic_location', 'launch_site_lat', 'launch_site_lon', 'launch_site_generic_location', 'cumulative_total', 'new_country_targeted', 'idf_statement']
+       Cols: wave_uid, operation, wave_number, wave_codename_farsi, wave_codename_english, announced_utc, announcement_source, probable_launch_time, launch_time_israel, launch_time_iran, solar_phase_launch_site, solar_phase_target, conflict_day, hours_since_last_incident, time_between_incidents_minutes, incident_duration_minutes, payload, drones_used, ballistic_missiles_used, cruise_missiles_used
+       Row:  ['tp1_w01', 'tp1', '1', '', 'Drone/Cruise Missile Wave', '2024-04-13T19:00:00Z', 'IRGC', '2024-04-13T19:00:00Z', '2024-04-13T22:00:00+0300', '2024-04-13T22:30:00+0330']
+       Row:  ['tp1_w02', 'tp1', '2', '', 'Ballistic Missile Wave', '', '', '2024-04-13T23:00:00Z', '2024-04-14T02:00:00+0300', '2024-04-14T02:30:00+0330']
+  CSV: international_reactions.csv | 210 rows | 34 cols | 57 KB *** GEO: ['iso_3166_1_alpha2', 'eu_member_state', 'hos_statement_made', 'hos_statement_text', 'hos_statement_url', 'hog_statement_made', 'hog_statement_text', 'hog_statement_url', 'fm_statement_made', 'fm_statement_text', 'fm_statement_url', 'additional_statements_count', 'additional_statements_json']
+       Cols: operation, iso_3166_1_alpha2, entity_name, entity_type, eu_member_state, combatant, overall_stance, hos_statement_made, hos_date, hos_speaker, hos_speaker_title, hos_summary, hos_statement_text, hos_statement_url, hos_category, hog_statement_made, hog_date, hog_speaker, hog_speaker_title, hog_summary
+       Row:  ['tp4', 'AF', 'Afghanistan', 'state', 'False', 'False', 'neutral_acknowledgement', 'False', '', '']
+       Row:  ['tp4', 'AL', 'Albania', 'state', 'False', 'False', 'condemns_iran', 'False', '', '']
+  CSV: waves.csv | 64 rows | 103 cols | 106 KB *** GEO: ['landings_countries_iso', 'targeted_eilat', 'target_lat', 'target_lon', 'target_generic_location', 'launch_site_lat', 'launch_site_lon', 'launch_site_generic_location', 'cumulative_total', 'new_country_targeted', 'idf_statement']
+       Cols: wave_uid, operation, wave_number, wave_codename_farsi, wave_codename_english, announced_utc, announcement_source, probable_launch_time, launch_time_israel, launch_time_iran, solar_phase_launch_site, solar_phase_target, conflict_day, hours_since_last_wave, time_between_waves_minutes, wave_duration_minutes, payload, drones_used, ballistic_missiles_used, cruise_missiles_used
+       Row:  ['tp1_w01', 'tp1', '1', '', 'Drone/Cruise Missile Wave', '2024-04-13T19:00:00Z', 'IRGC', '2024-04-13T19:00:00Z', '2024-04-13T22:00:00+0300', '2024-04-13T22:30:00+0330']
+       Row:  ['tp1_w02', 'tp1', '2', '', 'Ballistic Missile Wave', '', '', '2024-04-13T23:00:00Z', '2024-04-14T02:00:00+0300', '2024-04-14T02:30:00+0330']
+
+======================================================================
+  mentalburnout: D:\raw_data\kaggle\mentalburnout
+======================================================================
+  CSV: student_mental_health_burnout.csv | 100001 rows | 20 cols | 12246 KB
+       Cols: student_id, age, gender, course, year, daily_study_hours, daily_sleep_hours, screen_time_hours, stress_level, anxiety_score, depression_score, academic_pressure_score, financial_stress_score, social_support_score, physical_activity_hours, sleep_quality, attendance_percentage, cgpa, internet_quality, burnout_level
+       Row:  ['100001', '23', 'Male', 'BTech', '1st', '4.3', '6.8', '6.1', 'High', '10']
+       Row:  ['100002', '20', 'Male', 'BTech', '3rd', '1.4', '4.7', '3.0', 'High', '2']
+
+======================================================================
+  pop: D:\raw_data\kaggle\pop
+======================================================================
+  CSV: popolazione-globale-per-paese-1950-2024.csv | 14925 rows | 4 cols | 400 KB *** GEO: ['country', 'iso_code', 'population']
+       Cols: country, year, iso_code, population
+       Row:  ['Afghanistan', '1950', 'AFG', '7776180']
+       Row:  ['Afghanistan', '1951', 'AFG', '7879343']
+
+======================================================================
+  spotify: D:\raw_data\kaggle\spotify
+======================================================================
+  CSV: spotify_alltime_top100_songs.csv | 100 rows | 14 cols | 12 KB *** GEO: ['artist_country']
+       Cols: alltime_rank, song_title, artist, total_streams_billions, primary_genre, bpm, release_year, artist_country, explicit, danceability, energy, valence, acousticness, dataset_part
+       Row:  ['1', 'Blinding Lights', 'The Weeknd', '5.26', 'Synth-Pop', '171', '2019', 'Canada', 'False', '0.51']
+       Row:  ['2', 'Shape of You', 'Ed Sheeran', '4.9', 'Pop/Dancehall', '96', '2017', 'UK', 'False', '0.83']
+  CSV: spotify_wrapped_2025_top50_artists.csv | 50 rows | 11 cols | 5 KB *** GEO: ['country']
+       Cols: wrapped_2025_rank, artist_name, monthly_listeners_millions_mar2026, primary_genre, country, followers_millions, grammy_wins, debut_year, gender, top_2025_song, dataset_part
+       Row:  ['1', 'The Weeknd', '110.4', 'R&B/Pop', 'Canada', '112', '4', '2010', 'Male', 'Die With A Smile']
+       Row:  ['2', 'Taylor Swift', '107.5', 'Pop/Country', 'USA', '110', '14', '2006', 'Female', 'Fortnight']
+  CSV: spotify_wrapped_2025_top50_songs.csv | 50 rows | 16 cols | 7 KB *** GEO: ['artist_country']
+       Cols: wrapped_2025_rank, song_title, artist, streams_2025_billions, primary_genre, bpm, duration_seconds, release_year, artist_country, explicit, danceability, energy, valence, acousticness, peak_global_chart_position, dataset_part
+       Row:  ['1', 'Die With A Smile', 'Lady Gaga & Bruno Mars', '1.7', 'Pop', '120', '251', '2024', 'USA', 'False']
+       Row:  ['2', 'APT.', 'ROSE & Bruno Mars', '1.62', 'K-Pop/Pop', '145', '173', '2024', 'South Korea', 'False']
+
+======================================================================
+  steam: D:\raw_data\kaggle\steam
+======================================================================
+  CSV: steam_games_2026.csv | 1000 rows | 12 cols | 176 KB
+       Cols: AppID, Name, Release_Date, Primary_Genre, All_Tags, Price_USD, Discount_Pct, Review_Score_Pct, Total_Reviews, Steam_Deck_Status, Estimated_Owners, 24h_Peak_Players
+       Row:  ['730', 'Counter-Strike 2', '2012-08-21', 'Action', 'FPS;Shooter;Multiplayer;Competitive;Acti', '0.0', '0', '83', '4980365', 'Unknown']
+       Row:  ['2868840', 'Slay the Spire 2', '2026-03-05', 'Indie', 'Strategy;Roguelike;Card Game;Deckbuildin', '24.99', '0', '97', '49549', 'Unknown']
+
+======================================================================
+  worldmap: D:\raw_data\kaggle\worldmap
+======================================================================
+  GEO FILE: World_Map.dbf | 12 KB
+  GEO FILE: World_Map.shp | 5937 KB
+
+
+======================================================================
+  SUMMARY
+======================================================================
+Total datasets profiled: 24
+Total data files found: 65
+  FBRESULTS26: 4 files, ~97,327 rows
+  archive_34: 14 files, ~38,784 rows
+  archive_35: 11 files, ~255,672 rows
+  archive_36: 1 files, ~2,318 rows
+  archive_37: 1 files, ~2,500 rows
+  archive_38: 1 files, ~10,248 rows
+  archive_39: 3 files, ~85 rows
+  archive_40: 1 files, ~240 rows
+  archive_41: 1 files, ~315 rows
+  archive_42: 1 files, ~10,345 rows
+  archive_43: 1 files, ~6,559 rows
+  archive_44: 1 files, ~1,000 rows
+  archive_45: 6 files, ~33,529 rows
+  archive_47: 1 files, ~89,227 rows
+  archive_48: 1 files, ~675 rows
+  archive_49: 1 files, ~2,010 rows
+  archive_50: 1 files, ~88,875 rows
+  irankeyevents: 3 files, ~85 rows
+  iranwar: 4 files, ~491 rows
+  mentalburnout: 1 files, ~100,001 rows
+  pop: 1 files, ~14,925 rows
+  spotify: 3 files, ~200 rows
+  steam: 1 files, ~1,000 rows
+  worldmap: 2 files, ~0 rows
+
+======================================================================
+  GEO-RICH DATASETS (have geographic columns)
+======================================================================
+  [FBRESULTS26] results.csv | geo_cols=['city', 'country'] | 49,071 rows
+    all_cols: date, home_team, away_team, home_score, away_score, tournament, city, country, neutral
+  [archive_34] tsm_company_info.csv | geo_cols=['address1', 'address2', 'city', 'zip', 'country', 'longBusinessSummary', 'region', 'esgPopulated', 'marketState', 'longName'] | 1 rows
+    all_cols: address1, address2, city, zip, country, phone, fax, website, industry, industryKey, industryDisp, sector, sectorKey, sectorDisp, longBusinessSummary, fullTimeEmployees, companyOfficers, compensationAsOfEpochDate, irWebsite, executiveTeam, maxAge, priceHint, previousClose, open, dayLow
+  [archive_34] tsm_kaggle_full_dataset.csv | geo_cols=['address1', 'address2', 'city', 'country', 'esgPopulated', 'longBusinessSummary', 'longName', 'marketState', 'region', 'statement_type', 'Volatility', 'Volatility %', 'Volatility (Std Dev)', 'zip'] | 8,240 rows
+    all_cols: "source_scope", source_file, source_row_number, 2021-12-31, 2022-12-31, 2023-12-31, 2024-06-30, 2024-09-30, 2024-12-31, 2025-03-31, 2025-06-30, 2025-09-30, 2025-12-31, 52 Week High, 52 Week Low, 52WeekChange, address1, address2, allTimeHigh, allTimeLow, Amount, Annual Return %, ask, askSize, Average
+  [archive_34] tsm_quarterly_financials.csv | geo_cols=['statement_type'] | 1,440 rows
+    all_cols: statement_type, line_item, period, value
+  [archive_35] regional_aggregates.csv | geo_cols=['country_code', 'country_name'] | 2,749 rows
+    all_cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+  [archive_35] bis.csv | geo_cols=['country_code', 'country_name'] | 4,931 rows
+    all_cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+  [archive_35] imf_weo.csv | geo_cols=['country_code', 'country_name'] | 18,218 rows
+    all_cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+  [archive_35] world_bank.csv | geo_cols=['country_code', 'country_name'] | 100,001 rows
+    all_cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+  [archive_35] world_bank_wgi.csv | geo_cols=['country_code', 'country_name'] | 29,772 rows
+    all_cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+  [archive_35] all_indicators.csv | geo_cols=['country_code', 'country_name'] | 100,001 rows
+    all_cols: country_code, country_name, indicator_id, indicator_name, source, year, value, unit, scale, last_updated, is_estimate
+  [archive_37] enhanced_global_trends_dataset.csv | geo_cols=['country', 'region'] | 2,500 rows
+    all_cols: id, date, source, language, country, topic_category, topic_subcategory, headline, short_text, sentiment, engagement_score, trend_score, viral_score, headline_length, short_text_length, sentiment_numeric, region, year, month
+  [archive_38] breakfast basket.csv | geo_cols=['City', 'Country', 'ISO_Country_Code', 'Region', 'Continent', 'YoY_Inflation_Estimate_Pct', 'Inflation_Source', 'Population_Estimate'] | 10,248 rows
+    all_cols: City, Country, ISO_Country_Code, Region, Continent, Month, Month_Name, Item, Item_Key, Item_Category, Quantity, Unit, Price_Local, Currency_Local, Price_USD, Exchange_Rate, YoY_Inflation_Estimate_Pct, Inflation_Source, FAO_Index_Value, FAO_Index_Date, FAO_YoY_Change_Pct, USDA_All_Food_Forecast_Pct, USDA_Food_At_Home_Pct, Data_Collection_Date, Source_URL
+  [archive_39] iran_war_gas_prices_by_state.csv | geo_cols=['state', 'region', 'price_vs_national_avg'] | 50 rows
+    all_cols: state, region, gas_price_mar19_2026, gas_price_prewar_feb27, gas_price_jan08_2026, price_increase_since_war, pct_increase_since_war, price_vs_national_avg, source
+  [archive_39] iran_war_oil_prices_daily_2026.csv | geo_cols=['us_gas_avg_gallon', 'us_diesel_avg_gallon'] | 24 rows
+    all_cols: date, brent_usd_barrel, wti_usd_barrel, dubai_usd_barrel, us_gas_avg_gallon, us_diesel_avg_gallon, strait_hormuz_daily_ships, iran_production_mbpd, key_event, war_day, brent_vs_prewar_pct, gas_vs_prewar_pct, gas_change_from_prewar_dollars, phase, source, data_as_of
+  [archive_40] ai_index_main.csv | geo_cols=['country', 'ai_regulation_score'] | 240 rows
+    all_cols: country, year, ai_adoption_consumer, ai_adoption_enterprise, internet_penetration, gdp_per_capita, education_index, tech_workforce_pct, cloud_infrastructure, data_availability, ai_policy_score, ai_startups_count, ai_investment_billion_usd, rd_spending_gdp_pct, ai_research_papers, stem_graduates_pct, ai_talent_rank, 5g_coverage_pct, data_center_count, gpu_availability_index, ai_regulation_score, government_ai_spending, adoption_gap, ai_readiness_score, ai_index_score
+  [archive_42] AI_Job_Market_Trends_2026.csv | geo_cols=['country'] | 10,345 rows
+    all_cols: job_id, job_title, company_size, company_industry, country, remote_type, experience_level, years_experience, education_level, skills_python, skills_sql, skills_ml, skills_deep_learning, skills_cloud, salary, job_posting_month, job_posting_year, hiring_urgency, job_openings
+  [archive_44] richest_people_dataset.csv | geo_cols=['Country', 'City', 'State', 'Country of Citizenship'] | 1,000 rows
+    all_cols: Rank, Name, Net Worth, Age, Country, Source, Industry, Gender, City, State, Country of Citizenship, Birth Date, Self Made, Status, Category, Other Compensation, Biography, About, Image URL, Philanthropy Score, Self Made Score, Title, Organization, Marital Status, Children
+  [archive_47] asteroid_dataset_20251019.csv | geo_cols=['asteroid_designation', 'velocity_km_s'] | 89,227 rows
+    all_cols: asteroid_designation, asteroid_fullname, close_approach_date, year, month, distance_au, velocity_km_s, absolute_magnitude, days_until_approach, is_past_event, is_future_event, risk_score, panic_level, threat_category, panic_verdict, on_sentry_list, sentry_impact_prob, sentry_torino_scale, sentry_palermo_scale, sentry_diameter_km
+  [archive_50] uap_reports.csv | geo_cols=['city', 'state', 'country', 'latitude', 'longitude'] | 88,875 rows
+    all_cols: datetime, city, state, country, shape, duration (seconds), duration (hours/min), comments, date posted, latitude, longitude
+  [irankeyevents] iran_war_gas_prices_by_state.csv | geo_cols=['state', 'region', 'price_vs_national_avg'] | 50 rows
+    all_cols: state, region, gas_price_mar19_2026, gas_price_prewar_feb27, gas_price_jan08_2026, price_increase_since_war, pct_increase_since_war, price_vs_national_avg, source
+  [irankeyevents] iran_war_oil_prices_daily_2026.csv | geo_cols=['us_gas_avg_gallon', 'us_diesel_avg_gallon'] | 24 rows
+    all_cols: date, brent_usd_barrel, wti_usd_barrel, dubai_usd_barrel, us_gas_avg_gallon, us_diesel_avg_gallon, strait_hormuz_daily_ships, iran_production_mbpd, key_event, war_day, brent_vs_prewar_pct, gas_vs_prewar_pct, gas_change_from_prewar_dollars, phase, source, data_as_of
+  [iranwar] incidents.csv | geo_cols=['landings_countries_iso', 'targeted_eilat', 'target_lat', 'target_lon', 'target_generic_location', 'launch_site_lat', 'launch_site_lon', 'launch_site_generic_location', 'cumulative_total', 'new_country_targeted', 'idf_statement'] | 79 rows
+    all_cols: wave_uid, operation, wave_number, wave_codename_farsi, wave_codename_english, announced_utc, announcement_source, probable_launch_time, launch_time_israel, launch_time_iran, solar_phase_launch_site, solar_phase_target, conflict_day, hours_since_last_incident, time_between_incidents_minutes, incident_duration_minutes, payload, drones_used, ballistic_missiles_used, cruise_missiles_used, emad_used, ghadr_used, sejjil_used, kheibar_shekan_used, fattah_used
+  [iranwar] international_reactions.csv | geo_cols=['iso_3166_1_alpha2', 'eu_member_state', 'hos_statement_made', 'hos_statement_text', 'hos_statement_url', 'hog_statement_made', 'hog_statement_text', 'hog_statement_url', 'fm_statement_made', 'fm_statement_text', 'fm_statement_url', 'additional_statements_count', 'additional_statements_json'] | 210 rows
+    all_cols: operation, iso_3166_1_alpha2, entity_name, entity_type, eu_member_state, combatant, overall_stance, hos_statement_made, hos_date, hos_speaker, hos_speaker_title, hos_summary, hos_statement_text, hos_statement_url, hos_category, hog_statement_made, hog_date, hog_speaker, hog_speaker_title, hog_summary, hog_statement_text, hog_statement_url, hog_category, fm_statement_made, fm_date
+  [iranwar] waves.csv | geo_cols=['landings_countries_iso', 'targeted_eilat', 'target_lat', 'target_lon', 'target_generic_location', 'launch_site_lat', 'launch_site_lon', 'launch_site_generic_location', 'cumulative_total', 'new_country_targeted', 'idf_statement'] | 64 rows
+    all_cols: wave_uid, operation, wave_number, wave_codename_farsi, wave_codename_english, announced_utc, announcement_source, probable_launch_time, launch_time_israel, launch_time_iran, solar_phase_launch_site, solar_phase_target, conflict_day, hours_since_last_wave, time_between_waves_minutes, wave_duration_minutes, payload, drones_used, ballistic_missiles_used, cruise_missiles_used, emad_used, ghadr_used, sejjil_used, kheibar_shekan_used, fattah_used
+  [pop] popolazione-globale-per-paese-1950-2024.csv | geo_cols=['country', 'iso_code', 'population'] | 14,925 rows
+    all_cols: country, year, iso_code, population
+  [spotify] spotify_alltime_top100_songs.csv | geo_cols=['artist_country'] | 100 rows
+    all_cols: alltime_rank, song_title, artist, total_streams_billions, primary_genre, bpm, release_year, artist_country, explicit, danceability, energy, valence, acousticness, dataset_part
+  [spotify] spotify_wrapped_2025_top50_artists.csv | geo_cols=['country'] | 50 rows
+    all_cols: wrapped_2025_rank, artist_name, monthly_listeners_millions_mar2026, primary_genre, country, followers_millions, grammy_wins, debut_year, gender, top_2025_song, dataset_part
+  [spotify] spotify_wrapped_2025_top50_songs.csv | geo_cols=['artist_country'] | 50 rows
+    all_cols: wrapped_2025_rank, song_title, artist, streams_2025_billions, primary_genre, bpm, duration_seconds, release_year, artist_country, explicit, danceability, energy, valence, acousticness, peak_global_chart_position, dataset_part
+  [worldmap] World_Map.dbf | geo_cols=['NATIVE_GEO'] | 0 rows
+    all_cols: 
+  [worldmap] World_Map.shp | geo_cols=['NATIVE_GEO'] | 0 rows
+    all_cols: 
+
+Total geo-rich files: 30

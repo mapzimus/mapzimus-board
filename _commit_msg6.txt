@@ -1,0 +1,10 @@
+Overnight batch round 6: 70 more ideas (4392 to 4462)
+
+Themes: "What $100 Buys You" series, argument-starting maps, quiz maps,
+perspective/cartogram maps, generational breakdowns, country deep dives
+(Japan, India, China, Brazil), nuclear detonation/tornado/wildfire dot maps,
+iPhone affordability, dialect/culture maps, infrastructure maps, happiness
+vs freedom cross-refs, AI vs unemployment, music vs population.
+
+Batches: HAL(35) + HAM(35) = 70 ideas
+Total: 4462 validated ideas | All JS-parseable | 0 dupes

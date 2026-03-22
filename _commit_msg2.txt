@@ -1,0 +1,27 @@
+Overnight batch round 2: 225 new ideas from deep data mining (3887 -> 4112)
+
+Sources mined:
+- TSMC financials (stock, dividends, income, technicals)
+- Global breakfast basket prices (50+ cities)
+- AI adoption index (15 indicators per country)
+- AI job market 2026 (salaries, skills, remote work)
+- Richest people dataset (billionaires by city/industry)
+- Asteroid close approaches (risk scores, threat categories)
+- UFO/UAP civilian reports (80+ years, lat/lon, shapes)
+- Spotify top 100 all-time (BPM, danceability, energy)
+- Steam games 2026 (reviews, genres, pricing)
+- Iran war timeline + gas prices by state
+- Fuel prices 1970-2026 (crude oil history)
+- Student mental health burnout survey
+- BTC prices, NVIDIA stock, McDonalds stock, gold since 1833
+- US Religion Census (adherents, congregations by state)
+- CPI-U historical + PPI commodity weights
+- Sage Data (arrests, NAEP scores, income, vehicles, marijuana use, employment by NAICS)
+- HSUS population (slave pop, rural/urban, Hispanic, nativity, sex ratio, migration)
+- World Bank WGI (corruption, governance, regulatory quality)
+- IMF WEO (debt, revenue, net lending by country)
+- Global trends dataset (sentiment, engagement, viral scores)
+- HistorySaid global economic dataset (GDP, GNI, agriculture, industry)
+
+Batches: GX(40) + GY(35) + GZ(40) + HAA(35) + HAB(40) + HAC(35) = 225 ideas
+Cross-references: AI×economy, breakfast×GDP, UFO×military, religion×drugs, gas×elections, Bitcoin×gold, and 20+ more combos

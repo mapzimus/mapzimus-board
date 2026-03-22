@@ -1,0 +1,441 @@
+EXISTING IDEAS: 2790
+
+=== FIVETHIRTYEIGHT ===
+
+[US_births_1994-2003_CDC_NCHS.csv]
+  3652 rows x 5 cols
+  cols: ['year', 'month', 'date_of_month', 'day_of_week', 'births']
+    year: 1994.0-2003.0 (mean 1998.5)
+    month: 1.0-12.0 (mean 6.5)
+    date_of_month: 1.0-31.0 (mean 15.7)
+    day_of_week: 1.0-7.0 (mean 4.0)
+
+[US_births_2000-2014_SSA.csv]
+  5479 rows x 5 cols
+  cols: ['year', 'month', 'date_of_month', 'day_of_week', 'births']
+    year: 2000.0-2014.0 (mean 2007.0)
+    month: 1.0-12.0 (mean 6.5)
+    date_of_month: 1.0-31.0 (mean 15.7)
+    day_of_week: 1.0-7.0 (mean 4.0)
+
+[actions_under_antiquities_act.csv]
+  344 rows x 9 cols
+  cols: ['current_name', 'states', 'original_name', 'current_agency', 'action', 'date', 'year', 'pres_or_congress', 'acres_affected']
+    year: 1906.0-2017.0 (mean 1957.8)
+
+[ahca_polls.csv]
+  15 rows x 7 cols
+  cols: ['Start', 'End', 'Pollster', 'Favor', 'Oppose', 'Url', 'Text']
+    Favor: 17.0-38.0 (mean 28.3)
+    Oppose: 44.0-62.0 (mean 50.7)
+
+[airline-safety.csv]
+  56 rows x 8 cols
+  cols: ['airline', 'avail_seat_km_per_week', 'incidents_85_99', 'fatal_accidents_85_99', 'fatalities_85_99', 'incidents_00_14', 'fatal_accidents_00_14', 'fatalities_00_14']
+    avail_seat_km_per_week: 259373346.0-7139291291.0 (mean 1384621304.7)
+    incidents_85_99: 0.0-76.0 (mean 7.2)
+    fatal_accidents_85_99: 0.0-14.0 (mean 2.2)
+    fatalities_85_99: 0.0-535.0 (mean 112.4)
+
+[all-ages.csv]
+  173 rows x 11 cols
+  cols: ['Major_code', 'Major', 'Major_category', 'Total', 'Employed', 'Employed_full_time_year_round', 'Unemployed', 'Unemployment_rate', 'Median', 'P25th']
+    Major_code: 1100.0-6403.0 (mean 3879.8)
+    Total: 2396.0-3123510.0 (mean 230256.6)
+    Employed: 1492.0-2354398.0 (mean 166162.0)
+    Employed_full_time_year_round: 1093.0-1939384.0 (mean 126307.8)
+
+[august_senate_polls.csv]
+  594 rows x 11 cols
+  cols: ['cycle', 'state', 'senate_class', 'start_date', 'end_date', 'DEM_poll', 'REP_poll', 'DEM_result', 'REP_result', 'error']
+    cycle: 1990.0-2016.0 (mean 2006.9)
+    senate_class: 1.0-3.0 (mean 2.1)
+    DEM_poll: 12.0-76.0 (mean 43.3)
+    REP_poll: 11.0-69.0 (mean 42.6)
+
+[bad-drivers.csv]
+  51 rows x 8 cols
+  cols: ['State', 'Number of drivers involved in fatal collisions per billion miles', 'Percentage Of Drivers Involved In Fatal Collisions Who Were Speeding', 'Percentage Of Drivers Involved In Fatal Collisions Who Were Alcohol-Impaired', 'Percentage Of Drivers Involved In Fatal Collisions Who Were Not Distracted', 'Percentage Of Drivers Involved In Fatal Collisions Who Had Not Been Involved In Any Previous Accidents', 'Car Insurance Premiums ($)', 'Losses incurred by insurance companies for collisions per insured driver ($)']
+    Number of drivers involved in fatal collisions per billion miles: 5.9-23.9 (mean 15.8)
+    Percentage Of Drivers Involved In Fatal Collisions Who Were Speeding: 13.0-54.0 (mean 31.7)
+    Percentage Of Drivers Involved In Fatal Collisions Who Were Alcohol-Impaired: 16.0-44.0 (mean 30.7)
+    Percentage Of Drivers Involved In Fatal Collisions Who Were Not Distracted: 10.0-100.0 (mean 85.9)
+
+[biopics.csv]
+  761 rows x 14 cols
+  cols: ['title', 'site', 'country', 'year_release', 'box_office', 'director', 'number_of_subjects', 'subject', 'type_of_subject', 'race_known']
+    year_release: 1915.0-2014.0 (mean 1986.9)
+    number_of_subjects: 1.0-4.0 (mean 1.3)
+    person_of_color: 0.0-1.0 (mean 0.1)
+
+[both_sexes.csv]
+  17 rows x 75 cols
+  cols: ['Unnamed: 0', 'year', 'date', 'all_2534', 'HS_2534', 'SC_2534', 'BAp_2534', 'BAo_2534', 'GD_2534', 'White_2534']
+    Unnamed: 0: 1.0-17.0 (mean 9.0)
+    year: 1960.0-2012.0 (mean 1998.7)
+    all_2534: 0.1-0.5 (mean 0.4)
+    HS_2534: 0.1-0.5 (mean 0.4)
+
+[cabinet-turnover.csv]
+  379 rows x 10 cols
+  cols: ['president', 'position', 'appointee', 'start_date', 'end_date', 'length', 'departure_day', 'gender', 'Unnamed: 8', 'Unnamed: 9']
+    departure_day: 137.0-3013.0 (mean 1799.3)
+    Unnamed: 8: nan-nan (mean nan)
+    Unnamed: 9: nan-nan (mean nan)
+
+[candidate_visits_2024-01-11.csv]
+  1649 rows x 7 cols
+  cols: ['Candidate name', 'Date', 'City', 'State', 'Primary purpose', 'Host organization', 'Notes']
+
+[candy-data.csv]
+  85 rows x 13 cols
+  cols: ['competitorname', 'chocolate', 'fruity', 'caramel', 'peanutyalmondy', 'nougat', 'crispedricewafer', 'hard', 'bar', 'pluribus']
+    chocolate: 0.0-1.0 (mean 0.4)
+    fruity: 0.0-1.0 (mean 0.4)
+    caramel: 0.0-1.0 (mean 0.2)
+    peanutyalmondy: 0.0-1.0 (mean 0.2)
+
+[classic-rock-song-list.csv]
+  2229 rows x 8 cols
+  cols: ['Song Clean', 'ARTIST CLEAN', 'Release Year', 'COMBINED', 'First?', 'Year?', 'PlayCount', 'F*G']
+    First?: 1.0-1.0 (mean 1.0)
+    Year?: 0.0-1.0 (mean 0.7)
+    PlayCount: 0.0-142.0 (mean 16.9)
+    F*G: 0.0-142.0 (mean 15.1)
+
+[cousin-marriage-data.csv]
+  70 rows x 2 cols
+  cols: ['Country', 'Percent']
+    Percent: 0.1-65.8 (mean 16.3)
+
+[divorce.csv]
+  17 rows x 21 cols
+  cols: ['Unnamed: 0', 'year', 'date', 'all_3544', 'HS_3544', 'SC_3544', 'BAp_3544', 'BAo_3544', 'GD_3544', 'poor_3544']
+    Unnamed: 0: 1.0-17.0 (mean 9.0)
+    year: 1960.0-2012.0 (mean 1998.7)
+    all_3544: 0.0-0.2 (mean 0.1)
+    HS_3544: 0.0-0.2 (mean 0.2)
+
+[drinks.csv]
+  193 rows x 5 cols
+  cols: ['country', 'beer_servings', 'spirit_servings', 'wine_servings', 'total_litres_of_pure_alcohol']
+    beer_servings: 0.0-376.0 (mean 106.2)
+    spirit_servings: 0.0-438.0 (mean 81.0)
+    wine_servings: 0.0-370.0 (mean 49.5)
+    total_litres_of_pure_alcohol: 0.0-14.4 (mean 4.7)
+
+[drug-use-by-age.csv]
+  17 rows x 28 cols
+  cols: ['age', 'n', 'alcohol_use', 'alcohol_frequency', 'marijuana_use', 'marijuana_frequency', 'cocaine_use', 'cocaine_frequency', 'crack_use', 'crack_frequency']
+    n: 2223.0-7391.0 (mean 3251.1)
+    alcohol_use: 3.9-84.2 (mean 55.4)
+    alcohol_frequency: 3.0-52.0 (mean 33.4)
+    marijuana_use: 1.1-34.0 (mean 18.9)
+
+[fifa_countries_audience.csv]
+  191 rows x 5 cols
+  cols: ['country', 'confederation', 'population_share', 'tv_audience_share', 'gdp_weighted_share']
+    population_share: 0.0-19.5 (mean 0.5)
+    tv_audience_share: 0.0-14.8 (mean 0.5)
+    gdp_weighted_share: 0.0-11.3 (mean 0.5)
+
+[fivethirtyeight_election_deniers.csv]
+  552 rows x 9 cols
+  cols: ['Candidate', 'Incumbent', 'State', 'Office', 'District', 'Stance', 'Source', 'URL', 'Note']
+
+[foul-balls.csv]
+  906 rows x 7 cols
+  cols: ['matchup', 'game_date', 'type_of_hit', 'exit_velocity', 'predicted_zone', 'camera_zone', 'used_zone']
+    exit_velocity: 25.4-110.6 (mean 76.4)
+    predicted_zone: 1.0-7.0 (mean 3.0)
+    camera_zone: 1.0-7.0 (mean 2.4)
+    used_zone: 1.0-7.0 (mean 3.1)
+
+[grad-students.csv]
+  173 rows x 22 cols
+  cols: ['Major_code', 'Major', 'Major_category', 'Grad_total', 'Grad_sample_size', 'Grad_employed', 'Grad_full_time_year_round', 'Grad_unemployed', 'Grad_unemployment_rate', 'Grad_median']
+    Major_code: 1100.0-6403.0 (mean 3879.8)
+    Grad_total: 1542.0-1184158.0 (mean 127672.0)
+    Grad_sample_size: 22.0-21994.0 (mean 2250.9)
+    Grad_employed: 1008.0-915341.0 (mean 94037.0)
+
+[hate_crimes.csv]
+  51 rows x 12 cols
+  cols: ['state', 'median_household_income', 'share_unemployed_seasonal', 'share_population_in_metro_areas', 'share_population_with_high_school_degree', 'share_non_citizen', 'share_white_poverty', 'gini_index', 'share_non_white', 'share_voters_voted_trump']
+    median_household_income: 35521.0-76165.0 (mean 55223.6)
+    share_unemployed_seasonal: 0.0-0.1 (mean 0.0)
+    share_population_in_metro_areas: 0.3-1.0 (mean 0.8)
+    share_population_with_high_school_degree: 0.8-0.9 (mean 0.9)
+
+[majors-list.csv]
+  174 rows x 3 cols
+  cols: ['FOD1P', 'Major', 'Major_Category']
+
+[mmsa-icu-beds.csv]
+  136 rows x 7 cols
+  cols: ['MMSA', 'total_percent_at_risk', 'high_risk_per_ICU_bed', 'high_risk_per_hospital', 'icu_beds', 'hospitals', 'total_at_risk']
+    high_risk_per_ICU_bed: 413.7-4489.8 (mean 1947.4)
+    high_risk_per_hospital: 6770.2-91771.3 (mean 43787.1)
+    icu_beds: 8.0-2777.0 (mean 360.2)
+    hospitals: 1.0-100.0 (mean 13.8)
+
+[movies.csv]
+  1794 rows x 15 cols
+  cols: ['year', 'imdb', 'title', 'test', 'clean_test', 'binary', 'budget', 'domgross', 'intgross', 'code']
+    year: 1970.0-2013.0 (mean 2002.6)
+    budget: 7000.0-425000000.0 (mean 44826462.6)
+    domgross: 0.0-760507625.0 (mean 69132048.3)
+    intgross: 828.0-2783918982.0 (mean 150385700.1)
+
+[obama_commutations.csv]
+  7077 rows x 2 cols
+  cols: ['key', 'info']
+
+[recent-grads.csv]
+  173 rows x 21 cols
+  cols: ['Rank', 'Major_code', 'Major', 'Total', 'Men', 'Women', 'Major_category', 'ShareWomen', 'Sample_size', 'Employed']
+    Rank: 1.0-173.0 (mean 87.0)
+    Major_code: 1100.0-6403.0 (mean 3879.8)
+    Total: 124.0-393735.0 (mean 39370.1)
+    Men: 119.0-173809.0 (mean 16723.4)
+
+[women-stem.csv]
+  76 rows x 9 cols
+  cols: ['Rank', 'Major_code', 'Major', 'Major_category', 'Total', 'Men', 'Women', 'ShareWomen', 'Median']
+    Rank: 1.0-76.0 (mean 38.5)
+    Major_code: 1301.0-6199.0 (mean 3580.0)
+    Total: 609.0-280709.0 (mean 25515.3)
+    Men: 488.0-111762.0 (mean 12800.8)
+
+=== FBI ===
+
+[estimated_crimes_1979_2024.csv]
+  2388 rows x 15 cols
+  cols: ['year', 'state_abbr', 'state_name', 'population', 'violent_crime', 'homicide', 'rape_legacy', 'rape_revised', 'robbery', 'aggravated_assault']
+    year: 1979.0-2024.0 (mean 2001.5)
+    rape_legacy: 50.0-109062.0 (mean 3518.8)
+
+[lee_1960_2024.csv]
+  768891 rows x 21 cols
+  cols: ['data_year', 'ori', 'pub_agency_name', 'pub_agency_unit', 'state_abbr', 'division_name', 'region_name', 'county_name', 'agency_type_name', 'population_group_desc']
+    data_year: 1960.0-2024.0 (mean 1996.6)
+    population: 0.0-8616333.0 (mean 19916.5)
+    male_officer_ct: 0.0-33536.0 (mean 39.8)
+    male_cilvilian_ct: 0.0-10045.0 (mean 6.4)
+
+[territories_1995_2024.csv]
+  162 rows x 17 cols
+  cols: ['year', 'state_name', 'state_abbr', 'locality', 'population', 'violent_crime', 'homicide', 'rape_legacy', 'rape_revised', 'robbery']
+    year: 1995.0-2024.0 (mean 2008.2)
+    population: 153836.0-3967288.0 (mean 3353245.1)
+    violent_crime: 105.0-22450.0 (mean 4969.4)
+    homicide: 1.0-1136.0 (mean 334.8)
+
+[ucr_participation_1960_2024.csv]
+  3601 rows x 11 cols
+  cols: ['data_year', 'state_name', 'total_agencies', 'participation_agencies', 'participating_agencies_pct', 'nibrs_participating_agencies', 'nibrs_participating_agencies.1', 'covered_agencies', 'covered_pct', 'total_population']
+    data_year: 1960.0-2024.0 (mean 1992.4)
+    total_agencies: 0.0-1856.0 (mean 302.5)
+    participation_agencies: 0.0-1531.0 (mean 233.8)
+    participating_agencies_pct: 0.0-1.0 (mean 0.7)
+
+=== CPI/PPI ===
+
+[historical-cpi-u-202602.xlsx]
+  120 rows x 14 cols
+  cols: ['Unnamed: 0', 'Historical Consumer Price Index for All Urban Consumers (CPI-U): U.S. city average, all items, by month', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+
+[ppi-comrlp.xlsx]
+  3426 rows x 5 cols
+  cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+    Unnamed: 0: nan-nan (mean nan)
+
+[ppi-fdallrel.xlsx]
+  1526 rows x 5 cols
+  cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+    Unnamed: 0: nan-nan (mean nan)
+
+[ppi-fdgrouprel.xlsx]
+  2423 rows x 6 cols
+  cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+    Unnamed: 0: nan-nan (mean nan)
+
+[ppi-idcallrel.xlsx]
+  1485 rows x 5 cols
+  cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+    Unnamed: 0: nan-nan (mean nan)
+
+[ppi-idcgrouprel.xlsx]
+  1853 rows x 6 cols
+  cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+    Unnamed: 0: nan-nan (mean nan)
+
+[ppi-idpallrel.xlsx]
+  5055 rows x 5 cols
+  cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+    Unnamed: 0: nan-nan (mean nan)
+
+[ppi-idpgrouprel.xlsx]
+  5072 rows x 6 cols
+  cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+    Unnamed: 0: nan-nan (mean nan)
+
+[ppi-weprel.xlsx]
+  765 rows x 5 cols
+  cols: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+    Unnamed: 0: nan-nan (mean nan)
+
+=== SAGE DATA ===
+
+[Adherent Rate from the U.S. Religion Census Database.xlsx]
+  3154 rows x 3 cols
+  cols: ['Title:', 'Adherent Rate from the U.S. Religion Census Database', 'Unnamed: 2']
+
+[Adherent Rate from the U.S. Religion Census Database2020.xlsx]
+  3154 rows x 9 cols
+  cols: ['Title:', 'Adherent Rate from the U.S. Religion Census Database', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8']
+
+[Arrests by Race from the Arrests Database.csv]
+  7 rows x 2 cols
+  cols: ['Title:', 'Arrests by Race from the Arrests Database']
+
+[Assessment by All Students from the National Assessment of Educational Progress (NAEP) Database.csv]
+  7 rows x 2 cols
+  cols: ['Title:', 'Assessment by All Students from the National Assessment of Educational Progress (NAEP) Database']
+
+[Inmates by Race from the Annual Survey of Jails (United States) Database.csv]
+  7 rows x 2 cols
+  cols: ['Title:', 'Inmates by Race from the Annual Survey of Jails (United States) Database']
+
+[Inmates by Race from the Annual Survey of Jails (United States) Database.xlsx]
+  22 rows x 11 cols
+  cols: ['Title:', 'Inmates by Race from the Annual Survey of Jails (United States) Database', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+
+[Marijuana Use in the Past Month from the National Survey on Drug Use and Health (NSDUH), 2015-2019 [Archive] Database.csv]
+  7 rows x 2 cols
+  cols: ['Title:', 'Marijuana Use in the Past Month from the National Survey on Drug Use and Health (NSDUH), 2015-2019 [Archive] Database']
+
+[Number of Adherents from the U.S. Religion Census Database.xlsx]
+  3154 rows x 3 cols
+  cols: ['Title:', 'Number of Adherents from the U.S. Religion Census Database', 'Unnamed: 2']
+
+[Number of Congregations from the U.S. Religion Census Database.xlsx]
+  3154 rows x 3 cols
+  cols: ['Title:', 'Number of Congregations from the U.S. Religion Census Database', 'Unnamed: 2']
+
+[Number of Congregations from the U.S. Religion Census Database2020.xlsx]
+  3154 rows x 45 cols
+  cols: ['Title:', 'Number of Congregations from the U.S. Religion Census Database', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+
+[Population Base from the U.S. Religion Census Database.xlsx]
+  18 rows x 52 cols
+  cols: ['Title:', 'Population Base from the U.S. Religion Census Database', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+
+[Real Personal Income and Regional Price Parities from the Regional Personal Income and Employment Database.csv]
+  7 rows x 2 cols
+  cols: ['Title:', 'Real Personal Income and Regional Price Parities from the Regional Personal Income and Employment Database']
+
+[State and Local  Personal Income and Employment by NAICS Industry (1998 - Current) from the Regional Personal Income and Employment Database.csv]
+  7 rows x 2 cols
+  cols: ['Title:', 'State and Local  Personal Income and Employment by NAICS Industry (1998 - Current) from the Regional Personal Income and Employment Database']
+
+[Total Private and Commercial Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database.csv]
+  7 rows x 2 cols
+  cols: ['Title:', 'Total Private and Commercial Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database']
+
+[Total Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database (1).csv]
+  7 rows x 2 cols
+  cols: ['Title:', 'Total Vehicles Registered from the All Motor Vehicles  (Private + Public; Registered Vehicles) Database']
+
+=== OUR WORLD IN DATA ===
+Total OWID CSVs: 0
+
+=== WORLDCUP ===
+
+[fifa_ranking_2022-10-06.csv]
+  211 rows x 7 cols
+  cols: ['team', 'team_code', 'association', 'rank', 'previous_rank', 'points', 'previous_points']
+    rank: 1.0-211.0 (mean 106.0)
+    previous_rank: 1.0-211.0 (mean 106.0)
+    points: 762.2-1841.3 (mean 1220.7)
+    previous_points: 763.8-1837.6 (mean 1220.6)
+
+[matches_1930_2022.csv]
+  964 rows x 44 cols
+  cols: ['home_team', 'away_team', 'home_score', 'home_xg', 'home_penalty', 'away_score', 'away_xg', 'away_penalty', 'home_manager', 'home_captain']
+    home_score: 0.0-10.0 (mean 1.8)
+    home_xg: 0.1-5.2 (mean 1.4)
+    home_penalty: 0.0-5.0 (mean 3.3)
+    away_score: 0.0-7.0 (mean 1.0)
+
+[world_cup.csv]
+  22 rows x 9 cols
+  cols: ['Year', 'Host', 'Teams', 'Champion', 'Runner-Up', 'TopScorrer', 'Attendance', 'AttendanceAvg', 'Matches']
+    Year: 1930.0-2022.0 (mean 1978.9)
+    Teams: 13.0-32.0 (mean 22.4)
+    Attendance: 363000.0-3587538.0 (mean 2002200.6)
+    AttendanceAvg: 20872.0-68991.0 (mean 42728.5)
+
+=== ECONDATA ===
+
+[USCompanies.csv]
+  1 rows x 1 cols
+  cols: ['Search Criteria']
+
+=== PUBLIC SCHOOLS ===
+  101390 rows x 77 cols
+  cols: ['X', 'Y', 'OBJECTID', 'NCESSCH', 'SURVYEAR', 'STABR', 'LEAID', 'ST_LEAID', 'LEA_NAME', 'SCH_NAME']
+    X: -176.6-145.8 (mean -93.0)
+    Y: -14.3-71.3 (mean 37.8)
+    OBJECTID: 1.0-101390.0 (mean 50695.5)
+    NCESSCH: 10000500870.0-780003000034.0 (mean 289610461161.5)
+
+=== AIRBNB ===
+
+[part-00385-88821d72-4721-46b8-b7e6-f25dd1c1dd91.c000.csv]
+  1741 rows x 4 cols
+  cols: ['listing_id', 'date', 'num_reviews', 'reviewers']
+    listing_id: 5506.0-17559756.0 (mean 8305917.6)
+    num_reviews: 1.0-13.0 (mean 2.8)
+
+[part-00385-9bb15732-bc6a-4419-886d-7f1198853395.c000.csv]
+  3456 rows x 14 cols
+  cols: ['listing_id', 'date', 'vacant_days', 'reserved_days', 'occupancy', 'revenue', 'rate_avg', 'booked_rate_avg', 'booking_lead_time_avg', 'length_of_stay_avg']
+    listing_id: 5506.0-17559756.0 (mean 8195858.5)
+    vacant_days: 0.0-31.0 (mean 24.5)
+    reserved_days: 0.0-31.0 (mean 5.9)
+    occupancy: 0.0-1.0 (mean 0.2)
+
+[part-00385-a0e792d1-4b3b-49be-9dd5-dd239b716946.c000.csv]
+  300 rows x 62 cols
+  cols: ['listing_id', 'listing_name', 'listing_type', 'room_type', 'cover_photo_url', 'photos_count', 'host_id', 'host_name', 'cohost_ids', 'cohost_names']
+    listing_id: 5506.0-17559756.0 (mean 8272601.9)
+    photos_count: 4.0-107.0 (mean 25.4)
+    host_id: 8229.0-446136994.0 (mean 27262809.2)
+    latitude: 42.2-42.4 (mean 42.3)
+
+=== MBTA DATA ===
+  Bus_Routes (DIR)
+  Bus_Routes.zip (904KB)
+  Bus_Stops (DIR)
+  Bus_Stops.zip (492KB)
+  Commuter_Rail_Routes (DIR)
+  Commuter_Rail_Routes.zip (1367KB)
+  Commuter_Rail_Stations (DIR)
+  Commuter_Rail_Stations.zip (17KB)
+  Ferry_Routes (DIR)
+  Ferry_Routes.zip (5KB)
+  MBTA_Extended_Service_Area (DIR)
+  MBTA_Extended_Service_Area.zip (3232KB)
+  MBTA_Systemwide_GTFS_Map (DIR)
+  MBTA_Systemwide_GTFS_Map.zip (4KB)
+  Rapid_Transit_Routes (DIR)
+  Rapid_Transit_Routes.zip (99KB)
+  Rapid_Transit_Stops (DIR)
+  Rapid_Transit_Stops.zip (11KB)
+  mbta-commuter-rail-station.png (0KB)
+  mbta-subway-station.png (0KB)
+
+=== WALKABILITY ===
+  National Walkability Index_Methodology and User Guide_June2021.pdf (3067KB)
+  Natl_WI.gdb (DIR)

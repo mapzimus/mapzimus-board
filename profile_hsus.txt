@@ -1,0 +1,812 @@
+=== HSUS A-Population ===
+
+[aaPopulation-Characteristics\Area and Population\Aa1-5.xls]
+  cols: ['Date', 'LandArea_Aa1_SquareMiles ', 'Population_Total_Aa2_Number ', 'Population_PerSquareMile_Aa3_Number ', 'PopulationIncreaseFromPreviousCensus_Number_Aa4_Number ', 'PopulationIncreaseFromPreviousCensus_Percentage_Aa5_Percent ']
+  rows: ?
+
+[aaPopulation-Characteristics\Area and Population\Aa15-21.xls]
+  cols: ['Year', 'AverageMid-decadePopulation_Aa15_Thousand ', 'RateOfTotalIncrease_Aa16_Per1,000 ', 'CrudeBirthRate_Aa17_Per1,000 ', 'CrudeDeathRate_Aa18_Per1,000 ', 'RateOfNaturalIncrease_Aa19_Per1,000 ', 'RateOfNetMigration_Rate_Aa20_Per1,000 ', 'AsPercentageOfRateOfTotalIncrease_Aa21_Percent ']
+  rows: ?
+
+[aaPopulation-Characteristics\Area and Population\Aa22-35.xls]
+  cols: ['Year', 'Total_Number_Aa22_Number ', 'Total_PercentagePerAnnumGrowthSincePreviousCensus_Aa23_Percent ', 'Population_ByRace_White_Number_Aa24_Number ', 'Population_ByRace_White_Percentage_Aa25_Percent ', 'Population_ByRace_Black_Number_Aa26_Number ', 'Population_ByRace_Black_Percentage_Aa27_Percent ', 'Population_ByRace_Other_Number_Aa28_Number ', 'Population_ByRace_Other_Percentage_Aa29_Percent ', 'Population_Urban_Number_Aa30_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Area and Population\Aa36-92.xls]
+  cols: ['Year', 'TotalPopulation_UnitedStates_Aa36_Number ', 'TotalPopulation_NewEngland_Aa37_Number ', 'TotalPopulation_MiddleAtlantic_Aa38_Number ', 'TotalPopulation_EastNorthCentral_Aa39_Number ', 'TotalPopulation_WestNorthCentral_Aa40_Number ', 'TotalPopulation_SouthAtlantic_Aa41_Number ', 'TotalPopulation_EastSouthCentral_Aa42_Number ', 'TotalPopulation_WestSouthCentral_Aa43_Number ', 'TotalPopulation_Mountain_Aa44_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Area and Population\Aa6-8.xls]
+  cols: ['Year', 'Total,IncludingArmedForcesOverseas_Aa6_Thousand ', 'ResidentPopulation_Total_Aa7_Thousand ', 'ResidentPopulation_Civilian_Aa8_Thousand ']
+  rows: ?
+
+[aaPopulation-Characteristics\Area and Population\Aa9-14.xls]
+  cols: ['Year', 'Population(July1)_Aa9_Thousand ', 'NetChange_Aa10_Thousand ', 'Births_Aa11_Thousand ', 'Deaths_Aa12_Thousand ', 'NetImmigration_Aa13_Thousand ', 'ErrorOfClosure_Aa14_Thousand ']
+  rows: ?
+
+[aaPopulation-Characteristics\Area and Population\Aa93-109.xls]
+  cols: ['Year', 'Total_Aa93_Number ', 'UnitedStatesProper_Aa94_Number ', 'Abroad_Aa95_Number ', 'OutlyingAreas_Total_Aa96_Number ', 'OutlyingAreas_Alaska_Aa97_Number ', "OutlyingAreas_Hawai'i_Aa98_Number ", 'OutlyingAreas_Philippines_Aa99_Number ', 'OutlyingAreas_PuertoRico_Aa100_Number ', 'OutlyingAreas_Guam_Aa101_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Hispanic Population\Aa2189-2215.xls]
+  cols: ['Year', 'Total_Aa2189_Number ', 'Sex_Male_Aa2190_Number ', 'Sex_Female_Aa2191_Number ', 'Urban-ruralResidence_Urban_Aa2192_Number ', 'Urban-ruralResidence_Rural_Aa2193_Number ', 'Urban-ruralResidence_Unknown_Aa2194_Number ', 'CountryOfBirth_UnitedStates_Aa2195_Number ', 'CountryOfBirth_Foreign-born_Total_Aa2196_Number ', 'CountryOfBirth_Foreign-born_HispanicCountries_Aa2197_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Hispanic Population\Aa2216-2229.xls]
+  cols: ['Year', '0-4_Aa2216_Number ', '5-9_Aa2217_Number ', '10-14_Aa2218_Number ', '15-19_Aa2219_Number ', '20-24_Aa2220_Number ', '25-29_Aa2221_Number ', '30-34_Aa2222_Number ', '35-39_Aa2223_Number ', '40-44_Aa2224_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Hispanic Population\Aa2230-2243.xls]
+  cols: ['Year', '0-4_Aa2230_Number ', '5-9_Aa2231_Number ', '10-14_Aa2232_Number ', '15-19_Aa2233_Number ', '20-24_Aa2234_Number ', '25-29_Aa2235_Number ', '30-34_Aa2236_Number ', '35-39_Aa2237_Number ', '40-44_Aa2238_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Nativity\Aa1896-1921.xls]
+  cols: ['Year', 'BothSexes_AllRaces_Aa1896_Number ', 'BothSexes_White_Aa1897_Number ', 'BothSexes_Nonwhite_Aa1898_Number ', 'BothSexes_Black_Aa1899_Number ', 'BothSexes_OtherRaces_Total_Aa1900_Number ', 'BothSexes_OtherRaces_Indian_Aa1901_Number ', 'BothSexes_OtherRaces_AsianAndPacificIslander_Aa1902_Number ', 'BothSexes_OtherRaces_Japanese_Aa1903_Number ', 'BothSexes_OtherRaces_Chinese_Aa1904_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Nativity\Aa1922-1973.xls]
+  cols: ['Year', 'Males_Total_Aa1922_Number ', 'Males_Age_0-4_Aa1923_Number ', 'Males_Age_5-9_Aa1924_Number ', 'Males_Age_10-14_Aa1925_Number ', 'Males_Age_15-19_Aa1926_Number ', 'Males_Age_20-24_Aa1927_Number ', 'Males_Age_25-29_Aa1928_Number ', 'Males_Age_30-34_Aa1929_Number ', 'Males_Age_35-39_Aa1930_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Nativity\Aa1974-2025.xls]
+  cols: ['Year', 'Males_Total_Aa1974_Number ', 'Males_Age_0-4_Aa1975_Number ', 'Males_Age_5-9_Aa1976_Number ', 'Males_Age_10-14_Aa1977_Number ', 'Males_Age_15-19_Aa1978_Number ', 'Males_Age_20-24_Aa1979_Number ', 'Males_Age_25-29_Aa1980_Number ', 'Males_Age_30-34_Aa1981_Number ', 'Males_Age_35-39_Aa1982_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Nativity\Aa2026-2077.xls]
+  cols: ['Year', 'Males_Total_Aa2026_Number ', 'Males_Age_0-4_Aa2027_Number ', 'Males_Age_5-9_Aa2028_Number ', 'Males_Age_10-14_Aa2029_Number ', 'Males_Age_15-19_Aa2030_Number ', 'Males_Age_20-24_Aa2031_Number ', 'Males_Age_25-29_Aa2032_Number ', 'Males_Age_30-34_Aa2033_Number ', 'Males_Age_35-39_Aa2034_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Nativity\Aa2078-2092.xls]
+  cols: ['Year', 'BothSexes_Total_Aa2078_Number ', 'BothSexes_NativeParentage_Aa2079_Number ', 'BothSexes_ForeignOrMixedParentage_Total_Aa2080_Number ', 'BothSexes_ForeignOrMixedParentage_ForeignParentage_Aa2081_Number ', 'BothSexes_ForeignOrMixedParentage_MixedParentage_Aa2082_Number ', 'Males_Total_Aa2083_Number ', 'Males_NativeParentage_Aa2084_Number ', 'Males_ForeignOrMixedParentage_Total_Aa2085_Number ', 'Males_ForeignOrMixedParentage_ForeignParentage_Aa2086_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa1034-1178.xls]
+  cols: ['Year', 'HistoricallyDefinedMetropolitanArea_Total_Aa1034_Number ', 'Bergen-Passaic,NJ_Aa1035_Number ', 'Bridgeport-Milford,CT_Aa1036_Number ', 'HistoricallyDefinedMetropolitanArea_Danbury,CT_Aa1037_Number ', 'HistoricallyDefinedMetropolitanArea_JerseyCity,NJ_Aa1038_Number ', 'LongBranch-AsburyPark,NJ_Aa1039_Number ', 'MiddlesexCounty,NJ_Aa1040_Number ', 'Middlesex-Somerset-Hunterdon,NJ_Aa1041_Number ', 'Monmouth-Ocean,NJ_Aa1042_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa1179-1322.xls]
+  cols: ['Year', 'SanAntonio,TX_Aa1179_Number ', 'Indianapolis,IN_Aa1180_Number ', 'NewOrleans,LA_Aa1181_Number ', 'HistoricallyDefinedMetropolitanArea_Total_Aa1182_Number ', 'HistoricallyDefinedMetropolitanArea_Buffalo,NY_Aa1183_Number ', 'NiagaraFalls,NY_Aa1184_Number ', 'Buffalo-NiagaraFalls_Buffalo,NY_Aa1185_Number ', 'Buffalo-NiagaraFalls_NiagaraFalls,NY_Aa1186_Number ', 'Charlotte-Gastonia-RockHill,NC-SC_Aa1187_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa1323-1470.xls]
+  cols: ['Year', 'Huntsville,AL_Aa1323_Number ', 'Tallahassee,FL_Aa1324_Number ', 'Anchorage,AK_Aa1325_Number ', 'Roanoke,VA_Aa1326_Number ', 'Portsmouth-Dover-Rochester,NH-ME_Aa1327_Number ', 'Kalamazoo,MI_Aa1328_Number ', 'Lubbock,TX_Aa1329_Number ', 'Hickory-Morgantown,NC_Aa1330_Number ', 'Waterbury,CT_Aa1331_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa1471-1663.xls]
+  cols: ['Year', 'NewYork,NY-NortheasternNewJersey_Aa1471_Number ', 'LosAngeles,CA_Aa1472_Number ', 'Chicago,IL-NorthwesternIndiana_Aa1473_Number ', 'Philadelphia,PA-NJ_Aa1474_Number ', 'Detroit_Detroit,MI_Aa1475_Number ', 'Detroit_Pontiac,MI_Aa1476_Number ', 'SanFrancisco-Oakland,CA_Aa1477_Number ', 'Washington,DC-MD-VA_Aa1478_Number ', 'Dallas-FortWorth_Dallas-FortWorth,TX_Aa1479_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa1664-1883.xls]
+  cols: ['Year', 'TexasCity,TX_Aa1664_Number ', 'SimiValley,CA_Aa1665_Number ', 'FortPierce,FL_Aa1666_Number ', 'Gainesville,FL_Aa1667_Number ', 'Springfield,IL_Aa1668_Number ', 'Elgin,IL_Aa1669_Number ', 'Laredo,TX_Aa1670_Number ', 'Duluth-Superior,MN-WI_Aa1671_Number ', 'Beaumont,TX_Aa1672_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa1884-1895.xls]
+  cols: ['Metropolitan area', 'FIPSCode_Aa1884_ ', 'Population_1980_Aa1885_Number ', 'Population_1990_Aa1886_Number ', 'Population_1996_Aa1887_Number ', 'Population_1997_Aa1888_Number ', 'Population_Rank_1990_Aa1889_Number ', 'Population_Rank_1997_Aa1890_Number ', 'Population_NetChange,1990-1997_Aa1891_Number ', 'Population_NaturalIncrease,1990-1997_Aa1892_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa684-698.xls]
+  cols: ['Year', 'UrbanTerritory_Total_Aa684_Number ', 'UrbanTerritory_PopulationSize_2,500OrMore_Aa685_Number ', 'UrbanTerritory_PopulationSize_1,000,000OrMore_Aa686_Number ', 'UrbanTerritory_PopulationSize_500,000-999,999_Aa687_Number ', 'UrbanTerritory_PopulationSize_250,000-499,999_Aa688_Number ', 'UrbanTerritory_PopulationSize_100,000-249,999_Aa689_Number ', 'UrbanTerritory_PopulationSize_50,000-99,999_Aa690_Number ', 'UrbanTerritory_PopulationSize_25,000-49,999_Aa691_Number ', 'UrbanTerritory_PopulationSize_10,000-24,999_Aa692_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa699-715.xls]
+  cols: ['Year', 'UrbanTerritory_Total_Aa699_Number ', 'UrbanTerritory_PlacesWithPopulationSize_2,500OrMore_Aa700_Number ', 'PlacesWithPopulationSize_1,000,000OrMore_Aa701_Number ', 'PlacesWithPopulationSize_500,000-999,999_Aa702_Number ', 'PlacesWithPopulationSize_250,000-499,999_Aa703_Number ', 'PlacesWithPopulationSize_100,000-249,999_Aa704_Number ', 'PlacesWithPopulationSize_50,000-99,999_Aa705_Number ', 'PlacesWithPopulationSize_25,000-49,999_Aa706_Number ', 'PlacesWithPopulationSize_10,000-24,999_Aa707_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa716-775.xls]
+  cols: ['Year', 'Total_AllRaces_Total_Aa716_Number ', 'Total_AllRaces_Male_Aa717_Number ', 'Total_AllRaces_Female_Aa718_Number ', 'Total_White_Total_Aa719_Number ', 'Total_White_Male_Aa720_Number ', 'Total_White_Female_Aa721_Number ', 'Total_Black_Total_Aa722_Number ', 'Total_Black_Male_Aa723_Number ', 'Total_Black_Female_Aa724_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa776-823.xls]
+  cols: ['Year', 'UrbanizedAreas_Total_AllRaces_Total_Aa776_Number ', 'UrbanizedAreas_Total_AllRaces_Male_Aa777_Number ', 'UrbanizedAreas_Total_AllRaces_Female_Aa778_Number ', 'UrbanizedAreas_Total_White_Total_Aa779_Number ', 'UrbanizedAreas_Total_White_Male_Aa780_Number ', 'UrbanizedAreas_Total_White_Female_Aa781_Number ', 'UrbanizedAreas_Total_Black_Total_Aa782_Number ', 'UrbanizedAreas_Total_Black_Male_Aa783_Number ', 'UrbanizedAreas_Total_Black_Female_Aa784_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa824-831.xls]
+  cols: ['Year', 'MetropolitanAreas_Aa824_Number ', 'TotalPopulation_1950_Aa825_Number ', 'TotalPopulation_1960_Aa826_Number ', 'TotalPopulation_1970_Aa827_Number ', 'TotalPopulation_1980_Aa828_Number ', 'TotalPopulation_1990_Aa829_Number ', 'TotalPopulation_1992_Aa830_Number ', 'TotalPopulation_TotalLandArea,1990_Aa831_SquareMiles ']
+  rows: ?
+
+[aaPopulation-Characteristics\Rural and Urban Places\Aa832-1033.xls]
+  cols: ['Year', 'NewYork,NY_Total,FiveBorough_Aa832_Number ', 'NewYork,NY_BronxBorough_Aa833_Number ', 'NewYork,NY_BrooklynBorough_Aa834_Number ', 'NewYork,NY_ManhattanBorough_Aa835_Number ', 'NewYork,NY_QueensBorough_Aa836_Number ', 'NewYork,NY_RichmondBorough_Aa837_Number ', 'LosAngeles,CA_Aa838_Number ', 'Chicago,IL_Aa839_Number ', 'Houston,TX_Aa840_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa110-124.xls]
+  cols: ['Year', 'AllRaces_Total_Aa110_Number ', 'AllRaces_Males_Aa111_Number ', 'AllRaces_Females_Aa112_Number ', 'White_Total_Aa113_Number ', 'White_Males_Aa114_Number ', 'White_Females_Aa115_Number ', 'Nonwhite_Total_Aa116_Number ', 'Nonwhite_Males_Aa117_Number ', 'Nonwhite_Females_Aa118_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa125-144.xls]
+  cols: ['Year', 'Total_Aa125_Number ', 'Age_0-4_Aa126_Number ', 'Age_5-9_Aa127_Number ', 'Age_10-14_Aa128_Number ', 'Age_15-19_Aa129_Number ', 'Age_20-24_Aa130_Number ', 'Age_25-29_Aa131_Number ', 'Age_30-34_Aa132_Number ', 'Age_35-39_Aa133_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa145-184.xls]
+  cols: ['Year', 'BothSexes_AllRaces_Aa145_Number ', 'BothSexes_White_Aa146_Number ', 'BothSexes_Black_Total_Aa147_Number ', 'BothSexes_Black_Slave_Aa148_Number ', 'BothSexes_Black_FreeColored_Aa149_Number ', 'BothSexes_OtherRaces_Total_Aa150_Number ', 'BothSexes_OtherRaces_RaceAndSexUnknown_Aa151_Number ', 'BothSexes_OtherRaces_AmericanIndian_Aa152_Number ', 'BothSexes_OtherRaces_AmericanIndian,Eskimo,OrAleut_Aa153_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa185-286.xls]
+  cols: ['Year', 'BothSexes_Total_Aa185_Number ', 'BothSexes_Age_0-4_Aa186_Number ', 'BothSexes_Age_5-9_Aa187_Number ', 'BothSexes_Age_10-14_Aa188_Number ', 'BothSexes_Age_15-19_Aa189_Number ', 'BothSexes_Age_20-29_Aa190_Number ', 'BothSexes_Age_20-24_Aa191_Number ', 'BothSexes_Age_25-29_Aa192_Number ', 'BothSexes_Age_30-39_Aa193_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa287-364.xls]
+  cols: ['Year', 'Male_Total_Aa287_Number ', 'Male_Age_0-9_Aa288_Number ', 'Male_Age_0-4_Aa289_Number ', 'Male_Age_5-9_Aa290_Number ', 'Male_Age_10-15_Aa291_Number ', 'Male_Age_10-14_Aa292_Number ', 'Male_Age_16-25_Aa293_Number ', 'Male_Age_15-19_Aa294_Number ', 'Male_Age_26-44_Aa295_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa365-456.xls]
+  cols: ['Year', 'Male_Total_Aa365_Number ', 'Male_Age_0-13_Aa366_Number ', 'Male_Age_0-9_Aa367_Number ', 'Male_Age_0-4_Aa368_Number ', 'Male_Age_5-9_Aa369_Number ', 'Male_Age_14-25_Aa370_Number ', 'Male_Age_10-23_Aa371_Number ', 'Male_Age_10-14_Aa372_Number ', 'Male_Age_15-19_Aa373_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa457-524.xls]
+  cols: ['Year', 'Male_Total_Aa457_Number ', 'Male_Age_0-4_Aa458_Number ', 'Male_Age_5-9_Aa459_Number ', 'Male_Age_10-14_Aa460_Number ', 'Male_Age_15-19_Aa461_Number ', 'Male_Age_20-29_Aa462_Number ', 'Male_Age_20-24_Aa463_Number ', 'Male_Age_25-29_Aa464_Number ', 'Male_Age_30-39_Aa465_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa525-598.xls]
+  cols: ['Year', 'Male_Total_Aa525_Number ', 'Male_Age_0-4_Aa526_Number ', 'Male_Age_5-9_Aa527_Number ', 'Male_Age_10-14_Aa528_Number ', 'Male_Age_15-19_Aa529_Number ', 'Male_Age_20-29_Aa530_Number ', 'Male_Age_20-24_Aa531_Number ', 'Male_Age_25-29_Aa532_Number ', 'Male_Age_30-39_Aa533_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa599-613.xls]
+  cols: ['Year', 'Race_AllRaces_Total_Aa599_Years ', 'Race_AllRaces_Male_Aa600_Years ', 'Race_AllRaces_Female_Aa601_Years ', 'Race_White_Total_Aa602_Years ', 'Race_White_Male_Aa603_Years ', 'Race_White_Female_Aa604_Years ', 'Race_Black_Total_Aa605_Years ', 'Race_Black_Male_Aa606_Years ', 'Race_Black_Female_Aa607_Years ']
+  rows: ?
+
+[aaPopulation-Characteristics\Sex, Age, Race, and Marital Status\Aa614-683.xls]
+  cols: ['Year', 'Age/total', 'AllRaces_Males_Total_Aa614_Number ', 'AllRaces_Males_NeverMarried_Aa615_Number ', 'AllRaces_Males_Married_Total_Aa616_Number ', 'AllRaces_Males_Married_SpousePresent_Aa617_Number ', 'AllRaces_Males_Married_SpouseAbsent_Total_Aa618_Number ', 'AllRaces_Males_Married_SpouseAbsent_Separated_Aa619_Number ', 'AllRaces_Males_Married_SpouseAbsent_Other_Aa620_Number ', 'AllRaces_Males_Married_NotSeparated_Aa621_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Slave Population\Aa2093-2140.xls]
+  cols: ['Year', 'Males_Total_Aa2093_Number ', 'Males_Age_0-13_Aa2094_Number ', 'Males_Age_0-9_Aa2095_Number ', 'Males_Age_0-4_Aa2096_Number ', 'Males_Age_5-9_Aa2097_Number ', 'Males_Age_14-25_Aa2098_Number ', 'Males_Age_10-23_Aa2099_Number ', 'Males_Age_10-14_Aa2100_Number ', 'Males_Age_15-19_Aa2101_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\Slave Population\Aa2141-2188.xls]
+  cols: ['Year', 'Males_Total_Aa2141_Number ', 'Males_Age_0-13_Aa2142_Number ', 'Males_Age_0-9_Aa2143_Number ', 'Males_Age_0-4_Aa2144_Number ', 'Males_Age_5-9_Aa2145_Number ', 'Males_Age_14-25_Aa2146_Number ', 'Males_Age_10-23_Aa2147_Number ', 'Males_Age_10-14_Aa2148_Number ', 'Males_Age_15-19_Aa2149_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2244-2340.xls]
+  cols: ['Year', 'Area_Aa2244_SquareMiles ', 'PopulationDensity_Aa2245_PersonsPerSquareMile ', 'Population_Total_Aa2246_Number ', 'Population_Race_White_Aa2247_Number ', 'Population_Race_Nonwhite_Aa2248_Number ', 'Population_Race_Black_Aa2249_Number ', 'Population_Race_OtherNonwhite_Aa2250_Number ', 'Population_Residence_Urban_Aa2251_Number ', 'Population_Residence_Rural_Aa2252_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2341-2391.xls]
+  cols: ['Year', 'Area_Aa2341_SquareMiles ', 'PersonsPerSquareMile_Aa2342_PersonsPerSquareMile ', 'Population_Total_Aa2343_Number ', 'Population_Race_White_Aa2344_Number ', 'Population_Race_Nonwhite_Aa2345_Number ', 'Population_Race_Black_Aa2346_Number ', 'Population_Race_OtherNonwhite_Aa2347_Number ', 'Population_Residence_Urban_Aa2348_Number ', 'Population_Residence_Rural_Aa2349_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2392-2442.xls]
+  cols: ['Year', 'Area_Aa2392_SquareMiles ', 'PopulationDensity_Aa2393_PersonPerSquareMile ', 'Population_Total_Aa2394_Number ', 'Population_Race_White_Aa2395_Number ', 'Population_Race_Nonwhite_Aa2396_Number ', 'Population_Race_Black_Aa2397_Number ', 'Population_Race_OtherNonwhite_Aa2398_Number ', 'Population_Residence_Urban_Aa2399_Number ', 'Population_Residence_Rural_Aa2400_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2443-2539.xls]
+  cols: ['Year', 'Area_Aa2443_SquareMiles ', 'PopulationDensity_Aa2444_PersonsPerSquareMile ', 'Population_Total_Aa2445_Number ', 'Population_Race_White_Aa2446_Number ', 'Population_Race_Nonwhite_Aa2447_Number ', 'Population_Race_Black_Aa2448_Number ', 'Population_Race_OtherNonwhite_Aa2449_Number ', 'Population_Residence_Urban_Aa2450_Number ', 'Population_Residence_Rural_Aa2451_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2540-2602.xls]
+  cols: ['Year', 'Area_Aa2540_SquareMiles ', 'PopulationDensity_Aa2541_PersonsPerSquareMile ', 'Population_Total_Aa2542_Number ', 'Population_Race_White_Aa2543_Number ', 'Population_Race_Nonwhite_Aa2544_Number ', 'Population_Race_Black_Aa2545_Number ', 'Population_Race_OtherNonwhite_Aa2546_Number ', 'Population_Residence_Urban_Aa2547_Number ', 'Population_Residence_Rural_Aa2548_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2603-2665.xls]
+  cols: ['Year', 'Area_Aa2603_SquareMiles ', 'PopulationDensity_Aa2604_PersonsPerSquareMile ', 'Population_Total_Aa2605_Number ', 'Population_Race_White_Aa2606_Number ', 'Population_Race_Nonwhite_Aa2607_Number ', 'Population_Race_Black_Aa2608_Number ', 'Population_Race_OtherNonwhite_Aa2609_Number ', 'Population_Residence_Urban_Aa2610_Number ', 'Population_Residence_Rural_Aa2611_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2666-2766.xls]
+  cols: ['Year', 'Area_Aa2666_SquareMiles ', 'PopulationDensity_Aa2667_PersonsPerSquareMile ', 'Population_Total_Aa2668_Number ', 'Population_Race_White_Aa2669_Number ', 'Population_Race_Nonwhite_Aa2670_Number ', 'Population_Race_Black_Aa2671_Number ', 'Population_Race_OtherNonwhite_Aa2672_Number ', 'Population_Residence_Urban_Aa2673_Number ', 'Population_Residence_Rural_Aa2674_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2767-2867.xls]
+  cols: ['Year', 'Area_Aa2767_SquareMiles ', 'PopulationDensity_Aa2768_PersonsPerSquareMile ', 'Population_Total_Aa2769_Number ', 'Population_Race_White_Aa2770_Number ', 'Population_Race_Nonwhite_Aa2771_Number ', 'Population_Race_Black_Aa2772_Number ', 'Population_Race_OtherNonwhite_Aa2773_Number ', 'Population_Residence_Urban_Aa2774_Number ', 'Population_Residence_Rural_Aa2775_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2868-2964.xls]
+  cols: ['Year', 'Area_Aa2868_SquareMiles ', 'PopulationDensity_Aa2869_PersonsPerSquareMile ', 'Population_Total_Aa2870_Number ', 'Population_Race_White_Aa2871_Number ', 'Population_Race_Nonwhite_Aa2872_Number ', 'Population_Race_Black_Aa2873_Number ', 'Population_Race_OtherNonwhite_Aa2874_Number ', 'Population_Residence_Urban_Aa2875_Number ', 'Population_Residence_Rural_Aa2876_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa2965-3009.xls]
+  cols: ['Year', 'Area_Aa2965_SquareMiles ', 'PopulationDensity_Aa2966_PersonsPerSquareMile ', 'Population_Total_Aa2967_Number ', 'Population_Race_White_Aa2968_Number ', 'Population_Race_Nonwhite_Aa2969_Number ', 'Population_Race_Black_Aa2970_Number ', 'Population_Race_OtherNonwhite_Aa2971_Number ', 'Population_Residence_Urban_Aa2972_Number ', 'Population_Residence_Rural_Aa2973_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3010-3096.xls]
+  cols: ['Year', 'Area_Aa3010_SquareMiles ', 'PopulationDensity_Aa3011_PersonsPerSquareMile ', 'Population_Total_Aa3012_Number ', 'Population_Race_White_Aa3013_Number ', 'Population_Race_Nonwhite_Aa3014_Number ', 'Population_Race_Black_Aa3015_Number ', 'Population_Race_OtherNonwhite_Aa3016_Number ', 'Population_Residence_Urban_Aa3017_Number ', 'Population_Residence_Rural_Aa3018_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3097-3197.xls]
+  cols: ['Year', 'Area_Aa3097_SquareMiles ', 'PopulationDensity_Aa3098_PersonsPerSquareMile ', 'Population_Total_Aa3099_Number ', 'Population_Race_White_Aa3100_Number ', 'Population_Race_Nonwhite_Aa3101_Number ', 'Population_Race_Black_Aa3102_Number ', 'Population_Race_OtherNonwhite_Aa3103_Number ', 'Population_Residence_Urban_Aa3104_Number ', 'Population_Residence_Rural_Aa3105_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3198-3248.xls]
+  cols: ['Year', 'Area_Aa3198_SquareMiles ', 'PopulationDensity_Aa3199_PersonsPerSquareMile ', 'Population_Total_Aa3200_Number ', 'Population_Race_White_Aa3201_Number ', 'Population_Race_Nonwhite_Aa3202_Number ', 'Population_Race_Black_Aa3203_Number ', 'Population_Race_OtherNonwhite_Aa3204_Number ', 'Population_Residence_Urban_Aa3205_Number ', 'Population_Residence_Rural_Aa3206_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3249-3299.xls]
+  cols: ['Year', 'Area_Aa3249_SquareMiles ', 'PopulationDensity_Aa3250_PersonPerSquareMile ', 'Population_Race_Total_Aa3251_Number ', 'Population_Race_White_Aa3252_Number ', 'Population_Race_Nonwhite_Aa3253_Number ', 'Population_Race_Black_Aa3254_Number ', 'Population_Race_OtherNonwhite_Aa3255_Number ', 'Population_Residence_Urban_Aa3256_Number ', 'Population_Residence_Rural_Aa3257_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3300-3396.xls]
+  cols: ['Year', 'Area_Aa3300_SquareMiles ', 'PopulationDensity_Aa3301_PersonsPerSquareMile ', 'Population_Total_Aa3302_Number ', 'Population_Race_White_Aa3303_Number ', 'Population_Race_Nonwhite_Aa3304_Number ', 'Population_Race_Black_Aa3305_Number ', 'Population_Race_OtherNonwhite_Aa3306_Number ', 'Population_Residence_Urban_Aa3307_Number ', 'Population_Residence_Rural_Aa3308_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3397-3493.xls]
+  cols: ['Year', 'Area_Aa3397_SquareMiles ', 'PopulationDensity_Aa3398_PersonsPerSquareMile ', 'Population_Total_Aa3399_Number ', 'Population_Race_White_Aa3400_Number ', 'Population_Race_Nonwhite_Aa3401_Number ', 'Population_Race_Black_Aa3402_Number ', 'Population_Race_OtherNonwhite_Aa3403_Number ', 'Population_Residence_Urban_Aa3404_Number ', 'Population_Residence_Rural_Aa3405_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3494-3580.xls]
+  cols: ['Year', 'Area_Aa3494_SquareMiles ', 'PopulationDensity_Aa3495_PersonPerSquareMile ', 'Population_Total_Aa3496_Number ', 'Population_Race_White_Aa3497_Number ', 'Population_Race_Nonwhite_Aa3498_Number ', 'Population_Race_Black_Aa3499_Number ', 'Population_Race_OtherNonwhite_Aa3500_Number ', 'Population_Residence_Urban_Aa3501_Number ', 'Population_Residence_Rural_Aa3502_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3581-3643.xls]
+  cols: ['Year', 'Area_Aa3581_SquareMiles ', 'PopulationDensity_Aa3582_PersonsPerSquareMile ', 'Population_Total_Aa3583_Number ', 'Population_Race_White_Aa3584_Number ', 'Population_Race_Nonwhite_Aa3585_Number ', 'Population_Race_Black_Aa3586_Number ', 'Population_Race_OtherNonwhite_Aa3587_Number ', 'Population_Residence_Urban_Aa3588_Number ', 'Population_Residence_Rural_Aa3589_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3644-3744.xls]
+  cols: ['Year', 'Area_Aa3644_SquareMiles ', 'PopulationDensity_Aa3645_PersonsPerSquareMile ', 'Population_Total_Aa3646_Number ', 'Population_Race_White_Aa3647_Number ', 'Population_Race_Nonwhite_Aa3648_Number ', 'Population_Race_Black_Aa3649_Number ', 'Population_Race_OtherNonwhite_Aa3650_Number ', 'Population_Residence_Urban_Aa3651_Number ', 'Population_Residence_Rural_Aa3652_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3745-3841.xls]
+  cols: ['Year', 'Area_Aa3745_SquareMiles ', 'PopulationDensity_Aa3746_PersonPerSquareMile ', 'Population_Total_Aa3747_Number ', 'Population_Race_White_Aa3748_Number ', 'Population_Race_Nonwhite_Aa3749_Number ', 'Population_Race_Black_Aa3750_Number ', 'Population_Race_OtherNonwhite_Aa3751_Number ', 'Population_Residence_Urban_Aa3752_Number ', 'Population_Residence_Rural_Aa3753_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3842-3942.xls]
+  cols: ['Year', 'Area_Aa3842_SquareMiles ', 'PopulationDensity_Aa3843_PersonsPerSquareMile ', 'Population_Total_Aa3844_Number ', 'Population_Race_White_Aa3845_Number ', 'Population_Race_Nonwhite_Aa3846_Number ', 'Population_Race_Black_Aa3847_Number ', 'Population_Race_OtherNonwhite_Aa3848_Number ', 'Population_Residence_Urban_Aa3849_Number ', 'Population_Residence_Rural_Aa3850_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa3943-4043.xls]
+  cols: ['Year', 'Area_Aa3943_SquareMiles ', 'PopulationDensity_Aa3944_PersonsPerSquareMile ', 'Population_Total_Aa3945_Number ', 'Population_Race_White_Aa3946_Number ', 'Population_Race_Nonwhite_Aa3947_Number ', 'Population_Race_Black_Aa3948_Number ', 'Population_Race_OtherNonwhite_Aa3949_Number ', 'Population_Residence_Urban_Aa3950_Number ', 'Population_Residence_Rural_Aa3951_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4044-4144.xls]
+  cols: ['Year', 'Area_Aa4044_SquareMiles ', 'PopulationDensity_Aa4045_PersonsPerSquareMile ', 'Population_Total_Aa4046_Number ', 'Population_Race_White_Aa4047_Number ', 'Population_Race_Nonwhite_Aa4048_Number ', 'Population_Race_Black_Aa4049_Number ', 'Population_Race_OtherNonwhite_Aa4050_Number ', 'Population_Residence_Urban_Aa4051_Number ', 'Population_Residence_Rural_Aa4052_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4145-4241.xls]
+  cols: ['Year', 'Area_Aa4145_SquareMiles ', 'PopulationDensity_Aa4146_PersonsPerSquareMile ', 'Population_Total_Aa4147_Number ', 'Population_Race_White_Aa4148_Number ', 'Population_Race_Nonwhite_Aa4149_Number ', 'Population_Race_Black_Aa4150_Number ', 'Population_Race_OtherNonwhite_Aa4151_Number ', 'Population_Residence_Urban_Aa4152_Number ', 'Population_Residence_Rural_Aa4153_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4242-4304.xls]
+  cols: ['Year', 'Area_Aa4242_SquareMiles ', 'PopulationDensity_Aa4243_PersonsPerSquareMile ', 'Population_Total_Aa4244_Number ', 'Population_Race_White_Aa4245_Number ', 'Population_Race_Nonwhite_Aa4246_Number ', 'Population_Race_Black_Aa4247_Number ', 'Population_Race_OtherNonwhite_Aa4248_Number ', 'Population_Residence_Urban_Aa4249_Number ', 'Population_Residence_Rural_Aa4250_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4305-4401.xls]
+  cols: ['Year', 'Area_Aa4305_SquareMiles ', 'PopulationDensity_Aa4306_PersonsPerSquareMile ', 'Population_Total_Aa4307_Number ', 'Population_Race_White_Aa4308_Number ', 'Population_Race_Nonwhite_Aa4309_Number ', 'Population_Race_Black_Aa4310_Number ', 'Population_Race_OtherNonwhite_Aa4311_Number ', 'Population_Residence_Urban_Aa4312_Number ', 'Population_Residence_Rural_Aa4313_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4402-4498.xls]
+  cols: ['Year', 'Area_Aa4402_SquareMiles ', 'PopulationDensity_Aa4403_PersonsPerSquareMile ', 'Population_Total_Aa4404_Number ', 'Population_Race_White_Aa4405_Number ', 'Population_Race_Nonwhite_Aa4406_Number ', 'Population_Race_Black_Aa4407_Number ', 'Population_Race_OtherNonwhite_Aa4408_Number ', 'Population_Residence_Urban_Aa4409_Number ', 'Population_Residence_Rural_Aa4410_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4499-4549.xls]
+  cols: ['Year', 'Area_Aa4499_SquareMiles ', 'PopulationDensity_Aa4500_PersonsPerSquareMile ', 'Total_Aa4501_Number ', 'Population_Race_White_Aa4502_Number ', 'Population_Race_Nonwhite_Aa4503_Number ', 'Population_Race_Black_Aa4504_Number ', 'Population_Race_OtherNonwhite_Aa4505_Number ', 'Population_Residence_Urban_Aa4506_Number ', 'Population_Residence_Rural_Aa4507_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4550-4612.xls]
+  cols: ['Year', 'Area_Aa4550_SquareMiles ', 'PopulationDensity_Aa4551_PersonsPerSquareMile ', 'Total_Aa4552_Number ', 'Population_Race_White_Aa4553_Number ', 'Population_Race_Nonwhite_Aa4554_Number ', 'Population_Race_Black_Aa4555_Number ', 'Population_Race_OtherNonwhite_Aa4556_Number ', 'Population_Residence_Urban_Aa4557_Number ', 'Population_Residence_Rural_Aa4558_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4613-4675.xls]
+  cols: ['Year', 'Area_Aa4613_SquareMiles ', 'PopulationDensity_Aa4614_PersonsPerSquareMile ', 'Population_Total_Aa4615_Number ', 'Population_Race_White_Aa4616_Number ', 'Population_Race_Nonwhite_Aa4617_Number ', 'Population_Race_Black_Aa4618_Number ', 'Population_Race_OtherNonwhite_Aa4619_Number ', 'Population_Residence_Urban_Aa4620_Number ', 'Population_Residence_Rural_Aa4621_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4676-4776.xls]
+  cols: ['Year', 'Area_Aa4676_SquareMiles ', 'PopulationDensity_Aa4677_PersonsPerSquareMile ', 'Population_Total_Aa4678_Number ', 'Population_Race_White_Aa4679_Number ', 'Population_Race_Nonwhite_Aa4680_Number ', 'Population_Race_Black_Aa4681_Number ', 'Population_Race_OtherNonwhite_Aa4682_Number ', 'Population_Residence_Urban_Aa4683_Number ', 'Population_Residence_Rural_Aa4684_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4777-4877.xls]
+  cols: ['Year', 'Area_Aa4777_SquareMiles ', 'PopulationDensity_Aa4778_PersonsPerSquareMile ', 'Population_Total_Aa4779_Number ', 'Population_Race_White_Aa4780_Number ', 'Population_Race_Nonwhite_Aa4781_Number ', 'Population_Race_Black_Aa4782_Number ', 'Population_Race_OtherNonwhite_Aa4783_Number ', 'Population_Residence_Urban_Aa4784_Number ', 'Population_Residence_Rural_Aa4785_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4878-4940.xls]
+  cols: ['Year', 'Area_Aa4878_SquareMiles ', 'PopulationDensity_Aa4879_PersonsPerSquareMile ', 'Population_Total_Aa4880_Number ', 'Population_Race_White_Aa4881_Number ', 'Population_Race_Nonwhite_Aa4882_Number ', 'Population_Race_Black_Aa4883_Number ', 'Population_Race_OtherNonwhite_Aa4884_Number ', 'Population_Residence_Urban_Aa4885_Number ', 'Population_Residence_Rural_Aa4886_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa4941-5041.xls]
+  cols: ['Year', 'Area_Aa4941_SquareMiles ', 'PopulationDensity_Aa4942_PersonsPerSquareMile ', 'Population_Total_Aa4943_Number ', 'Population_Race_White_Aa4944_Number ', 'Population_Race_Nonwhite_Aa4945_Number ', 'Population_Race_Black_Aa4946_Number ', 'Population_Race_OtherNonwhite_Aa4947_Number ', 'Population_Residence_Urban_Aa4948_Number ', 'Population_Residence_Rural_Aa4949_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5042-5142.xls]
+  cols: ['Year', 'Area_Aa5042_SquareMiles ', 'PopulationDensity_Aa5043_PersonsPerSquareMile ', 'Population_Total_Aa5044_Number ', 'Population_Race_White_Aa5045_Number ', 'Population_Race_Nonwhite_Aa5046_Number ', 'Population_Race_Black_Aa5047_Number ', 'Population_Race_OtherNonwhite_Aa5048_Number ', 'Population_Residence_Urban_Aa5049_Number ', 'Population_Residence_Rural_Aa5050_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5143-5193.xls]
+  cols: ['Year', 'Area_Aa5143_SquareMiles ', 'PopulationDensity_Aa5144_PersonsPerSquareMile ', 'Population_Total_Aa5145_Number ', 'Population_Race_White_Aa5146_Number ', 'Population_Race_Nonwhite_Aa5147_Number ', 'Population_Race_Black_Aa5148_Number ', 'Population_Race_OtherNonwhite_Aa5149_Number ', 'Population_Residence_Urban_Aa5150_Number ', 'Population_Residence_Rural_Aa5151_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5194-5290.xls]
+  cols: ['Year', 'Area_Aa5194_SquareMiles ', 'PopulationDensity_Aa5195_PersonsPerSquareMile ', 'Population_Total_Aa5196_Number ', 'Population_Race_White_Aa5197_Number ', 'Population_Race_Nonwhite_Aa5198_Number ', 'Population_Race_Black_Aa5199_Number ', 'Population_Race_OtherNonwhite_Aa5200_Number ', 'Population_Residence_Urban_Aa5201_Number ', 'Population_Residence_Rural_Aa5202_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5291-5341.xls]
+  cols: ['Year', 'Area_Aa5291_SquareMiles ', 'PopulationDensity_Aa5292_PersonsPerSquareMile ', 'Population_Total_Aa5293_Number ', 'Population_Race_White_Aa5294_Number ', 'Population_Race_Nonwhite_Aa5295_Number ', 'Population_Race_Black_Aa5296_Number ', 'Population_Race_OtherNonwhite_Aa5297_Number ', 'Population_Residence_Urban_Aa5298_Number ', 'Population_Residence_Rural_Aa5299_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5342-5404.xls]
+  cols: ['Year', 'Area_Aa5342_SquareMiles ', 'PopulationDensity_Aa5343_PopulationDensity ', 'Total_Aa5344_Number ', 'Population_Race_White_Aa5345_Number ', 'Population_Race_Nonwhite_Aa5346_Number ', 'Population_Race_Black_Aa5347_Number ', 'Population_Race_OtherNonwhite_Aa5348_Number ', 'Population_Residence_Urban_Aa5349_Number ', 'Population_Residence_Rural_Aa5350_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5405-5505.xls]
+  cols: ['Year', 'Area_Aa5405_SquareMiles ', 'PopulationDensity_Aa5406_PersonsPerSquareMile ', 'Population_Total_Aa5407_Number ', 'Population_Race_White_Aa5408_Number ', 'Population_Race_Nonwhite_Aa5409_Number ', 'Population_Race_Black_Aa5410_Number ', 'Population_Race_OtherNonwhite_Aa5411_Number ', 'Population_Residence_Urban_Aa5412_Number ', 'Population_Residence_Rural_Aa5413_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5506-5606.xls]
+  cols: ['Year', 'Area_Aa5506_SquareMiles ', 'PopulationDensity_Aa5507_PersonsPerSquareMile ', 'Population_Total_Aa5508_Number ', 'Population_Race_White_Aa5509_Number ', 'Population_Race_Nonwhite_Aa5510_Number ', 'Population_Race_Black_Aa5511_Number ', 'Population_Race_OtherNonwhite_Aa5512_Number ', 'Population_Residence_Urban_Aa5513_Number ', 'Population_Residence_Rural_Aa5514_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5607-5707.xls]
+  cols: ['Year', 'Area_Aa5607_SquareMiles ', 'PopulationDensity_Aa5608_PersonsPerSquareMile ', 'Population_Total_Aa5609_Number ', 'Population_Race_White_Aa5610_Number ', 'Population_Race_Nonwhite_Aa5611_Number ', 'Population_Race_Black_Aa5612_Number ', 'Population_Race_OtherNonwhite_Aa5613_Number ', 'Population_Residence_Urban_Aa5614_Number ', 'Population_Residence_Rural_Aa5615_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5708-5770.xls]
+  cols: ['Year', 'Area_Aa5708_SquareMiles ', 'PopulationDensity_Aa5709_PersonsPerSquareMile ', 'Population_Total_Aa5710_Number ', 'Population_Race_White_Aa5711_Number ', 'Population_Race_Nonwhite_Aa5712_Number ', 'Population_Race_Black_Aa5713_Number ', 'Population_Race_OtherNonwhite_Aa5714_Number ', 'Population_Residence_Urban_Aa5715_Number ', 'Population_Residence_Rural_Aa5716_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5771-5871.xls]
+  cols: ['Year', 'Area_Aa5771_SquareMiles ', 'PopulationDensity_Aa5772_PersonsPerSquareMile ', 'Population_Total_Aa5773_Number ', 'Population_Race_White_Aa5774_Number ', 'Population_Race_Nonwhite_Aa5775_Number ', 'Population_Race_Black_Aa5776_Number ', 'Population_Race_OtherNonwhite_Aa5777_Number ', 'Population_Residence_Urban_Aa5778_Number ', 'Population_Residence_Rural_Aa5779_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5872-5934.xls]
+  cols: ['Year', 'Area_Aa5872_SquareMiles ', 'PopulationDensity_Aa5873_PersonsPerSquareMile ', 'Population_Total_Aa5874_Number ', 'Population_Race_White_Aa5875_Number ', 'Population_Race_Nonwhite_Aa5876_Number ', 'Population_Race_Black_Aa5877_Number ', 'Population_Race_OtherNonwhite_Aa5878_Number ', 'Population_Residence_Urban_Aa5879_Number ', 'Population_Residence_Rural_Aa5880_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5935-5997.xls]
+  cols: ['Year', 'Area_Aa5935_SquareMiles ', 'PopulationDensity_Aa5936_PersonsPerSquareMile ', 'Total_Aa5937_Number ', 'Population_Race_White_Aa5938_Number ', 'Population_Race_Nonwhite_Aa5939_Number ', 'Population_Race_Black_Aa5940_Number ', 'Population_Race_OtherNonwhite_Aa5941_Number ', 'Population_Residence_Urban_Aa5942_Number ', 'Population_Residence_Rural_Aa5943_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa5998-6098.xls]
+  cols: ['Year', 'Area_Aa5998_SquareMiles ', 'PopulationDensity_Aa5999_PersonsPerSquareMile ', 'Population_Total_Aa6000_Number ', 'Population_Race_White_Aa6001_Number ', 'Population_Race_Nonwhite_Aa6002_Number ', 'Population_Race_Black_Aa6003_Number ', 'Population_Race_OtherNonwhite_Aa6004_Number ', 'Population_Residence_Urban_Aa6005_Number ', 'Population_Residence_Rural_Aa6006_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa6099-6199.xls]
+  cols: ['Year', 'Area_Aa6099_SquareMiles ', 'PopulationDensity_Aa6100_PersonsPerSquareMile ', 'Population_Total_Aa6101_Number ', 'Population_Race_White_Aa6102_Number ', 'Population_Race_Nonwhite_Aa6103_Number ', 'Population_Race_Black_Aa6104_Number ', 'Population_Race_OtherNonwhite_Aa6105_Number ', 'Population_Residence_Urban_Aa6106_Number ', 'Population_Residence_Rural_Aa6107_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa6200-6248.xls]
+  cols: ['Year', 'Area_Aa6200_SquareMiles ', 'PopulationDensity_Aa6201_PersonsPerSquareMile ', 'Population_Total_Aa6202_Number ', 'Population_Race_White_Aa6203_Number ', 'Population_Race_Nonwhite_Aa6204_Number ', 'Population_Race_Black_Aa6205_Number ', 'Population_Race_OtherNonwhite_Aa6206_Number ', 'Population_Residence_Urban_Aa6207_Number ', 'Population_Residence_Rural_Aa6208_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa6249-6311.xls]
+  cols: ['Year', 'Area_Aa6249_SquareMiles ', 'PopulationDensity_Aa6250_PersonsPerSquareMile ', 'Total_Aa6251_Number ', 'Population_Race_White_Aa6252_Number ', 'Population_Race_Nonwhite_Aa6253_Number ', 'Population_Race_Black_Aa6254_Number ', 'Population_Race_OtherNonwhite_Aa6255_Number ', 'Population_Residence_Urban_Aa6256_Number ', 'Population_Residence_Rural_Aa6257_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa6312-6412.xls]
+  cols: ['Year', 'Area_Aa6312_SquareMiles ', 'PopulationDensity_Aa6313_PersonsPerSquareMile ', 'Population_Total_Aa6314_Number ', 'Population_Race_White_Aa6315_Number ', 'Population_Race_Nonwhite_Aa6316_Number ', 'Population_Race_Black_Aa6317_Number ', 'Population_Race_OtherNonwhite_Aa6318_Number ', 'Population_Residence_Urban_Aa6319_Number ', 'Population_Residence_Rural_Aa6320_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa6413-6499.xls]
+  cols: ['Year', 'Area_Aa6413_SquareMiles ', 'PopulationDensity_Aa6414_PersonsPerSquareMile ', 'Population_Total_Aa6415_Number ', 'Population_Race_White_Aa6416_Number ', 'Population_Race_Nonwhite_Aa6417_Number ', 'Population_Race_Black_Aa6418_Number ', 'Population_Race_OtherNonwhite_Aa6419_Number ', 'Population_Residence_Urban_Aa6420_Number ', 'Population_Residence_Rural_Aa6421_Number ']
+  rows: ?
+
+[aaPopulation-Characteristics\State Populations\Aa6500-6550.xls]
+  cols: ['Year', 'Population_Area_Aa6500_SquareMiles ', 'Population_PopulationDensity_Aa6501_PersonsPerSquareMile ', 'Population_Total_Aa6502_Number ', 'Population_Race_White_Aa6503_Number ', 'Population_Race_Nonwhite_Aa6504_Number ', 'Population_Race_Black_Aa6505_Number ', 'Population_Race_OtherNonwhite_Aa6506_Number ', 'Population_Residence_Urban_Aa6507_Number ', 'Population_Residence_Rural_Aa6508_Number ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab118-149.xls]
+  cols: ['Year', 'AllRaces_Total_Ab118_Per1,000 ', 'AllRaces_FirstBirths_Ab119_Per1,000 ', 'AllRaces_SecondBirths_Ab120_Per1,000 ', 'AllRaces_ThirdBirths_Ab121_Per1,000 ', 'AllRaces_FourthBirths_Ab122_Per1,000 ', 'AllRaces_FifthBirths_Ab123_Per1,000 ', 'AllRaces_SixthAndSeventhBirths_Ab124_Per1,000 ', 'AllRaces_EighthAndLaterBirths_Ab125_Per1,000 ', 'White_Total_Ab126_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab150-215.xls]
+  cols: ['Year', 'AllRaces,ByAge_15-44_Ab150_Per1,000 ', 'AllRaces,ByAge_10-14_Ab151_Per1,000 ', 'AllRaces,ByAge_15-19_Ab152_Per1,000 ', 'AllRaces,ByAge_15-17_Ab153_Per1,000 ', 'AllRaces,ByAge_18-19_Ab154_Per1,000 ', 'AllRaces,ByAge_20-24_Ab155_Per1,000 ', 'AllRaces,ByAge_25-29_Ab156_Per1,000 ', 'AllRaces,ByAge_30-34_Ab157_Per1,000 ', 'AllRaces,ByAge_35-39_Ab158_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab216-263.xls]
+  cols: ['Year', 'Pregnancies_AllRaces_Total_Ab216_Per1,000 ', 'Pregnancies_AllRaces_Age_Under15_Ab217_Per1,000 ', 'Pregnancies_AllRaces_Age_15-19_Ab218_Per1,000 ', 'Pregnancies_AllRaces_Age_15-17_Ab219_Per1,000 ', 'Pregnancies_AllRaces_Age_18-19_Ab220_Per1,000 ', 'Pregnancies_AllRaces_Age_20-24_Ab221_Per1,000 ', 'Pregnancies_AllRaces_Age_25-29_Ab222_Per1,000 ', 'Pregnancies_AllRaces_Age_30-34_Ab223_Per1,000 ', 'Pregnancies_AllRaces_Age_35-39_Ab224_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab264-305.xls]
+  cols: ['Year', 'AllRaces_TotalBirths_Ab264_Number ', 'AllRaces_BirthRate,ByAge_15-44_Ab265_Per1,000 ', 'AllRaces_BirthRate,ByAge_15-19_Ab266_Per1,000 ', 'AllRaces_BirthRate,ByAge_15-17_Ab267_Per1,000 ', 'AllRaces_BirthRate,ByAge_18-19_Ab268_Per1,000 ', 'AllRaces_BirthRate,ByAge_20-24_Ab269_Per1,000 ', 'AllRaces_BirthRate,ByAge_25-29_Ab270_Per1,000 ', 'AllRaces_BirthRate,ByAge_30-34_Ab271_Per1,000 ', 'AllRaces_BirthRate,ByAge_35-39_Ab272_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab306-314.xls]
+  cols: ['Year', 'TotalFertilityRate_AllWomen_Ab306_Per1,000 ', 'TotalFertilityRate_White_Ab307_Per1,000 ', 'TotalFertilityRate_Other_Ab308_Per1,000 ', 'GrossReproductionRate_AllWomen_Ab309_Per1,000 ', 'GrossReproductionRate_White_Ab310_Per1,000 ', 'GrossReproductionRate_Other_Ab311_Per1,000 ', 'NetReproductionRate_AllWomen_Ab312_Per1,000 ', 'NetReproductionRate_White_Ab313_Per1,000 ', 'NetReproductionRate_Other_Ab314_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab315-346.xls]
+  cols: ['Year', 'Adjusted,UnitedStates_WhitePopulation_Ab315_Per1,000 ', 'Adjusted,UnitedStates_BlackPopulation_Ab316_Per1,000 ', 'Unadjusted,WhitePopulation_UnitedStates_Total_Ab317_Per1,000 ', 'Unadjusted,WhitePopulation_UnitedStates_Urban_Ab318_Per1,000 ', 'Unadjusted,WhitePopulation_UnitedStates_Rural_Ab319_Per1,000 ', 'Unadjusted,WhitePopulation_NewEngland_Total_Ab320_Per1,000 ', 'Unadjusted,WhitePopulation_NewEngland_Urban_Ab321_Per1,000 ', 'Unadjusted,WhitePopulation_NewEngland_Rural_Ab322_Per1,000 ', 'Unadjusted,WhitePopulation_MiddleAtlantic_Total_Ab323_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab347-361.xls]
+  cols: ['Year', 'AllRaces_FirstMarriageToFirstBirth_Ab347_Months ', 'AllRaces_FirstBirthToSecondBirth_Ab348_Months ', 'AllRaces_SecondBirthToThirdBirth_Ab349_Months ', 'AllRaces_ThirdBirthToFourthBirth_Ab350_Months ', 'AllRaces_FourthBirthToFifthBirth_Ab351_Months ', 'White_FirstMarriageToFirstBirth_Ab352_Months ', 'White_FirstBirthToSecondBirth_Ab353_Months ', 'White_SecondBirthToThirdBirth_Ab354_Months ', 'White_ThirdBirthToFourthBirth_Ab355_Months ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab362-389.xls]
+  cols: ['Year', 'LiveBirths_Total_Ab362_Number ', 'LiveBirths_Hispanic_Total_Ab363_Number ', 'LiveBirths_Hispanic_Mexican_Ab364_Number ', 'LiveBirths_Hispanic_PuertoRican_Ab365_Number ', 'LiveBirths_Hispanic_Cuban_Ab366_Number ', 'LiveBirths_Hispanic_CentralAndSouthAmerican_Ab367_Number ', 'LiveBirths_Hispanic_OtherAndUnknown_Ab368_Number ', 'LiveBirths_Non-Hispanic_Total_Ab369_Number ', 'LiveBirths_Non-Hispanic_White_Ab370_Number ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab390-497.xls]
+  cols: ['Year', 'AllWomen_TotalFertilityRate_Ab390_Per1,000 ', 'AllWomen_GeneralFertilityRate_Ab391_Per1,000 ', 'AllWomen_BirthRate,ForWomenAges_10-14_Ab392_Per1,000 ', 'AllWomen_BirthRate,ForWomenAges_15-19_Ab393_Per1,000 ', 'AllWomen_BirthRate,ForWomenAges_15-17_Ab394_Per1,000 ', 'AllWomen_BirthRate,ForWomenAges_18-19_Ab395_Per1,000 ', 'AllWomen_BirthRate,ForWomenAges_20-24_Ab396_Per1,000 ', 'AllWomen_BirthRate,ForWomenAges_25-29_Ab397_Per1,000 ', 'AllWomen_BirthRate,ForWomenAges_30-34_Ab398_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab40-51.xls]
+  cols: ['Year', 'CrudeBirthRate_Total_Ab40_Per1,000 ', 'CrudeBirthRate_White_Ab41_Per1,000 ', 'CrudeBirthRate_OtherRaces_Total_Ab42_Per1,000 ', 'CrudeBirthRate_OtherRaces_Black_Ab43_Per1,000 ', 'CrudeBirthRate_OtherRaces_AmericanIndian_Ab44_Per1,000 ', 'CrudeBirthRate_OtherRaces_AsianAndPacificIslander_Ab45_Per1,000 ', 'GeneralFertilityRate_Total_Ab46_Per1,000 ', 'GeneralFertilityRate_White_Ab47_Per1,000 ', 'GeneralFertilityRate_OtherRaces_Total_Ab48_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab498-535.xls]
+  cols: ['Year', 'CensusYear_Ab498_ ', 'AgeOfWomenReporting_Ab499_Years ', 'AllRaces_PercentageWith_NoBirths_Ab500_Percent ', 'AllRaces_PercentageWith_OrBirths_Ab501_Percent ', 'AllRaces_PercentageWith_OrBirths_Ab502_Percent ', 'AllRaces_PercentageWith_OrBirths_Ab503_Percent ', 'AllRaces_PercentageWith_7,8,OrBirths_Ab504_Percent ', 'AllRaces_PercentageWith_OrMoreBirths_Ab505_Percent ', 'AllRaces_PercentageWith_10OrMoreBirths_Ab506_Percent ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab52-117.xls]
+  cols: ['Year', 'AllRaces_TotalFertilityRate_Ab52_Per1,000 ', 'AllRaces_BirthRate,WomenAged_10-14_Ab53_Per1,000 ', 'AllRaces_BirthRate,WomenAged_15-19_Ab54_Per1,000 ', 'AllRaces_BirthRate,WomenAged_15-17_Ab55_Per1,000 ', 'AllRaces_BirthRate,WomenAged_18-19_Ab56_Per1,000 ', 'AllRaces_BirthRate,WomenAged_20-24_Ab57_Per1,000 ', 'AllRaces_BirthRate,WomenAged_25-29_Ab58_Per1,000 ', 'AllRaces_BirthRate,WomenAged_30-34_Ab59_Per1,000 ', 'AllRaces_BirthRate,WomenAged_35-39_Ab60_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab536-625.xls]
+  cols: ['Year', 'AllRaces_PercentageChildless,ByAge_15-44_Ab536_Percent ', 'AllRaces_PercentageChildless,ByAge_15-19_Ab537_Percent ', 'AllRaces_PercentageChildless,ByAge_20-24_Ab538_Percent ', 'AllRaces_PercentageChildless,ByAge_25-29_Ab539_Percent ', 'AllRaces_PercentageChildless,ByAge_30-34_Ab540_Percent ', 'AllRaces_PercentageChildless,ByAge_35-39_Ab541_Percent ', 'AllRaces_PercentageChildless,ByAge_40-44_Ab542_Percent ', 'AllRaces_PercentageChildless,ByAge_45-49_Ab543_Percent ', 'AllRaces_PercentageChildless,ByAge_50-59_Ab544_Percent ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab626-636.xls]
+  cols: ['Year', 'Age_Ab626_Years ', 'ChildrenEverBorn_All_Ab627_Per1,000 ', 'ChildrenEverBorn_Rural_Ab628_Per1,000 ', 'ChildrenEverBorn_Urban_Ab629_Per1,000 ', 'ChildrenEverBorn_Native-born_Ab630_Per1,000 ', 'ChildrenEverBorn_Foreign-born_Ab631_Per1,000 ', 'PercentageChildless_All_Ab632_Percent ', 'PercentageChildless_Rural_Ab633_Percent ', 'PercentageChildless_Urban_Ab634_Percent ']
+  rows: ?
+
+[abVital-Statistics\Births and Fertility\Ab637-643.xls]
+  cols: ['Year', 'Age_Ab637_Years ', 'ChildrenEverBorn_All_Ab638_Per1,000 ', 'ChildrenEverBorn_Native-born_Ab639_Per1,000 ', 'ChildrenEverBorn_Foreign-born_Ab640_Per1,000 ', 'PercentageChildless_All_Ab641_Percent ', 'PercentageChildless_Native-born_Ab642_Percent ', 'PercentageChildless_Foreign-born_Ab643_Percent ']
+  rows: ?
+
+[abVital-Statistics\General\Ab1-10.xls]
+  cols: ['Year', 'CrudeBirthRate_White_Ab1_Per1,000 ', 'CrudeBirthRate_Black_Ab2_Per1,000 ', 'Child-womanRatio_White_Ab3_Per1,000 ', 'Child-womanRatio_Black_Ab4_Per1,000 ', 'TotalFertilityRate_White_Ab5_Number ', 'TotalFertilityRate_Black_Ab6_Number ', 'ExpectationOfLifeAtBirth_White_Ab7_Years ', 'ExpectationOfLifeAtBirth_Black_Ab8_Years ', 'InfantMortalityRate_White_Ab9_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\General\Ab11-30.xls]
+  cols: ['Year', 'LiveBirths_Total_Ab11_Number ', 'LiveBirths_White_Ab12_Number ', 'LiveBirths_OtherRaces_Total_Ab13_Number ', 'LiveBirths_OtherRaces_Black_Ab14_Number ', 'LiveBirths_OtherRaces_AmericanIndian_Ab15_Number ', 'LiveBirths_OtherRaces_AsianAndPacificIslander_Ab16_Number ', 'Deaths_Total_Ab17_Number ', 'Deaths_White_Ab18_Number ', 'Deaths_OtherRaces_Total_Ab19_Number ']
+  rows: ?
+
+[abVital-Statistics\General\Ab31-37.xls]
+  cols: ['Year', 'TotalU.S.Population_Ab31_Thousand ', 'BirthRegistrationArea_Population_Number_Ab32_Thousand ', 'Population_PercentageOfTotalUnitedStates_Ab33_Percent ', 'BirthRegistrationArea_StatesIncluded_Ab34_Number ', 'DeathRegistrationArea_Population_Number_Ab35_Thousand ', 'Population_PercentageOfTotalUnitedStates_Ab36_Percent ', 'DeathRegistrationArea_StatesIncluded_Ab37_Number ']
+  rows: ?
+
+[abVital-Statistics\General\Ab38-39.xls]
+  cols: ['State', 'BirthRegistrationArea_Ab38_Year ', 'DeathRegistrationArea_Ab39_Year ']
+  rows: ?
+
+[abVital-Statistics\Life Expectancy\Ab644-655.xls]
+  cols: ['Year', 'AllRaces_BothSexes_Ab644_Years ', 'AllRaces_Male_Ab645_Years ', 'AllRaces_Female_Ab646_Years ', 'White_BothSexes_Ab647_Years ', 'White_Male_Ab648_Years ', 'White_Female_Ab649_Years ', 'Nonwhite_Total_BothSexes_Ab650_Years ', 'Nonwhite_Total_Male_Ab651_Years ', 'Nonwhite_Total_Female_Ab652_Years ']
+  rows: ?
+
+[abVital-Statistics\Life Expectancy\Ab656-703.xls]
+  cols: ['Year', 'AllRaces_AtBirth_Males_Ab656_Years ', 'AllRaces_AtBirth_Females_Ab657_Years ', 'AllRaces_Age_Males_Ab658_Years ', 'AllRaces_Age_Females_Ab659_Years ', 'AllRaces_Age20_Males_Ab660_Years ', 'AllRaces_Age20_Females_Ab661_Years ', 'AllRaces_Age40_Males_Ab662_Years ', 'AllRaces_Age40_Females_Ab663_Years ', 'AllRaces_Age60_Males_Ab664_Years ']
+  rows: ?
+
+[abVital-Statistics\Life Expectancy\Ab704-911.xls]
+  cols: ['Year', 'AllRaces_Male_ExpectationOfLife_AtBirth_Ab704_Years ', 'AllRaces_Male_ExpectationOfLife_AtAge10_Ab705_Years ', 'AllRaces_Male_NumberLivingAtBeginningOfYearOfAge__Ab706_Number ', 'AllRaces_Male_NumberLivingAtBeginningOfYearOfAge__Ab707_Number ', 'AllRaces_Male_NumberLivingAtBeginningOfYearOfAge__Ab708_Number ', 'AllRaces_Male_NumberLivingAtBeginningOfYearOfAge__Ab709_Number ', 'AllRaces_Male_NumberLivingAtBeginningOfYearOfAge__Ab710_Number ', 'AllRaces_Male_NumberLivingAtBeginningOfYearOfAge__Ab711_Number ', 'AllRaces_Male_NumberLivingAtBeginningOfYearOfAge_10_Ab712_Number ']
+  rows: ?
+
+[abVital-Statistics\Mortality\Ab1048-1058.xls]
+  cols: ['Year', 'Sex_Both_Ab1048_Per100,000 ', 'Sex_Male_Ab1049_Per100,000 ', 'Sex_Female_Ab1050_Per100,000 ', 'Cause_TuberculosisOfTheRespiratorySystem_Ab1051_Per100,000 ', 'Cause_Diphtheria_Ab1052_Per100,000 ', 'Cause_TyphoidAndParatyphoidFever_Ab1053_Per100,000 ', 'Cause_Measles_Ab1054_Per100,000 ', 'Cause_Smallpox_Ab1055_Per100,000 ', 'Cause_MalignantNeoplasms_Ab1056_Per100,000 ']
+  rows: ?
+
+[abVital-Statistics\Mortality\Ab1059-1137.xls]
+  cols: ['Year', 'Deaths_AllPersons_BothSexes_Ab1059_Number ', 'Deaths_AllPersons_Males_Ab1060_Number ', 'Deaths_AllPersons_Females_Ab1061_Number ', 'Deaths_Hispanic_Total_BothSexes_Ab1062_Number ', 'Deaths_Hispanic_Total_Males_Ab1063_Number ', 'Deaths_Hispanic_Total_Females_Ab1064_Number ', 'Deaths_Hispanic_Mexican_BothSexes_Ab1065_Number ', 'Deaths_Hispanic_Mexican_Males_Ab1066_Number ', 'Deaths_Hispanic_Mexican_Females_Ab1067_Number ']
+  rows: ?
+
+[abVital-Statistics\Mortality\Ab912-927.xls]
+  cols: ['Year', 'FetalDeathRatio_Total_Ab912_Per1,000 ', 'FetalDeathRatio_White_Ab913_Per1,000 ', 'FetalDeathRatio_Nonwhite_Total_Ab914_Per1,000 ', 'FetalDeathRatio_Nonwhite_Black_Ab915_Per1,000 ', 'NeonatalMortalityRate_Total_Ab916_Per1,000 ', 'NeonatalMortalityRate_White_Ab917_Per1,000 ', 'NeonatalMortalityRate_Nonwhite_Total_Ab918_Per1,000 ', 'NeonatalMortalityRate_Nonwhite_Black_Ab919_Per1,000 ', 'InfantMortalityRate_Total_Ab920_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Mortality\Ab928.xls]
+  cols: ['Year', 'InfantMortalityRate_Ab928_Per1,000 ']
+  rows: ?
+
+[abVital-Statistics\Mortality\Ab929-951.xls]
+  cols: ['Year', 'Tuberculosis,AllForms_Ab929_Per100,000 ', 'SyphilisAndItsSequella_Ab930_Per100,000 ', 'TyphoidAndParatyphoidFever_Ab931_Per100,000 ', 'ScarletFeverAndStreptococcalSoreThroat_Ab932_Per100,000 ', 'Hepatitis_Ab933_Per100,000 ', 'Diphtheria_Ab934_Per100,000 ', 'WhoopingCough_Ab935_Per100,000 ', 'Measles_Ab936_Per100,000 ', 'MalignantNeoplasms_Ab937_Per100,000 ']
+  rows: ?
+
+[abVital-Statistics\Mortality\Ab952-987.xls]
+  cols: ['Year', 'DeathRate_AllRaces_BothSexes_Ab952_Per100,000 ', 'DeathRate_AllRaces_Male_Ab953_Per100,000 ', 'DeathRate_AllRaces_Female_Ab954_Per100,000 ', 'DeathRate_White_BothSexes_Ab955_Per100,000 ', 'DeathRate_White_Male_Ab956_Per100,000 ', 'DeathRate_White_Female_Ab957_Per100,000 ', 'DeathRate_AllNonwhite_BothSexes_Ab958_Per100,000 ', 'DeathRate_AllNonwhite_Male_Ab959_Per100,000 ', 'DeathRate_AllNonwhite_Female_Ab960_Per100,000 ']
+  rows: ?
+
+[abVital-Statistics\Mortality\Ab988-1047.xls]
+  cols: ['Year', 'BothSexes_Total_Ab988_Per100,000 ', 'BothSexes_Age__Ab989_Per100,000 ', 'BothSexes_Age_1-4_Ab990_Per100,000 ', 'BothSexes_Age_5-9_Ab991_Per100,000 ', 'BothSexes_Age_10-14_Ab992_Per100,000 ', 'BothSexes_Age_15-19_Ab993_Per100,000 ', 'BothSexes_Age_20-24_Ab994_Per100,000 ', 'BothSexes_Age_25-29_Ab995_Per100,000 ', 'BothSexes_Age_30-34_Ab996_Per100,000 ']
+  rows: ?
+
+[acInternal-Migration\Internal Migration\Ac1-42.xls]
+  cols: ['Year', 'AllRaces_Total_Ac1_Number ', 'BornInStateOfResidence_Number_Ac2_Number ', 'BornInStateOfResidence_Percent_Ac3_Percent ', 'ContiguousToStateOfResidence_Number_Ac4_Number ', 'ContiguousToStateOfResidence_Percent_Ac5_Percent ', 'NoncontiguousToStateOfResidence_Number_Ac6_Number ', 'NoncontiguousToStateOfResidence_Percent_Ac7_Percent ', 'InterstateMigrationStatus_BornInOutlyingAreas_Ac8_Number ', 'AllRaces_InterstateMigrationStatus_BornAbroadOrAtSea_Ac9_Number ']
+  rows: ?
+
+[acInternal-Migration\Internal Migration\Ac206-413.xls]
+  cols: ['Year', 'WhiteAndBlackPopulation_NewEngland_Maine_Ac206_Thousand ', 'WhiteAndBlackPopulation_NewEngland_NewHampshire_Ac207_Thousand ', 'WhiteAndBlackPopulation_NewEngland_Vermont_Ac208_Thousand ', 'WhiteAndBlackPopulation_NewEngland_Massachusetts_Ac209_Thousand ', 'WhiteAndBlackPopulation_NewEngland_RhodeIsland_Ac210_Thousand ', 'WhiteAndBlackPopulation_NewEngland_Connecticut_Ac211_Thousand ', 'WhiteAndBlackPopulation_MiddleAtlantic_NewYork_Ac212_Thousand ', 'WhiteAndBlackPopulation_MiddleAtlantic_NewJersey_Ac213_Thousand ', 'MiddleAtlantic_Pennsylvania_Ac214_Thousand ']
+  rows: ?
+
+[acInternal-Migration\Internal Migration\Ac414-418.xls]
+  cols: ['Year', 'FarmPopulation_Ac414_Thousand ', 'ChangeInFarmPopulation_NetFromBirthsAndDeaths_Ac415_Thousand ', 'Net(toFarms)_Ac416_Thousand ', 'MigrationAndReclassificationOfResidence_ToFarms_Ac417_Thousand ', 'FromFarms_Ac418_Thousand ']
+  rows: ?
+
+[acInternal-Migration\Internal Migration\Ac419-427.xls]
+  cols: ['Year', 'TotalPopulation_Ac419_Thousand ', 'Nonmovers_Ac420_Thousand ', 'Movers_Total_Ac421_Thousand ', 'Movers_DifferentHouseInTheUnitedStates_Total_Ac422_Thousand ', 'Movers_DifferentHouseInTheUnitedStates_SameCounty_Ac423_Thousand ', 'DifferentCounty(migrants)_Total_Ac424_Thousand ', 'DifferentCounty(migrants)_WithinState_Ac425_Thousand ', 'DifferentCounty(migrants)_BetweenStates_Ac426_Thousand ', 'Movers_AbroadAtBeginningOfPeriod_Ac427_Thousand ']
+  rows: ?
+
+[acInternal-Migration\Internal Migration\Ac428-436.xls]
+  cols: ['Year', 'TotalPopulation_Ac428_Thousand ', 'Nonmovers_Ac429_Thousand ', 'Movers_Total_Ac430_Thousand ', 'Movers_DifferentHouseInTheUnitedStates_Total_Ac431_Thousand ', 'Movers_DifferentHouseInTheUnitedStates_SameCounty_Ac432_Thousand ', 'DifferentCounty(migrants)_Total_Ac433_Thousand ', 'DifferentCounty(migrants)_WithinState_Ac434_Thousand ', 'DifferentCounty(migrants)_BetweenStates_Ac435_Thousand ', 'Movers_AbroadAtBeginningOfPeriod_Ac436_Thousand ']
+  rows: ?
+
+[acInternal-Migration\Internal Migration\Ac43-52.xls]
+  cols: ['Race', 'Year', 'Division of birth', 'Total_Ac43_Number ', 'DivisionOfResidence_NewEngland_Ac44_Number ', 'DivisionOfResidence_MiddleAtlantic_Ac45_Number ', 'DivisionOfResidence_EastNorthCentral_Ac46_Number ', 'DivisionOfResidence_WestNorthCentral_Ac47_Number ', 'DivisionOfResidence_SouthAtlantic_Ac48_Number ', 'DivisionOfResidence_EastSouthCentral_Ac49_Number ']
+  rows: ?
+
+[acInternal-Migration\Internal Migration\Ac53-205.xls]
+  cols: ['Year', 'WhiteAndBlackPopulation_NewEngland_Maine_Ac53_Thousand ', 'WhiteAndBlackPopulation_NewEngland_NewHampshire_Ac54_Thousand ', 'WhiteAndBlackPopulation_NewEngland_Vermont_Ac55_Thousand ', 'WhiteAndBlackPopulation_NewEngland_Massachusetts_Ac56_Thousand ', 'WhiteAndBlackPopulation_NewEngland_RhodeIsland_Ac57_Thousand ', 'WhiteAndBlackPopulation_NewEngland_Connecticut_Ac58_Thousand ', 'WhiteAndBlackPopulation_MiddleAtlantic_NewYork_Ac59_Thousand ', 'WhiteAndBlackPopulation_MiddleAtlantic_NewJersey_Ac60_Thousand ', 'MiddleAtlantic_Pennsylvania_Ac61_Thousand ']
+  rows: ?
+
+[adInternational-Migration\Alien Admissions, by Program\Ad1005-1013.xls]
+  cols: ['Year', 'Admitted_Ad1005_Number ', 'GrantedPermanentResidentStatus_Total_Ad1006_Number ', 'ContinentOfBirth_Europe_Ad1007_Number ', 'ContinentOfBirth_Asia_Ad1008_Number ', 'ContinentOfBirth_Africa_Ad1009_Number ', 'ContinentOfBirth_NorthAmerica_Ad1010_Number ', 'ContinentOfBirth_SouthAmerica_Ad1011_Number ', 'ContinentOfBirth_Oceania_Ad1012_Number ', 'ContinentOfBirth_CountryUnknownOrNotReported_Ad1013_Number ']
+  rows: ?
+
+[adInternational-Migration\Alien Admissions, by Program\Ad1014-1022.xls]
+  cols: ['Year', 'NonimmigrantAdmissions_Total_Ad1014_Number ', 'NonimmigrantAdmissions_TemporaryVisitor_Ad1015_Number ', 'NonimmigrantAdmissions_TransitAlien_Ad1016_Number ', 'NonimmigrantAdmissions_Student_Ad1017_Number ', 'ForeignGovernmentAndInternationalOfficial_Ad1018_Number ', 'NonimmigrantAdmissions_ReturningResidentAlien_Ad1019_Number ', 'NonimmigrantAdmissions_ExchangeVisitor_Ad1020_Number ', 'NonimmigrantAdmissions_Other_Ad1021_Number ', 'AliensAdmittedUnderSpecialPrograms_Ad1022_Number ']
+  rows: ?
+
+[adInternational-Migration\Alien Admissions, by Program\Ad1023-1029.xls]
+  cols: ['Year', 'Total_Ad1023_Number ', 'TemporaryWorkersAndIndustrialTrainees_Admissions_Ad1024_Number ', 'SpousesAndChildren_Ad1025_Number ', 'IntracompanyTransfers_Admissions_Ad1026_Number ', 'IntracompanyTransfers_SpousesAndChildren_Ad1027_Number ', 'Free-trade-agreementWorkers_Admissions_Ad1028_Number ', 'Free-trade-agreementWorkers_SpousesAndChildren_Ad1029_Number ']
+  rows: ?
+
+[adInternational-Migration\Alien Admissions, by Program\Ad950-954.xls]
+  cols: ['Year', 'AnnualImmigrantQuota_Ad950_Number ', 'NativesOfEasternHemisphereCountries_Ad951_Number ', 'NativesOfWesternHemisphereCountries_Ad952_Number ', 'ImmediateRelativesOfU.S.Citizens_Ad953_Number ', 'ImmigrantsAdmittedUnderTheQuotaSystem_Other_Ad954_Number ']
+  rows: ?
+
+[adInternational-Migration\Alien Admissions, by Program\Ad955-965.xls]
+  cols: ['Year', 'NumericalCapUnderPreferenceSystem_Ad955_Number ', 'ImmigrantAdmissions_SubjectToNumericalCap_Total_Ad956_Number ', 'SubjectToNumericalCap_Family-sponsoredPreferences_Ad957_Number ', 'SubjectToNumericalCap_Employment-basedPreferences_Ad958_Number ', 'SubjectToNumericalCap_OtherPreferences_Ad959_Number ', 'ImmigrantAdmissions_NotSubjectToNumericalCap_Total_Ad960_Number ', 'ImmediateRelativesOfU.S.Citizens_Ad961_Number ', 'NativesOfWesternHemisphereCountries_Ad962_Number ', 'NotSubjectToNumericalCap_IRCALegalizations_Ad963_Number ']
+  rows: ?
+
+[adInternational-Migration\Alien Admissions, by Program\Ad966-975.xls]
+  cols: ['Year', 'Total_Ad966_Number ', 'PreferenceImmigrants_Total_Ad967_Number ', 'PreferenceImmigrants_Family-sponsored_Ad968_Number ', 'PreferenceImmigrants_Employment-based_Ad969_Number ', 'ImmediateRelativesOfU.S.Citizens_Ad970_Number ', 'RefugeesAndAsylees_Ad971_Number ', 'OtherImmigrants_Ad972_Number ', 'Total_Ad973_Number ', 'ResidentsSince1982_Ad974_Number ']
+  rows: ?
+
+[adInternational-Migration\Alien Admissions, by Program\Ad976-988.xls]
+  cols: ['Year', 'Total_Ad976_Number ', 'BornIn_Europe_Total_Ad977_Number ', 'BornIn_Europe_Female_Ad978_Number ', 'BornIn_Asia_Total_Ad979_Number ', 'BornIn_Asia_Female_Ad980_Number ', 'BornIn_WesternHemisphere_Total_Ad981_Number ', 'BornIn_WesternHemisphere_Female_Ad982_Number ', 'BornIn_Other_Total_Ad983_Number ', 'BornIn_Other_Female_Ad984_Number ']
+  rows: ?
+
+[adInternational-Migration\Alien Admissions, by Program\Ad989-1004.xls]
+  cols: ['Year', 'Total_Ad989_Number ', 'PresidentialDirectiveOfDecember22,1945_Ad990_Number ', 'DisplacedPersonsActOfJune25,1948_Ad991_Number ', 'OrphansActOfJuly29,1953_Ad992_Number ', 'RefugeeReliefActOfAugust7,1953_Ad993_Number ', 'RefugeeEscapeeActOfSeptember11,1957_Ad994_Number ', 'HungarianRefugeesActOfJuly25,1958_Ad995_Number ', 'AzoresAndNetherlandsRefugeesActOfSeptember2,1958_Ad996_Number ', 'RefugeesRelativesActOfSeptember22,1959_Ad997_Number ']
+  rows: ?
+
+[adInternational-Migration\Border Control\Ad1072-1075.xls]
+  cols: ['Year', 'DeportableAliensLocated_Total_Ad1072_Number ', 'DeportableAliensLocated_MexicanNationals_Ad1073_Number ', 'AliensExpelled_ByFormalRemoval_Ad1074_Number ', 'AliensExpelled_ByVoluntaryDeparture_Ad1075_Number ']
+  rows: ?
+
+[adInternational-Migration\Border Control\Ad1076-1084.xls]
+  cols: ['Year', 'Expenditures_Ad1076_ThousandDollars ', 'ImmigrationAndNaturalizationService_Force_Ad1077_Number ', 'BorderPatrol_Expenditures_Ad1078_ThousandDollars ', 'BorderPatrol_Force_Ad1079_Number ', 'SmugglersOfAliensLocated_Ad1080_Number ', 'AliensLocatedWhoWereSmuggledIntoTheUnitedStates_Ad1081_Number ', 'Seizures_Conveyances_Ad1082_Number ', 'Seizures_Narcotics_Ad1083_ThousandDollars ', 'Seizures_Non-narcotics_Ad1084_ThousandDollars ']
+  rows: ?
+
+[adInternational-Migration\Border Control\Ad1085-1088.xls]
+  cols: ['Year', 'WantMoreImmigrantsAllowed_Ad1085_Percent ', 'WantNumberOfImmigrantsAllowedToStayTheSame_Ad1086_Percent ', 'WantFewerImmigrantsAllowed_Ad1087_Percent ', 'NoOpinion_Ad1088_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad256-279.xls]
+  cols: ['Year', 'BothSexes_Total_Ad256_Number ', 'BothSexes_Native-born_Ad257_Number ', 'BothSexes_Foreign-born_Total_Ad258_Number ', 'BothSexes_Foreign-born_Naturalized_Ad259_Number ', 'BothSexes_Foreign-born_NotCitizen_Total_Ad260_Number ', 'BothSexes_Foreign-born_NotCitizen_HavingFirstPapers_Ad261_Number ', 'BothSexes_Foreign-born_NotCitizen_HavingNoPapers_Ad262_Number ', 'BothSexes_Foreign-born_CitizenshipStatusUnknown_Ad263_Number ', 'Male_Total_Ad264_Number ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad280-318.xls]
+  cols: ['Year', 'Age21YearsAndOlder_BothSexes_Total_Ad280_Number ', 'Age21YearsAndOlder_BothSexes_Native-born_Ad281_Number ', 'Age21YearsAndOlder_BothSexes_Foreign-born_Total_Ad282_Number ', 'BothSexes_Foreign-born_Naturalized_Ad283_Number ', 'BothSexes_Foreign-born_NotCitizen_Total_Ad284_Number ', 'Foreign-born_NotCitizen_HavingFirstPapers_Ad285_Number ', 'BothSexes_Foreign-born_NotCitizen_HavingNoPapers_Ad286_Number ', 'BothSexes_Foreign-born_CitizenshipStatusUnknown_Ad287_Number ', 'Age21YearsAndOlder_Male_Total_Ad288_Number ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad319-353.xls]
+  cols: ['Year', 'Total_Ad319_Number ', 'Europe_EnglandAndWales_Ad320_Number ', 'Europe_Scotland_Ad321_Number ', 'Europe_Ireland_Total_Ad322_Number ', 'Europe_Ireland_NorthernIreland_Ad323_Number ', 'Europe_Ireland_Ireland(Eire)_Ad324_Number ', 'Europe_Norway_Ad325_Number ', 'Europe_Sweden_Ad326_Number ', 'Europe_Denmark_Ad327_Number ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad354-443.xls]
+  cols: ['Year', 'Total_Ad354_Number ', 'TotalReportingSpecificCountryOrRegion_Ad355_Number ', 'Europe_Total,Europe_Ad356_Number ', 'Europe_Total,NorthernAndWesternEurope_Ad357_Number ', 'Europe_NorthernEurope_Total,NorthernEurope_Ad358_Number ', 'Europe_NorthernEurope_Total,BritishIsles_Ad359_Number ', 'Europe_NorthernEurope_GreatBritain_Total_Ad360_Number ', 'Europe_NorthernEurope_GreatBritain_England_Ad361_Number ', 'Europe_NorthernEurope_GreatBritain_Scotland_Ad362_Number ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad444-514.xls]
+  cols: ['Year', 'Total_Ad444_Number ', 'Europe_Total_Ad445_Number ', 'Europe_NorthernAndWesternEurope_Total_Ad446_Number ', 'Europe_NorthernAndWesternEurope_BritishIsles_Total_Ad447_Number ', 'BritishIsles_GreatBritain_Total_Ad448_Number ', 'BritishIsles_GreatBritain_England_Ad449_Number ', 'BritishIsles_GreatBritain_Scotland_Ad450_Number ', 'BritishIsles_GreatBritain_Wales_Ad451_Number ', 'BritishIsles_Ireland_Total_Ad452_Number ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad515-695.xls]
+  cols: ['Year', 'Total_Ad515_Number ', 'TotalReportingSpecificCountryOrRegion_Ad516_Number ', 'Europe_Total,Europe_Ad517_Number ', 'Europe_Total,NorthernAndWesternEurope_Ad518_Number ', 'Europe_NorthernEurope_Total,NorthernEurope_Ad519_Number ', 'Europe_NorthernEurope_Total,BritishIsles_Ad520_Number ', 'Europe_NorthernEurope_UnitedKingdom_Total_Ad521_Number ', 'NorthernEurope_UnitedKingdom_GreatBritain_Total_Ad522_Number ', 'NorthernEurope_UnitedKingdom_GreatBritain_England_Ad523_Number ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad696-706.xls]
+  cols: ['Year', 'First_State_Ad696_ ', "First_State'sShareOfU.S.Population_Foreign-born_Ad697_Percent ", "First_State'sShareOfU.S.Population_Native-born_Ad698_Percent ", 'Second_State_Ad699_ ', "Second_State'sShareOfU.S.Population_Foreign-born_Ad700_Percent ", "Second_State'sShareOfU.S.Population_Native-born_Ad701_Percent ", 'Third_State_Ad702_ ', "Third_State'sShareOfU.S.Population_Foreign-born_Ad703_Percent ", "Third_State'sShareOfU.S.Population_Native-born_Ad704_Percent "]
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad707-710.xls]
+  cols: ['Year', 'FewerThan2,500Persons_Ad707_Percent ', '-bornPopulationLivingInPlacesOf_2,500OrMorePersons_Ad708_Percent ', 'FewerThan2,500Persons_Ad709_Percent ', '-bornPopulationLivingInPlacesOf_2,500OrMorePersons_Ad710_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad711-721.xls]
+  cols: ['Year', 'NorthAmericaOutsideTheUnitedStates_Ad711_Percent ', 'CentralAmericaAndCaribbean_Ad712_Percent ', 'SouthAmerica_Ad713_Percent ', 'Europe_Northern_Ad714_Percent ', 'Europe_Western_Ad715_Percent ', 'Europe_Eastern_Ad716_Percent ', 'Europe_Southern_Ad717_Percent ', 'Asia_Ad718_Percent ', 'Africa_Ad719_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad722-739.xls]
+  cols: ['Year', 'UnitedStates_WithForeign-bornParents_Number_Ad722_Number ', 'UnitedStates_WithForeign-bornParents_Percentage_Ad723_Percent ', 'UnitedStates_WithAlienParents_Number_Ad724_Number ', 'UnitedStates_WithAlienParents_Percentage_Ad725_Percent ', 'Percentage_California_WithForeign-bornParents_Ad726_Percent ', 'Percentage_California_WithAlienParents_Ad727_Percent ', 'Percentage_Florida_WithForeign-bornParents_Ad728_Percent ', 'Percentage_Florida_WithAlienParents_Ad729_Percent ', 'Percentage_Illinois_WithForeign-bornParents_Ad730_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad740-743.xls]
+  cols: ['Year', 'Native-born_White_Ad740_Percent ', 'Native-born_Black_Ad741_Percent ', 'Native-born_OtherRace_Ad742_Percent ', 'Foreign-born_Ad743_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad744-751.xls]
+  cols: ['Year', 'Ever-marriedWomen_Native-born_White_Ad744_Number ', 'Ever-marriedWomen_Native-born_Black_Ad745_Number ', 'Ever-marriedWomen_Native-born_OtherRace_Ad746_Number ', 'Ever-marriedWomen_Foreign-born_Ad747_Number ', 'AllWomen_Native-born_White_Ad748_Number ', 'AllWomen_Native-born_Black_Ad749_Number ', 'AllWomen_Native-born_OtherRace_Ad750_Number ', 'AllWomen_Foreign-born_Ad751_Number ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad752-759.xls]
+  cols: ['Year', 'Male_Native-born_White_Ad752_Percent ', 'Male_Native-born_Black_Ad753_Percent ', 'Male_Native-born_OtherRace_Ad754_Percent ', 'Male_Foreign-born_Ad755_Percent ', 'Female_Native-born_White_Ad756_Percent ', 'Female_Native-born_Black_Ad757_Percent ', 'Female_Native-born_OtherRace_Ad758_Percent ', 'Female_Foreign-born_Ad759_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad760-771.xls]
+  cols: ['Year', 'Married_Native-born_White_Ad760_Percent ', 'Married_Native-born_Black_Ad761_Percent ', 'Married_Native-born_OtherRace_Ad762_Percent ', 'Married_Foreign-born_Ad763_Percent ', 'Widowed,Divorced,OrSeparated_Native-born_White_Ad764_Percent ', 'Widowed,Divorced,OrSeparated_Native-born_Black_Ad765_Percent ', 'Widowed,Divorced,OrSeparated_Native-born_OtherRace_Ad766_Percent ', 'Widowed,Divorced,OrSeparated_Foreign-born_Ad767_Percent ', 'Never-married_Native-born_White_Ad768_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad772-781.xls]
+  cols: ['Year', 'Male_All_Ad772_Percent ', 'Male_Native-born_White_Ad773_Percent ', 'Male_Native-born_Black_Ad774_Percent ', 'Male_Native-born_OtherRace_Ad775_Percent ', 'Male_Foreign-born_Ad776_Percent ', 'Female_All_Ad777_Percent ', 'Female_Native-born_White_Ad778_Percent ', 'Female_Native-born_Black_Ad779_Percent ', 'Female_Native-born_OtherRace_Ad780_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad782-791.xls]
+  cols: ['Year', 'Male_All_Ad782_Percent ', 'Male_Native-born_White_Ad783_Percent ', 'Male_Native-born_Black_Ad784_Percent ', 'Male_Native-born_OtherRace_Ad785_Percent ', 'Male_Foreign-born_Ad786_Percent ', 'Female_All_Ad787_Percent ', 'Female_Native-born_White_Ad788_Percent ', 'Female_Native-born_Black_Ad789_Percent ', 'Female_Native-born_OtherRace_Ad790_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad792-801.xls]
+  cols: ['Year', 'Male_All_Ad792_Dollars ', 'Male_Native-born_White_Ad793_Dollars ', 'Male_Native-born_Black_Ad794_Dollars ', 'Male_Native-born_OtherRace_Ad795_Dollars ', 'Male_Foreign-born_Ad796_Dollars ', 'Female_All_Ad797_Dollars ', 'Female_Native-born_White_Ad798_Dollars ', 'Female_Native-born_Black_Ad799_Dollars ', 'Female_Native-born_OtherRace_Ad800_Dollars ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad802-849.xls]
+  cols: ['Year', 'Male_Native-bornWhite_Professionals_Ad802_Percent ', 'Male_Native-bornWhite_Proprietors_Ad803_Percent ', 'Male_Native-bornWhite_ManagersAndOfficials_Ad804_Percent ', 'Male_Native-bornWhite_ClericalWorkers_Ad805_Percent ', 'Male_Native-bornWhite_SalesWorkers_Ad806_Percent ', 'Male_Native-bornWhite_CraftWorkers_Ad807_Percent ', 'Male_Native-bornWhite_Operatives_Ad808_Percent ', 'Male_Native-bornWhite_ServiceWorkers_Ad809_Percent ', 'Male_Native-bornWhite_DomesticWorkers_Ad810_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad850-873.xls]
+  cols: ['Year', 'Male_Professionals_Ad850_Percent ', 'Male_Proprietors_Ad851_Percent ', 'Male_ManagersAndOfficials_Ad852_Percent ', 'Male_ClericalWorkers_Ad853_Percent ', 'Male_SalesWorkers_Ad854_Percent ', 'Male_CraftWorkers_Ad855_Percent ', 'Male_Operatives_Ad856_Percent ', 'Male_ServiceWorkers_Ad857_Percent ', 'Male_DomesticWorkers_Ad858_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad874-937.xls]
+  cols: ['Year', 'Male_Native-bornWhite_Agriculture_Ad874_Percent ', 'Male_Native-bornWhite_ForestryAndFishing_Ad875_Percent ', 'Male_Native-bornWhite_Mining_Ad876_Percent ', 'Male_Native-bornWhite_Construction_Ad877_Percent ', 'Male_Native-bornWhite_Manufacturing_Durable_Ad878_Percent ', 'Male_Native-bornWhite_Manufacturing_Nondurable_Ad879_Percent ', 'Native-bornWhite_TransportationAndCommunications_Ad880_Percent ', 'Male_Native-bornWhite_Trade_Wholesale_Ad881_Percent ', 'Male_Native-bornWhite_Trade_Retail_Ad882_Percent ']
+  rows: ?
+
+[adInternational-Migration\Foreign-Born Population and Its Characteristics\Ad938-949.xls]
+  cols: ['Year', 'Physics_Name_Ad938_ ', 'Physics_CountryOfBirth_Ad939_ ', 'Chemistry_Name_Ad940_ ', 'Chemistry_CountryOfBirth_Ad941_ ', 'MedicineOrPhysiology_Name_Ad942_ ', 'MedicineOrPhysiology_CountryOfBirth_Ad943_ ', 'Literature_Name_Ad944_ ', 'Literature_CountryOfBirth_Ad945_ ', 'Peace_Name_Ad946_ ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Characteristic\Ad222-225.xls]
+  cols: ['Year', 'Total_Ad222_Number ', 'Male_Ad223_Number ', 'Female_Ad224_Number ', 'SexNotRecorded_Ad225_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Characteristic\Ad226-230.xls]
+  cols: ['Year', 'Total_Ad226_Number ', 'Youthful_Ad227_Number ', 'Mid-age_Ad228_Number ', 'Older_Ad229_Number ', 'AgeNotRecorded_Ad230_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Characteristic\Ad231-245.xls]
+  cols: ['Year', 'Total_Ad231_Number ', 'Professional,Technical,AndKindred_Ad232_Number ', 'FarmersAndFarmManagers_Ad233_Number ', 'Managers,Officials,AndProprietors_Ad234_Number ', 'Clerical,Sales,AndKindred_Ad235_Number ', 'Craftsmen,Foremen,Operatives,AndKindred_Total_Ad236_Number ', 'Craftsmen,Foremen,AndKindred_Ad237_Number ', 'OperativesAndKindred_Ad238_Number ', 'PrivateHouseholdWorkers_Ad239_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Characteristic\Ad246-255.xls]
+  cols: ['Year', 'Total_Ad246_Number ', 'ProfessionalOrTechnicalSpecialty_Ad247_Number ', 'Executive,Administrative,OrManagerial_Ad248_Number ', 'Sales_Ad249_Number ', 'AdministrativeSupport_Ad250_Number ', 'PrecisionProduction,Craft,OrRepair_Ad251_Number ', 'Operator,Fabricator,OrLaborer_Ad252_Number ', 'Farming,Forestry,OrFishing_Ad253_Number ', 'ServiceWorker_Ad254_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad106-120.xls]
+  cols: ['Year', 'Total_Ad106_Number ', 'NorthwesternEurope_GreatBritain_Ad107_Number ', 'NorthwesternEurope_Ireland_Ad108_Number ', 'NorthwesternEurope_Scandinavia_Ad109_Number ', 'NorthwesternEurope_Other_Ad110_Number ', 'CentralEurope_Germany_Ad111_Number ', 'CentralEurope_Poland_Ad112_Number ', 'CentralEurope_Other_Ad113_Number ', 'EasternEurope_FormerSovietUnionAndBalticStates_Ad114_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad121-135.xls]
+  cols: ['Year', 'Total_Ad121_Number ', 'NorthwesternEurope_UnitedKingdom_Ad122_Number ', 'NorthwesternEurope_Ireland_Ad123_Number ', 'NorthwesternEurope_Scandinavia_Ad124_Number ', 'NorthwesternEurope_Other_Ad125_Number ', 'CentralEurope_Germany_Ad126_Number ', 'CentralEurope_Poland_Ad127_Number ', 'CentralEurope_Other_Ad128_Number ', 'EasternEurope_FormerSovietUnionAndBalticStates_Ad129_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad136-148.xls]
+  cols: ['Year', 'Total_Ad136_Number ', 'ArabStates_Ad137_Number ', 'China_Ad138_Number ', 'HongKong_Ad139_Number ', 'India_Ad140_Number ', 'Iran_Ad141_Number ', 'Israel_Ad142_Number ', 'Japan_Ad143_Number ', 'Korea_Ad144_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad149-161.xls]
+  cols: ['Year', 'Total_Ad149_Number ', 'ArabStates_Ad150_Number ', 'China_Ad151_Number ', 'HongKong_Ad152_Number ', 'India_Ad153_Number ', 'Iran_Ad154_Number ', 'Israel_Ad155_Number ', 'Japan_Ad156_Number ', 'Korea_Ad157_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad162-172.xls]
+  cols: ['Year', 'Total_Ad162_Number ', 'Canada_Ad163_Number ', 'CentralAmerica_Mexico_Ad164_Number ', 'CentralAmerica_ElSalvador_Ad165_Number ', 'CentralAmerica_Other_Ad166_Number ', 'Caribbean_Cuba_Ad167_Number ', 'Caribbean_DominicanRepublic_Ad168_Number ', 'Caribbean_Haiti_Ad169_Number ', 'Caribbean_Jamaica_Ad170_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad173-190.xls]
+  cols: ['Year', 'Total_Ad173_Number ', 'Canada_Ad174_Number ', 'Mexico_Ad175_Number ', 'CentralAmerica_Total_Ad176_Number ', 'CentralAmerica_ElSalvador_Ad177_Number ', 'CentralAmerica_Guatemala_Ad178_Number ', 'CentralAmerica_Honduras_Ad179_Number ', 'CentralAmerica_Nicaragua_Ad180_Number ', 'CentralAmerica_Panama_Ad181_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad191-195.xls]
+  cols: ['Year', 'Total_Ad191_Number ', 'Argentina_Ad192_Number ', 'Colombia_Ad193_Number ', 'Ecuador_Ad194_Number ', 'Other_Ad195_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad196-205.xls]
+  cols: ['Year', 'Total_Ad196_Number ', 'Argentina_Ad197_Number ', 'Brazil_Ad198_Number ', 'Chile_Ad199_Number ', 'Colombia_Ad200_Number ', 'Ecuador_Ad201_Number ', 'Guyana_Ad202_Number ', 'Peru_Ad203_Number ', 'Venezuela_Ad204_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad206-213.xls]
+  cols: ['Year', 'Africa_Total_Ad206_Number ', 'Africa_North_Ad207_Number ', 'Africa_Sub-Saharan_Ad208_Number ', 'Africa_NotSpecified_Ad209_Number ', 'Oceania_Total_Ad210_Number ', 'Oceania_AustraliaAndNewZealand_Ad211_Number ', 'Oceania_Other_Ad212_Number ', 'OtherAndUnknown_Ad213_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad214-221.xls]
+  cols: ['Year', 'Africa_Total_Ad214_Number ', 'Africa_North_Ad215_Number ', 'Africa_Sub-Saharan_Ad216_Number ', 'Africa_NotSpecified_Ad217_Number ', 'Oceania_Total_Ad218_Number ', 'Oceania_AustraliaAndNewZealand_Ad219_Number ', 'Oceania_OtherOceania_Ad220_Number ', 'OtherAndUnknown_Ad221_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad90-97.xls]
+  cols: ['Year', 'Total_Ad90_Number ', 'Europe_Ad91_Number ', 'Asia_Ad92_Number ', 'NorthAmerica_Ad93_Number ', 'SouthAmerica_Ad94_Number ', 'Africa_Ad95_Number ', 'Oceania_Ad96_Number ', 'OtherOrUnknown_Ad97_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, by Country\Ad98-105.xls]
+  cols: ['Year', 'Total_Ad98_Number ', 'Europe_Ad99_Number ', 'Asia_Ad100_Number ', 'NorthAmerica_Ad101_Number ', 'SouthAmerica_Ad102_Number ', 'Africa_Ad103_Number ', 'Oceania_Ad104_Number ', 'OtherAndUnknown_Ad105_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, Emigrants, and Net Migration\Ad1-2.xls]
+  cols: ['Year', 'ImmigrantsToTheUnitedStates_Ad1_Number ', 'EmigrantsFromTheUnitedStates_Ad2_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, Emigrants, and Net Migration\Ad16-20.xls]
+  cols: ['Year', 'NetImmigration(McClellandAndZeckhauser)_Total_Ad16_Number ', 'NetImmigration(McClellandAndZeckhauser)_Whites_Ad17_Number ', 'NetImmigration(McClellandAndZeckhauser)_Slaves_Ad18_Number ', 'GrossImmigration,FreeAndSlave(Blodget)_Ad19_Number ', 'NetImmigration(Schaefer)_Ad20_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, Emigrants, and Net Migration\Ad21-24.xls]
+  cols: ['Year', 'NetImmigrationOfAliens_OfficialINSFigures_Ad21_Number ', 'NetImmigrationOfAliens_KuznetsAndRubin_Ad22_Number ', 'ArrivalsOfAlienPassengers_Ad23_Number ', 'DeparturesOfAlienPassengers_Ad24_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, Emigrants, and Net Migration\Ad25-50.xls]
+  cols: ['Year', 'FromEurope_Total_Ad25_Number ', 'FromEurope_LandsGovernedByAustriaAndHungary_AsOf1924_Ad26_Number ', 'FromEurope_LandsGovernedByAustriaAndHungary_AsOf1846_Ad27_Number ', 'FromEurope_Belgium_Ad28_Number ', 'FromEurope_BritishIsles_IntercontinentalPassengers_Ad29_Number ', 'FromEurope_BritishIsles_IntercontinentalEmigrants_Ad30_Number ', 'FromEurope_Denmark_Ad31_Number ', 'FromEurope_France_Ad32_Number ', 'FromEurope_Germany_Ad33_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, Emigrants, and Net Migration\Ad3-15.xls]
+  cols: ['Year', 'White_BritishNorthAmerica_Total_Ad3_Thousand ', 'White_BritishNorthAmerica_NewEngland_Ad4_Thousand ', 'White_BritishNorthAmerica_MiddleColonies_Ad5_Thousand ', 'White_BritishNorthAmerica_UpperSouth_Ad6_Thousand ', 'White_BritishNorthAmerica_LowerSouth_Ad7_Thousand ', 'White_BritishWestIndies_Ad8_Thousand ', 'Black_BritishNorthAmerica_Total_Ad9_Thousand ', 'Black_BritishNorthAmerica_NewEngland_Ad10_Thousand ', 'Black_BritishNorthAmerica_MiddleColonies_Ad11_Thousand ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, Emigrants, and Net Migration\Ad51-79.xls]
+  cols: ['Year', 'ToTheAmericas_Canada_Ad51_Number ', 'ToTheAmericas_NewBrunswick(Brit.)_Ad52_Number ', 'ToTheAmericas_NovaScotia(Brit.)_Ad53_Number ', 'ToTheAmericas_Newfoundland(Brit.)_Ad54_Number ', 'ToTheAmericas_PrinceEdwardIsland(Brit.)_Ad55_Number ', 'ToTheAmericas_UnitedStates_Ad56_Number ', 'ToTheAmericas_Mexico_Ad57_Number ', 'ToTheAmericas_BritishWestIndies_Ad58_Number ', 'ToTheAmericas_Cuba_Ad59_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, Emigrants, and Net Migration\Ad80-81.xls]
+  cols: ['Year', 'U.S.EmigrantsToCanada_Ad80_Number ', 'CanadiansReturningToCanada_Ad81_Number ']
+  rows: ?
+
+[adInternational-Migration\Immigrants, Emigrants, and Net Migration\Ad82-89.xls]
+  cols: ['Year', 'AllNationalities_Ad82_Number ', 'Chinese_SchmidtEstimates_Ad83_Number ', 'Chinese_GlickEstimates_Ad84_Number ', 'German_Ad85_Number ', 'Japanese_Ad86_Number ', 'Portuguese_Ad87_Number ', 'SouthSeasIslanders_Ad88_Number ', 'OtherNationalities_Ad89_Number ']
+  rows: ?
+
+[adInternational-Migration\Naturalization\Ad1030-1037.xls]
+  cols: ['Year', 'AliensNaturalized_Total_Ad1030_Number ', 'UnderGeneralNaturalizationProvisions_Ad1031_Number ', 'AliensNaturalized_BecauseOfMarriageToU.S.Citizens_Ad1032_Number ', 'AliensNaturalized_AsChildrenOfU.S.Citizens_Ad1033_Number ', 'AliensNaturalized_AsMilitary_Ad1034_Number ', 'AliensNaturalized_ForOtherReasons_Ad1035_Number ', 'AliensNaturalized_ForReasonsNotReported_Ad1036_Number ', 'PetitionsForNaturalizationDenied_Ad1037_Number ']
+  rows: ?
+
+[adInternational-Migration\Naturalization\Ad1038-1050.xls]
+  cols: ['Year', 'Total_Ad1038_Number ', 'Male_Ad1039_Number ', 'Female_Ad1040_Number ', 'CountryOfFormerAllegiance_InNorthwesternEurope_Ad1041_Number ', 'CountryOfFormerAllegiance_InCentralEurope_Ad1042_Number ', 'CountryOfFormerAllegiance_InEasternEurope_Ad1043_Number ', 'CountryOfFormerAllegiance_InSouthernEurope_Ad1044_Number ', 'CountryOfFormerAllegiance_InAsia_Ad1045_Number ', 'CountryOfFormerAllegiance_Canada_Ad1046_Number ']
+  rows: ?
+
+[adInternational-Migration\Naturalization\Ad1051-1071.xls]
+  cols: ['Year', 'Total_Ad1051_Percent ', 'Canada_Ad1052_Percent ', "China(People'sRepublic)_Ad1053_Percent ", 'Colombia_Ad1054_Percent ', 'Cuba_Ad1055_Percent ', 'DominicanRepublic_Ad1056_Percent ', 'Ecuador_Ad1057_Percent ', 'Germany_Ad1058_Percent ', 'Greece_Ad1059_Percent ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae1-28.xls]
+  cols: ['Year', 'HouseholdsUnder1980-1990Definition_Ae1_Number ', 'HouseholdsUnder1950-1970Definition_AllRaces_Total_Ae2_Number ', 'AllRaces_Family_Total_Ae3_Number ', 'AllRaces_Family_MarriedCouple_Ae4_Number ', 'AllRaces_Family_Householder,NoSpousePresent_Male_Ae5_Number ', 'AllRaces_Family_Householder,NoSpousePresent_Female_Ae6_Number ', '-1970Definition_AllRaces_Nonfamily_AllNonfamily_Total_Ae7_Number ', 'AllNonfamily_Householder,NoRelativesPresent_Male_Ae8_Number ', 'AllNonfamily_Householder,NoRelativesPresent_Female_Ae9_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae128-190.xls]
+  cols: ['Year', 'AllRaces_Total_Ae128_Number ', 'AllRaces_BothParentsPresent_Age0-4_Ae129_Number ', 'AllRaces_BothParentsPresent_Age5-9_Ae130_Number ', 'AllRaces_BothParentsPresent_Age10-14_Ae131_Number ', 'AllRaces_BothParentsPresent_Age15-17_Ae132_Number ', 'AllRaces_MotherOnlyPresent_Age0-4_Ae133_Number ', 'AllRaces_MotherOnlyPresent_Age5-9_Ae134_Number ', 'AllRaces_MotherOnlyPresent_Age10-14_Ae135_Number ', 'AllRaces_MotherOnlyPresent_Age15-17_Ae136_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae191-220.xls]
+  cols: ['Year', 'AllRaces_Total_Ae191_Number ', 'AllRaces_LivingWithRelatives_Total_Ae192_Number ', 'LivingWithRelatives_Householders_ParentPresent_Ae193_Number ', 'Householders_OtherRelativePresent_Ae194_Number ', 'LivingWithRelatives_Nonhouseholders_ParentPresent_Ae195_Number ', 'Nonhouseholders_OtherRelativePresent_Ae196_Number ', 'AllRaces_LivingWithNonrelatives_Total_Ae197_Number ', 'AllRaces_LivingWithNonrelatives_Householders_Ae198_Number ', 'AllRaces_LivingWithNonrelatives_Nonhouseholders_Ae199_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae221-244.xls]
+  cols: ['Year', 'AllRaces_TotalWomenOfChildbearingAge_Ae221_Number ', 'AllRaces_WomenWithChildrenUnderAge18_Total_Ae222_Number ', 'WomenWithChildrenUnderAge18_Married,SpousePresent_Ae223_Number ', 'WomenWithChildrenUnderAge18_NoSpousePresent_Total_Ae224_Number ', 'NoSpousePresent_NeverMarried_Ae225_Number ', 'NoSpousePresent_Married,SpouseAbsent_Ae226_Number ', 'NoSpousePresent_Divorced_Ae227_Number ', 'NoSpousePresent_Widowed_Ae228_Number ', 'White_TotalWomenOfChildbearingAge_Ae229_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae245-319.xls]
+  cols: ['Year', 'AllRaces_Total_Ae245_Number ', 'AllRaces_Male_Total_Ae246_Number ', 'NoSpousePresent_Ae247_Number ', 'LivingWithChildrenAndOtherRelatives_SpousePresent_Ae248_Number ', 'Male_LivingWithChildrenOnly_NoSpousePresent_Ae249_Number ', 'AllRaces_Male_LivingWithChildrenOnly_SpousePresent_Ae250_Number ', 'Male_LivingWithOtherRelativesOnly_NoSpousePresent_Ae251_Number ', 'Male_LivingWithOtherRelativesOnly_SpousePresent_Ae252_Number ', 'Male_LivingWithNonrelativesOnly_NoSpousePresent_Ae253_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae29-37.xls]
+  cols: ['Year', 'Total_Ae29_Thousand ', 'Family_Total_Ae30_Thousand ', 'Family_MarriedCouple_Ae31_Thousand ', 'Family_Householder,NoSpousePresent_Male_Ae32_Thousand ', 'Family_Householder,NoSpousePresent_Female_Ae33_Thousand ', 'Nonfamily_AllNonfamily_Total_Ae34_Thousand ', 'AllNonfamily_Householder,NoRelativesPresent_Male_Ae35_Thousand ', 'Householder,NoRelativesPresent_Female_Ae36_Thousand ', 'Nonfamily_Single-personNonfamily_Ae37_Thousand ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae320-480.xls]
+  cols: ['Year', 'AllAges_Male_Total_Ae320_Number ', 'AllAges_Male_Head/householder_Ae321_Number ', 'AllAges_Male_Spouse_Ae322_Number ', 'AllAges_Male_Child_Ae323_Number ', 'AllAges_Male_Child-in-law_Ae324_Number ', 'AllAges_Male_Parent_Ae325_Number ', 'AllAges_Male_Parent-in-law_Ae326_Number ', 'AllAges_Male_Sibling_Ae327_Number ', 'AllAges_Male_Sibling-in-law_Ae328_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae38-78.xls]
+  cols: ['Year', 'RelatedSubfamilies_Total_Ae38_Number ', 'RelatedSubfamilies_MarriedCouple_Total_Ae39_Number ', 'RelatedSubfamilies_MarriedCouple_WithChildren_Ae40_Number ', 'RelatedSubfamilies_MarriedCouple_WithoutChildren_Ae41_Number ', 'RelatedSubfamilies_OtherMale-headed_Ae42_Number ', 'RelatedSubfamilies_OtherFemale-headed_Ae43_Number ', 'UnrelatedSubfamilies_Total_Ae44_Number ', 'UnrelatedSubfamilies_MarriedCouple_Total_Ae45_Number ', 'UnrelatedSubfamilies_MarriedCouple_WithChildren_Ae46_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae481-488.xls]
+  cols: ['Year', 'CensusAndCPSData_Male_Ae481_Years ', 'CensusAndCPSData_Female_Ae482_Years ', 'VitalStatistics_Male_Ae483_Years ', 'VitalStatistics_Female_Ae484_Years ', 'CensusData_NativeWhites_Male_Ae485_Years ', 'CensusData_NativeWhites_Female_Ae486_Years ', 'CensusData_Blacks_Male_Ae487_Years ', 'CensusData_Blacks_Female_Ae488_Years ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae489-506.xls]
+  cols: ['Year', 'Male_Ae489_Years ', 'Female_Ae490_Years ', 'White_Male_Ae491_Years ', 'White_Female_Ae492_Years ', 'White_Native-born_Male_Ae493_Years ', 'White_Native-born_Female_Ae494_Years ', 'White_Native-born_NativeParentage_Male_Ae495_Years ', 'White_Native-born_NativeParentage_Female_Ae496_Years ', 'White_Native-born_ForeignOrMixedParentage_Male_Ae497_Years ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae507-513.xls]
+  cols: ['Year', 'MarriageRate_Per1,000Population_Ae507_Per1,000 ', 'MarriageRate_Per1,000UnmarriedFemales_Ae508_Per1,000 ', 'Divorce_Rate_Per1,000Population_Ae509_Per1,000 ', 'Divorce_Rate_Per1,000MarriedFemales_Ae510_Per1,000 ', 'Divorce_MedianDurationOfMarriage_Ae511_Years ', 'Divorce_PercentageOfSpousesSeparated_Ae512_Percent ', 'Ae513_Per1,000 ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae79-81.xls]
+  cols: ['Year', 'Total_Ae79_Number ', 'Nonfarm_Ae80_Number ', 'Farm_Ae81_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae82-84.xls]
+  cols: ['Year', 'Total_Ae82_Thousand ', 'Nonfarm_Ae83_Thousand ', 'Farm_Ae84_Thousand ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae85-96.xls]
+  cols: ['Year', 'Total_Ae85_Number ', 'Person_Ae86_Number ', 'Persons_Ae87_Number ', 'Persons_Ae88_Number ', 'Persons_Ae89_Number ', 'Persons_Ae90_Number ', 'Persons_Ae91_Number ', 'Persons_Ae92_Number ', 'Persons_Ae93_Number ']
+  rows: ?
+
+[aeFamily and Household Composition\Family and Household Composition\Ae97-127.xls]
+  cols: ['Year', 'PopulationInInstitutions_Total_Ae97_Number ', 'PopulationInInstitutions_CorrectionalInstitutions_Ae98_Number ', 'PopulationInInstitutions_MentalInstitutions_Ae99_Number ', 'HomesForTheAgedAndDependent_Ae100_Number ', 'PopulationInInstitutions_OtherInstitutions_Ae101_Number ', 'PopulationInInstitutions_Male_Total_Ae102_Number ', 'PopulationInInstitutions_Male_Age_0-17_Ae103_Number ', 'PopulationInInstitutions_Male_Age_18-64_Ae104_Number ', 'PopulationInInstitutions_Male_Age_65AndAbove_Ae105_Number ']
+  rows: ?
+
+=== PEW ===
+  2603 (0KB)
