@@ -1,9 +1,0 @@
-Overnight batch round 7: 35 more ideas (4462 to 4497)
-
-Themes: "Mapped by Decade" time travel, "Double Take" perspective maps,
-inequality gap maps, antipode map, investment race charts, format fillers
-(heatmap calendar, polygon map, animated bar chart race, treemap).
-
-Batches: HAN(35) = 35 ideas
-Total: 4497 validated ideas | All JS-parseable | 0 dupes
-Session total so far: 610 new ideas (3887 to 4497)
