@@ -379,7 +379,7 @@ function cardHTML(d, highlight=false) {
       <div class="notes-area">${notesHtml}</div>
     </div>
     <div class="right">
-      <div><div class="vs" style="color:${scColor(d.vs)}">${d.vs}${FMT_BONUS[d.fmt]?'<span class="fmt-bonus">+'+FMT_BONUS[d.fmt]+'</span>':''}</div><div class="vl">V-Score v4</div></div>
+      <div><div class="vs" style="color:${scColor(d.vs)}">${d.vs}</div><div class="vl">V-Score v5</div></div>
       <div class="brs">${bars}</div>
     </div>
   </div>`;
@@ -971,10 +971,6 @@ function toggleSaveArea() {
 const TYPE_BORDER = { MAP:'#8eedc7', XREF:'#87c3ff', CHART:'#c4a3ff', RANK:'#fcd34d' };
 
 // Format bonus for v4 virality algorithm (choropleths are proven viral formats)
-const FMT_BONUS = {
-  'State choropleth':3, 'County choropleth':3, 'World choropleth':3,
-  'Bivariate choropleth':2, 'Dot map':2
-};
 
 //  INIT 
 (function initTopicPills() {

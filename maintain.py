@@ -7,7 +7,7 @@ Steps (in order):
   2. fix_chars    - replace non-ASCII chars that cause browser rendering issues
   3. add_ext      - patch ext[] sources onto ideas missing them
   4. normalize_fmt- collapse fmt variants to 15 canonical categories
-  5. recalc_vs    - recalculate all virality scores (v4 algorithm)
+  5. recalc_vs    - recalculate all virality scores (v5 algorithm)
   6. validate     - count ideas, check holes/dupes, report fmt distribution
   7. js_check     - run Node.js to confirm valid browser JS
 """
@@ -201,26 +201,28 @@ def normalize_fmt():
     for k, n in sorted(fmts.items(), key=lambda x: -x[1]):
         print(f'    {n:4d}  {k}')
 
-# -- 4b. RECALC VS SCORES (v4 algorithm) --------------------------------------
-# FMT_BONUS removed: all formats scored equally on idea quality alone
-FMT_BONUS = {}  # no format bonus
+# -- 4b. RECALC VS SCORES (v5 algorithm) --------------------------------------
 
 def recalc_vs():
-    """Recalculate vs scores using virality formula v4.
+    """Recalculate vs scores using virality formula v5.
 
-    Changes from v3:
-      - visual weight:       1.25 -> 2.0  (Instagram scroll-stopper)
-      - tension weight:      1.0  -> 1.5  (controversy drives shares)
-      - originality weight:  1.0  -> 1.5  (uniqueness prevents scroll-past)
-      - clarity weight:      2.0  -> 1.25 (low variance, barely differentiates)
-      - penalty coefficient: 0.3  -> 0.5  (unready data penalized harder)
-      - format bonus:        REMOVED (all formats equal)
+    Changes from v4 (informed by multi-perspective audit):
+      - visual weight:       2.0  -> 3.0   (thumbnail IS the content)
+      - emotional weight:    2.0  -> 2.5   (sharing reflex driver)
+      - surprise weight:     1.5  -> 2.0   ("wait WHAT" drives saves)
+      - originality weight:  1.5  -> 1.75  (fresh ideas, but familiar topics can still pop)
+      - tension weight:      1.5  -> 1.75  (outrage/urgency amplifier)
+      - relatability weight: 2.0  -> 2.0   (unchanged — drives shares and comments)
+      - clarity weight:      1.25 -> 1.5   (confusion kills virality)
+      - data_ready penalty:  0.5  -> 0.35  (idea quality > data feasibility)
+      - NEW: floor penalty if any score < 35 (one rotten dimension tanks everything)
 
     Formula:
-      raw     = e*2 + r*2 + c*1.25 + s*1.5 + t*1.5 + v*2.0 + o*1.5
-      base_vs = raw / 11.75
-      penalty = 1 - 0.5 * (1 - data_ready/100)
-      vs      = int(base_vs * penalty)
+      raw     = v*3.0 + e*2.5 + s*2.0 + o*1.75 + t*1.75 + r*2.0 + c*1.5
+      base_vs = raw / 14.5
+      floor   = 0.85 if min(e,r,c,s,t,v,o) < 35 else 1.0
+      penalty = 1 - 0.35 * (1 - data_ready/100)
+      vs      = int(base_vs * floor * penalty)
     """
     with open('data.js', 'r', encoding='utf-8') as f:
         content = f.read()
@@ -232,16 +234,20 @@ def recalc_vs():
         return vals
 
     def calc_vs(vals, fmt):
-        raw = (vals.get('emotional', 0) * 2.0 +
-               vals.get('relatability', 0) * 2.0 +
-               vals.get('clarity', 0) * 1.25 +
-               vals.get('surprise', 0) * 1.5 +
-               vals.get('tension', 0) * 1.5 +
-               vals.get('visual', 0) * 2.0 +
-               vals.get('originality', 0) * 1.5)
-        base_vs = raw / 11.75
-        penalty = 1.0 - 0.5 * (1.0 - vals.get('data_ready', 0) / 100.0)
-        return int(base_vs * penalty)
+        e = vals.get('emotional', 0)
+        r = vals.get('relatability', 0)
+        c = vals.get('clarity', 0)
+        s = vals.get('surprise', 0)
+        t = vals.get('tension', 0)
+        v = vals.get('visual', 0)
+        o = vals.get('originality', 0)
+        dr = vals.get('data_ready', 0)
+        raw = (v * 3.0 + e * 2.5 + s * 2.0 + o * 1.75 +
+               t * 1.75 + r * 2.0 + c * 1.5)
+        base_vs = raw / 14.5
+        floor = 0.85 if min(e, r, c, s, t, v, o) < 35 else 1.0
+        penalty = 1.0 - 0.35 * (1.0 - dr / 100.0)
+        return int(base_vs * floor * penalty)
 
     def replace_vs(line):
         sc_m = re.search(r'sc:\{([^}]+)\}', line)
@@ -272,10 +278,10 @@ def recalc_vs():
     samples = all_vs[:5]
     if all_vs:
         import statistics
-        print(f'  [recalc_vs] v4 algorithm | Recalculated {changed} scores')
+        print(f'  [recalc_vs] v5 algorithm | Recalculated {changed} scores')
         print(f'    Range: {min(all_vs)}-{max(all_vs)} | Mean: {statistics.mean(all_vs):.1f} | Median: {statistics.median(all_vs):.0f}')
         print(f'    Samples: {samples}')
-        print(f'    No format bonus (all formats scored equally)')
+        print(f'    Floor penalty (<35 on any dimension) | DR penalty coeff: 0.35')
     else:
         print(f'  [recalc_vs] Recalculated {changed} scores | samples: {samples}')
 

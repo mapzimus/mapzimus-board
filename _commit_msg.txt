@@ -1,1 +1,1 @@
-batch HEF: 35 ideas — incarceration costs, endangered languages, Euphrates drying, interstate gun trafficking, death row exonerations, jury trial vanishing, MENA youth unemployment (7845 total)
+v5 virality algorithm: remove FMT_BONUS, reweight scores (visual 3.0, emotional 2.5, surprise 2.0, originality 1.75, tension 1.75, relatability 2.0, clarity 1.5), add floor penalty for sub-35 dimensions, soften data_ready penalty to 0.35 — 6994 of 7845 scores recalculated
