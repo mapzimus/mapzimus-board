@@ -1,1 +1,4 @@
-_archive/  
+_archive/
+archive/
+__pycache__/
+backups/
