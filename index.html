@@ -342,13 +342,30 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
     <button class="fp topic" data-f="topics" data-v="technology"      onclick="toggleTopic(this)">Technology</button>
     <button class="fp topic" data-f="topics" data-v="transportation"  onclick="toggleTopic(this)">Transportation</button>
     </div>
-    <button class="clear-sc-btn" onclick="clearScFilters()">Clear all</button>
+  <div class="sort-row">
+    <span>Sort:</span>
+    <button class="sb on" data-k="vscore"       onclick="setSort('vscore')">V-Score</button>
+    <button class="sb"    data-k="newest"       onclick="setSort('newest')">Newest</button>
+    <button class="sb"    data-k="oldest"       onclick="setSort('oldest')">Oldest</button>
+    <button class="sb"    data-k="emotional"    onclick="setSort('emotional')">Emotional</button>
+    <button class="sb"    data-k="relatability" onclick="setSort('relatability')">Relatability</button>
+    <button class="sb"    data-k="clarity"      onclick="setSort('clarity')">Clarity</button>
+    <button class="sb"    data-k="surprise"     onclick="setSort('surprise')">Surprise</button>
+    <button class="sb"    data-k="tension"      onclick="setSort('tension')">Tension</button>
+    <button class="sb"    data-k="visual"       onclick="setSort('visual')">Visual</button>
+    <button class="sb"    data-k="data_ready"   onclick="setSort('data_ready')">Data Ready</button>
+    <button class="sb"    data-k="originality"  onclick="setSort('originality')">Originality</button>
   </div>
+  <div class="cnt" id="bcnt"></div>
+  <div class="grid" id="bgrid"></div>
+</div>
+
+<!-- SCORE FILTERS PANE -->
+<div class="pane" id="pane-score-filters">
+  <button class="clear-sc-btn" onclick="clearScFilters()">Clear all</button>
   <div id="sc-filter-grid"></div>
   <div class="cnt" id="sf-cnt"></div>
   <div class="grid" id="sf-grid"></div>
-  <div class="cnt" id="bcnt"></div>
-  <div class="grid" id="bgrid"></div>
 </div>
 
 <!-- CORRELATE PANE -->
@@ -371,7 +388,7 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=16"></script>
-<script src="app.js?v=16"></script>
+<script src="data.js?v=17"></script>
+<script src="app.js?v=17"></script>
 </body>
 </html>

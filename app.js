@@ -91,6 +91,12 @@ const TOPIC_COLORS = {
   children:P.pink, rural:P.lime, manufacturing:P.teal, law:P.rose,
 };
 
+const TOPIC_LABELS = {
+  middle_east:'Middle East', data_ready:'Data Ready',
+};
+function topicLabel(t) { return TOPIC_LABELS[t] || t.charAt(0).toUpperCase() + t.slice(1); }
+
+
 //  SECTION COLORS 
 const SECTION_COLORS = {
   // Legacy ProQuest/HSUS sections
@@ -344,7 +350,7 @@ function cardHTML(d, highlight=false) {
 
   const topicBadges = (d.topics||[]).map(t => {
     const c = TOPIC_COLORS[t] || '#888';
-    return `<span class="topic-badge" style="background:${c}1a;color:${c};border:1px solid ${c}55">${t}</span>`;
+    return `<span class="topic-badge" style="background:${c}1a;color:${c};border:1px solid ${c}55">${topicLabel(t)}</span>`;
   }).join('');
 
   const extList = (d.ext&&d.ext.length) ? d.ext.map(e => `<li>${e}</li>`).join('') : '';
