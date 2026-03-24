@@ -146,7 +146,7 @@ function getSectionColorFast(sec) { return SECTION_COLOR_MAP[sec] || '#888'; }
 
 
 // Bonus breakdown badge with tooltip
-const BK_LABELS = {ti:'⏱ Time',cl:'💡 Clear',df:'📊 Fresh',vm:'🔥 Viral',sh:'📤 Share',og:'⭐ Orig'};
+const BK_LABELS = {ti:' Time',cl:' Clear',df:' Fresh',vm:' Viral',sh:' Share',og:' Orig'};
 function bonusBkHtml(d) {
   if (!d.bonus) return '';
   const bk = d.bonusBk || {};
