@@ -350,6 +350,7 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
     <button class="sb on" data-k="vscore"       onclick="setSort('vscore')">V-Score</button>
     <button class="sb"    data-k="newest"       onclick="setSort('newest')">Newest</button>
     <button class="sb"    data-k="oldest"       onclick="setSort('oldest')">Oldest</button>
+    <button class="sb"    data-k="bonus"        onclick="setSort('bonus')">&#11088; Most Bonus</button>
     <button class="sb"    data-k="emotional"    onclick="setSort('emotional')">Emotional</button>
     <button class="sb"    data-k="relatability" onclick="setSort('relatability')">Relatability</button>
     <button class="sb"    data-k="clarity"      onclick="setSort('clarity')">Clarity</button>
@@ -358,6 +359,11 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
     <button class="sb"    data-k="visual"       onclick="setSort('visual')">Visual</button>
     <button class="sb"    data-k="data_ready"   onclick="setSort('data_ready')">Data Ready</button>
     <button class="sb"    data-k="originality"  onclick="setSort('originality')">Originality</button>
+  </div>
+  <div class="sort-row" style="margin-top:-4px;">
+    <span>Bonus:</span>
+    <button class="sb bf-btn" data-v="has"  onclick="setBonusFilter('has')">&#11088; Has Bonus</button>
+    <button class="sb bf-btn" data-v="none" onclick="setBonusFilter('none')">No Bonus</button>
   </div>
   <div class="cnt" id="bcnt"></div>
   <div class="grid" id="bgrid"></div>
@@ -391,7 +397,7 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=19"></script>
-<script src="app.js?v=19"></script>
+<script src="data.js?v=20"></script>
+<script src="app.js?v=20"></script>
 </body>
 </html>

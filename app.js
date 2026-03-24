@@ -323,6 +323,7 @@ let geoRow3 = null;   // which category is expanded
 const activeFilters = { type:null, fmt:null, status:null, notes:null, section:null };
 let activeTopics = new Set();
 let sortK = 'vscore', sortDir = 'desc';
+let bonusFilter = null; // null | 'has' | 'none'
 let scFilters = {};
 const PAGE = 60;
 let filteredIdeas = [], renderedCount = 0, _renderPending = false;
@@ -505,6 +506,8 @@ function buildFiltered() {
     if (activeFilters.section && !d.section?.includes(activeFilters.section)) return false;
     if (activeFilters.notes === 'has'  && !d.notes)  return false;
     if (activeFilters.notes === 'none' && d.notes)   return false;
+    if (bonusFilter === 'has'  && !(d.bonus > 0)) return false;
+    if (bonusFilter === 'none' && (d.bonus  > 0)) return false;
     if (activeTopics.size > 0) {
       if (!(d.topics||[]).some(t => activeTopics.has(t))) return false;
     }
@@ -522,6 +525,7 @@ function buildFiltered() {
   filteredIdeas.sort((a, b) => {
     let av, bv;
     if (sortK === 'vscore')      { av = (a.vs||0)+(a.bonus||0); bv = (b.vs||0)+(b.bonus||0); }
+    else if (sortK === 'bonus')   { av = a.bonus||0; bv = b.bonus||0; }
     else if (sortK === 'newest') { av = D_INDEX.get(a.id); bv = D_INDEX.get(b.id); }
     else if (sortK === 'oldest') { av = D_INDEX.get(a.id); bv = D_INDEX.get(b.id); }
     else { av = a.sc[sortK]||0; bv = b.sc[sortK]||0; }
@@ -573,6 +577,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //  PILLS / SORT / TOPIC 
+function setBonusFilter(val) {
+  bonusFilter = (bonusFilter === val) ? null : val; // toggle
+  document.querySelectorAll('.bf-btn').forEach(b => {
+    b.classList.toggle('on', b.dataset.v === bonusFilter);
+  });
+  buildFiltered(); renderBrowse(); updateCounts();
+}
+
 function togglePill(btn) {
   const field = btn.dataset.f, val = btn.dataset.v;
   if (activeFilters[field] === val) {
