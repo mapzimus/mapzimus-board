@@ -307,8 +307,8 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
     <div class="dash-cols">
       <div class="dash-section"><div class="dash-sec-title">&#128506; Map Formats</div><div id="dc-formats"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#128269; Geographic Scale</div><div id="dc-geo"></div></div>
-      <div class="dash-section"><div class="dash-sec-title">&#9881; GIS Complexity</div><div id="dc-complexity"></div></div>
-      <div class="dash-section"><div class="dash-sec-title">&#128193; Data Sources</div><div id="dc-sources"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#9881; Format Type</div><div id="dc-complexity"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#128193; Categories</div><div id="dc-sources"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#11088; Bonus Breakdown</div><div id="dc-bonuses"></div></div>
     </div>
     <div class="dash-cols" style="grid-template-columns:1.5fr 1fr;">
@@ -479,12 +479,12 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 
 <script id="gis-dashboard-script">
 (function(){
-function gf(d,f){const m=d.match(new RegExp(','+f+':"([^"]*)"'));return m?m[1]:'';}
-function getBonus(d){const m=d.match(/bonus:(\d+)/);return m?+m[1]:0;}
-function getScore(d){const m=d.match(/[,( ]vs:(\d+)/);return m?+m[1]:0;}
-function getTopics(d){const m=d.match(/topics:\[([^\]]*)\]/);if(!m)return[];return(m[1].match(/"([^"]+)"/g)||[]).map(s=>s.replace(/"/g,''));}
-function getTitle(d){const m=d.match(/,e:"([^"]*)"/);return m?m[1]:'(untitled)';}
-function getId(d){const m=d.match(/mk\((\d+)/);return m?m[1]:'';}
+function gf(d,f){return (d&&d[f]!=null)?String(d[f]):'';}
+function getBonus(d){return (d&&d.bonus)?+d.bonus:0;}
+function getScore(d){return (d&&d.vs)?+d.vs:0;}
+function getTopics(d){return (d&&Array.isArray(d.topics))?d.topics:[];}
+function getTitle(d){return (d&&d.title)?d.title:'(untitled)';}
+function getId(d){return (d&&d.id)?d.id:'';}
 
 function miniBar(label,count,max,color,clickFn){
   const pct=max>0?Math.round(count/max*100):0;
@@ -544,7 +544,7 @@ function buildDashboard(){
   document.getElementById('dc-geo').innerHTML=topGeo.map(([g,c],i)=>
     miniBar(g,c,mxG,GC[i%GC.length],null)).join('');
 
-  /* ─ GIS Complexity ─ */
+  /* ─ Format Type ─ */
   const multiL=new Set(['bivariate choropleth','animated map','flow map','cartogram','bivariate']);
   const basicM=new Set(['state choropleth','county choropleth','world choropleth','city dot map',
     'dot density map','heat map','dot map','proportional symbol','hex bin map','bubble map']);
@@ -566,37 +566,18 @@ function buildDashboard(){
   document.getElementById('dc-complexity').innerHTML=Object.entries(cx)
     .sort((a,b)=>b[1]-a[1]).map(([k,v])=>miniBar(CXL[k],v,mxC,CXC[k],null)).join('');
 
-  /* ─ Data Sources ─ */
-  const srcP=[
-    ['Census/ACS',/\b(census|acs|american community survey|decennial)\b/i],
-    ['CDC/NCHS',/\b(cdc|nchs|centers for disease)\b/i],
-    ['BLS',/\b(bls|bureau of labor stat)\b/i],
-    ['USDA',/\b(usda|ers\.usda|nass\.usda)\b/i],
-    ['EPA',/\b(epa\.gov|environmental protection agency)\b/i],
-    ['FBI/DOJ',/\b(fbi|ucr|nibrs|bureau of justice)\b/i],
-    ['EIA',/\b(eia\.gov|energy information)\b/i],
-    ['NOAA',/\b(noaa|national weather service|national oceanic)\b/i],
-    ['USGS',/\b(usgs|geological survey)\b/i],
-    ['HUD',/\b(hud\.gov|housing.+urban dev)\b/i],
-    ['IRS',/\b(irs\.gov|internal revenue)\b/i],
-    ['NIH/NCI',/\b(nih\.gov|nci\.gov|national cancer|national institutes)\b/i],
-    ['FHWA',/\b(fhwa|federal highway)\b/i],
-    ['FCC',/\b(fcc\.gov|federal communications)\b/i],
-    ['Pew/OECD',/\b(pew research|pewresearch|oecd\.org)\b/i],
-    ['State/Local',/\b(state dept|\.state\.|\.gov\/data)\b/i],
-    ['Open Data',/\b(data\.gov|opendata|world bank|kaggle|github\.io)\b/i],
-  ];
-  const srcC={};
+  /* ─ Categories ─ */
+  const catC={};
   D.forEach(d=>{
-    const tbl=gf(d,'tbl')||'';
-    let hit=false;
-    for(const[lbl,re] of srcP){if(re.test(tbl)){srcC[lbl]=(srcC[lbl]||0)+1;hit=true;break;}}
-    if(!hit&&tbl.trim())srcC['Other']=(srcC['Other']||0)+1;
+    const s=(gf(d,'section')||gf(d,'tbl')||'Other');
+    const lbl=s.charAt(0).toUpperCase()+s.slice(1).toLowerCase();
+    catC[lbl]=(catC[lbl]||0)+1;
   });
-  const topSrc=Object.entries(srcC).sort((a,b)=>b[1]-a[1]).slice(0,10);
-  const mxS=topSrc[0]?.[1]||1;
-  const SC=['#3b82f6','#06b6d4','#14b8a6','#22c55e','#84cc16','#f59e0b','#fb923c','#ef4444','#a855f7','#555'];
-  document.getElementById('dc-sources').innerHTML=topSrc.map(([s,c],i)=>
+  const topCat=Object.entries(catC).sort((a,b)=>b[1]-a[1]).slice(0,12);
+  const mxS=topCat[0]?.[1]||1;
+  const SC=['#3b82f6','#06b6d4','#14b8a6','#22c55e','#84cc16','#f59e0b','#fb923c','#ef4444','#a855f7','#ec4899','#10b981','#555'];
+  document.getElementById('dc-sources').innerHTML=topCat.map(([s,c],i)=>
+    miniBar(s,c,mxS,SC[i%SC.length],null)).join('');
     miniBar(s,c,mxS,SC[i%SC.length],null)).join('');
 
   /* ─ Bonus breakdown (no ti) ─ */
@@ -606,8 +587,7 @@ function buildDashboard(){
   const bkC={};
   BKK.forEach(k=>bkC[k]=0);
   D.forEach(d=>BKK.forEach(k=>{
-    const m=d.match(new RegExp(',bonusBk:\\{[^}]*'+k+':(\\d+)'));
-    if(m&&+m[1]>0)bkC[k]++;
+    if(d.bonusBk&&d.bonusBk[k]&&+d.bonusBk[k]>0)bkC[k]++;
   }));
   const mxB=Math.max(...Object.values(bkC))||1;
   document.getElementById('dc-bonuses').innerHTML=BKK
