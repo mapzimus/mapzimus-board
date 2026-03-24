@@ -511,7 +511,7 @@ function buildDashboard(){
   document.getElementById('dc-avg').textContent=avgScore;
   document.getElementById('dc-bonus-pct').textContent=bonusPct+'%';
   document.getElementById('dc-avg-bonus').textContent=avgBonus;
-  document.getElementById('dc-score-range').textContent=minScore+'–'+maxScore;
+  document.getElementById('dc-score-range').textContent=minScore+' – '+maxScore;
   document.getElementById('dash-sub').textContent=total.toLocaleString()+' ideas';
 
   /* ─ Formats ─ */
@@ -519,11 +519,7 @@ function buildDashboard(){
   D.forEach(d=>{const v=gf(d,'fmt')||'Unknown';fmtC[v]=(fmtC[v]||0)+1;});
   const topFmts=Object.entries(fmtC).sort((a,b)=>b[1]-a[1]).slice(0,10);
   const mxF=topFmts[0]?.[1]||1;
-  const FC={'State choropleth':'#22c55e','County choropleth':'#16a34a','World choropleth':'#15803d',
-    'Bivariate choropleth':'#84cc16','Dot density map':'#14b8a6','City dot map':'#06b6d4',
-    'Animated map':'#3b82f6','Flow map':'#6366f1','Heat map':'#a855f7','Cartogram':'#ec4899',
-    'Bar chart':'#f59e0b','Line chart':'#fb923c','Scatter plot':'#f97316','Ranked list':'#ef4444',
-    'Treemap':'#10b981','Area chart':'#f43f5e','Bubble map':'#0ea5e9','Hex bin map':'#d946ef'};
+  const FC={'State choropleth':'#22c55e','County choropleth':'#16a34a','World choropleth':'#15803d','Bivariate choropleth':'#84cc16','Dot map':'#14b8a6','Flow map':'#06b6d4','Heat map':'#0ea5e9','Animated map':'#3b82f6','Bubble map':'#6366f1','Hex bin map':'#d946ef','Cartogram':'#ec4899','Bar chart':'#f59e0b','Line chart':'#fb923c','Scatter plot':'#f97316','Area chart':'#ef4444','Treemap':'#10b981','Ranked list':'#a855f7','Timeline':'#f43f5e','Flow chart':'#8b5cf6','Infographic':'#78716c','Interactive':'#22d3ee','Article':'#64748b','Narrative':'#475569','Special map':'#555'};
   document.getElementById('dc-formats').innerHTML=topFmts.map(([f,c])=>
     miniBar(f,c,mxF,FC[f]||'#444',`window.filterByFmt('${f.replace(/'/g,"\\'")}')`)).join('');
 
@@ -674,13 +670,12 @@ window.toggleDash=function(){
   try{localStorage.setItem('mz_dash_collapsed',c?'0':'1');}catch(e){}
 };
 
-if(document.readyState==='loading'){
-  document.addEventListener('DOMContentLoaded',buildDashboard);
-}else{
-  buildDashboard();
-}
-// Re-run after a tick so D array is definitely populated
-setTimeout(buildDashboard,200);
+// Poll until D is fully parsed (data.js can be 5-10MB)
+(function poll(n){
+  if(window.D && D.length>0){ buildDashboard(); }
+  else if(n>0){ setTimeout(function(){ poll(n-1); }, 400); }
+  else{ console.warn('GIS Dashboard: D never populated'); }
+})(25);
 })();
 </script>
 </body>
