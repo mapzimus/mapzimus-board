@@ -211,6 +211,45 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-
             white-space:nowrap; font-size:11px; z-index:999; min-width:130px; }
   .bp-tip .bk-row { display:flex; justify-content:space-between; gap:12px; padding:1px 0; }
   .bp-tag:hover .bp-tip, .bp-tag:focus .bp-tip { display:block; }
+
+/* ── GIS DASHBOARD ──────────────────────────────────────────────────────── */
+#gis-dashboard{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:14px;overflow:hidden;}
+.dash-header{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;border-bottom:1px solid var(--border);}
+.dash-header-left{display:flex;align-items:center;gap:8px;}
+.dash-title{font-size:12px;font-weight:700;color:var(--text);letter-spacing:-.2px;}
+.dash-subtitle{font-size:11px;color:var(--text3);}
+#dash-toggle{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;padding:2px 7px;border-radius:4px;line-height:1;}
+#dash-toggle:hover{color:var(--text);background:var(--surface2);}
+#dash-body{padding:12px 14px;display:flex;flex-direction:column;gap:12px;}
+.dash-cards{display:flex;gap:8px;flex-wrap:wrap;}
+.dash-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;flex:1;min-width:100px;text-align:center;}
+.dash-card-label{font-size:9px;color:var(--text3);font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px;}
+.dash-card-val{font-size:18px;font-weight:800;color:var(--text);line-height:1.1;}
+.dash-cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px;}
+.dash-section{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 11px;}
+.dash-sec-title{font-size:9px;font-weight:700;color:var(--text3);letter-spacing:.6px;text-transform:uppercase;margin-bottom:7px;}
+.db-row{display:flex;align-items:center;gap:5px;margin-bottom:3px;border-radius:3px;padding:1px 2px;transition:background .1s;}
+.db-row[onclick]{cursor:pointer;}.db-row[onclick]:hover{background:var(--surface3);}
+.db-label{font-size:10px;color:var(--text2);width:88px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.db-bar-wrap{flex:1;height:5px;background:var(--border2);border-radius:3px;overflow:hidden;}
+.db-bar{height:100%;border-radius:3px;}
+.db-count{font-size:10px;color:var(--text3);width:34px;text-align:right;flex-shrink:0;}
+.db-top-row{display:flex;align-items:center;gap:5px;padding:3px 4px;border-radius:4px;cursor:pointer;transition:background .1s;margin-bottom:2px;}
+.db-top-row:hover{background:var(--surface3);}
+.db-rank{font-size:9px;color:var(--text3);width:14px;text-align:center;font-weight:700;flex-shrink:0;}
+.db-top-title{font-size:10px;color:var(--text);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.db-top-score{font-size:10px;font-weight:700;color:var(--amber);flex-shrink:0;}
+.db-bonus-sup{font-size:8px;color:var(--green);vertical-align:super;}
+.db-topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:3px;}
+.db-topic-row{display:flex;align-items:center;gap:4px;padding:2px 4px;border-radius:3px;cursor:pointer;transition:background .1s;}
+.db-topic-row:hover{background:var(--surface3);}
+.db-topic-bar-bg{flex:1;height:4px;background:var(--border2);border-radius:2px;overflow:hidden;}
+.db-topic-bar{height:100%;background:var(--indigo);border-radius:2px;}
+.db-topic-label{font-size:10px;color:var(--text2);width:86px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.db-topic-cnt{font-size:10px;color:var(--text3);width:30px;text-align:right;flex-shrink:0;}
+.db-gap-pill{display:inline-flex;align-items:center;gap:4px;background:var(--surface3);border:1px solid var(--border2);border-radius:20px;padding:2px 9px;font-size:10px;color:var(--text2);cursor:pointer;margin:2px;transition:border-color .1s;}
+.db-gap-pill:hover{border-color:var(--rose);color:var(--rose);}
+.db-gap-cnt{font-size:9px;color:var(--text3);}
 </style>
 </head>
 <body>
@@ -249,12 +288,36 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
   </div>
 </header>
 
-<div id="stats-strip" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);font-size:12px;color:var(--text2);">
-    <span><strong id="stat-total" style="color:var(--text);font-size:16px;font-weight:700">0</strong> ideas</span>
-    <span>Avg V-Score: <strong id="stat-avg" style="color:var(--amber)">0</strong></span>
-    <span>Top: <strong id="stat-top" style="color:var(--green)">—</strong></span>
-    <span id="stat-bonus" style="display:none">Timely: <strong style="color:var(--rose)">0</strong></span>
+<div id="gis-dashboard">
+  <div class="dash-header">
+    <div class="dash-header-left">
+      <span class="dash-title">&#128506; GIS Dashboard</span>
+      <span class="dash-subtitle" id="dash-sub">Loading...</span>
+    </div>
+    <button id="dash-toggle" onclick="toggleDash()">&#9650;</button>
   </div>
+  <div id="dash-body">
+    <div class="dash-cards">
+      <div class="dash-card"><div class="dash-card-label">Total Ideas</div><div class="dash-card-val" id="dc-total">0</div></div>
+      <div class="dash-card"><div class="dash-card-label">Avg V-Score</div><div class="dash-card-val" id="dc-avg" style="color:var(--amber)">0</div></div>
+      <div class="dash-card"><div class="dash-card-label">Bonus Ideas</div><div class="dash-card-val" id="dc-bonus-pct" style="color:var(--green)">0%</div></div>
+      <div class="dash-card"><div class="dash-card-label">Avg Bonus</div><div class="dash-card-val" id="dc-avg-bonus" style="color:var(--teal)">0</div></div>
+      <div class="dash-card"><div class="dash-card-label">Score Range</div><div class="dash-card-val" id="dc-score-range" style="color:var(--text2);font-size:13px">—</div></div>
+    </div>
+    <div class="dash-cols">
+      <div class="dash-section"><div class="dash-sec-title">&#128506; Map Formats</div><div id="dc-formats"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#128269; Geographic Scale</div><div id="dc-geo"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#9881; GIS Complexity</div><div id="dc-complexity"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#128193; Data Sources</div><div id="dc-sources"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#11088; Bonus Breakdown</div><div id="dc-bonuses"></div></div>
+    </div>
+    <div class="dash-cols" style="grid-template-columns:1.5fr 1fr;">
+      <div class="dash-section"><div class="dash-sec-title">&#127942; Top 10 Ideas</div><div id="dc-top10"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#128201; Topic Gaps (least covered)</div><div id="dc-gaps"></div></div>
+    </div>
+    <div class="dash-section"><div class="dash-sec-title">&#127991; Topic Distribution</div><div id="dc-topics"></div></div>
+  </div>
+</div>
 <div class="modes">
   <button class="mode-btn on" onclick="setMode('browse',this)">Browse</button>
   <button class="mode-btn"   onclick="setMode('score-filters',this)">Score Filters</button>
@@ -373,7 +436,6 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
     <span style="font-weight:600">Bonus:</span>
     <button class="sb bf-btn" data-v="has"  onclick="setBonusFilter('has')">&#11088; Any</button>
     <button class="sb bf-btn" data-v="none" onclick="setBonusFilter('none')">None</button>
-    <button class="sb bf-btn" data-v="ti"   onclick="setBonusFilter('ti')">&#9200; Timely</button>
     <button class="sb bf-btn" data-v="cl"   onclick="setBonusFilter('cl')">&#128161; Clarity</button>
     <button class="sb bf-btn" data-v="df"   onclick="setBonusFilter('df')">&#128202; Fresh</button>
     <button class="sb bf-btn" data-v="vm"   onclick="setBonusFilter('vm')">&#128293; Viral</button>
@@ -414,5 +476,212 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 </div>
 <script src="data.js?v=21"></script>
 <script src="app.js?v=21"></script>
+
+<script id="gis-dashboard-script">
+(function(){
+function gf(d,f){const m=d.match(new RegExp(','+f+':"([^"]*)"'));return m?m[1]:'';}
+function getBonus(d){const m=d.match(/bonus:(\d+)/);return m?+m[1]:0;}
+function getScore(d){const m=d.match(/[,( ]vs:(\d+)/);return m?+m[1]:0;}
+function getTopics(d){const m=d.match(/topics:\[([^\]]*)\]/);if(!m)return[];return(m[1].match(/"([^"]+)"/g)||[]).map(s=>s.replace(/"/g,''));}
+function getTitle(d){const m=d.match(/,e:"([^"]*)"/);return m?m[1]:'(untitled)';}
+function getId(d){const m=d.match(/mk\((\d+)/);return m?m[1]:'';}
+
+function miniBar(label,count,max,color,clickFn){
+  const pct=max>0?Math.round(count/max*100):0;
+  const oc=clickFn?` onclick="${clickFn}" tabindex="0"`:'';
+  return `<div class="db-row"${oc}><div class="db-label" title="${label}">${label}</div>`+
+    `<div class="db-bar-wrap"><div class="db-bar" style="width:${pct}%;background:${color}"></div></div>`+
+    `<div class="db-count">${count.toLocaleString()}</div></div>`;
+}
+
+function buildDashboard(){
+  if(!window.D||!D.length)return;
+  const total=D.length;
+  const bonuses=D.map(getBonus);
+  const scores=D.map(getScore);
+  const avgScore=(scores.reduce((a,b)=>a+b,0)/total).toFixed(1);
+  const bonusIdeas=bonuses.filter(b=>b>0);
+  const bonusPct=Math.round(bonusIdeas.length/total*100);
+  const avgBonus=bonusIdeas.length?(bonusIdeas.reduce((a,b)=>a+b,0)/bonusIdeas.length).toFixed(1):'0';
+  const maxScore=Math.max(...scores), minScore=Math.min(...scores);
+
+  const set=v=>el=>{ const e=document.getElementById(el); if(e) e.textContent=v; };
+  document.getElementById('dc-total').textContent=total.toLocaleString();
+  document.getElementById('dc-avg').textContent=avgScore;
+  document.getElementById('dc-bonus-pct').textContent=bonusPct+'%';
+  document.getElementById('dc-avg-bonus').textContent=avgBonus;
+  document.getElementById('dc-score-range').textContent=minScore+'–'+maxScore;
+  document.getElementById('dash-sub').textContent=total.toLocaleString()+' ideas';
+
+  /* ─ Formats ─ */
+  const fmtC={};
+  D.forEach(d=>{const v=gf(d,'fmt')||'Unknown';fmtC[v]=(fmtC[v]||0)+1;});
+  const topFmts=Object.entries(fmtC).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const mxF=topFmts[0]?.[1]||1;
+  const FC={'State choropleth':'#22c55e','County choropleth':'#16a34a','World choropleth':'#15803d',
+    'Bivariate choropleth':'#84cc16','Dot density map':'#14b8a6','City dot map':'#06b6d4',
+    'Animated map':'#3b82f6','Flow map':'#6366f1','Heat map':'#a855f7','Cartogram':'#ec4899',
+    'Bar chart':'#f59e0b','Line chart':'#fb923c','Scatter plot':'#f97316','Ranked list':'#ef4444',
+    'Treemap':'#10b981','Area chart':'#f43f5e','Bubble map':'#0ea5e9','Hex bin map':'#d946ef'};
+  document.getElementById('dc-formats').innerHTML=topFmts.map(([f,c])=>
+    miniBar(f,c,mxF,FC[f]||'#444',`window.filterByFmt('${f.replace(/'/g,"\\'")}')`)).join('');
+
+  /* ─ Geo scale ─ */
+  const geoMap={'us_state':'State','us_county':'County','us_city':'City','us_metro':'Metro',
+    'us_zip':'ZIP Code','us_tract':'Census Tract','world_country':'Country','world_region':'World Region',
+    'us_congressional':'Congressional Dist.','us_national':'National','us_block':'Census Block',
+    'us_neighborhood':'Neighborhood','us_place':'Census Place'};
+  const geoC={};
+  D.forEach(d=>{
+    const raw=gf(d,'geo')||'';
+    const p=raw.split(/[,/|]/)[0].trim()||'Other';
+    const lbl=geoMap[p]||(p.replace('us_','').replace('world_','').replace(/_/g,' '))||'Other';
+    geoC[lbl]=(geoC[lbl]||0)+1;
+  });
+  const topGeo=Object.entries(geoC).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  const mxG=topGeo[0]?.[1]||1;
+  const GC=['#14b8a6','#06b6d4','#3b82f6','#6366f1','#a855f7','#ec4899','#f59e0b','#10b981'];
+  document.getElementById('dc-geo').innerHTML=topGeo.map(([g,c],i)=>
+    miniBar(g,c,mxG,GC[i%GC.length],null)).join('');
+
+  /* ─ GIS Complexity ─ */
+  const multiL=new Set(['bivariate choropleth','animated map','flow map','cartogram','bivariate']);
+  const basicM=new Set(['state choropleth','county choropleth','world choropleth','city dot map',
+    'dot density map','heat map','dot map','proportional symbol','hex bin map','bubble map']);
+  const chartT=new Set(['bar chart','line chart','scatter plot','ranked list','treemap',
+    'area chart','histogram','bubble chart']);
+  const cx={multi:0,basic:0,chart:0,other:0};
+  D.forEach(d=>{
+    const f=(gf(d,'fmt')||'').toLowerCase();
+    if(multiL.has(f))cx.multi++;
+    else if(basicM.has(f))cx.basic++;
+    else if(chartT.has(f))cx.chart++;
+    else if(f.includes('map')||f.includes('choropleth'))cx.basic++;
+    else if(f.includes('chart')||f.includes('plot')||f.includes('list'))cx.chart++;
+    else cx.other++;
+  });
+  const mxC=Math.max(...Object.values(cx));
+  const CXL={multi:'Multi-layer/Complex',basic:'Basic Map',chart:'Chart / Non-spatial',other:'Other'};
+  const CXC={multi:'#6366f1',basic:'#22c55e',chart:'#f59e0b',other:'#555'};
+  document.getElementById('dc-complexity').innerHTML=Object.entries(cx)
+    .sort((a,b)=>b[1]-a[1]).map(([k,v])=>miniBar(CXL[k],v,mxC,CXC[k],null)).join('');
+
+  /* ─ Data Sources ─ */
+  const srcP=[
+    ['Census/ACS',/\b(census|acs|american community survey|decennial)\b/i],
+    ['CDC/NCHS',/\b(cdc|nchs|centers for disease)\b/i],
+    ['BLS',/\b(bls|bureau of labor stat)\b/i],
+    ['USDA',/\b(usda|ers\.usda|nass\.usda)\b/i],
+    ['EPA',/\b(epa\.gov|environmental protection agency)\b/i],
+    ['FBI/DOJ',/\b(fbi|ucr|nibrs|bureau of justice)\b/i],
+    ['EIA',/\b(eia\.gov|energy information)\b/i],
+    ['NOAA',/\b(noaa|national weather service|national oceanic)\b/i],
+    ['USGS',/\b(usgs|geological survey)\b/i],
+    ['HUD',/\b(hud\.gov|housing.+urban dev)\b/i],
+    ['IRS',/\b(irs\.gov|internal revenue)\b/i],
+    ['NIH/NCI',/\b(nih\.gov|nci\.gov|national cancer|national institutes)\b/i],
+    ['FHWA',/\b(fhwa|federal highway)\b/i],
+    ['FCC',/\b(fcc\.gov|federal communications)\b/i],
+    ['Pew/OECD',/\b(pew research|pewresearch|oecd\.org)\b/i],
+    ['State/Local',/\b(state dept|\.state\.|\.gov\/data)\b/i],
+    ['Open Data',/\b(data\.gov|opendata|world bank|kaggle|github\.io)\b/i],
+  ];
+  const srcC={};
+  D.forEach(d=>{
+    const tbl=gf(d,'tbl')||'';
+    let hit=false;
+    for(const[lbl,re] of srcP){if(re.test(tbl)){srcC[lbl]=(srcC[lbl]||0)+1;hit=true;break;}}
+    if(!hit&&tbl.trim())srcC['Other']=(srcC['Other']||0)+1;
+  });
+  const topSrc=Object.entries(srcC).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const mxS=topSrc[0]?.[1]||1;
+  const SC=['#3b82f6','#06b6d4','#14b8a6','#22c55e','#84cc16','#f59e0b','#fb923c','#ef4444','#a855f7','#555'];
+  document.getElementById('dc-sources').innerHTML=topSrc.map(([s,c],i)=>
+    miniBar(s,c,mxS,SC[i%SC.length],null)).join('');
+
+  /* ─ Bonus breakdown (no ti) ─ */
+  const BKK=['vm','sh','df','cl','og'];
+  const BKL={vm:'🔥 Viral',sh:'📤 Share',df:'📊 Fresh',cl:'💡 Clarity',og:'⭐ Original'};
+  const BKC={vm:'#ef4444',sh:'#3b82f6',df:'#22c55e',cl:'#f59e0b',og:'#a855f7'};
+  const bkC={};
+  BKK.forEach(k=>bkC[k]=0);
+  D.forEach(d=>BKK.forEach(k=>{
+    const m=d.match(new RegExp(',bonusBk:\\{[^}]*'+k+':(\\d+)'));
+    if(m&&+m[1]>0)bkC[k]++;
+  }));
+  const mxB=Math.max(...Object.values(bkC))||1;
+  document.getElementById('dc-bonuses').innerHTML=BKK
+    .sort((a,b)=>bkC[b]-bkC[a])
+    .map(k=>miniBar(BKL[k],bkC[k],mxB,BKC[k],`window.filterByBonus('${k}')`)).join('');
+
+  /* ─ Top 10 ─ */
+  const top10=[...D].map(d=>({d,score:getScore(d)+getBonus(d)}))
+    .sort((a,b)=>b.score-a.score).slice(0,10);
+  document.getElementById('dc-top10').innerHTML=top10.map(({d,score},rank)=>{
+    const title=getTitle(d); const bonus=getBonus(d); const id=getId(d);
+    return `<div class="db-top-row" onclick="window.jumpToIdea('${id}')">
+      <span class="db-rank">${rank+1}</span>
+      <span class="db-top-title" title="${title.replace(/"/g,'&quot;')}">${title.slice(0,44)}${title.length>44?'…':''}</span>
+      <span class="db-top-score">${score}${bonus?`<sup class="db-bonus-sup">+${bonus}</sup>`:''}</span>
+    </div>`;
+  }).join('');
+
+  /* ─ Topics ─ */
+  const topC={};
+  D.forEach(d=>getTopics(d).forEach(t=>{topC[t]=(topC[t]||0)+1;}));
+  const allT=Object.entries(topC).sort((a,b)=>b[1]-a[1]);
+  const mxT=allT[0]?.[1]||1;
+  document.getElementById('dc-topics').innerHTML=`<div class="db-topic-grid">${
+    allT.map(([t,c])=>`<div class="db-topic-row" onclick="window.filterByTopicDash('${t}')">
+      <div class="db-topic-bar-bg"><div class="db-topic-bar" style="width:${Math.round(c/mxT*100)}%"></div></div>
+      <span class="db-topic-label" title="${t}">${t}</span><span class="db-topic-cnt">${c}</span>
+    </div>`).join('')
+  }</div>`;
+
+  /* ─ Gaps ─ */
+  const botT=[...allT].slice(-12).reverse();
+  document.getElementById('dc-gaps').innerHTML=botT.map(([t,c])=>
+    `<div class="db-gap-pill" onclick="window.filterByTopicDash('${t}')">${t} <span class="db-gap-cnt">${c}</span></div>`
+  ).join('');
+}
+
+window.jumpToIdea=function(id){
+  document.querySelector('[onclick*="setMode(\'browse\'"]')?.click();
+  const q=document.getElementById('q');
+  if(q){q.value=id;q.dispatchEvent(new Event('input'));}
+};
+window.filterByTopicDash=function(t){
+  document.querySelector('[onclick*="setMode(\'browse\'"]')?.click();
+  const b=document.querySelector(`.fp.topic[data-v="${t}"]`);
+  if(b&&!b.classList.contains('on'))b.click();
+};
+window.filterByFmt=function(fmt){
+  document.querySelector('[onclick*="setMode(\'browse\'"]')?.click();
+  const b=document.querySelector(`.fp.fmt[data-v="${fmt}"]`);
+  if(b&&!b.classList.contains('on'))b.click();
+};
+window.filterByBonus=function(key){
+  document.querySelector('[onclick*="setMode(\'browse\'"]')?.click();
+  if(typeof setBonusFilter==='function')setBonusFilter(key);
+};
+window.toggleDash=function(){
+  const body=document.getElementById('dash-body');
+  const btn=document.getElementById('dash-toggle');
+  if(!body)return;
+  const c=body.style.display==='none';
+  body.style.display=c?'':'none';
+  if(btn)btn.textContent=c?'\u25b2':'\u25bc';
+  try{localStorage.setItem('mz_dash_collapsed',c?'0':'1');}catch(e){}
+};
+
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded',buildDashboard);
+}else{
+  buildDashboard();
+}
+// Re-run after a tick so D array is definitely populated
+setTimeout(buildDashboard,200);
+})();
+</script>
 </body>
 </html>
