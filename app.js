@@ -144,6 +144,18 @@ const SECTION_COLOR_MAP = (() => {
 })();
 function getSectionColorFast(sec) { return SECTION_COLOR_MAP[sec] || '#888'; }
 
+
+// Bonus breakdown badge with tooltip
+const BK_LABELS = {ti:'⏱ Time',cl:'💡 Clear',df:'📊 Fresh',vm:'🔥 Viral',sh:'📤 Share',og:'⭐ Orig'};
+function bonusBkHtml(d) {
+  if (!d.bonus) return '';
+  const bk = d.bonusBk || {};
+  const rows = Object.entries(BK_LABELS)
+    .filter(([k]) => bk[k] > 0)
+    .map(([k,lbl]) => `<div class="bk-row"><span>${lbl}</span><span>+${bk[k]}</span></div>`)
+    .join('');
+  return `<span class="bp-tag" tabindex="0">+${d.bonus}<span class="bp-tip">${rows}</span></span>`;
+}
 // Sections that show as clickable badges on cards (excludes catch-all sections)
 const BADGE_SECTIONS = new Set([
   // Legacy ProQuest/HSUS
@@ -323,7 +335,7 @@ let geoRow3 = null;   // which category is expanded
 const activeFilters = { type:null, fmt:null, status:null, notes:null, section:null };
 let activeTopics = new Set();
 let sortK = 'vscore', sortDir = 'desc';
-let bonusFilter = null; // null | 'has' | 'none'
+let bonusFilter = null; // null|'has'|'none'|'ti'|'cl'|'df'|'vm'|'sh'|'og'
 let scFilters = {};
 const PAGE = 60;
 let filteredIdeas = [], renderedCount = 0, _renderPending = false;
@@ -385,7 +397,7 @@ function cardHTML(d, highlight=false) {
       <div class="notes-area">${notesHtml}</div>
     </div>
     <div class="right">
-      <div><div class="vs" style="color:${scColor((d.vs||0)+(d.bonus||0))}">${(d.vs||0)+(d.bonus||0)}${d.bonus?`<span class="bp-tag">+${d.bonus}</span>`:''}</div><div class="vl">V-Score v5${d.dd?`  -  ${d.dd}`:''}</div></div>
+      <div><div class="vs" style="color:${scColor((d.vs||0)+(d.bonus||0))}">${(d.vs||0)+(d.bonus||0)}${bonusBkHtml(d)}</div><div class="vl">V-Score v5${d.dd?`  -  ${d.dd}`:''}</div></div>
       <div class="brs">${bars}</div>
     </div>
   </div>`;
@@ -508,6 +520,9 @@ function buildFiltered() {
     if (activeFilters.notes === 'none' && d.notes)   return false;
     if (bonusFilter === 'has'  && !(d.bonus > 0)) return false;
     if (bonusFilter === 'none' && (d.bonus  > 0)) return false;
+    if (bonusFilter && bonusFilter !== 'has' && bonusFilter !== 'none') {
+      const bk = d.bonusBk || {}; if (!(bk[bonusFilter] > 0)) return false;
+    }
     if (activeTopics.size > 0) {
       if (!(d.topics||[]).some(t => activeTopics.has(t))) return false;
     }

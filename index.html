@@ -202,6 +202,15 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-
   .right{flex-direction:row;align-items:center;min-width:0;width:100%;gap:10px;}
   .brs{display:none;} .vs{font-size:18px;} .vl{display:none;}
 }
+
+  /* Bonus breakdown tooltip */
+  .bp-tag { position:relative; cursor:default; }
+  .bp-tip { display:none; position:absolute; bottom:calc(100% + 4px); left:50%;
+            transform:translateX(-50%); background:#1a1a2e; color:#e0e0e0;
+            border:1px solid #444; border-radius:6px; padding:6px 10px;
+            white-space:nowrap; font-size:11px; z-index:999; min-width:130px; }
+  .bp-tip .bk-row { display:flex; justify-content:space-between; gap:12px; padding:1px 0; }
+  .bp-tag:hover .bp-tip, .bp-tag:focus .bp-tip { display:block; }
 </style>
 </head>
 <body>
@@ -361,9 +370,15 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
     <button class="sb"    data-k="originality"  onclick="setSort('originality')">Originality</button>
   </div>
   <div class="sort-row" style="margin-top:-4px;">
-    <span>Bonus:</span>
-    <button class="sb bf-btn" data-v="has"  onclick="setBonusFilter('has')">&#11088; Has Bonus</button>
-    <button class="sb bf-btn" data-v="none" onclick="setBonusFilter('none')">No Bonus</button>
+    <span style="font-weight:600">Bonus:</span>
+    <button class="sb bf-btn" data-v="has"  onclick="setBonusFilter('has')">&#11088; Any</button>
+    <button class="sb bf-btn" data-v="none" onclick="setBonusFilter('none')">None</button>
+    <button class="sb bf-btn" data-v="ti"   onclick="setBonusFilter('ti')">&#9200; Timely</button>
+    <button class="sb bf-btn" data-v="cl"   onclick="setBonusFilter('cl')">&#128161; Clarity</button>
+    <button class="sb bf-btn" data-v="df"   onclick="setBonusFilter('df')">&#128202; Fresh</button>
+    <button class="sb bf-btn" data-v="vm"   onclick="setBonusFilter('vm')">&#128293; Viral</button>
+    <button class="sb bf-btn" data-v="sh"   onclick="setBonusFilter('sh')">&#128228; Share</button>
+    <button class="sb bf-btn" data-v="og"   onclick="setBonusFilter('og')">&#10024; Original</button>
   </div>
   <div class="cnt" id="bcnt"></div>
   <div class="grid" id="bgrid"></div>
@@ -397,7 +412,7 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=20"></script>
-<script src="app.js?v=20"></script>
+<script src="data.js?v=21"></script>
+<script src="app.js?v=21"></script>
 </body>
 </html>
