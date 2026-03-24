@@ -1,5 +1,5 @@
 // app.js - Mapzimus board v16
-// sc fields: 0-100 | vs: 0-100 | pastel palette | sub-score range filters | sort direction toggle
+// sc fields: 0-100 | vs: 0-100 | saturated palette | sub-score range filters | sort direction toggle
 
 const VAR_LABELS = {
   rep_pct:"Republican vote % by state", median_household_income:"Median household income by state",
@@ -70,24 +70,24 @@ D.forEach(d => { if (!FMT_MAP[d.fmt]) FMT_MAP[d.fmt] = []; FMT_MAP[d.fmt].push(d
 
 //  PASTEL COLOR PALETTE 
 const P = {
-  red:'#ff9eae', orange:'#ffb87a', yellow:'#ffe083', green:'#8eedc7',
-  teal:'#7de8e8', blue:'#87c3ff', purple:'#c4a3ff', pink:'#f9a8d4',
-  lime:'#bef264', sky:'#7dd3fc', amber:'#fcd34d', rose:'#fda4af',
-  indigo:'#a5b4fc', mint:'#6ee7b7', peach:'#fdba74', violet:'#e879f9',
+  red:'#ef4444', orange:'#f97316', yellow:'#eab308', green:'#22c55e',
+  teal:'#14b8a6', blue:'#3b82f6', purple:'#a855f7', pink:'#ec4899',
+  lime:'#84cc16', sky:'#0ea5e9', amber:'#f59e0b', rose:'#f43f5e',
+  indigo:'#6366f1', mint:'#10b981', peach:'#fb923c', violet:'#d946ef',
 };
 
 //  TOPIC COLORS 
 const TOPIC_COLORS = {
   health:P.red, economy:P.green, politics:P.blue, crime:P.rose,
   housing:P.orange, education:P.teal, labor:P.purple,
-  race:P.pink, gender:P.violet, immigration:P.sky, middle_east:'#fbbf24',
+  race:P.pink, gender:P.violet, immigration:P.sky, middle_east:'#f59e0b',
   military:P.indigo, energy:P.yellow, climate:P.mint, environment:P.lime,
   food:P.peach, agriculture:P.lime, drugs:P.purple, guns:P.rose,
-  finance:P.amber, sports:'#34d399', inequality:P.pink, transportation:P.teal,
+  finance:P.amber, sports:'#10b981', inequality:P.pink, transportation:P.teal,
   infrastructure:P.indigo, technology:P.blue, media:P.sky, population:P.violet,
-  international:P.purple, entertainment:'#c084fc', religion:P.amber,
-  history:P.peach, psychology:'#67e8f9',
-  humor:'#f9a8d4', science:'#7dd3fc', geography:'#86efac',
+  international:P.purple, entertainment:'#a855f7', religion:P.amber,
+  history:P.peach, psychology:'#06b6d4',
+  humor:'#ec4899', science:'#0ea5e9', geography:'#22c55e',
   children:P.pink, rural:P.lime, };
 
 const TOPIC_LABELS = {
@@ -159,7 +159,7 @@ const BADGE_SECTIONS = new Set([
 ]);
 
 //  SCORE FIELDS 
-// Virality algorithm v4:
+// Virality algorithm v5 (weights updated in maintain.py):
 // - visual bumped to 2.0 (highest correlation with engagement, #1 scroll-stopper)
 // - tension bumped to 1.5 (controversy drives shares/comments)
 // - originality bumped to 1.5 (uniqueness prevents scroll-past)
@@ -174,13 +174,13 @@ const SC_FIELDS = [
   { key:'relatability', label:'Relatability', short:'Rel', color:'#38bdf8', weight:2    },
   { key:'clarity',      label:'Clarity',      short:'Cla', color:'#fb923c', weight:1.25 },
   { key:'surprise',     label:'Surprise',     short:'Sur', color:'#facc15', weight:1.5  },
-  { key:'tension',      label:'Tension',      short:'Ten', color:'#c084fc', weight:1.5  },
-  { key:'visual',       label:'Visual',       short:'Vis', color:'#34d399', weight:2.0  },
+  { key:'tension',      label:'Tension',      short:'Ten', color:'#a855f7', weight:1.5  },
+  { key:'visual',       label:'Visual',       short:'Vis', color:'#10b981', weight:2.0  },
   { key:'originality',  label:'Originality',  short:'Ori', color:'#f472b6', weight:1.5  },
   { key:'data_ready',   label:'Data Ready',   short:'Dat', color:'#818cf8', weight:'penalty' },
 ];
 
-const scColor = s => s >= 82 ? '#ff6b8a' : s >= 70 ? '#facc15' : s >= 55 ? '#34d399' : '#444';
+const scColor = s => s >= 82 ? '#ff6b8a' : s >= 70 ? '#facc15' : s >= 55 ? '#10b981' : '#444';
 
 //  STATUSES 
 const STATUSES = [
@@ -384,7 +384,7 @@ function cardHTML(d, highlight=false) {
       <div class="notes-area">${notesHtml}</div>
     </div>
     <div class="right">
-      <div><div class="vs" style="color:${scColor(d.vs)}">${d.vs}</div><div class="vl">V-Score v5</div></div>
+      <div><div class="vs" style="color:${scColor((d.vs||0)+(d.bonus||0))}">${(d.vs||0)+(d.bonus||0)}${d.bonus?`<span class="bp-tag">+${d.bonus}</span>`:''}</div><div class="vl">V-Score v5${d.dd?`  -  ${d.dd}`:''}</div></div>
       <div class="brs">${bars}</div>
     </div>
   </div>`;
@@ -521,7 +521,7 @@ function buildFiltered() {
 
   filteredIdeas.sort((a, b) => {
     let av, bv;
-    if (sortK === 'vscore')      { av = a.vs;              bv = b.vs; }
+    if (sortK === 'vscore')      { av = (a.vs||0)+(a.bonus||0); bv = (b.vs||0)+(b.bonus||0); }
     else if (sortK === 'newest') { av = D_INDEX.get(a.id); bv = D_INDEX.get(b.id); }
     else if (sortK === 'oldest') { av = D_INDEX.get(a.id); bv = D_INDEX.get(b.id); }
     else { av = a.sc[sortK]||0; bv = b.sc[sortK]||0; }
@@ -581,7 +581,27 @@ function togglePill(btn) {
     document.querySelectorAll(`.fp[data-f="${field}"]`).forEach(b => b.classList.remove('on'));
     activeFilters[field] = val; btn.classList.add('on');
   }
-  updateResetBtn(); renderBrowse();
+  updateResetBtn(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
 }
 function updateResetBtn() {
   const hasFilter = Object.values(activeFilters).some(v => v) ||
@@ -603,7 +623,27 @@ function resetAllFilters() {
   });
   document.getElementById('q').value = '';
   buildGeoAccordion();
-  updateResetBtn(); renderBrowse();
+  updateResetBtn(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
 }
 function toggleTopic(btn) {
   const val = btn.dataset.v;
@@ -615,7 +655,27 @@ function toggleTopic(btn) {
     activeTopics.add(val); btn.classList.add('on');
     btn.style.background = c+'33'; btn.style.color = c; btn.style.borderColor = c;
   }
-  updateResetBtn(); renderBrowse();
+  updateResetBtn(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
 }
 function filterBySection(sec, el) {
   if (activeFilters.section === sec) {
@@ -626,7 +686,27 @@ function filterBySection(sec, el) {
     document.querySelectorAll('.sect-badge.sect-active').forEach(b => b.classList.remove('sect-active'));
     if (el) el.classList.add('sect-active');
   }
-  updateResetBtn(); renderBrowse();
+  updateResetBtn(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
 }
 function setSort(btnOrKey) {
   const key = (typeof btnOrKey === 'string') ? btnOrKey : btnOrKey.dataset.k;
@@ -641,7 +721,27 @@ function setSort(btnOrKey) {
     active.classList.add('on');
     active.classList.add(sortDir); // explicit separate add so both land
   }
-  renderBrowse();
+  
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
 }
 function setMode(m, btn) {
   document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('on')); btn.classList.add('on');
@@ -702,7 +802,27 @@ function clearScFilters() {
     document.getElementById(`scf-max-${f.key}`).textContent = '100';
     document.getElementById(`scf-cnt-${f.key}`).textContent = '';
   });
-  renderBrowse();
+  
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
 }
 
 //  CORRELATE 
@@ -722,7 +842,7 @@ function renderCorr() {
   document.getElementById('corr-hint').textContent = `${all.size} ideas connect to "${VAR_LABELS[v]}". Blue border = uses this variable directly.`;
   const sorted = D.filter(d => all.has(d.id)).sort((a,b) => {
     const ap = pIds.has(a.id)?1:0, bp = pIds.has(b.id)?1:0;
-    if (ap !== bp) return bp - ap; return b.vs - a.vs;
+    if (ap !== bp) return bp - ap; return ((b.vs||0)+(b.bonus||0)) - ((a.vs||0)+(a.bonus||0));
   });
   document.getElementById('ccnt').textContent = `${sorted.length} idea${sorted.length!==1?'s':''} relate`;
   document.getElementById('cgrid').innerHTML = sorted.length
@@ -751,7 +871,7 @@ function toggleFmt(k, btn) {
     selFmt = k;
     document.querySelectorAll('.fb').forEach(b => b.classList.remove('on'));
     btn.classList.add('on');
-    const items = (FMT_MAP[k]||[]).sort((a,b) => b.vs - a.vs);
+    const items = (FMT_MAP[k]||[]).sort((a,b) => ((b.vs||0)+(b.bonus||0)) - ((a.vs||0)+(a.bonus||0)));
     document.getElementById('fcnt').textContent = `${items.length} ideas`;
     document.getElementById('fgridout').innerHTML = items.map(d => cardHTML(d)).join('');
   }
@@ -799,7 +919,27 @@ function buildGeoAccordion() {
           label: geoRow2 === 'USA' ? 'ALL USA' : 'ALL WORLD'
         };
       }
-      updateResetBtn(); buildGeoAccordion(); renderBrowse();
+      updateResetBtn(); buildGeoAccordion(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
     };
     r2.appendChild(allBtn);
 
@@ -819,7 +959,27 @@ function buildGeoAccordion() {
           // Leaf - filter directly
           if (geoFilter?.key === key) { geoFilter = null; }
           else { geoFilter = { key, leaves: new Set([key]), label: node.label }; }
-          updateResetBtn(); buildGeoAccordion(); renderBrowse();
+          updateResetBtn(); buildGeoAccordion(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
         }
       };
       r2.appendChild(btn);
@@ -854,11 +1014,51 @@ function buildGeoAccordion() {
               const leaves = geoLeaves(key);
               geoFilter = { key: key + '_ALL', leaves, label: node.label };
             }
-            updateResetBtn(); buildGeoAccordion(); renderBrowse();
+            updateResetBtn(); buildGeoAccordion(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
           } else {
             if (geoFilter?.key === key) { geoFilter = null; }
             else { geoFilter = { key, leaves: new Set([key]), label: node.label }; }
-            updateResetBtn(); buildGeoAccordion(); renderBrowse();
+            updateResetBtn(); buildGeoAccordion(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
           }
         };
         r3.appendChild(btn);
@@ -941,7 +1141,27 @@ function applyFilter(f) {
   const sb = document.querySelector(`.sb[data-k="${sortK}"]`);
   if (sb) { sb.classList.add('on'); sb.classList.add(sortDir); }
   buildGeoAccordion();
-  updateResetBtn(); renderBrowse();
+  updateResetBtn(); 
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
+renderBrowse();
 }
 
 function renderSavedFilters() {
@@ -973,7 +1193,7 @@ function toggleSaveArea() {
 }
 
 // Card type colors for left border
-const TYPE_BORDER = { MAP:'#8eedc7', XREF:'#87c3ff', CHART:'#c4a3ff', RANK:'#fcd34d' };
+const TYPE_BORDER = { MAP:'#22c55e', XREF:'#3b82f6', CHART:'#a855f7', RANK:'#f59e0b' };
 
 // Format bonus for v4 virality algorithm (choropleths are proven viral formats)
 
@@ -990,4 +1210,24 @@ const TYPE_BORDER = { MAP:'#8eedc7', XREF:'#87c3ff', CHART:'#c4a3ff', RANK:'#fcd
   });
 })();
 
+
+//  STATS STRIP 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  // Bonus count
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
+
+updateStats();
 renderBrowse();

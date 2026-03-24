@@ -19,10 +19,10 @@
   --bg:#0a0a0a; --surface:#141414; --surface2:#1c1c1c; --surface3:#222;
   --border:#252525; --border2:#2e2e2e; --border3:#3a3a3a;
   --text:#f0f0f0; --text2:#aaa; --text3:#555;
-  --red:#ff9eae;    --orange:#ffb87a;  --yellow:#ffe083;  --green:#8eedc7;
-  --teal:#7de8e8;   --blue:#87c3ff;    --purple:#c4a3ff;  --pink:#f9a8d4;
-  --lime:#bef264;   --sky:#7dd3fc;     --amber:#fcd34d;   --rose:#fda4af;
-  --indigo:#a5b4fc; --mint:#6ee7b7;    --peach:#fdba74;   --violet:#e879f9;
+  --red:#ef4444;    --orange:#f97316;  --yellow:#eab308;  --green:#22c55e;
+  --teal:#14b8a6;   --blue:#3b82f6;    --purple:#a855f7;  --pink:#ec4899;
+  --lime:#84cc16;   --sky:#0ea5e9;     --amber:#f59e0b;   --rose:#f43f5e;
+  --indigo:#6366f1; --mint:#10b981;    --peach:#fb923c;   --violet:#d946ef;
   --radius:10px; --radius-sm:6px;
 }
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.5;min-height:100vh;}
@@ -51,27 +51,27 @@ header h1{font-size:20px;font-weight:700;letter-spacing:-0.5px;}
 .fp{height:24px;padding:0 10px;font-size:11px;border-radius:20px;border:1px solid var(--border2);background:var(--surface);color:var(--text2);cursor:pointer;white-space:nowrap;transition:all .1s;display:inline-flex;align-items:center;gap:5px;}
 .fp:hover{color:var(--text);border-color:var(--border3);}
 .fp.on{font-weight:600;}
-.fp.tp-MAP  {color:#8eedc7;border-color:#8eedc755;background:#8eedc712;}
-.fp.tp-XREF {color:#87c3ff;border-color:#87c3ff55;background:#87c3ff12;}
-.fp.tp-CHART{color:#c4a3ff;border-color:#c4a3ff55;background:#c4a3ff12;}
-.fp.tp-RANK {color:#fcd34d;border-color:#fcd34d55;background:#fcd34d12;}
+.fp.tp-MAP  {color:#22c55e;border-color:#22c55e55;background:#22c55e12;}
+.fp.tp-XREF {color:#3b82f6;border-color:#3b82f655;background:#3b82f612;}
+.fp.tp-CHART{color:#a855f7;border-color:#a855f755;background:#a855f712;}
+.fp.tp-RANK {color:#f59e0b;border-color:#f59e0b55;background:#f59e0b12;}
 .fp.tp-MAP.on  {background:#0e2e1a;color:var(--green); border-color:var(--green);}
 .fp.tp-XREF.on {background:#0e1e33;color:var(--blue);  border-color:var(--blue);}
 .fp.tp-CHART.on{background:#1e0e33;color:var(--purple);border-color:var(--purple);}
 .fp.tp-RANK.on {background:#2e1e00;color:var(--amber); border-color:var(--amber);}
-.fp.geo     {color:#7de8e8;border-color:#7de8e855;background:#7de8e812;}
+.fp.geo     {color:#14b8a6;border-color:#14b8a655;background:#14b8a612;}
 .fp.geo.on  {background:#0a2020;color:var(--teal);border-color:var(--teal);}
-.fp.fmt     {color:#fdba74;border-color:#fdba7455;background:#fdba7412;}
+.fp.fmt     {color:#fb923c;border-color:#fb923c55;background:#fb923c12;}
 .fp.fmt.on  {background:#2a1200;color:var(--peach);border-color:var(--peach);}
-.fp.st-idea        {color:#a5b4fc;border-color:#a5b4fc55;background:#a5b4fc12;}
-.fp.st-in-progress {color:#fcd34d;border-color:#fcd34d55;background:#fcd34d12;}
-.fp.st-built       {color:#8eedc7;border-color:#8eedc755;background:#8eedc712;}
-.fp.st-published   {color:#87c3ff;border-color:#87c3ff55;background:#87c3ff12;}
+.fp.st-idea        {color:#6366f1;border-color:#6366f155;background:#6366f112;}
+.fp.st-in-progress {color:#f59e0b;border-color:#f59e0b55;background:#f59e0b12;}
+.fp.st-built       {color:#22c55e;border-color:#22c55e55;background:#22c55e12;}
+.fp.st-published   {color:#3b82f6;border-color:#3b82f655;background:#3b82f612;}
 .fp.st-idea.on        {background:#111;    color:var(--indigo);border-color:var(--indigo);}
 .fp.st-in-progress.on {background:#1a1200;color:var(--amber); border-color:var(--amber);}
 .fp.st-built.on       {background:#0a1f14;color:var(--green); border-color:var(--green);}
 .fp.st-published.on   {background:#0d1b2e;color:var(--blue);  border-color:var(--blue);}
-.fp.nt      {color:#6ee7b7;border-color:#6ee7b755;background:#6ee7b712;}
+.fp.nt      {color:#10b981;border-color:#10b98155;background:#10b98112;}
 .fp.nt.on   {background:#0a1a10;color:var(--mint);border-color:var(--mint);}
 .fp.topic.on{font-weight:700;}
 /* ── GEO ACCORDION ────────────────────────────────────────────────────── */
@@ -159,7 +159,8 @@ header h1{font-size:20px;font-weight:700;letter-spacing:-0.5px;}
 .right{display:flex;flex-direction:column;align-items:flex-end;gap:5px;flex-shrink:0;min-width:104px;}
 .vs{font-size:24px;font-weight:800;line-height:1;}
 .vl{font-size:9px;color:var(--text3);text-align:right;}
-.fmt-bonus{font-size:11px;font-weight:600;color:#8eedc7;margin-left:2px;vertical-align:super;}
+.bp-tag{font-size:11px;font-weight:600;color:#22c55e;margin-left:2px;vertical-align:super;}
+.fmt-bonus{font-size:11px;font-weight:600;color:#22c55e;margin-left:2px;vertical-align:super;}
 .brs{display:flex;flex-direction:column;gap:3px;width:104px;}
 .br{display:flex;align-items:center;gap:4px;}
 .bl{font-size:9px;color:var(--text3);width:20px;text-align:right;flex-shrink:0;}
@@ -239,6 +240,12 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
   </div>
 </header>
 
+<div id="stats-strip" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);font-size:12px;color:var(--text2);">
+    <span><strong id="stat-total" style="color:var(--text);font-size:16px;font-weight:700">0</strong> ideas</span>
+    <span>Avg V-Score: <strong id="stat-avg" style="color:var(--amber)">0</strong></span>
+    <span>Top: <strong id="stat-top" style="color:var(--green)">—</strong></span>
+    <span id="stat-bonus" style="display:none">Timely: <strong style="color:var(--rose)">0</strong></span>
+  </div>
 <div class="modes">
   <button class="mode-btn on" onclick="setMode('browse',this)">Browse</button>
   <button class="mode-btn"   onclick="setMode('score-filters',this)">Score Filters</button>
@@ -384,7 +391,7 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=17"></script>
-<script src="app.js?v=17"></script>
+<script src="data.js?v=19"></script>
+<script src="app.js?v=19"></script>
 </body>
 </html>
