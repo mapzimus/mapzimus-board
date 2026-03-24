@@ -79,17 +79,16 @@ const P = {
 //  TOPIC COLORS 
 const TOPIC_COLORS = {
   health:P.red, economy:P.green, politics:P.blue, crime:P.rose,
-  poverty:P.amber, housing:P.orange, education:P.teal, labor:P.purple,
+  housing:P.orange, education:P.teal, labor:P.purple,
   race:P.pink, gender:P.violet, immigration:P.sky, middle_east:'#fbbf24',
   military:P.indigo, energy:P.yellow, climate:P.mint, environment:P.lime,
   food:P.peach, agriculture:P.lime, drugs:P.purple, guns:P.rose,
   finance:P.amber, sports:'#34d399', inequality:P.pink, transportation:P.teal,
   infrastructure:P.indigo, technology:P.blue, media:P.sky, population:P.violet,
   international:P.purple, entertainment:'#c084fc', religion:P.amber,
-  history:P.peach, space:P.indigo, psychology:'#67e8f9',
+  history:P.peach, psychology:'#67e8f9',
   humor:'#f9a8d4', science:'#7dd3fc', geography:'#86efac',
-  children:P.pink, rural:P.lime, manufacturing:P.teal, law:P.rose,
-};
+  children:P.pink, rural:P.lime, };
 
 const TOPIC_LABELS = {
   middle_east:'Middle East', data_ready:'Data Ready',
