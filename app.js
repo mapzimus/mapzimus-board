@@ -397,7 +397,7 @@ function cardHTML(d, highlight=false) {
       <div class="notes-area">${notesHtml}</div>
     </div>
     <div class="right">
-      <div><div class="vs" style="color:${scColor((d.vs||0)+(d.bonus||0))}">${(d.vs||0)+(d.bonus||0)}${bonusBkHtml(d)}</div><div class="vl">V-Score v5${d.dd?`  -  ${d.dd}`:''}</div></div>
+      <div><div class="vs" style="color:${scColor((d.vs||0)+(d.bonus||0))}">${(d.vs||0)+(d.bonus||0)}${bonusBkHtml(d)}</div><div class="vl">V-Score${d.dd?` <span class="vl-dd">${d.dd}</span>`:''}</div></div>
       <div class="brs">${bars}</div>
     </div>
   </div>`;
@@ -543,6 +543,7 @@ function buildFiltered() {
     else if (sortK === 'bonus')   { av = a.bonus||0; bv = b.bonus||0; }
     else if (sortK === 'newest') { av = D_INDEX.get(a.id); bv = D_INDEX.get(b.id); }
     else if (sortK === 'oldest') { av = D_INDEX.get(a.id); bv = D_INDEX.get(b.id); }
+    else if (sortK === 'dd')     { av = parseInt((a.dd||'').slice(0,4))||0; bv = parseInt((b.dd||'').slice(0,4))||0; }
     else { av = a.sc[sortK]||0; bv = b.sc[sortK]||0; }
     // newest = desc by index = larger index first
     if (sortK === 'newest') return bv - av;
