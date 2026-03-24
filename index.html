@@ -309,6 +309,7 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
       <div class="dash-section"><div class="dash-sec-title">&#128269; Geographic Scale</div><div id="dc-geo"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#9881; Format Type</div><div id="dc-complexity"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#128193; Categories</div><div id="dc-sources"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#128197; Data Freshness</div><div id="dc-freshness"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#11088; Bonus Breakdown</div><div id="dc-bonuses"></div></div>
     </div>
     <div class="dash-cols" style="grid-template-columns:1.5fr 1fr;">
@@ -578,7 +579,6 @@ function buildDashboard(){
   const SC=['#3b82f6','#06b6d4','#14b8a6','#22c55e','#84cc16','#f59e0b','#fb923c','#ef4444','#a855f7','#ec4899','#10b981','#555'];
   document.getElementById('dc-sources').innerHTML=topCat.map(([s,c],i)=>
     miniBar(s,c,mxS,SC[i%SC.length],null)).join('');
-    miniBar(s,c,mxS,SC[i%SC.length],null)).join('');
 
   /* ─ Bonus breakdown (no ti) ─ */
   const BKK=['vm','sh','df','cl','og'];
@@ -619,7 +619,27 @@ function buildDashboard(){
   }</div>`;
 
   /* ─ Gaps ─ */
-  const botT=[...allT].slice(-12).reverse();
+  
+  /* 📅 Data Freshness */
+  const frBk={fresh:0,recent:0,older:0,stale:0,none:0};
+  D.forEach(d=>{
+    const dd=gf(d,'dd')||'';
+    const yr=parseInt(dd.slice(0,4))||0;
+    if(!yr||yr<1900)frBk.none++;
+    else if(yr>=2024)frBk.fresh++;
+    else if(yr>=2022)frBk.recent++;
+    else if(yr>=2019)frBk.older++;
+    else frBk.stale++;
+  });
+  const frTotal=Object.values(frBk).reduce((a,b)=>a+b,0)||1;
+  const frMax=Math.max(...Object.values(frBk))||1;
+  const frLabels={fresh:'🟢 Fresh (2024+)',recent:'🟡 Recent (2022–23)',older:'🟠 Older (2019–21)',stale:'🔴 Stale (<2019)',none:'⬜ No date'};
+  const frColors={fresh:'#22c55e',recent:'#eab308',older:'#f97316',stale:'#ef4444',none:'#555'};
+  document.getElementById('dc-freshness').innerHTML=
+    Object.entries(frBk).sort((a,b)=>b[1]-a[1])
+    .map(([k,v])=>miniBar(frLabels[k],v,frMax,frColors[k],null)).join('');
+
+const botT=[...allT].slice(-12).reverse();
   document.getElementById('dc-gaps').innerHTML=botT.map(([t,c])=>
     `<div class="db-gap-pill" onclick="window.filterByTopicDash('${t}')">${t} <span class="db-gap-cnt">${c}</span></div>`
   ).join('');
