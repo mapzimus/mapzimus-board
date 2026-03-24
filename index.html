@@ -476,8 +476,8 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=23"></script>
-<script src="app.js?v=23"></script>
+<script src="data.js?v=24"></script>
+<script src="app.js?v=24"></script>
 
 <script id="gis-dashboard-script">
 (function(){
@@ -497,7 +497,7 @@ function miniBar(label,count,max,color,clickFn){
 }
 
 function buildDashboard(){
-  if(!window.D||!D.length)return;
+  if(typeof D==="undefined"||!D||!D.length)return;
   var total=D.length;
   var bonuses=D.map(getBonus);
   var scores=D.map(getScore);
@@ -505,8 +505,8 @@ function buildDashboard(){
   var bonusIdeas=bonuses.filter(function(b){return b>0;});
   var bonusPct=Math.round(bonusIdeas.length/total*100);
   var avgBonus=bonusIdeas.length?(bonusIdeas.reduce(function(a,b){return a+b;},0)/bonusIdeas.length).toFixed(1):'0';
-  var maxScore=Math.max.apply(null,scores);
-  var minScore=Math.min.apply(null,scores);
+  var maxScore=scores.reduce(function(a,b){return a>b?a:b;},-Infinity);
+  var minScore=scores.reduce(function(a,b){return a<b?a:b;},Infinity);
   var el=function(id){return document.getElementById(id);};
   if(el('dc-total'))    el('dc-total').textContent=total.toLocaleString();
   if(el('dc-avg'))      el('dc-avg').textContent=avgScore;
@@ -688,7 +688,7 @@ window.toggleDash=function(){
 };
 
 (function poll(n){
-  if(window.D&&D.length>0){buildDashboard();}
+  if(typeof D!=="undefined"&&D&&D.length>0){buildDashboard();}
   else if(n>0){setTimeout(function(){poll(n-1);},400);}
   else{console.warn('GIS Dashboard: D never populated');}
 })(25);
