@@ -475,8 +475,8 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=21"></script>
-<script src="app.js?v=21"></script>
+<script src="data.js?v=22"></script>
+<script src="app.js?v=22"></script>
 
 <script id="gis-dashboard-script">
 (function(){
@@ -511,7 +511,7 @@ function buildDashboard(){
   document.getElementById('dc-avg').textContent=avgScore;
   document.getElementById('dc-bonus-pct').textContent=bonusPct+'%';
   document.getElementById('dc-avg-bonus').textContent=avgBonus;
-  document.getElementById('dc-score-range').textContent=minScore+' – '+maxScore;
+  document.getElementById('dc-score-range').textContent=minScore+' - '+maxScore;
   document.getElementById('dash-sub').textContent=total.toLocaleString()+' ideas';
 
   /* ─ Formats ─ */
@@ -578,7 +578,7 @@ function buildDashboard(){
 
   /* ─ Bonus breakdown (no ti) ─ */
   const BKK=['vm','sh','df','cl','og'];
-  const BKL={vm:'🔥 Viral',sh:'📤 Share',df:'📊 Fresh',cl:'💡 Clarity',og:'⭐ Original'};
+  const BKL={vm:'Viral',sh:'Share',df:'Fresh Data',cl:'Clarity',og:'Original'};
   const BKC={vm:'#ef4444',sh:'#3b82f6',df:'#22c55e',cl:'#f59e0b',og:'#a855f7'};
   const bkC={};
   BKK.forEach(k=>bkC[k]=0);
