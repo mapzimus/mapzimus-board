@@ -88,7 +88,11 @@ const TOPIC_COLORS = {
   international:P.purple, entertainment:'#a855f7', religion:P.amber,
   history:P.peach, psychology:'#06b6d4',
   humor:'#ec4899', science:'#0ea5e9', geography:'#22c55e',
-  children:P.pink, rural:P.lime, };
+  children:P.pink, rural:P.lime,
+  debt:'#f97316', wealth_inequality:'#84cc16', predatory_lending:'#ef4444',
+  urban:'#14b8a6', water:'#06b6d4', censorship:'#6366f1',
+  banking:P.amber, oil:'#78716c', conflict:P.rose, policy:P.blue,
+  culture:P.peach, urban_planning:'#14b8a6', };
 
 const TOPIC_LABELS = {
   middle_east:'Middle East', data_ready:'Data Ready',
@@ -383,11 +387,12 @@ function cardHTML(d, highlight=false) {
         </div>
       </div>
       <div class="ct">${d.title}</div>
-      <div class="cs">${d.sub}</div>
+      ${d.sub ? `<div class="cs">${d.sub}</div>` : ''}
       <div class="pills">
-        <span class="pl ${d.type}">${d.type}</span>
-        <span class="pl geo">${d.geo.replace(/_/g,' ')}</span>
+        <span class="pl ${d.type||'unk'}">${d.type||'?'}</span>
+        <span class="pl geo">${(d.geo||'').replace(/_/g,' ')}</span>
         <span class="pl fmt">${d.fmt}</span>
+        ${d.dd ? `<span class="pl dd">${d.dd}</span>` : ''}
       </div>
       <div class="data-block">
         <div class="data-label">DATA NEEDED</div>
@@ -397,7 +402,7 @@ function cardHTML(d, highlight=false) {
       <div class="notes-area">${notesHtml}</div>
     </div>
     <div class="right">
-      <div><div class="vs" style="color:${scColor((d.vs||0)+(d.bonus||0))}">${(d.vs||0)+(d.bonus||0)}${bonusBkHtml(d)}</div><div class="vl">V-Score${d.dd?` <span class="vl-dd">${d.dd}</span>`:''}</div></div>
+      <div><div class="vs" style="color:${scColor((d.vs||0)+(d.bonus||0))}">${(d.vs||0)+(d.bonus||0)}${bonusBkHtml(d)}</div><div class="vl">V-Score</div></div>
       <div class="brs">${bars}</div>
     </div>
   </div>`;
@@ -508,7 +513,7 @@ function buildFiltered() {
     if (activeFilters.type   && d.type   !== activeFilters.type)   return false;
     if (geoFilter) {
       if (geoFilter.prefix) {
-        if (!d.geo.startsWith(geoFilter.prefix)) return false;
+        if (!(d.geo||'').startsWith(geoFilter.prefix)) return false;
       } else if (geoFilter.leaves) {
         if (!geoFilter.leaves.has(d.geo)) return false;
       }
@@ -531,7 +536,7 @@ function buildFiltered() {
       if (v < range.min || v > range.max) return false;
     }
     if (q) {
-      const h = (d.title+' '+d.sub+' '+d.tags+' '+d.section).toLowerCase();
+      const h = (d.title+' '+(d.sub||'')+' '+(d.tags||'')+' '+(d.section||'')).toLowerCase();
       if (!h.includes(q)) return false;
     }
     return true;
