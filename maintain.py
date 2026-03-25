@@ -173,6 +173,9 @@ FMT_RULES = [
     (r'^Grouped|^Stacked bar|^Horizontal bar|^Diverging|^Side.by.side bar|^Bar chart|^Pareto|^Pie chart|^Demographic|^Multi$|^Bar or line', 'Bar chart'),
     (r'^Treemap',              'Treemap'),
     (r'^Horizontal ranked|^Ranked|^Top/bottom|^River flow|^RANKED', 'Ranked list'),
+    (r'^[Ii]nteractive',    'Interactive'),
+    (r'^[Aa]rticle',        'Article'),
+    (r'^[Nn]arrative',      'Narrative'),
 ]
 
 def get_canonical(fmt_str):
