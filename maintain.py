@@ -327,6 +327,72 @@ def validate_js():
     except subprocess.TimeoutExpired:
         print('  [js_check] Node.js timed out - skipping')
 
+
+# -- 6. VALIDATE TOPICS --------------------------------------------------------
+_APPROVED_TOPICS = {
+    'economy','crime','health','international','labor','education',
+    'inequality','food','environment','race','politics','population',
+    'technology','media','science','transportation','sports','energy',
+    'housing','geography','finance','military','history','agriculture',
+    'immigration','climate','drugs','gender','guns','children',
+    'infrastructure','religion','entertainment','psychology','middle_east',
+    'humor','rural',
+}
+_TOPIC_REMAP = {
+    'war':'military', 'poverty':'inequality', 'democracy':'politics',
+    'trade':'economy', 'space':'science', 'data':None,
+    'mental_health':'health', 'migration':'immigration',
+    'censorship':'media', 'tourism':'economy', 'culture':'entertainment',
+    'demographics':'population',
+}
+
+def validate_topics():
+    """Auto-remap any unapproved topic tags and report."""
+    with open('data.js', 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    fixed = 0
+    unapproved_found = Counter()
+    new_lines = []
+
+    for line in lines:
+        if 'topics:[' not in line:
+            new_lines.append(line)
+            continue
+        m = re.search(r'topics:\[([^\]]*)\]', line)
+        if not m:
+            new_lines.append(line)
+            continue
+        raw = [t.strip().strip('"') for t in m.group(1).split(',') if t.strip()]
+        cleaned = []
+        changed = False
+        for t in raw:
+            if t in _APPROVED_TOPICS:
+                if t not in cleaned:
+                    cleaned.append(t)
+            elif t in _TOPIC_REMAP:
+                v = _TOPIC_REMAP[t]
+                unapproved_found[t] += 1
+                changed = True
+                if v and v not in cleaned:
+                    cleaned.append(v)
+            else:
+                unapproved_found[t] += 1
+                changed = True  # drop it
+        if changed:
+            new_topics = 'topics:[' + ','.join(f'"{t}"' for t in sorted(cleaned)) + ']'
+            line = re.sub(r'topics:\[[^\]]*\]', new_topics, line)
+            fixed += 1
+        new_lines.append(line)
+
+    with open('data.js', 'w', encoding='utf-8') as f:
+        f.writelines(new_lines)
+
+    if unapproved_found:
+        print(f'  [validate_topics] Fixed {fixed} lines | Remapped/dropped: {dict(unapproved_found)}')
+    else:
+        print(f'  [validate_topics] All {sum(1 for l in new_lines if "topics:[" in l)} topic arrays clean')
+
 # -- MAIN ----------------------------------------------------------------------
 if __name__ == '__main__':
     print('Running maintain.py...')
@@ -335,6 +401,7 @@ if __name__ == '__main__':
     add_ext()
     normalize_fmt()
     recalc_vs()
+    validate_topics()
     validate()
     validate_js()
     print('Done. Run: git add . && git commit -m "..." && git push')

@@ -89,15 +89,12 @@ const TOPIC_COLORS = {
   history:P.peach, psychology:'#06b6d4',
   humor:'#ec4899', science:'#0ea5e9', geography:'#22c55e',
   children:P.pink, rural:P.lime,
-  debt:'#f97316', wealth_inequality:'#84cc16', predatory_lending:'#ef4444',
-  urban:'#14b8a6', water:'#06b6d4', censorship:'#6366f1',
-  banking:P.amber, oil:'#78716c', conflict:P.rose, policy:P.blue,
-  urban_planning:'#14b8a6', };
+};
 
 const TOPIC_LABELS = {
   middle_east:'Middle East', data_ready:'Data Ready',
 };
-function topicLabel(t) { return TOPIC_LABELS[t] || t.charAt(0).toUpperCase() + t.slice(1); }
+function topicLabel(t) { return TOPIC_LABELS[t] || t.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase()); }
 
 
 //  SECTION COLORS 
