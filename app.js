@@ -92,7 +92,7 @@ const TOPIC_COLORS = {
   debt:'#f97316', wealth_inequality:'#84cc16', predatory_lending:'#ef4444',
   urban:'#14b8a6', water:'#06b6d4', censorship:'#6366f1',
   banking:P.amber, oil:'#78716c', conflict:P.rose, policy:P.blue,
-  culture:P.peach, urban_planning:'#14b8a6', };
+  urban_planning:'#14b8a6', };
 
 const TOPIC_LABELS = {
   middle_east:'Middle East', data_ready:'Data Ready',
