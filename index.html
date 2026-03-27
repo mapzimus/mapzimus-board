@@ -306,11 +306,11 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
       <div class="dash-card"><div class="dash-card-label">Avg Bonus</div><div class="dash-card-val" id="dc-avg-bonus" style="color:var(--teal)">0</div></div>
       <div class="dash-card"><div class="dash-card-label">Score Range</div><div class="dash-card-val" id="dc-score-range" style="color:var(--text2);font-size:13px">—</div></div>
     </div>
-    <div class="dash-cols">
+    <div class="dash-cols" style="grid-template-columns:repeat(3,1fr)">
       <div class="dash-section"><div class="dash-sec-title">&#128506; Spatial Formats</div><div id="dc-formats"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#128269; Geographic Scale</div><div id="dc-geo"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#9881; Format Type</div><div id="dc-complexity"></div></div>
-      <div class="dash-section"><div class="dash-sec-title">&#128193; Categories</div><div id="dc-sources"></div></div>
+      <div class="dash-section"><div class="dash-sec-title">&#127991; Top Topics</div><div id="dc-sources"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#128197; Data Freshness</div><div id="dc-freshness"></div></div>
       <div class="dash-section"><div class="dash-sec-title">&#11088; Bonus Breakdown</div><div id="dc-bonuses"></div></div>
     </div>
@@ -591,21 +591,16 @@ function buildDashboard(){
     .sort(function(a,b){return cx[b]-cx[a];})
     .map(function(k){return miniBar(CXL[k],cx[k],mxC,CXC[k],null);}).join('');
 
-  /* CATEGORIES */
+  /* TOP TOPICS (replacing section-based Categories) */
   var catC={};
-  D.forEach(function(d){
-    var s=gf(d,'section')||'Other';
-    /* Normalize: take first segment before dash/slash, title-case */
-    var lbl=s.split(/\s*[-\/|]\s*/)[0].trim();
-    lbl=lbl.charAt(0).toUpperCase()+lbl.slice(1).toLowerCase();
-    if(lbl.length>1)catC[lbl]=(catC[lbl]||0)+1;
-  });
+  D.forEach(function(d){getTopics(d).forEach(function(t){catC[t]=(catC[t]||0)+1;});});
   var topCat=Object.entries(catC).sort(function(a,b){return b[1]-a[1];}).slice(0,12);
   var mxS=topCat.length?topCat[0][1]:1;
   var SC=['#3b82f6','#06b6d4','#14b8a6','#22c55e','#84cc16','#f59e0b',
-          '#fb923c','#ef4444','#a855f7','#ec4899','#10b981','#555'];
+          '#fb923c','#ef4444','#a855f7','#ec4899','#10b981','#8b5cf6'];
   if(el('dc-sources'))el('dc-sources').innerHTML=topCat.map(function(e,i){
-    return miniBar(e[0],e[1],mxS,SC[i%SC.length],null);
+    var safe=e[0].replace(/'/g,"\'");
+    return miniBar(e[0],e[1],mxS,SC[i%SC.length],"window.filterByTopicDash('"+safe+"')");
   }).join('');
 
   /* BONUS BREAKDOWN */
@@ -652,7 +647,7 @@ function buildDashboard(){
     }).join('')+'</div>';
 
   /* TOPIC GAPS - underrepresented topics (5-25 ideas) */
-  var gapT=allT.filter(function(e){return e[1]>=2&&e[1]<=25;}).slice(0,15);
+  var gapT=allT.slice().reverse().filter(function(e){return e[1]>=5;}).slice(0,15);
   if(el('dc-gaps'))el('dc-gaps').innerHTML=gapT.map(function(e){
     return '<div class="db-gap-pill" onclick="window.filterByTopicDash(\''+e[0]+'\')">'+
       e[0]+' <span class="db-gap-cnt">'+e[1]+'</span></div>';
