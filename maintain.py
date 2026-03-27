@@ -266,7 +266,16 @@ def recalc_vs():
     for line in content.split('\n'):
         if line.startswith('{id:') or line.startswith(',{id:'):
             new_line = replace_vs(line)
-            if new_line != line:
+            # Safety net: if vs is STILL missing after replace_vs (idea had no sc:{} wrapper
+            # or was written in non-standard flat format), compute and insert it now.
+            if ',vs:' not in new_line:
+                sc_m2 = re.search(r'sc:\{([^}]+)\}', new_line)
+                if sc_m2:
+                    new_vs = calc_vs(parse_sc(sc_m2.group(0)), '')
+                    # Insert ,vs:N right before ,sc:{
+                    new_line = new_line.replace(',sc:{', f',vs:{new_vs},sc:{{', 1)
+                    changed += 1
+            elif new_line != line:
                 changed += 1
             new_lines.append(new_line)
         else:
