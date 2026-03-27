@@ -525,8 +525,9 @@ function buildDashboard(){
   var bonusIdeas=bonuses.filter(function(b){return b>0;});
   var bonusPct=Math.round(bonusIdeas.length/total*100);
   var avgBonus=bonusIdeas.length?(bonusIdeas.reduce(function(a,b){return a+b;},0)/bonusIdeas.length).toFixed(1):'0';
-  var maxScore=scores.reduce(function(a,b){return a>b?a:b;},-Infinity);
-  var minScore=scores.reduce(function(a,b){return a<b?a:b;},Infinity);
+  var effScores=D.map(function(d){return getScore(d)+getBonus(d);});
+  var maxScore=effScores.reduce(function(a,b){return a>b?a:b;},-Infinity);
+  var minScore=effScores.reduce(function(a,b){return a<b?a:b;},Infinity);
   /* Count spatial (map) ideas */
   var SPATIAL_FMTS={'State choropleth':1,'County choropleth':1,'World choropleth':1,
     'Dot map':1,'Flow map':1,'Animated map':1,'Hex bin map':1,'Bivariate choropleth':1,
