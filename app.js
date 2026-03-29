@@ -555,10 +555,19 @@ function buildFiltered() {
 }
 
 //  VIRTUAL SCROLL 
+function updateStats() {
+  const el = id => document.getElementById(id);
+  if (!el('stat-total')) return;
+  el('stat-total').textContent = D.length.toLocaleString();
+  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
+  el('stat-avg').textContent = avg;
+  // Top topic by count
+  const tc = {}
+
 function renderBrowse() {
   buildFiltered(); renderedCount = 0; _renderPending = false;
   document.getElementById('bgrid').innerHTML = '';
-  renderMore(); updateCount();
+  renderMore(); updateCount(); updateStats();
 }
 function renderMore() {
   if (_renderPending || renderedCount >= filteredIdeas.length) return;
@@ -612,25 +621,6 @@ function togglePill(btn) {
     activeFilters[field] = val; btn.classList.add('on');
   }
   updateResetBtn(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
 }
 function updateResetBtn() {
@@ -654,25 +644,6 @@ function resetAllFilters() {
   document.getElementById('q').value = '';
   buildGeoAccordion();
   updateResetBtn(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
 }
 function toggleTopic(btn) {
@@ -686,25 +657,6 @@ function toggleTopic(btn) {
     btn.style.background = c+'33'; btn.style.color = c; btn.style.borderColor = c;
   }
   updateResetBtn(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
 }
 function filterBySection(sec, el) {
@@ -717,25 +669,6 @@ function filterBySection(sec, el) {
     if (el) el.classList.add('sect-active');
   }
   updateResetBtn(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
 }
 function setSort(btnOrKey) {
@@ -752,25 +685,6 @@ function setSort(btnOrKey) {
     active.classList.add(sortDir); // explicit separate add so both land
   }
   
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
 }
 function setMode(m, btn) {
@@ -833,25 +747,6 @@ function clearScFilters() {
     document.getElementById(`scf-cnt-${f.key}`).textContent = '';
   });
   
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
 }
 
@@ -944,31 +839,12 @@ function buildGeoAccordion() {
       else {
         geoFilter = {
           key: geoRow2 + '_ALL_BTN',
-          prefix: geoRow2 === 'USA' ? 'us_' : null,
+          prefix: geoRow2 === 'USA' ? 'us' : null,
           leaves: geoRow2 === 'WORLD' ? buildWorldLeaves() : null,
           label: geoRow2 === 'USA' ? 'ALL USA' : 'ALL WORLD'
         };
       }
       updateResetBtn(); buildGeoAccordion(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
     };
     r2.appendChild(allBtn);
@@ -990,25 +866,6 @@ renderBrowse();
           if (geoFilter?.key === key) { geoFilter = null; }
           else { geoFilter = { key, leaves: new Set([key]), label: node.label }; }
           updateResetBtn(); buildGeoAccordion(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
         }
       };
@@ -1045,49 +902,11 @@ renderBrowse();
               geoFilter = { key: key + '_ALL', leaves, label: node.label };
             }
             updateResetBtn(); buildGeoAccordion(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
           } else {
             if (geoFilter?.key === key) { geoFilter = null; }
             else { geoFilter = { key, leaves: new Set([key]), label: node.label }; }
             updateResetBtn(); buildGeoAccordion(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
           }
         };
@@ -1108,7 +927,7 @@ renderBrowse();
 }
 
 function buildWorldLeaves() {
-  const s = new Set(['worldwide','global_city','north_america','middle_east','oceania',
+  const s = new Set(['worldwide','global_city','north_america','middle_east','oceania','global','World','world',
     'europe','europe_west','europe_east','europe_nordic','europe_south',
     'asia','asia_east','asia_south','asia_southeast','asia_central',
     'africa','africa_sub','africa_west','africa_east','africa_north',
@@ -1172,25 +991,6 @@ function applyFilter(f) {
   if (sb) { sb.classList.add('on'); sb.classList.add(sortDir); }
   buildGeoAccordion();
   updateResetBtn(); 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
 }
 
@@ -1241,23 +1041,4 @@ const TYPE_BORDER = { MAP:'#22c55e', XREF:'#3b82f6', CHART:'#a855f7', RANK:'#f59
 })();
 
 
-//  STATS STRIP 
-function updateStats() {
-  const el = id => document.getElementById(id);
-  if (!el('stat-total')) return;
-  el('stat-total').textContent = D.length.toLocaleString();
-  const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
-  el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {};
-  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
-  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
-  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
-  // Bonus count
-  const bn = D.filter(d => d.bonus > 0).length;
-  const bel = el('stat-bonus');
-  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
-}
-
-updateStats();
 renderBrowse();
