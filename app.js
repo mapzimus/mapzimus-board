@@ -561,8 +561,14 @@ function updateStats() {
   el('stat-total').textContent = D.length.toLocaleString();
   const avg = Math.round(D.reduce((s,d) => s + (d.vs||0) + (d.bonus||0), 0) / D.length);
   el('stat-avg').textContent = avg;
-  // Top topic by count
-  const tc = {}
+  const tc = {};
+  D.forEach(d => (d.topics||[]).forEach(t => { tc[t] = (tc[t]||0) + 1; }));
+  const top = Object.entries(tc).sort((a,b) => b[1]-a[1])[0];
+  if (top) el('stat-top').textContent = topicLabel(top[0]) + ' (' + top[1].toLocaleString() + ')';
+  const bn = D.filter(d => d.bonus > 0).length;
+  const bel = el('stat-bonus');
+  if (bel && bn > 0) { bel.style.display = ''; bel.querySelector('strong').textContent = bn; }
+}
 
 function renderBrowse() {
   buildFiltered(); renderedCount = 0; _renderPending = false;
