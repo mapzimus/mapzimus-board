@@ -356,14 +356,19 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
   <div id="geo-row3" class="geo-row geo-sub geo-row3" style="display:none"></div>
   <div id="geo-breadcrumb" class="geo-bc" style="display:none"></div>
   <div class="filter-row">
-    <span>Format:</span>
-    <button class="fp fmt" data-f="fmt" data-v="Scatter plot"         onclick="togglePill(this)">Scatter</button>
-    <button class="fp fmt" data-f="fmt" data-v="State choropleth"     onclick="togglePill(this)">State map</button>
-    <button class="fp fmt" data-f="fmt" data-v="County choropleth"    onclick="togglePill(this)">County map</button>
-    <button class="fp fmt" data-f="fmt" data-v="World choropleth"     onclick="togglePill(this)">World map</button>
+    <span>Maps:</span>
+    <button class="fp fmt" data-f="fmt" data-v="State choropleth"     onclick="togglePill(this)">State</button>
+    <button class="fp fmt" data-f="fmt" data-v="County choropleth"    onclick="togglePill(this)">County</button>
+    <button class="fp fmt" data-f="fmt" data-v="World choropleth"     onclick="togglePill(this)">World</button>
     <button class="fp fmt" data-f="fmt" data-v="Bivariate choropleth" onclick="togglePill(this)">Bivariate</button>
-    <button class="fp fmt" data-f="fmt" data-v="Line chart"           onclick="togglePill(this)">Line</button>
+    <button class="fp fmt" data-f="fmt" data-v="Dot map"              onclick="togglePill(this)">Dot map</button>
+    <button class="fp fmt" data-f="fmt" data-v="Special map"          onclick="togglePill(this)">Special</button>
+  </div>
+  <div class="filter-row">
+    <span>Charts:</span>
     <button class="fp fmt" data-f="fmt" data-v="Bar chart"            onclick="togglePill(this)">Bar</button>
+    <button class="fp fmt" data-f="fmt" data-v="Scatter plot"         onclick="togglePill(this)">Scatter</button>
+    <button class="fp fmt" data-f="fmt" data-v="Line chart"           onclick="togglePill(this)">Line</button>
     <button class="fp fmt" data-f="fmt" data-v="Area chart"           onclick="togglePill(this)">Area</button>
     <button class="fp fmt" data-f="fmt" data-v="Ranked list"          onclick="togglePill(this)">Ranked list</button>
     <button class="fp fmt" data-f="fmt" data-v="Treemap"              onclick="togglePill(this)">Treemap</button>
@@ -478,8 +483,8 @@ if (sessionStorage.getItem('mz_auth') === '1') document.getElementById('gate').s
 
 <footer>@mapzimus</footer>
 </div>
-<script src="data.js?v=26"></script>
-<script src="app.js?v=26"></script>
+<script src="data.js?v=27"></script>
+<script src="app.js?v=27"></script>
 
 <script id="gis-dashboard-script">
 (function(){

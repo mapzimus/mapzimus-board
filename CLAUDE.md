@@ -1,6 +1,6 @@
 # CLAUDE.md — Mapzimus Board Project Reference
 
-> Last updated: 2026-03-25
+> Last updated: 2026-04-02
 > This file documents the full technical picture of the mapzimus-board project for use across AI-assisted sessions.
 
 ---
@@ -8,12 +8,12 @@
 ## 1. Project Overview
 
 **Mapzimus Board** is a static, single-page web app hosted on GitHub Pages.
-It displays a searchable, filterable dashboard of ~16,000 data-visualization *ideas*
+It displays a searchable, filterable dashboard of ~19,000+ data-visualization *ideas*
 (maps, charts, cross-references, rankings) scored by a virality algorithm.
 
 - **Live URL:** GitHub Pages (auto-deploys from `main` branch)
 - **Stack:** Vanilla JS + HTML + CSS — no build step, no frameworks
-- **Data file:** `data.js` (~8.6 MB) — a single `const D = [...]` array
+- **Data file:** `data.js` (~10.2 MB) — a single `const D = [...]` array
 - **Entry point:** `index.html` (loads `app.js`, `data.js`)
 
 ---
@@ -22,7 +22,7 @@ It displays a searchable, filterable dashboard of ~16,000 data-visualization *id
 
 | File | Role |
 |------|------|
-| `data.js` | All ~15,978 ideas as a JS array (`const D`) |
+| `data.js` | All ~19,410 ideas as a JS array (`const D`) |
 | `app.js` | Card rendering, filtering, sorting, search UI |
 | `index.html` | Dashboard shell, CSS, embedded dashboard script |
 | `maintain.py` | Pipeline: compact → fix_chars → add_ext → normalize_fmt → recalc_vs → validate → js_check |
@@ -77,7 +77,7 @@ const D = [
 
 | Field | Notes |
 |-------|-------|
-| `dd` | Data decade/year, e.g. `"2022"` (not `"2022-Q1"`) |
+| `dd` | One-line data description string — what the data actually shows (e.g. "Union membership share by state over 40 years"). Some legacy entries use a short date string ("2022") but new batches use full descriptions. |
 | `ext` | Structured metadata object |
 | `bonus` | Object with `hook`, `humor`, `timeliness` sub-scores |
 
@@ -380,14 +380,14 @@ This runs `git checkout HEAD -- data.js` to restore the last committed version.
 
 ---
 
-## 17. Data Stats (as of 2026-03-25)
+## 17. Data Stats (as of 2026-04-02)
 
 | Metric | Value |
 |--------|-------|
-| Total ideas | 15,978 |
-| Types | MAP: 7,234 · CHART: 6,244 · XREF: 2,044 · RANK: 456 |
+| Total ideas | 19,410 |
+| Types | MAP: ~9,500 · CHART: ~7,700 · XREF: ~1,900 · RANK: ~310 |
 | Unique fmt values | 22 (fully canonical) |
-| Ideas with topics | ~96.6% (539 empty remain) |
-| Ideas with dd | ~79.8% |
+| Ideas with topics | ~99%+ |
+| Ideas with dd | ~85%+ |
 | Ideas with bonus | ~70.4% |
-| Top fmts | Bar chart (2,620) · State choropleth (2,174) · Dot map (1,543) · Scatter plot (1,473) · Article (1,306) |
+| Top fmts | Bar chart (3,453) · State choropleth (2,684) · World choropleth (2,067) · Scatter plot (1,716) · Dot map (1,691) |
